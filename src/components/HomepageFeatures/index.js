@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Welcome',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/cirohlogo.svg').default,
     description: (
       <>
         CIROH, a partnership between NOAA and the University of Alabama, is a national consortium committed to advance the forecasting of floods, droughts, and water quality. CIROH scientists work to improve hydrologic process understanding, operational hydrologic forecasting techniques and workflows, community water modeling, translation of forecasts to actionable products, and use of water predictions in decision making.
@@ -35,7 +35,7 @@ const FeatureList = [
         - Integrating Social, Economic, and Behavioral Science in Water Resources Prediction. CIROH will serve as an integrator of research-to-operations-to-research (R2O2R) interactions connecting researchers, operators, modelers, data scientists, social scientists, decision makers, and communication and policy experts in a cooperative hydrologic research and prediction community.
       </>
     ),
-  },
+  }
 ];
 
 function Feature({Svg, title, description}) {

@@ -39,13 +39,6 @@ const config = {
           editUrl:
             'https://github.com/AlabamaWaterInstitute/data_access_examples/blob/main/README.md',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/AlabamaWaterInstitute/data_access_examples/blob/main/README.md',
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -65,11 +58,16 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'tutorial/tutorial-intro',
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'About',
+          },
           {
             href: 'https://github.com/AlabamaWaterInstitute',
             label: 'GitHub',
@@ -104,11 +102,7 @@ const config = {
           },
           {
             title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+            items: [              
               {
                 label: 'GitHub',
                 href: 'https://github.com/AlabamaWaterInstitute',
@@ -120,7 +114,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} The University of Alabama`,
+        copyright: `Copyright © ${new Date().getFullYear()} CIROH - The University of Alabama`,
       },
       prism: {
         theme: lightCodeTheme,

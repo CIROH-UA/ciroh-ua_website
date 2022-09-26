@@ -41,7 +41,38 @@ jobs:
         # A file, directory or wildcard pattern that describes what to upload
         path: build
         # The desired behavior if no files are found using the provided path.
-
+#     - name: Deploy GitHub Pages site
+#       uses: actions/deploy-pages@v1.2.0
+#       with:
+#         # Should this action only emit build telemetry instead of deploying the build artifact?
+#         emit_telemetry: true
+#         # The status of the previous build.
+#         conclusion: true
+#         # GitHub token
+#         token: # default is ${{ github.token }}
+#         # Time in milliseconds after which to timeout and cancel the deployment (default: 10 minutes)
+#         timeout: # optional, default is 600000
+#         # Maximum number of status report errors before cancelling a deployment (default: 10)
+#         error_count: # optional, default is 10
+#         # Time in milliseconds between two deployment status report (default: 5 seconds)
+#         reporting_interval: # optional, default is 5000
+#         # Name of the artifact to deploy
+#         artifact_name: build
+#         # Is this attempting to deploy a pull request as a GitHub Pages preview site? (NOTE: This feature is only in alpha currently and is not available to the public!)
+#         preview: # optional, default is false
+    - name: Deploy to GitHub Pages
+      # You may pin to the exact commit or the version.
+      # uses: JamesIves/github-pages-deploy-action@13046b614c663b56cba4dda3f30b9736a748b80d
+      uses: JamesIves/github-pages-deploy-action@v4.4.0
+      with:
+        token: ${{secrets.SECRET_GITHUB_TOKEN}}
+        # This is the branch you wish to deploy to, for example gh-pages or docs.
+        branch: main
+        # The folder in your repository that you want to deploy. If your build script compiles into a directory named build you would put it here. Folder paths cannot have a leading / or ./. If you wish to deploy the root directory you can place a . here.
+        folder: build
+        repository-name: arpita0911patel/arpita0911patel.github.io
+        tag: 0.1
+        
 
     
 

@@ -37,6 +37,8 @@ jobs:
         #prefix: # optional
     - name: Print build number
       run: echo "Build number is $BUILD_NUMBER"
+    - name: Print github run number
+      run: echo "Github run number is $GITHUB_RUN_NUMBER"
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.0
       with:

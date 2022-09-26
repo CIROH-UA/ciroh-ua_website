@@ -28,16 +28,16 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present    
-    - name: Determine Version 
+    - name: setup GitVersion
       uses: gittools/actions/gitversion/setup@v0.9.7
       with:
         versionSpec: '5.x'    
-    - name: execute gitversion
+    - name: execute GitVersion
       id: gitversion
       uses: gittools/actions/gitversion/execute@v0.9.7
       with:
         useConfigFile: true
-        configFilePath: ../gitversion.yml
+        configFilePath: ../../gitversion.yml
     - name: Display SemVer
       run: |
         echo "SemVer: $GITVERSION_SEMVER" 

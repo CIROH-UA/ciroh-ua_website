@@ -41,8 +41,6 @@ jobs:
         echo "SemVer: $GITVERSION_SEMVER" 
     - run: npm ci
     - run: npm run build --if-present    
-    - name: Print github run number
-      run: echo "Github run number is $GITHUB_RUN_NUMBER"
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.0
       with:
@@ -51,6 +49,16 @@ jobs:
         # A file, directory or wildcard pattern that describes what to upload
         path: build
         # The desired behavior if no files are found using the provided path.
+    - name: Create Draft Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{secrets.SECRET_GITHUB_TOKEN}}
+      with:
+        tag_name: $GITVERSION_SEMVER
+        release_name: $GITVERSION_SEMVER
+        draft: true
+        prerelease: false
     - name: Deploy to GitHub Pages
       # You may pin to the exact commit or the version.
       # uses: JamesIves/github-pages-deploy-action@13046b614c663b56cba4dda3f30b9736a748b80d
@@ -62,7 +70,7 @@ jobs:
         # The folder in your repository that you want to deploy. If your build script compiles into a directory named build you would put it here. Folder paths cannot have a leading / or ./. If you wish to deploy the root directory you can place a . here.
         folder: build
         repository-name: arpita0911patel/arpita0911patel.github.io
-        tag: $GITHUB_RUN_NUMBER
+        tag: $GITVERSION_SEMVER
         
 
     

@@ -30,9 +30,9 @@ jobs:
     - run: npm run build --if-present    
     - name: Build Number Generator
       uses: einaregilsson/build-number@v3
-      #with:
+      with:
         # GitHub Token to create and delete refs (GITHUB_TOKEN)
-        #token: # optional
+        token: ${{secrets.SECRET_GITHUB_TOKEN}}
         # Prefix for the build-number-<num> tag to make it unique if tracking multiple build numbers
         #prefix: # optional
     - name: Print build number

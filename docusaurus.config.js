@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Cooperative Institute for Research to Operations in Hydrology - TEST',
+  title: 'CIROH',
   tagline: 'CIROH - Nextgen for Hydrological forecasting and operations',
   url: 'http://ciroh.org',
   baseUrl: '/',
@@ -65,7 +65,7 @@ const config = {
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
+            position: 'right',
             label: 'About',
           },
           {

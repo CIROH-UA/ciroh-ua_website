@@ -41,37 +41,6 @@ jobs:
         echo "SemVer: $GITVERSION_SEMVER" 
     - run: npm ci
     - run: npm run build --if-present    
-    - name: Install GitReleaseManager
-      uses: gittools/actions/gitreleasemanager/setup@v0.9
-      with:
-        versionSpec: '0.11.x'
-
-    - name: Create release with GitReleaseManager
-      uses: gittools/actions/gitreleasemanager/create@v0.9
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        owner: ${{ steps.repo.outputs._0 }}
-        repository: ${{ steps.repo.outputs._1 }}
-        milestone: ${{ steps.gitversion.outputs.majorMinorPatch }}
-        name: 'Release ${{ steps.gitversion.outputs.majorMinorPatch }}'
-        assets:  |
-          release.zip
-    - name: Publish release with GitReleaseManager
-      uses: gittools/actions/gitreleasemanager/publish@v0.9
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        owner: ${{ steps.repo.outputs._0 }}
-        repository: ${{ steps.repo.outputs._1 }}
-        tagName: ${{ steps.gitversion.outputs.majorMinorPatch }}
-
-    - name: Close release with GitReleaseManager
-      uses: gittools/actions/gitreleasemanager/close@v0.9
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        owner: ${{ steps.repo.outputs._0 }}
-        repository: ${{ steps.repo.outputs._1 }}
-        milestone: ${{ steps.gitversion.outputs.majorMinorPatch }}
-
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.0
       with:

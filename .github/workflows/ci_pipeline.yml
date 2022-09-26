@@ -29,7 +29,7 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present    
     - name: Determine Version 
-      uses: gittools/actions/gitversion/execute@v0.9.7
+      uses: gittools/actions/gitversion/setup@v0.9.7
       with:
         versionSpec: '5.x'    
     - name: execute gitversion

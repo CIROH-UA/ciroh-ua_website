@@ -2,19 +2,30 @@
 sidebar_position: 1
 ---
 
+# CIROH 2i2c Portal
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+## CIROH's 2i2c JupyterHub details
+
 :::info
 <a href="https://github.com/2i2c-org/awi-ciroh-image">Github URL for AWI-CIROH 2i2c Hub Image</a>
 :::
+
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <Tabs>
-  <TabItem value="prod" label="Production" default>
-      <h3>CIROH 2i2c Production Hub:</h3>
-      <h4>https://ciroh.awi.2i2c.cloud/hub/login</h4>
+  <TabItem value="production" label="Production" default>
+    <span class="badge badge--secondary">CIROH 2i2c Production Hub</span>
+    <hr/>
+      <a href="https://ciroh.awi.2i2c.cloud/hub/login">https://ciroh.awi.2i2c.cloud/hub/login</a>
   </TabItem>
   <TabItem value="staging" label="Staging">
-    <h3>CIROH 2i2c Staging Hub:</h3>
-      <h4>https://staging.ciroh.awi.2i2c.cloud/hub/login</h4>
+    <span class="badge badge--secondary">CIROH 2i2c Staging Hub</span>
+    <hr/>
+      <a href="https://staging.ciroh.awi.2i2c.cloud/hub/login">https://staging.ciroh.awi.2i2c.cloud/hub/login</a>
   </TabItem>
 </Tabs>
+
+
+### How to use these environments?

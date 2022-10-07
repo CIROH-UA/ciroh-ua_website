@@ -60,12 +60,12 @@ const config = {
             type: 'doc',
             docId: 'tutorial/tutorial-intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
+            position: 'right',
             label: 'About',
           },
           {
@@ -110,6 +110,10 @@ const config = {
               {
                 label: 'AWI - Alabama Water Institute',
                 href: 'http://ovpred.ua.edu/alabama-water-institute/',
+              },
+              {
+                label: '2i2c-CIROH GitHub',
+                href: 'https://github.com/2i2c-org/awi-ciroh-image'
               },
             ],
           },

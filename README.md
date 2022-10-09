@@ -51,6 +51,7 @@ $ npx live-server
 
 This should open localhost:8080 with your published site.
 
+
 -------
 using lite-server
 
@@ -69,3 +70,6 @@ npx http-server
 
 - [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [tina.io](https://tina.io/)
+
+### Contributors
+- Arpita Patel

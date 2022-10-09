@@ -3,9 +3,17 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
-
+ :root {
+  --ifm-color-primary: #9e1b32;
+  --ifm-color-primary-dark: #8e182d;
+  --ifm-color-primary-darker: #86172a;
+  --ifm-color-primary-darkest: #6f1323;
+  --ifm-color-primary-light: #ae1e37;
+  --ifm-color-primary-lighter: #b61f39;
+  --ifm-color-primary-lightest: #cd2341;
+}
 /* You can override the default Infima variables here. */
-:root {
+/* :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -15,9 +23,23 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-}
-
+} */
 /* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #9e1b32;
+  --ifm-color-primary-dark: #8e182d;
+  --ifm-color-primary-darker: #86172a;
+  --ifm-color-primary-darkest: #6f1323;
+  --ifm-color-primary-light: #ae1e37;
+  --ifm-color-primary-lighter: #b61f39;
+  --ifm-color-primary-lightest: #cd2341;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+/* Styling one class specially in dark mode */
+[data-theme='dark'] .hero__title, .hero__subtitle{
+  color: whitesmoke;
+}
+/* 
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -27,4 +49,4 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-}
+} */

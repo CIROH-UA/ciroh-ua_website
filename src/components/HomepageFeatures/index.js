@@ -61,20 +61,24 @@ export default function HomepageFeatures() {
           </div>
         </div>
 
-        <div className='row'>
-          {MemberList.map((member) =>
-            <div className={clsx('col col--4')}>
-              <div class="avatar">
-                {/* <img
-          class="avatar__photo avatar__photo--sm"
-          src="https://avatars3.githubusercontent.com/u/13352?s=400&v=4" /> */}
-                <div class="avatar__intro">
-                  <div class="avatar__name">{member}</div>
+        <div className="hero shadow--lw">
+            <div className="container-fluid">
+              <h1 className="hero__title">Our Proud Research Members</h1>
+              {/* <h5>Not all heroes wear capes</h5> */}
+              <br/>
+              <div className=' row'>
+              {MemberList.map((member) =>
+                <div className={clsx('col col--4')}>
+                  <div className="avatar">
+                    <div className="avatar__intro">
+                      <div className="avatar__name" style={{marginBottom:20}}>{member}</div>
+                    </div>
+                  </div>
                 </div>
+              )}
               </div>
             </div>
-          )}
-        </div>
+          </div>
       </div>
     </section>
   );

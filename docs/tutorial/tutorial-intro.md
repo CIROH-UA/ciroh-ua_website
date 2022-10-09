@@ -28,4 +28,8 @@ import TabItem from '@theme/TabItem';
 </Tabs>
 
 
-### How to use these environments?
+### How to access these environments?
+:::note
+To get the access of above environments, please email us at **support@ciroh.org** with your github User ID
+:::
+

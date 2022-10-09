@@ -6,8 +6,8 @@ name: AWI website CI
 on:
   push:
     branches: ["main", "issue-*"]
-  pull_request:
-    branches: ["main", "issue-*"]
+  #pull_request:
+  #  branches: ["main", "issue-*"]
       
 jobs:
   build:

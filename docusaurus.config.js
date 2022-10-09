@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/ciroh_logo.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -53,7 +53,7 @@ const config = {
         title: 'CIROH',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/cirohlogo.png',          
+          src: 'img/ciroh_logo.png',          
         },
         items: [
           {

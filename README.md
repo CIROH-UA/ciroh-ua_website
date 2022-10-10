@@ -72,4 +72,4 @@ npx http-server
 - [tina.io](https://tina.io/)
 
 ### Contributors
-- Arpita Patel
+- Arpita Patel (apatel54@ua.edu)

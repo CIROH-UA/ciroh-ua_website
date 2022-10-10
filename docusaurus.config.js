@@ -58,15 +58,20 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'tutorial/tutorial-intro',
+            docId: 'services/tutorial-intro',
             position: 'left',
             label: 'Docs',
           },
           {
             type: 'doc',
-            docId: 'intro',
-            position: 'right',
+            docId: 'members/members-intro',
+            position: 'left',
+            label: 'Members',
+          },
+          {
+            href: '/about',
             label: 'About',
+            position: 'right',
           },
           {
             href: 'https://github.com/AlabamaWaterInstitute',
@@ -83,7 +88,7 @@ const config = {
             items: [
               {
                 label: 'About CIROH',
-                to: '/docs/intro',
+                to: '/about',
               },
             ],
           },
@@ -92,11 +97,11 @@ const config = {
             items: [              
               {
                 label: 'LinkedIn',
-                href: 'https://www.linkedin.com/company/alabama-water-institute/mycompany/',
+                href: 'https://www.linkedin.com/company/uaciroh/',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/AlabamaWater',
+                href: 'https://twitter.com/UA_CIROH',
               },
             ],
           },
@@ -106,15 +111,7 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/AlabamaWaterInstitute',
-              },
-              {
-                label: 'AWI - Alabama Water Institute',
-                href: 'http://ovpred.ua.edu/alabama-water-institute/',
-              },
-              {
-                label: '2i2c-CIROH GitHub',
-                href: 'https://github.com/2i2c-org/awi-ciroh-image'
-              },
+              }
             ],
           },
         ],

@@ -70,6 +70,7 @@ npx http-server
 
 - [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [tina.io](https://tina.io/)
+- [Infima](https://infima.dev/docs/getting-started/introduction)
 
 ### Contributors
 - Arpita Patel (apatel54@ua.edu)

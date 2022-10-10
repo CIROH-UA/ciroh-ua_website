@@ -1,0 +1,74 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: AWI website CI
+
+on:
+  push:
+    branches: ["main", "issue-*"]
+  pull_request:
+    branches: ["main", "issue-*"]
+      
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+       fetch-depth: 0
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+    - run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+    - run: git config user.name "$GITHUB_ACTOR"
+    - run: npm version minor -m "v%s"
+    - run: VERSION=$(node -p "require('./package.json').version")
+    - run: git tag ${VERSION}
+    - run: git push "https://$GITHUB_ACTOR:${{ secrets.SECRET_TO_PUSH_TO_ARPITA0911PATEL_GITHUB_IO }}@github.com/$GITHUB_REPOSITORY.git" --follow-tags
+    - run: git push "https://$GITHUB_ACTOR:${{ secrets.SECRET_TO_PUSH_TO_ARPITA0911PATEL_GITHUB_IO }}@github.com/$GITHUB_REPOSITORY.git" --tags
+    - name: setup GitVersion
+      uses: gittools/actions/gitversion/setup@v0.9.13
+      with:
+        versionSpec: '5.x'    
+    - name: execute GitVersion
+      id: gitversion
+      uses: gittools/actions/gitversion/execute@v0.9.13
+    - name: Display SemVer
+      run: |
+        echo "SemVer: $GITVERSION_SEMVER" 
+    - run: npm ci
+    - run: npm run build --if-present    
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.0
+      with:
+        # Artifact name
+        name: build
+        # A file, directory or wildcard pattern that describes what to upload
+        path: build
+        # The desired behavior if no files are found using the provided path.
+    - name: Deploy to GitHub Pages
+      # You may pin to the exact commit or the version.
+      # uses: JamesIves/github-pages-deploy-action@13046b614c663b56cba4dda3f30b9736a748b80d
+      uses: JamesIves/github-pages-deploy-action@v4.4.0
+      with:
+        token: ${{secrets.SECRET_TO_PUSH_TO_ARPITA0911PATEL_GITHUB_IO}}
+        # This is the branch you wish to deploy to, for example gh-pages or docs.
+        branch: main
+        # The folder in your repository that you want to deploy. If your build script compiles into a directory named build you would put it here. Folder paths cannot have a leading / or ./. If you wish to deploy the root directory you can place a . here.
+        folder: build
+        repository-name: arpita0911patel/arpita0911patel.github.io
+        tag: ${{env.GitVersion_SemVer}}
+        
+
+    
+

@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/ciroh_logo.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -36,8 +36,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/AlabamaWaterInstitute/data_access_examples/blob/main/README.md',
+          // editUrl:
+          //   'https://github.com/AlabamaWaterInstitute/data_access_examples/blob/main/README.md',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -53,19 +53,19 @@ const config = {
         title: 'CIROH',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/cirohlogo.png',          
+          src: 'img/ciroh_logo.png',          
         },
         items: [
           {
             type: 'doc',
             docId: 'tutorial/tutorial-intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
+            position: 'right',
             label: 'About',
           },
           {
@@ -110,6 +110,10 @@ const config = {
               {
                 label: 'AWI - Alabama Water Institute',
                 href: 'http://ovpred.ua.edu/alabama-water-institute/',
+              },
+              {
+                label: '2i2c-CIROH GitHub',
+                href: 'https://github.com/2i2c-org/awi-ciroh-image'
               },
             ],
           },

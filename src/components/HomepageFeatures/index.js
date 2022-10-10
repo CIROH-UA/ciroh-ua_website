@@ -6,21 +6,22 @@ const FeatureList = [
 ];
 
 const MemberList = [
-  'University of Alabama',
-  'Utah State University',
-  'University of Utah',
-  'University of Iowa',
-  'University of Arizona',
-  'University of Saskatchewan',
-  'University of Vermont',
-  'Penn State',
+  'The University of Alabama',
   'Brigham Young University',
-  'CUAHSI',
-  'University of Hawai ',
+  'Colorado School of Mines',
   'Tuskegee University',
-  'The University of Alabama Huntsville (UAH)',
+  'The University of Alabama in Huntsville',
+  'University of Arizona',
+  'University of California San Diego',
+  'Scripps Institution of Oceanography',
+  'University of Hawai‘i at Mānoa',
+  'University of Iowa',
   'University of Minnesota',
-
+  'Twin Cities',
+  'University of Saskatchewan',
+  'University of Utah',
+  'University of Vermont',
+  'Utah State University'
 ];
 
 function Member({ title }) {
@@ -63,7 +64,7 @@ export default function HomepageFeatures() {
 
         <div className="hero shadow--lw">
             <div className="container-fluid">
-              <h1 className="hero__title">Our Proud Research Members</h1>
+              <h1 className="hero__title">Our Proud Consortium Members</h1>
               {/* <h5>Not all heroes wear capes</h5> */}
               <br/>
               <div className=' row'>

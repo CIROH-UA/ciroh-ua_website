@@ -2,6 +2,10 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+### Architecture diagram
+
+https://static.swimlanes.io/c4b9a06048747d15188a73db0c296085.png
+
 ### Installation
 
 steps in a summary

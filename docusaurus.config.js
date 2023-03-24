@@ -58,7 +58,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'services/tutorial-intro',
+            docId: 'services/2i2c-intro',
             position: 'left',
             label: 'Docs',
           },

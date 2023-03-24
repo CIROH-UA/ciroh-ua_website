@@ -6,6 +6,16 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ![Workflow](https://static.swimlanes.io/c4b9a06048747d15188a73db0c296085.png)
 
+### How to Get Started?
+
+1. Clone the repo.
+2. Run installation steps from below. 
+3. Create new branch for new work in this repo.
+4. Update and implement your changes.
+5. Push your changes to a branch in this repo.
+6. Github actions CI workflow will get triggered automatically.
+7. Validate changes on arpita0911patel/arpita0911patel.github.io
+
 ### Installation
 
 steps in a summary

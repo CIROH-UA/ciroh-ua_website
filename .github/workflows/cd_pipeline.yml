@@ -1,19 +1,65 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: AWI website CI
+name: awi-website-cd
 
-on: 
-  workflow_dispatch 
-    - name: Deploy to GitHub Pages
-      # You may pin to the exact commit or the version.
-      # uses: JamesIves/github-pages-deploy-action@13046b614c663b56cba4dda3f30b9736a748b80d
-      uses: JamesIves/github-pages-deploy-action@v4.4.0
-      with:
-        token: ${{secrets.SECRET_TO_PUSH_TO_AWI_GITHUB_IO}}
-        # This is the branch you wish to deploy to, for example gh-pages or docs.
-        branch: main
-        # The folder in your repository that you want to deploy. If your build script compiles into a directory named build you would put it here. Folder paths cannot have a leading / or ./. If you wish to deploy the root directory you can place a . here.
-        folder: build
-        repository-name: AlabamaWaterInstitute/alabamawaterinstitute.github.io
-        tag: ${{env.GitVersion_SemVer}}
+on:
+  workflow_run:
+    workflows: ["awi-website-ci"]
+    branches:
+        - main
+    types:
+        - completed
+  workflow_call:
+  
+jobs:
+  
+  deploy:
+    runs-on: ubuntu-latest
+    
+    name: Deploy to GitHub Pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+         fetch-depth: 0
+      - name: Download a Build Artifact Version
+        uses: dawidd6/action-download-artifact@v2.26.1
+        with:
+          workflow: ci_pipeline.yml
+          workflow_conclusion: success
+          branch: main
+          name: version
+          path: ./
+      - name: Read file and set variable
+        run: |
+          # Read file and set its value to a variable
+          FILE_CONTENT=$(cat ./version.txt)
+
+          # Set variable as an environment variable
+          echo "VERSION=$FILE_CONTENT" >> $GITHUB_ENV
+
+      - name: Display variable value
+        run: |
+          # Display value of variable
+          echo "My variable value is $VERSION"   
+      # https://github.com/marketplace/actions/download-workflow-artifact
+      - name: Download a Build Artifact
+        uses: dawidd6/action-download-artifact@v2.26.1
+        with:
+          workflow: ci_pipeline.yml
+          workflow_conclusion: success
+          branch: main
+          name: build
+          path: ./build/
+      
+      
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        with:
+          token: ${{secrets.SECRET_TO_PUSH_TO_AWI_GITHUB_IO}}
+          branch: main
+          folder: build
+          repository-name: AlabamaWaterInstitute/alabamawaterinstitute.github.io
+          tag: $VERSION
+          

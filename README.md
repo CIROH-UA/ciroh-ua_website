@@ -4,6 +4,7 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ## How to Get Started?
 
+Steps:
 1. Clone the repo.
 2. Run installation steps from below. 
 3. Create new branch for new work in this repo.

@@ -2,7 +2,7 @@
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-### How to Get Started?
+## How to Get Started?
 
 1. Clone the repo.
 2. Run installation steps from below. 
@@ -10,7 +10,6 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 4. Update and implement your changes.
 5. Push your changes to a branch in this repo.
 6. Github actions CI workflow will get triggered automatically.
-7. Validate changes on arpita0911patel/arpita0911patel.github.io
 
 ### Installation
 

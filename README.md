@@ -4,7 +4,7 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ## How to Get Started?
 
-https://alabamawaterinstitute.github.io/
+Go to "https://alabamawaterinstitute.github.io/" and navigate to your University page.
 
 Steps:
 1. Clone the repo.

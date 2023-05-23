@@ -4,6 +4,8 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ## How to Get Started?
 
+https://alabamawaterinstitute.github.io/
+
 Steps:
 1. Clone the repo.
 2. Run installation steps from below. 
@@ -49,35 +51,6 @@ $ npm run build
 ```
 
 above command will create **build** directory in your project folder. We can now deploy the content of that directory to the web server. 
-
-
-### How do you test build folder locally?
-
-[Reference Article](https://medium.com/swlh/need-a-local-static-server-here-are-several-options-bbbe77e59a11)
-
-we need to run **live-server** inside **build** directory, which let you see how actual published version will look like. 
-
-```
-cd into build directory ....
-$ npx live-server
-```
-
-This should open localhost:8080 with your published site.
-
-
--------
-using lite-server
-
-```
-npx lite-server
-```
-
--------
-using http-server
-
-```
-npx http-server
-```
 
 ### Cheatsheet
 

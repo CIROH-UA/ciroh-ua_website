@@ -4,7 +4,9 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ### Workflow Swimlanes
 
+<!---
 ![Workflow](https://static.swimlanes.io/c4b9a06048747d15188a73db0c296085.png)
+--->
 
 ### How to Get Started?
 

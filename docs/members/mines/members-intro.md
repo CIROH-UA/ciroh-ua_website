@@ -2,9 +2,11 @@
 sidebar_position: 1
 ---
 
-#  Colorado School of Mines (Andy Wood)
+#  Colorado School of Mines
 
 :::info
-<a href="https://mines.edu">CIROH at  Colorado School of Mines</a>
+<a href="https://mines.edu">Colorado School of Mines</a>
+
+Author: Andy Wood
 :::
 

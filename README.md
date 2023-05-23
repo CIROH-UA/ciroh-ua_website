@@ -18,7 +18,10 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ### Installation
 
-steps in a summary
+1. Download and Install node js LTS version from https://nodejs.org/en if not already installed.
+
+2. How to build and run this project locally.
+
 ``` 
 npm install
 npm run build

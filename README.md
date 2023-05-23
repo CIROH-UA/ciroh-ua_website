@@ -11,8 +11,6 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 5. Push your changes to a branch in this repo.
 6. Github actions CI workflow will get triggered automatically.
 
-
-
 ### Installation
 
 1. Download and Install node js LTS version from https://nodejs.org/en if not already installed.

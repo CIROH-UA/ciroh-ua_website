@@ -4,8 +4,8 @@
 name: awi-website-ci
 
 on:
-  push:
-    branches: ["main", "issue-*"]
+  #push:
+    #branches: ["main", "issue-*"]
   #pull_request:
   #  branches: ["main", "issue-*"]
   workflow_call:

@@ -36,8 +36,8 @@ jobs:
     - run: npm version minor -m "v%s"
     - run: VERSION=$(node -p "require('./package.json').version")
     - run: git tag ${VERSION}
-    - run: git push origin "https://$GITHUB_ACTOR:${{ secrets.SECRET_TO_PUSH_TO_AWI_GITHUB_IO }}@github.com/$GITHUB_REPOSITORY.git" --follow-tags
-    - run: git push origin "https://$GITHUB_ACTOR:${{ secrets.SECRET_TO_PUSH_TO_AWI_GITHUB_IO }}@github.com/$GITHUB_REPOSITORY.git" --tags
+    - run: git push "https://$GITHUB_ACTOR:${{ secrets.SECRET_TO_PUSH_TO_AWI_GITHUB_IO }}@github.com/$GITHUB_REPOSITORY.git" --follow-tags
+    - run: git push "https://$GITHUB_ACTOR:${{ secrets.SECRET_TO_PUSH_TO_AWI_GITHUB_IO }}@github.com/$GITHUB_REPOSITORY.git" --tags
     - name: setup GitVersion
       uses: gittools/actions/gitversion/setup@v0.9.13
       with:

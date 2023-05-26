@@ -68,6 +68,3 @@ jobs:
           release_name: Release v${{steps.version.outputs.VERSION}}
           draft: false
           prerelease: false
-
-    - name: Get release tag
-      run: echo "Release tag:${{ steps.create_release.outputs.tag }}"

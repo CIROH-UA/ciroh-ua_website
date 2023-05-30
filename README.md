@@ -6,8 +6,9 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 Go to "https://ciroh-ua.github.io/".
 
-Click on Edit page for adding new content.
-Create a Pull Request.
+- Click on Edit page for adding new content.
+- Create a Pull Request.
+
 =========================================
 ### Installation
 

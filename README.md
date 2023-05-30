@@ -6,14 +6,9 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 Go to "https://ciroh-ua.github.io/".
 
-Steps:
-1. Clone the repo.
-2. Run installation steps from below. 
-3. Create new branch for new work in this repo.
-4. Update and implement your changes.
-5. Push your changes to a branch in this repo.
-6. Github actions CI workflow will get triggered automatically.
-
+Click on Edit page for adding new content.
+Create a Pull Request.
+=========================================
 ### Installation
 
 1. Download and Install node js LTS version from https://nodejs.org/en if not already installed.

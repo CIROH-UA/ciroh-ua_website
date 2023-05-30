@@ -62,7 +62,7 @@ jobs:
       uses: actions/create-release@v1
       id: create_release
       env:
-          GITHUB_TOKEN: ${{ secrets.SECRET_TO_PUSH_TO_AWI_GITHUB_IO }}
+          GITHUB_TOKEN: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
       with:
           tag_name: v${{steps.version.outputs.VERSION}}
           release_name: Release v${{steps.version.outputs.VERSION}}

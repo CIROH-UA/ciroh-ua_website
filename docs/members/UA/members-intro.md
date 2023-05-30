@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # The University of Alabama
 
-- NextGen for Begineers 
+- [NextGen for Beginners](https://github.com/CIROH-UA/Conferences/tree/main/CIROHdevCon23)
 
 
 :::info

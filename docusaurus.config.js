@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Alabama Water Institute', // Usually your GitHub org/user name.
-  projectName: 'AlabamaWaterInstitute', // Usually your repo name.
+  organizationName: 'CIROH-UA', // Usually your GitHub org/user name.
+  projectName: 'CIROH-UA', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -36,7 +36,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-           editUrl:'https://github.com/AlabamaWaterInstitute/alabamawaterinstitute_website/edit/main/',
+           editUrl:'https://github.com/CIROH-UA/ciroh-ua_website/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -73,7 +73,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/AlabamaWaterInstitute',
+            href: 'https://github.com/CIROH-UA',
             label: 'GitHub',
             position: 'right',
           },
@@ -109,7 +109,7 @@ const config = {
             items: [              
               {
                 label: 'GitHub',
-                href: 'https://github.com/AlabamaWaterInstitute',
+                href: 'https://github.com/CIROH-UA',
               }
             ],
           },

@@ -9,6 +9,7 @@ Go to "https://ciroh-ua.github.io/".
 
 - Click on Edit page for adding new content.
 - Create a Pull Request.
+- Changes will be reviewed and Merged by admin.
 
 =========================================
 

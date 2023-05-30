@@ -11,6 +11,8 @@ Go to "https://ciroh-ua.github.io/".
 - Create a Pull Request.
 - Changes will be reviewed and Merged by admin.
 
+Support Email: ciroh-it-admin@ua.edu
+
 =========================================
 
 ### Installation

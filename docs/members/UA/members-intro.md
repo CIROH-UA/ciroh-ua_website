@@ -11,12 +11,14 @@ sidebar_position: 1
 
 
 # Focus Areas of Research Computing Infrastructure Team at CIROH-UA:
+![Infrastructure|x1](../../../build/img/infra.png)
 
 ## 1. Infrastructure
 - Jupyterhub cluster on GCP via 2i2c.org. More details: https://ciroh-ua.github.io/docs/services/2i2c-intro
 - AWS services available using awiciroh account: [Infrastructure Request Form](https://github.com/CIROH-UA/CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=aws_infrastructure_request.md&title=) - This template is used to request the resources on AWI/CIROH - AWS Infrastructure.
 - Aiming for multicloud and hybrid infrastructure for CIROH that consist of on-prem servers and public cloud services available via Google, AWS and Azure.
 - workshops and training
+
 
 ## 2. DevOps
 
@@ -28,6 +30,8 @@ sidebar_position: 1
     - [AWI-Github](https://github.com/AlabamaWaterInstitute)
     - [CIROH-Enterprise-Github](https://github.com/CIROH-UA/)
 - Workshops and training
+
+![Team](../../../build/img/devops-1.png)
 
 ## 3. NextGen
 
@@ -42,3 +46,5 @@ sidebar_position: 1
 - Email us at : 'ciroh-it-admin@ua.edu'
 - Slack channel: ciroh-ua-it-admin
 - Team members: James Halgren, Arpita Patel, Benjamin Lee, Sepehr Karimiziarani, Shahab Alam, Lynker Contractors - Zach Wills, Nels Frazier, Jordan Laser
+
+![Team](../../../build/img/team.jpeg)

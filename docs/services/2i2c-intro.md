@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# CIROH 2i2c Portal
+# CIROH-UA 2i2c Portal
 
-## CIROH's 2i2c JupyterHub details
+## CIROH-UA's 2i2c JupyterHub details
 
 :::info
 <a href="https://github.com/2i2c-org/awi-ciroh-image">Github URL for AWI-CIROH 2i2c Hub Image</a>

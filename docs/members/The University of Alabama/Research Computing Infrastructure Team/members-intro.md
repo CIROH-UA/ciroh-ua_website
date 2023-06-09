@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# The University of Alabama
+# Scope and responsibilities
 
 
 :::info

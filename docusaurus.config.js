@@ -66,7 +66,13 @@ const config = {
             type: 'doc',
             docId: 'members/members-intro',
             position: 'left',
-            label: 'Members and Partners',
+            label: 'Members',
+          },
+          {
+            type: 'doc',
+            docId: 'partners/partners-intro',
+            position: 'left',
+            label: 'Partners',
           },
           {
             href: '/about',

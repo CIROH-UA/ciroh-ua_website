@@ -58,25 +58,30 @@ const config = {
         items: [
           {
             type: 'doc',
+            docId: 'membersandpartners/membersandpartners-intro',
+            position: 'left',
+            label: 'Members and Partners',
+          },
+          {
+            type: 'doc',
+            docId: 'products/products-intro',
+            position: 'left',
+            label: 'Products',
+          },
+          {
+            type: 'doc',
             docId: 'services/2i2c-intro',
             position: 'left',
-            label: 'Docs',
-          },
-          {
-            type: 'doc',
-            docId: 'members/members-intro',
-            position: 'left',
-            label: 'Members',
-          },
-          {
-            type: 'doc',
-            docId: 'partners/partners-intro',
-            position: 'left',
-            label: 'Partners',
-          },
+            label: 'Services',
+          }, 
           {
             href: '/about',
-            label: 'About',
+            label: 'About us',
+            position: 'right',
+          },
+          {
+            href: '/contact',
+            label: 'Contact us',
             position: 'right',
           },
           {

@@ -14,13 +14,14 @@ Provides capabilities to run the next generation National Water Model on your lo
 
 - Using Github Actions for Continous Integration and Continous Deployment (CI/CD)
 
+- Github URL: [CIROH-UA/CloudInfra](https://github.com/CIROH-UA/CloudInfra)
+
 - Dockerhub URL: https://hub.docker.com/u/awiciroh
+
 
 ## Slide's from DevCon1-2023
 
 - [NextGen for Beginners](https://github.com/CIROH-UA/Conferences/tree/main/CIROHdevCon23)
-
-- NOTE: Updated Github URL: [CIROH-UA/CloudInfra](https://github.com/CIROH-UA/CloudInfra)
 
 ## Bug and Issue Tracker
 

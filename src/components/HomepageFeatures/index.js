@@ -42,11 +42,14 @@ export default function HomepageFeatures() {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          <div className='col col--6' style={{ textAlign: 'center' }}>
+          <div className='col col--4' style={{ textAlign: 'center' }}>
             <img alt="noaaImage" src="img/noaalogo.png" />
           </div>
-          <div className='col col--6' style={{ textAlign: 'center' }}>
-            <img alt="noaaImage" src="img/cirohlogo-trans.png" style={{ height: 275, width: 275, marginTop: 15 }} />
+          <div className='col col--4' style={{ textAlign: 'center' }}>
+            <img alt="awiImage" src="img/awi.png" style={{ marginTop: 125 }} />
+          </div>
+          <div className='col col--4' style={{ textAlign: 'center' }}>
+            <img alt="cirohImage" src="img/cirohlogo-trans.png" style={{ height: 275, width: 275, marginTop: 15 }} />
           </div>
 
         </div>

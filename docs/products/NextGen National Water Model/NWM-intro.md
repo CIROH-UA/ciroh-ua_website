@@ -10,7 +10,7 @@ Provides capabilities to run the next generation National Water Model on your lo
 
 ## Features
 
-- Using docker containerized application for NextGen
+- Containerization - Using docker containerized application for NextGen
 
 - Using Github Actions for Continous Integration and Continous Deployment (CI/CD)
 

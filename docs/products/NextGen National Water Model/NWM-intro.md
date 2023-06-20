@@ -8,6 +8,13 @@ NextGen Framework National Water Model Community Release
 
 Provides capabilities to run the next generation National Water Model on your local machine for small set of input data.
 
+We are doing a case study : NWM run for Sipsey Fork,Black Warrior river
+
+We don’t want to run all of CONUS
+We want to run NextGen locally
+We want to have control over inputs / config.
+How can we do it? Answer: NextGen-In-A-Box
+
 ## Features
 
 - Containerization - Using docker containerized application for NextGen
@@ -18,8 +25,11 @@ Provides capabilities to run the next generation National Water Model on your lo
 
 - Dockerhub URL: https://hub.docker.com/u/awiciroh
 
+## Slide's from Summer Institute - June 2023
 
-## Slide's from DevCon1-2023
+- [NextGen for Beginners](https://github.com/CIROH-UA/Conferences/tree/main/SummerInstitute2023)
+
+## Slide's from CIROHDevCon1 - May 2023
 
 - [NextGen for Beginners](https://github.com/CIROH-UA/Conferences/tree/main/CIROHdevCon23)
 

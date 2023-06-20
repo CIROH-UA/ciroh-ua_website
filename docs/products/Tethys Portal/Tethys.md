@@ -24,5 +24,24 @@ The developed NWM Research Apps Portal will be hosted at a publicly-facing web d
 
 The current development version of the NWM Research Apps Portal is temporarily accessible here: http://k8s-default-ciroh-5df48cf891-26887781.us-east-1.elb.amazonaws.com/
 
+## Code
+
+The source code for the NWM Research Apps Portal can be found on GitHub:
+
+* https://github.com/AlabamaWaterInstitute/tethysportal-ciroh
+
+## Bugs and Issues
+
+Please report bugs and issues on the GitHub Issues page:
+
+* https://github.com/AlabamaWaterInstitute/tethysportal-ciroh/issues
+
+## Team
+
+* Brigham Young University - Roja Najafi, Iman Maghami, Dan Ames, Jim Nelson
+* University of Iowa - Ibrahim Demir
+* Aquaveo Contractors - Gio Romero, Michael Souffront, Nathan Swain
+
+
  
 

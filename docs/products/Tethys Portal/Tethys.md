@@ -8,7 +8,7 @@ Comprised of a large technologically and topically diverse group of scientists, 
 
 The resulting system will serve as a pathway for advances in research tools to inform the development of future applications within the National Water Center – e.g. within the Water Prediction Operations Division (WPOD) and the Geo Intelligence Division (GID). This project will be a cross-cutting activity, exposing NWM research results across disciplines and institutions. The NWM Research Apps Portal will be a highly visible resource that NOAA and CIROH leadership can use to showcase the work accomplished by the collaboration and within the cooperative institute. It will also serve as a communication tool to allow the broader hydrologic research community to connect with the NWM research activities.
 
-# Technologies
+## Technologies
 The proposed catalog is being built using Django CMS, Tethys Platform, HydroShare, HydroLearn, Amazon AWS cloud computing infrastructure, Google BigQuery data services, and an agile, continuous integration development and deployment approach. Use the following links to learn more about the technologies powering the NWM Research Apps Portal:
 
 * [Django CMS](https://www.django-cms.org/) - A Content Management System built on the most popular open-source Python-based web framework: Django.
@@ -18,7 +18,7 @@ The proposed catalog is being built using Django CMS, Tethys Platform, HydroShar
 * [Amazon AWS](https://aws.amazon.com/) - The NWM Research Apps Portal is hosted on AWS cloud resources.
 * [Google BigQuery](https://cloud.google.com/bigquery) - BigQuery is a serverless and cost-effective enterprise data warehouse that works across clouds and scales with your data. Use built-in ML/AI and BI for insights at scale.
 
-# Access
+## Access
 
 The developed NWM Research Apps Portal will be hosted at a publicly-facing web domain (URL to be determined) and will serve as a platform that links and organizes together a curated selection of publicly-facing NWM visualization and analysis tools developed by CIROH and NOAA.
 

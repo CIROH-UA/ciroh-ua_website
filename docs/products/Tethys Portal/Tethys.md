@@ -36,7 +36,7 @@ The source code for the NWM Research Apps Portal can be found on GitHub:
 
 Please report bugs and issues on the GitHub Issues page:
 
-* 
+* [https://github.com/CIROH-UA/tethysportal-ciroh/issues](https://github.com/CIROH-UA/tethysportal-ciroh/issues)
 
 ## Team
 

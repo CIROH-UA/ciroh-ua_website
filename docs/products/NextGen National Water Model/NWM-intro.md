@@ -1,44 +1,39 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# NextGen In A Box
+# What is National Water Model (NWM)?
+The National Water Model (NWM) is a hydrologic model developed by **the National Oceanic and Atmospheric Administration (NOAA)** to simulate and forecast water conditions across the United States.
 
-NextGen Framework National Water Model Community Release
+- This water prediction model creates forecast guidance for over 3.4 million miles of rivers and streams across the United States and its territories
+- The NWM supercomputer is fed nonstop data covering everything from current stream-flow to the snowpack in mountain ranges above.
+- The job of the supercomputer is to take all of that data and produce stream flow forecasts for every stream and river in the continental United States and its territories. There are three different flavors of forecasts: short, medium, and long range.
+- Just like how your local weather station can tell you what the weather will be like tomorrow, in 3 days, or a week from now; the NWM can tell you what the stream flow will be like in 18 hours, 10 days, or even up to 30 days from now.
 
-Provides capabilities to run the next generation National Water Model on your local machine for small set of input data.
+- NOAA Central Library Seminar Recording from OWP (Next-Generation Water Resources Modeling): https://youtu.be/DLIi3PruYxo
 
-We are doing a case study : NWM run for Sipsey Fork,Black Warrior river
+## Features - NWM2.1
 
-We don’t want to run all of CONUS
-We want to run NextGen locally
-We want to have control over inputs / config.
-How can we do it? Answer: NextGen-In-A-Box
+The NWM currently runs in four configurations:
+- Analysis and assimilation provides a snapshotof current hydrologic conditions
+- Short-Range produces hourly forecasts of streamflow and hydrologic states out to 15 hours
+- Medium-Range produces 3-hourly forecasts out to 10 days
+- Long-Range generates 30-day ensemble forecasts.
 
-## Features
+Source : https://water.noaa.gov/about/nwm
 
-- Containerization - Using docker containerized application for NextGen
+# SO...WHAT IS NEXTGEN?
 
-- Using Github Actions for Continous Integration and Continous Deployment (CI/CD)
+- Model agnostic - NextGen is a framework designed for building and integrating models rather than a model itself.
+- Data-centric standards - The framework's focus is on a data-centric process that abstracts the addition of processes and data behind a standard.
+- NextGen design allows for greater flexibility and standardizationin model creation and integration.
+
+- Github URL: [NOAA-OWP/ngen](https://github.com/NOAA-OWP/ngen)
+
+# What is NextGen In A Box?
+
+- NextGen Framework National Water Model Community Release; that can be run for small set of input data rather than running conus wide.
 
 - Github URL: [CIROH-UA/CloudInfra](https://github.com/CIROH-UA/CloudInfra)
 
-- Dockerhub URL: https://hub.docker.com/u/awiciroh
-
-## Slide's from Summer Institute - June 2023
-
-- [NextGen for Beginners](https://github.com/CIROH-UA/Conferences/tree/main/SummerInstitute2023)
-
-## Slide's from CIROHDevCon1 - May 2023
-
-- [NextGen for Beginners](https://github.com/CIROH-UA/Conferences/tree/main/CIROHdevCon23)
-
-## Bug and Issue Tracker
-
-- Issue Tracker: [Issue Tracker](https://github.com/CIROH-UA/CloudInfra/issues/)
-
-- Create new Issue : [Bug Report](https://github.com/CIROH-UA/CloudInfra/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=)
-
-## Team Members: 
-- The University of Alabama Team - James Halgren, Arpita Patel, Benjamin Lee, Sepehr Karimiziarani, Shahab Alam
-- Lynker Contractors - Zach Wills, Nels Frazier, Jordan Laser
+- For more information, refer to the NextGen In A Box tab below.

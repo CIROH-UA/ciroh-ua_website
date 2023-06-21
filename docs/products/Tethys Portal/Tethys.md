@@ -30,13 +30,13 @@ The current development version of the NWM Research Apps Portal is temporarily a
 
 The source code for the NWM Research Apps Portal can be found on GitHub:
 
-* https://github.com/AlabamaWaterInstitute/tethysportal-ciroh
+* [https://github.com/AlabamaWaterInstitute/tethysportal-ciroh](https://github.com/CIROH-UA/tethysportal-ciroh)
 
 ## Bugs and Issues
 
 Please report bugs and issues on the GitHub Issues page:
 
-* https://github.com/AlabamaWaterInstitute/tethysportal-ciroh/issues
+* 
 
 ## Team
 

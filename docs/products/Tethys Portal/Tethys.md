@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Comprised of a large technologically and topically diverse group of scientists, CIROH and NOAA NWM researchers require a means to organize, catalog, coordinate, and share research data products, tools, visualizations, and interactive software applications in an accessible, consistent, and intuitive manner. This project aims to address this need by building and seeding a web-based catalog of interactive web applications, notebooks, software tools, and learning modules that demonstrate and provide access to NWM modeling advances, datasets, visualizations, and information synthesis innovations.
 
-![CIROH Portal](/docs/assets/images/products/ciroh-tethys-apps-library.png)
+![CIROH Portal](/img/ciroh-tethys-apps-library.png)
 
 The resulting system will serve as a pathway for advances in research tools to inform the development of future applications within the National Water Center – e.g. within the Water Prediction Operations Division (WPOD) and the Geo Intelligence Division (GID). This project will be a cross-cutting activity, exposing NWM research results across disciplines and institutions. The NWM Research Apps Portal will be a highly visible resource that NOAA and CIROH leadership can use to showcase the work accomplished by the collaboration and within the cooperative institute. It will also serve as a communication tool to allow the broader hydrologic research community to connect with the NWM research activities.
 
@@ -30,7 +30,7 @@ The current development version of the NWM Research Apps Portal is temporarily a
 
 The source code for the NWM Research Apps Portal can be found on GitHub:
 
-* [https://github.com/AlabamaWaterInstitute/tethysportal-ciroh](https://github.com/CIROH-UA/tethysportal-ciroh)
+* [https://github.com/CIROH-UA/tethysportal-ciroh](https://github.com/CIROH-UA/tethysportal-ciroh)
 
 ## Bugs and Issues
 

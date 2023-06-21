@@ -33,7 +33,7 @@ Docker images are available at:
 
 - Dockerhub URL: https://hub.docker.com/u/awiciroh
 
-## More Information:
+## More Information
 
 For more information, please refer the latest slide below that is used for training and workshop:
 

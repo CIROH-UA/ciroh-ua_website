@@ -58,15 +58,9 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'membersandpartners/membersandpartners-intro',
-            position: 'left',
-            label: 'Members and Partners',
-          },
-          {
-            type: 'doc',
             docId: 'products/products-intro',
             position: 'left',
-            label: 'Products',
+            label: 'Documentation',
           },
           {
             type: 'doc',

@@ -23,3 +23,9 @@ CIROH is a leading translator of **world-class water science research to operati
 - Leveraging process advancements and modeling improvements to create tools and applications to deliver actionable water resources intelligence to engage a broad array of stakeholders in management, operations, and emergency response.
 - Improving strategies, methods, and tools for the delivery and efficacy of communication and decision support services through applied social science research, community resilience planning, stakeholder engagement; and risk perception and communication research.
 - Providing education, outreach, and engagement opportunities in NOAA-related research on applications of hydrological processes, communication, and decision-making to support student participation in areas that will cultivate a desire and capabilities to join the future workforce in NOAA.
+
+## Consortium Members and Partners Overview
+
+The Cooperative Institute for Research to Operations in Hydrology is a consortium of 14 members and 14 partners. The CIROH Consortium includes an exceptional array of hydrologic science, computer science, data science, and decision science researchers.
+
+![Members|x1](/img/collab_logo.png)

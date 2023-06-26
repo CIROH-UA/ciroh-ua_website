@@ -50,7 +50,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'CIROH',
+        title: 'CIROH Docs',
         logo: {
           alt: 'My Site Logo',
           src: 'img/ciroh_logo.png',          

@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # NextGen In A Box
 
-NextGen Framework National Water Model Community Release
+Next National Water Resources Modeling Framework Community Release
 
 - Provides capabilities to run the next generation National Water Model on your local machine for small set of input data.
 

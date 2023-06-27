@@ -4,9 +4,9 @@ sidebar_position: 2
 
 # NextGen In A Box
 
-Next National Water Resources Modeling Framework Community Release
+NextGen National Water Resources Modeling Framework Community Release
 
-- Provides capabilities to run the next generation National Water Resources Modeling framework on your local machine for small set of input data.
+- Provides capabilities to run the Next Generation National Water Resources Modeling framework on your local machine for small set of input data.
 
 ## We are doing a case study : 
 ### NWM run for Sipsey Fork,Black Warrior river

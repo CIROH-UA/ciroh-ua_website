@@ -32,7 +32,7 @@ Source : https://water.noaa.gov/about/nwm
 
 # What is NextGen In A Box?
 
-- NextGen Framework National Water Model Community Release; that can be run for small set of input data rather than running conus wide.
+- NextGen National Water Resources Modeling Framework Community Release; that can be run for small set of input data rather than running conus wide.
 
 - Github URL: [CIROH-UA/CloudInfra](https://github.com/CIROH-UA/CloudInfra)
 

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Next National Water Resources Modeling Framework Community Release
 
-- Provides capabilities to run the next generation National Water Model on your local machine for small set of input data.
+- Provides capabilities to run the next generation National Water Resources Modeling framework on your local machine for small set of input data.
 
 ## We are doing a case study : 
 ### NWM run for Sipsey Fork,Black Warrior river

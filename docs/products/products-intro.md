@@ -11,3 +11,6 @@ CIROH Open Source Projects:
 - Advancing Snow Model
 - Snow Evaluation
 - RTI Evaluation
+- Tethys Portal
+- Water Node
+- HydroServer

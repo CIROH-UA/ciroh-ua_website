@@ -67,6 +67,11 @@ const config = {
             docId: 'services/2i2c-intro',
             position: 'left',
             label: 'Services',
+          },
+          {
+            href: 'https://ciroh.org',
+            label: 'ciroh.org',
+            position: 'left',
           }, 
           {
             href: '/about',

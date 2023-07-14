@@ -8,8 +8,9 @@ CIROH scientists and engineers work to improve the understanding of hydrologic p
 
 CIROH Open Source Projects:
 - NextGen Framework
+    - NextGen In A Box
 - Advancing Snow Model
-- Snow Evaluation
+- Streamflow Evaluation Tool
 - RTI Evaluation
 - Tethys Portal
 - Water Node

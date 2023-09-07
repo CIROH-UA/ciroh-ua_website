@@ -8,6 +8,8 @@ NextGen National Water Resources Modeling Framework Community Release
 
 - Provides capabilities to run the Next Generation National Water Resources Modeling framework on your local machine for small set of input data.
 
+![NGIAB](/img/ngiab.jpg)
+
 ## We are doing a case study : 
 ### NWM run for Sipsey Fork,Black Warrior river
 

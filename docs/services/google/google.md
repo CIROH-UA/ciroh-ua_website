@@ -4,8 +4,25 @@ sidebar_position: 1
 
 # CIROH-UA 2i2c Portal
 
+CIROH-UA has teamed with 2i2c Cloud service to design, develop and operate JupyterHub in the cloud for hydrologic researchers. It builds and supports open source infrastructure that serves research and development.
+
+## Benefits of using 2i2c Cloud Services:
+
+- Provides managed JupyterHub as a service
+- Powerful, flexible, and dynamic. Open source tools are the best for accelerating research.
+- 2i2c uses Google Cloud services for JupyterHub deployment.
+
 ## CIROH-UA's 2i2c JupyterHub details
 
+:::info
+<a href="https://2i2c.org/">2i2c JupyterHub</a>
+:::
+:::info
+<a href="https://docs.2i2c.org/">2i2c Docs</a>
+:::
+:::info
+<a href="https://infrastructure.2i2c.org/">2i2c Infrastructure Docs</a>
+:::
 :::info
 <a href="https://github.com/2i2c-org/awi-ciroh-image">Github URL for AWI-CIROH 2i2c Hub Image</a>
 :::

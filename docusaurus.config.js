@@ -64,9 +64,15 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'services/2i2c-intro',
+            docId: 'services/google/google',
             position: 'left',
-            label: 'Services',
+            label: 'Google Services',
+          },
+          {
+            type: 'doc',
+            docId: 'services/aws/aws',
+            position: 'left',
+            label: 'AWS Services',
           },
           {
             href: 'https://ciroh.org',

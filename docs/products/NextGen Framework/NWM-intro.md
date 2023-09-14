@@ -34,6 +34,6 @@ Source : https://water.noaa.gov/about/nwm
 
 - NextGen National Water Resources Modeling Framework Community Release; that can be run for small set of input data rather than running conus wide.
 
-- Github URL: [CIROH-UA/CloudInfra](https://github.com/CIROH-UA/CloudInfra)
+- Github URL: [CIROH-UA/CloudInfra](https://github.com/CIROH-UA/NGIAB-CloudInfra)
 
 - For more information, refer to the NextGen In A Box tab below.

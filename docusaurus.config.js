@@ -66,7 +66,7 @@ const config = {
             type: 'doc',
             docId: 'services/google/google',
             position: 'left',
-            label: 'Google Services',
+            label: '2i2c JupyterHub (GCP)',
           },
           {
             type: 'doc',
@@ -74,6 +74,12 @@ const config = {
             position: 'left',
             label: 'AWS Services',
           },
+          {
+            type: 'doc',
+            docId: 'education/data-science/datascience',
+            position: 'left',
+            label: 'Education',
+          }, 
           {
             href: 'https://ciroh.org',
             label: 'ciroh.org',

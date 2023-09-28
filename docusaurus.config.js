@@ -60,26 +60,20 @@ const config = {
             type: 'doc',
             docId: 'products/products-intro',
             position: 'left',
-            label: 'Documentation',
-          },
+            label: 'Products',
+          }, 
           {
             type: 'doc',
-            docId: 'services/google/google',
+            docId: 'services/services',
             position: 'left',
-            label: '2i2c JupyterHub (GCP)',
+            label: 'Cloud Services',
           },
           {
             type: 'doc',
-            docId: 'services/aws/aws',
-            position: 'left',
-            label: 'AWS Services',
-          },
-          {
-            type: 'doc',
-            docId: 'education/data-science/datascience',
+            docId: 'education/education',
             position: 'left',
             label: 'Education',
-          }, 
+          },
           {
             href: 'https://ciroh.org',
             label: 'ciroh.org',
@@ -91,8 +85,8 @@ const config = {
             position: 'right',
           },
           {
-            href: '/contact',
-            label: 'Contact us',
+            href: '/Contribute',
+            label: 'How to contribute',
             position: 'right',
           },
           {

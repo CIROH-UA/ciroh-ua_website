@@ -12,6 +12,20 @@ The National Water Model (NWM) is a hydrologic model developed by **the National
 
 - NOAA Central Library Seminar Recording from OWP (Next-Generation Water Resources Modeling): https://youtu.be/DLIi3PruYxo
 
+## Features - NWM3.0
+
+- First time provision of NWM Total Water Level guidance for coastal areas of the Continental United States (CONUS), Hawaii and Puerto Rico / U.S. Virgin Island domains.  This is accomplished via use of the Semi-implicit Cross-scale Hydroscience Integrated System Model (SCHISM) integrated within the NWM, to couple NWM freshwater discharge estimates with oceanic forcing from the Surge and Tide Operational Forecast System (STOFS) and Probabilistic Tropical Storm Surge (P-SURGE) model.  Output will be provided in both NetCDF as well as Standard Hydrometeorological Exchange Format (SHEF) format.  Each NetCDF file contains full TWL domain output for one output time step, while each SHEF file contains timeseries station output for the full length of each simulation.  
+
+- NWM Domain expansion to south-central Alaska (Cook Inlet, Copper River Basin, and Prince William Sound regions), enabling provision of NWM operational hydrologic model forecast guidance to this region.  
+
+- Addition of the National Blend of Models (NBM) as a forcing source for NWM CONUS medium-range forecasts and Alaska short-range and medium-range forecasts. 
+
+- Use of Multi-Radar Multi-Sensor (MRMS) precipitation as forcing for the NWM Analysis and Assimilation configuration over the Puerto Rico / U.S. Virgin Island domain.  
+
+- Ingest of RFC-supplied reservoir outflow forecasts at 77 additional locations, bringing the total of such sites to 392.  
+
+- Enhancements to the treatment of reservoirs, land surface parameters and calibration/regionalization approach leading to improvements in model skill. 
+
 ## Features - NWM2.1
 
 The NWM currently runs in four configurations:
@@ -22,7 +36,7 @@ The NWM currently runs in four configurations:
 
 Source : https://water.noaa.gov/about/nwm
 
-# SO...WHAT IS NEXTGEN?
+# What is ngen?
 
 - Model agnostic - NextGen is a framework designed for building and integrating models rather than a model itself.
 - Data-centric standards - The framework's focus is on a data-centric process that abstracts the addition of processes and data behind a standard.
@@ -30,9 +44,11 @@ Source : https://water.noaa.gov/about/nwm
 
 - Github URL: [NOAA-OWP/ngen](https://github.com/NOAA-OWP/ngen)
 
-# What is NextGen In A Box?
+# What is NextGen In A Box (NGIAB)?
 
 - NextGen National Water Resources Modeling Framework Community Release; that can be run for small set of input data rather than running conus wide.
+
+- NGIAB is dependant on ngen repository and uses it internally.
 
 - Github URL: [CIROH-UA/CloudInfra](https://github.com/CIROH-UA/NGIAB-CloudInfra)
 

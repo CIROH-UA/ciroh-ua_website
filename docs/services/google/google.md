@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# CIROH-UA 2i2c Portal
+# CIROH-UA 2i2c JupyterHub (GCP)
 
-CIROH-UA has teamed with 2i2c Cloud service to design, develop and operate JupyterHub in the cloud for hydrologic researchers. It builds and supports open source infrastructure that serves research and development.
+CIROH-UA has teamed with 2i2c Cloud service to design, develop and operate JupyterHub in the google cloud for hydrologic researchers. It builds and supports open source infrastructure that serves research and development.
 
 ## Benefits of using 2i2c Cloud Services:
 

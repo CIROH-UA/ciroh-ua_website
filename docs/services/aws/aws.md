@@ -27,7 +27,7 @@ Using AWS for hydrological projects allows them to manage, stage, store, share, 
 :::note
 For the CIROH consortium and members, if your research project is applying and adapting the NextGen framework then reach out to us on how to get the access of the AWS research cloud, please submit a Github Template Request with your requirements and project details at:
 
-<a href="https://github.com/CIROH-UA/CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=aws_infrastructure_request.md&title=">AWS Infrastructure Request Form</a>
+<a href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=aws_infrastructure_request.md&title="> Cloud Infrastructure Request Form</a>
 
 Your request will be handled by DevOps staff at CIROH-UA and if permitted will be given access to the research cloud.
 :::

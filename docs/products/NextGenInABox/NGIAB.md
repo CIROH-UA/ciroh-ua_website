@@ -144,5 +144,5 @@ Please report bugs and issues on the Github Issues page:
 
 ## Team Members
 
-- **The University of Alabama Team** - [Dr. Steve Burian](https://eng.ua.edu/eng-directory/dr-steven-burian/), Dr. James Halgren, [Arpita Patel](https://dev.awi.ua.edu/about/staff/arpita-patel/), [Dr. Puri Bangalore](https://eng.ua.edu/eng-directory/dr-purushotham-bangalore/), [Dr. Jeff Carver](http://carver.cs.ua.edu/), Benjamin Lee, [Dr. Sepehr Karimiziarani](https://dev.awi.ua.edu/about/staff/sepehr-karimiziarani-ph-d/), [Dr. Shahab Alam](https://dev.awi.ua.edu/about/staff/md-shahabul-alam-ph-d/), Hari Jajula, Rohan Sunkarapalli
+- **The University of Alabama Team** - [Arpita Patel](https://dev.awi.ua.edu/about/staff/arpita-patel/), Dr. James Halgren, [Dr. Puri Bangalore](https://eng.ua.edu/eng-directory/dr-purushotham-bangalore/), [Dr. Jeff Carver](http://carver.cs.ua.edu/), Benjamin Lee, [Dr. Sepehr Karimiziarani](https://dev.awi.ua.edu/about/staff/sepehr-karimiziarani-ph-d/), [Dr. Shahab Alam](https://dev.awi.ua.edu/about/staff/md-shahabul-alam-ph-d/), Trupesh Patel, Hari Jajula, Rohan Sunkarapalli, Manjiri Gunaji, [Dr. Steve Burian](https://eng.ua.edu/eng-directory/dr-steven-burian/)
 - **Lynker Contractors** - Zach Wills, Nels Frazier, Jordan Laser, Mike Johnson

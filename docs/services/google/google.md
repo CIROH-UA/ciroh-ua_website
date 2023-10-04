@@ -14,20 +14,6 @@ CIROH-UA has teamed with 2i2c Cloud service to design, develop and operate Jupyt
 
 ## CIROH-UA's 2i2c JupyterHub details
 
-:::info
-<a href="https://2i2c.org/">2i2c JupyterHub</a>
-:::
-:::info
-<a href="https://docs.2i2c.org/">2i2c Docs</a>
-:::
-:::info
-<a href="https://infrastructure.2i2c.org/">2i2c Infrastructure Docs</a>
-:::
-:::info
-<a href="https://github.com/2i2c-org/awi-ciroh-image">Github URL for AWI-CIROH 2i2c Hub Image</a>
-:::
-
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -44,9 +30,22 @@ import TabItem from '@theme/TabItem';
   </TabItem>
 </Tabs>
 
+:::info
+<a href="https://2i2c.org/">2i2c JupyterHub</a>
+:::
+:::info
+<a href="https://docs.2i2c.org/">2i2c Docs</a>
+:::
+:::info
+<a href="https://infrastructure.2i2c.org/">2i2c Infrastructure Docs</a>
+:::
+:::info
+<a href="https://github.com/2i2c-org/awi-ciroh-image">Github URL for AWI-CIROH 2i2c Hub Image</a>
+:::
+
 
 ### How to access these environments?
 :::note
-To get the access of above environments, please email us at **support@ciroh.org** with your github User ID
+To get the access of above environments, please email us at **ciroh-it-admin@ciroh.org** with your github User ID
 :::
 

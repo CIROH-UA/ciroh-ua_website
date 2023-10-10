@@ -6,6 +6,8 @@ sidebar_position: 2
 
 NextGen framework-based simulations are now easy with NextGen In A Box!
 
+Github URL: https://github.com/CIROH-UA/NGIAB-CloudInfra/
+
 Containerized "NextGen In a Box" (NGIAB) is a community-accessible version of the NextGen National Water Resources Modeling Framework.
 
 The key accomplishment of this research effort is the development and dissemination of NextGen In a Box (NGIAB), a community-accessible port of the NextGen framework. In addition to enhancing research infrastructure, this project places a strong emphasis on fostering and promoting the integration of NextGen Framework within the broader research community.

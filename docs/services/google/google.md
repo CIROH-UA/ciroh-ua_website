@@ -46,6 +46,6 @@ import TabItem from '@theme/TabItem';
 
 ### How to access these environments?
 :::note
-To get the access of above environments, please email us at **ciroh-it-admin@ciroh.org** with your github User ID
+To get the access of above environments, please email us at **ciroh-it-admin@ua.edu** with your github User ID
 :::
 

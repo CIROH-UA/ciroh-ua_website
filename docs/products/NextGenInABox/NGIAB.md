@@ -1,9 +1,6 @@
 ---
 sidebar_position: 2
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 tags:
   - NGIAB
   - ngen

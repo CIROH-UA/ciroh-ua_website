@@ -5,7 +5,7 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ## How to Get Started?
 
-Go to "https://ciroh-ua.github.io/".
+Go to "https://ciroh-ua.github.io/" or "docs.ciroh.org" and click on Documentation.
 
 - Click on Edit page for adding new content.
 - Create a Pull Request.

@@ -1,5 +1,11 @@
 ---
 sidebar_position: 2
+
+tags:
+  - NGIAB
+  - ngen
+  - nextgen
+  - national water model
 ---
 
 # NextGen In A Box (NGIAB)
@@ -126,6 +132,10 @@ Docker images are available at:
 
 For more information, please refer the latest slide below that is used for training and workshop:
 
+### Poster from CIROH Science Meeting - October 2023
+
+- [NextGen In A Box - Oct 2023 - Poster](https://github.com/CIROH-UA/Conferences/tree/main/ScienceMeeting2023-Poster)
+
 ### Slide's from Summer Institute - June 2023
 
 - [NextGen In A Box - June 2023](https://github.com/CIROH-UA/Conferences/tree/main/SummerInstitute2023)
@@ -133,10 +143,6 @@ For more information, please refer the latest slide below that is used for train
 ### Slide's from CIROHDevCon1 - May 2023
 
 - [NextGen In A Box - May 2023](https://github.com/CIROH-UA/Conferences/tree/main/CIROHdevCon23)
-
-### Poster from CIROH Science Meeting - October 2023
-
-
 
 ## Bug and Issue Tracker
 

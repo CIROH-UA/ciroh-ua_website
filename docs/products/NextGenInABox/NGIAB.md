@@ -1,6 +1,9 @@
 ---
 sidebar_position: 2
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 tags:
   - NGIAB
   - ngen
@@ -12,7 +15,7 @@ tags:
 
 NextGen framework-based simulations are now easy with NextGen In A Box!
 
-Github URL: https://github.com/CIROH-UA/NGIAB-CloudInfra/
+Refer : [Github URL](https://github.com/CIROH-UA/NGIAB-CloudInfra/)
 
 Containerized "NextGen In a Box" (NGIAB) is a community-accessible version of the NextGen National Water Resources Modeling Framework.
 
@@ -26,88 +29,31 @@ It is a NextGen National Water Resources Modeling Framework Community Release
 
 ![NGIAB](/img/ngiab.jpg)
 
-## We are doing a case study : 
-### NWM run for Sipsey Fork,Black Warrior river
+## We are doing a case study:
+
+#### NWM run for Sipsey Fork,Black Warrior river
 
 - We don’t want to run all of CONUS
 - We want to run NextGen locally
 - We want to have control over inputs / config.
 - How can we do it? Answer: **NextGen In A Box**
 
-## How to run the NextGen In A Box for your sample input data?
+## How to Run the NGIAB for your sample input data?
 
-Follow the steps in README.md located at :
-https://github.com/CIROH-UA/NGIAB-CloudInfra/blob/main/README.md
+Follow the steps in [Run Guide](https://github.com/CIROH-UA/NGIAB-CloudInfra/blob/main/README.md)
+
 
 ## How NGIAB CI pipeline works?
 
 ![NGIAB](/img/ngiab-ci.jpg)
 
-## How NextGen In A Box is dependant on ngen and t-route?
+## How NGIAB is dependant on ngen and t-route?
 
 ![NGIAB](/img/ngiab-ngen-deps.jpg)
 
 # Contribute to CIROH-UA/NGIAB-CloudInfra
 
-### The summary steps to contribute to repo repository by forking it:
-
-1. Fork the Repository:
-
-- Visit the repository on GitHub.
-
-- Click the "Fork" button in the top-right corner to create a copy of the repository in your - GitHub account.
-
-2. Clone Your Fork:
-
-- Go to your forked repository on GitHub.
-
-- Click the "Code" button and copy the repository URL.
-
-- Use git clone to clone your fork to your local machine:
-
-```bash
-
-git clone <your-fork-url>
-
-```
-
-3. Create a New Branch:
-
-- Create a new branch for your changes using git checkout -b < branch-name>.
-
-4. Make Changes:
-
-- Open project files in your code editor and make the necessary changes.
-
-5. Commit Changes:
-
-- Use git add . to stage changes.
-
-- Commit your changes with git commit -m "Your commit message".
-
-6. Push Changes to Your Fork:
-
-- Push your local branch to your fork on GitHub with git push origin < branch-name>.
-
-7. Create a Pull Request (PR):
-
-- Go to your forked repository on GitHub.
-
-- Click "Compare & pull request" to create a PR.
-
-- Provide a title and description for your PR.
-
-- Click "Create pull request."
-
-8. Review and Collaborate:
-
-- Engage in discussions with maintainers and address feedback.
-
-- Once approved, the PR can be merged into the original repository.
-
-9. Sync Your Fork (Optional):
-
-- If changes have been made to the original repository, you can sync your fork by adding the original repository as a remote and pulling changes from it.
+Follow steps available in [Contribution Guide](https://github.com/CIROH-UA/NGIAB-CloudInfra/blob/main/contribute.md)
 
 ## Technologies
 
@@ -126,7 +72,7 @@ The source code for the NextGen In A Box can be found on Github:
 
 Docker images are available at:
 
-- Dockerhub URL: https://hub.docker.com/u/awiciroh
+- Dockerhub URL: [Dockerhub - NGIAB](https://hub.docker.com/u/awiciroh)
 
 ## More Information
 

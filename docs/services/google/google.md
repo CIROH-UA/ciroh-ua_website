@@ -12,7 +12,7 @@ CIROH-UA has teamed with 2i2c Cloud service to design, develop and operate Jupyt
 - Powerful, flexible, and dynamic. Open source tools are the best for accelerating research.
 - 2i2c uses Google Cloud services for JupyterHub deployment.
 
-## CIROH-UA's 2i2c JupyterHub details
+## CIROH-UA's 2i2c JupyterHub (Staging and Production) : How to access these environments?
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -30,6 +30,8 @@ import TabItem from '@theme/TabItem';
   </TabItem>
 </Tabs>
 
+## CIROH-UA's 2i2c JupyterHub details: 
+
 :::info
 <a href="https://2i2c.org/">2i2c JupyterHub</a>
 :::
@@ -43,8 +45,20 @@ import TabItem from '@theme/TabItem';
 <a href="https://github.com/2i2c-org/awi-ciroh-image">Github URL for AWI-CIROH 2i2c Hub Image</a>
 :::
 
+## CIROH Jupyterhub Integrated with Hydroshare.
 
-### How to access these environments?
+Now users can open and run the notebooks from hydroShare directly into the CIROH Jupyterhub environments. How?
+
+Please take a look at the steps below to try it on your end:
+
+1.	Verify that you have access to the CIROH Jupyterhub.
+2.	Visit Hydroshare -> “CIROH Production Jupyterhub” at : https://www.hydroshare.org/resource/2dd1ac86e8854d4fb9fe5fbafaec2b98/
+3.	Make sure the circled icon below for "CIROH Staging JupyterHub" in Hydroshare is green. (Click once to make it green if it's red.)
+![image](https://github.com/CIROH-UA/ciroh-ua_website/assets/54657/bd605688-c424-4de2-9d91-d459cf29daa6)
+
+
+
+### How to gain access to these environments?
 :::note
 To get the access of above environments, please email us at **ciroh-it-admin@ua.edu** with your github User ID
 :::

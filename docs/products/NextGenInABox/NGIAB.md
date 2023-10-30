@@ -31,6 +31,9 @@ Explore more: [GitHub Repository](https://github.com/CIROH-UA/NGIAB-CloudInfra/)
 - Gain control over inputs and configurations.
 - The solution is "NextGen In A Box."
 
+## How to Generate Your Own Input Data?
+Follow the steps in our [ngen datastream repository](https://github.com/CIROH-UA/ngen-datastream/tree/main)
+
 ## How to Run NGIAB with Your Sample Input Data?
 
 Follow the steps in our [Run Guide](https://github.com/CIROH-UA/NGIAB-CloudInfra/blob/main/README.md)

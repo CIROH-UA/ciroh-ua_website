@@ -63,15 +63,15 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "products/products-intro",
+            docId: "products/intro",
             position: "left",
             label: "Products",
           },
           {
             type: "doc",
-            docId: "services/services",
+            docId: "services/intro",
             position: "left",
-            label: "Cloud Services",
+            label: "Services",
           },
           {
             type: "doc",

@@ -72,8 +72,10 @@ The AWS retrospective resource is the primary publicly available source for the 
 
 Google hosts the most complete operational data archive of inputs and outputs from the National Water Model, with nearly every file since August 2018. The Google open data registry provides additional explanations [here](https://console.cloud.google.com/marketplace/product/noaa-public/national-water-model?project=explore-ai-387703).
 - Operational data can be browsed [here](https://console.cloud.google.com/storage/browser/national-water-model).
-Google also hosts a copy of the NWM v1.2 retrospective [here](https://console.cloud.google.com/storage/browser/national-water-model-reanalysis).
+- Google also hosts a copy of the NWM v1.2 retrospective [here](https://console.cloud.google.com/storage/browser/national-water-model-reanalysis).
+
 Coming soon: Big Query
+
 Efforts are underway to make some of the datasets from the NWM operational and retrospective simulations available on BigQuery for ultra-high-bandwidth access. Stay tuned...
 
 

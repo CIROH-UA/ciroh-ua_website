@@ -1,0 +1,19 @@
+{
+  "10/30/2023": [
+    {
+      "type": "note",
+      "title": "NGIAB Updates",
+      "description": "15 runs of the whole build process, 7 successful, and 2 pending. Over 550 pulls of the container image, number of 'canonical' runs (uploading their metadata and results) is coming in a future version."
+    },
+    {
+      "type": "feature",
+      "title": "NextGen Model Framework",
+      "description": "Updates to SUMMA candidate model, performance improvements for memory usage and spatial domain tooling to decouple the currently used geojson Feature and geometry classes into their own simple features interface. This is an abstract interface, with a coupled Boost.Geometry backend that will be used as the default backend."
+    },
+    {
+      "type": "note",
+      "title": "T-route",
+      "description": "22 Pull Requests were worked on in October with 11 merged, and a focus on testing and getting the compiling process to be tested and reliable particularly for downstream NGIAB and HPC usage of t-route"
+    }
+  ]
+}

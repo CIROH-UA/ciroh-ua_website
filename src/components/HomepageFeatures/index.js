@@ -50,7 +50,7 @@ const Member = ({ idx, name }) => (
 const Card = ({ title, image, description, link }) => (
   <div className="col col--4">
     <div className="card">
-      <div class="card__image" style={{ textAlign: 'center' }}>
+      <div className="card__image" style={{ textAlign: 'center' }}>
         <img
           src={image}
           alt="Image alt text"

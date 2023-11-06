@@ -26,12 +26,12 @@ import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="production" label="Production" default>
-    <span class="badge badge--secondary">CIROH 2i2c Production Hub</span>
+    <span className="badge badge--secondary">CIROH 2i2c Production Hub</span>
     <hr/>
       <a href="https://ciroh.awi.2i2c.cloud/hub/login">https://ciroh.awi.2i2c.cloud/hub/login</a>
   </TabItem>
   <TabItem value="staging" label="Staging">
-    <span class="badge badge--secondary">CIROH 2i2c Staging Hub</span>
+    <span className="badge badge--secondary">CIROH 2i2c Staging Hub</span>
     <hr/>
       <a href="https://staging.ciroh.awi.2i2c.cloud/hub/login">https://staging.ciroh.awi.2i2c.cloud/hub/login</a>
   </TabItem>

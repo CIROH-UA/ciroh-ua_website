@@ -1,0 +1,17 @@
+/* BlogComponent.module.css */
+@media (max-width: 600px) {
+  .metadataContent {
+    display: block;
+  }
+}
+
+.cardBody {
+  padding: 20px;
+}
+
+.metadata {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #888;
+}

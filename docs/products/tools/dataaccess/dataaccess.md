@@ -68,9 +68,16 @@ The different catalogs of those [currently] five versions of that resource are l
 
 The AWS retrospective resource is the primary publicly available source for the version 1.0 of the “AORC” Analysis of Record for Calibration dataset, which is a 40-year best-available estimate of most common meteorological parameters required for hydrological modeling. Version 1.1 of the dataset will accompany the release of the NWM model version 3.0 retrospective (or 2.2 version??), hopefully in the next few weeks. 
 
-An extremely simple example of pulling data from the channel output zarr 2.1 archive and writing the results to csv follows:
+An example of pulling data from the channel output zarr 2.1 archive and writing the results to csv follows:
 
 ```py
+'''
+#install these libraries if they aren't already installed
+!pip install zarr
+!pip install xarray
+!pip install s3fs
+!pip install numpy
+'''
 # Import needed libraries
 
 import xarray as xr
@@ -85,7 +92,7 @@ store = xr.open_zarr(s3fs.S3Map(url, s3=fs))
 
 # Function to get the time series for a specified reach id and and time range
 # then write it out to a csv file.
-def GetTimeSeriesAtReach(reach_id, start_time_index, end_time_index):
+def GetAndWriteTimeSeriesAtReach(reach_id, start_time_index, end_time_index):
     flows = streamflow_array.where(feature_id_array==reach_id, drop=True)
     df_flows = flows[start_time_index:end_time_index].to_dataframe()
     df_flows.to_csv(f'flows_{reach_id}.csv')
@@ -108,7 +115,7 @@ start_time_index = int((start_time - zero_start_time).total_seconds() / 3600)
 end_time_index = int((end_time - zero_start_time).total_seconds() / 3600)
 
 for reach_id in feature_ids:
-    GetTimeSeriesAtReach(reach_id, start_time_index, end_time_index)
+    GetAndWriteTimeSeriesAtReach(reach_id, start_time_index, end_time_index)
 
 '''
 Simple Script for Retrieving Retrospective NWM Data from AWS Store

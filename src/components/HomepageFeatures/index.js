@@ -99,37 +99,36 @@ export default function HomepageFeatures() {
         </div>
 
         <div className="row" style={{ paddingTop: 30 }}>
-          <div className="col col--4" style={{ textAlign: "center" }}>
-            <img alt="noaaImage" src="img/noaalogo.png" />
-          </div>
-          <div className="col col--4" style={{ textAlign: "center" }}>
-            <img alt="awiImage" src="img/awi.png" style={{ marginTop: 125 }} />
-          </div>
-          <div className="col col--4" style={{ textAlign: "center" }}>
-            <img
-              alt="cirohImage"
-              src="img/cirohlogo-trans.png"
-              style={{ height: 275, width: 275, marginTop: 15 }}
-            />
-          </div>
-        </div>
-
-        <div className="row" style={{ paddingTop: 30 }}>
-          <div className="alert alert--info" role="alert">
-            Are you enjoying our <strong>CIROH information hub</strong> website?
-            Interested in{" "}
-            <strong>
-              contributing or adding your documentation, tutorials, training
-              data, and more?
-            </strong>
-            <span>
-              {" "}
-              Discover how you can contribute to enhance our platform.{" "}
-            </span>
-            <br /><br />
-            <a className="button button--info" href="/Contribute">
-              How to Contribute?
-            </a>
+          <div
+            className="flex-container alert alert--info"
+            style={{ display: "flex" }}
+          >
+            <div>
+              <img
+                src="img/docuhub-logo.png"
+                style={{ maxWidth: "40%" }}
+                alt="Logo"
+              />
+            </div>
+            <div style={{'padding-top':'5px', 'margin-left':'-175px'}}>
+              <strong>CONTRIBUTE</strong>
+              <br />
+              Are you enjoying our <strong>CIROH DocuHub</strong>{" "}
+              website? Interested in{" "}
+              <strong>
+                contributing or adding your documentation, tutorials, training
+                data, and more?
+              </strong>
+              <span>
+                {" "}
+                Discover how you can contribute to enhance our platform.{" "}
+              </span>
+              <br />
+              <br />
+              <a className="button button--info" href="/Contribute">
+                How to Contribute?
+              </a>
+            </div>
           </div>
         </div>
 
@@ -147,6 +146,23 @@ export default function HomepageFeatures() {
             </div>
           </div>
         </div>
+
+        <div className="row" style={{ paddingTop: 30 }}>
+          <div className="col col--4" style={{ textAlign: "center" }}>
+            <img alt="noaaImage" src="img/noaalogo.png" />
+          </div>
+          <div className="col col--4" style={{ textAlign: "center" }}>
+            <img alt="awiImage" src="img/awi.png" style={{ marginTop: 125 }} />
+          </div>
+          <div className="col col--4" style={{ textAlign: "center" }}>
+            <img
+              alt="cirohImage"
+              src="img/cirohlogo-trans.png"
+              style={{ height: 275, width: 275, marginTop: 15 }}
+            />
+          </div>
+        </div>
+        
       </div>
     </section>
   );

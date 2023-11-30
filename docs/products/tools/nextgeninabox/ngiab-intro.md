@@ -80,17 +80,24 @@ You can also find our Docker images on:
 
 For additional details, please explore the following resources:
 
-### Poster from CIROH Science Meeting - October 2023
+### Community NextGen Advancement Lightening Talk - Nov 2023
 
-- [NextGen In A Box - Oct 2023 - Poster](https://github.com/CIROH-UA/Conferences/tree/main/ScienceMeeting2023-Poster)
+- [Community NextGen and Infrastructure Enhancements Slides](https://github.com/CIROH-UA/Conferences/tree/main/NextGenLightningTalkNov2023)
+- YouTube Recording Details:
+  - **Video Link:** [CIROH YouTube](https://www.youtube.com/watch?v=BgiZt7h_sHQ)
+  - **Timestamp:** 52:56
 
-### Slides from Summer Institute - June 2023
+### CIROH Science Meeting - October 2023
 
-- [NextGen In A Box - June 2023](https://github.com/CIROH-UA/Conferences/tree/main/SummerInstitute2023)
+- [NextGen In A Box Poster - Poster](https://github.com/CIROH-UA/Conferences/tree/main/ScienceMeeting2023-Poster)
 
-### Slides from CIROHDevCon1 - May 2023
+### Summer Institute - June 2023
 
-- [NextGen In A Box - May 2023](https://github.com/CIROH-UA/Conferences/tree/main/CIROHdevCon23)
+- [NextGen In A Box Slides](https://github.com/CIROH-UA/Conferences/tree/main/SummerInstitute2023)
+
+### CIROHDevCon1 - May 2023
+
+- [NextGen In A Box Slides](https://github.com/CIROH-UA/Conferences/tree/main/CIROHdevCon23)
 
 ## Report Bugs and Issues
 

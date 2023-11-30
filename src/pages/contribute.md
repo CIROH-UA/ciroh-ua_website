@@ -1,6 +1,6 @@
 # How to Contribute Code?
 
-Thank you for your interest in contributing to the CIROH technical documentation site! We welcome contributions in various forms, whether it's commenting on and adding CIROH project details or submitting pull requests (PRs). In this guide, we'll walk you through the process of contributing code to the CIROH Docusite.
+Thank you for your interest in contributing to the CIROH DocuHub - CIROH's technical documentation site! We welcome contributions in various forms, whether it's commenting on and adding CIROH project details or submitting pull requests (PRs). In this guide, we'll walk you through the process of contributing code to the CIROH DocuHub.
 
 Our website is constructed using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 

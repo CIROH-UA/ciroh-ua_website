@@ -14,7 +14,7 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/ciroh_logo.png",
+  favicon: "img/docuhub-logo.png",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -55,10 +55,10 @@ const config = {
         // ... other stylesheets
       ],
       navbar: {
-        title: "CIROH Docs",
+        title: "CIROH DocuHub",
         logo: {
           alt: "CIROH Logo",
-          src: "img/ciroh_logo.png",
+          src: "img/docuhub-logo.png",
         },
         items: [
           {
@@ -80,11 +80,6 @@ const config = {
             label: "Education",
           },
           {
-            href: "https://ciroh.org",
-            label: "ciroh.org",
-            position: "left",
-          },
-          {
             href: "/blog",
             label: "Blog",
             position: "right",
@@ -92,11 +87,6 @@ const config = {
           {
             href: "/about",
             label: "About us",
-            position: "right",
-          },
-          {
-            href: "/Contribute",
-            label: "How to contribute",
             position: "right",
           },
           // {

@@ -1,8 +1,8 @@
 {
-    "label": "Services",
+    "label": "CIROH Cloud",
     "position": 2,
     "link": {
         "type": "generated-index",
-        "description": "Lets dive right into Cloud Services"
+        "description": "Lets dive right into CIROH Cloud Services"
       }
 }

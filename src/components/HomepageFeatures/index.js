@@ -82,13 +82,13 @@ export default function HomepageFeatures() {
             title="Documentation"
             image="img/documentation.png"
             description="Dive into our comprehensive documentation to access in-depth information about various CIROH products, including but not limited to NextGen, Snow model, Tethys, and more."
-            link="/docs/products/products-intro"
+            link="/docs/products/intro"
           />
           <Card
             title="Cloud Services"
             image="img/cloud.png"
             description="Explore our array of cloud services and offerings, where you can delve into the specifics of CIROH-AWS cloud. Learn how to gain access to this cloud infrastructure and uncover insights into working seamlessly with the 2i2c cloud services."
-            link="/docs/services/"
+            link="/docs/services/intro"
           />
           <Card
             title="Training"

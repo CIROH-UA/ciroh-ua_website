@@ -50,11 +50,13 @@ The NODD datasets made available through several public cloud vendors are an inc
 
 #### AWS
 
-AWS hosts two repositories as part of their sustainability data initiative. The first repository contains the operational data (now hosts 4 week rolling collection of all output; it used to only be short range and the registry entry retains the short_range description https://registry.opendata.aws/noaa-nwm-pds/; alternatively under sustainability initiative: https://aws.amazon.com/marketplace/pp/prodview-73iwu7dcfuge2)
-- The catalog of data can be browsed [here](https://noaa-nwm-pds.s3.amazonaws.com/index.html).
+AWS hosts two repositories as part of their sustainability data initiative. 
 
-The other (and more useful) AWS repository contains several versions of the retrospective dataset each described on the main page under the open data registry: [Here](https://registry.opendata.aws/nwm-archive/)
-(Main page under sustainability initiative [here](https://aws.amazon.com/marketplace/pp/prodview-g6lcchc7brshwa) )
+The first repository contains the operational data (now hosts 4 week rolling collection of all output; it used to only be short range and the registry entry retains the description only for the short_range data [here](https://registry.opendata.aws/noaa-nwm-pds/); alternatively, the same resource is described under the sustainability initiative page [here](https://aws.amazon.com/marketplace/pp/prodview-73iwu7dcfuge2).)
+- The catalog of AWS-hosted operational NWM data can be browsed [here](https://noaa-nwm-pds.s3.amazonaws.com/index.html).
+
+The second (and more useful) AWS repository contains several versions of the retrospective dataset each described on the main page under the open data registry [here](https://registry.opendata.aws/nwm-archive/).
+(The same information is also on the AWS sustainability initiative webpage [here](https://aws.amazon.com/marketplace/pp/prodview-g6lcchc7brshwa) )
 
 The different catalogs of those [currently] five versions of that resource are linked below:
 - Two versions of NWM v2.1 retrospective

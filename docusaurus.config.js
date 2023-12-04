@@ -1,8 +1,4 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -30,9 +26,16 @@ const config = {
   },
   presets: [
     [
+      
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        blog: {
+          blogTitle: 'DocuHub blog!',
+          blogDescription: 'A DocuHub powered blog!',
+          postsPerPage: 'ALL',
+          authorsMapPath: 'blog/authors.yaml',
+        },
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
@@ -61,6 +64,7 @@ const config = {
           src: "img/docuhub-logo.png",
         },
         items: [
+          {to: 'blog', label: 'Blog', position: 'right'},
           {
             type: "doc",
             docId: "products/intro",
@@ -78,11 +82,6 @@ const config = {
             docId: "education/education",
             position: "left",
             label: "Education",
-          },
-          {
-            href: "/blog",
-            label: "Blog",
-            position: "right",
           },
           {
             href: "/about",
@@ -149,8 +148,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} CIROH - The University of Alabama`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
     }),
 };

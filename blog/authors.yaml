@@ -1,0 +1,7 @@
+- name: apatel
+  title: Author Name
+  imageUrl: path/to/author/image.jpg
+
+- name: anotherauthor
+  title: Another Author
+  imageUrl: path/to/another/author/image.jpg

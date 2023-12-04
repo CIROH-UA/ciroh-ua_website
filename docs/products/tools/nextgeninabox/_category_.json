@@ -1,8 +1,8 @@
 {
-    "label": "NextGen In A Box",
+    "label": "NextGen In A Box (NGIAB)",
     "position": 1,
     "link": {
         "type": "generated-index",
-        "description": "Lets dive right into NGIAB"
+        "description": "NextGen In A Box (NGIAB) is a ready-to-run, containerized and cloud-friendly version of NextGen framework, packaged with scripts to help prepare data and get you modeling more quickly."
       }
 }

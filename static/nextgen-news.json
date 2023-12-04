@@ -1,19 +1,66 @@
 {
-  "10/30/2023": [
+  "11/30/2023": [
     {
-      "type": "note",
+      "type": "news",
       "title": "NGIAB Updates",
-      "description": "15 runs of the whole build process, 7 successful, and 2 pending. Over 550 pulls of the container image, number of 'canonical' runs (uploading their metadata and results) is coming in a future version."
+      "description": "NGIAB v1.1.0 Release!",
+      "link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/releases/tag/v1.1.0"
+    },
+    {
+      "type": "news",
+      "title": "NextGen Research Lightning Talk",
+      "description": "Presented at CIROH NextGen Research Lightning Talk Webinar",
+      "link": "Conference%20Material#community-nextgen-advancement-lightning-talk---nov-2023"
     },
     {
       "type": "feature",
       "title": "NextGen Model Framework",
-      "description": "Updates to SUMMA candidate model, performance improvements for memory usage and spatial domain tooling to decouple the currently used geojson Feature and geometry classes into their own simple features interface. This is an abstract interface, with a coupled Boost.Geometry backend that will be used as the default backend."
+      "description": "14 PRs merged in November. Adding new tests for sqlite and new geopackage-based hydrofabric support.",
+      "link": ""
+    },
+    {
+      "type": "feature",
+      "title": "T-route",
+      "description": "13 PRs merged in November. Added additional json/geojson support ",
+      "link": ""
+    },
+    {
+      "type": "feature",
+      "title": "Hydrofabric",
+      "description": "Lynker is proud to support CIROH with a freely accessable resource for geospatial data: https://www.lynker-spatial.com/. Updated hfsubset to support using the v2.0 hydrofabric by default. Added Cross-section support to the hydrofabric. 13 PRs merged in November. Added additional json/geojson support ",
+      "link": ""
+    },
+    {
+      "type": "feature",
+      "title": "NextGen Framework Forcings",
+      "description": "14 PRs merged towards the Research Data Stream. Fixed lingering pyarrow issues. Added new support for all segments to be dockerized. Added S3 support with regards to the control flow design, to support one reusable, configurable  sequence ",
+      "link": ""
+    },
+    {
+      "type": "note",
+      "title": "Community Support",
+      "description": "Singularity support is coming to AWI for HPC users that are able to run Singularity builds. Work on serialization (passing from one run to the next with model states still in memory or imported from a file) is ongoing, relative temporal configurations of NextGen with consideration to model configuration changes between timesteps, and better general support for framework polymorphism.",
+      "link": ""
+    }
+  ],
+  "10/30/2023": [
+    {
+      "type": "note",
+      "title": "NGIAB Updates",
+      "description": "15 runs of the whole build process, 7 successful, and 2 pending. Over 550 pulls of the container image, number of 'canonical' runs (uploading their metadata and results) is coming in a future version.",
+      "link": ""
+    },
+    {
+      "type": "feature",
+      "title": "NextGen Model Framework",
+      "description": "Updates to SUMMA candidate model, performance improvements for memory usage and spatial domain tooling to decouple the currently used geojson Feature and geometry classes into their own simple features interface. This is an abstract interface, with a coupled Boost.Geometry backend that will be used as the default backend.",
+      "link": ""
     },
     {
       "type": "note",
       "title": "T-route",
-      "description": "22 Pull Requests were worked on in October with 11 merged, and a focus on testing and getting the compiling process to be tested and reliable particularly for downstream NGIAB and HPC usage of t-route"
+      "description": "22 Pull Requests were worked on in October with 11 merged, and a focus on testing and getting the compiling process to be tested and reliable particularly for downstream NGIAB and HPC usage of t-route",
+      "link": ""
     }
   ]
 }

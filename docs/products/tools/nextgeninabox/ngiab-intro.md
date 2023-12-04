@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: "NGIAB Intro"
+title: "Introduction"
 description: "NextGen In a Box (NGIAB)"
 tags:
   - NextGen In A Box
@@ -10,7 +10,7 @@ tags:
   - national water center
 ---
 
-# Welcome to NextGen In A Box (NGIAB)
+# NextGen In A Box (NGIAB)
 
 Experience the simplicity of NextGen framework-based simulations with NextGen In A Box!
 
@@ -75,29 +75,6 @@ The source code for NextGen In A Box can be found on GitHub:
 You can also find our Docker images on:
 
 - DockerHub: [Dockerhub - NGIAB](https://hub.docker.com/u/awiciroh)
-
-## More Information
-
-For additional details, please explore the following resources:
-
-### Community NextGen Advancement Lightening Talk - Nov 2023
-
-- [Community NextGen and Infrastructure Enhancements Slides](https://github.com/CIROH-UA/Conferences/tree/main/NextGenLightningTalkNov2023)
-- YouTube Recording Details:
-  - **Video Link:** [CIROH YouTube](https://www.youtube.com/watch?v=BgiZt7h_sHQ)
-  - **Timestamp:** 52:56
-
-### CIROH Science Meeting - October 2023
-
-- [NextGen In A Box Poster - Poster](https://github.com/CIROH-UA/Conferences/tree/main/ScienceMeeting2023-Poster)
-
-### Summer Institute - June 2023
-
-- [NextGen In A Box Slides](https://github.com/CIROH-UA/Conferences/tree/main/SummerInstitute2023)
-
-### CIROHDevCon1 - May 2023
-
-- [NextGen In A Box Slides](https://github.com/CIROH-UA/Conferences/tree/main/CIROHdevCon23)
 
 ## Report Bugs and Issues
 

@@ -34,12 +34,22 @@ Explore more: [GitHub Repository](https://github.com/CIROH-UA/NGIAB-CloudInfra/)
 - Gain control over inputs and configurations.
 - The solution is "NextGen In A Box."
 
+## Case Study Map for the Sipsey Fork, Black Warrior River, AL
+
+![AGU_113060_03W_002](https://github.com/CIROH-UA/ciroh-ua_website/assets/28275758/dbe5e070-718e-498d-add9-855cdeecdacc)
+
 ## How to Generate Your Own Input Data?
 Follow the steps in our [ngen datastream repository](https://github.com/CIROH-UA/ngen-datastream/tree/main)
 
-## How to Run NGIAB with Your Sample Input Data?
+## How to Run the NGIAB with Your Sample Input Data?
 
 Follow the steps in our [Run Guide](https://github.com/CIROH-UA/NGIAB-CloudInfra/blob/main/README.md)
+
+## Output Plot of the NGIAB Case Study
+
+Using the *flowveldepth.csv files from the 'outputs' folder, the streamflow at the Clear Creek gauge (USGS site ID 02450825) is displayed here. Below is the 'Modelled' vs 'Observed' plot generated in MS Excel after *flowveldepth.csv files are post-processed using Python.
+
+![image](https://github.com/shahab122/NGIAB-CloudInfra/assets/28275758/58aaf351-8bb5-4b61-9f84-d9dd520053e5)
 
 ## Understanding the NGIAB CI Pipeline
 

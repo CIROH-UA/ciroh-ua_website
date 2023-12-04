@@ -17,7 +17,7 @@ Slides and recordings from the various conferences can be found in the below sec
 
 ### Community NextGen Advancement Lightning Talk - Nov 2023
 
-- Presentor: Arpita Patel
+- presenter: Arpita Patel
 - [Community NextGen and Infrastructure Enhancements Slides](https://github.com/CIROH-UA/Conferences/tree/main/NextGenLightningTalkNov2023)
 - YouTube Recording Details:
   - **Video Link:** [CIROH YouTube](https://www.youtube.com/watch?v=BgiZt7h_sHQ)
@@ -25,15 +25,15 @@ Slides and recordings from the various conferences can be found in the below sec
 
 ### CIROH Science Meeting - October 2023
 
-- Presentor: Arpita Patel
+- presenter: Arpita Patel
 - [NextGen In A Box Poster - Poster](https://github.com/CIROH-UA/Conferences/tree/main/ScienceMeeting2023-Poster)
 
 ### Summer Institute - June 2023
 
-- Presentor: Arpita Patel
+- presenter: Arpita Patel
 - [NextGen In A Box Slides](https://github.com/CIROH-UA/Conferences/tree/main/SummerInstitute2023)
 
 ### CIROHDevCon1 - May 2023
 
-- Presentor: Arpita Patel
+- presenter: Arpita Patel
 - [NextGen In A Box Slides](https://github.com/CIROH-UA/Conferences/tree/main/CIROHdevCon23)

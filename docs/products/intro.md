@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# CIROH Products
+# Introduction
 
 <div className="hero hero--primary shadow--lw">
   <div className="container">

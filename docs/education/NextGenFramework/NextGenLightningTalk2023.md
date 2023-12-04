@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # NextGen Research Lightning Talk
 
-## Presentor's Information
+## Presenter's Information
 
-[Presentor's Information](/files/11282023_LightningTalk.pdf)
+[Presenter's Information](/files/11282023_LightningTalk.pdf)
 
 ## Slides
 

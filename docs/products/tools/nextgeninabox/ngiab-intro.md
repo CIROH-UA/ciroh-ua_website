@@ -14,6 +14,8 @@ tags:
 
 Experience the simplicity of NextGen framework-based simulations with NextGen In A Box!
 
+<img src="/img/NGIABLogowithText.png" alt="NGIAB Logo" style={{'width':'50%', 'height':'50%'}}/>
+
 Explore more: [GitHub Repository](https://github.com/CIROH-UA/NGIAB-CloudInfra/)
 
 - "NextGen In a Box" (NGIAB) is a containerized version of the NextGen National Water Resources Modeling Framework.
@@ -22,8 +24,6 @@ Explore more: [GitHub Repository](https://github.com/CIROH-UA/NGIAB-CloudInfra/)
 - The project includes training sessions for researchers to work more efficiently with the NextGen framework.
 - NGIAB is a a community version of the National Water Model (NWM). CIROH, in collaboration with Lynker, is establishing the processes, protocols, and research infrastructure that bridges the academic and research community with NOAA's National Water Center's NextGen National Water Resources Modeling Framework (NextGen Framework).
 - It is a community version, allowing the NextGen framework to run on local machines for watersheds of any size.
-
-![NGIAB](/img/ngiab.jpg)
 
 ## Explore Our Case Study:
 
@@ -88,4 +88,4 @@ Our dedicated team members include:
 
 - **The University of Alabama Team:** [Arpita Patel](https://dev.awi.ua.edu/about/staff/arpita-patel/), Dr. James Halgren, [Dr. Puri Bangalore](https://eng.ua.edu/eng-directory/dr-purushotham-bangalore/), [Dr. Jeff Carver](http://carver.cs.ua.edu/), Benjamin Lee, [Dr. Sepehr Karimiziarani](https://dev.awi.ua.edu/about/staff/sepehr-karimiziarani-ph-d/), [Dr. Shahab Alam](https://dev.awi.ua.edu/about/staff/md-shahabul-alam-ph-d/), Trupesh Patel, Josh Cunningham, Hari Jajula, Rohan Sunkarapalli, Manjiri Gunaji, [Dr. Steve Burian](https://eng.ua.edu/eng-directory/dr-steven-burian/)
 
-- **Lynker Contractors:** Zach Wills, Nels Frazier, Jordan Laser, Mike Johnson
+- **Lynker Contractors:** Zach Wills, Nels Frazier, Jordan Laser, Mike Johnson, Josh Sturtevant

@@ -14,7 +14,7 @@ tags:
 
 Experience the simplicity of NextGen framework-based simulations with NextGen In A Box!
 
-<img src="/img/NGIABLogowithText.png" alt="NGIAB Logo" style={{'width':'50%', 'height':'50%'}}/>
+<img src="/img/NGIABLogoWithoutText-Transparant.png" alt="NGIAB Logo" style={{'width':'50%', 'height':'50%'}}/>
 
 Explore more: [GitHub Repository](https://github.com/CIROH-UA/NGIAB-CloudInfra/)
 

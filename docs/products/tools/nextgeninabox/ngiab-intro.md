@@ -13,10 +13,13 @@ tags:
 # NextGen In A Box (NGIAB)
 
 Experience the simplicity of NextGen framework-based simulations with NextGen In A Box!
-
+<p align="center">
 <img src="/img/NGIABLogoWithoutText-Transparant.png" alt="NGIAB Logo" style={{'width':'50%', 'height':'50%'}}/>
+</p>
 
-Explore more: [GitHub Repository](https://github.com/CIROH-UA/NGIAB-CloudInfra/)
+[![GitHub for NGIAB using Docker](https://img.shields.io/badge/GitHub-Docker-blue?style=for-the-badge&logo=github)](https://github.com/CIROH-UA/NGIAB-CloudInfra/)
+[![GitHub for NGIAB using Singularity](https://img.shields.io/badge/GitHub-Singularity-blue?style=for-the-badge&logo=github)](https://github.com/CIROH-UA/Ngen-Singularity)
+
 
 - "NextGen In a Box" (NGIAB) is a containerized version of the NextGen National Water Resources Modeling Framework.
 - The project's key achievement is the development and distribution of NGIAB, which makes the NextGen framework more accessible to the research community.
@@ -40,6 +43,7 @@ Follow the steps in our [ngen datastream repository](https://github.com/CIROH-UA
 ## How to Run NGIAB with Your Sample Input Data?
 
 Follow the steps in our [Run Guide](https://github.com/CIROH-UA/NGIAB-CloudInfra/blob/main/README.md)
+For Singularity, follow the steps in our [Run Guide](https://github.com/CIROH-UA/NGIAB-Singularity/blob/main/README.md)
 
 ## Understanding the NGIAB CI Pipeline
 

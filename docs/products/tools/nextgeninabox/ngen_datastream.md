@@ -1,6 +1,10 @@
-# Ngen-DataStream
+# Ngen-datastream
 
-This repository is designed to generate the required data for the NextGen Framework and to run NextGen In A Box (NGIAB). An ngen run directory, named `data_dir`, you'll find three necessary subfolders: `config`, `forcings`, `outputs`, and an optional fourth subfolder, `metadata`. While the `data_dir` can have any name, the subfolders must follow this specific naming convention.
+[Ngen-datastream repository](https://github.com/CIROH-UA/ngen-datastream) is developed to generate the required data for the NextGen Framework and to run NextGen In A Box (NGIAB). An ngen run directory, named `data_dir`, you'll find three necessary subfolders: `config`, `forcings`, `outputs`, and an optional fourth subfolder, `metadata`. While the `data_dir` can have any name, the subfolders must follow this specific naming convention.
+
+Refer GitHub Readme for more details [here](https://github.com/CIROH-UA/ngen-datastream#readme)
+
+Contributors: Jordan Laser, Zach Wills, Hari Teja
 
 ### Directory Structure:
 
@@ -28,9 +32,11 @@ git clone https://github.com/CIROH-UA/ngen-datastream.git
 ```bash
 cd ngen-datastream
 pip install -r requirements.txt
+pip install -e forcingprocessor
 ```
 
 ## Steps to Run ForcingProcessor to Generate Forcing Files
+
 The ForcingProcessor converts National Water Model (NWM) forcing data into Next Generation National Water Model (ngen) forcing data. 
 The motivation for this tool is NWM data is gridded and stored within netCDFs for each forecast hour. 
 Ngen inputs this same forcing data, but in the format of per-catchment csv files that hold time series data. 
@@ -39,7 +45,7 @@ Forcingprocessor is driven by a configuration file that is explained, with an ex
 **Step 1:** Navigate to the forcingprocessor/src/ directory
 
 ```bash
-cd forcingprocessor/src/
+cd forcingprocessor/src/forcingprocessor
 ```
 
 ***Step 2:*** Generate NWM files
@@ -48,7 +54,7 @@ such as
 https://noaa-nwm-pds.s3.amazonaws.com/nwm.20231106/forcing_short_range/nwm.t00z.short_range.forcing.f001.conus.nc
 
 ```bash
-python nwm_filenames_generator.py conf_nwm_files.json
+python nwm_filenames_generator.py ../../configs/conf.json
 ```
 
 Note: Provide the S3 bucket address in the config file, not the file in the filenamelist.txt.
@@ -64,6 +70,7 @@ Use the small_weights.json file for a test run inside the weights directory or d
 ***Step 4:*** Build the config file
 Set the dates and specify the location for filenamelist.txt and weights.json accordingly in conf.json.
 ```bash
+
 {
     "forcing"  : {
         "start_date"   : "202311060000",
@@ -84,6 +91,7 @@ Set the dates and specify the location for filenamelist.txt and weights.json acc
     }
 }
 ```
+
 ***Step 5:*** Run forcingprocessor
 
 ```bash

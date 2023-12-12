@@ -1,102 +1,112 @@
-# Ngen-datastream
+# NextGen Datastream
+The datastream automates the process of collecting and formatting input data for NextGen, orchestrating the NextGen run through NextGen In a Box (NGIAB), and handling outputs. In it's current implementation, the datastream is a shell script that orchestrates each step in the process. 
 
-[Ngen-datastream repository](https://github.com/CIROH-UA/ngen-datastream) is developed to generate the required data for the NextGen Framework and to run NextGen In A Box (NGIAB). An ngen run directory, named `data_dir`, you'll find three necessary subfolders: `config`, `forcings`, `outputs`, and an optional fourth subfolder, `metadata`. While the `data_dir` can have any name, the subfolders must follow this specific naming convention.
+## Install
+Just clone this repo, the stream will handle initialization and installation of the datastream tools.
 
-Refer GitHub Readme for more details [here](https://github.com/CIROH-UA/ngen-datastream#readme)
-
-Contributors: Jordan Laser, Zach Wills, Hari Teja
-
-### Directory Structure:
-
-- **config**: Contains model configuration files and hydrofabric configuration files. More details [here](https://github.com/CIROH-UA/ngen-datastream#Configuration-directory).
-
-- **forcings**: Holds catchment-level forcing timeseries files. These are generated using the [forcingprocessor](https://github.com/CIROH-UA/ngen-datastream/tree/main/forcingprocessor). Forcing files include variables like wind speed, temperature, precipitation, and solar radiation.
-
-- **metadata**: An optional subfolder, programmatically generated and used internally by `ngen`. Do not edit this folder.
-
-- **outputs**: Where `ngen` places the output files.
-
-# Environment Requirements
-
-Python 3.9
-
-# Installation Steps
-
-**Step 1:** Clone the repository
-```bash
-git clone https://github.com/CIROH-UA/ngen-datastream.git
+## Run it
+```
+/ngen-datastream/scripts/stream.sh /ngen-datastream/configs/conf_datastream.json
 ```
 
-**Step 2:** Install the requirements
+## Formatting `conf_datastream.json`
+### globals
+| Field             | Description              | Required |
+|-------------------|--------------------------|------|
+| start_time        | Start simulation time (YYYYMMDDHHMM) | :white_check_mark: |
+| end_time          | End simulation time  (YYYYMMDDHHMM) | :white_check_mark: |
+| data_dir          | Name used in constructing the parent directory of the datastream. Must not exist prior to datastream run | :white_check_mark: |
+| resource_dir      | Folder name that contains the datastream resources. If not provided, datastream will create this folder with default options |  |
+| relative_path     | Absolute path to be prepended to any other path given in configuration file |  |
+| subset_id         | catchment id to subset. If not provided, the geopackage in the resource_dir will define the spatial domain in entirety | Required only if resource_dir is not given  |
 
-```bash
-cd ngen-datastream
-pip install -r requirements.txt
-pip install -e forcingprocessor
+### Example `conf_datastream.json`
 ```
-
-## Steps to Run ForcingProcessor to Generate Forcing Files
-
-The ForcingProcessor converts National Water Model (NWM) forcing data into Next Generation National Water Model (ngen) forcing data. 
-The motivation for this tool is NWM data is gridded and stored within netCDFs for each forecast hour. 
-Ngen inputs this same forcing data, but in the format of per-catchment csv files that hold time series data. 
-Forcingprocessor is driven by a configuration file that is explained, with an example, in detail below. The config argument accepts an S3 URL.
-
-**Step 1:** Navigate to the forcingprocessor/src/ directory
-
-```bash
-cd forcingprocessor/src/forcingprocessor
-```
-
-***Step 2:*** Generate NWM files
-You can generate nwm files using the command or give the input files manually 
-such as
-https://noaa-nwm-pds.s3.amazonaws.com/nwm.20231106/forcing_short_range/nwm.t00z.short_range.forcing.f001.conus.nc
-
-```bash
-python nwm_filenames_generator.py ../../configs/conf.json
-```
-
-Note: Provide the S3 bucket address in the config file, not the file in the filenamelist.txt.
-
-***Step 3:*** Generate weights file
-
-```bash
-python weight_generator.py 'path to geopackage' 'path to output weights to' 'path to example NWM forcing file'
-```
-
-Use the small_weights.json file for a test run inside the weights directory or download it from the S3 bucket: https://ngenresourcesdev.s3.us-east-2.amazonaws.com/10U_weights.json
-
-***Step 4:*** Build the config file
-Set the dates and specify the location for filenamelist.txt and weights.json accordingly in conf.json.
-```bash
-
 {
-    "forcing"  : {
-        "start_date"   : "202311060000",
-        "end_date"     : "202311060000",
-        "nwm_file"     : "./filenamelist.txt",  
-        "weight_file"  : "./weights_01.json"
-    },
-    "storage":{
-        "storage_type"     : "local",
-        "output_bucket"    : "",
-        "output_path"      : "./data",
-        "output_file_type" : "csv"
-    },    
-    "run" : {
-        "verbose"       : true,
-        "collect_stats" : true,
-        "proc_threads"  : 3
+    "globals" : {
+        "start_date"   : "",
+        "end_date"     : "",
+        "data_dir"     : "ngen-datastream-test",
+        "resource_dir" : "datastream-resources-dev",
+        "relative_to"  : "/home/jlaser/code/CIROH/ngen-datastream/data"
+        "subset_id"    : ""
     }
 }
 ```
 
-***Step 5:*** Run forcingprocessor
+## NextGen Datastream Directory Stucture
+```
+data_dir/
+│
+├── datastream-configs/
+│
+├── datastream-resources/
+|
+├── ngen-run/
+```
+`datastream-configs/` holds the all the configuration files the datastream needs in order to run. Note! The datastream can modify `conf_datastream.json` and generate it's own internal configs. `datastream-configs/` is the first place to look to confirm that a datastream run has been executed according to the user's specifications. 
+Example directory:
+```
+datastream-configs/
+│
+├── conf_datastream.json
+│
+├── conf_forcingprocessor.json
+|
+├── conf_nwmurl.json
+```
+`datastream-resources/` holds the data files required to perform computations required by the datastream. The user can supply this directory by pointing the configuration file to `resource_dir`. If not given by the user, datastream will generate this folder with these [defaults](#resource_dir). 
+│
+├── conf_datastream.json
+│
+├── conf_forcingprocessor.json
+|
+├── conf_nwmurl.json
+`ngen-run` follows the directory structure described [here](#nextgen-run-directory-structure)
 
-```bash
-python forcingprocessor.py conf.json
+### resource_dir
+TODO: explain defaults used in automated build
+
+### Useful Hacks
+TODO: Daily
+
+## NextGen Run Directory Structure
+Running ngen requires building a standard run directory complete with the necessary files. The datastream constructs this automatically. Below is an explanation of the standard. Reference for discussion of the standard [here](https://github.com/CIROH-UA/NGIAB-CloudInfra/pull/17). 
+
+An ngen run directory `ngen-run` is composed of three necessary subfolders `config, forcings, outputs` and an optional fourth subfolder `metadata`.
+
+```
+ngen-run/
+│
+├── config/
+│
+├── forcings/
+|
+├── metadata/
+│
+├── outputs/
 ```
 
-Note: There might be dependency issues if you use any other Python versions apart from Python 3.9.
+The `ngen-run` directory contains the following subfolders:
+
+- `config`:  model configuration files and hydrofabric configuration files. A deeper explanation [here](#Configuration-directory)
+- `forcings`: catchment-level forcing timeseries files. These can be generated with the [forcingprocessor](https://github.com/CIROH-UA/ngen-datastream/tree/main/forcingprocessor). Forcing files contain variables like wind speed, temperature, precipitation, and solar radiation.
+- `metadata` is an optional subfolder. This is programmatically generated and it used within to ngen. Do not edit this folder.
+- `outputs`: This is where ngen will place the output files.
+ 
+### Configuration directory 
+`ngen-run/config/`
+.
+`realization.json` :
+The realization file serves as the primary model configuration for the ngen framework. An example can be found [here](https://github.com/CIROH-UA/ngen-datastream/tree/main/data/standard_run/config/realization.json). This file specifies which models/modules to run and with which parameters, run parameters like date and time, and hydrofabric specifications.
+
+`catchments.geojson`, `nexus.geojson`,`crosswalk.json`, `flowpaths` ,`flowpath_edit_list.json` :
+These files contain the [hydrofabric](https://mikejohnson51.github.io/hyAggregate/) (spatial data). An example can be found [here](https://github.com/CIROH-UA/ngen-datastream/tree/main/data/standard_run/config/catchments.geojson). Tools to create these files can be found at [LynkerIntel's hfsubset](https://github.com/LynkerIntel/hfsubset).
+
+Other files may be placed in this subdirectory that relate to internal-ngen-models/modules. It is common to define variables like soil parameters in these files for ngen modules to use.
+
+## Versioning
+The ngen framework uses a merkel tree hashing algorithm to version each ngen run. This means that the changes a user makes to any input files in `ngen-run` will be tracked and diff'd against previous input directories. While an explaination of how awesome this is can be found elsewhere, the important thing to know is the user must prepare a clean input directory (`ngen-run`) for each run they want to make. 
+
+"Clean" means here that every file in the `ngen-run` is required for the immediate run the user intends to make. For instance, if the user creates a new realization configuration file, the old file must be removed before using `ngen-run` as an input directory to ngen. In other words, each configuration file type (realization, catchment, nexus, etc.) must be unique within `ngen-run`.
 

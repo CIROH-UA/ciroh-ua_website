@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: "Introduction"
+title: "Introduction and How tos?"
 description: "NextGen In a Box (NGIAB)"
 tags:
   - NextGen In A Box

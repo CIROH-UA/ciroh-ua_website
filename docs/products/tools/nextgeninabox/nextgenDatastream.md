@@ -1,3 +1,12 @@
+---
+sidebar_position: 3
+title: "NextGen Datastream"
+description: "NextGen Datastream"
+tags:
+  - datastream
+  - NextGen
+---
+
 # NextGen Datastream
 The datastream automates the process of collecting and formatting input data for NextGen, orchestrating the NextGen run through NextGen In a Box (NGIAB), and handling outputs. In it's current implementation, the datastream is a shell script that orchestrates each step in the process. 
 

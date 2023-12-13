@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 title: "Conference Material"
 description: "NextGen In a Box (NGIAB) Conference Material"
 tags:
@@ -15,11 +15,12 @@ tags:
 
 Slides and recordings from the various conferences can be found in the below section.
 
-### AGU 2023 
+### AGU 2023
 
 - presenter: Arpita Patel
 - [Abstract](https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1323853)
 - Title : H34D-02 NextGen In A Box: Advancing Collaborative Modeling for Enhanced Water Resource Management
+- [AGU23 NextGen In A Box Slides](https://github.com/CIROH-UA/Conferences/tree/main/AGU23)
 
 
 

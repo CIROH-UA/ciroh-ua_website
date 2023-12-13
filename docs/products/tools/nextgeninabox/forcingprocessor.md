@@ -72,7 +72,7 @@ The weight generator will input an example NWM forcing netcdf to reference the N
 | collect_stats     | Collect forcing metadata       |
 | proc_threads      | Number of data processing threads, defaults to 80% available cores |
 | write_threads     | Number of writing threads, defaults to 100% available cores      |
-| nfile_chunk       | Number of files to process each write,<br> set to greater than the number of nwm files unless memory constraints are reached, defaults to 1000000. Only set this if experiencing memory constraints due to large number of nwm forcing files |
+| nfile_chunk       | Number of files to process each write, set to greater than the number of nwm files unless memory constraints are reached, defaults to 1000000. Only set this if experiencing memory constraints due to large number of nwm forcing files |
 
 ## Example Configuration
 ```

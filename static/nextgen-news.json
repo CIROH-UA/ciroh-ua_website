@@ -1,4 +1,54 @@
 {
+  "12/30/2023": [
+    {
+      "type": "news",
+      "title": "NGIAB presentation at AGU!!! ",
+      "description": "NextGen In A Box: Advancing Collaborative Modeling for Enhanced Water Resource Management presented by Arpita. We had a full house! ",
+      "link": "Conference%20Material#agu-2023"
+    },
+    {
+      "type": "news",
+      "title": "NextGen In A Box",
+      "description": "NGIAB Updates: Merged CI pipeline changes PR#74 by Benjamin Lee, Added case study map and a plot with output results PR#72 by Shahab Alam, PR#70 by Josh Cu",
+      "link": ""
+    },
+    {
+      "type": "feature",
+      "title": "NextGen Model Framework",
+      "description": "5 PRs merged in December.",
+      "link": ""
+    },
+    {
+      "type": "feature",
+      "title": "T-route",
+      "description": "12 PRs merged in December.",
+      "link": ""
+    },
+    {
+      "type": "feature",
+      "title": "Hydrofabric",
+      "description": "Lynker is proud to support CIROH with a freely accessable resource for geospatial data: https://www.lynker-spatial.com/. Updated transects/cross section runners",
+      "link": ""
+    },
+    {
+      "type": "feature",
+      "title": "NextGen Framework Forcings",
+      "description": "December updates include an (almost) complete stream script that will produce daily ngen outputs. Documentation (readme) included. ngen-datastream/subsetting has been deprecated and hfsubset integrated into the stream. Benchmarking has begun.",
+      "link": ""
+    },
+    {
+      "type": "note",
+      "title": "Community Support",
+      "description": "December is always an AGU Month! San Francisco (the traditional home of AGU) brings us to the season where we reflect on our own work for the year and finally learn what our coworkers have been doing all this time! Checkout the presentation slides from CIROH at below link.",
+      "link": "https://github.com/CIROH-UA/Conferences"
+    },
+    {
+      "type": "note",
+      "title": "NOAA-OWP AGU Presentations",
+      "description": "NOAA-OWP AGU Presentations",
+      "link": "https://github.com/NOAA-OWP/OWP-Presentations/tree/main/AGU/AGU_2023"
+    }
+  ],
   "11/30/2023": [
     {
       "type": "news",

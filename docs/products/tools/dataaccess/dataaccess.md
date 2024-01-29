@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Data Access"
+title: "NWM Data Access"
 description: "Input and Output of NWM"
 tags:
   - NOMADS

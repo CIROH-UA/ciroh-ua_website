@@ -3,6 +3,6 @@
     "position": 2,
     "link": {
         "type": "generated-index",
-        "description": "Lets dive right into Data Access"
+        "description": "Data Access provides the resources that grant access to the input data used and the output data produced by the operational National Water Model."
       }
 }

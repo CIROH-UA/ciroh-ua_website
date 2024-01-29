@@ -1,4 +1,4 @@
-# forecast-workflow
+# Forecast-Workflow
 
 ## About
 The [forecast-workflow](https://github.com/CIROH-UVM/forecast-workflow) repository was initally created to implement the AEM3D model to generate 7-day forecasts of Harmful Algal Blooms (HABs) in Lake Champlain. However, we've created some handy data grabbers along the way that we've modified in order to make them more useful for other CIORH researchers. The scripts for these data grabbers can be found in the `data/` folder within the repository. This page will include documentation on how to use some of these data grabber tools we've created.

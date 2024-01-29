@@ -70,6 +70,8 @@ The different catalogs of those [currently] five versions of that resource are l
 
 The AWS retrospective resource is the primary publicly available source for the version 1.0 of the “AORC” Analysis of Record for Calibration dataset, which is a 40-year best-available estimate of most common meteorological parameters required for hydrological modeling. Version 1.1 of the dataset will accompany the release of the NWM model version 3.0 retrospective (or 2.2 version??), hopefully in the next few weeks. 
 
+Jupyter notebook instructions for processing NWM Zarr and NetCDF output formats [here](https://github.com/CIROH-UA/data_access_example/)
+
 An example of pulling data from the channel output zarr 2.1 archive and writing the results to csv follows:
 
 ```py

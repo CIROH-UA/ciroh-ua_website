@@ -6,8 +6,6 @@ name: ciroh-ua-website-ci
 on:
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["*"]
   workflow_call:
     # Map the workflow outputs to job outputs
     # https://docs.github.com/en/github-ae@latest/actions/using-workflows/reusing-workflows

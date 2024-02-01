@@ -1,4 +1,37 @@
+
 {
+  "1/31/2024": [
+    {
+      "type": "news",
+      "title": "Run NextGen In A Box(NGIAB) with Singularity on HPC without docker support!!! ",
+      "description": "If you want to use NGIAB on HPC that does not support docker, we have a solution for you. Please follow the steps at this link. ",
+      "link": "https://github.com/CIROH-UA/Ngen-Singularity"
+    },
+    {
+      "type": "news",
+      "title": "NextGen In A Box (NGIAB)",
+      "description": "We have made some improvements to NGIAB: 10 PRs merged. Sample input data updated to use AWI_003(with new data provider names). Boost upgraded to v1.79. Self-hosted Runner can start and stop automatically with GitHub Actions. NGIAB image can run in auto mode. Geopackage support added. Documentation available at CIROH DocuHub",
+      "link": "https://docs.ciroh.org/docs/category/nextgen-in-a-box-ngiab, https://github.com/CIROH-UA/NGIAB-CloudInfra"
+    },
+    {
+      "type": "feature",
+      "title": "ngen-DataStream",
+      "description": "3 PRs merged in January. Documentation available at: https://docs.ciroh.org/docs/products/tools/nextgeninabox/nextgenDatastream",
+      "link": "https://github.com/CIROH-UA/ngen-datastream"
+    },
+    {
+      "type": "feature",
+      "title": "NextGen Model Framework (ngen)",
+      "description": "6 PRs merged in January.",
+      "link": "https://github.com/NOAA-OWP/ngen"
+    },
+    {
+      "type": "feature",
+      "title": "T-route",
+      "description": "3 PRs merged in January.",
+      "link": "https://github.com/NOAA-OWP/t-route"
+    }
+  ],
   "12/30/2023": [
     {
       "type": "news",

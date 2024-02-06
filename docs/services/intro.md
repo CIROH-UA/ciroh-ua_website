@@ -9,7 +9,7 @@ sidebar_position: 1
         <div className="hero-content">
           <div className="hero-text">
             <p className="hero__subtitle">
-             At CIROH, our dedicated team of engineers and developers is unwavering in its mission to harness the potential of both multi-cloud and on-premise infrastructure, offering unparalleled flexibility and scalability. We enhance our infrastructure through the seamless integration of multiple cloud providers, custom-tailored to meet the unique requirements of CIROH projects.
+              The CIROH Cloud is a scalable and efficient computing platform that allows users to access computational environments and resources without the burden of installation and maintenance tasks. At CIROH, our dedicated team of engineers and developers is unwavering in its mission to harness the potential of both multi-cloud and on-premise infrastructure, offering unparalleled flexibility and scalability. 2i2c JupyterHub is the JupyterHub deployed on Google Cloud. Pantarhei is an on-premises HPC cluster consisting of 8 nodes including one login node, 6 CPU nodes and 1 FPGA node. AWS is a cloud computing platform that provides a wide range of services, including compute, storage, and databases, to help users build and deploy applications quickly and securely. These resources are designed to empower researchers and innovators to analyze large-scale data and deliver research outcomes in quantitative ways.
             </p>
           </div>
           <div className="row">

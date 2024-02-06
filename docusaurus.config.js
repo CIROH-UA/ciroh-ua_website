@@ -88,6 +88,11 @@ const config = {
             label: "About us",
             position: "right",
           },
+          {
+            href: "/contribute",
+            label: "Contribute",
+            position: "right",
+          },
           // {
           //   href: 'https://github.com/CIROH-UA',
           //   label: 'GitHub',

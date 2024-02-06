@@ -4,26 +4,23 @@ Thank you for your interest in contributing to the CIROH DocuHub - CIROH's techn
 
 Our website is constructed using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## Major Changes
-
-For significant changes, please follow these steps:
-
-1. Before contributing to this repository, start by opening an issue ticket and creating a new issue.
-2. On the issue ticket, navigate to the "Development" section and click on "Create a branch."
-3. Create a new branch and check it out locally.
-4. Implement your changes within the branch, commit them, and push them to the branch you created in Step 3.
-   - Please note: Follow the subsequent steps to test your changes locally.
-5. Open a Pull Request, and after review by an admin, it will be merged into the main branch.
-6. GitHub Actions will automatically trigger and update the site.
-
 ## Minor Changes
 
 For minor changes, follow these steps:
 
-1. Visit [docs.ciroh.org](https://docs.ciroh.org) and proceed with the following actions:
-2. Click on "Edit page" to add new content.
+1. Visit [docs.ciroh.org](https://docs.ciroh.org) and go to the page you want to edit.
+2. Click on "Edit page" at the end of the page to add/update any content.
 3. Create a Pull Request.
 4. Your changes will be reviewed and merged by an admin.
+
+## Major Changes
+
+For significant changes, please follow these steps:
+
+1. Go to https://github.com/CIROH-UA/ciroh-ua_website and fork the repo.
+2. Once forked, make your changes and commit the changes in your local repository.
+3. Create a pull request. Once submitted, admin will review and merge the pull request.
+4. GitHub Actions will automatically build and publish the new changes.
 
 If you encounter any issues or have questions, please don't hesitate to send an email to ciroh-it-admin@ua.edu. We appreciate your contributions!
 

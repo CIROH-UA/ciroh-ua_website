@@ -15,6 +15,10 @@ tags:
 
 Slides and recordings from the various conferences can be found in the below section.
 
+### AMS 2024
+- presenter: Sepehr Karimi
+- 
+
 ### AGU 2023
 
 - presenter: Arpita Patel

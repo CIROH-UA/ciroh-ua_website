@@ -38,6 +38,7 @@ The portal includes applications developed using the [Tethys Platform framework]
 - [Ground Subsseting Tool](https://github.com/Aquaveo/ggst.git) (GGST)
 - [Snow Inspector](https://github.com/BYU-Hydroinformatics/snow-inspector)
 - [OWP Tethys App](https://github.com/Aquaveo/OWP)
+- [Community Streamflow Evaluation System (CSES)](https://github.com/whitelightning450/Tethys-CSES)
 - [OWP NWM Map Viewer](https://water.noaa.gov/map) (Proxy App)
 - [CIROH JupyterHub](https://jupyterhub.cuahsi.org/hub/login) (Proxy App)
 - [HydroShare](https://www.hydroshare.org/home/) (Proxy App)

@@ -37,5 +37,5 @@ Use the following command-line example to create a tag for an EC2 instance:
 
 For each project, tag all its resources with:
 
-Project=<project_name> (e.g., ciroh-hydroshare, ciroh-fim)
+Project=project_name (e.g., ciroh-hydroshare, ciroh-fim)
 Double-check the tag name with the AWS main account admin to make sure it fits well with our naming scheme.

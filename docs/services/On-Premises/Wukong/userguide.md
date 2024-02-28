@@ -1,7 +1,9 @@
 ---
 sidebar_position: 1
-title: "Pantharhei User Guide"
+title: "Wukong User Guide"
 description: "On-Premises Data Center"
 tags:
   - HPC
+  - On-Premises
+  - User Guide
 ---

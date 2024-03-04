@@ -14,14 +14,14 @@ Welcome to the February edition of the CIROH DocuHub blog, where we bring you th
 
 Our team has been hard at work enhancing CIROH's Infrastructure and Community NextGen tools. Here are some highlights from February 2024:
 
-1. We successfully launched our new On-premises Infrastructure, which is now fully operational. You can find documentation for it [here](/docs/services/On-premises).
+1. We successfully launched our new On-premises Infrastructure, which is now fully operational. You can find documentation for it [here](/docs/services/On-Premises/intro).
 
 2. For NGIAB, we've made improvements to the CI pipeline for pull requests submitted with forked repositories. Now, we automatically build and test these submissions using the CI pipeline.
 
-3. We've added documentation for the NWMURL python package, which offers utility functions tailored for accessing National Water Model (NWM) data URLs. This library streamlines the process of accessing NWM data for various purposes, including analysis, modeling, and visualization. You can explore the documentation [here](/docs/products/tools/dataaccess).
+3. We've added documentation for the NWMURL python package, which offers utility functions tailored for accessing National Water Model (NWM) data URLs. This library streamlines the process of accessing NWM data for various purposes, including analysis, modeling, and visualization. You can explore the documentation [here](/docs/category/data-access).
 
 4. We're thrilled to announce the NextGen Track for DevCon24. The schedule is now available at: [DevCon24 Schedule](https://ciroh.ua.edu/devconference/).
 
 Thank you for your ongoing interest and support in the Community NextGen project. Stay tuned for more exciting updates and developments next month. 😊
 
-[Click Here to Visit Community NextGen and NGIAB News from Feb 2024](/docs/products/tools/nextgeninabox/news)
+[Click Here to Visit Community NextGen and NGIAB News from Feb 2024](/docs/category/nextgen-in-a-box-ngiab)

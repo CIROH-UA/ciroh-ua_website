@@ -12,7 +12,7 @@ Tags in AWS are essential for organizing resources based on their purpose, owner
 
 # How to Tag Resources on AWS
 
-1. Using AWS Console: 
+1. Using AWS Console:
 
 Navigate to the desired resource, such as an EC2 instance, and follow these steps:
 

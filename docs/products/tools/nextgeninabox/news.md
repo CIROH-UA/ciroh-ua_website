@@ -11,6 +11,6 @@ tags:
 ---
 import News from './news';
 
-# NextGen and NGIAB Updates
+# Community NextGen and NGIAB Updates
 
 <News/>

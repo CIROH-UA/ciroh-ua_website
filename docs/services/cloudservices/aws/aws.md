@@ -11,9 +11,9 @@ tags:
   - EKS
 ---
 
-# CIROH-UA's AWS Research Cloud
+# CIROH AWS Research Cloud
 
-Through the OMNIA contract, CIROH-UA has teamed with AWS Cloud to deliver ground-breaking research and speed up time to insight for hydrological researchers.
+CIROH has teamed with AWS Cloud to deliver ground-breaking research and speed up time to insight for hydrological researchers.
 
 The research journey is shortened by moving research burdens to the cloud, which also increases data accessibility and sharing.
 
@@ -38,5 +38,6 @@ For the CIROH consortium and members, if your research project is applying and a
 
 <a href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=case_studies_call.md&title="> Cloud Infrastructure Request Form</a>
 
-Your request will be handled by DevOps staff at CIROH-UA and if permitted will be given access to the research cloud.
+Your request will be handled by DevOps staff at CIROH and if permitted will be given access to the AWS research cloud.
+
 :::

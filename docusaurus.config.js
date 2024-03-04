@@ -93,11 +93,11 @@ const config = {
             label: "Contribute",
             position: "right",
           },
-          // {
-          //   href: 'https://github.com/CIROH-UA',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+          {
+            href: 'https://github.com/CIROH-UA/ciroh-ua_websiteAbo',
+             label: 'Repo',
+             position: 'right',
+          },
         ],
       },
       footer: {
@@ -113,6 +113,10 @@ const config = {
               {
                 label: "Visit ciroh.org",
                 href: "https://ciroh.org",
+              },
+              {
+                label: "Visit portal.ciroh.org",
+                href: "http://portal.ciroh.org",
               },
             ],
           },

@@ -25,19 +25,17 @@ In essence, CIROH's Research Computing services are a cornerstone for fostering 
 
 ## Available clusters
 
+import Highlight from '@site/src/components/on-premises/index';
+
+<!-- <Highlight color="#25c2a0">Pantarhei</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.
+
+I can write **Markdown** alongside my _JSX_! -->
+
 <div class="container">
      <article class="margin-top--lg">
-          <section class="row list_node_modules-@docusaurus-theme-classic-lib-theme-DocCategoryGeneratedIndexPage-styles-module">
-               <article class="col col--6 margin-bottom--lg">
-                    <a class="card padding--lg cardContainer_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" href="/docs/services/On-Premises/Pantarhei/intro">
-                         <h2 class="text--truncate cardTitle_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" title="AWS Cloud Platform">Pantarhei</h2>
-                    </a>
-               </article>
-               <article class="col col--6 margin-bottom--lg">
-                    <a class="card padding--lg cardContainer_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" href="/docs/services/On-Premises/Wukong/intro">
-                         <h2 class="text--truncate cardTitle_node_modules-@docusaurus-theme-classic-lib-theme-DocCard-styles-module" title="Google Cloud Platform">Wukong</h2>
-                    </a>
-               </article>
+          <section class="row list_card">
+               <Highlight class="card padding--lg">Pantarhei</Highlight>
+               <Highlight class="card padding--lg">Wukong</Highlight>
           </section>
      </article>
 </div>

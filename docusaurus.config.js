@@ -94,10 +94,15 @@ const config = {
             position: "right",
           },
           {
-            href: 'https://github.com/CIROH-UA/ciroh-ua_websiteAbo',
+            href: 'https://github.com/CIROH-UA/ciroh-ua_website',
              label: 'Repo',
              position: 'right',
           },
+          {
+            href: `http://portal.ciroh.org/`,
+              label: 'Portal',
+              position: 'right',
+          }
         ],
       },
       footer: {
@@ -125,27 +130,24 @@ const config = {
             items: [
               {
                 html: `
-                <a href="https://ciroh.org" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH" style="margin-left:-15px">
+                <a href="https://www.youtube.com/@UA_CIROH" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH" style="margin-left:-15px">
                 <img src="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png" alt="CIROH on YouTube" width="70" height="60" />
               </a>
-              <a href="https://ciroh.org" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:-15px">
+              <a href="https://www.linkedin.com/company/uaciroh/" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:-15px">
                 <img src="https://static.vecteezy.com/system/resources/previews/018/930/587/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="CIROH on LinkedIn" width="70" height="60" />
               </a>
-              <a href="https://ciroh.org" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:-25px">
+              <a href="https://www.facebook.com/UACIROH/" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:-25px">
                 <img src="https://static.vecteezy.com/system/resources/previews/018/930/702/original/facebook-logo-facebook-icon-transparent-free-png.png" alt="CIROH on Facebook" width="70" height="60" />
               </a> 
                   
                 `,
               },
               {
-                html: `
-                <a href="https://ciroh.org" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:0px;">
-                <img src="https://static.vecteezy.com/system/resources/previews/023/986/555/original/instagram-logo-instagram-logo-transparent-instagram-icon-transparent-free-free-png.png" alt="CIROH on Instagram" width="45" height="45" />
-              </a>
-              <a href="https://ciroh.org" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:5px;">
+                html: `               
+              <a href="https://twitter.com/UA_CIROH" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:5px;">
                 <img src="https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000" alt="CIROH on X" width="40" height="40" />
               </a>
-              <a href="https://ciroh.org" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:5px;">
+              <a href="https://github.com/CIROH-UA" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:5px;">
                 <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="CIROH on GitHUb" width="40" height="40" />
               </a>
                 

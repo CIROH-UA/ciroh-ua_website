@@ -5,11 +5,12 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ## How to Get Started?
 
-Go to "https://ciroh-ua.github.io/" or "docs.ciroh.org" and click on Documentation.
+Go to "https://ciroh-ua.github.io/" or "docs.ciroh.org"
 
-- Click on Edit page for adding new content.
+- Click on Documentation or any tab.
+- Click on Edit page at the bottom of the page for adding new content.
 - Create a Pull Request.
-- Changes will be reviewed and Merged by admin.
+- Changes will be reviewed and merged by admin.
 
 Support Email: ciroh-it-admin@ua.edu
 

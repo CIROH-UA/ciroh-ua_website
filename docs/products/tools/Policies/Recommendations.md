@@ -1,0 +1,117 @@
+# Recommendations for Meeting CIROH’s Data and Code Sharing Policy
+
+In the following sections, we provide some practical guidance for CIROH researchers designed to help them meet the terms and conditions of CIROH’s Data and Code Sharing Policy, as discussed above, for different types of research products. Each section is focused on providing guidance for a particular type of product, but these sections may not be inclusive of all of the types of products that may fall under NOAA’s requirements for sharing data and research products.
+
+## Recommendations for Sharing Data
+
+Depending on the type and size of data you are producing and using, we recommend the following options for data archiving and sharing data:
+
+1. **HydroShare (www.hydroshare.org)**
+   - **When to use:**
+     - Use for datasets under 1GB (increases are possible)
+     - Datasets that require spatial data services (THREDDS, WMS, etc)
+     - Datasets that need to be accessed from applications through APIs
+     - Datasets that are linked to other datasets
+     - Datasets that require formal publishing with a DOI
+     - For links and pointers to external datasets
+     - Consider using a Creative Commons License for releasing data
+   - **When not to use:**
+     - Very large datasets
+     - Rapidly changing datasets
+     - Data with extensive sharing and license restrictions
+   - **Cost of use:**
+     - Free for researchers up to 20 GB per user
+     - Free for permanently published data
+   - **Where to go for help:** 
+     - [HydroShare Help](http://help.hydroshare.org)
+     - Email help@cuahsi.org to reach the CUAHSI HydroShare team
+     - HydroShare short videos on CUAHSI YouTube channel
+
+2. **CIROH Cloud Amazon S3 storage via CIROH’s AWS account and Google Buckets, Azure, On-Premise**
+   - **When to use:**
+     - Use for large datasets
+     - Data that is part of the NWM workflows (https://console.cloud.google.com/storage/browser/national-water-model)
+     - Cloud computing linked data
+     - Consider linking to cloud share from HydroShare for discoverability
+   - **When not to use:**
+     - Smaller datasets you want to formally publish with a DOI (May complicate formal publication with DOI)
+   - **Cost of use:**
+     - Some uses may be covered by CIROH core funds (contact CIROH Cloud Team to start a request)
+     - Extensive uses may be charged to individual CIROH projects
+   - **Where to go for help:**
+     - Email ciroh-ua-admin@ua.edu UA CIROH Cloud Team
+     - CIROH Cloud Slack Channel - #ciroh-ua-it-admin
+     - AWS support Slack Channel - #aws-ciroh-support
+
+3. **Water Prediction Node: https://waternode.ciroh.org/**
+   - **Who to contact for help:** Water Prediction Node Team
+     - CIROH side: Dylan Lee (CoastWatch Water Node Coordinator), dylan.lee@noaa.gov
+
+## Recommendations for Sharing Code
+
+1. **GitHub (www.github.org)**
+   - **When to use:**
+     - Generally post your code on your institution’s GitHub organization - some projects may be appropriately hosted on CIROH organization
+     - We suggest forking the CIROH template for structured readme files, etc.
+     - Example: https://github.com/NOAA-OWP/owp-open-source-project-template
+     - When multiple developers are actively developing software or other products
+     - Consider using the three clause BSD3 or MIT license
+     - Consider linking to Zenodo to snapshot and get a DOI for your code
+   - **When not to use:**
+     - Not recommended for proprietary code (although private repositories are available in GitHub at cost)
+   - **Cost of use:**
+     - Free for public repositories
+     - Cost for private repositories
+   - **Where to go for help:**
+     - GitHub discussion forums
+     - CIROH Slack channels e.g., #ciroh-hydroinformatics-working-group
+
+2. **Jupyter notebooks in HydroShare**
+   - **When to use:**
+     - Sharing code as Jupyter notebooks that you want to be launchable into a computational environment like CIROH JupyterHub
+     - When you want your code to accompany data in one citable resource for reproducibility purposes
+   - **When not to use:**
+     - When code is rapidly changing
+     - When you want your code to be under formal version control
+   - **Cost of use:**
+     - Free for researchers to store up to 20 GB of content in HydroShare
+     - CUAHSI JupyterHub is free to use
+     - CIROH 2i2c JupyterHub is free to use
+   - **Where to go for help:**
+     - Email help@cuahsi.org for help with sharing notebooks in HydroShare and/or launching notebooks into the CUAHSI JupyterHub instance
+     - How to get access to CIROH 2i2c: https://docs.ciroh.org/docs/services/cloudservices/google/
+     - How to get access to 2i2c using Hydroshare: https://docs.ciroh.org/docs/services/cloudservices/google/hydroshareintegration
+
+## Recommendations for Sharing Models
+
+Model sharing can be viewed as “code sharing” or “data sharing,” and many of the suggested methods above can be adopted for model sharing. Consider the following options for sharing models:
+
+- GitHub - Supports sharing of model source codes
+- HydroShare - Supports sharing of model programs and models instances
+- NextGen in a Box (NGIAB) - Use cloud computing to modify and execute NextGen based models in a docker container
+- CIROH Web Sites - Downloadable executables, model instances, installers, etc can be shared on the CIROH portal web site.
+
+## Recommendations for Sharing Workflows
+
+- GitHub
+- JupyterNotebooks in HydroShare - launch into CIROH JupyterHub environment or CUAHSI JupyterHub
+
+## Recommendations for Sharing Published Manuscripts
+
+- GitHub (see https://github.com/NOAA-OWP/OWP-Presentations)
+- Per NOAA - Don’t share preprints prior to peer review
+
+## Recommendations for Sharing Educational Materials
+
+- HydroLearn - We recommend using www.HydroLearn.org which allows for and supports the following types of learning module sharing, education,
+  - **When to use:**
+    - Broadly applicable learning modules related to hydrology and NWM
+  - **When not to use:**
+    - Highly specific, localized, tailored learning materials for your specific university or departmental courses
+    - Material that requires specific and inaccessible data, software, etc.
+  - **Cost to use:**
+    - Free for open access learning modules
+  - **Where to go for help:**
+    - [HydroLearn Contact Us](https://www.hydrolearn.org/contact-us/)
+    - Use other tools intentionally if they meet a need e.g. Norm Jones at BYU GitHub gists as educational python modules to show how to use certain modules.
+    - You can also use the CIROH educational portal to share your tutorials and guideline materials at https://docs.ciroh.org/docs/education/

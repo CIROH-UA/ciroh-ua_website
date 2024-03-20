@@ -84,6 +84,12 @@ const config = {
             label: "Education",
           },
           {
+            type: "doc",
+            docId: "policies/intro",
+            position: "left",
+            label: "Policies and Best Practices",
+          },
+          {
             href: "/about",
             label: "About us",
             position: "right",

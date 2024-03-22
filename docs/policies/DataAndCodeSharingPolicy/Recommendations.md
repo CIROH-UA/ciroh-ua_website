@@ -61,7 +61,7 @@ Depending on the type and size of data you are producing and using, we recommend
      - Not recommended for proprietary code (although private repositories are available in GitHub at cost)
    - **Cost of use:**
      - Free for public repositories
-     - Cost for private repositories
+     - Free for private repositories (limited functionality - e.g. no GitHub Actions/Runners, Wiki and other features)
    - **Where to go for help:**
      - GitHub discussion forums
      - CIROH Slack channels e.g., #ciroh-hydroinformatics-working-group

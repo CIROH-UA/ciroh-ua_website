@@ -22,6 +22,9 @@ To connect to Pantarhei using SSH, you must follow three high-level steps:
 University of Alabama (UA) requires that you use the Virtual private network (VPN) to connect to the UA campus network in order to connect to the Pantarhei cluster.
 
 :::tip
+To request credentials for VPN Access, please fill this form [CIROH Service Request Form](https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=eaeef2bd5f894e62ab350cafb3b5ea76&id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUME1GV1JXRFVSQzQxM1FFRUc4SDhCOFNONy4u)
+:::
+:::tip
 For more information on setting up a VPN, please visit the [Office of Information Technology (OIT) website](https://oit.ua.edu/services/internet-networking/vpn/)
 :::
 

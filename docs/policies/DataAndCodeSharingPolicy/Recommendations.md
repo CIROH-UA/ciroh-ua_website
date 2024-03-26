@@ -93,7 +93,8 @@ Model sharing can be viewed as “code sharing” or “data sharing,” and man
 
 ## Recommendations for Sharing Workflows
 
-- GitHub
+- GitHub gists (e.g., to show how to use certain modules)
+- Post materials on the CIROH docuhub
 - JupyterNotebooks in HydroShare - launch into CIROH JupyterHub environment or CUAHSI JupyterHub
 
 ## Recommendations for Sharing Published Manuscripts
@@ -103,7 +104,7 @@ Model sharing can be viewed as “code sharing” or “data sharing,” and man
 
 ## Recommendations for Sharing Educational Materials
 
-- HydroLearn - We recommend using www.HydroLearn.org which allows for and supports the following types of learning module sharing, education,
+- HydroLearn - We recommend using www.HydroLearn.org which allows for and supports learning module sharing and dissemination of educational materials. Hydrolearn modules be linked from the CIROH docuhub. Supplementary materials, tutorials, and guideline materials may also be posted directly on the CIROH educational portal at https://docs.ciroh.org/docs/education/.
   - **When to use:**
     - Broadly applicable learning modules related to hydrology and NWM
   - **When not to use:**
@@ -113,5 +114,3 @@ Model sharing can be viewed as “code sharing” or “data sharing,” and man
     - Free for open access learning modules
   - **Where to go for help:**
     - [HydroLearn Contact Us](https://www.hydrolearn.org/contact-us/)
-    - Use other tools intentionally if they meet a need e.g. Norm Jones at BYU GitHub gists as educational python modules to show how to use certain modules.
-    - You can also use the CIROH educational portal to share your tutorials and guideline materials at https://docs.ciroh.org/docs/education/

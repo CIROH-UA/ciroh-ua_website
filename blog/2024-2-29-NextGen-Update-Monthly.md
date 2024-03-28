@@ -14,7 +14,7 @@ Welcome to the February edition of the CIROH DocuHub blog, where we bring you th
 
 Our team has been hard at work enhancing CIROH's Infrastructure and Community NextGen tools. Here are some highlights from February 2024:
 
-1. We successfully launched our new On-premises Infrastructure, which is now fully operational. You can find documentation for it [here](/docs/services/On-Premises/intro).
+1. We successfully launched our new On-premises Infrastructure, which is now fully operational. You can find documentation for it [here](/docs/services/on-prem/).
 
 2. For NGIAB, we've made improvements to the CI pipeline for pull requests submitted with forked repositories. Now, we automatically build and test these submissions using the CI pipeline.
 
@@ -24,4 +24,4 @@ Our team has been hard at work enhancing CIROH's Infrastructure and Community Ne
 
 Thank you for your ongoing interest and support in the Community NextGen project. Stay tuned for more exciting updates and developments next month. 😊
 
-[Click Here to Visit Community NextGen and NGIAB News from Feb 2024](/docs/category/nextgen-in-a-box-ngiab)
+[Click Here to Visit Community NextGen and NGIAB News from Feb 2024](/docs/products/tools/nextgeninabox)

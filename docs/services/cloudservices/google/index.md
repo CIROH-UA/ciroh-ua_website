@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "2i2c JupyterHub"
+title: "Google Cloud"
 description: "2i2c deployed on Google Cloud"
 tags:
   - 2i2c
@@ -57,3 +57,10 @@ import TabItem from '@theme/TabItem';
 To get the access of above environments, please email us at **ciroh-it-admin@ua.edu** with your github User ID
 :::
 
+
+
+------------------------------------------------
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

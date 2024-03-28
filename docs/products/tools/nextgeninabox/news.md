@@ -1,6 +1,6 @@
 ---
-sidebar_position: 6
-title: "News"
+sidebar_position: 4
+title: "NextGen Community News"
 tags:
   - NGIAB
   - NextGen

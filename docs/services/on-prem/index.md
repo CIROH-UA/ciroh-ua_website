@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
-description: "On-Premises Services"
+sidebar_position: 4
+title: "On-Premises"
 tags:
   - HPC
   - On-Premises
@@ -25,17 +25,10 @@ In essence, CIROH's Research Computing services are a cornerstone for fostering 
 
 ## Available clusters
 
-import Highlight from '@site/src/components/on-premises/index';
 
-<!-- <Highlight color="#25c2a0">Pantarhei</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.
 
-I can write **Markdown** alongside my _JSX_! -->
+------------------------------------------------
 
-<div class="container">
-     <article class="margin-top--lg">
-          <section class="row list_card">
-               <Highlight class="card padding--lg">Pantarhei</Highlight>
-               <Highlight class="card padding--lg">Wukong</Highlight>
-          </section>
-     </article>
-</div>
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

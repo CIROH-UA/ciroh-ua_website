@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "AWS Infrastructure"
+title: "AWS Cloud"
 description: "AWS Research Cloud"
 tags:
   - AWS
@@ -31,3 +31,11 @@ Using AWS for hydrological projects allows them to manage, stage, store, share, 
 :::info
 <a href="https://aws.amazon.com/">AWS Cloud Services</a>
 :::
+
+
+
+------------------------------------------------
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Introduction"
+title: "Pantarhei"
 description: "Pantarhei HPC Cluster"
 tags:
   - HPC
@@ -23,3 +23,10 @@ Use of this resource is governed by the University of Alabama Acceptable Use Pol
 - GPU node: 4 NVIDIA Tesla V100 GPUs, 2 Intel Xeon Gold 6148 Processors, 384 GB memory, 3.2 TB NVMe.
 - FPGA node: 1 Intel Arria 10 FPGA, 2 Intel Xeon Gold 6148 6148 Processors, 384 GB memory, 1.6 TB NVMe.
 - Interconnect: all nodes are connected to a Mellanox InfiniBand switch with FDR 56 Gb/s networks. -->
+
+
+------------------------------------------------
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

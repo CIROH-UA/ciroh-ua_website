@@ -1,6 +1,6 @@
 ---
-sidebar_position: 2
-title: "Introduction and How tos?"
+sidebar_position: 1
+title: "NextGen In A Box"
 description: "NextGen In a Box (NGIAB)"
 tags:
   - NextGen In A Box
@@ -103,3 +103,9 @@ Our dedicated team members include:
 - **The University of Alabama Team:** [Arpita Patel](https://dev.awi.ua.edu/about/staff/arpita-patel/), Dr. James Halgren, [Dr. Puri Bangalore](https://eng.ua.edu/eng-directory/dr-purushotham-bangalore/), [Dr. Jeff Carver](http://carver.cs.ua.edu/), Benjamin Lee, [Dr. Sepehr Karimiziarani](https://dev.awi.ua.edu/about/staff/sepehr-karimiziarani-ph-d/), [Dr. Shahab Alam](https://dev.awi.ua.edu/about/staff/md-shahabul-alam-ph-d/), Trupesh Patel, Josh Cunningham, Hari Jajula, Rohan Sunkarapalli, Manjiri Gunaji, [Dr. Steve Burian](https://eng.ua.edu/eng-directory/dr-steven-burian/)
 
 - **Lynker Contractors:** Zach Wills, Nels Frazier, Jordan Laser, Mike Johnson, Josh Sturtevant
+
+------------------------------------------------
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

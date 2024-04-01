@@ -1,12 +1,11 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { library } from "@fortawesome/fontawesome-svg-core";
+// import { fab } from "@fortawesome/free-brands-svg-icons";
 
 // Initialize Font Awesome library
-library.add(fab);
+// library.add(fab);
 
 const FeatureList = [
 ];
@@ -40,7 +39,7 @@ const Member = ({ idx, name }) => (
           style={{ marginBottom: 15, paddingLeft: 15 }}
         >
           {name}
-          {/* <FontAwesomeIcon icon={['fab', 'linkedin']} /> */}
+          
         </div>
       </div>
     </div>

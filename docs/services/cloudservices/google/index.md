@@ -9,53 +9,71 @@ tags:
   - notebook
 ---
 
-# 2i2c JupyterHub (GCP)
+# CIROH Cloud: Powered by 2i2c JupyterHub on Google Cloud
 
-CIROH-UA has teamed with 2i2c Cloud service to design, develop and operate JupyterHub in the google cloud for hydrologic researchers. It builds and supports open source infrastructure that serves research and development.
+CIROH, in collaboration with 2i2c, offers a dedicated JupyterHub environment on Google Cloud specifically designed for hydrological researchers. 2i2c is a cloud service provider specializing in open-source infrastructure for research and development.
 
-## Benefits of using 2i2c Cloud Services:
+## **Benefits of CIROH Cloud's 2i2c JupyterHub:**
 
-- Provides managed JupyterHub as a service
-- Powerful, flexible, and dynamic. Open source tools are the best for accelerating research.
-- 2i2c uses Google Cloud services for JupyterHub deployment.
+*   **Managed JupyterHub as a Service:** CIROH Cloud takes care of the entire JupyterHub infrastructure, allowing researchers to focus on their scientific endeavors.
+    
+*   **Open Source Powerhouse:** Built on open-source tools, 2i2c JupyterHub offers flexibility, scalability, and a collaborative environment that fosters research advancement.
+    
+*   **Leveraging Google Cloud:** 2i2c utilizes Google Cloud's robust infrastructure to deliver a powerful and reliable platform for your computational needs.
+    
 
-## CIROH-UA's 2i2c JupyterHub (Staging and Production) : How to access these environments?
+This reworded version emphasizes the collaboration between CIROH and 2i2c, highlights the benefits specifically for hydrological researchers, and clarifies the role of Google Cloud.
 
+### 2i2c JupyterHub Access:
+
+<a class="button button--active button--secondary" href="https://ciroh.awi.2i2c.cloud/hub/login"> 2i2c Production Hub</a>
+
+<a class="button button--active button--secondary" href="https://staging.ciroh.awi.2i2c.cloud/hub/login"> 2i2c Staging Hub</a>
+
+
+<!--
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
   <TabItem value="production" label="Production" default>
-    <span className="badge badge--secondary">CIROH 2i2c Production Hub</span>
+    <span className="badge badge--primary">CIROH 2i2c Production Hub</span>
     <hr/>
-      <a href="https://ciroh.awi.2i2c.cloud/hub/login">https://ciroh.awi.2i2c.cloud/hub/login</a>
+      <a href="https://ciroh.awi.2i2c.cloud/hub/login">Production Hub Login</a>
   </TabItem>
   <TabItem value="staging" label="Staging">
-    <span className="badge badge--secondary">CIROH 2i2c Staging Hub</span>
+    <span className="badge badge--primary">CIROH 2i2c Staging Hub</span>
     <hr/>
-      <a href="https://staging.ciroh.awi.2i2c.cloud/hub/login">https://staging.ciroh.awi.2i2c.cloud/hub/login</a>
+      <a href="https://staging.ciroh.awi.2i2c.cloud/hub/login">Staging Hub Login</a>
   </TabItem>
 </Tabs>
+-->
 
-## CIROH-UA's 2i2c JupyterHub details: 
-
-:::info
-<a href="https://2i2c.org/">2i2c JupyterHub</a>
-:::
-:::info
-<a href="https://docs.2i2c.org/">2i2c Docs</a>
-:::
-:::info
-<a href="https://infrastructure.2i2c.org/">2i2c Infrastructure Docs</a>
-:::
-:::info
-<a href="https://github.com/2i2c-org/awi-ciroh-image">Github URL for AWI-CIROH 2i2c Hub Image</a>
-:::
-
-### How to gain access to these environments?
+### How to get access to these environments?
 :::note
 To get the access of above environments, please email us at **ciroh-it-admin@ua.edu** with your github User ID
 :::
+
+
+### 2i2c JupyterHub details:
+
+:::info
+[2i2c JupyterHub](https://2i2c.org/)
+:::
+
+:::info
+[2i2c Docs](https://docs.2i2c.org/)
+:::
+
+:::info
+[2i2c Infrastructure Docs](https://infrastructure.2i2c.org/)
+:::
+
+:::info
+[Github URL for AWI-CIROH 2i2c Hub Image](https://github.com/2i2c-org/awi-ciroh-image)
+:::
+
+
 
 
 

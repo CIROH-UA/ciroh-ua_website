@@ -1,3 +1,8 @@
+---
+sidebar_position: 1
+title: AWS Best Practices
+---
+
 # AWS Best Practices for CIROH AWS Users
 
 As the main account administrator for CIROH subaccount, here are some best practices to follow within your subaccount:

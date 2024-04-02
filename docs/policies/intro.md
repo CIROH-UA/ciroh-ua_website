@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+title: Policies and Best Practices
 ---
 
-# Introduction
+# Data, Code Sharing and Infrastructure Policies
 
 <div className="container">
     <div className="hero-content">

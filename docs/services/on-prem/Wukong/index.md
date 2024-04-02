@@ -7,6 +7,7 @@ tags:
   - On-Premises
   - Overview
   - Intro
+  - Wukong
 ---
 Wukong serves as an analytical and computational resource accessible to the research
 community of the Cooperative Institute for Research to Operations in Hydrology (CIROH).
@@ -22,6 +23,8 @@ Protection Procedure. Please review these policies on-line:
 
 
 ------------------------------------------------
+
+### Navigational Resources
 
 import DocCardList from '@theme/DocCardList';
 

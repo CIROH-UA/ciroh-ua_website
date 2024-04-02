@@ -17,15 +17,9 @@ Use of this resource is governed by the University of Alabama Acceptable Use Pol
 2. [Information Classification Policy](https://ua-public.policystat.com/policy/14809337/latest/)
 3. [Information Protection Procedure](https://oit.ua.edu/internaldocs/20210205-UA%20Information%20Protection%20Procedures.pdf)
 
-
-<!-- Pantarhei cluster has 8 nodes including 1 login node, 6 CPU nodes, 1 GPU node, 1 FPGA node, totally equipped with 296 Intel Xeon Scalable Processors, 2.8 TB memory, 32 TB local storage, 108 TB file system.
-- CPU node: 2 Intel Xeon Gold 6148 Processors, 384 GB memory, 4 TB NVMe.
-- GPU node: 4 NVIDIA Tesla V100 GPUs, 2 Intel Xeon Gold 6148 Processors, 384 GB memory, 3.2 TB NVMe.
-- FPGA node: 1 Intel Arria 10 FPGA, 2 Intel Xeon Gold 6148 6148 Processors, 384 GB memory, 1.6 TB NVMe.
-- Interconnect: all nodes are connected to a Mellanox InfiniBand switch with FDR 56 Gb/s networks. -->
-
-
 ------------------------------------------------
+
+### Navigational Resources
 
 import DocCardList from '@theme/DocCardList';
 

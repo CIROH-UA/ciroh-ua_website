@@ -11,7 +11,7 @@ We provide the following principles that guide CIROH’s activities and associat
 - Products of CIROH research are produced at public expense and should be broadly accessible to the public.
 
 ## Policy Statement
-CIROH follows NOAA’s Data Sharing Directive, which is included in the Terms and Conditions of CIROH’s Cooperative Agreement with NOAA and is also available [here](https://nosc.noaa.gov/EDMC/PD.DSP.php) (Version 3.0 at the time of this writing). CIROH is responsible for implementing these conditions and ensuring that they are also met by CIROH sub-recipients and subcontractors. The Data Management Plan submitted with the original CIROH proposal is included as Appendix ?? to this document.
+CIROH follows NOAA’s Data Sharing Directive, which is included in the Terms and Conditions of CIROH’s Cooperative Agreement with NOAA and is also available [here](https://nosc.noaa.gov/EDMC/PD.DSP.php) (Version 3.0 at the time of this writing). CIROH is responsible for implementing these conditions and ensuring that they are also met by CIROH sub-recipients and subcontractors. The [Data Management Plan](/files/CIROH_Data_Management_Plan.pdf) submitted with the original CIROH proposal is included as an Appendix to this document.
 
 The specific wording included in the CIROH Cooperative Agreement is as follows:
 

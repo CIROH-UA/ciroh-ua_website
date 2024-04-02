@@ -1,5 +1,25 @@
 {
-	"2/29/2024": [
+	"3/31/2024": [
+		{
+			"type": "news",
+			"title": "Improvement of NGIAB Singularity Repositories",
+			"description": "Automating build of NGIAB Singularity using GitHub Actions",
+			"link": "https://github.com/CIROH-UA/Ngen-Singularity"
+		},
+		{
+			"type": "feature",
+			"title": "ngen-DataStream",
+			"description": "In March, the python internal to the datastream was containerized. This included implementing catchment-specific configuration for PET, CFE, and Noah OWP (https://github.com/CIROH-UA/ngen-datastream/pull/46). The scripts and plotting tools were developed to perform benchmarking and preliminary results have been collected.",
+			"link": "https://github.com/CIROH-UA/ngen-datastream"
+		},
+		{
+			"type": "feature",
+			"title": "NextGen Model Framework (ngen)",
+			"description": "Seven PRs merged in March.",
+			"link": "https://github.com/NOAA-OWP/ngen"
+		}
+	],
+    "2/29/2024": [
 		{
 			"type": "news",
 			"title": "Improvement of NGIAB CI Pipeline for Pull Requests from Forked Repositories",

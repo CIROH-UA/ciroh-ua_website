@@ -1,37 +1,36 @@
 # How to Contribute to CIROH DocuHub?
 
-Thank you for your interest in contributing to the CIROH DocuHub - CIROH's technical documentation site! We welcome contributions in various forms, whether it's commenting on and adding CIROH project details or submitting pull requests (PRs). In this guide, we'll walk you through the process of contributing code to the CIROH DocuHub.
+Thank you for your interest in contributing to CIROH's DocuHub, our technical documentation site! We appreciate contributions in different ways, from commenting on and adding project details to submitting pull requests (PRs). This guide will help you understand the process of contributing code to the CIROH DocuHub.
 
 Our website is constructed using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## Minor Changes
+## Minor Edits
 
-For minor changes, follow these steps:
+To make minor edits, follow these steps:
 
-1. Visit [docs.ciroh.org](https://docs.ciroh.org) and go to the page you want to edit.
-2. Click on "Edit page" at the end of the page to add/update any content.
-3. Create a Pull Request.
-4. Your changes will be reviewed and merged by an admin.
+1. Visit [docs.ciroh.org](https://docs.ciroh.org) and navigate to the page you wish to modify.
+2. Click on "Edit page" at the bottom of the page to make any necessary changes.
+3. Submit a Pull Request.
+4. An admin will review and merge your changes.
 
-## Major Changes
+## Major Edits
 
-For significant changes, please follow these steps:
+For significant modifications, please adhere to these steps:
 
-1. Go to https://github.com/CIROH-UA/ciroh-ua_website and fork the repo.
-2. Once forked, make your changes and commit the changes in your local repository.
-3. Create a pull request. Once submitted, admin will review and merge the pull request.
-4. GitHub Actions will automatically build and publish the new changes.
+1. Fork the repository from https://github.com/CIROH-UA/ciroh-ua_website.
+2. After forking, implement your changes and commit them to your local repository.
+3. Open a pull request. Once submitted, an admin will review and merge it.
+4. GitHub Actions will automatically compile and publish the updates.
 
-If you encounter any issues or have questions, please don't hesitate to send an email to ciroh-it-admin@ua.edu. We appreciate your contributions!
+If you encounter any issues or have inquiries, please feel free to email us at it-support@ciroh.org. Your contributions are highly valued!
 
 
 =========================================
 
-### Steps to test the changes in local machine:
+### Testing Changes Locally:
 
-1. Download and Install node js LTS version from https://nodejs.org/en if not already installed.
-
-2. How to build and run this project locally.
+1. If not already installed, download and install the LTS version of Node.js from [here](https://nodejs.org/en).
+2. To build and run the project locally, execute the following commands:
 
 ``` 
 npm install
@@ -45,25 +44,25 @@ npm run start
 $ npm run start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This command launches a local development server and opens a browser window. Changes are typically reflected instantly without requiring a server restart.
 
-### Build
+### Build Process
 
 ```
 $ npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+This command generates static content within the `build` directory, suitable for hosting via any static content service.
 
 ### Deployment
 
-To deploy the website, we need to compile this project to deployable package. 
+To deploy the website, compile the project into a deployable package:
 
 ```
 $ npm run build
 ```
 
-above command will create **build** directory in your project folder. We can now deploy the content of that directory to the web server. 
+This will create a build directory within your project folder. You can then deploy the contents of this directory to your web server.
 
 ### Cheatsheet
 
@@ -71,15 +70,11 @@ above command will create **build** directory in your project folder. We can now
 - [tina.io](https://tina.io/)
 - [Infima](https://infima.dev/docs/getting-started/introduction)
 
-### Contributors
-- Arpita Patel (apatel54@ua.edu)
-
 ## Email us
 
-For general inquiries, contact us at : 'ciroh-it-admin@ua.edu'
+For general inquiries, contact us at: it-support@ciroh.org
 
-Have a content to add to this docusite contact us at : 'ciroh-it-admin@ua.edu'
-
+To add content to this docusite, contact us at: it-support@ciroh.org
 
 ## CIROH Slack channel
 

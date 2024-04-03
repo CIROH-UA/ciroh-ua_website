@@ -90,15 +90,15 @@ const config = {
             label: "Policies and Best Practices",
           },
           {
-            href: "/about",
-            label: "About us",
+            href: "/docs/products/tools/nextgeninabox/news",
+            label: "Community NextGen News",
             position: "right",
           },
           {
             href: "/contribute",
             label: "Contribute",
             position: "right",
-          },
+          },                    
           {
             href: 'https://github.com/CIROH-UA/ciroh-ua_website',
              label: 'Repo',
@@ -119,15 +119,15 @@ const config = {
             items: [
               {
                 label: "About CIROH",
-                to: "/about",
+                href: "https://ciroh.ua.edu/about/",
               },
               {
-                label: "Visit ciroh.org",
-                href: "https://ciroh.org",
+                label: "CIROH Members and Partners",
+                href: "https://ciroh.ua.edu/about/ciroh-partners/",
               },
               {
-                label: "Visit portal.ciroh.org",
-                href: "http://portal.ciroh.org",
+                label: "Contact CIROH",
+                href: "https://ciroh.ua.edu/contact-us/",
               },
             ],
           },

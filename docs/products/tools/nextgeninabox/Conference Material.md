@@ -15,13 +15,26 @@ tags:
 
 ## Slides and recordings from the various conferences can be found in the below section.
 
-### AMS 2024
+### AWRA 2024 Geospatial Water Technology Conference  - Orlando, FL (Mar 25-27)
+- presenter: James Halgren
+- [Data to Decisions: Managing and Modeling Water Challenges](https://github.com/CIROH-UA/Conferences/tree/main/2024-03-26_AWRA_GeospatialWaterTechnology)
+
+### UF Water Institute Symposium - Feb 2024
+- presenter: Josh Cunningham
+- [Community Contribution to NWM - Poster](https://github.com/CIROH-UA/Conferences/blob/main/UF%20Water%20Institute%20Symposium/)
+
 - presenter: Sepehr Karimi
-<!-- - [Abstract]() -->
+- [Creating Community Dataset for High-Speed National Water Model Data Access - Poster](https://github.com/CIROH-UA/Conferences/blob/main/UF%20Water%20Institute%20Symposium/Poster.pdf)
+
+
+
+### AMS 2024 - Jan 2024
+- presenter: Sepehr Karimi
+- [Abstract](https://ams.confex.com/ams/104ANNUAL/meetingapp.cgi/Paper/437686)
 - Title : Creating a Community Dataset for High-Speed National Water Model Data Access
 - [AMS24 Slides](https://github.com/CIROH-UA/Conferences/tree/main/AMS%202024)
 
-### AGU 2023
+### AGU 2023 - Dec 2023
 
 - presenter: Arpita Patel
 - [Abstract](https://agu.confex.com/agu/fm23/meetingapp.cgi/Paper/1323853)

@@ -112,15 +112,15 @@ export default function HomepageFeatures() {
             <div style={{'padding-top':'5px', 'margin-left':'-175px'}}>
               <strong>CONTRIBUTE</strong>
               <br />
-              Are you enjoying our <strong>CIROH DocuHub</strong>{" "}
-              website? Interested in{" "}
+              Are you finding value in our <strong>CIROH DocuHub</strong>{" "}
+              website? Would you like to{" "}
               <strong>
-                contributing or adding your documentation, tutorials, training
-                data, and more?
+                contribute by adding product/project documentation, tutorials, training
+                data, conference presentations or more?
               </strong>
               <span>
                 {" "}
-                Discover how you can contribute to enhance our platform.{" "}
+                Explore how you can contribute to improve our platform.{" "}
               </span>
               <br />
               <br />

@@ -61,7 +61,7 @@
 		{
 			"type": "feature",
 			"title": "ngen-DataStream",
-			"description": "3 PRs merged in January. Documentation available at: https://docs.ciroh.org/docs/products/tools/nextgeninabox/nextgenDatastream",
+			"description": "3 PRs merged in January. Documentation available at: /products/tools/nextgeninabox/nextgenDatastream",
 			"link": "https://github.com/CIROH-UA/ngen-datastream"
 		},
 		{

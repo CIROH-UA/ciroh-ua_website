@@ -24,10 +24,10 @@ CIROH team member **James Halgren** presented the work on **"Accelerating Commun
 </div>
 CIROH team member **Sepehr Karimi** presented the work on **"Creating a community dataset for high-speed national water model data access"**
  <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/awra2024-2.png" alt="AWRA2024Spring" style={{ width: '80%' }} />
+        <img src="/img/AWRA2024-2.png" alt="AWRA2024Spring-2" style={{ width: '80%' }} />
 </div>
 CIROH team member **Shahab Alam** presented the work on **"Model structure selection for the flood and drought predictions using the NextGen Framework based on the extreme event simulations"**
  <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/awra2024-3.png" alt="AWRA2024Spring" style={{ width: '80%' }} />
+        <img src="/img/AWRA2024-3.png" alt="AWRA2024Spring-3" style={{ width: '80%' }} />
 </div>
 The conference provided a valuable platform for CIROH to share its expertise and connect with other water professionals dedicated to finding sustainable solutions to water-related challenges. The team's presentation was well-received, sparking insightful discussions and potential collaborations for future projects.

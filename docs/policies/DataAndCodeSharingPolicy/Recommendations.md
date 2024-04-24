@@ -45,7 +45,7 @@ Depending on the type and size of data you are producing and using, we recommend
      - Some uses may be covered by CIROH core funds (contact CIROH Cloud Team to start a request)
      - Extensive uses may be charged to individual CIROH projects
    - **Where to go for help:**
-     - Email ciroh-ua-admin@ua.edu UA CIROH Cloud Team
+     - Email ciroh-it-admin@ua.edu UA CIROH Cloud Team
      - CIROH Cloud Slack Channel - #ciroh-ua-it-admin
      - AWS support Slack Channel - #aws-ciroh-support
 
@@ -82,7 +82,7 @@ Depending on the type and size of data you are producing and using, we recommend
    - **Cost of use:**
      - Free for researchers to store up to 20 GB of content in HydroShare
      - CUAHSI JupyterHub is free to use
-     - CIROH 2i2c JupyterHub is free to use
+     - CIROH 2i2c JupyterHub is free to use (cost covered by CIROH core funds)
    - **Where to go for help:**
      - Email help@cuahsi.org for help with sharing notebooks in HydroShare and/or launching notebooks into the CUAHSI JupyterHub instance
      - How to get access to CIROH 2i2c: https://docs.ciroh.org/docs/services/cloudservices/google/
@@ -94,13 +94,13 @@ Model sharing can be viewed as “code sharing” or “data sharing,” and man
 
 - GitHub - Supports sharing of model source codes
 - HydroShare - Supports sharing of model programs and models instances
-- NextGen in a Box (NGIAB) - Use cloud computing to modify and execute NextGen based models in a docker container
+- NextGen In A Box (NGIAB) - Use cloud computing or local machine to modify and execute NextGen based models in a docker container
 - CIROH Web Sites - Downloadable executables, model instances, installers, etc can be shared on the CIROH portal web site.
 
 ## Recommendations for Sharing Workflows
 
 - GitHub gists (e.g., to show how to use certain modules)
-- Post materials on the CIROH docuhub
+- Post materials on the CIROH DocuHub
 - JupyterNotebooks in HydroShare - launch into CIROH JupyterHub environment or CUAHSI JupyterHub
 
 ## Recommendations for Sharing Published Manuscripts

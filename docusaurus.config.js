@@ -1,9 +1,8 @@
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title:
-    "CIROH DocuHub",
+  title: "CIROH DocuHub",
   staticDirectories: ["static", "img"],
   tagline: "Cooperative Institute for Research to Operations in Hydrology",
   url: "http://ciroh.org",
@@ -26,15 +25,14 @@ const config = {
   },
   presets: [
     [
-      
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         blog: {
-          blogTitle: 'DocuHub blog!',
-          blogDescription: 'A DocuHub powered blog!',
-          postsPerPage: 'ALL',
-          authorsMapPath: 'blog/authors.yaml',
+          blogTitle: "DocuHub blog!",
+          blogDescription: "A DocuHub powered blog!",
+          postsPerPage: "ALL",
+          authorsMapPath: "blog/authors.yaml",
         },
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
@@ -48,11 +46,21 @@ const config = {
       }),
     ],
   ],
-
+// plugins: ["docusaurus-plugin-search-local"],
+//    search: {
+//      index: ["docs"],
+//      numberShown: 5,
+//      language: "en",
+//    },
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      
+      docs: {
+        sidebar: {
+          autoCollapseCategories: false,
+          hideable: true,
+        },
+      },
       stylesheets: [
         "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css",
         // ... other stylesheets
@@ -64,7 +72,7 @@ const config = {
           src: "img/docuhub-logo.png",
         },
         items: [
-          {to: 'blog', label: 'Blog', position: 'right'},
+          { to: "blog", label: "Blog", position: "right" },
           {
             type: "doc",
             docId: "products/intro",
@@ -91,24 +99,24 @@ const config = {
           },
           {
             href: "/docs/products/tools/nextgeninabox/news",
-            label: "Community NextGen News",
+            label: "NextGen Community News",
             position: "right",
           },
           {
             href: "/contribute",
             label: "Contribute",
             position: "right",
-          },                    
+          },
           {
-            href: 'https://github.com/CIROH-UA/ciroh-ua_website',
-             label: 'Repo',
-             position: 'right',
+            href: "https://github.com/CIROH-UA/ciroh-ua_website",
+            label: "Repo",
+            position: "right",
           },
           {
             href: `http://portal.ciroh.org/`,
-              label: 'Portal',
-              position: 'right',
-          }
+            label: "Portal",
+            position: "right",
+          },
         ],
       },
       footer: {
@@ -171,4 +179,4 @@ const config = {
     }),
 };
 
-module.exports = config; 
+module.exports = config;

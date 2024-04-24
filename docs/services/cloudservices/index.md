@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 title: "Public Cloud"
 ---
 
@@ -9,12 +9,11 @@ title: "Public Cloud"
     <div className="hero-content">
       <div className="hero-text">
         <p>
-          
+
 
 **In tandem with the power of the public cloud**, our team of researchers, hydrologists, and engineers at CIROH is committed to advancing our understanding of hydrologic processes, improving operational hydrologic forecasting techniques and workflows, collaborating on community water modeling, converting forecasts into practical solutions, and utilizing water predictions to help guide decision-making processes.
 
 **By leveraging the scalability and flexibility of public cloud platforms like AWS and Google Cloud**, CIROH Cloud empowers our team to conduct groundbreaking research in hydrology. This translates into a robust and efficient computing environment that accelerates discovery and innovation.
-
 
         </p>
       </div>
@@ -22,9 +21,10 @@ title: "Public Cloud"
         <img src="/img/water_products.png" alt="Water Tools" style={{ width: '50%' }} />
       </div>
     </div>
+
 </div>
 
-------------------------------------------------
+---
 
 import DocCardList from '@theme/DocCardList';
 

@@ -75,7 +75,7 @@ import TabItem from '@theme/TabItem';
 				<td>[follow steps](/docs/services/on-prem/Pantarhei/access?current-os=mac#connect-to-the-ssh)</td>
 			</tr>
 			<tr> 
-				<td>Windows 10 Subsystem for Linux</td>
+				<td>Windows 10 Subsystem for Linux</td> 
 				<td>[follow steps](/docs/services/on-prem/Pantarhei/access?current-os=mac#connect-to-the-ssh)</td>
 			</tr>
 			<tr> 

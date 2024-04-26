@@ -23,7 +23,7 @@ CIROH, in collaboration with 2i2c, offers a dedicated JupyterHub environment on 
 
 Submit the form below to get access to the CIROH JupyterHub environments:
 
-<a class="button button--active button--secondary" href="https://tinyurl.com/cirohitform"> Cloud Infrastructure Request Form</a>
+<a class="button button--active button--secondary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> Cloud Infrastructure Request Form</a>
 
 
 ### CIROH JupyterHub Environments:

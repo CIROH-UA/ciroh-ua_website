@@ -5,20 +5,23 @@ title: "Infrastructure Access"
 
 # Infrastructure Access at CIROH-UA
 
+CIROH-UA provides access to both public cloud and on-premises infrastructure to support the research projects of its members and partners.
+
 ## Public Cloud
 
-CIROH consortium members and partners embarking on research projects utilizing the NextGen framework are invited to request access to the research cloud, encompassing services from <strong> AWS and/or Google Cloud </strong>. To facilitate this access, please <strong>submit a GitHub template request detailing your project requirements and specifications</strong>. Our team is ready to assist you in navigating the process of obtaining access to the cloud resources essential for your project's success. We look forward to supporting your endeavors and fostering collaboration within the CIROH community.
-
+CIROH-UA has partnered with <strong>AWS (established), 2i2c (established) and Google Cloud (in-progress)</strong> to provide access to their cloud computing services. To request access to the research cloud, please submit a GitHub template request detailing your project requirements and specifications. Our team will review your request and assist you in obtaining the necessary access.
 
 <a class="button button--active button--secondary" href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=case_studies_call.md&title="> Cloud Infrastructure Request Form</a>
 
 ## On-Premises
 
-To all CIROH consortium members and partners utilizing the NextGen framework for your research projects, please contact us to inquire about <strong> accessing On-Premises resources</strong>. Kindly <strong>submit a GitHub template request</strong>, detailing your requirements and project specifics, to the following address:
+CIROH-UA also operates an on-premises infrastructure that includes high-performance computing (HPC) resources and specialized software. To request access to the on-premises infrastructure, please submit a GitHub template request detailing your project requirements and specifications. Our team will review your request and assist you in obtaining the necessary access.
 
 <a class="button button--active button--secondary" href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=on-prem&projects=&template=onprem-request.md&title="> On-premises Infrastructure Request Form</a>
 _____
 
 :::note
-Your request will be handled by <i>DevOps staff at CIROH</i> and if permitted will be given access to the <strong>research cloud</strong> or <strong>on-premise</strong> infrastructure.
+- This form must be submitted by Principal Investigator (PI) of the project.
+- Your request will be handled by <i>DevOps staff at CIROH</i> and if permitted will be given access to the <strong>research cloud</strong> or <strong>on-premise</strong> infrastructure.
+
 :::

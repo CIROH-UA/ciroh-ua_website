@@ -9,35 +9,27 @@ tags:
   - Pantarhei
 ---
 
-Pantarhei cluster is accessible to the research community of the Cooperative Institute for Research to Operations in Hydrology (CIROH). 
+Pantarhei cluster is accessible to the CIROH members and partners of the Cooperative Institute for Research to Operations in Hydrology (CIROH).
 
-### General overview
+### How to get access to Pantarhei?
 
-To obtain an account, users will need to follow these step:
+1. Submit the On-Premise Infrastructure Request Form below to get access to Pantarhei:
 
-1. Submit [On-premises Infrastructure Request Form](/docs/services/access#on-premises) and describe full project information and resouce requirements.
+We encourage PI of the project to start here: (select On-Premises Infrastructure Request Form and fill out details)
 
-	::::::warning
-	This GitHub issue must be submitted by Principal Investigator (PI) of the project. 
+<a class="button button--active button--secondary" href="../../../../docs/services/access"> Infrastructure Request Form</a>
 
-	:::info[Hint]
-	In the GitHub issue PI should mention following details:
-	1. PI's __Full Name__
-	2. PI's __Affiliated Institute__
-	3. PI's __Affiliated Email Address__
-	4. List of students who will need access, also please provide following details of each student
-		* __Full Name__ of student
-		* __GitHub User Name__ of student
-		* __Affiliated Email Address__ of student
-	:::
-	::::::
-2. Submit On-premise Access Request form in [CIROH Service Request](https://forms.office.com/r/CQucJqqADx).
-	::::::tip
-	The administration of the Pantarhei cluster falls under the purview of the CIROH IT Computing group at the University of Alabama (UA). Consequently, individuals lacking UA credentials (*MyBama ID*, *VPN User Name*, and *CWID*) are obliged to complete the __`VPN Access Request`__ form, followed by the __`On-premise Access Request`__ form within [CIROH Service Request](https://forms.office.com/r/CQucJqqADx).
+---
 
-	:::warning[Account Creation]
-	Creation of accounts on the Pantarhei system necessitates submission of individual forms by each respective user. 
-	
-	For instance, a Principal Investigator (PI) submits a GitHub issue pertaining to a project, and three students require access to the Pantarhei system for project-related work, three separate account creation forms must be duly submitted during this process.
-	:::
-	::::::
+2. Submit the On-premise Access Request form for individual user accounts on Pantarhei:
+
+<a class="button button--active button--secondary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUMzdTOUpKVU5UWFNCU0ZQUlowS0cxV0xFRy4u"> On-Premise Access Request Form</a>
+
+---
+
+:::note
+For UA users, please submit On-Premises Access Request Form. For outside UA users, please start with VPN Access Request Form followed by On-Premises Access Request Form
+:::
+
+---
+ **Note**: If you are unable to access the On-Premise forms, please contact the CIROH team at ciroh-it-admin@ua.edu for assistance.

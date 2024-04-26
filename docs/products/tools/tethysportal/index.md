@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 title: 'TETHYS'
 description: 'Tethys Apps Portal'
 tags:

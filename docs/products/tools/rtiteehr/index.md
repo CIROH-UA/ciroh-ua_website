@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 7
 title: "TEEHR"
 description: "Tools for Exploratory Evaluation in Hydrologic Research"
 tags:

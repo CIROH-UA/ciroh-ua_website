@@ -15,4 +15,4 @@ hide_table_of_contents: false
 ---
 Happy New Year!!! We are back from SFO after attending AGU last month. We are excited to share the latest updates for NGIAB, NextGen, T-route, Hydrofabric, NextGen forcings, and Community Support from December 2023.
 
-[Visit NGIAB News](/docs/products/tools/nextgeninaboxDocker/news)
+[Visit NGIAB News](/docs/products/nextgeninaboxDocker/news)

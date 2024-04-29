@@ -22,4 +22,4 @@ We've release NGIAB v1.1.0! This release fixes issues:
 
 More info: https://github.com/CIROH-UA/NGIAB-CloudInfra/releases/tag/v1.1.0
 
-[Visit NGIAB News](/docs/products/tools/nextgeninaboxDocker/news)
+[Visit NGIAB News](/docs/products/nextgeninaboxDocker/news)

@@ -18,10 +18,10 @@ Our team has been hard at work enhancing CIROH's Infrastructure and Community Ne
 
 2. For NGIAB, we've made improvements to the CI pipeline for pull requests submitted with forked repositories. Now, we automatically build and test these submissions using the CI pipeline.
 
-3. We've added documentation for the NWMURL python package, which offers utility functions tailored for accessing National Water Model (NWM) data URLs. This library streamlines the process of accessing NWM data for various purposes, including analysis, modeling, and visualization. You can explore the documentation [here](/docs/products/tools/dataaccess).
+3. We've added documentation for the NWMURL python package, which offers utility functions tailored for accessing National Water Model (NWM) data URLs. This library streamlines the process of accessing NWM data for various purposes, including analysis, modeling, and visualization. You can explore the documentation [here](/docs/products/dataaccess).
 
 4. We're thrilled to announce the NextGen Track for DevCon24. The schedule is now available at: [DevCon24 Schedule](https://ciroh.ua.edu/devconference/).
 
 Thank you for your ongoing interest and support in the Community NextGen project. Stay tuned for more exciting updates and developments next month. 😊
 
-[Click Here to Visit Community NextGen and NGIAB News from Feb 2024](/docs/products/tools/nextgeninaboxDocker)
+[Click Here to Visit Community NextGen and NGIAB News from Feb 2024](/docs/products/nextgeninaboxDocker)

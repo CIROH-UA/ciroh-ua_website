@@ -15,6 +15,17 @@ tags:
 
 ## Slides and recordings from the various conferences can be found in the below section.
 
+### AWRA 2024 Spring - Tuscaloosa, AL (April 2024)
+- presenter: Shahab Alam
+- [Model structure selection for the flood and drought 
+predictions using the NextGen Framework based on the 
+extreme event simulations](https://github.com/CIROH-UA/Conferences/tree/main/AWRA_2024_Spring))
+
+- presenter: James Halgren
+
+- presenter: Sepehr Karimi
+
+
 ### AWRA 2024 Geospatial Water Technology Conference  - Orlando, FL (Mar 25-27)
 - presenter: James Halgren
 - [Data to Decisions: Managing and Modeling Water Challenges](https://github.com/CIROH-UA/Conferences/tree/main/2024-03-26_AWRA_GeospatialWaterTechnology)

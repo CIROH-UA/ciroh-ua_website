@@ -56,12 +56,12 @@
 			"type": "news",
 			"title": "NextGen In A Box (NGIAB)",
 			"description": "We have made some improvements to NGIAB: 10 PRs merged. Sample input data updated to use AWI_003(with new data provider names). Boost upgraded to v1.79. Self-hosted Runner can start and stop automatically with GitHub Actions. NGIAB image can run in auto mode. Geopackage support added. Documentation available at CIROH DocuHub",
-			"link": "https://docs.ciroh.org/docs/products/tools/nextgeninabox, https://github.com/CIROH-UA/NGIAB-CloudInfra"
+			"link": "https://docs.ciroh.org/docs/products/nextgeninaboxDocker, https://github.com/CIROH-UA/NGIAB-CloudInfra"
 		},
 		{
 			"type": "feature",
 			"title": "ngen-DataStream",
-			"description": "3 PRs merged in January. Documentation available at: /products/tools/nextgeninabox/nextgenDatastream",
+			"description": "3 PRs merged in January. Documentation available at: /products/nextgeninaboxDocker/nextgenDatastream",
 			"link": "https://github.com/CIROH-UA/ngen-datastream"
 		},
 		{

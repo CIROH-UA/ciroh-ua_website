@@ -98,7 +98,7 @@ const config = {
             label: "Policies and Best Practices",
           },
           {
-            href: "/docs/products/nextgeninaboxDocker/news",
+            href: "/docs/products/nextgeninaboxDockerDocker/news",
             label: "NextGen Community News",
             position: "right",
           },

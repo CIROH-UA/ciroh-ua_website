@@ -20,4 +20,4 @@ Third, we would like to share with you is the development of NextGen Datastream,
 
 We hope you enjoyed this blog and found it informative and useful. If you have any questions, comments, or feedback, please feel free to contact us at ciroh-it-admin@ua.edu. Thank you for your interest and support in the Community NextGen project. Stay tuned for more exciting news and developments in the next month. 😊
 
-[Visit NGIAB News](/docs/products/tools/nextgeninabox/news)
+[Visit NGIAB News](/docs/products/tools/nextgeninaboxDocker/news)

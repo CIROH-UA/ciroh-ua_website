@@ -1,8 +1,13 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
+title: "National Water Model"
+description: "NWM"
+tags: 
+- NWM
 ---
 
 # What is National Water Model (NWM)?
+
 The National Water Model (NWM) is a hydrologic model developed by **the National Oceanic and Atmospheric Administration (NOAA)** to simulate and forecast water conditions across the United States.
 
 - This water prediction model creates forecast guidance for over 3.4 million miles of rivers and streams across the United States and its territories
@@ -36,20 +41,3 @@ The NWM currently runs in four configurations:
 
 Source : https://water.noaa.gov/about/nwm
 
-# What is ngen?
-
-- Model agnostic - NextGen is a framework designed for building and integrating models rather than a model itself.
-- Data-centric standards - The framework's focus is on a data-centric process that abstracts the addition of processes and data behind a standard.
-- NextGen design allows for greater flexibility and standardizationin model creation and integration.
-
-- Github URL: [NOAA-OWP/ngen](https://github.com/NOAA-OWP/ngen)
-
-# What is NextGen In A Box (NGIAB)?
-
-- NextGen National Water Resources Modeling Framework Community Release; that can be run for small set of input data rather than running conus wide.
-
-- NGIAB is dependant on ngen repository and uses it internally.
-
-- Github URL: [CIROH-UA/CloudInfra](https://github.com/CIROH-UA/NGIAB-CloudInfra)
-
-- For more information, refer to the NextGen In A Box tab below.

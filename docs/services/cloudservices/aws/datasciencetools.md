@@ -1,5 +1,12 @@
 ---
-sidebar_position: 1
+sidebar_position: 6
+description: "AWS Data Science Tools"
+tags:
+  - AWS
+  - Data Science
+  - AWS S3
+  - EC2
+  - S3
 ---
 
 # AWS Data Science Tools

@@ -98,7 +98,7 @@ const config = {
             label: "Policies and Best Practices",
           },
           {
-            href: "/docs/products/tools/nextgeninabox/news",
+            href: "/docs/products/nextgeninabox/news",
             label: "NextGen Community News",
             position: "right",
           },

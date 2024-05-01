@@ -14,6 +14,10 @@ tags:
 
 CIROH Cloud leverages the power of AWS to empower researchers and unlock groundbreaking advancements in hydrology. CIROH provides access to enterprise-level AWS cloud platform to researchers.
 
+<div className="col col--6" style={{ textAlign: 'center' }}>
+				<img src="https://blog.adobe.com/en/publish/2021/08/31/media_1649ebc3fbbce0df508081913819d491fc3f7c7a9.png?width=750&format=png&optimize=medium" alt="AWS" style={{ width: '100%' }} />
+</div>
+
 :::info
 <a href="https://aws.amazon.com/">AWS Cloud Services</a>
 :::

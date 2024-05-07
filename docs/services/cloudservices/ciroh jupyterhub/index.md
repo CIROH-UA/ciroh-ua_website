@@ -23,13 +23,22 @@ CIROH, in collaboration with 2i2c, offers a dedicated JupyterHub environment on 
 
 Submit the form below to get access to the CIROH JupyterHub environments:
 
-<a class="button button--active button--secondary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> Cloud Infrastructure Request Form</a>
+<a class="button button--active button--secondary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) Infrastructure Request Form</a>
 ---
-
 :::note
 You will need to submit GitHub username for this request. 
 If you do not currently have GitHub account, follow instruction at [GitHub account](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
 :::
+
+-----
+### How to request new software install on 2i2c?
+
+Please refer [Dockerfile file](https://github.com/2i2c-org/awi-ciroh-image/blob/main/Dockerfile) for the list of software currently deployed on CIROH JupyterHub.
+
+If your software in not listed in this file, please submit the form below to request new software installation on 2i2c JupyterHub.
+
+<a class="button button--active button--secondary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) Software Install Form</a>
+---
 
 ### CIROH JupyterHub Environments:
 

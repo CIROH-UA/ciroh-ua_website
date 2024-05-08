@@ -9,3 +9,47 @@
   height: 200px;
   width: 200px;
 }
+
+.flexcontainer1{
+
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  flex-wrap: nowrap;
+
+}
+.flexcontainer1 > div {
+  display: block;
+  width:50%;
+
+}
+.flexcontainer2{
+
+  display: flex;
+  flex-direction: row;
+  width:50%;
+  flex-wrap: nowrap;
+
+}
+
+.imagecontainer{
+  display:block;
+  width:300px;
+  height: 140px;
+  text-align: center;
+
+}
+.heading1{
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.logocontainer
+{
+  margin-bottom: 4rem;
+}
+

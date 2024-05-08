@@ -11,7 +11,7 @@ tags:
 
 # Hydrolearn: An Introduction
 
-Hydrolearn is an education project funded by the Nationla Science Foundation to promote the collaborative development and adoption of authentic, active learning resources in hydrology and water resources. Using HydroLearn, instuctors can:
+Hydrolearn is an education project funded by the National Science Foundation to promote the collaborative development and adoption of authentic, active learning resources in hydrology and water resources. Using HydroLearn, instuctors can:
 
     - Explore existing courses, case studies, and learning activities and use in classrooms
     - Share learning resources with the community

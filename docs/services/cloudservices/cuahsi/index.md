@@ -35,7 +35,7 @@ There are multiple ways to access the CUAHSI JupyterHub platform which are liste
 ### HydroShare Web Application
 The simplest way to get started with the CUAHSI JupyterHub is by launching it directly from the HydroShare Apps library ([hydroshare.org/apps](https://hydroshare.org/apps)) by clicking on the CUAHSI JupyterHub icon. This redirect you to the CUAHSI JupyterHub server where you will be asked to login using your HydroShare credentials. Once authenticated, you will be asked to choose a [Profile Environment](profiles.md) which will be used to launch an isolated cloud computing environment for you to work in. 
 
-![HydroShare Apps Library](../../../static/img/hsapps-library.png)
+![HydroShare Apps Library](../../../../static/img/hsapps-library.png)
 
 In this space, you can create files and execute code from within your web browser. Any data you upload, download, and create is associated with your HydroShare account and will persist between sessions, meaning that it will be there next time you log in. Prior to gaining access, you will be asked join the CUAHSI JupyterHub HydroShare group (see the Access and Authentication section for details).
 
@@ -43,7 +43,7 @@ In this space, you can create files and execute code from within your web browse
 Another common way of accessing the CUAHSI JupyterHub environment is by using the HydroShare `Open with` functionality. This button can be found in the top right corner of any HydroShare resource landing page. After selecting "CUAHSI JupyterHub", a computing environment will be prepared and the content of the current HydroShare resource will be placed inside of it. This is a convenient method for executing code, data, and workflows that have been published in the HydroShare repository.
 
 
-![HydroShare Open With](../../../static/img/hsapps-open-with.png)
+![HydroShare Open With](../../../../static/img/hsapps-open-with.png)
 
 ### Direct URL 
 

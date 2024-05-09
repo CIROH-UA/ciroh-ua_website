@@ -33,7 +33,7 @@ To access the CUAHSI JupyterHub platform, you must be a member of the CUAHSI Jup
 There are multiple ways to access the CUAHSI JupyterHub platform which are listed below. All of these methods require that you register your HydroShare account with the CUAHSI JupyterHub Group (see [Gaining Access](#gaining-access))
 
 ### HydroShare Web Application
-The simplest way to get started with the CUAHSI JupyterHub is by launching it directly from the HydroShare Apps library ([hydroshare.org/apps](https://hydroshare.org/apps)) by clicking on the CUAHSI JupyterHub icon. This redirect you to the CUAHSI JupyterHub server where you will be asked to login using your HydroShare credentials. Once authenticated, you will be asked to choose a [Profile Environment](profiles.md) which will be used to launch an isolated cloud computing environment for you to work in. 
+The simplest way to get started with the CUAHSI JupyterHub is by launching it directly from the HydroShare Apps library ([hydroshare.org/apps](https://hydroshare.org/apps)) by clicking on the CUAHSI JupyterHub icon. This redirect you to the CUAHSI JupyterHub server where you will be asked to login using your HydroShare credentials. Once authenticated, you will be asked to choose a [Profile Environment](https://github.com/CUAHSI/jupyterhub/blob/main/docs/getting-started.md) which will be used to launch an isolated cloud computing environment for you to work in. 
 
 ![HydroShare Apps Library](../../../../static/img/hsapps-library.png)
 

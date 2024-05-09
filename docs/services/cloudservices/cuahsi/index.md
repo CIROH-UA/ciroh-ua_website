@@ -16,7 +16,7 @@ The CUAHSI JupyterHub is a free cloud computing environment that enables researc
 <br />
 
 <blockquote>
-  <p><strong>NOTE:</strong> Below content is rendered from <a href="https://github.com/CUAHSI/jupyterhub/docs/getting-started.md">https://github.com/CUAHSI/jupyterhub/docs/getting-started.md</a></p>
+  <p><strong>NOTE:</strong> Below content is rendered from <a href="https://github.com/CUAHSI/jupyterhub/blob/main/docs/getting-started.md">https://github.com/CUAHSI/jupyterhub/blob/main/docs/getting-started.md</a></p>
 </blockquote>
 <br />               
 

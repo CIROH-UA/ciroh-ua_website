@@ -1,17 +1,17 @@
 ---
 sidebar_position: 5
-title: "Hydrolearn"
+title: "HydroLearn"
 description: "hydrolearn"
 tags: 
-- hydrolearn
+- HydroLearn
 - hydrology
 - online courses
 - edX
 ---
 
-# Hydrolearn: An Introduction
+# HydroLearn: An Introduction
 
-Hydrolearn is an education project funded by the National Science Foundation to promote the collaborative development and adoption of authentic, active learning resources in hydrology and water resources. Using HydroLearn, instuctors can:
+HydroLearn is an education project funded by the National Science Foundation to promote the collaborative development and adoption of authentic, active learning resources in hydrology and water resources. Using HydroLearn, instuctors can:
 
     - Explore existing courses, case studies, and learning activities and use in classrooms
     - Share learning resources with the community
@@ -30,5 +30,5 @@ Note: These courses are offered through Open edX, a non-profit organization dedi
 
 ## HydroLearn Resources
 - [HydroLearn Official Website](https://www.hydrolearn.org/)
-- [Hydrolearn Courses](https://edx.hydrolearn.org/courses)
-- [More information on Hydrolearn 101](https://www.hydrolearn.org/hydrolearn-101/)
+- [HydroLearn Courses](https://edx.hydrolearn.org/courses)
+- [More information on HydroLearn 101](https://www.hydrolearn.org/hydrolearn-101/)

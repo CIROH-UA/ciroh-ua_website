@@ -99,7 +99,7 @@ const config = {
           },
           {
             href: "/docs/products/nextgeninaboxDocker/news",
-            label: "NextGen Community News",
+            label: "News",
             position: "right",
           },
           {
@@ -107,16 +107,7 @@ const config = {
             label: "Contribute",
             position: "right",
           },
-          {
-            href: "https://github.com/CIROH-UA/ciroh-ua_website",
-            label: "Repo",
-            position: "right",
-          },
-          {
-            href: `http://portal.ciroh.org/`,
-            label: "Portal",
-            position: "right",
-          },
+          
         ],
       },
       footer: {
@@ -136,6 +127,14 @@ const config = {
               {
                 label: "Contact CIROH",
                 href: "https://ciroh.ua.edu/contact-us/",
+              },
+              {
+                label: "CIROH Repo",
+                href: "https://github.com/CIROH-UA/ciroh-ua_website",
+              },
+              {
+                label: "CIROH Portal",
+                href: "http://portal.ciroh.org//",
               },
             ],
           },

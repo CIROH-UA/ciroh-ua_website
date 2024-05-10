@@ -336,21 +336,22 @@ export default function HomepageFeatures() {
             <div style={{'padding-top':'5px', 'margin-left':'-175px'}}>
               <strong>CONTRIBUTE</strong>
               <br />
-              Are you finding value in our <strong>CIROH DocuHub</strong>{" "}
-              website? Would you like to{" "}
-              <strong>
-                contribute by adding product/project documentation, tutorials, training
-                data, conference presentations or more?
-              </strong>
-              <span>
-                {" "}
-                Explore how you can contribute to improve our platform.{" "}
-              </span>
+              
+              We would like CIROH Consortium members to contribute to CIROH DocuHub. Please contribute by adding  product/project documentation, tutorials, training data, or conference presentations.  <br />
+              The CIROH DocuHub repository provides a collaborative platform for sharing project's technical documentation. <strong>Learn more about how you can contribute and access the CIROH DocuHub repostitory here:</strong>
+         
+              {" "}
               <br />
               <br />
-              <a className="button button--info" href="/Contribute">
+              
+              
+              <a className="button button--info" href="/Contribute" style={{ textDecoration: 'none', marginRight: '20px' }}>
                 How to Contribute?
               </a>
+              <a className="button button--info" href="https://github.com/CIROH-UA/ciroh-ua_website" style={{ textDecoration: 'none', marginRight: '20px' }}>
+                Repository
+              </a>
+
             </div>
           </div>
         </div>

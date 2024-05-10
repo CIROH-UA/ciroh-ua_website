@@ -348,8 +348,8 @@ export default function HomepageFeatures() {
               <a className="button button--info" href="/Contribute" style={{ textDecoration: 'none', marginRight: '20px' }}>
                 How to Contribute?
               </a>
-              <a className="button button--info" href="https://github.com/CIROH-UA/ciroh-ua_website" style={{ textDecoration: 'none', marginRight: '20px' }}>
-                Repository
+              <a className="button button--info button--outline" href="https://github.com/CIROH-UA/ciroh-ua_website" style={{ textDecoration: 'none', marginRight: '20px' }}>
+                GitHub Repo 
               </a>
 
             </div>

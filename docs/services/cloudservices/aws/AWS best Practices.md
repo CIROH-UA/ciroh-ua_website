@@ -29,6 +29,16 @@ As the main account administrator for CIROH subaccount, here are some best pract
 
 - **Region Selection:** Carefully evaluate the available AWS regions and select the one that best aligns with your data residency requirements, compliance needs, and desired performance characteristics.
 
+EBS:
+- **EBS Volume Management: Avoiding Unnecessary Costs:** Terminate EBS Volumes with Terminated Instances: When terminating an EC2 instance, ensure that you also delete any associated EBS volumes that are no longer needed. EBS volumes incur charges even if they are not attached to a running instance.
+
+- **Regularly Review EBS Volume Usage:** Periodically review your EBS volumes using the EC2 Management Console or AWS CLI. Identify any unattached volumes that are no longer required and delete them to avoid ongoing charges.
+
+EFS:
+- **Data Lifecycle Management:** Evaluate your data access patterns. For infrequently accessed files, consider migrating data from Amazon EFS to Amazon S3 to leverage its cost-efficient storage classes, such as S3 Standard-IA or S3 Glacier.
+
+- **Tiered Storage Strategy:** Implement a tiered storage strategy where frequently accessed data resides on EFS for high performance, while infrequently accessed or archival data is moved to S3 for cost-effective long-term storage.
+
 ## Governance and Compliance:
 
 - **Standardized configurations:** Establish and enforce standardized configurations for resources across linked accounts. This ensures consistency and simplifies management.

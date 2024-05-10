@@ -21,7 +21,7 @@ const SponserList = [
     name: "USGS",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/04/USGS_logo_green-1.png",
     link: "https://www.usgs.gov/",
-    width: "150",
+    width: "190",
     height: "100",
   },
   {
@@ -35,7 +35,7 @@ const SponserList = [
     name: "Lynker",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/04/Lynker-no-tag.png",
     link: "https://lynker.com/",
-    width: "150",
+    width: "240",
     height: "90",
   },
   
@@ -52,42 +52,42 @@ const MemberList = [
     name: "University of California San Diego",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/03/UCSD-SIO_Vertical-Color_RGB.png",
     link: "https://cw3e.ucsd.edu/",
-    width: "150",
+    width: "190",
     height: "75",
   },
   {
     name: "The University of Alabama in Huntsville",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/03/UAH_primary-300x159.png",
     link: "https://www.itsc.uah.edu/home/projects/adapt-precipitation-super-resolution-and-data-fusion-deep-learning-techniques-operational-flood-forecasting",
-    width: "160",
-    height: "150",
+    width: "190",
+    height: "110",
   },
   {
     name: "University of Arizona",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/03/ua_stack_rgb_4_0-300x281.png",
     link: "https://www.arizona.edu/",
-    width: "75",
-    height: "75",
+    width: "105",
+    height: "95",
   },
   {
     name: "University of Iowa",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/03/Block-IOWA-GOLD-ffcd00-1024x512.png",
     link: "https://www.uiowa.edu/",
-    width: "150",
+    width: "160",
     height: "80",
   },
   {
     name: "University of Hawai'i at Mānoa",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/03/bottom-300x151.png",
     link: "https://manoa.hawaii.edu/",
-    width: "150",
-    height: "80",
+    width: "190",
+    height: "100",
   },
   {
     name: "University of Saskatchewan",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/03/usask_usask_colour-300x67.png",
     link: "https://water.usask.ca/",
-    width: "150",
+    width: "190",
     height: "50",
   },
   {
@@ -102,7 +102,7 @@ const MemberList = [
     name: "University of Minnesota",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/03/UMN_M-wdmk-stack-D2D-maroon-blk-300x237.png",
     link: "https://environment.umn.edu/",
-    width: "150",
+    width: "170",
     height: "120",
   },
 
@@ -110,22 +110,22 @@ const MemberList = [
     name: "University of Utah",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/03/Ulogo_RGB.jpg",
     link: "https://www.civil.utah.edu/",
-    width: "130",
-    height: "80",
+    width: "150",
+    height: "90",
   },
   {
     name: "Bringham Young University",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/03/byu-wordmark-blue-300x191.png",
     link: "https://www.byu.edu/",
-    width: "120",
+    width: "180",
     height: "100",
   },
   {
     name: "Colorado School Of Mines",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/03/Mines-Stacked_1Color-blue-260x300.png",
     link: "https://ciroh.mines.edu/",
-    width: "80",
-    height: "80",
+    width: "100",
+    height: "120",
   },
 ];
 
@@ -134,8 +134,8 @@ const PartnerList=[
     name:"Baron Weather",
     logo:"https://ciroh.ua.edu/wp-content/uploads/2023/03/Baron-Logo_BlackVertical_2022-269x300.png",
     link: "https://baronweather.com/",
-    width: "75",
-    height: "75",
+    width: "80",
+    height: "105",
 
   },
   {
@@ -151,7 +151,7 @@ const PartnerList=[
     name:"Dauphin Island Sea Lab",
     logo:"https://ciroh.ua.edu/wp-content/uploads/2023/03/DISL-centered-logo-Tag-300x183.png",
     link: "https://www.disl.edu/",
-    width: "150",
+    width: "200",
     height: "120",
 
   },
@@ -167,7 +167,7 @@ const PartnerList=[
     name:"Jupiter Intelligence",
     logo:"https://ciroh.ua.edu/wp-content/uploads/2023/03/Jupiter_Logo_Color-300x86.png",
     link: "https://www.jupiterintel.com/",
-    width: "150",
+    width: "190",
     height: "50",
 
   },
@@ -175,39 +175,39 @@ const PartnerList=[
     name:"CUAHSI",
     logo:"https://ciroh.ua.edu/wp-content/uploads/2023/03/new-logo-with-black-text-300x79.png",
     link: "https://www.cuahsi.org/",
-    width: "150",
-    height: "40",
+    width: "190",
+    height: "60",
 
   },
   {
     name:"RTI International",
     logo:"https://ciroh.ua.edu/wp-content/uploads/2023/03/RTI_logo_rgb_1in-300x188.png",
     link: "https://www.rti.org/centers/rti-center-water-resources",
-    width: "150",
-    height: "120",
+    width: "190",
+    height: "100",
 
   },
   {
     name:"Stevens Institute Of Technology",
     logo:"https://ciroh.ua.edu/wp-content/uploads/2023/03/Stevens-Primary-logo_4C-RGB-262x300.png",
     link: "https://www.stevens.edu/",
-    width: "100",
-    height: "100",
+    width: "126",
+    height: "140",
 
   },
   {
     name:"New Mexico State University",
     logo:"https://ciroh.ua.edu/wp-content/uploads/2023/03/NMSU_NoU-Crimson-266x300.png",
     link: "https://nmsu.edu/",
-    width: "75",
-    height: "75",
+    width: "80",
+    height: "100",
 
   },
   {
     name:"Penn State University",
     logo:"https://ciroh.ua.edu/wp-content/uploads/2023/03/PS_HOR_PMS_287_284-300x99.png",
     link: "https://www.psu.edu/",
-    width: "150",
+    width: "190",
     height: "70",
 
   },
@@ -215,8 +215,8 @@ const PartnerList=[
     name:"UC Davis",
     logo:"https://ciroh.ua.edu/wp-content/uploads/2023/03/ucdavis_logo_blue-300x52.png",
     link: "https://www.ucdavis.edu/",
-    width: "150",
-    height: "40",
+    width: "190",
+    height: "35",
 
   },
   
@@ -224,15 +224,15 @@ const PartnerList=[
     name:"University of Southern California",
     logo:"https://ciroh.ua.edu/wp-content/uploads/2023/03/usc_logo_centered_RGB_G-300x147.png",
     link: "https://sc.edu/",
-    width: "160",
-    height: "70",
+    width: "170",
+    height: "80",
 
   },
   {
     name:"Oak Ridge National Laboratory",
     logo:"https://ciroh.ua.edu/wp-content/uploads/2023/03/ORNL-Two-line_green-300x72.png",
     link: "https://www.ornl.gov/",
-    width: "170",
+    width: "190",
     height: "50",
 
   },
@@ -240,7 +240,7 @@ const PartnerList=[
     name:"University of Illinois Urbana-Champaign",
     logo:"https://ciroh.ua.edu/wp-content/uploads/2023/03/University-Wordmark-Full-Color-RGB-300x78.png",
     link: "https://illinois.edu/",
-    width: "150",
+    width: "180",
     height: "50",
 
   },
@@ -336,24 +336,26 @@ export default function HomepageFeatures() {
             <div style={{'padding-top':'5px', 'margin-left':'-175px'}}>
               <strong>CONTRIBUTE</strong>
               <br />
-              Are you finding value in our <strong>CIROH DocuHub</strong>{" "}
-              website? Would you like to{" "}
-              <strong>
-                contribute by adding product/project documentation, tutorials, training
-                data, conference presentations or more?
-              </strong>
-              <span>
-                {" "}
-                Explore how you can contribute to improve our platform.{" "}
-              </span>
+              
+              We would like CIROH Consortium members to contribute to CIROH DocuHub. Please contribute by adding  product/project documentation, tutorials, training data, or conference presentations.  <br />
+              The CIROH DocuHub repository provides a collaborative platform for sharing project's technical documentation. <strong>Learn more about how you can contribute and access the CIROH DocuHub repostitory here:</strong>
+         
+              {" "}
               <br />
               <br />
-              <a className="button button--info" href="/Contribute">
+              
+              
+              <a className="button button--info" href="/Contribute" style={{ textDecoration: 'none', marginRight: '20px' }}>
                 How to Contribute?
               </a>
+              <a className="button button--info button--outline" href="https://github.com/CIROH-UA/ciroh-ua_website" style={{ textDecoration: 'none', marginRight: '20px' }}>
+                GitHub Repo 
+              </a>
+
             </div>
           </div>
         </div>
+    <div className={styles.bgcontainer}>
     <div className={styles.logocontainer}>
         <div>
         <h1 className={styles.heading1}>Consortium Sponsors</h1>
@@ -408,7 +410,7 @@ export default function HomepageFeatures() {
               
             
         </div>
-        </div>
+        
 
         <div className="row" style={{ paddingTop: 30 }}>
           <div className="col col--4" style={{ textAlign: "center" }}>
@@ -425,7 +427,8 @@ export default function HomepageFeatures() {
             />
           </div>
         </div>
-        
+        </div>
+      </div>
       </div>
     </section>
   );

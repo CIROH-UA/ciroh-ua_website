@@ -9,9 +9,6 @@ tags:
 
 # Products Overview
 
-At CIROH, our team of researchers, hydrologists, and engineers is committed to advancing our understanding of hydrologic processes, improving operational hydrologic forecasting techniques and workflows, collaborating on community water modeling, converting forecasts into practical solutions, and utilizing water predictions to help guide decision-making processes.
-
-
 <div className="container">
     <div className="hero-content">
       <div className="hero-text">

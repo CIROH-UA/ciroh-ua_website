@@ -21,7 +21,7 @@ tags:
 Stay up-to-date on the latest AWS news and announcements by visiting the official AWS News Blog:
 
 
-<a class="button button--active button--secondary" href="https://aws.amazon.com/blogs/aws/"> AWS News Blog</a>
+<a class="button button--active button--primary" href="https://aws.amazon.com/blogs/aws/"> AWS News Blog</a>
 
 -----
 

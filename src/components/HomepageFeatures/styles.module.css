@@ -37,19 +37,34 @@
   width:300px;
   height: 140px;
   text-align: center;
+  
 
 }
 .heading1{
-  font-size: 2.6rem;
-  font-weight: 600;
+  font-size: 2.1rem;
+  font-weight: 700;
   color: #2d3748;
   margin-bottom: 1rem;
-  padding-top: 7rem;
+  padding-top: 4rem;
   padding-bottom: 2rem;
   text-align: center;
+}
+@media (dark-theme= "dark") {
+  .logocontainer {
+    filter: invert(1);
+  }
 }
 .logocontainer
 {
   margin-bottom: 4rem;
 }
+[data-theme='dark']  .bgcontainer{
+  background-color: #A9A9A9;
+  padding: 0 0;
+  margin-top: 5%;
+  width:100%;
+  border-radius:17px;
+}
+/* turn on invert filter for logo container when dark mode is on for docusauras */
+
 

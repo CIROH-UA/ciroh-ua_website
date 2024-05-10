@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 title: "CIROH JupyterHub"
 description: "2i2c JupyterHub is a cloud-based JupyterHub environment specifically designed for hydrological researchers. It is powered by 2i2c JupyterHub, a cloud-based JupyterHub environment specifically on Google Cloud"
 tags:
@@ -23,7 +23,7 @@ CIROH, in collaboration with 2i2c, offers a dedicated JupyterHub environment on 
 
 Submit the form below to get access to the CIROH JupyterHub environments:
 
-<a class="button button--active button--secondary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) Infrastructure Request Form</a>
+<a class="button button--active button--primary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) Infrastructure Request Form</a>
 ---
 :::note
 You will need to submit GitHub username for this request. 
@@ -37,16 +37,16 @@ Please refer [Dockerfile file](https://github.com/2i2c-org/awi-ciroh-image/blob/
 
 If your software in not listed in this file, please submit the form below to request new software installation on 2i2c JupyterHub.
 
-<a class="button button--active button--secondary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) Software Install Form</a>
+<a class="button button--active button--primary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) Software Install Form</a>
 ---
 
 ### CIROH JupyterHub Environments:
 
 Click on below button to access the CIROH JupyterHub environments (production and staging environments):
 
-<a class="button button--active button--secondary" href="https://ciroh.awi.2i2c.cloud/hub/login"> CIROH Production JupyterHub</a>
+<a class="button button--active button--primary" href="https://ciroh.awi.2i2c.cloud/hub/login"> CIROH Production JupyterHub</a>
 
-<a class="button button--active button--secondary" href="https://staging.ciroh.awi.2i2c.cloud/hub/login"> CIROH Staging JupyterHub</a>
+<a class="button button--active button--primary" href="https://staging.ciroh.awi.2i2c.cloud/hub/login"> CIROH Staging JupyterHub</a>
 
 _____
 

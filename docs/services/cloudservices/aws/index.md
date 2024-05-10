@@ -30,7 +30,7 @@ CIROH Cloud Hosting services include:
 
 We encourage PI of the project to start here: (select Public Cloud and fill out details for AWS)
 
-<a class="button button--active button--secondary" href="../../../../docs/services/access"> Infrastructure Request Form</a>
+<a class="button button--active button--primary" href="../../../../docs/services/access"> Infrastructure Request Form</a>
 
 ---
 

@@ -7,7 +7,7 @@ title: "CIROH Subdomain Request Form"
 
 To request the ciroh.org subdomain, please fill out the following form.
 
-<a class="button button--active button--secondary" href="https://github.com/CIROH-UA/ciroh-ua.github.io/issues/new?assignees=&labels=&projects=&template=subdomain-request.md&title=">CIROH Subdomain Request Form</a>
+<a class="button button--active button--primary" href="https://github.com/CIROH-UA/ciroh-ua.github.io/issues/new?assignees=&labels=&projects=&template=subdomain-request.md&title=">CIROH Subdomain Request Form</a>
 
 -----
 

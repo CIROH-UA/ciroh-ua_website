@@ -129,7 +129,7 @@ const config = {
                 href: "https://ciroh.ua.edu/contact-us/",
               },
               {
-                label: "CIROH Repo",
+                label: "DocuHub Repo",
                 href: "https://github.com/CIROH-UA/ciroh-ua_website",
               },
               {

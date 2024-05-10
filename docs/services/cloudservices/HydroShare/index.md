@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 title: "HydroShare and CIROH JupyterHub Integration"
 description: "HydroShare and CIROH JupyterHub Integration"
 tags:

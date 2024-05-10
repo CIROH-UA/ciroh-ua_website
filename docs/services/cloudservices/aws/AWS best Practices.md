@@ -25,6 +25,10 @@ As the main account administrator for CIROH subaccount, here are some best pract
 
 - **Monitor resource usage:** Encourage subaccount admins to monitor their resource usage regularly to identify potential cost optimization opportunities.
 
+- **Data Locality:** Always consider the location of your data when selecting a region for deploying resources. Deploying resources in the same region as your data minimizes data transfer costs and latency, leading to improved performance and cost-efficiency.
+
+- **Region Selection:** Carefully evaluate the available AWS regions and select the one that best aligns with your data residency requirements, compliance needs, and desired performance characteristics.
+
 ## Governance and Compliance:
 
 - **Standardized configurations:** Establish and enforce standardized configurations for resources across linked accounts. This ensures consistency and simplifies management.

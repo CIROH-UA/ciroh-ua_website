@@ -17,13 +17,13 @@ Pantarhei cluster is accessible to the CIROH members and partners of the Coopera
 
 We encourage PI of the project to start here: (select On-Premises Infrastructure Request Form and fill out details)
 
-<a class="button button--active button--secondary" href="../../../../docs/services/access"> Infrastructure Request Form</a>
+<a class="button button--active button--primary" href="../../../../docs/services/access"> Infrastructure Request Form</a>
 
 ---
 
 2. Submit the On-premise Access Request form for individual user accounts on Pantarhei:
 
-<a class="button button--active button--secondary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUMzdTOUpKVU5UWFNCU0ZQUlowS0cxV0xFRy4u"> On-Premise Access Request Form</a>
+<a class="button button--active button--primary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUMzdTOUpKVU5UWFNCU0ZQUlowS0cxV0xFRy4u"> On-Premise Access Request Form</a>
 
 ---
 

@@ -25,7 +25,11 @@ jobs:
         with:
          fetch-depth: 0
       - name: Clear git worktree before deployment
-        run: git worktree prune
+        run: |
+          git worktree prune
+          if [ -d "github-pages-deploy-action-temp-deployment-folder" ]; then
+            rm -rf github-pages-deploy-action-temp-deployment-folder
+          fi
       - name: Download a Build Artifact Version
         uses: dawidd6/action-download-artifact@v2.26.1
         with:
@@ -55,8 +59,15 @@ jobs:
           branch: main
           name: build
           path: ./build/
-      - name: Clear git worktree before deployment
-        run: git worktree prune
+      - name: Ensure clean worktree state
+        run: |
+          git worktree prune
+          git worktree list
+          if git worktree list | grep -q 'github-pages-deploy-action-temp-deployment-folder'; then
+            echo "Removing existing temp deployment folder"
+            git worktree remove github-pages-deploy-action-temp-deployment-folder --force
+          fi
+
       
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.0

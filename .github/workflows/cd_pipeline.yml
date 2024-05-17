@@ -24,6 +24,8 @@ jobs:
         uses: actions/checkout@v3
         with:
          fetch-depth: 0
+      - name: Clear git worktree before deployment
+        run: git worktree prune
       - name: Download a Build Artifact Version
         uses: dawidd6/action-download-artifact@v2.26.1
         with:

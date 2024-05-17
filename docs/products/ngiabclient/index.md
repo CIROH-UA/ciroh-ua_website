@@ -19,19 +19,20 @@ tags:
 - Build using the [Tethys Platform](https://www.tethysplatform.org/).
 - Geospatial and time series visualization of the Catchments and Nexus Points
 - Outputs of different model runs can be visualized by the user mounting the outputs of the NextGen in a box in the `app_workspaces` of the application
+
   ![first_page](image/index/first_page.png)
 
 # Visualization
 
-Catchments can be visualized by selecting catchments in the map, or using the custom dropdown to look for a specific catchment ID. In addition, variable time series can be visualized for each catchment using the variable dropdown menu.
+- Catchments can be visualized by selecting catchments in the map, or using the custom dropdown to look for a specific catchment ID. In addition, variable time series can be visualized for each catchment using the variable dropdown menu.
 
-The Catchment layer is prepared into a `shapefile` and published to a local instance of GeoServer in order to allow catchment layers to be accessed using `WMS services`. The
+- The Catchment layer is prepared into a `shapefile` and published to a local instance of GeoServer in order to allow catchment layers to be accessed using `WMS services`. The
 
-![catchments](image/index/catchments.png)
+  ![catchments](image/index/catchments.png)
 
-Nexus can be selected in the map. The different nexus points are clustered in order to allow Nexus layers containing thousands of nexus points. The nexus points can also be accessed using custom dropdown to look for a specific nexus ID
+- Nexus can be selected in the map. The different nexus points are clustered in order to allow Nexus layers containing thousands of nexus points. The nexus points can also be accessed using custom dropdown to look for a specific nexus ID
 
-![nexus](image/index/nexus.png)
+  ![nexus](image/index/nexus.png)
 
 # Running the Application
 
@@ -56,6 +57,12 @@ Running it through the `guide.sh` or `viewOnTethys.sh` does the following:
 conda create -n tethys -c tethysplatform -c conda-forge micro-tethys-platform
 ```
 
+- Activate the tethys environment
+
+```
+conda activate tethys
+```
+
 - Generate the portal config file
 
 ```
@@ -67,12 +74,6 @@ tethys gen portal_config
 
 ```
 tethys db configure
-```
-
-- Activate the tethys environment
-
-```
-conda activate tethys
 ```
 
 - Install the application running the following command
@@ -87,6 +88,12 @@ tethys install -d
 tethys manage start
 ```
 
+- to access the app, you might use the following
+  - user: admin
+  - password: pass
+
 ### Additional resoruices Information
 
-[Getting Started] (https://docs.tethysplatform.org/en/stable/installation.html)
+- [Getting Started with Tethys](https://docs.tethysplatform.org/en/stable/installation.html)
+- [Source code](https://github.com/CIROH-UA/ngiab-client)
+- [Docker Image](https://hub.docker.com/repository/docker/gioelkin/tethys-ngiab/general)

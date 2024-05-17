@@ -51,40 +51,58 @@ Running it through the `guide.sh` or `viewOnTethys.sh` does the following:
 
 ## Running it locally
 
+### Requirements
+
+- Docker
+- miniconda3
+
+### Steps
+
 - Install the tethys platform, you can actually use the `micro-tethys` version.
 
-```
+```bash
 conda create -n tethys -c tethysplatform -c conda-forge micro-tethys-platform
 ```
 
 - Activate the tethys environment
 
-```
+```bash
 conda activate tethys
 ```
 
 - Generate the portal config file
 
-```
+```bash
 tethys gen portal_config
-
 ```
 
 - configure database. In this case sqlite
 
-```
+```bash
 tethys db configure
 ```
 
-- Install the application running the following command
+- Install the application from source code by running the following command
 
-```
+```bash
 tethys install -d
+```
+
+- Under the path `tethysapp/ngiab/workspaces/app_workspace` put the resource folder that you use to run `NGIAB`
+
+- Spin an instance of GeoServer using the following command:
+
+```bash
+#this will pull the image, use default values, and when prompt to mount data directory, put a valid path
+tethys docker init -c geoserver
+
+#this will start the container
+tethys docker start  -c geoserver
 ```
 
 - Start the dev server
 
-```
+```bash
 tethys manage start
 ```
 

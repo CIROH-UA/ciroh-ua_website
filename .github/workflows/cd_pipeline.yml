@@ -31,10 +31,13 @@ jobs:
             echo "Removing existing temp deployment folder"
             git worktree remove github-pages-deploy-action-temp-deployment-folder --force
           fi
-          if git worktree list | grep -q '\[main\]'; then
-            echo "Removing existing main worktree"
-            git worktree remove $(git worktree list | grep '\[main\]' | awk '{print $1}') --force
+          # Check and remove any worktree associated with the deployment if it exists
+          if git worktree list | grep -q 'github-pages-deploy-action'; then
+            echo "Removing existing deployment worktree"
+            DEPLOYMENT_WORKTREE=$(git worktree list | grep 'github-pages-deploy-action' | awk '{print $1}')
+            git worktree remove "$DEPLOYMENT_WORKTREE" --force
           fi
+
       - name: Download a Build Artifact Version
         uses: dawidd6/action-download-artifact@v2.26.1
         with:

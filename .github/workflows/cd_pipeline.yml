@@ -7,23 +7,25 @@ on:
   workflow_run:
     workflows: ["ciroh-ua-website-ci"]
     branches:
-        - main
+      - main
     types:
-        - completed
+      - completed
   workflow_call:
-  
+
 jobs:
-  
   deploy:
     runs-on: ubuntu-latest
     if: github.event.workflow_run.conclusion == 'success'
-    
+
     name: Deploy to GitHub Pages
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-         fetch-depth: 0
+          fetch-depth: 0
+          # Ensure detached HEAD state to avoid conflicts with the main branch
+          ref: refs/heads/main
+
       - name: Clear git worktree before deployment
         run: |
           git worktree prune
@@ -46,18 +48,19 @@ jobs:
           branch: main
           name: version
           path: ./
+
       - name: Read file and set variable
         run: |
           # Read file and set its value to a variable
           FILE_CONTENT=$(cat ./version.txt)
-
           # Set variable as an environment variable
           echo "VERSION=$FILE_CONTENT" >> $GITHUB_ENV
 
       - name: Display variable value
         run: |
           # Display value of variable
-          echo "My variable value is $VERSION"   
+          echo "My variable value is $VERSION"
+
       # https://github.com/marketplace/actions/download-workflow-artifact
       - name: Download a Build Artifact
         uses: dawidd6/action-download-artifact@v2.26.1
@@ -67,15 +70,42 @@ jobs:
           branch: main
           name: build
           path: ./build/
-      
-      
+
+      - name: Ensure clean worktree state
+        run: |
+          git worktree prune
+          if git worktree list | grep -q 'github-pages-deploy-action-temp-deployment-folder'; then
+            echo "Removing existing temp deployment folder"
+            git worktree remove github-pages-deploy-action-temp-deployment-folder --force
+          fi
+          if git worktree list | grep -q 'github-pages-deploy-action'; then
+            echo "Removing existing deployment worktree"
+            DEPLOYMENT_WORKTREE=$(git worktree list | grep 'github-pages-deploy-action' | awk '{print $1}')
+            git worktree remove "$DEPLOYMENT_WORKTREE" --force
+          fi
+
+      - name: Create and switch to a temporary deployment branch
+        run: |
+          git checkout -b temp-deploy-branch
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
-          token: ${{secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO}}
+          token: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
           branch: main
           folder: build
           repository-name: CIROH-UA/ciroh-ua.github.io
-          #tag: $VERSION
-          
-      
+
+      - name: Final cleanup
+        run: |
+          git worktree prune
+          if [ -d "github-pages-deploy-action-temp-deployment-folder" ]; then
+            rm -rf github-pages-deploy-action-temp-deployment-folder
+          fi
+          if git worktree list | grep -q 'github-pages-deploy-action'; then
+            echo "Removing existing deployment worktree"
+            DEPLOYMENT_WORKTREE=$(git worktree list | grep 'github-pages-deploy-action' | awk '{print $1}')
+            git worktree remove "$DEPLOYMENT_WORKTREE" --force
+          fi
+          # Clean up the temporary deployment branch
+          git branch -D temp-deploy-branch

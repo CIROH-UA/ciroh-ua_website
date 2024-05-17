@@ -53,7 +53,8 @@ jobs:
           branch: main
           name: build
           path: ./build/
-      
+      - name: Clear git worktree before deployment
+        run: git worktree prune
       
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.0

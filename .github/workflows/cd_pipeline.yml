@@ -67,18 +67,7 @@ jobs:
           branch: main
           name: build
           path: ./build/
-      - name: Ensure clean worktree state
-        run: |
-          git worktree prune
-          git worktree list
-          if git worktree list | grep -q 'github-pages-deploy-action-temp-deployment-folder'; then
-            echo "Removing existing temp deployment folder"
-            git worktree remove github-pages-deploy-action-temp-deployment-folder --force
-          fi
-          if git worktree list | grep -q '\[main\]'; then
-            echo "Removing existing main worktree"
-            git worktree remove $(git worktree list | grep '\[main\]' | awk '{print $1}') --force
-          fi
+      
       
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.0
@@ -89,9 +78,4 @@ jobs:
           repository-name: CIROH-UA/ciroh-ua.github.io
           #tag: $VERSION
           
-      - name: Final cleanup
-        run: |
-          git worktree prune
-          if [ -d "github-pages-deploy-action-temp-deployment-folder" ]; then
-            rm -rf github-pages-deploy-action-temp-deployment-folder
-          fi
+      

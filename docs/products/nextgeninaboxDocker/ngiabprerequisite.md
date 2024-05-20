@@ -42,7 +42,7 @@ This section guides you through downloading and preparing the sample input data 
 
 ## Step 1: Create Project Directory
 
-- **Linux/Mac:** Open your terminal and go to your desired folder where you want to checkout repo and ngen-data folder and run the following commands:
+- **Linux/Mac users:** Open your terminal and go to your desired folder where you want to checkout repo and ngen-data folder and run the following commands:
 ```bash
 mkdir -p NextGen/ngen-data
 ```
@@ -50,7 +50,7 @@ mkdir -p NextGen/ngen-data
 ```bash
 cd NextGen/ngen-data
 ```
-- **WSL (Right click and run as Admin):** Open WSL with administrator privileges and execute:
+- **Windows users: WSL (Right click and run as Admin):** Open WSL with administrator privileges and execute:
 ```bash
 cd /mnt/c/Users/<Folder>
 ```
@@ -75,11 +75,11 @@ wget --no-parent https://ciroh-ua-ngen-data.s3.us-east-2.amazonaws.com/AWI-006/A
 ```bash
 tar -xf AWI_16_2853886_006.tar.gz
 ```
-### Below is Optional: Rename the folder
+### Rename the folder
 ```bash
 mv AWI_16_2853886_006 my_data
 ```
-Now you have successfully downloaded and prepared the sample input data in the NextGen/ngen-data directory. Remember to replace "my_data" with your preferred folder name if you choose to rename it.
+Now you have successfully downloaded and prepared the sample input data in the NextGen/ngen-data directory.
 
 ## Step 4: Pull images
 - **For Mac**:
@@ -95,4 +95,7 @@ Now you have successfully downloaded and prepared the sample input data in the N
     docker pull docker.osgeo.org/geoserver:2.25.x
     docker pull awiciroh/tethys-ngiab:main
     ```
+
+NOTE:
+For DevCon24: Rest of the steps will be covered during the workshop
 

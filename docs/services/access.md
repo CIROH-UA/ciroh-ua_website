@@ -9,7 +9,7 @@ CIROH-UA provides access to both public cloud and on-premises infrastructure to 
 
 ## Public Cloud
 
-CIROH-UA has partnered with <strong>AWS (established), 2i2c (established) and Google Cloud (in-progress)</strong> to provide access to their cloud computing services. To request access to the research cloud, please submit a GitHub template request detailing your project requirements and specifications. Our team will review your request and assist you in obtaining the necessary access.
+CIROH-UA has partnered with <strong>AWS, 2i2c and Google Cloud </strong> to provide access to their cloud computing services. To request access to the research cloud, please submit a GitHub template request detailing your project requirements and specifications. Our team will review your request and assist you in obtaining the necessary access.
 
 <a class="button button--active button--primary" href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=case_studies_call.md&title="> Cloud Infrastructure Request Form</a>
 

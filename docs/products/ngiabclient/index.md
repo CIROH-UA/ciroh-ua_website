@@ -1,6 +1,6 @@
 ---
-sidebar_position: 5
-title: 'NextGen in Box Client'
+sidebar_position: 2
+title: 'NGIAB Data Visualizer'
 description: 'Tethys Apps Portal'
 tags:
   - tethys
@@ -14,7 +14,7 @@ tags:
   - docker
 ---
 
-# NextGen in Box Client
+# NGIAB Data Visualizer
 
 - Build using the [Tethys Platform](https://www.tethysplatform.org/).
 - Geospatial and time series visualization of the Catchments and Nexus Points

@@ -13,7 +13,7 @@ tags:
 
 Comprised of a large technologically and topically diverse group of scientists, CIROH and NOAA NWM researchers require a means to organize, catalog, coordinate, and share research data products, tools, visualizations, and interactive software applications in an accessible, consistent, and intuitive manner. This project aims to address this need by building and seeding a web-based catalog of interactive web applications, notebooks, software tools, and learning modules that demonstrate and provide access to NWM modeling advances, datasets, visualizations, and information synthesis innovations.
 
-![CIROH Portal](/img/ciroh-tethys-apps-library.png)
+![CIROH Portal](img/ciroh-portal-home-page.png)
 
 The resulting serves as a pathway for advances in research tools to inform the development of future applications within the National Water Center – e.g. within the Water Prediction Operations Division (WPOD) and the Geo Intelligence Division (GID). This project is a cross-cutting activity, exposing NWM research results across disciplines and institutions. The NWM Research Apps Portal is a highly visible resource that NOAA and CIROH leadership can use to showcase the work accomplished by the collaboration and within the cooperative institute. It also serve as a communication tool to allow the broader hydrologic research community to connect with the NWM research activities.
 
@@ -30,22 +30,39 @@ The proposed catalog is being built using Django CMS, Tethys Platform, HydroShar
 
 ## Research Applications
 
-The portal includes applications developed using the [Tethys Platform framework](https://www.tethysplatform.org/), and external applications. Please use the following links to learn more about the applications hosted in the portal:
+The portal includes applications developed using the [Tethys Platform framework](https://www.tethysplatform.org/), and external applications. Please use the following information to learn more about the applications hosted in the portal:
 
-- [Water Data Explorer](https://github.com/BYU-Hydroinformatics/Water-Data-Explorer.git)
-- [Met Data Explorer](https://github.com/BYU-Hydroinformatics/tethysapp-metdataexplorer.git)
-- [HydroCompute &amp;&amp; HydroLang Tethys Application Demo](https://github.com/tethysplatform/tethysapp-hydrocompute.git)
+### Native Applications
+
+Native applications are application developed using the [Tethys Platform framework](https://www.tethysplatform.org/). The following application are hosted in the CIROH Research Portal
+
+- [Water Data Explorer](https://github.com/BYU-Hydroinformatics/Water-Data-Explorer.git): Open-source web application which allows users to import, visualizem, and interact with water data management services such as [CUAHSI WaterOneFlow](https://his.cuahsi.org/wofws.html) and the [SensorThings API](https://hydroserver2.github.io/hydroserver/api/sensor-things-api.html) used by [HydroServer](https://hydroserver2.github.io/hydroserver/).
+
+- [Met Data Explorer](https://github.com/BYU-Hydroinformatics/tethysapp-metdataexplorer.git): Open-source web application for visualizing meteorological gridded data. Utilizing TDS to serve the data, the application allows you to organize and save data files with the specific variables and dimensions that you need, visualize the data in a Leaflet based map viewer, animate the data across a time series, and extract a time series over a specified area.
+
+- [HydroCompute &amp;&amp; HydroLang Tethys Application Demo](https://github.com/tethysplatform/tethysapp-hydrocompute.git): This application demonstrates two projects developed by the [University of Iowa Hydroinformatics Lab (UIHI Lab)](https://hydroinformatics.uiowa.edu/): [HydroLang](https://github.com/uihilab/HydroLang) and [HydroCompute](https://github.com/uihilab/HydroCompute). This application serves as the solution for HydroCompute Case Study 3: Dashboard for Station Statistical Analysis tutorial. This tutorial was developed by the University of Iowa Hydroinformatics Lab for the 2023 CIROH Developer Conference.
+
 - [SWE](https://github.com/Aquaveo/tethysapp-swe.git)
-- [Ground Water Mapper Application](https://github.com/Aquaveo/gwdm.git) (GWDM)
-- [Ground Subsseting Tool](https://github.com/Aquaveo/ggst.git) (GGST)
-- [Snow Inspector](https://github.com/BYU-Hydroinformatics/snow-inspector)
-- [OWP Tethys App](https://github.com/Aquaveo/OWP)
-- [Community Streamflow Evaluation System (CSES)](https://github.com/whitelightning450/Tethys-CSES)
-- [OWP NWM Map Viewer](https://water.noaa.gov/map) (Proxy App)
-- [CIROH JupyterHub](https://jupyterhub.cuahsi.org/hub/login) (Proxy App)
-- [HydroShare](https://www.hydroshare.org/home/) (Proxy App)
+  Open-source web application designed for the visualization of Standardized Snow Water Equivalent (SWE). This application provides users with a comprehensive platform to view, and interpret snow water equivalent data, which is crucial for understanding snowpack dynamics, water resource management, and environmental monitoring
 
-You can develop an application using the [Tethys platform](https://www.tethysplatform.org/), which can later be installed in the portal for greater visibility.
+- [Ground Water Mapper Application](https://github.com/Aquaveo/gwdm.git): The Groundwater Data Mapper (GWDM) is an open source web application and an associated set of Python scripts. The GWDM app can be used to host and visualize groundwater data in one or more regions. The groundwater data is a set of wells organized by aquifers. For each well, the user can upload a set of measurements (typically groundwater elevations) taken at different points in time. The wells are then displayed on a map in the web interface and the measurement time series can be visualized by clicking on the wells.
+
+- [Grace Groundwater Subsseting Tool](https://github.com/Aquaveo/ggst.git): The Grace Groundwater Subsseting Tool (GGST) app uses GRACE data to generate time series and animated maps of groundwater storage changes. GRACE provides monthly estimates of water storage anomalies in equivalent water height and has provided monthly gravity field solutions since April 2002. Estimates of mass variability and associated observational errors are available on a global 300 km grid. GRACE has proved an effective tool for characterizing groundwater storage changes in large regions
+
+- [Snow Inspector](https://github.com/BYU-Hydroinformatics/snow-inspector): Open-source web tool designed for visualizing and analyzing snow cover data using imagery from the MODIS_Terra satellite. It leverages interactive maps and time-series plots to provide insights into snow coverage and depth over specified periods. The application fetches data from NASA's GIBS WMTS service, processes the imagery to extract snow percentage values, and presents the information through a user-friendly interface. This tool is particularly valuable for researchers, hydrologists, and environmental scientists studying snow dynamics and their impact on water resources.
+- [OWP Experimental App](https://github.com/Aquaveo/OWP): Open-source application designed to provide analysis assimilation, short-term, medium-term, and long-term forecasts for any river ID that appears in the anomaly layer of the National Water Model. It also integrates with the Google BigQuery API to perform the same analysis and forecasts for groups of reaches. Additionally, the app allows users to create reach groups from a CSV list of reaches, geometry data, or HydroShare resources.
+- [Community Streamflow Evaluation System (CSES)](https://github.com/whitelightning450/Tethys-CSES): Open-source web application designed to evaluate hydrological model performance using the National Water Model (NWM) and USGS monitoring data. It provides interactive visualizations for over 5,000 monitoring sites, enabling users to analyze streamflow data and assess model accuracy. The application supports various evaluation methods, including state, reach, and HUC (Hydrologic Unit Code) evaluations, and leverages data from the Alabama Water Institute hosted on Amazon AWS S3. Researchers can also use a Python-based package for hands-on model evaluation and are encouraged to contribute to the development and integration of additional hydrological modeling components.
+
+### Proxy Applications
+
+[Proxy applications](https://docs.tethysplatform.org/en/stable/tethys_portal/admin_pages.html#proxy-apps) are applications developed using frameworks other than the Tethys platform and are deployed outside the CIROH research portal. However, they are integrated into the portal through Tethys' capability to incorporate external applications. This allows users to access and utilize these applications seamlessly within the CIROH research portal environment.
+
+- [OWP NWM Map Viewer](https://water.noaa.gov/map): Experimental geospatial services depicting forecasts from the River Forecast Centers and the National Water Model. Services available via the prototype NWS National Map Viewer, or directly via URLs hosted on the [Hydrologic Visualization and Inundation Services](https://maps.water.noaa.gov/server/rest/services) (HydroVIS) cloud resource.
+
+- [CIROH JupyterHub](https://jupyterhub.cuahsi.org/hub/login): Cloud computing service that enables users to execute scientific code and explore, modify, and interact with data inside a remote execution environment using Python and/or R programming languages. Our JupyterHub is closely integrated with CUAHSI’s HydroShare and Hydrologic Information System data repositories, making it easy to leverage community datasets, collaborate, and disseminate research workflows. This platform provides all users with a modest amount of persistent disk space to store files as well as free cloud computing, making it ideal for water science education, data analysis, and research dissemination. To access this system you must become a member of the CUAHSI HydroShare and join our Cloud Computing group
+- [HydroShare](https://www.hydroshare.org/home/): Online, collaborative system for sharing, publishing, and discovering water-related data and models. It is developed and maintained by the Consortium of Universities for the Advancement of Hydrologic Science, Inc. (CUAHSI).
+
+You can develop an application using the [Tethys platform](https://www.tethysplatform.org/), which can later be installed in the portal for greater visibility. Similarly, if you already have an application developed using another framework already deployed it can be added to the portal as a proxy applications
 
 ## Access
 
@@ -134,3 +151,11 @@ Please report bugs and issues on the GitHub Issues page:
 - Brigham Young University - Roja Najafi, Iman Maghami, Dan Ames, Jim Nelson
 - University of Iowa - Ibrahim Demir
 - Aquaveo Contractors - Gio Romero, Michael Souffront, Nathan Swain
+
+## Develop
+
+If you would like to develop a native Tethys application or integrate an existing application about your research into the CIROH Research Portal, please contact the Aquaveo team:
+
+- [Nathan Swain](nswain@aquaveo.com)
+- [Michael Souffront](msouffront@aquaveo.com)
+- [Giovanni Romero](gromero@aquaveo.com)

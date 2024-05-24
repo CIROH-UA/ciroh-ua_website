@@ -124,7 +124,8 @@ If you would like any [HydroLearn](https://www.hydrolearn.org/) learning module 
 1. Log in to HydroShare or create an account.
 2. Create a HydroShare App Resource.
 3. Add the following keyword: `nwm_portal_module`.
-4. Make the resource public.
+4. Make sure the **name** of the **resource** is the same as the **name** of the **learning module**.
+5. Make the resource public.
 
 After following these steps, you will be able to see your learning module:
 

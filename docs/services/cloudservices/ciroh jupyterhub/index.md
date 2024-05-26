@@ -43,6 +43,9 @@ If your software in not listed in this file, please submit the form below to req
 ### CIROH JupyterHub Environments:
 
 Click on below button to access the CIROH JupyterHub environments (production and staging environments):
+:::note
+Please remember to stop the server when you're not actively using it
+:::
 
 <a class="button button--active button--primary" href="https://ciroh.awi.2i2c.cloud/hub/login"> CIROH Production JupyterHub</a>
 

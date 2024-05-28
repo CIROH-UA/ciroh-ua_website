@@ -77,13 +77,13 @@ There are many ways to contribute to the NWM Research Apps Portal. You can contr
 If you would like any current application that you have to appear on the [portal application page](http://portal.ciroh.org/applications/), you can create a [HydroShare](https://www.hydroshare.org/home/) resource containing your application information, and it will be displayed automatically in the portal. Follow these steps:
 
 1. Log in to HydroShare or create an account.
-2. Create a HydroShare App Resource.
+2. Create a **HydroShare App Resource**.
 3. Add the following keyword: `nwm_portal_app`.
 4. Fill in the following metadata:
-   - `app_icon`
-   - `help_page_url`
-   - `app_home_page_url`
-   - `source_code_url`
+   - `app icon`
+   - `help page url`
+   - `app home page url`
+   - `source code url`
 5. Make the resource public.
 
 After following these steps, you will be able to see your app as shown below:
@@ -94,9 +94,9 @@ After following these steps, you will be able to see your app as shown below:
 If you would like any current data set that you have to appear on the [portal data access page](http://portal.ciroh.org/data-access/), you can create a [HydroShare](https://www.hydroshare.org/home/) resource containing your dataset information, and it will be displayed automatically in the portal. Follow these steps:
 
 1. Log in to HydroShare or create an account.
-2. Create a HydroShare App Resource.
+2. Create a **HydroShare Resource**.
 3. Add the following keyword: `nwm_portal_data`.
-4. Fill in the following metadata:
+4. Fill in the following metadata in the **additional metadata portion**:
    - `app_icon`
    - `help_page_url`
    - `app_home_page_url`

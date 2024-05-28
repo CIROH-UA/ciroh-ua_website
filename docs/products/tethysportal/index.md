@@ -80,10 +80,15 @@ If you would like any current application that you have to appear on the [portal
 2. Create a **HydroShare App Resource**.
 3. Add the following keyword: `nwm_portal_app`.
 4. Fill in the following metadata:
+
    - `app icon`
    - `help page url`
    - `app home page url`
    - `source code url`
+
+   Note: You need to provide a URL for the **app_icon**, for example:
+   `http://portal.ciroh.org/t/static/water_data_explorer/images/wde.png`
+
 5. Make the resource public.
 
 After following these steps, you will be able to see your app as shown below:
@@ -97,10 +102,15 @@ If you would like any current data set that you have to appear on the [portal da
 2. Create a **HydroShare Resource**.
 3. Add the following keyword: `nwm_portal_data`.
 4. Fill in the following metadata in the **additional metadata portion**:
+
    - `app_icon`
    - `help_page_url`
    - `app_home_page_url`
    - `source_code_url`
+
+   Note: You need to provide a URL for the **app_icon**, for example:
+   `http://portal.ciroh.org/t/static/water_data_explorer/images/wde.png`
+
 5. Make the resource public.
 
 After following these steps, you will be able to see your dataset:

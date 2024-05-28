@@ -86,7 +86,7 @@ If you would like any current application that you have to appear on the [portal
    - `app home page url`
    - `source code url`
 
-   Note: You need to provide a URL for the **app_icon**, for example:
+   Note: You need to provide an URL for the **app_icon**, for example:
    `http://portal.ciroh.org/t/static/water_data_explorer/images/wde.png`
 
 5. Make the resource public.
@@ -108,7 +108,7 @@ If you would like any current data set that you have to appear on the [portal da
    - `app_home_page_url`
    - `source_code_url`
 
-   Note: You need to provide a URL for the **app_icon**, for example:
+   Note: You need to provide an URL for the **app_icon**, for example:
    `http://portal.ciroh.org/t/static/water_data_explorer/images/wde.png`
 
 5. Make the resource public.
@@ -132,7 +132,7 @@ After following these steps, you will be able to see your publications:
 If you would like any [HydroLearn](https://www.hydrolearn.org/) learning module to appear on the [portal learning modules page](http://portal.ciroh.org/learning-modules/), you can create a HydroShare resource containing your learning module information, and it will be displayed automatically in the portal. Follow these steps:
 
 1. Log in to HydroShare or create an account.
-2. Create a HydroShare Resource.
+2. Create a **HydroShare Resource**.
 3. Add the following keyword: `nwm_portal_module`.
 4. Make sure the **name** of the **resource** is the same as the **name** of the **learning module**.
 5. Make the resource public.

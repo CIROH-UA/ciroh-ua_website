@@ -139,7 +139,7 @@ If you would like any [HydroLearn](https://www.hydrolearn.org/) learning module 
 4. Make sure the **name** of the **resource** is the same as the **name** of the **learning module**.
 5. Make the resource public.
 
-After following these steps, you will be able to see your learning module:
+After following these steps, you will be able to see your learning module
 
 ### Resources
 

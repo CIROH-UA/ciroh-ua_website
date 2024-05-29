@@ -64,7 +64,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
-          token: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
+          token: ${{ secrets.PAT_TO_PUSH_TO_CIROH_GITHUB_IO }}
           branch: main
           folder: build
           repository-name: CIROH-UA/ciroh-ua.github.io

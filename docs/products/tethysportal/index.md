@@ -167,6 +167,7 @@ Please report bugs and issues on the GitHub Issues page:
 
 If you would like to develop a native Tethys application or integrate an existing application about your research into the CIROH Research Portal, please contact the Aquaveo team:
 
-- [Nathan Swain](nswain@aquaveo.com)
-- [Michael Souffront](msouffront@aquaveo.com)
-- [Giovanni Romero](gromero@aquaveo.com)
+- Nathan Swain
+- Michael Souffront
+- Jacob Johnson
+- Giovanni Romero

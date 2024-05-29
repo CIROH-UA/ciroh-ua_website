@@ -92,6 +92,7 @@ If you would like any current application that you have to appear on the [portal
 5. Make the resource public.
 
 After following these steps, you will be able to see your app as shown below:
+
 ![applications](/img/applications.png)
 
 ### Data
@@ -125,6 +126,7 @@ If you would like any current or previous publication to appear on the [portal p
 4. Click on a group folder, then add new citations using the Zotero icon in the URL bar or drag and drop items from other folders into your group folders.
 
 After following these steps, you will be able to see your publications:
+
 ![publications](/img/publications.png)
 
 ### Learning Modules

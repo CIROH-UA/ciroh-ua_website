@@ -62,12 +62,22 @@ jobs:
         run: |
           git checkout -b temp-deploy-branch-$VERSION
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.0
-        with:
-          token: ${{ secrets._REPO_SECRET_GITHUB_IO }}
-          branch: main
-          folder: build
-          repository-name: CIROH-UA/ciroh-ua.github.io
+      # - name: Deploy to GitHub Pages
+      #   uses: JamesIves/github-pages-deploy-action@v4.4.0
+      #   with:
+      #     token: ${{ secrets._REPO_SECRET_GITHUB_IO }}
+      #     branch: main
+      #     folder: build
+      #     repository-name: CIROH-UA/ciroh-ua.github.io
 
-      
+      - name: Deploy Github Pages
+        # You may pin to the exact commit or the version.
+        # uses: ptienchuan/deploy-github-pages-action@abff2ab6d0300d579780d56bd3e70254c5b15403
+        uses: ptienchuan/deploy-github-pages-action@1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
+        with:
+          # [Optional] Determine the directory contains source code. Defaults to "docs"
+          source-directory: build
+          
+          

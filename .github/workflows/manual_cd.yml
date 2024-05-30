@@ -75,13 +75,18 @@ jobs:
           git checkout -b deploy-branch-$VERSION
           git add .
           git commit -m "Deploy from CI workflow artifact"
-         
+      - name: Configure authentication
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git remote set-url target https://x-access-token:${GH_PAT}@github.com/CIROH-UA/ciroh-ua.github.io.git
+
       - name: Push changes to new branch
         working-directory: gh-pages
         env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git push --set-upstream https://ciroh-ua:${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}@github.com/CIROH-UA/ciroh-ua.github.io.git deploy-branch-$VERSION
+          git push --set-upstream target deploy-branch-$VERSION
     
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4

@@ -86,14 +86,14 @@ jobs:
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git push --set-upstream origin deploy-branch-$VERSION
+          git push origin deploy-branch-$VERSION
     
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
-        with:
-          token: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
-          commit-message: "Deploy from CI workflow artifact"
-          branch: deploy-branch-$VERSION
-          title: "Deploy from CI"
-          body: "This is an automated PR to deploy changes from CI workflow."
-          base: main
+      # - name: Create Pull Request
+      #   uses: peter-evans/create-pull-request@v4
+      #   with:
+      #     token: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
+      #     commit-message: "Deploy from CI workflow artifact"
+      #     branch: deploy-branch-$VERSION
+      #     title: "Deploy from CI"
+      #     body: "This is an automated PR to deploy changes from CI workflow."
+      #     base: main

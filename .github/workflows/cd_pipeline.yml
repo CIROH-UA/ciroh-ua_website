@@ -85,11 +85,34 @@ jobs:
         run: |
           git clone --single-branch --branch main https://ciroh-ua:${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}@github.com/CIROH-UA/ciroh-ua.github.io.git gh-pages
           rsync -av --delete-after ./build/ gh-pages/  # Copy the contents of the build directory
-
-      - name: Commit and push changes
-        working-directory: gh-pages
+      - name: Create a new branch for the changes
+        working-directory: repo
         run: |
+          git checkout -b deploy-branch-$VERSION
           git add .
-          git commit -m "Deploy from CI workflow artifact" || echo "Nothing to commit"
-          git push --set-upstream origin main
+          git commit -m "Deploy from CI workflow artifact"
+
+      - name: Push changes to new branch
+        working-directory: repo
+        env:
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
+        run: |
+          git push --set-upstream https://ciroh-ua:${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}@github.com/CIROH-UA/ciroh-ua.github.io.git deploy-branch-$VERSION
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
+          commit-message: "Deploy from CI workflow artifact"
+          branch: deploy-branch-$VERSION
+          title: "Deploy from CI"
+          body: "This is an automated PR to deploy changes from CI workflow."
+          base: main
+          
+      # - name: Commit and push changes
+      #   working-directory: gh-pages
+      #   run: |
+      #     git add .
+      #     git commit -m "Deploy from CI workflow artifact" || echo "Nothing to commit"
+      #     git push --set-upstream origin main
           

@@ -79,7 +79,7 @@ jobs:
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
         run: |
-          git clone --single-branch --branch gh-pages https://ciroh-ua:${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}@github.com/CIROH-UA/ciroh-ua.github.io.git gh-pages
+          git clone --single-branch --branch main https://ciroh-ua:${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}@github.com/CIROH-UA/ciroh-ua.github.io.git gh-pages
           rsync -av --delete-after build/ gh-pages/  # Copy the contents of the build directory
 
       - name: Commit and push changes

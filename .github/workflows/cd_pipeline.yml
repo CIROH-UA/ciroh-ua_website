@@ -58,9 +58,9 @@ jobs:
           name: build
           path: ./build/
 
-      - name: Create and switch to a temporary deployment branch
-        run: |
-          git checkout -b temp-deploy-branch-$VERSION
+      # - name: Create and switch to a temporary deployment branch
+      #   run: |
+      #     git checkout -b temp-deploy-branch-$VERSION
 
       # - name: Deploy to GitHub Pages
       #   uses: JamesIves/github-pages-deploy-action@v4.4.0
@@ -69,7 +69,11 @@ jobs:
       #     branch: main
       #     folder: build
       #     repository-name: CIROH-UA/ciroh-ua.github.io
-
+      - name: List contents of the build directory
+        run: |
+          echo "Contents of the build directory:"
+          ls -al ./build/
+          
       - name: Configure git
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -80,7 +84,7 @@ jobs:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
         run: |
           git clone --single-branch --branch main https://ciroh-ua:${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}@github.com/CIROH-UA/ciroh-ua.github.io.git gh-pages
-          rsync -av --delete-after build/ gh-pages/  # Copy the contents of the build directory
+          rsync -av --delete-after ./build/ gh-pages/  # Copy the contents of the build directory
 
       - name: Commit and push changes
         working-directory: gh-pages

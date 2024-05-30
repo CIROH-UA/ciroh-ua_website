@@ -88,7 +88,6 @@ jobs:
           git checkout -b deploy-branch-$VERSION
           git add .
           git commit -m "Deploy from CI workflow artifact"
-          git push --set-upstream origin deploy-branch-$VERSION
           
       # - name: Create a new branch for the changes and push to new branch
       #   working-directory: gh-pages
@@ -98,12 +97,13 @@ jobs:
       #     git commit -m "Deploy from CI workflow artifact"
           
 
-      # - name: Push changes to new branch
-      #   working-directory: gh-pages
-      #   env:
-      #     PERSONAL_ACCESS_TOKEN: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
-      #   run: |
-      #     git push --set-upstream origin deploy-branch-$VERSION
+      - name: Push changes to new branch
+        working-directory: gh-pages
+        env:
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
+        run: |
+          git push --set-upstream https://ciroh-ua:${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}@github.com/CIROH-UA/ciroh-ua.github.io.git deploy-branch-$VERSION
+
           
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4

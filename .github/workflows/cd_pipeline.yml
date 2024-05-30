@@ -88,23 +88,25 @@ jobs:
       - name: Create a new branch for the changes
         working-directory: gh-pages
         run: |
-          git checkout -b deploy-branch-$VERSION
+          export BRANCH_NAME=deploy-branch-$(date +%Y%m%d-%H%M%S)
+          git checkout -b $BRANCH_NAME
           git add .
           git commit -m "Deploy from CI workflow artifact"
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
 
       - name: Push changes to new branch
         working-directory: gh-pages
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
         run: |
-          git push --set-upstream origin deploy-branch-$VERSION
-
+          git push --set-upstream origin $(echo $GITHUB_ENV | grep BRANCH_NAME | cut -d'=' -f2)
+          
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
           commit-message: "Deploy from CI workflow artifact"
-          branch: deploy-branch-$VERSION
+          branch: ${{ env.BRANCH_NAME }}
           title: "Deploy from CI"
           body: "This is an automated PR to deploy changes from CI workflow."
           base: main

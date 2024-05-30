@@ -87,5 +87,5 @@ jobs:
         run: |
           git add .
           git commit -m "Deploy from CI workflow artifact" || echo "Nothing to commit"
-          git push
+          git push --set-upstream origin main
           

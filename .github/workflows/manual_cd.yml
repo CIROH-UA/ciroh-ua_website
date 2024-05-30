@@ -87,13 +87,14 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git remote set-url origin https://x-access-token:${GH_PAT}@github.com/CIROH-UA/ciroh-ua.github.io.git
-
-      - name: Push changes to new branch
-        working-directory: gh-pages
-        env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
-        run: |
           git push origin main
+
+      # - name: Push changes to new branch
+      #   working-directory: gh-pages
+      #   env:
+      #     PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
+      #   run: |
+      #     git push origin main
     
       # - name: Create Pull Request
       #   uses: peter-evans/create-pull-request@v4

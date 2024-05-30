@@ -19,7 +19,11 @@ jobs:
     
     name: Deploy to GitHub Pages
     permissions:
+      deployments: write
       contents: write
+      statuses: write
+      actions: write
+      checks: read
     steps:
       - name: Checkout
         uses: actions/checkout@v3

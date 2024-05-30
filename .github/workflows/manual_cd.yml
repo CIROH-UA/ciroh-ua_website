@@ -84,20 +84,19 @@ jobs:
           git add .
           git commit -m "Deploy from CI workflow artifact"
       - name: Configure authentication
-        shell: bash
         working-directory: gh-pages
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          # git remote set-url origin https://x-access-token:${PERSONAL_ACCESS_TOKEN}@github.com/CIROH-UA/ciroh-ua.github.io.git
-          git push origin main
+          git remote set-url origin https://x-access-token:${PERSONAL_ACCESS_TOKEN}@github.com/CIROH-UA/ciroh-ua.github.io.git
+          
 
-      # - name: Push changes to new branch
-      #   working-directory: gh-pages
-      #   env:
-      #     PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
-      #   run: |
-      #     git push origin main
+      - name: Push changes to new branch
+        working-directory: gh-pages
+        env:
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          git push origin deploy-branch-$VERSION
     
       # - name: Create Pull Request
       #   uses: peter-evans/create-pull-request@v4

@@ -86,7 +86,7 @@ jobs:
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git push origin deploy-branch-$VERSION
+          git push origin main
     
       # - name: Create Pull Request
       #   uses: peter-evans/create-pull-request@v4

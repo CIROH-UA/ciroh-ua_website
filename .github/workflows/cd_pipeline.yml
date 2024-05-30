@@ -77,8 +77,8 @@ jobs:
           
       - name: Configure git
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name 'github-merge-queue[bot]'
+          git config --global user.email 'github-merge-queue[bot]@users.noreply.github.com'
 
       - name: Clone GitHub Pages repository
         env:

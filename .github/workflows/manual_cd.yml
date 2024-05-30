@@ -70,23 +70,26 @@ jobs:
           
       - name: Configure git
         run: |
-          git config --global user.name 'arpita0911patel'
+          git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
       - name: Clone GitHub Pages repository
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
         run: |
-          git clone --single-branch --branch main https://ciroh-ua:${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}@github.com/CIROH-UA/ciroh-ua.github.io.git gh-pages
+          git clone --single-branch --branch main https://ciroh-ua:${PERSONAL_ACCESS_TOKEN}@github.com/CIROH-UA/ciroh-ua.github.io.git gh-pages
+          git remote set-url origin https://x-access-token:${PERSONAL_ACCESS_TOKEN}@github.com/CIROH-UA/ciroh-ua.github.io.git
           rsync -av --delete-after ./build/ gh-pages/  # Copy the contents of the build directory
           git checkout -b deploy-branch-$VERSION
           git add .
           git commit -m "Deploy from CI workflow artifact"
       - name: Configure authentication
+        shell: bash
+        working-directory: gh-pages
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/CIROH-UA/ciroh-ua.github.io.git
+          # git remote set-url origin https://x-access-token:${PERSONAL_ACCESS_TOKEN}@github.com/CIROH-UA/ciroh-ua.github.io.git
           git push origin main
 
       # - name: Push changes to new branch

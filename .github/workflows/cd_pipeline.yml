@@ -20,18 +20,13 @@ jobs:
 
     name: Deploy to GitHub Pages
     steps:
-      # - name: Checkout
-      #   uses: actions/checkout@v3
-      #   with:
-      #     fetch-depth: 0
-      #     # Ensure detached HEAD state to avoid conflicts with the main branch
-      #     ref: refs/heads/main
-      - name: Checkout Repo B
-        uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
-          repository: CIROH-UA/ciroh-ua.github.io  # Replace with the owner and name of Repo B
-          token: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}  # If Repo B is private, provide a personal access token with appropriate permissions
-          
+          fetch-depth: 0
+          # Ensure detached HEAD state to avoid conflicts with the main branch
+          ref: refs/heads/main
+        
       - name: Download a Build Artifact Version
         uses: dawidd6/action-download-artifact@v2.26.1
         with:

@@ -82,11 +82,10 @@ jobs:
       - name: Push changes to new branch
         working-directory: gh-pages
         env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
+          PERSONAL_ACCESS_TOKEN: ${{ secrets._PAT_SECRET }}
         run: |
           git remote add target https://github.com/CIROH-UA/ciroh-ua.github.io.git
           git push --set-upstream target deploy-branch-$VERSION
-          # git push --set-upstream https://ciroh-ua:${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}@github.com/CIROH-UA/ciroh-ua.github.io.git deploy-branch-$VERSION
      
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4

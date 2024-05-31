@@ -17,10 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.workflow_run.conclusion == 'success'
 
-    permissions:
-      contents: write  # To push a branch 
-      pull-requests: write  # To create a PR from that branch
-
     name: Deploy to GitHub Pages
     steps:
       - name: Checkout

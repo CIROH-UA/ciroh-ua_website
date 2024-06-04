@@ -1,4 +1,36 @@
 {
+	"May 2024 Update":  [     
+		{
+			"type": "news",
+			"title": "NGIAB-CloudInfra",
+			"description": "The NextGen In A Box (NGIAB) workshop last week at CIROH DevCon24 was a huge success. New sample dataset is created “AWI-006”. We had 50+ attendees and most of them were successfully able to run NGIAB on their local machine. For those without the admin access, we provided them the AWS instances for the workshop. This workshop introduced a new geospatial visualization tool for visualizing outputs from NGIAB runs. During May, 16 PRs were merged. Slides can be found at:", 
+			"link": "https://github.com/CIROH-UA/Conferences/tree/main/CIROHDevCon2024/NextGenTrack"
+		},        
+		{
+			"type": "update",
+			"title": "NGIAB-HPCInfra",
+			"description": "Run NGIAB on HPC using NGIAB-HPCInfra. This repo is upgraded to use AWI-006 dataset. For more details, please refer README at",
+			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra"
+		},
+		{
+			"type": "news",
+			"title": "ngen-DataStream",
+			"description": "NextGen Simulation Development Tools workshop was a huge success. It provided attendees with a hands-on experience using the ngen-datastream tool. In May, 68 PRs were merged. Explore the updates. Slides for the DevCon can be found at:",
+			"link": "https://github.com/CIROH-UA/ngen-datastream"
+		},
+		{
+			"type": "news",
+			"title": "NGIAB-data-preprocessor",
+			"description": "The NextGen Simulation Development Tools workshop at CIROH DevCon24 showcased the tool's capabilites of simplifying data preparation for next-gen simulations.",
+			"link": "https://github.com/AlabamaWaterInstitute/NGIAB_data_preprocess"
+		},  
+		{
+			"type": "feature",
+			"title": "NextGen Model Framework (ngen)",
+			"description": "3 PRs merged in May. Explore more updates here.",
+			"link": "https://github.com/NOAA-OWP/ngen"
+		}
+	],
 	"April 2024 Update": [
 		{
 			"type": "news",

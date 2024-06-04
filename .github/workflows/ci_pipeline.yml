@@ -55,12 +55,11 @@ jobs:
         path: build/
         # The desired behavior if no files are found using the provided path.
 
-
     - name: Create release
       uses: actions/create-release@v1
       id: create_release
       env:
-          GITHUB_TOKEN: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
           tag_name: v${{steps.version.outputs.VERSION}}
           release_name: Release v${{steps.version.outputs.VERSION}}

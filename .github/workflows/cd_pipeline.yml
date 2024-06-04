@@ -7,23 +7,25 @@ on:
   workflow_run:
     workflows: ["ciroh-ua-website-ci"]
     branches:
-        - main
+      - main
     types:
-        - completed
+      - completed
   workflow_call:
-  
+
 jobs:
-  
   deploy:
     runs-on: ubuntu-latest
     if: github.event.workflow_run.conclusion == 'success'
-    
+
     name: Deploy to GitHub Pages
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-         fetch-depth: 0
+          fetch-depth: 0
+          # Ensure detached HEAD state to avoid conflicts with the main branch
+          ref: refs/heads/main
+
       - name: Download a Build Artifact Version
         uses: dawidd6/action-download-artifact@v2.26.1
         with:
@@ -32,18 +34,19 @@ jobs:
           branch: main
           name: version
           path: ./
+
       - name: Read file and set variable
         run: |
           # Read file and set its value to a variable
           FILE_CONTENT=$(cat ./version.txt)
-
           # Set variable as an environment variable
           echo "VERSION=$FILE_CONTENT" >> $GITHUB_ENV
 
       - name: Display variable value
         run: |
           # Display value of variable
-          echo "My variable value is $VERSION"   
+          echo "My variable value is $VERSION"
+
       # https://github.com/marketplace/actions/download-workflow-artifact
       - name: Download a Build Artifact
         uses: dawidd6/action-download-artifact@v2.26.1
@@ -53,14 +56,15 @@ jobs:
           branch: main
           name: build
           path: ./build/
-      
-      
+
+      - name: Create and switch to a temporary deployment branch
+        run: |
+          git checkout -b temp-deploy-branch-$VERSION
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
-          token: ${{secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO}}
+          token: ${{ secrets.SECRET_TO_PUSH_TO_CIROH_GITHUB_IO }}
           branch: main
           folder: build
           repository-name: CIROH-UA/ciroh-ua.github.io
-          #tag: $VERSION
-          

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 title: "NGIAB-HPCInfra"
 description: "NextGen In a Box (NGIAB)"
 tags:

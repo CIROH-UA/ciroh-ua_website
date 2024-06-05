@@ -1,0 +1,32 @@
+---
+sidebar_position: 2
+title: "Push from 2i2c JupyterHub to GitHub"
+description: "2i2c JupyterHub is a cloud-based JupyterHub environment specifically designed for hydrological researchers. It is powered by 2i2c JupyterHub, a cloud-based JupyterHub environment specifically on Google Cloud"
+tags:
+  - 2i2c
+  - JupyterHub
+  - GCP
+  - notebook
+  - GitHub
+  - tutorial
+---
+
+# A Step-by-Step Guide: Push Code to GitHub from 2i2c JupyterHub
+
+Follow these steps to allow 2i2c JupyterHub to push to GitHub repositories: 
+
+- Install [CIROHJupyterHubGitHubPush](https://github.com/apps/cirohjupyterhubgithubpush) on your device by clicking on Install button.
+
+- Choose the repositories where you want to allow pushing from 2i2c.
+
+- Open a terminal on JupyterHub and run:
+
+```bash
+gh-scoped-creds --client-id Iv23lixIgj0sAZqz98bH
+```
+### You can also follow along with this [video tutorial](https://youtu.be/t6WkSpYDiaA) that walks you through the same process visually.
+
+
+
+
+ 

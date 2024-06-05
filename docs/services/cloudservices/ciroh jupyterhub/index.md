@@ -87,37 +87,3 @@ _____
 
 This reworded version emphasizes the collaboration between CIROH and 2i2c, highlights the benefits specifically for hydrological researchers, and clarifies the role of Google Cloud.
 
-
-### 2i2c JupyterHub details:
-
-:::info
-[2i2c JupyterHub](https://2i2c.org/)
-:::
-
-### 2i2c JupyterHub Documentation and Tutorials:
-
-:::info
-[2i2c Docs](https://docs.2i2c.org/)
-:::
-
-### 2i2c JupyterHub Infrastructure Documentation:
-
-:::info
-[2i2c Infrastructure Docs](https://infrastructure.2i2c.org/)
-:::
-
-### awi-ciroh-image repository on 2i2c GitHub:
-
-:::info
-[Github URL for AWI-CIROH 2i2c Hub Image](https://github.com/2i2c-org/awi-ciroh-image)
-:::
-
-:::note
-For any other questions, please email us at **ciroh-it-admin@ua.edu** with detailed information.
-:::
-
-------------------------------------------------
-
-import DocCardList from '@theme/DocCardList';
-
-<DocCardList />

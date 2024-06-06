@@ -4,14 +4,18 @@
 name: ciroh-ua-website-cd
 
 on:
-  workflow_run:
-    workflows: ["ciroh-ua-website-ci"]
+  # workflow_run:
+  #   workflows: ["ciroh-ua-website-ci"]
+  #   branches:
+  #     - main
+  #   types:
+  #     - completed
+  # workflow_call:
+  push:
     branches:
-      - main
-    types:
-      - completed
-  workflow_call:
+      - main  # Trigger on pushes to the main branch
   workflow_dispatch:  # Allows manual triggering
+  
 jobs:
   deploy:
     runs-on: ubuntu-latest

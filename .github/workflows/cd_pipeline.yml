@@ -11,7 +11,7 @@ on:
     types:
       - completed
   workflow_call:
-
+  workflow_dispatch:  # Allows manual triggering
 jobs:
   deploy:
     runs-on: ubuntu-latest

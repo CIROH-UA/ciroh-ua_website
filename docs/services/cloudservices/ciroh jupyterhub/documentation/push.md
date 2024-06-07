@@ -24,9 +24,13 @@ Follow these steps to allow 2i2c JupyterHub to push to GitHub repositories:
 ```bash
 gh-scoped-creds --client-id Iv23lixIgj0sAZqz98bH
 ```
-### You can also follow along with this [video tutorial](https://youtu.be/t6WkSpYDiaA) that walks you through the same process visually.
+### You can also follow along with this video tutorial that walks you through the same process visually.
+
+
+import VideoPlayer from '/src/components/VideoPlayer.js';
+
+
+<VideoPlayer url="https://www.youtube.com/watch?v=t6WkSpYDiaA"  />
 
 
 
-
- 

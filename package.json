@@ -22,6 +22,8 @@
     "@mui/material": "^5.14.19",
     "clsx": "^2.0.0",
     "docusaurus": "^1.14.7",
+    "docusaurus-lunr-search": "^3.4.0",
+    "lunr": "^2.3.9",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

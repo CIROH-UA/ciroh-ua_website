@@ -52,6 +52,9 @@ const config = {
 //      numberShown: 5,
 //      language: "en",
 //    },
+plugins: [[ require.resolve('docusaurus-lunr-search'), {
+  languages: ['en'] // language codes
+}]],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

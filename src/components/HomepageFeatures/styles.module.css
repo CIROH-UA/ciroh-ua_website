@@ -67,3 +67,49 @@
 }
 /* turn on invert filter for logo container when dark mode is on for docusauras */
 
+.heroBanner {
+  padding: 4rem 4rem;
+  text-align: left;
+  position: relative;
+  overflow: auto;
+  margin: 3rem 0;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroimage{
+  width: 30%;
+  height: 100%;
+}
+
+@media screen and (max-width: 940px) {
+  /* Styles for small devices */
+
+  .heroimage{
+    width:310px;
+  }
+}
+@media screen and (max-width: 775px) {
+  /* Styles for small devices */
+
+  .heroimage{
+    padding-top: 4rem;
+    width:190px;
+  }
+}
+@media screen and (max-width: 40px) {
+  /* Styles for small devices */
+
+  .heroimage{
+    width:0px;
+  }
+}

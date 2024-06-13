@@ -106,7 +106,7 @@
     width:190px;
   }
 }
-@media screen and (max-width: 40px) {
+@media screen and (max-width: 640px) {
   /* Styles for small devices */
 
   .heroimage{

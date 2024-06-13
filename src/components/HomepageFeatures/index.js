@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
-
+import clsx from 'clsx';
 // import { library } from "@fortawesome/fontawesome-svg-core";
 // import { fab } from "@fortawesome/free-brands-svg-icons";
 
@@ -271,8 +271,8 @@ const Member = ({ idx, name,logo,link,width,height }) => (
 );
 
 const Card = ({ title, image, description, link }) => (
-  <div className="col col--4">
-    <div className="card">
+  <div className="col col--4 " style={{ display: 'flex', marginBottom: "20px"}}>
+    <div className="card" style={{ flex: '1' }}>
       <div className="card__image" style={{ textAlign: 'center' }}>
         <img
           src={image}
@@ -299,7 +299,7 @@ const Card = ({ title, image, description, link }) => (
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
+      <div className="container" style={{width:"100%"}}>
         <div className="row">
           <Card
             title="Documentation"
@@ -320,41 +320,31 @@ export default function HomepageFeatures() {
             link="/docs/education/"
           />
         </div>
+  <div className={clsx('hero hero--primary', styles.heroBanner)}>
+  <div className="container">
+    <div className="hero-content" style={{ display: 'flex' }}>
+      
+      <div className="hero-text" >
+        <h1>CONTRIBUTE</h1>
+        <br />
+        We would like CIROH Consortium members to contribute to CIROH DocuHub. Please contribute by adding product/project documentation, tutorials, training data, or conference presentations. 
+        The CIROH DocuHub repository provides a collaborative platform for sharing project's technical documentation.<br /><br /> <strong>Learn more about how you can contribute and access the CIROH DocuHub repository here:</strong>
+        <br />
+        <br />
+        <a className="button button--info" href="/Contribute" style={{ textDecoration: 'none', marginRight: '20px', marginBottom:'14px' }}>
+          How to Contribute?
+        </a>
+        <a className="button button--info" href="https://github.com/CIROH-UA/ciroh-ua_website" style={{ textDecoration: 'none', marginRight: '0px', marginBottom:'14px' }}>
+          GitHub Repo 
+        </a>
+      </div>
+      <img src="./img/contribute.png" alt="Contribute to CIROH DocuHub" class={styles.heroimage} />
+    </div>
+  </div>
+</div>
 
-        <div className="row" style={{ paddingTop: 30 }}>
-          <div
-            className="flex-container alert alert--info"
-            style={{ display: "flex" }}
-          >
-            <div>
-              <img
-                src="img/docuhub-logo.png"
-                style={{ maxWidth: "40%" }}
-                alt="Logo"
-              />
-            </div>
-            <div style={{'padding-top':'5px', 'margin-left':'-175px'}}>
-              <strong>CONTRIBUTE</strong>
-              <br />
-              
-              We would like CIROH Consortium members to contribute to CIROH DocuHub. Please contribute by adding  product/project documentation, tutorials, training data, or conference presentations.  <br />
-              The CIROH DocuHub repository provides a collaborative platform for sharing project's technical documentation. <strong>Learn more about how you can contribute and access the CIROH DocuHub repostitory here:</strong>
-         
-              {" "}
-              <br />
-              <br />
-              
-              
-              <a className="button button--info" href="/Contribute" style={{ textDecoration: 'none', marginRight: '20px' }}>
-                How to Contribute?
-              </a>
-              <a className="button button--info button--outline" href="https://github.com/CIROH-UA/ciroh-ua_website" style={{ textDecoration: 'none', marginRight: '20px' }}>
-                GitHub Repo 
-              </a>
 
-            </div>
-          </div>
-        </div>
+ 
     <div className={styles.bgcontainer}>
     <div className={styles.logocontainer}>
         <div>

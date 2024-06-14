@@ -27,7 +27,7 @@ tags:
 
 - **Presenter**: Kel Markert
   - [Slides: Google AI Modeling Workshop - Vertex AI](https://github.com/CIROH-UA/Conferences/blob/main/CIROHDevCon2024/NextGenTrack/Google_VertexAI_Streamflow_Modeling_2024_05_30.pdf)
--[Video Link: Google AI Modeling Workshop - Vertex AI](https://drive.google.com/file/d/1DB0IwH_ywQjDSwVG4mbiE9uyMzWYmCSG/view?ts=665f780e)
+  - [Video Link: Google AI Modeling Workshop - Vertex AI](https://drive.google.com/file/d/1DB0IwH_ywQjDSwVG4mbiE9uyMzWYmCSG/view?ts=665f780e)
 
 - **Presenter**: Patrick Clemins
   - [Video Link: Data Workflows 101: Acquisition, Manipulation, and Visualization](https://uvmoffice-my.sharepoint.com/personal/pclemins_uvm_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Fpclemins%5Fuvm%5Fedu%2FDocuments%2FCIROH%20%2D%20NOAA%20Water%20Center%2F202405%20DevCon24%2FData%20Workflows%20101%20Video%2Emp4&ga=1&LOF=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E17bc11f1%2D4510%2D4041%2Da23d%2D76442130a1c7)

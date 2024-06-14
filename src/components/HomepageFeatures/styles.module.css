@@ -10,37 +10,13 @@
   width: 200px;
 }
 
-.flexcontainer1{
-
-  display: flex;
-  flex-direction: row;
-  width:100%;
-  flex-wrap: nowrap;
-
-}
-.flexcontainer1 > div {
-  display: block;
-  width:50%;
-
-}
-.flexcontainer2{
-
-  display: flex;
-  flex-direction: row;
-  width:50%;
-  flex-wrap: nowrap;
-
-}
-
 .imagecontainer{
   display:block;
-  width:300px;
-  height: 140px;
-  text-align: center;
-  
+  margin:1.3rem auto;
+  height:auto;
 
 }
-.heading1{
+.heading{
   font-size: 2.1rem;
   font-weight: 700;
   color: #2d3748;
@@ -54,10 +30,8 @@
     filter: invert(1);
   }
 }
-.logocontainer
-{
-  margin-bottom: 4rem;
-}
+
+
 [data-theme='dark']  .bgcontainer{
   background-color: #A9A9A9;
   padding: 0 0;
@@ -68,11 +42,12 @@
 /* turn on invert filter for logo container when dark mode is on for docusauras */
 
 .heroBanner {
-  padding: 4rem 4rem;
+  padding: 3rem 4rem 0rem 4rem;
   text-align: left;
   position: relative;
   overflow: auto;
-  margin: 3rem 0;
+  margin: 3rem 0rem;
+  border-radius: 20px;
 }
 
 @media screen and (max-width: 996px) {
@@ -88,25 +63,27 @@
 }
 .heroimage{
   width: 30%;
+  margin: auto 0;
   height: 100%;
 }
 
+
+  @media screen and (max-width: 1440px) {
+    /* Styles for small devices */
+  
+    .heroBanner {
+      padding: 3rem 4rem 3rem 4rem;
+    }
+  }
 @media screen and (max-width: 940px) {
   /* Styles for small devices */
 
   .heroimage{
     width:310px;
+    
   }
 }
-@media screen and (max-width: 775px) {
-  /* Styles for small devices */
-
-  .heroimage{
-    padding-top: 4rem;
-    width:190px;
-  }
-}
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 840px) {
   /* Styles for small devices */
 
   .heroimage{

@@ -483,6 +483,18 @@ export default function HomepageFeatures() {
                       </a>
                     </div>
                   </div>
+                  <div className={styles.row1}>
+                    <div className={styles.col2} >
+                      <a href={MemberList[12].link}>
+                        <img className={styles.imagecontainer} src={MemberList[12].logo} alt={MemberList[12].name} width={MemberList[12].width} height={MemberList[12].height} />
+                      </a>
+                    </div>
+                    <div className={`${styles.flex} ${styles.col2}`}>
+                      <a href={MemberList[13].link}>
+                        <img className={styles.imagecontainer} src={MemberList[13].logo} alt={MemberList[13].name} width={MemberList[13].width} height={MemberList[13].height} />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

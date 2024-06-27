@@ -41,6 +41,21 @@ const SponserList = [
   
 ];
 const MemberList = [
+   
+  {
+    name: "Utah State University",
+    logo: "https://i.pinimg.com/originals/96/65/d4/9665d4322a25b6a2ff8cc4f31a178749.png",
+    link: "https://uwrl.usu.edu/",
+    width: "210",
+    height: "100",
+  },
+  {
+    name: "The University of Vermont",
+    logo: "https://ciroh.ua.edu/wp-content/uploads/2023/03/UVMLogoSolid7484stacked-300x124.png",
+    link: "https://www.uvm.edu/ciroh/",
+    width: "210",
+    height: "70",
+  },
   {
     name: "University of Utah",
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/University_of_Utah_horizontal_logo.svg/1280px-University_of_Utah_horizontal_logo.svg.png",

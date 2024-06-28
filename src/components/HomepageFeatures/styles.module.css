@@ -1,5 +1,4 @@
 .features {
-  display: flex;
   align-items: center;
   padding: 2rem 0;
   width: 100%;
@@ -45,14 +44,16 @@
 /* turn on invert filter for logo container when dark mode is on for docusauras */
 
 .heroBanner {
-  padding: 3rem 4rem 0rem 4rem;
+  padding: 3rem 4rem 3rem 4rem;
   text-align: left;
-  position: relative;
   overflow: auto;
   margin: 3rem 0rem;
-  border-radius: 20px;
 }
-
+.content
+{
+  display:flex;
+  justify-content:flex-start;
+}
 
 .buttons {
   display: flex;
@@ -60,9 +61,10 @@
   justify-content: center;
 }
 .heroimage{
-  width: 30%;
+  width: 35%;
   margin: auto 0;
-  height: 100%;
+  border-radius: 18px;
+  margin-left: 1.4rem;
 }
 .row1{
   display: flex;
@@ -79,7 +81,7 @@
   width: 30%;
 }
 .col4{
-  width:48%;
+  width:40%;
   margin-bottom: calc(0.4rem + 1.5vw);
 }
 
@@ -87,7 +89,7 @@
   /* Styles for small devices */
   
   .heroBanner {
-    padding: 3rem 4rem 3rem 4rem;
+    padding: 2rem 4rem 2rem 4rem;
   }
 }
 
@@ -116,6 +118,7 @@
   .heroimage{
     width:310px;
     
+    
   }
 }
 @media screen and (max-width: 840px) {
@@ -124,10 +127,16 @@
   .heroimage{
     width:0px;
   }
-  .heroText,.h1{
+  .h1{
     text-align: center;
   }
-  
+  .content{
+    display: block;
+  }
+}
+.contribute{
+  background:white;
+  width:100%;
 }
 @media screen and (max-width: 840px) {
   /* Styles for small devices */

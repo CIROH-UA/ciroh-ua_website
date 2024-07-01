@@ -1,4 +1,24 @@
 {
+	"June 2024 Update":  [             
+		{
+			"type": "update",
+			"title": "ngen-DataStream",
+			"description": "In June, 9 PRs were merged. Ngen-datastream was updated to be compatible with the new hydrofabric data format provided by hfsubset version 2.1.1.",
+			"link": "https://github.com/CIROH-UA/ngen-datastream"
+		},
+		{
+			"type": "news",
+			"title": "NGIAB-data-preprocessor",
+			"description": "Four PRs were merged in June. We are happy to annonce the new release v1.0.1. This release includes various improvements and bug fixes.",
+			"link": "https://github.com/AlabamaWaterInstitute/NGIAB_data_preprocess"
+		},  
+		{
+			"type": "feature",
+			"title": "NextGen Model Framework (ngen)",
+			"description": "Eleven PRs merged in June. Explore more updates here.",
+			"link": "https://github.com/NOAA-OWP/ngen"
+		}
+	],
 	"May 2024 Update":  [     
 		{
 			"type": "news",
@@ -15,7 +35,7 @@
 		{
 			"type": "news",
 			"title": "ngen-DataStream",
-			"description": "NextGen Simulation Development Tools workshop was a huge success. It provided attendees with a hands-on experience using the ngen-datastream tool. In May, 68 PRs were merged. Explore the updates. Slides for the DevCon can be found at:",
+			"description": "NextGen Simulation Development Tools workshop was a huge success. It provided attendees with a hands-on experience using the ngen-datastream tool. In May, 21 PRs were merged. Explore the updates. Slides for the DevCon can be found at:",
 			"link": "https://github.com/CIROH-UA/ngen-datastream"
 		},
 		{

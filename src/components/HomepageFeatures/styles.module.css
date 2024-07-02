@@ -1,3 +1,8 @@
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .col1 {
   width: 25%;
 }
@@ -8,37 +13,33 @@
   width: 30%;
 }
 .col4 {
-  margin-bottom: calc(0.4rem + 1.5vw);
   width: 40%;
-}
-.contribute {
-  background: white;
-  width: 100%;
+  margin-bottom: calc(0.4rem + 1.5vw);
 }
 .flexStart {
   display: flex;
   justify-content: flex-start;
 }
 .heading {
-  color: #2c3e50;
   font-size: calc(1.4rem + 0.6vw);
   font-weight: bolder;
+  color: #2c3e50;
   line-height: 1.2;
-  padding-bottom: 1.2rem;
   padding-top: 4rem;
+  padding-bottom: 1.2rem;
   text-align: center;
 }
 .heroBanner {
-  margin: 3rem 0rem;
-  overflow: auto;
   padding: 3rem 4rem 3rem 4rem;
   text-align: left;
+  overflow: auto;
+  margin: 3rem 0rem;
 }
 .heroimage {
-  border-radius: 18px;
-  margin: auto 0;
-  margin-left: 1.4rem;
   width: 35%;
+  margin: auto 0;
+  border-radius: 18px;
+  margin-left: 1.4rem;
 }
 .homepageContainer {
   align-items: center;
@@ -47,24 +48,26 @@
 }
 .imagecontainer {
   display: block;
-  height: auto;
   margin: 1.3rem auto;
+  height: auto;
 }
+
 .row1 {
-  align-items: center;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .sponserimage {
   display: inline-block !important;
   margin: 1.1rem auto;
+  /* height: auto; */
 }
 [data-theme="dark"] .logoBackground {
   background-color: #a9a9a9;
-  border-radius: 17px;
-  margin-top: 5%;
   padding: 0 0;
+  margin-top: 5%;
   width: 100%;
+  border-radius: 17px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -108,7 +111,7 @@
   .h1 {
     text-align: center;
   }
-  .content {
+  .flexStart {
     display: block;
   }
 }

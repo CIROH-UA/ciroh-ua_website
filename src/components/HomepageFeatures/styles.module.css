@@ -1,99 +1,79 @@
-.features {
+.col1 {
+  width: 25%;
+}
+.col2 {
+  width: 50%;
+}
+.col3 {
+  width: 30%;
+}
+.col4 {
+  margin-bottom: calc(0.4rem + 1.5vw);
+  width: 40%;
+}
+.contribute {
+  background: white;
+  width: 100%;
+}
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+}
+.heading {
+  color: #2c3e50;
+  font-size: calc(1.4rem + 0.6vw);
+  font-weight: bolder;
+  line-height: 1.2;
+  padding-bottom: 1.2rem;
+  padding-top: 4rem;
+  text-align: center;
+}
+.heroBanner {
+  margin: 3rem 0rem;
+  overflow: auto;
+  padding: 3rem 4rem 3rem 4rem;
+  text-align: left;
+}
+.heroimage {
+  border-radius: 18px;
+  margin: auto 0;
+  margin-left: 1.4rem;
+  width: 35%;
+}
+.homepageContainer {
   align-items: center;
   padding: 2rem 0;
   width: 100%;
 }
-
-.featureSvg {
-  height: 200px;
-  width: 200px;
-}
-
-.imagecontainer{
-  display:block;
-  margin:1.3rem auto;
+.imagecontainer {
+  display: block;
   height: auto;
-
+  margin: 1.3rem auto;
 }
-.sponserimage
-{
-  display:inline-block !important;
-  margin: 1.1rem auto;
-  /* height: auto; */
-}
-.heading{
-  font-size: calc(1.4rem + .6vw);
-  font-weight:bolder;
-  color: #2c3e50;
-  line-height: 1.2;
-  padding-top: 4rem;
-  padding-bottom: 1.2rem;
-  text-align: center;
-}
-
-
-
-[data-theme='dark']  .bgcontainer{
-  background-color: #A9A9A9;
-  padding: 0 0;
-  margin-top: 5%;
-  width:100%;
-  border-radius:17px;
-  
-}
-/* turn on invert filter for logo container when dark mode is on for docusauras */
-
-.heroBanner {
-  padding: 3rem 4rem 3rem 4rem;
-  text-align: left;
-  overflow: auto;
-  margin: 3rem 0rem;
-}
-.content
-{
-  display:flex;
-  justify-content:flex-start;
-}
-
-.buttons {
-  display: flex;
+.row1 {
   align-items: center;
-  justify-content: center;
-}
-.heroimage{
-  width: 35%;
-  margin: auto 0;
-  border-radius: 18px;
-  margin-left: 1.4rem;
-}
-.row1{
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-.col1{
-  width: 25%;
+.sponserimage {
+  display: inline-block !important;
+  margin: 1.1rem auto;
 }
-.col2{
-  width: 50%;
-}
-.col3{
-  width: 30%;
-}
-.col4{
-  width:40%;
-  margin-bottom: calc(0.4rem + 1.5vw);
+[data-theme="dark"] .logoBackground {
+  background-color: #a9a9a9;
+  border-radius: 17px;
+  margin-top: 5%;
+  padding: 0 0;
+  width: 100%;
 }
 
 @media screen and (max-width: 1440px) {
   /* Styles for small devices */
-  
+
   .heroBanner {
     padding: 2rem 4rem 2rem 4rem;
   }
 }
-
-
 
 @media screen and (max-width: 996px) {
   .heroBanner {
@@ -105,44 +85,41 @@
 
   .col1 {
     width: 50%; /* Adjusts width for two logos per row */
-    margin:0 auto;
+    margin: 0 auto;
   }
-  .col2{
-    width:35%;
-    margin:0 auto;
+  .col2 {
+    width: 35%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 940px) {
   /* Styles for small devices */
 
-  .heroimage{
-    width:310px;
-    
-    
+  .heroimage {
+    width: 310px;
   }
 }
 @media screen and (max-width: 840px) {
   /* Styles for small devices */
 
-  .heroimage{
-    width:0px;
+  .heroimage {
+    width: 0px;
   }
-  .h1{
+  .h1 {
     text-align: center;
   }
-  .content{
+  .content {
     display: block;
   }
 }
-.contribute{
-  background:white;
-  width:100%;
+.contribute {
+  background: white;
+  width: 100%;
 }
 @media screen and (max-width: 840px) {
   /* Styles for small devices */
 
-  .col4{
-    width:100%;
+  .col4 {
+    width: 100%;
   }
-  
 }

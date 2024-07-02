@@ -358,7 +358,7 @@ export default function HomepageFeatures() {
                 We would like CIROH Consortium members to contribute to CIROH DocuHub. Please contribute by adding product/project documentation, tutorials, training data, or conference presentations. The CIROH DocuHub repository provides a collaborative platform for sharing project's technical documentation. <strong>Learn more about how you can contribute and access the CIROH DocuHub repository here:</strong></p>
                 <br />
                 <div className={styles.content}>
-                <a className={`button button--info ${styles.col4}`} href="/Contribute" style={{ textDecoration: 'none',marginRight: '10px'}}>
+                <a className={`button button--secondary ${styles.col4}`} href="/Contribute" style={{ textDecoration: 'none',marginRight: '10px'}}>
                   How to Contribute?
                 </a>
                 <a className={`button button--info ${styles.col4}`} href="https://github.com/CIROH-UA/ciroh-ua_website" style={{ textDecoration: 'none'}}>

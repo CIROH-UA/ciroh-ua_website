@@ -322,7 +322,7 @@ const Card = ({ title, image, description, link }) => (
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
+    <section className={styles.homepageContainer}>
       <div className="container" >
         <div className="row">
           <Card
@@ -349,7 +349,7 @@ export default function HomepageFeatures() {
       </div>
       <div className={clsx('hero hero--primary', styles.heroBanner)}>
           <div className="container">
-            <div className={styles.content}>
+            <div className={styles.flexStart}>
               
               <div className="hero-text" >
                 <h1 className={styles.h1}>CONTRIBUTE</h1>
@@ -357,8 +357,8 @@ export default function HomepageFeatures() {
                 <p className={styles.heroText}>
                 We would like CIROH Consortium members to contribute to CIROH DocuHub. Please contribute by adding product/project documentation, tutorials, training data, or conference presentations. The CIROH DocuHub repository provides a collaborative platform for sharing project's technical documentation. <strong>Learn more about how you can contribute and access the CIROH DocuHub repository here:</strong></p>
                 <br />
-                <div className={styles.content}>
-                <a className={`button button--info ${styles.col4}`} href="/Contribute" style={{ textDecoration: 'none',marginRight: '10px'}}>
+                <div className={styles.flexStart}>
+                <a className={`button button--secondary ${styles.col4}`} href="/Contribute" style={{ textDecoration: 'none',marginRight: '10px'}}>
                   How to Contribute?
                 </a>
                 <a className={`button button--info ${styles.col4}`} href="https://github.com/CIROH-UA/ciroh-ua_website" style={{ textDecoration: 'none'}}>
@@ -371,7 +371,7 @@ export default function HomepageFeatures() {
           </div>
         </div>
       <div className="container" style={{width:"100%"}}>
-        <div className={styles.bgcontainer}>
+        <div className={styles.logoBackground}>
         <div className="container-fluid">
           <div className="row">
             <div className="col col--12">

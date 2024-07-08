@@ -17,6 +17,12 @@
 			"title": "NextGen Model Framework (ngen)",
 			"description": "Eleven PRs merged in June. Explore more updates here.",
 			"link": "https://github.com/NOAA-OWP/ngen"
+		},
+		{
+			"type": "news",
+			"title": "CIROH DevCon24 Conference Slides",
+			"description": "Access the slides from the 8 NextGen Track workshops held at CIROH DevCon24. Slides can be found here.",
+			"link": "https://docs.ciroh.org/docs/education/Conferences/#ciroh-developers-conference---may-2024"
 		}
 	],
 	"May 2024 Update":  [     

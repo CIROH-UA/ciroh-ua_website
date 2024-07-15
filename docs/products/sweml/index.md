@@ -12,4 +12,4 @@ The Snow Water Equivalent Machine Learning(SWEML) incorporates ground-based snow
 
 import GitHubReadme from '@site/src/components/GitHubReadme';
  
-<GitHubReadme username="whitelightning450" repo="SWEML"/>
+<GitHubReadme username="CIROH-UA" repo="SWEML"/>

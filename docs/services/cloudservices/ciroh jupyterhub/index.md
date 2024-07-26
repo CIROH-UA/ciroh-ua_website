@@ -21,9 +21,9 @@ CIROH, in collaboration with 2i2c, offers a dedicated JupyterHub environment on 
 -----
 ### How to get access to these environments?
 
-Submit the form below to get access to the CIROH JupyterHub environments:
+CIROH JupyterHub provides both CPU and GPU capabilities. Please submit the form below to get access to the CIROH JupyterHub environments:
 
-<a class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) Infrastructure Request Form</a>
+<a class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) CPU Access Request Form</a>
 <a class="button button--active button--primary" style={{'margin-bottom':'1.3rem'}}  href="https://forms.office.com/r/mkrVJzyg9u"> JupyterHub (2i2c) GPU Access Request Form</a>
 
 ---

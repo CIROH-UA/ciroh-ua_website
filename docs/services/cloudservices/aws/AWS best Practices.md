@@ -15,6 +15,10 @@ As the main account administrator for CIROH subaccount, here are some best pract
   
 - **Regularly review and update permissions:** Regularly review and update user and role permissions within subaccounts to ensure they remain aligned with their current needs.
 
+- **Utilize git-secrets**: Utilize git-secrets to protect against accidental commits of secret data like API keys, passwords, and tokens. You can integrate it into your CI/CD pipelines to ensure compliance with security policies. For more information, refer to the [AWS documentation](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/scan-git-repositories-for-sensitive-information-and-security-issues-by-using-git-secrets.html) and the [git-secrets GitHub repository](https://github.com/awslabs/git-secrets).
+
+- **Use AWS Secrets Manager**: Use AWS Secrets Manager, or other secrets management solution, so you don’t have to hardcode keys in plaintext. The application or client can then retrieve secrets when needed. For more information, see [What is AWS Secrets Manager?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
+
 ## Resource Management:
 
 - **Tagging:** Implement a consistent tagging strategy for resources in all linked accounts. This allows for better cost allocation, resource identification, and easier filtering when managing resources across multiple accounts. Follow [How to tag resources on AWS](https://docs.ciroh.org/docs/education/CloudComputing/AWS/).

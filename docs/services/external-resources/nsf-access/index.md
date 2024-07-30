@@ -23,6 +23,7 @@ Jetstream2 is a powerful hybrid-cloud platform designed for researchers and educ
 
 <div className="col col--6">
 				<img src="https://docs.jetstream-cloud.org/images/JS2-Logo-Transparent.png" alt="jetstream2 logo"/>
+				<i>Image Source: <a href="https://docs.jetstream-cloud.org/">https://docs.jetstream-cloud.org/</a> </i>
 </div>
 
 ### Use cases:
@@ -48,6 +49,7 @@ Anvil is a powerful supercomputer, offering computing power for demanding resear
 
 <div className="col col--6">
 				<img src="https://www.rcac.purdue.edu/files/Anvil_specs_graphic_AT_Screens.png" alt="jetstream2 logo"/>
+				<i>Image Source: <a href="https://www.rcac.purdue.edu/anvil">https://www.rcac.purdue.edu/anvil</a> </i>
 </div>
 ### Use cases:
 **General-Purpose CPU Power**: Anvil's powerful CPUs (with 128 cores per node) are ideal for computationally intensive tasks suitable for modeling and simulation across scientific and engineering fields.

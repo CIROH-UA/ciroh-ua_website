@@ -1,6 +1,6 @@
 ---
 sidebar_position: 18
-title: "NWM API BigQuery"
+title: "NWM BigQuery API"
 description: "REST API backed by National Water Model data, developed on Google Cloud Platform"
 tags:
   - api
@@ -8,7 +8,7 @@ tags:
   - gcp
 ---
 
-# National Water Model (NWM) API BigQuery
+# National Water Model (NWM) BigQuery API
 
 :::info
 More details about “Design and implementation of a BigQuery dataset and application programmer interface (API) for the U.S. National Water Model” paper can be found [here.](https://authors.elsevier.com/c/1jNAA4sKhEd5Kn)

@@ -1,4 +1,36 @@
 {
+	"July 2024 Update":  [  
+		{
+			"type": "update",
+			"title": "NextGen Model Framework (ngen)",
+			"description": "Four PRs merged in July. Explore more updates here.",
+			"link": "https://github.com/NOAA-OWP/ngen"
+		},     
+		{
+			"type": "update",
+			"title": "NGIAB-CloudInfra",
+			"description": "In July, one PR was merged. We are preparing to present \"Advancing Hydrological Modeling: CIROH’s NextGen In A Box (NGIAB) and Enhanced Tools for Community-Driven Research\" at AGU24. You can find more updates here.", 
+			"link": "https://agu.confex.com/agu/agu24/prelim.cgi/Paper/1697622"
+		} ,     
+		{
+			"type": "update",
+			"title": "ngen-DataStream",
+			"description": "In July, 6 PRs were merged. We are also presenting \"NextGen National Water Model Framework Datastream\" paper at AGU24. More updates can be found here.",
+			"link": "https://agu.confex.com/agu/agu24/prelim.cgi/Paper/1589746"
+		},
+		{
+			"type": "update",
+			"title": "NGIAB-data-preprocessor",
+			"description": "Nine PRs were merged in July.",
+			"link": "https://github.com/AlabamaWaterInstitute/NGIAB_data_preprocess"
+		},
+		{
+			"type": "update",
+			"title": "T-route",
+			"description": "Five PRs were merged in July.",
+			"link": "https://github.com/NOAA-OWP/t-route"
+		}
+	],
 	"June 2024 Update":  [             
 		{
 			"type": "update",

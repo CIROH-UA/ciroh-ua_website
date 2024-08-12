@@ -172,7 +172,11 @@ plugins: [[ require.resolve('docusaurus-lunr-search'), {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} CIROH - The University of Alabama`,
+        copyright: `<br><br>
+                    his project received funding under award NA22NWS4320003 from NOAA Cooperative Institute Program. The statements, findings, conclusions, and recommendations are those of the author(s) and do not necessarily reflect the views of NOAA.
+                    <br><br><br>
+                    Copyright © ${new Date().getFullYear()} CIROH - The University of Alabama
+                    `,
       },
       prism: {
         theme: prismThemes.github,

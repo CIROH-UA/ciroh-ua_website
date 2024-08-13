@@ -101,7 +101,7 @@ plugins: [[ require.resolve('docusaurus-lunr-search'), {
             label: "Policies and Best Practices",
           },
           {
-            href: "/docs/products/nextgeninaboxDocker/news",
+            href: "/docs/products/community-nextgen/nextgeninaboxDocker/news",
             label: "News",
             position: "right",
           },

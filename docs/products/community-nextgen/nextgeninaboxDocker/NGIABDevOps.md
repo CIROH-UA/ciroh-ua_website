@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 title: "DevOps CI Pipeline"
 description: "NextGen In a Box (NGIAB) DevOps"
 tags:

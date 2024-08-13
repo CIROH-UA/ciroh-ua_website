@@ -24,4 +24,4 @@ Our team has been hard at work enhancing CIROH's Infrastructure and Community Ne
 
 Thank you for your ongoing interest and support in the Community NextGen project. Stay tuned for more exciting updates and developments next month. 😊
 
-[Click Here to Visit Community NextGen and NGIAB News from Feb 2024](/docs/products/nextgeninaboxDocker)
+[Click Here to Visit Community NextGen and NGIAB News from Feb 2024](/docs/products/community-nextgen/nextgeninaboxDocker/)

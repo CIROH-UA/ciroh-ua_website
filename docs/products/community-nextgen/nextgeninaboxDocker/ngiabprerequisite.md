@@ -13,7 +13,6 @@ tags:
 
 
 
-## Getting Started:
 
 
 ### Windows:
@@ -40,7 +39,7 @@ tags:
 
 This section guides you through downloading and preparing the sample input data for the NextGen In A Box project.
 
-## Step 1: Create Project Directory
+### Step 1: Create Project Directory
 
 - **Linux/Mac users:** Open your terminal and go to your desired folder where you want to checkout repo and ngen-data folder and run the following commands:
 ```bash
@@ -62,14 +61,14 @@ mkdir -p NextGen/ngen-data
 ```bash
 cd NextGen/ngen-data
 ```
-## Step 2: Download Sample Data
+### Step 2: Download Sample Data
 
 - **Linux/Mac/Windows WSL:** Use wget to download the compressed data file:
 ```bash
 wget --no-parent https://ciroh-ua-ngen-data.s3.us-east-2.amazonaws.com/AWI-006/AWI_16_2853886_006.tar.gz
 ```
 
-## Step 3: Extract and Rename
+### Step 3: Extract and Rename
 
 - **All Platforms:** Extract the downloaded file and optionally rename the folder:
 ```bash
@@ -81,7 +80,7 @@ mv AWI_16_2853886_006 my_data
 ```
 Now you have successfully downloaded and prepared the sample input data in the NextGen/ngen-data directory.
 
-## Step 4: Pull images
+### Step 4: Pull images (Optional)
 - **For Mac**:
     ```bash
     docker pull awiciroh/ciroh-ngen-image:latest
@@ -96,6 +95,4 @@ Now you have successfully downloaded and prepared the sample input data in the N
     docker pull awiciroh/tethys-ngiab:main
     ```
 
-NOTE:
-For DevCon24: Rest of the steps will be covered during the workshop
 

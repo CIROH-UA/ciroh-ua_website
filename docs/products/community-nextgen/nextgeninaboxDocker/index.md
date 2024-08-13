@@ -1,6 +1,6 @@
 ---
-sidebar_position: 3
-title: "NGIAB-HPCInfra"
+sidebar_position: 2
+title: "NGIAB-CloudInfra"
 description: "NextGen In a Box (NGIAB)"
 tags:
   - NextGen In A Box
@@ -8,9 +8,9 @@ tags:
   - NextGen framework
   - National Water Model
   - national water center
-  - singularity
+  - docker
 ---
 
 import GitHubReadme from '@site/src/components/GitHubReadme';
  
-<GitHubReadme username="CIROH-UA" repo="NGIAB-HPCInfra" />
+<GitHubReadme username="CIROH-UA" repo="NGIAB-CloudInfra" />

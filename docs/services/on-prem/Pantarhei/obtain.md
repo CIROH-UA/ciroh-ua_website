@@ -17,7 +17,7 @@ Pantarhei cluster is accessible to the CIROH members and partners of the Coopera
 
 We encourage PI of the project to start here: (select On-Premises Infrastructure Request Form and fill out details)
 
-<a class="button button--active button--primary" href="../../access"> Infrastructure Request Form</a>
+<a class="button button--active button--primary" href="https://docs.ciroh.org/docs/services/access/"> Infrastructure Request Form</a>
 
 ---
 

@@ -19,11 +19,20 @@ As the main account administrator for CIROH subaccount, here are some best pract
 
 - **Use AWS Secrets Manager**: Use AWS Secrets Manager, or other secrets management solution, so you don’t have to hardcode keys in plaintext. The application or client can then retrieve secrets when needed. For more information, see [What is AWS Secrets Manager?](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)
 
+## Access Key Management :
+
+- Never store your access key in plain text, in a code repository, or in code.
+- Never check in the access key in the public repository.
+- Disable or delete access key when no longer needed.
+- Enable least-privilege permissions.
+- Rotate access keys regularly.
+
 ## Resource Management:
 
 - **Tagging:** Implement a consistent tagging strategy for resources in all linked accounts. This allows for better cost allocation, resource identification, and easier filtering when managing resources across multiple accounts. Follow [How to tag resources on AWS](https://docs.ciroh.org/docs/services/cloudservices/aws/tagging).
 
-- **Cost allocation:** Allowed limit for subaccount is $500/project per month. Monitor the usage throughout the month and if it reaches above $500/project, notify admin of the subaccount to take necessary actions. For projects expecting more than $500 per month usage, please email [ciroh-it-admin@ua.edu](mailto:ciroh-it-admin@ua.edu) in advance to get the approval from higher management.
+- **Cost allocation**: Allowed limit for **new** subaccount is $500/project per month. Monitor the usage throughout the month and if it reaches above $500/project, notify admin of the subaccount to take necessary actions. For projects expecting more than $500 per month usage, please email ciroh-it-admin@ua.edu in advance to get the approval from higher management.
+
 
 - **Resource quotas:** Set resource quotas for subaccounts to limit their spending and resource usage. This helps prevent accidental overspending and ensures efficient resource allocation.
 

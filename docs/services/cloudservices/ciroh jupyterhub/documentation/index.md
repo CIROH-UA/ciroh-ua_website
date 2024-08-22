@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
-title: "Documentation and Tutorials"
+sidebar_position: 5
+title: "Documentation and Tutorial"
 description: "2i2c JupyterHub is a cloud-based JupyterHub environment specifically designed for hydrological researchers. It is powered by 2i2c JupyterHub, a cloud-based JupyterHub environment specifically on Google Cloud"
 tags:
   - 2i2c
@@ -28,7 +28,7 @@ tags:
 [2i2c Infrastructure Docs](https://infrastructure.2i2c.org/)
 :::
 
-### awi-ciroh-image repository on 2i2c GitHub:
+### awi-ciroh-image repository on CIROH GitHub:
 
 :::info
 [Github URL for AWI-CIROH 2i2c Hub Image](https://github.com/2i2c-org/awi-ciroh-image)

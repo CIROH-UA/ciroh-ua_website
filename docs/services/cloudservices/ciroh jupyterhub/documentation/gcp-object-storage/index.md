@@ -46,7 +46,7 @@ gcloud storage ls cp $PERSISTENT_BUCKET/<filepath> <destination-filepath>
 You can delete a file in a bucket with the following command:
 
 ```
-gcloud storage ls rm $PERSISTENT_BUCKET/<filepath>
+gcloud storage rm $PERSISTENT_BUCKET/<filepath>
 ```
 
 

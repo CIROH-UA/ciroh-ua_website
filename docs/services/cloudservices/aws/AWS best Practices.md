@@ -23,7 +23,8 @@ As the main account administrator for CIROH subaccount, here are some best pract
 
 - **Tagging:** Implement a consistent tagging strategy for resources in all linked accounts. This allows for better cost allocation, resource identification, and easier filtering when managing resources across multiple accounts. Follow [How to tag resources on AWS](https://docs.ciroh.org/docs/services/cloudservices/aws/tagging).
 
-- **Cost allocation:** Allowed limit for subaccount is $500/project per month. Monitor the usage throughout the month and if it reaches above $500/project, notify admin of the subaccount to take necessary actions. For projects expecting more than $500 per month usage, please email [ciroh-it-admin@ua.edu](mailto:ciroh-it-admin@ua.edu) in advance to get the approval from higher management.
+- **Cost allocation**: Allowed limit for **new** subaccount is $500/project per month. Monitor the usage throughout the month and if it reaches above $500/project, notify admin of the subaccount to take necessary actions. For projects expecting more than $500 per month usage, please email ciroh-it-admin@ua.edu in advance to get the approval from higher management.
+
 
 - **Resource quotas:** Set resource quotas for subaccounts to limit their spending and resource usage. This helps prevent accidental overspending and ensures efficient resource allocation.
 

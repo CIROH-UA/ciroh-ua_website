@@ -79,4 +79,3 @@ aws s3 sync s3://my-source-bucket s3://my-destination-bucket \
 - Ensure both profiles have the necessary permissions on their respective buckets.
 - Be cautious with the --delete flag as it removes files in the destination that don't exist in the source.
 - Always test with --dryrun first to ensure the operation will do what you expect.
-- Basically, you have to create two access key profile, and attach those appropriate

@@ -343,6 +343,24 @@ export default function HomepageFeatures() {
             description="Elevate your expertise through our training programs. Delve into our tutorials and educational resources, covering topics such as the NextGen framework, Data Science model, and more."
             link="/docs/education/"
           />
+          <Card
+            title="NextGen In A Box"
+            image="img/NGIAB-logo.jpg"
+            description="Utilize NextGen In A Box (NGIAB) to locally run NextGen framework. Choose specific regions or basins for analysis, control input data, and modify confiurations, all within a containerized environment."
+            link="/docs/products/community-nextgen/nextgeninaboxDocker"
+          />
+          <Card
+            title="AWS"
+            image="img/aws-logo.jpg"
+            description="Leverage the power of CIROH AWS Account to elevate your hydrological research. Get access to enterprise-level AWS cloud platform, and utilize AWS computing resources and scalable storage for your research."
+            link="/docs/services/cloudservices/aws"
+          />
+          <Card
+            title="Google Cloud"
+            image="img/google-cloud.jpg"
+            description="Explore different services and tools offered by CIROH Google Cloud. Learn how to access Google Cloud Platform (GCP) and leverage its resources for your research and projects."
+            link="/docs/services/cloudservices/google cloud"
+          />
           
           
         </div>

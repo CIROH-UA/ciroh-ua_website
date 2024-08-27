@@ -420,7 +420,7 @@ export default function HomepageFeatures() {
             title="CIROH Portal"
             image="img/ciroh-logo.jpg"
             description="This portal enhances collaboration and innovation by providing access to interactive web apps, datasets, and learning modules, supporting CIROH and NOAA NWM researchers in advancing hydrological science."
-            link="/docs/services/products/tethysprotal"
+            link="/docs/products/tethysportal"
           />
           </div>
           </Carousel>

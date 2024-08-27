@@ -25,7 +25,7 @@ As the main account administrator for CIROH subaccount, here are some best pract
 - Never check in the access key in the public repository.
 - Disable or delete access key when no longer needed.
 - Enable least-privilege permissions.
-- Rotate access keys regularly.
+- Rotate access keys regularly, preferably every 90 days.
 
 ## Resource Management:
 

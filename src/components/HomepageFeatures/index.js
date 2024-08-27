@@ -386,7 +386,7 @@ export default function HomepageFeatures() {
           />
           <Card
             title="Pantarhei"
-            image="img/pantarhei-logo.png"
+            image="img/pantarhei-logo.jpg"
             description="Access Pantarhei, a high-performance computing (HPC) cluster, to run computationally intensive hydrological models. Utilize Pantarhei to perform large-scale simulations and data processing tasks."
             link="/docs/services/on-prem/Pantarhei"
           />

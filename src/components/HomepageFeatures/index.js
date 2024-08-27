@@ -322,32 +322,6 @@ const Card = ({ title, image, description, link }) => (
   </div>
 );
 
-const SmallCard = ({ title, image, description, link }) => (
-  <div className="col col--4 " style={{ display: 'flex', marginBottom: "20px"}}>
-    <div className="card" style={{ flex: '1' }}>
-      <div className="card__image" style={{ textAlign: 'center' }}>
-        <img
-          src={image}
-          alt="Image alt text"
-          title="Logo Title Text 1"
-          style={{width:'65%'}}
-        />
-      </div>
-      <div className="card__header"  style={{ textAlign: 'center' }}>
-        <h3>{title}</h3>
-      </div>
-      <div className="card__body">
-        <p>{description}</p>
-      </div>
-      <div className="card__footer">
-        <a href={link} className="button button--info button--block">
-          Learn More
-        </a>
-      </div>
-    </div>
-  </div>
-);
-
 export default function HomepageFeatures() {
   return (
     <section className={styles.homepageContainer}>

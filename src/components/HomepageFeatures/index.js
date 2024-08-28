@@ -1,6 +1,9 @@
 import React from "react";
 import clsx from 'clsx';
 import styles from "./styles.module.css";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 // import { library } from "@fortawesome/fontawesome-svg-core";
 // import { fab } from "@fortawesome/free-brands-svg-icons";
 
@@ -294,7 +297,7 @@ const Member = ({ idx, name,logo,link,width,height }) => (
 );
 
 const Card = ({ title, image, description, link }) => (
-  <div className="col col--4 " style={{ display: 'flex', marginBottom: "20px"}}>
+  <div className="col col--4" style={{ display: 'flex', marginBottom: "20px"}}>
     <div className="card" style={{ flex: '1' }}>
       <div className="card__image" style={{ textAlign: 'center' }}>
         <img
@@ -319,12 +322,21 @@ const Card = ({ title, image, description, link }) => (
   </div>
 );
 
-
 export default function HomepageFeatures() {
   return (
     <section className={styles.homepageContainer}>
       <div className="container" >
-        <div className="row">
+        <Carousel
+          showThumbs={false}
+          autoPlay={true}
+          useKeyboardArrows={true}
+          emulateTouch={true}
+          interval={4000}
+          infiniteLoop
+          showStatus={false}
+          showIndicators={true}
+        >
+          <div className="row">
           <Card
             title="Documentation"
             image="img/documentation.png"
@@ -342,10 +354,50 @@ export default function HomepageFeatures() {
             image="img/tutorial.png"
             description="Elevate your expertise through our training programs. Delve into our tutorials and educational resources, covering topics such as the NextGen framework, Data Science model, and more."
             link="/docs/education/"
+          />      
+          </div>
+          <div className="row"> 
+          <Card
+            title="NextGen In A Box"
+            image="img/NGIAB-logo.jpg"
+            description="Utilize NextGen In A Box (NGIAB) to locally run NextGen framework. Choose specific regions or basins for analysis, control input data, and modify confiurations, all within a containerized environment."
+            link="/docs/products/community-nextgen/nextgeninaboxDocker"
           />
+          <Card
+            title="AWS"
+            image="img/aws-logo.jpg"
+            description="Leverage the power of CIROH AWS Account to elevate your hydrological research. Get access to enterprise-level AWS cloud platform, and utilize AWS computing resources and scalable storage for your research."
+            link="/docs/services/cloudservices/aws"
+          />
+          <Card
+            title="Google Cloud"
+            image="img/google-cloud.jpg"
+            description="Explore different services and tools offered by CIROH Google Cloud. Learn how to access Google Cloud Platform (GCP) and leverage its resources for your research and projects."
+            link="/docs/services/cloudservices/google cloud"
+          />
+          </div>
+          <div className="row">
           
-          
-        </div>
+          <Card
+            title="CIROH JupyterHub"
+            image="img/jupyterhub.jpg"
+            description="Access cloud-based JupyterHub environment on Google Cloud tailored for hydrological research. Leverage computing power with both CPU and GPU capabilities for advanced computational needs."
+            link="/docs/services/cloudservices/CIROH JupyterHub"
+          />
+          <Card
+            title="Pantarhei"
+            image="img/pantarhei-logo.jpg"
+            description="Access Pantarhei, a high-performance computing (HPC) cluster, to run computationally intensive hydrological models. Utilize Pantarhei to perform large-scale simulations and data processing tasks."
+            link="/docs/services/on-prem/Pantarhei"
+          />
+          <Card
+            title="CIROH Portal"
+            image="img/ciroh-logo.jpg"
+            description="This portal enhances collaboration and innovation by providing access to interactive web apps, datasets, and learning modules, supporting CIROH and NOAA NWM researchers in advancing hydrological science."
+            link="/docs/products/tethysportal"
+          />
+          </div>
+          </Carousel>
       </div>
       <div className={clsx('hero hero--primary', styles.heroBanner)}>
           <div className="container">

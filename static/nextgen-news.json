@@ -8,10 +8,16 @@
 		},     
 		{
 			"type": "update",
-			"title": "NGIAB-CloudInfra",
-			"description": "NGIAB v1.2.0 was released for both ARM and X86! In August, one PR was merged.",
+			"title": "NGIAB-CloudInfra : NGIAB Docker Image",
+			"description": "NGIAB v1.2.0 released for both ARM and X86.",
 			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra"
-		} ,     
+		} , 
+		{
+			"type": "update",
+			"title": "NGIAB-HPCInfra: NGIAB Singularity Image",
+			"description": "In August, we released a new singularity image. Learn more about the updates here.",
+			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra"
+		},    
 		{
 			"type": "update",
 			"title": "ngen-DataStream",

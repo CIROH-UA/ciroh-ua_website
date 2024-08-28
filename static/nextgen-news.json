@@ -1,4 +1,36 @@
 {
+	"August 2024 Update":  [  
+		{
+			"type": "update",
+			"title": "NextGen Model Framework (ngen)",
+			"description": "Five PRs merged in August. Explore more updates here.",
+			"link": "https://github.com/NOAA-OWP/ngen"
+		},     
+		{
+			"type": "update",
+			"title": "NGIAB-CloudInfra",
+			"description": "NGIAB v1.2.0 was released for both ARM and X86! In August, one PR was merged.",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra"
+		} ,     
+		{
+			"type": "update",
+			"title": "ngen-DataStream",
+			"description": "In August, 9 PRs were merged.",
+			"link": "https://github.com/CIROH-UA/ngen-datastream"
+		},
+		{
+			"type": "update",
+			"title": "NGIAB-data-preprocess",
+			"description": "Five PRs were merged in August. We are excited to announce the new release v2.0.0! This release uses catchment ids in place of waterbody ids.",
+			"link": "https://github.com/CIROH-UA/NGIAB_data_preprocess"
+		},
+		{
+			"type": "update",
+			"title": "T-route",
+			"description": "Eight PRs were merged in August.",
+			"link": "https://github.com/NOAA-OWP/t-route"
+		}
+	],
 	"July 2024 Update":  [  
 		{
 			"type": "update",
@@ -41,7 +73,7 @@
 		{
 			"type": "news",
 			"title": "NGIAB-data-preprocessor",
-			"description": "Four PRs were merged in June. We are happy to annonce the new release v1.0.1. This release includes various improvements and bug fixes.",
+			"description": "Four PRs were merged in June. We are happy to announce the new release v1.0.1. This release includes various improvements and bug fixes.",
 			"link": "https://github.com/AlabamaWaterInstitute/NGIAB_data_preprocess"
 		},  
 		{

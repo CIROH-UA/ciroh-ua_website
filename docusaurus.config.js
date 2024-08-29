@@ -100,6 +100,7 @@ plugins: [[ require.resolve('docusaurus-lunr-search'), {
             position: "left",
             label: "Policies and Best Practices",
           },
+          
           {
             href: "/docs/products/community-nextgen/nextgeninaboxDocker/news",
             label: "News",
@@ -108,6 +109,11 @@ plugins: [[ require.resolve('docusaurus-lunr-search'), {
           {
             href: "/contribute",
             label: "Contribute",
+            position: "right",
+          },
+          {
+            href: "http://portal.ciroh.org//",
+            label: "Portal",
             position: "right",
           },
           

@@ -19,7 +19,9 @@ This month, we are excited to showcase three case studies that utilized our cybe
 
 ### Project Overview:
 
-This project aims to create a set of tools (and system) for hydrologic model and forecast evaluation that are scalable and flexible for the wide range of use cases and users, that enable highly exploratory evaluation, and that foster open community development.
+The goal of this project is to investigate, design, and build a prototype hydrologic model/forecast evaluation system (TEEHR) that will significantly improve our ability to evaluate continental-scale datasets and will provide a robust and consistent evaluation tool for CIROH and OWP research. Design priorities include easy integration into common research workflows, rapid execution of large-scale evaluations, simplified exploration of performance trends and drivers, inclusion of common and emergent evaluation methods, efficient data structures, open-source and community development, and easy extensibility.
+
+
 <span className="hero-image" style={{ textAlign: 'center' }}>
         <img src="/img/teehr-image.png" alt="teehr image" style={{ width: '40%' }} />
 </span>
@@ -29,6 +31,7 @@ This project aims to create a set of tools (and system) for hydrologic model and
 - **TEEHR-HUB**: It is a JupyterHub environment, running the TEEHR image, with AWS services (EFS and S3) to provide a scalable platform for hydrologic research.
 - **Data Processing**: TEEHR-HUB has successfully processed the AORC (v3.0 retrospective) gridded precipitation data to the MERIT basins, as well as the CONUS 40-year retrospective (v3.0 and USGS).
 - **Testbed Integration**: TEEHR-HUB’s compatibility with various testbeds allows researchers to experiment with different hydrologic models and datasets.
+- **Evaluation** - TEEHR is being used (or is planned for use) by several CIROH research teams to evaluate large scale model results.
 
 ### Infrastructure Utilized: 
 
@@ -56,39 +59,5 @@ ngen-datastream builds and validates input data for NextGen, executes NextGen th
 
 - **Elastic Compute Cloud (EC2)**
 - **Simple Storage Service (S3)** 
-- **Elastic Kubernetes Service (EKS)** 
 - **AWS Lamda and Step Functions**
 
-
-## 3. Community Streamflow Evaluation System (CSES)
-
-<span className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="https://portal.ciroh.org/t/static/community_streamflow_evaluation_system/images/CSESoverviewImage.JPG" alt="cses image" style={{ width: '70%' }} />
-</span>
-
-### Project Overview:
-**CSES** is a model evaluation platform designed to lower the barrier for researchers and end-users in assessing hydrological models.
-
-**CSES** provides a:
-- Model agnostic evaluation framework
-- Research-oriented version for developers
-- Web-based version for end-users
-- Interactive model evaluation and analysis
-
-
-
-### Contribution to CIROH: 
-
-- It is a centralized location for all CIROH model evaluation tools.
-- It is a framework for sharing CIROH Streamflow prediction advancements with the greater hydrological community.
-- CSES-Python supports developers assess the model skill from different modeling formulations - regionally dominate hydrology.
-- CSES Web-App provides a platform to share modeling advancements with the hydrological community - researchers to end users.
-
-
-
-### Infrastructure Utilized: 
-
-- **Elastic Compute Cloud (EC2)**
-- **Simple Storage Service (S3)** 
-- **UA Pantarhei HPC**
-- **CIROH JupyterHub** 

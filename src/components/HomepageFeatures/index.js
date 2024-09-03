@@ -260,7 +260,6 @@ const PartnerList=[
     link: "https://www.coastal.edu/index.php",
     width: "100",
     height: "90",
-
   },
   {
     name:"University of Illinois Urbana-Champaign",
@@ -329,9 +328,10 @@ export default function HomepageFeatures() {
         <Carousel
           showThumbs={false}
           autoPlay={true}
+          stopOnHover={false}
           useKeyboardArrows={true}
           emulateTouch={true}
-          interval={4000}
+          interval={3500}
           infiniteLoop
           showStatus={false}
           showIndicators={true}

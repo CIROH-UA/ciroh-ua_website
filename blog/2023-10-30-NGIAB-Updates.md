@@ -16,4 +16,4 @@ hide_table_of_contents: false
 
 We've introduced a fresh addition within the NGIAB, offering the most up-to-date insights on NGIAB and NextGen monthly updates.
 
-[Visit NGIAB Release Notes Page](/docs/products/community-nextgen/nextgeninaboxDocker/news)
+[Visit NGIAB Release Notes Page](https://docs.ciroh.org/news)

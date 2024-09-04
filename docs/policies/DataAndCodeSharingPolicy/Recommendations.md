@@ -44,18 +44,20 @@ Depending on the type and size of data you are producing and using, we recommend
    - **Cost of use:**
      - Some uses may be covered by CIROH core funds (contact CIROH Cloud Team to start a request)
      - Extensive uses may be charged to individual CIROH projects
+   - **How to get access to CIROH AWS:**
+     - More information on obtaining accesss to CIROH's AWS resources are available at this link: https://docs.ciroh.org/docs/services/cloudservices/aws/
    - **Where to go for help:**
      - Email ciroh-it-admin@ua.edu UA CIROH Cloud Team
      - CIROH Cloud Slack Channel - #ciroh-ua-it-admin
      - AWS support Slack Channel - #aws-ciroh-support
 
-3. **Water Prediction Node: https://waternode.ciroh.org/**
-   - **Who to contact for help:** Water Prediction Node Team
-     - CIROH side: Dylan Lee (CoastWatch Water Node Coordinator), dylan.lee@noaa.gov
+3. **Water Prediction Node (https://waternode.ciroh.org/)**
+   - **Who to contact for help:** 
+     - ciroh-it-admin@ua.edu
 
 ## Recommendations for Sharing Code
 
-1. **GitHub (www.github.org)**
+1. **GitHub (www.github.com)**
    - **When to use:**
      - Generally post your code on your institution’s GitHub organization - some projects may be appropriately hosted on CIROH organization
      - We suggest forking the CIROH template for structured readme files, etc.
@@ -95,7 +97,7 @@ Model sharing can be viewed as “code sharing” or “data sharing,” and man
 - GitHub - Supports sharing of model source codes
 - HydroShare - Supports sharing of model programs and models instances
 - NextGen In A Box (NGIAB) - Use cloud computing or local machine to modify and execute NextGen based models in a docker container
-- CIROH Web Sites - Downloadable executables, model instances, installers, etc can be shared on the CIROH portal web site.
+- CIROH Web Sites - Downloadable executables, model instances, installers, etc can be shared on the [CIROH portal web site](https://portal.ciroh.org//).
 
 ## Recommendations for Sharing Workflows
 

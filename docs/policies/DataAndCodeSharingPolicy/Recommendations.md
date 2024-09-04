@@ -50,8 +50,8 @@ Depending on the type and size of data you are producing and using, we recommend
      - AWS support Slack Channel - #aws-ciroh-support
 
 3. **Water Prediction Node: https://waternode.ciroh.org/**
-   - **Who to contact for help:** Water Prediction Node Team
-     - CIROH side: Dylan Lee (CoastWatch Water Node Coordinator), dylan.lee@noaa.gov
+   - **Who to contact for help:** 
+     - ciroh-it-admin@ua.edu
 
 ## Recommendations for Sharing Code
 

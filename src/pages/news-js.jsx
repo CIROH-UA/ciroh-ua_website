@@ -1,6 +1,6 @@
 import React from 'react';
 import NewsComponent from './newscomponent';
-import jsonData from '../../../../static/nextgen-news.json'; // Import the JSON data
+import jsonData from '../../static/nextgen-news.json'; // Import the JSON data
 
 const News = () => {
   return (

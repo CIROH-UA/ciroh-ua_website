@@ -102,7 +102,7 @@ plugins: [[ require.resolve('docusaurus-lunr-search'), {
           },
           
           {
-            href: "/docs/products/community-nextgen/nextgeninaboxDocker/news",
+            href: "/news",
             label: "News",
             position: "right",
           },

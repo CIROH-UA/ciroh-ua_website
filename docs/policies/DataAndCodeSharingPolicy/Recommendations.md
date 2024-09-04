@@ -55,7 +55,7 @@ Depending on the type and size of data you are producing and using, we recommend
 
 ## Recommendations for Sharing Code
 
-1. **GitHub (www.github.org)**
+1. **GitHub (www.github.com)**
    - **When to use:**
      - Generally post your code on your institution’s GitHub organization - some projects may be appropriately hosted on CIROH organization
      - We suggest forking the CIROH template for structured readme files, etc.

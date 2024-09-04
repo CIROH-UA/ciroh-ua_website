@@ -107,6 +107,11 @@ plugins: [[ require.resolve('docusaurus-lunr-search'), {
             position: "right",
           },
           {
+            href: "/contact",
+            label: "Contact Us",
+            position: "right",
+          },
+          {
             href: "/contribute",
             label: "Contribute",
             position: "right",

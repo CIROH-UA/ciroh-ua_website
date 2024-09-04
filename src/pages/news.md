@@ -1,5 +1,5 @@
 
-import News from './news-js';
+import News from '../components/news-js';
 
 # Community NextGen and NGIAB Updates
 

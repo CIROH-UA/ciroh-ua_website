@@ -22,7 +22,7 @@ For significant modifications, please adhere to these steps:
 3. Open a pull request. Once submitted, an admin will review and merge it.
 4. GitHub Actions will automatically compile and publish the updates.
 
-If you encounter any issues or have inquiries, please feel free to email us at it-support@ciroh.org. Your contributions are highly valued!
+If you encounter any issues or have inquiries, please feel free to email us at ciroh-it-admin@ua.edu. Your contributions are highly valued!
 
 
 =========================================
@@ -72,13 +72,13 @@ This will create a build directory within your project folder. You can then depl
 
 ## Email us
 
-For general inquiries, contact us at: it-support@ciroh.org
+For general inquiries, contact us at: ciroh-it-admin@ua.edu
 
-To add content to this docusite, contact us at: it-support@ciroh.org
+To add content to this docusite, contact us at: ciroh-it-admin@ua.edu
 
 ## CIROH Slack channel
 
-Connect with us on CIROH Slack channel : ciroh-ua-it-admin
+Connect with us on CIROH Slack channel : [ciroh-ua-it-admin](https://cirohworkspace.slack.com/archives/C057BLQB867)
 
 
 

@@ -49,7 +49,7 @@ Depending on the type and size of data you are producing and using, we recommend
      - CIROH Cloud Slack Channel - #ciroh-ua-it-admin
      - AWS support Slack Channel - #aws-ciroh-support
 
-3. **Water Prediction Node: https://waternode.ciroh.org/**
+3. **Water Prediction Node (https://waternode.ciroh.org/)**
    - **Who to contact for help:** 
      - ciroh-it-admin@ua.edu
 

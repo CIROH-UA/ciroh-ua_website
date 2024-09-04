@@ -29,21 +29,21 @@ The CIROH CyberInfrastructure is meticulously designed to empower CIROH research
 		<div className="row">
 			<div className="col col--6" style={{ textAlign: 'center' }}>
 				<img src="/img/2i2c-gcp.png" alt="Water Tools" style={{ width: '100%' }} />
-				<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  href="https://docs.ciroh.org/docs/services/cloudservices/ciroh%20jupyterhub/"> CIROH JupyterHub</a>
+				<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  href="https://docs.ciroh.org/docs/services/cloudservices/ciroh%20jupyterhub/"> CIROH JupyterHub Service</a>
 
 			</div>
 			
 			<div className="col col--6" style={{ textAlign: 'center' }}>
 				<img src="https://blog.adobe.com/en/publish/2021/08/31/media_1649ebc3fbbce0df508081913819d491fc3f7c7a9.png?width=750&format=png&optimize=medium" alt="AWS" style={{ width: '100%' }} />
-				<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  href="https://docs.ciroh.org/docs/services/cloudservices/aws/"> CIROH AWS</a>
+				<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  href="https://docs.ciroh.org/docs/services/cloudservices/aws/"> CIROH AWS Services</a>
 			</div>
             <div className="col col--6" style={{ textAlign: 'center' }}>
 				<img src="/img/onprem.jpg" alt="On-Premises" style={{ width: '100%' }} />
-				<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  href="https://docs.ciroh.org/docs/services/on-prem/Pantarhei/"> Pantarhei</a>
+				<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  href="https://docs.ciroh.org/docs/services/on-prem/Pantarhei/"> Pantarhei HPC</a>
 			</div>
             <div className="col col--6" style={{ textAlign: 'center' }}>
 				<img src="/img/google-cloud.webp" alt="On-Premises" style={{ width: '100%' }} />
-				<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  href="https://docs.ciroh.org/docs/services/cloudservices/google%20cloud/"> CIROH Google Cloud Account</a>
+				<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  href="https://docs.ciroh.org/docs/services/cloudservices/google%20cloud/"> CIROH Google Cloud Services</a>
 			</div>
 		</div>
 	</div>

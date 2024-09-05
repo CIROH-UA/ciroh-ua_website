@@ -20,6 +20,8 @@ We encourage PI of the project to start here: (select Public Cloud and fill out 
 
 <a class="button button--active button--primary" href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=case_studies_call.md&title="> Cloud Infrastructure Request Form</a>
 
+## CIROH JupyterHub
+
 ### How to get access to CIROH JupyterHub?
 CIROH JupyterHub provides both CPU and GPU capabilities. Please submit the form below to get access to the CIROH JupyterHub environments:
 

@@ -11,7 +11,27 @@ CIROH provides access to both public cloud and on-premises infrastructure to sup
 
 CIROH has partnered with <strong>AWS, 2i2c and Google Cloud </strong> to provide access to their cloud computing services. To request access to the research cloud, please submit a GitHub template request detailing your project requirements and specifications. Our team will review your request and assist you in obtaining the necessary access.
 
+### Cost of use:
+- Some uses may be covered by CIROH core funds (contact CIROH CyberInfrastructure Team to start a request - ciroh-it-admin@ua.edu)
+- Extensive uses may be charged to individual CIROH projects
+
+### How to get access to CIROH Google Account or CIROH AWS Account?
+We encourage PI of the project to start here: (select Public Cloud and fill out details for Google Cloud or AWS).
+
 <a class="button button--active button--primary" href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=case_studies_call.md&title="> Cloud Infrastructure Request Form</a>
+
+## CIROH JupyterHub
+
+### How to get access to CIROH JupyterHub?
+CIROH JupyterHub provides both CPU and GPU capabilities. Please submit the form below to get access to the CIROH JupyterHub environments:
+
+<a class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) CPU Access Request Form</a>
+<a class="button button--active button--primary" style={{'margin-bottom':'1.3rem'}}  href="https://forms.office.com/r/mkrVJzyg9u"> JupyterHub (2i2c) GPU Access Request Form</a>
+
+### How to request custom images on CIROH JupyterHub?
+To request custom images, first create an `environment.yml` file by exporting your conda environment. Then, fill out the JupyterHub (2i2c) Software Install form.
+
+<a class="button button--active button--primary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) Software Install Form</a>
 
 ## On-Premises
 

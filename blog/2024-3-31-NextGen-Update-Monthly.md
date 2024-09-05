@@ -22,4 +22,4 @@ Empowering our community remains a top priority. We've expanded the DocuHub know
 
 As we continue driving advancements, we extend our gratitude for your unwavering support of the Community NextGen project and CIROH's cyberinfrastructure endeavors. Be on the lookout for more exciting updates next month as we strive to unlock new frontiers in water science through robust computing capabilities.
 
-[Click Here to Visit Community NextGen and NGIAB News from March 2024](/docs/products/Hydrologic%20Modeling%20Framework/nextgeninaboxDocker/news)
+[Click Here to Visit Community NextGen and NGIAB News from March 2024](https://docs.ciroh.org/news)

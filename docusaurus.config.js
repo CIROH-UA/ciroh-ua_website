@@ -102,7 +102,7 @@ plugins: [[ require.resolve('docusaurus-lunr-search'), {
           },
           
           {
-            href: "/docs/products/Hydrologic%20Modeling%20Framework/nextgeninaboxDocker/news",
+            href: "/news",
             label: "News",
             position: "right",
           },

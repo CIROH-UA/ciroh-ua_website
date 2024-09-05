@@ -16,4 +16,4 @@ hide_table_of_contents: false
 
 We are excited to share the latest updates for NGIAB, NextGen, T-route, Hydrofabric, NextGen forcings and Community Support.
 
-[Visit NGIAB News](/docs/products/Hydrologic%20Modeling%20Framework/nextgeninaboxDocker/news)
+[Visit NGIAB News](https://docs.ciroh.org/news)

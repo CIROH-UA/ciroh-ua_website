@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: "Hydrologic Modeling Framework"
+title: "Community Hydrologic Modeling Framework"
 description: "Community NextGen"
 tags:
   - NextGen In A Box

@@ -25,6 +25,13 @@ This translates into a powerful platform that includes:
     
 
 The CIROH CyberInfrastructure is meticulously designed to empower CIROH researchers and innovators to achieve groundbreaking results in hydrology. <strong>Join us and unlock the full potential of your research today!</strong>
+
+# CIROH CyberInfrastructure Goals
+
+* Promote **reproducible hydrologic computing experiments** with the NextGen Water Resource Modeling Framework
+* Provide support for, and reduce the barrier to entry for performing **NextGen-related experiments** at various scales; and
+* Accelerate the **interconnection and integration of research products and hydroinformatics innovations** from the various ongoing CIROH experiments.
+ 
 		</div>
 		<div className="row">
 			<div className="col col--6" style={{ textAlign: 'center' }}>

@@ -361,7 +361,7 @@ export default function HomepageFeatures() {
             title="NextGen In A Box"
             image="img/NGIAB-logo.jpg"
             description="Utilize NextGen In A Box (NGIAB) to locally run NextGen framework. Choose specific regions or basins for analysis, control input data, and modify confiurations, all within a containerized environment."
-            link="/docs/products/community-nextgen/nextgeninaboxDocker"
+            link="/docs/products/Hydrologic%20Modeling%20Framework/nextgeninaboxDocker"
           />
           <Card
             title="AWS"
@@ -394,7 +394,7 @@ export default function HomepageFeatures() {
             title="CIROH Portal"
             image="img/ciroh-logo.jpg"
             description="This portal enhances collaboration and innovation by providing access to interactive web apps, datasets, and learning modules, supporting CIROH and NOAA NWM researchers in advancing hydrological science."
-            link="/docs/products/tethysportal"
+            link="https://portal.ciroh.org/"
           />
           </div>
           </Carousel>

@@ -5,9 +5,6 @@ title: "CIROH CyberInfrastructure"
 
 # CIROH CyberInfrastructure: Unleashing Potential in Hydrological Research
 
-<div className="container">
-	<div className="hero-content">
-		<div className="hero-text">
 			
 The <strong>CIROH CyberInfrastructure</strong> empowers CIROH consortium members by providing a scalable, efficient, and user-friendly computing platform. We understand the challenges researchers face in managing <strong>computational resources</strong>, and the CIROH CyberInfrastructure alleviates these burdens by offering a suite of pre-configured environments and resources. Our team of engineers and developers meticulously optimizes both <strong>cloud-based</strong> (AWS and Google Cloud) and <strong>on-premise infrastructure</strong> (Pantarhei HPC cluster) to ensure unparalleled flexibility and scalability.
 
@@ -25,7 +22,7 @@ This translates into a powerful platform that includes:
     
 
 The CIROH CyberInfrastructure is meticulously designed to empower CIROH researchers and innovators to achieve groundbreaking results in hydrology. <strong>Join us and unlock the full potential of your research today!</strong>
-		</div>
+<br />
 
 # CIROH CyberInfrastructure Goals
 
@@ -33,6 +30,7 @@ The CIROH CyberInfrastructure is meticulously designed to empower CIROH research
 * Provide support for, and reduce the barrier to entry for performing **NextGen-related experiments** at various scales; and
 * Accelerate the **interconnection and integration of research products and hydroinformatics innovations** from the various ongoing CIROH experiments.
  
+<br />
          	
 		<div className="row">
 			<div className="col col--6" style={{ textAlign: 'center' }}>
@@ -52,6 +50,4 @@ The CIROH CyberInfrastructure is meticulously designed to empower CIROH research
 				<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  href="https://docs.ciroh.org/docs/services/cloudservices/google%20cloud/"> CIROH Google Cloud Services</a>
 			</div>
 		</div>
-	</div>
- </div>
 

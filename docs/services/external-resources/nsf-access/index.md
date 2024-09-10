@@ -34,6 +34,8 @@ Jetstream2 is ideal for researchers with diverse needs:
 - **Always-on research infrastructure**: It can host research-supporting infrastructure services that require continuous operation.
 - **Educational support**: It can be used to provide virtual machines for student use in research or coursework.
 
+For information about available instance sizes, visit the [JetStream2 VM Sizes](https://docs.jetstream-cloud.org/general/vmsizes/) page.
+
 
 <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="https://jetstream-cloud.org/get-started/index.html ">Get Started with JetStream2</a>
 <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="https://docs.jetstream-cloud.org/getting-started/login/">Logging in to JetStream2</a>

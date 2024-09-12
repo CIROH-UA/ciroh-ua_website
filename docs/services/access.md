@@ -6,6 +6,9 @@ title: "Infrastructure Access"
 # Infrastructure Access at CIROH
 
 CIROH provides access to both public cloud and on-premises infrastructure to support the research projects of its members and partners.
+<div className="hero-image" style={{ textAlign: 'center' }}>
+        <img src="/img/ciroh-resource-flowchart.png" alt="ciroh-resource flowchart" style={{ width: '100%' }} />
+</div>
 
 ## Public Cloud
 

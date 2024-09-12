@@ -28,6 +28,10 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        gtag: {
+          trackingID: 'G-TQW7CE7E2P',
+          anonymizeIP: true,
+        },
         blog: {
           blogTitle: "DocuHub blog!",
           blogDescription: "A DocuHub powered blog!",

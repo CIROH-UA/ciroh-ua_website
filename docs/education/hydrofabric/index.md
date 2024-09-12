@@ -36,4 +36,5 @@ To get started with Hydrofabric, you can follow these steps:
 ## Hydrofabric Resources
 - [Hydrofabric Code Repository](https://github.com/NOAA-OWP/hydrofabric)
 - [Hydrofabric Data](https://www.lynker-spatial.com/)
+- [NextGen Hydrofabric](https://mikejohnson51.github.io/hyAggregate/)
 

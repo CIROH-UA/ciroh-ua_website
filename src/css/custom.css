@@ -55,6 +55,7 @@
 [data-theme='dark'] .hero__title, .hero__subtitle{
   color: whitesmoke;
 }
+
 /* 
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
@@ -66,3 +67,12 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 } */
+.container {
+  max-width: 68%;
+}
+
+.docs-wrapper .container {
+  max-width: 100%;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+}

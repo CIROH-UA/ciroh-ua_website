@@ -50,15 +50,10 @@ const config = {
       }),
     ],
   ],
-// markdown: {
-//   mermaid: true,
-// },
-// themes: [
-//   '@docusaurus/theme-mermaid',  // <-- Add this line to enable Mermaid
-// ],
+
 plugins: [[ require.resolve('docusaurus-lunr-search'), {
   languages: ['en'] // language codes
-}]],
+}],['drawio', {}]],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

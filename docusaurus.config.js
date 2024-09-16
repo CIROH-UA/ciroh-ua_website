@@ -198,10 +198,10 @@ plugins: [[ require.resolve('docusaurus-lunr-search'), {
 <br><br><br>
 Copyright © ${new Date().getFullYear()} CIROH - The University of Alabama`,
       },
-      // prism: {
-      //   theme: prismThemes.github,
-      //   darkTheme: prismThemes.dracula,
-      // },
+      prism: {
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
+      },
     }),
     
 };

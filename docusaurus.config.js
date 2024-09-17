@@ -50,15 +50,10 @@ const config = {
       }),
     ],
   ],
-// markdown: {
-//   mermaid: true,
-// },
-// themes: [
-//   '@docusaurus/theme-mermaid',  // <-- Add this line to enable Mermaid
-// ],
+
 plugins: [[ require.resolve('docusaurus-lunr-search'), {
   languages: ['en'] // language codes
-}]],
+}],['drawio', {}]],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -198,10 +193,10 @@ plugins: [[ require.resolve('docusaurus-lunr-search'), {
 <br><br><br>
 Copyright © ${new Date().getFullYear()} CIROH - The University of Alabama`,
       },
-      // prism: {
-      //   theme: prismThemes.github,
-      //   darkTheme: prismThemes.dracula,
-      // },
+      prism: {
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
+      },
     }),
     
 };

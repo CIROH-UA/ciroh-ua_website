@@ -28,6 +28,10 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        gtag: {
+          trackingID: 'G-TQW7CE7E2P',
+          anonymizeIP: true,
+        },
         blog: {
           blogTitle: "DocuHub blog!",
           blogDescription: "A DocuHub powered blog!",
@@ -46,18 +50,25 @@ const config = {
       }),
     ],
   ],
-// plugins: ["docusaurus-plugin-search-local"],
-//    search: {
-//      index: ["docs"],
-//      numberShown: 5,
-//      language: "en",
-//    },
+// markdown: {
+//   mermaid: true,
+// },
+// themes: [
+//   '@docusaurus/theme-mermaid',  // <-- Add this line to enable Mermaid
+// ],
 plugins: [[ require.resolve('docusaurus-lunr-search'), {
   languages: ['en'] // language codes
 }]],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    (
+      {
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       docs: {
         sidebar: {
           autoCollapseCategories: false,
@@ -187,11 +198,12 @@ plugins: [[ require.resolve('docusaurus-lunr-search'), {
 <br><br><br>
 Copyright © ${new Date().getFullYear()} CIROH - The University of Alabama`,
       },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
+      // prism: {
+      //   theme: prismThemes.github,
+      //   darkTheme: prismThemes.dracula,
+      // },
     }),
+    
 };
 
 module.exports = config;

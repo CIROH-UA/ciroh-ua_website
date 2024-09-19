@@ -73,3 +73,38 @@
   margin-left: 1.3rem;
   margin-right: 1.3rem;
 }
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .player-wrapper {
+    padding-top: 75%; /* 4:3 Aspect Ratio for smaller screens */
+  }
+}
+
+@media (max-width: 1400px) {
+  :root {
+    /* Adjust the base font size to 90% of the original */
+    font-size: 90%;
+    
+    /* Adjust other root variables */
+    --ifm-font-size-base: 90%;
+    --ifm-code-font-size: 90%;
+    
+    /* Adjust sidebar widths */
+    --doc-sidebar-width: 240px !important; /* 240px * 0.9 */
+  }
+  body {
+    line-height: 1.5;
+  }
+  
+}

@@ -13,4 +13,4 @@ We are pleased to invite you to join our Community NextGen Office Hours. This is
 ## About Community NextGen
 Community NextGen is part of our Community Hydrologic Modeling Framework, designed to advance collaborative efforts in hydrologic science and modeling. These office hours provide a platform for discussion, problem-solving, and knowledge sharing among consortium members.
 ## How to Join
-If you’re interested in participating in the Community NextGen Office Hours, please send us an email expressing your interest at ciroh-it-admin@ua.edu. We’ll provide you further details. (edited) 
+If you’re interested in participating in the Community NextGen Office Hours, please send us an email expressing your interest at ciroh-it-admin@ua.edu. We’ll provide you further details.

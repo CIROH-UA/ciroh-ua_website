@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 
-export default function VideoPlayer({ url }) {
+const ResponsivePlayer = ({ url }) => {
   return (
-    <ReactPlayer url={url} width="100%" height="400px" controls />
+    <div className="player-wrapper">
+      <ReactPlayer
+        className="react-player"
+        url={url}
+        width="100%"
+        height="100%"
+        controls
+      />
+    </div>
   );
-}
+};
+
+export default ResponsivePlayer;

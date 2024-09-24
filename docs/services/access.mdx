@@ -3,73 +3,72 @@ sidebar_position: 2
 title: "Infrastructure Access"
 ---
 import Drawio from '@theme/Drawio'
-import simpleGraph from '!!raw-loader!@site/static/files/ciroh-resource-flowchart.drawio';
+import simpleGraph from '!!raw-loader!@site/static/files/ciroh-resource-flowchart.drawio'
 
-# Infrastructure Access at CIROH
+# Infrastructure Access Guide
+
 CIROH provides access to both public cloud and on-premises infrastructure to support the research projects of its members and partners.
 <Drawio content={simpleGraph} />
 
-
-
-
-
 ## Public Cloud
 
-CIROH has partnered with <strong>AWS, 2i2c and Google Cloud </strong> to provide access to their cloud computing services. To request access to the research cloud, please submit a GitHub template request detailing your project requirements and specifications. Our team will review your request and assist you in obtaining the necessary access.
+CIROH has partnered with **AWS, 2i2c, and Google Cloud** to provide access to their cloud computing services. 
 
-### Cost of use:
-- Some uses may be covered by CIROH core funds (contact CIROH CyberInfrastructure Team to start a request - ciroh-it-admin@ua.edu)
+### How to Request Access
+
+1. Submit a GitHub template request detailing your project requirements and specifications.
+2. Our team will review your request and assist you in obtaining the necessary access.
+
+<a class="button button--active button--primary" href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=case_studies_call.md&title=">Cloud Infrastructure Request Form</a>
+
+### Cost of Use
+
+- Some uses may be covered by CIROH core funds (contact CIROH CyberInfrastructure Team at ciroh-it-admin@ua.edu to start a request)
 - Extensive uses may be charged to individual CIROH projects
 
-### How to get access to CIROH Google Account or CIROH AWS Account?
-We encourage PI of the project to start here: (select Public Cloud and fill out details for Google Cloud or AWS).
-
-<a class="button button--active button--primary" href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=case_studies_call.md&title="> Cloud Infrastructure Request Form</a>
+> **Note**: The Cloud Infrastructure Request Form must be submitted by the Principal Investigator (PI) of the project.
 
 ## CIROH JupyterHub
 
-### How to get access to CIROH JupyterHub?
-CIROH JupyterHub provides both CPU and GPU capabilities. Please submit the form below to get access to the CIROH JupyterHub environments:
+CIROH JupyterHub provides both CPU and GPU capabilities.
 
-<a class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) CPU Access Request Form</a>
-<a class="button button--active button--primary" style={{'margin-bottom':'1.3rem'}}  href="https://forms.office.com/r/mkrVJzyg9u"> JupyterHub (2i2c) GPU Access Request Form</a>
+### How to Get Access
 
-### How to request custom images on CIROH JupyterHub?
-To request custom images, first create an `environment.yml` file by exporting your conda environment. Then, fill out the JupyterHub (2i2c) Software Install form.
+Submit one of the following forms to get access to CIROH JupyterHub environments:
 
-<a class="button button--active button--primary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) Software Install Form</a>
+<a class="button button--active button--primary" style={{'margin-bottom': '1.3rem', 'margin-right': '1.4rem'}} href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u">JupyterHub (2i2c) CPU Access Request Form</a>
 
-## On-Premises
+<a class="button button--active button--primary" style={{'margin-bottom': '1.3rem'}} href="https://forms.office.com/r/mkrVJzyg9u">JupyterHub (2i2c) GPU Access Request Form</a>
 
-CIROH also operates an on-premises infrastructure that includes high-performance computing (HPC) resources and specialized software. To request access to the on-premises infrastructure, please submit a GitHub template request detailing your project requirements and specifications. Our team will review your request and assist you in obtaining the necessary access.
+### Requesting Custom Images
 
-<a class="button button--active button--primary" href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=on-prem&projects=&template=onprem-request.md&title="> On-premises Infrastructure Request Form</a>
+To request custom images:
+
+1. Create an `environment.yml` file by exporting your conda environment.
+2. Fill out the JupyterHub (2i2c) Software Install form.
+
+<a class="button button--active button--primary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u">JupyterHub (2i2c) Software Install Form</a>
+
+## On-Premises Infrastructure
+
+CIROH operates an on-premises infrastructure that includes high-performance computing (HPC) resources and specialized software.
+
+### How to Request Access
+
+1. Submit a GitHub template request detailing your project requirements and specifications.
+2. Our team will review your request and assist you in obtaining the necessary access.
+
+> **Note**: The On-Premises Request Form must be submitted by the Principal Investigator (PI) of the project.
 <br />
-<br />
-:::note
-- This form must be submitted by Principal Investigator (PI) of the project.
-- Your request will be handled by <i>DevOps staff at CIROH</i> and if permitted will be given access to the <strong>research cloud</strong> or <strong>on-premise</strong> infrastructure.
+<a class="button button--active button--primary" href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=on-prem&projects=&template=onprem-request.md&title=">On-premises Infrastructure Request Form</a>
 
-:::
+### Accessing Pantarhei or Wukong
+**Step 1**: Submit the On-premise Access Request form for individual user accounts:
 
-### How to get access to Pantarhei?
 
-**Step 1**: Submit the On-Premise Infrastructure Request Form below to get access to Pantarhei:
+<a class="button button--active button--primary" style={{'margin-bottom': '1.3rem'}} href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUMzdTOUpKVU5UWFNCU0ZQUlowS0cxV0xFRy4u">On-Premise Access Request Form</a>
 
-We encourage PI of the project to start here: (select On-Premises Infrastructure Request Form and fill out details)
-
-<a class="button button--active button--primary" href="https://docs.ciroh.org/docs/services/access/"> Infrastructure Request Form</a>
-
----
-
-**Step 2**: Submit the On-premise Access Request form for individual user accounts on Pantarhei:
-
-<a class="button button--active button--primary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUMzdTOUpKVU5UWFNCU0ZQUlowS0cxV0xFRy4u"> On-Premise Access Request Form</a>
-
----
-
-:::note
-For UA users, please submit On-Premises Access Request Form. For outside UA users, please start with VPN Access Request Form followed by On-Premises Access Request Form
-:::
-
+> **Note**: 
+> - For UA users, please submit the On-Premises Access Request Form. 
+> - For users outside UA, please start with the VPN Access Request Form followed by the On-Premises Access Request Form.
 

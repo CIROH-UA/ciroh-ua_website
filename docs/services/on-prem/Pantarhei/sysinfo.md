@@ -2,6 +2,7 @@
 sidebar_position: 1
 title: "System Architecture"
 description: "System Architecture of Pantarhei"
+hide_table_of_contents: false
 tags:
 - HPC
 - On-Premises
@@ -14,12 +15,12 @@ import TabItem from '@theme/TabItem';
 import Heading from '@theme/Heading';
 
 
-# Pantarhei Node Specifications
+# Hardware Specifications
 
 <Tabs>
   <TabItem value="login" label="Login Node" default>
     <div className="container">
-      <table>
+      <table style={{ width: '100%', display: 'inline-table' }}>
         <tr> 
           <th colSpan="6">Pantarhei Login Node</th>
         </tr>
@@ -46,8 +47,8 @@ import Heading from '@theme/Heading';
   <div className="container">
 
     <details style={{backgroundColor: 'transparent', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: 'var(--ifm-global-radius)', padding: 'var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal)'}}>
-      <summary style={{backgroundColor: 'transparent', color: 'var(--ifm-color-primary)', fontWeight: 'var(--ifm-font-weight-bold)'}}>Compute Node 001-005</summary>
-      <table  style={{'width':'100%'}}>
+      <summary style={{backgroundColor: 'transparent', color: 'var(--ifm-color-primary)', fontWeight: 'var(--ifm-font-weight-bold)'}}>Partition : normal</summary>
+      <table style={{ width: '100%', display: 'inline-table' }}>
 		<tr> 
 			<th colspan="2"> Compute Node Specifications</th>
 		</tr>
@@ -89,7 +90,7 @@ import Heading from '@theme/Heading';
 		</tr>
 		<tr>
 			<td>Cache</td>
-			<td> L1d cache: 1.3 MiB (40 instances)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br/>
+			<td> L1d cache: 1.3 MiB (40 instances)<br/>
 				L1i cache: 1.3 MiB (40 instances)<br/>
 				L2 cache: 40 MiB (40 instances)<br/>
 				L3 cache: 55 MiB (2 instances)</td>
@@ -102,8 +103,8 @@ import Heading from '@theme/Heading';
     </details>
 
     <details style={{backgroundColor: 'transparent', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: 'var(--ifm-global-radius)', padding: 'var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal)'}}>
-      <summary style={{backgroundColor: 'transparent', color: 'var(--ifm-color-primary)', fontWeight: 'var(--ifm-font-weight-bold)'}}>Compute Node 006-009</summary>
-      <table  style={{'width':'100%'}}>
+      <summary style={{backgroundColor: 'transparent', color: 'var(--ifm-color-primary)', fontWeight: 'var(--ifm-font-weight-bold)'}}>Partition : long</summary>
+      <table style={{ width: '100%', display: 'inline-table' }}>
 		<tr> 
 			<th colspan="2"> Compute Node Specifications</th>
 		</tr>
@@ -145,7 +146,7 @@ import Heading from '@theme/Heading';
 		</tr>
 		<tr>
 			<td>Cache</td>
-			<td> L1d cache: 1.5 MiB (32 instances)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br/>
+			<td> L1d cache: 1.5 MiB (32 instances)<br/>
 				L1i cache: 1 MiB (32 instances)<br/>
 				L2 cache: 40 MiB (32 instances)<br/>
 				L3 cache: 48 MiB (2 instances)</td>
@@ -158,8 +159,8 @@ import Heading from '@theme/Heading';
     </details>
 
     <details style={{backgroundColor: 'transparent', border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: 'var(--ifm-global-radius)', padding: 'var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal)'}}>
-      <summary style={{backgroundColor: 'transparent', color: 'var(--ifm-color-primary)', fontWeight: 'var(--ifm-font-weight-bold)'}}>AMD Compute Node</summary>
-      <table  style={{'width':'100%'}}>
+      <summary style={{backgroundColor: 'transparent', color: 'var(--ifm-color-primary)', fontWeight: 'var(--ifm-font-weight-bold)'}}>Partition : amd</summary>
+      <table style={{ width: '100%', display: 'inline-table' }}>
 		<tr> 
 			<th colspan="2"> Compute Node Specifications</th>
 		</tr>
@@ -201,7 +202,7 @@ import Heading from '@theme/Heading';
 		</tr>
 		<tr>
 			<td>Cache</td>
-			<td> L1d cache: 4 MiB (128 instances)&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br/>
+			<td> L1d cache: 4 MiB (128 instances)<br/>
 				L1i cache: 4 MiB (128 instances)<br/>
 				L2 cache: 64 MiB (128 instances)<br/>
 				L3 cache: 512 MiB (32 instances)</td>
@@ -218,8 +219,8 @@ import Heading from '@theme/Heading';
 
   
   <TabItem value="fpga" label="FPGA Nodes">
-    <div className="container">
-      <table style={{width:'100%'}}>
+    <div className="container" >
+      <table style={{ width: '100%', display: 'inline-table' }}>
         <tr> 
           <th colSpan="2">FPGA Node Specifications</th>
         </tr>
@@ -278,7 +279,7 @@ import Heading from '@theme/Heading';
   
   <TabItem value="gpu" label="GPU Nodes">
     <div className="container">
-      <table style={{width:'100%'}}>
+      <table style={{ width: '100%', display: 'inline-table' }}>
         <tr> 
           <th colSpan="2">GPU Node Specifications</th>
         </tr>

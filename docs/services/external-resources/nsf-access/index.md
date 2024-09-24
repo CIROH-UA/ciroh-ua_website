@@ -34,6 +34,8 @@ Jetstream2 is ideal for researchers with diverse needs:
 - **Always-on research infrastructure**: It can host research-supporting infrastructure services that require continuous operation.
 - **Educational support**: It can be used to provide virtual machines for student use in research or coursework.
 
+For information about available instance sizes, visit the [JetStream2 VM Sizes](https://docs.jetstream-cloud.org/general/vmsizes/) page.
+
 
 <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="https://jetstream-cloud.org/get-started/index.html ">Get Started with JetStream2</a>
 <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="https://docs.jetstream-cloud.org/getting-started/login/">Logging in to JetStream2</a>
@@ -48,7 +50,7 @@ Anvil is a powerful supercomputer, offering computing power for demanding resear
 
 
 <div className="col col--6">
-				<img src="https://www.rcac.purdue.edu/files/Anvil_specs_graphic_AT_Screens.png" alt="jetstream2 logo"/>
+				<img src="https://www.rcac.purdue.edu/files/anvil/Anvil_cummulative_8-2024_stats_only%20%281%29.png" alt="jetstream2 logo"/>
 				<i>Image Source: <a href="https://www.rcac.purdue.edu/anvil">https://www.rcac.purdue.edu/anvil</a> </i>
 </div>
 ### Use cases:

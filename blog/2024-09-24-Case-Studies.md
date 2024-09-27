@@ -61,8 +61,6 @@ Several important historical and ongoing National Water Model (NWM) datasets are
 </tr>
 </table>
 
-For detailed instructions on how to use this service, please refer to the documentation available at: https://github.com/BYU-Hydroinformatics/api-nwm-gcp 
-
 To gain access and run queries on BigQuery:
 
 - Submit the NWM BigQuery API Access Form, available at: https://docs.ciroh.org/docs/products/Data%20Management%20and%20Access%20Tools/bigqeury-api/

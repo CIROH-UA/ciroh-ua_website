@@ -8,7 +8,7 @@ hide_table_of_contents: false
 ---
 
 <img src="/img/gcp_architecture_diagram.png"  alt="gcp architectrure diagram"/>
-<i >Image Source: <a href="https://www.rcac.purdue.edu/anvil">https://www.rcac.purdue.edu/anvil</a> </i>
+<i >Image Source: <a href="https://github.com/BYU-Hydroinformatics/api-nwm-gcp">https://github.com/BYU-Hydroinformatics/api-nwm-gcp</a> </i>
  
 <br />
 <br />

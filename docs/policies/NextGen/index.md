@@ -1,0 +1,30 @@
+---
+title: NextGen Framework
+description: A comprehensive guide for integrating models and modules into the NextGen framework
+---
+
+# Technical guidance for the inclusion of models/modules in the NextGen Water Resources Modeling Framework
+
+*Authors: Fred Ogden, Nels Frazier, Keith Jennings, Jonathan Frame, Wouter Knoben, Tadd Bindas,
+Yalan Song, Irene Garousi-Nejad, Jeffrey Carver, Andy Wood, Anthony Castronova, Arpita
+Patel, Shahabul Alam, Sifan A. Koriche, Junwei Guo, Cyril Thébault, Raymond J. Spiteri,
+Ahmad J. Khattak, James Halgren, Patrick J. Clemins, Mukesh Kumar, and Martyn Clark*
+
+## Introduction
+
+This document provides technical guidance for including models and modules in the Next Generation Water Resources Modeling Framework (NextGen). It covers essential aspects of model integration, best practices, and framework requirements.
+
+## Full Document
+
+For the complete technical guidance, please refer to the PDF document below:
+
+[Download Technical Guidance PDF](../../../static/files/Nextgen_Model_Development_Specifications_WG2_v1.docx.pdf) 
+
+## Key Points
+
+- NextGen is a model-agnostic, standards-based framework for water resources modeling
+- It allows for flexible experimentation with hydrologic cycle representations
+- The framework supports explicit coupling of models through sharing of computed states and fluxes
+- Design requirements include maximum flexibility, open-source development, and multi-language support
+
+

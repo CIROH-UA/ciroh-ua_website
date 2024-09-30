@@ -1,4 +1,49 @@
 {
+	"September 2024 Update":  [ 
+		{
+			"type": "news",
+			"title": "Best Practice Guide for NextGen Framework",
+			"description": "Technical guidance for the inclusion of models/modules in the NextGen Water Resources Modeling Framework is now available in DocuHub.",
+			"link": "https://docs.ciroh.org/docs/policies/NextGen/"
+		},  
+		{
+			"type": "update",
+			"title": "NextGen Model Framework (NOAA-OWP/ngen)",
+			"description": "2 PRs merged in September. Explore more updates here.",
+			"link": "https://github.com/NOAA-OWP/ngen/commits/master/?since=2024-09-01&until=2024-09-26"
+		},     
+		{
+			"type": "update",
+			"title": "T-route (NOAA-OWP/t-route)",
+			"description": "4 PRs were merged in September.",
+			"link": "https://github.com/NOAA-OWP/t-route/commits/master/?since=2024-09-01&until=2024-09-26"
+		},
+		{
+			"type": "news",
+			"title": "NextGen Community Office Hours",
+			"description": "We are excited to invite you to join our NextGen Community Office Hours. It is an excellent opportunity for everyone to stay up to date with the latest developments in hydrologic modeling at CIROH. Join us to engage with the team and learn more about ongoing projects and advancements.",
+			"link": "https://docs.ciroh.org/docs/products/Community%20Hydrologic%20Modeling%20Framework/ngiabOfficeHours"
+		} , 
+		
+		{
+			"type": "feature",
+			"title": "NGIAB-CloudInfra : NGIAB Docker Image",
+			"description": "We are happy to announce that NGIAB version 1.2.1 has been released, available for both ARM and x86 architectures. This release is up to date with the latest ngen commit ID: f321889 and t-route commit ID: d0982a5. Learn more about the updates here.",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/releases/tag/v1.2.1"
+		} , 
+		{
+			"type": "update",
+			"title": "ngen-datastream",
+			"description": "In September, 10 pull requests were merged. ",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2024-09-01&until=2024-09-26"
+		},
+		{
+			"type": "update",
+			"title": "NGIAB-data-preprocess",
+			"description": "5 PRs were merged in September. ",
+			"link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2024-09-01&until=2024-09-26"
+		}
+	],
 	"August 2024 Update":  [  
 		{
 			"type": "update",

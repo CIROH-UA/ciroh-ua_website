@@ -11,7 +11,7 @@ tags:
 # National Water Model (NWM) BigQuery API
 
 :::info
-More details about “Design and implementation of a BigQuery dataset and application programmer interface (API) for the U.S. National Water Model” paper can be found [here.](https://authors.elsevier.com/c/1jNAA4sKhEd5Kn)
+More details about “Design and implementation of a BigQuery dataset and application programmer interface (API) for the U.S. National Water Model” paper can be found [here.](https://www.sciencedirect.com/science/article/pii/S1364815224001841)
 :::
 
 **Please submit the form below to request access to NWM BigQuery API.**

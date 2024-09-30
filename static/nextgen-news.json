@@ -1,5 +1,11 @@
 {
-	"September 2024 Update":  [  
+	"September 2024 Update":  [ 
+		{
+			"type": "news",
+			"title": "Best Practice Guide for NextGen Framework",
+			"description": "Technical guidance for the inclusion of models/modules in the NextGen Water Resources Modeling Framework is now available in DocuHub.",
+			"link": "https://docs.ciroh.org/docs/policies/NextGen/"
+		},  
 		{
 			"type": "update",
 			"title": "NextGen Model Framework (NOAA-OWP/ngen)",
@@ -20,9 +26,9 @@
 		} , 
 		
 		{
-			"type": "update",
+			"type": "feature",
 			"title": "NGIAB-CloudInfra : NGIAB Docker Image",
-			"description": "We are happy to announce that NGIAB version 1.2.1 has been released, available for both ARM and X86 architectures. This release is up to date with the latest ngen commit ID: f321889 and t-route commit ID: d0982a5. Learn more about the updates here.",
+			"description": "We are happy to announce that NGIAB version 1.2.1 has been released, available for both ARM and x86 architectures. This release is up to date with the latest ngen commit ID: f321889 and t-route commit ID: d0982a5. Learn more about the updates here.",
 			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/releases/tag/v1.2.1"
 		} , 
 		{

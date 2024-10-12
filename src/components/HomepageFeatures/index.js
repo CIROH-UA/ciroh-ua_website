@@ -338,8 +338,8 @@ const impactData = [
     users:60
   },
   {
-    title: "CIROH GCP Projects",
-    count: 3,
+    title: "CIROH Google Cloud and CIROH JupyterHub Projects",
+    count: 50,
     imageSrc: "/img/google-cloud.jpg",
     users: 171
   },
@@ -351,7 +351,7 @@ const impactData = [
   },
   {
     title: "CIROH NSF ACCESS Allocations Projects",
-    count: 7,
+    count: 8,
     imageSrc: "/img/nsf-logo.png",
     users:27
   }

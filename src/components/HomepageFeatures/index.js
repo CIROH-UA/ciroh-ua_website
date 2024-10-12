@@ -9,6 +9,15 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 // Initialize Font Awesome library
 // library.add(fab);
+const ImpactItem = ({ title, count, imageSrc,users }) => (
+  <div className={styles.impactItem}>
+    <img src={imageSrc} alt={`${title} icon`} className={styles.impactIcon} />
+    <h2 className={styles.impactTitle}>{title}</h2>
+    <p className={styles.impactCount}>{count}</p>
+    <p className={styles.impactCount}>{users} active users</p>
+
+  </div>
+);
 
 const FeatureList = [
 ];
@@ -321,7 +330,36 @@ const Card = ({ title, image, description, link }) => (
   </div>
 );
 
+const impactData = [
+  {
+    title: "CIROH AWS Projects",
+    count: 24,
+    imageSrc: "/img/aws-logo.svg",
+    users:60
+  },
+  {
+    title: "CIROH Google Cloud and CIROH JupyterHub Projects",
+    count: 50,
+    imageSrc: "/img/google-cloud.jpg",
+    users: 171
+  },
+  {
+    title: "CIROH On-premise HPC Projects",
+    count: 20,
+    imageSrc: "/img/pantarhei-logo.jpg",
+    users: 50
+  },
+  {
+    title: "CIROH NSF ACCESS Allocations Projects",
+    count: 8,
+    imageSrc: "/img/nsf-logo.png",
+    users:27
+  }
+];
+
+
 export default function HomepageFeatures() {
+  
   return (
     <section className={styles.homepageContainer}>
       <div className="container" >
@@ -399,6 +437,24 @@ export default function HomepageFeatures() {
           </div>
           </Carousel>
       </div>
+      <div className={styles.container}>
+      <h2 className={styles.mainTitle}>Community Impact</h2>
+      <p className={styles.description}>
+        We are committed to providing infrastructure support to CIROH consortium partners and members to advance 
+        their research. Our impact spans across various cloud platforms and resources. Here's an overview of our contributions:
+      </p>
+      <div className={styles.impactGrid}>
+        {impactData.map((item, index) => (
+          <ImpactItem 
+            key={index}
+            title={item.title}
+            count={item.count}
+            imageSrc={item.imageSrc}
+            users={item.users}
+          />
+        ))}
+      </div>
+    </div>
       <div className={clsx('hero hero--primary', styles.heroBanner)}>
           <div className="container">
             <div className={styles.flexStart}>

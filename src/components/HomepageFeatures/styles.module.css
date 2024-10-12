@@ -132,3 +132,146 @@
     width: 100%;
   }
 }
+
+/* CommunityImpact.module.css */
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.mainTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.23rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.impactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.impactItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.impactItem:hover {
+  transform: translateY(-5px);
+}
+
+.impactIcon {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+}
+
+.impactTitle {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  min-height: 3rem; /* Set a minimum height to ensure equal spacing */
+  line-height: 1.2;  /* Ensure consistent line spacing for multiline titles */
+}
+
+.impactCount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0066cc;
+  margin-top: auto; /* Align the count text to the bottom of the container */
+}
+
+@media (max-width: 768px) {
+  .impactGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+.blog-filter-container {
+  margin: 2rem 0;
+}
+
+.tag-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  background-color: #f1f3f4;
+  color: #333;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #e2e6ea;
+}
+
+.button--active {
+  background-color: #007bff;
+  color: white;
+}
+
+.margin-left--sm {
+  margin-left: 0.5rem;
+}
+
+.post-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-item {
+  margin-bottom: 1.5rem;
+}
+
+.post-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-title {
+  font-size: 1.25rem;
+  margin: 0;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.post-title:hover {
+  color: #0056b3;
+}
+
+.post-description {
+  margin: 0.5rem 0;
+  color: #6c757d;
+}
+
+.post-date {
+  color: #868e96;
+  font-size: 0.875rem;
+}
+
+.center{
+  text-align: center;
+}
+.btn {
+  font-size: 1.5rem;
+}

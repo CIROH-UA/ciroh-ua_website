@@ -12,6 +12,7 @@ authors:
 
 tags: [nextgen]
 hide_table_of_contents: false
+image: https://github.com/CIROH-UA/NGIAB-CloudInfra/raw/main/image/README/ngiab.png
 ---
 
 We've release NGIAB v1.1.0! This release fixes issues:

@@ -9,6 +9,7 @@ authors:
 
 tags: [awra, tuscaloosa, conference, water resources, modeling]
 hide_table_of_contents: false
+image: /img/awra2024.jpeg
 ---
 
 **AWRA 2024 Spring Conference**

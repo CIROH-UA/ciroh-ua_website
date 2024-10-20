@@ -32,12 +32,7 @@ const config = {
           trackingID: 'G-TQW7CE7E2P',
           anonymizeIP: true,
         },
-        blog: {
-          blogTitle: "DocuHub blog!",
-          blogDescription: "A DocuHub powered blog!",
-          postsPerPage: "ALL",
-          authorsMapPath: "blog/authors.yaml",
-        },
+        blog: false,
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
@@ -51,9 +46,29 @@ const config = {
     ],
   ],
 
-plugins: [[ require.resolve('docusaurus-lunr-search'), {
-  languages: ['en'] // language codes
-}],['drawio', {}]],
+  plugins: [
+    // Lunr Search Plugin for search functionality
+    [
+      require.resolve('docusaurus-lunr-search'), 
+      {
+        languages: ['en'], // language codes for search
+      }
+    ],
+    
+    // Draw.io Plugin for embedding diagrams
+    ['drawio', {}],
+    
+    // Custom Blog Plugin
+    [
+      './plugins/plugin-content-blog.js', 
+      {
+        blogTitle: "DocuHub blog!",
+        blogDescription: "A DocuHub powered blog!",
+        postsPerPage: "ALL", // Display all posts on a single page
+        authorsMapPath: "blog/authors.yaml", // Path to the authors' mapping file
+      }
+    ]
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -106,7 +121,12 @@ plugins: [[ require.resolve('docusaurus-lunr-search'), {
             position: "left",
             label: "Policies and Best Practices",
           },
-          
+          {
+            href: "/impact",
+            label: "Community Impact",
+            position: "left",
+          }
+          ,
           {
             href: "/news",
             label: "News",

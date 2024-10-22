@@ -48,12 +48,12 @@ gcloud storage cp $PERSISTENT_BUCKET/<filepath> <destination-filepath>
 You can list all files/folder in a bucket using the following command.
 
 ```
-gscloud storage ls $PERSISTENT_BUCKET
+gcloud storage ls $PERSISTENT_BUCKET
 ```
 **Note:** The above command will list all files/folders in the folder `<username>`. It won't list files in the sub-folders of folder `<username>`. To list all files including the files in the sub-folders of the root folder `<username>`, use the following command.
 
 ```
-gscloud storage ls --recursive $PERSISTENT_BUCKET
+gcloud storage ls --recursive $PERSISTENT_BUCKET
 ```
 
 ### 5. Deleting file from a bucket

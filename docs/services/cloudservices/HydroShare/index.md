@@ -26,7 +26,7 @@ Here are the steps for you to follow:
 
 1. First, confirm that you have access to the CIROH Jupyterhub. If not, follow [Steps](../../../../docs/services/cloudservices/ciroh%20jupyterhub/#how-to-get-access-to-these-environments)
 
-2. CIROH Jupyterhub is not an approved app, and appears on https://www.hydroshare.org/apps/. Navigate to this page to access it directly, or select it from the "Open with" list on any resource that you have access to containing a Jupyter notebook. 
+2. CIROH Jupyterhub is now an approved app, and appears on https://www.hydroshare.org/apps/. Navigate to this page to access it directly, or select it from the "Open with" list on any resource that you have access to containing a Jupyter notebook. 
 3. A new browser tab will open for the CIROH JupyterHub. Click on the "Login to continue" button and select one of the server options that is appropriate for the analysis you need to run (small, medium, large, or huge) and image : New Pangeo Notebook base image. Then, click the "Start" button to launch your server.
 
 <p align="center">

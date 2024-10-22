@@ -111,10 +111,17 @@ const config = {
           },
           {
             type: "doc",
+            docId: "education/education",
+            position: "left",
+            label: "Education",
+          },
+          {
+            type: "doc",
             docId: "policies/intro",
             position: "left",
             label: "Policies and Best Practices",
           },
+          
           {
             href: "/impact",
             label: "Community Impact",

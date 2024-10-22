@@ -7,7 +7,7 @@ authors:
     url: https://github.com/arpita0911patel
     image_url: https://avatars.githubusercontent.com/u/54657?v=4
 
-tags: [nextgen, ciroh, community-nextgen, news, singularity]
+tags: [ciroh, community-nextgen, news, singularity]
 hide_table_of_contents: false
 ---
 

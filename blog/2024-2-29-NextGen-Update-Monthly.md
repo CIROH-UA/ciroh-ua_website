@@ -7,7 +7,7 @@ authors:
     url: https://github.com/arpita0911patel
     image_url: https://avatars.githubusercontent.com/u/54657?v=4
 
-tags: [nextgen, ciroh, community-nextgen, on-premises, nwm, news]
+tags: [ciroh, community-nextgen, on-premises, nwm, news]
 hide_table_of_contents: false
 ---
 Welcome to the February edition of the CIROH DocuHub blog, where we bring you the latest updates and news about the Community NextGen project and CIROH's Cloud and on-premise Infrastructure.

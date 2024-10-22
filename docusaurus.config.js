@@ -111,12 +111,6 @@ const config = {
           },
           {
             type: "doc",
-            docId: "education/education",
-            position: "left",
-            label: "Education",
-          },
-          {
-            type: "doc",
             docId: "policies/intro",
             position: "left",
             label: "Policies and Best Practices",
@@ -125,64 +119,70 @@ const config = {
             href: "/impact",
             label: "Community Impact",
             position: "left",
-          }
-          ,
+          },
           {
             href: "/news",
             label: "News",
             position: "right",
           },
           {
-            href: "/contact",
-            label: "Contact Us",
-            position: "right",
-          },
-          {
-            href: "/contribute",
-            label: "Contribute",
-            position: "right",
-          },
-          {
             href: "http://portal.ciroh.org//",
             label: "Portal",
             position: "right",
-          },
-          
+          }
         ],
       },
       footer: {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: 'Quick Links',
             items: [
               {
-                label: "About CIROH",
-                href: "https://ciroh.ua.edu/about/",
+                label: 'Education',
+                href: '/docs/education/'
               },
               {
-                label: "CIROH Members and Partners",
-                href: "https://ciroh.ua.edu/about/ciroh-partners/",
+                label: 'Contact Us',
+                href: '/contact'
               },
               {
-                label: "Contact CIROH",
-                href: "https://ciroh.ua.edu/contact-us/",
+                label: 'Contribute',
+                href: '/contribute'
               },
               {
-                label: "DocuHub Repo",
-                href: "https://github.com/CIROH-UA/ciroh-ua_website",
+                label: 'CIROH Portal',
+                href: 'http://portal.ciroh.org/'
+              }
+            ]
+          },
+          {
+            title: 'About CIROH',
+            items: [
+              {
+                label: 'About Us',
+                href: 'https://ciroh.ua.edu/about/'
               },
               {
-                label: "CIROH Portal",
-                href: "http://portal.ciroh.org//",
+                label: 'Members & Partners',
+                href: 'https://ciroh.ua.edu/about/ciroh-partners/'
               },
-            ],
+              {
+                label: 'Contact CIROH',
+                href: 'https://ciroh.ua.edu/contact-us/'
+              },
+              {
+                label: 'DocuHub Repository',
+                href: 'https://github.com/CIROH-UA/ciroh-ua_website'
+              }
+            ]
           },
           {
             title: "Follow us on",
             items: [
               {
                 html: `
+                <div class="footer-social-links">
                 <a href="https://www.youtube.com/@UA_CIROH" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH" style="margin-left:-15px">
                 <img src="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png" alt="CIROH on YouTube" width="70" height="60" />
               </a>
@@ -192,7 +192,7 @@ const config = {
               <a href="https://www.facebook.com/UACIROH/" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:-25px">
                 <img src="https://static.vecteezy.com/system/resources/previews/018/930/702/original/facebook-logo-facebook-icon-transparent-free-png.png" alt="CIROH on Facebook" width="70" height="60" />
               </a> 
-                  
+              </div>
                 `,
               },
               {
@@ -209,9 +209,14 @@ const config = {
             ],
           },
         ],
-        copyright: `<br>This project received funding under award NA22NWS4320003 from NOAA Cooperative Institute Program. The statements, findings, conclusions, and recommendations are those of the author(s) and do not necessarily reflect the views of NOAA.
-<br><br><br>
-Copyright © ${new Date().getFullYear()} CIROH - The University of Alabama`,
+        copyright: `<div class="footer__funding">
+        This project received funding under award NA22NWS4320003 from NOAA Cooperative Institute Program. 
+        The statements, findings, conclusions, and recommendations are those of the author(s) and do not 
+        necessarily reflect the views of NOAA.
+      </div>
+      <div class="footer__bottom">
+        Copyright © ${new Date().getFullYear()} CIROH - The University of Alabama
+      </div>`,
       },
       prism: {
         theme: prismThemes.github,

@@ -10,7 +10,7 @@ authors:
     url: https://github.com/orgs/CIROH-UA/people/ZacharyWills
     image_url: https://avatars.githubusercontent.com/u/60660437?v=4
 
-tags: [nextgen]
+tags: [nextgen, news]
 hide_table_of_contents: false
 ---
 

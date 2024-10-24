@@ -3,8 +3,9 @@ title: "CIROH Cloud User Success Story"
 description: "August Monthly Blog Update"
 slug: August Monthly Blog Update
 
-tags: [ciroh, tuscaloosa, 2i2c, gcp, gpu, si, reu, bigquery, api, aws, nsf access]
+tags: [ciroh, 2i2c, aws, google, nextgen, jupyterhub, hpc, teehr, ngen]
 hide_table_of_contents: false
+image: https://github.com/CIROH-UA/ngen-datastream/blob/main/docs/images/ngen-datastream.jpg?raw=true
 ---
 
 This month, we are excited to showcase two case studies that utilized our cyberinfrastructure tools and services. These case studies demonstrate how CIROH's cyberinfrastructure is being utilized to support hydrological research and operational advancements.

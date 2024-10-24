@@ -410,26 +410,7 @@ export default function HomepageFeatures() {
           </div>
         </Carousel>
       </div>
-      <div className={styles.container}>
-        <h2 className={styles.mainTitle}>Community Impact</h2>
-        <p className={styles.description}>
-          We are committed to providing infrastructure support to CIROH
-          consortium partners and members to advance their research. Our impact
-          spans across various cloud platforms and resources. Here's an overview
-          of our contributions:
-        </p>
-        <div className={styles.impactGrid}>
-          {impactData.map((item, index) => (
-            <ImpactItem
-              key={index}
-              title={item.title}
-              count={item.count}
-              imageSrc={item.imageSrc}
-              users={item.users}
-            />
-          ))}
-        </div>
-      </div>
+      
       <div className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
           <div className={styles.flexStart}>

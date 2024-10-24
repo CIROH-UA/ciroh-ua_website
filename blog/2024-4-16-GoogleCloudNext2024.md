@@ -9,6 +9,7 @@ authors:
 
 tags: [google, googlecloud, googlecloudnext, conference]
 hide_table_of_contents: false
+image: /img/googlenext-3.jpeg
 ---
 
 **Google Cloud Next '24**

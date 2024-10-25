@@ -74,6 +74,10 @@
   margin-right: 1.3rem;
 }
 
+
+
+
+
 .player-wrapper {
   position: relative;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
@@ -107,4 +111,99 @@
     line-height: 1.5;
   }
   
+}
+
+.footer {
+  padding-bottom: 2rem;
+}
+
+/* Center the footer columns container */
+.footer__links {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  max-width: 1000px; /* Add max-width to match content width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Column styling */
+.footer__col {
+  flex: 1 1 0; /* Change to flex: 1 to distribute space evenly */
+  min-width: 200px;
+  max-width: 250px; /* Slightly reduce max-width */
+}
+
+/* Rest of the styles remain the same */
+.footer__title {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.footer__item {
+  text-align: left;
+}
+
+.footer-social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+}
+
+.footer__funding {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  color: var(--ifm-footer-color);
+  line-height: 1.5;
+}
+
+.footer__bottom {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--ifm-footer-color);
+  opacity: 0.8;
+}
+
+@media (max-width: 996px) {
+  .footer__links {
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center; /* Change to center */
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__col {
+    flex: 0 1 auto; /* Reset flex in mobile view */
+    min-width: 150px;
+    margin-bottom: 1rem;
+  }
+
+  .footer__funding {
+    padding: 1.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .community-impact-wrapper .container {
+    max-width: 100% !important;
+  }
+}
+
+.community-impact-wrapper  .col {
+  padding:0rem;
+}
+
+.community-impact-wrapper  .margin-vert--lg {
+  margin-bottom: 2rem !important;
+  margin-top: 0rem !important;
 }

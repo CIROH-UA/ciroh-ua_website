@@ -7,13 +7,6 @@
   overflow: hidden;
 }
 
-
-.container {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
 .mainTitle {
   font-size: 2rem;
   font-weight: bold;
@@ -93,6 +86,8 @@
   font-weight: bold;
   margin-bottom: 0.5rem;
   text-align: center;
+  min-height: 3rem; /* Set a minimum height to ensure equal spacing */
+  line-height: 1.2;  /* Ensure consistent line spacing for multiline titles */
 }
 
 .impactCount {
@@ -190,37 +185,4 @@ text-transform: capitalize;
 background: #f0f0f0;
 transform: translateY(-1px);
 box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.col--8 {
-  max-width: 100% !important;  /* Remove width constraint */
-  flex: 0 0 100% !important;   /* Make it take full width */
-}
-
-
-
-Container Override Styles
-
-/* Add this to your CSS file */
-:root {
-  --ifm-container-width-xl: 100% !important;
-}
-
-/* Override the container class at all breakpoints */
-.container {
-  max-width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-@media (min-width: 1440px) {
-  .container {
-    max-width: 100% !important;
-  }
-}
-
-.paragraph {
-  text-align: center;
-  font-size: 1.4rem;
-  margin-bottom: 2.1rem;
 }

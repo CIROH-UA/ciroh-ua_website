@@ -133,8 +133,8 @@ const config = {
             position: "right",
           },
           {
-            href: "http://portal.ciroh.org//",
-            label: "Portal",
+            href: "https://forms.office.com/r/5ww7qRWwwf",
+            label: "Feedback",
             position: "right",
           }
         ],

@@ -137,6 +137,12 @@
   margin-left: 0.5rem;
 }
 
+.paragraph {
+  font-size: 1.5rem;
+  margin-bottom:1.7rem;
+  text-align: center;
+}
+
 .post-list {
   list-style-type: none;
   padding: 0;

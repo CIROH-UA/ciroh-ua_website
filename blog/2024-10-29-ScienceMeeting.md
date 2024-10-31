@@ -89,6 +89,9 @@ The success of the 2024 Science Meeting reinforces CIROH's role in shaping the f
     <img src="/img/science-meeting2024-3.jpeg" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
 </div>
 <div className="hero-image" style={{ textAlign: 'center' }}>
+    <img src="/img/science-meeting2024-1.jpeg" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
+</div>
+<div className="hero-image" style={{ textAlign: 'center' }}>
     <img src="/img/science-meeting2024-4.jpeg" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
 </div>
 <div className="hero-image" style={{ textAlign: 'center' }}>

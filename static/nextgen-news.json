@@ -1,4 +1,49 @@
 {
+	"November 2024 Update":  [ 
+		{
+			"type": "news",
+			"title": "Hydrofabric v2.2 Data Model",
+			"description": "????",
+			"link": "https://lynker-spatial.s3-us-west-2.amazonaws.com/hydrofabric/v2.2/hfv2.2-data_model.html"
+		},  
+		{
+			"type": "update",
+			"title": "NextGen Model Framework (CIROH-UA/ngen)",
+			"description": "?? PRs merged in November. Explore more updates here.",
+			"link": "https://github.com/CIROH-UA/ngen"
+		},     
+		{
+			"type": "update",
+			"title": "T-route (CIROH-UA/t-route)",
+			"description": "?? PRs were merged in November.",
+			"link": "https://github.com/CIROH-UA/t-route"
+		},
+		
+		{
+			"type": "feature",
+			"title": "NGIAB-CloudInfra : NGIAB Docker Image",
+			"description": "??. Learn more about the updates here.",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/"
+		} , 
+		{
+			"type": "update",
+			"title": "NGIAB-HPCInfra: NGIAB Singularity Image",
+			"description": "??",
+			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/"
+		}, 
+		{
+			"type": "update",
+			"title": "ngen-datastream",
+			"description": "In November, ?? pull requests were merged. ",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/"
+		},
+		{
+			"type": "update",
+			"title": "NGIAB-data-preprocess",
+			"description": "?? PRs were merged in September. ",
+			"link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/"
+		}
+	],
 	"September 2024 Update":  [ 
 		{
 			"type": "news",

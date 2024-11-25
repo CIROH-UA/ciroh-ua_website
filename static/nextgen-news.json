@@ -1,47 +1,47 @@
 {
 	"November 2024 Update":  [ 
 		{
-			"type": "news",
+			"type": "feature",
 			"title": "Hydrofabric v2.2 Data Model",
-			"description": "????",
+			"description": "Explore the latest Hydrofabric v2.2 release data model.",
 			"link": "https://lynker-spatial.s3-us-west-2.amazonaws.com/hydrofabric/v2.2/hfv2.2-data_model.html"
 		},  
 		{
-			"type": "update",
+			"type": "feature",
 			"title": "NextGen Model Framework (CIROH-UA/ngen)",
-			"description": "?? PRs merged in November. Explore more updates here.",
+			"description": "In November, NGIAB-CloudInfra : NGIAB Docker Image and NGIAB-HPCInfra: NGIAB Singularity Image continued using the main branch of CIROH-UA/ngen.Explore more updates here.",
 			"link": "https://github.com/CIROH-UA/ngen"
 		},     
 		{
-			"type": "update",
+			"type": "feature",
 			"title": "T-route (CIROH-UA/t-route)",
-			"description": "?? PRs were merged in November.",
+			"description": "In November, NGIAB-CloudInfra : NGIAB Docker Image and NGIAB-HPCInfra: NGIAB Singularity Image started using the datastream branch of CIROH-UA/t-route. Discover more details here.",
 			"link": "https://github.com/CIROH-UA/t-route"
 		},
 		
 		{
-			"type": "feature",
+			"type": "update",
 			"title": "NGIAB-CloudInfra : NGIAB Docker Image",
-			"description": "??. Learn more about the updates here.",
-			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/"
+			"description": "9 PRs were merged in November, with significant improvements such as the integration of TEEHR, and enhancements to the continuous integration pipeline with a single Dockerfile. Learn more about the updates here.",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2024-11-01&until=2024-11-25"
 		} , 
 		{
 			"type": "update",
 			"title": "NGIAB-HPCInfra: NGIAB Singularity Image",
-			"description": "??",
-			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/"
+			"description": "In November, 2 PRs were merged updating the t-route branch to datastream, including build modifications to align with Docker changes.",
+			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2024-11-01&until=2024-11-25"
 		}, 
 		{
 			"type": "update",
 			"title": "ngen-datastream",
-			"description": "In November, ?? pull requests were merged. ",
-			"link": "https://github.com/CIROH-UA/ngen-datastream/"
+			"description": "In November, 2 pull requests were merged: first, an infrastructure update adding a timeout mechanism for AWS instances to protect against unresponsive systems, and second, an update to forcing S3 URL.",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2024-11-01&until=2024-11-25"
 		},
 		{
 			"type": "update",
 			"title": "NGIAB-data-preprocess",
-			"description": "?? PRs were merged in September. ",
-			"link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/"
+			"description": "5 PRs were merged in November, with a major update to the data preprocess to be compatible with the latest hydrofabric v2.2. Explore more updates here. ",
+			"link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2024-11-01&until=2024-11-25"
 		}
 	],
 	"September 2024 Update":  [ 

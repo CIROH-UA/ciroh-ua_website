@@ -17,7 +17,7 @@ image: /img/googlenext-3.jpeg
 Hello everyone, and thanks for stopping by!
 
 I recently had the incredible opportunity to attend Google Cloud Next 2024 in person for the first time, and it was truly an **amazing experience**. From **insightful keynote presentations and workshops to vibrant booths** buzzing with connections, the event was a whirlwind of innovation and inspiration.
-
+<!-- truncate -->
 One of the highlights was undoubtedly the abundance of AI announcements and advancements. Google continues to push the boundaries of what's possible, and it was exciting to witness the future of technology unfold.
 
 Among the many highlights, **CIROH** achieved a significant milestone with its **first-ever session at Google Cloud Next**. The presentation, titled **"Channel the Flood Data Deluge: Unlocking the American National Water Model,"** [link](https://cloud.withgoogle.com/next/session-library?session=DEV209&utm_source=copylink&utm_medium=unpaidsoc&utm_campaign=FY24-Q2-global-ENDM33-physicalevent-er-next-2024-mc&utm_content=next-homepage-social-share&utm_term=-#all> ) led by **Kel Markert (Google), Dr. Dan Ames (BYU), and Michael Ames(SADA)** was a resounding success. The session [link](https://assets.swoogo.com/uploads/3771985-6615e3b5da2cf.pdf) shed light on the immense potential of the National Water Model and its ability to revolutionize water resource management.

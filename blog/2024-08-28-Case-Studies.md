@@ -2,7 +2,10 @@
 title: "CIROH Cloud User Success Story"
 description: "August Monthly Blog Update"
 slug: August Monthly Blog Update
-
+authors:
+  - name: Arpita Patel
+    url: https://github.com/arpita0911patel
+    image_url: https://avatars.githubusercontent.com/u/54657?v=4
 tags: [ciroh, 2i2c, aws, google, nextgen, jupyterhub, hpc, teehr, ngen]
 hide_table_of_contents: false
 image: https://github.com/CIROH-UA/ngen-datastream/blob/main/docs/images/ngen-datastream.jpg?raw=true
@@ -16,7 +19,7 @@ This month, we are excited to showcase two case studies that utilized our cyberi
 <span className="hero-image" style={{ textAlign: 'center' }}>
         <img src="https://github.com/CIROH-UA/ngen-datastream/blob/main/docs/images/ngen-datastream.jpg?raw=true" alt="ngen-datastream image" style={{ width: '80%' }} />
 </span>
-
+<!-- truncate -->
 ### Overview:
 
 CIROH’s cloud computing resources have allowed for the development of ngen-datastream, which automates the process of collecting and formatting input data for NextGen, orchestrating the NextGen run through NextGen In a Box (NGIAB), and handling outputs. This software allows users to run NextGen in an efficient, relatively painless, and reproducible fashion, increasing community access to the NextGen framework. ngen-datastream is already community accessible (https://github.com/CIROH-UA/ngen-datastream/tree/main) and making an impact on research.  A major component of this software is the Amazon Web Services (AWS) cloud-based research datastream (https://github.com/CIROH-UA/ngen-datastream/tree/main/research_datastream). The research datastream is a CONUS-wide recurring NextGen simulation configured by the community. The terraform to build the AWS infrastructure exists in the ngen-datastream repository and current development focuses on CI/CD and enabling community contribution to the research datastream via edits to the NextGen configuration. Ultimately, these tools help distribute access throughout the community to cutting edge hydrologic research, maximizing the pace of progress of research to operations in hydrology.

@@ -5,7 +5,6 @@ slug: Welcome-DocuHub-Blog
 # authors: apatel
 authors:
   - name: Arpita Patel
-    title: Creator/Maintener of DocuHub
     url: https://github.com/arpita0911patel
     image_url: https://avatars.githubusercontent.com/u/54657?v=4
 tags: [blog, docuhub, nextgen, ciroh]
@@ -20,7 +19,7 @@ hide_table_of_contents: false
 ### What file name to use?
 
 DocuHub will extract a YYYY-MM-DD date from many patterns such as `YYYY-MM-DD-my-blog-post-title.md` or `YYYY/MM/DD/my-blog-post-title.md`. This enables you to easily group blog posts by year, by month, or to use a flat structure.
-
+<!-- truncate -->
 ### Example (with Metadata/Front matter)
 
 To publish in the blog, create a Markdown file within the blog directory.

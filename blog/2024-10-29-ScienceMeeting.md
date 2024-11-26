@@ -2,18 +2,21 @@
 title: "CIROH Science Meeting 2024"
 description: "October Monthly Blog Update"
 slug: October Monthly Blog Update
-
+authors:
+  - name: Arpita Patel
+    url: https://github.com/arpita0911patel
+    image_url: https://avatars.githubusercontent.com/u/54657?v=4
 tags: [ciroh, science, conference, impact]
 hide_table_of_contents: false
 image: /img/2024CSM_GroupPano.png
 ---
 
 The 2024 CIROH Science Meeting was a huge success, bringing together researchers, federal partners, and consortium members both in person and virtually. We're excited to share the valuable resources from this year's meeting with the wider CIROH community.
-Presentation Materials Available
+
 
 Slides and pictures from the various sessions, keynotes, and the Federal Town Hall have all been uploaded to a shared drive for easy access. You can find links to these materials here: [Access the Shared Drive with Presentation Slides](https://drive.google.com/drive/folders/1NsJEWHQBD92ndc3FD_bFEKgqTUqTxVM3)
 
-
+<!-- truncate -->
 
 Thank you to everyone who participated in making the 2024 CIROH Science Meeting a resounding success. We look forward to continuing our collaborative research efforts across the consortium.
 

@@ -17,7 +17,7 @@ image: /img/awra2024.jpeg
 The **CIROH CyberInfrastructure team** recently participated in the **AWRA 2024 Spring Conference**, co-hosted by **the Alabama Water Institute at the University of Alabama.**
 
 Themed "Water Risk and Resilience: Research and Sustainable Solutions," the conference brought together a diverse group of water professionals to exchange knowledge and explore cutting-edge research in the field.
-
+<!-- truncate -->
 CIROH CyberInfrastructure team presented on these topics:
 * **Accelerating Community Contribution to the Next Generation Water Resources Modeling Framework**
 * **Creating a community dataset for high-speed national water model data access**

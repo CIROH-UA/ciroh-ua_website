@@ -65,3 +65,24 @@ Anvil is a powerful supercomputer, offering computing power for demanding resear
 :::info
 For a more detailed information on Anvil, visit the official NSF ACCESS website <a href="https://allocations.access-ci.org/resources">here.</a>
 :::
+
+
+## NSF NCAR Derecho
+
+NCAR's Derecho supercomputer is a high-performance computing system with 19.87 petaflops of processing power. It comprises 2,488 nodes, each equipped with two 64-core AMD EPYC 7763 Milan processors, totaling 323,712 processor cores. Each node has 256 GB of DDR4 memory and is interconnected by an HPE Slingshot v11 high-speed network in a dragonfly configuration. The system supports Earth system science research for U.S. institutions.
+
+### Use Cases:
+- **Earth System Science Research:** Designed specifically for tasks related to climate modeling, weather prediction, and environmental studies.  
+- **Large-Scale Simulations:** Optimal for computationally demanding research in Earth sciences that requires extensive core-hours.  
+- **Educational Use:** Available for classroom and instructional purposes, supporting students, postdocs, and new faculty without external funding.
+
+
+To learn more, visit the [NCAR HPC Documentation page](https://arc.ucar.edu/docs).
+
+<a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="https://arc.ucar.edu/docs">NSF NCAR HPC Documentation</a>
+
+
+:::info
+For additional information on NSF NCAR Derecho and its allocation process, refer to the [NSF ACCESS Resources](https://allocations.access-ci.org/resources) page.
+:::
+

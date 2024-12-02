@@ -1,4 +1,48 @@
 {
+	"November 2024 Update":  [ 
+        {
+            "type": "update",
+            "title": "NGIAB-CloudInfra: NGIAB Docker Image",
+            "description": "Release v1.3.0 has been released with several significant improvements: * Integration of forked ngen and t-route repositories from CIROH-UA's GitHub. * Updated sample input data based on hydrofabric v2.2 * 15 PRs merged * TEEHR integration * CI pipeline improvements with unified Dockerfile * Enhanced NGIAB Visualizer. Explore more updates here.",
+            "link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/releases/tag/v1.3.0"
+        }, 
+        {
+            "type": "update",
+            "title": "NGIAB-HPCInfra: NGIAB Singularity Image",
+            "description": "November updates include: * 4 PRs updating singularity image to use CIROH-UA repositories * Updated README with new sample input data for hydrofabric v2.2 * Alignment with Docker image modifications",
+            "link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2024-11-01&until=2024-11-25"
+        },
+        {
+            "type": "update",
+            "title": "ngen-datastream",
+            "description": "22 new commits pushed to the main repository",
+            "link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2024-11-01&until=2024-11-25"
+        },
+        {
+            "type": "update",
+            "title": "NGIAB-data-preprocess",
+            "description": "Version 3.1.2 released featuring: * 7 PRs merged * Major update for compatibility with hydrofabric v2.2. Discover more updates here.",
+            "link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2024-11-01&until=2024-11-25"
+        },
+        {
+            "type": "feature",
+            "title": "Hydrofabric v2.2",
+            "description": "The latest Hydrofabric v2.2 data model is now available.",
+            "link": "https://lynker-spatial.s3-us-west-2.amazonaws.com/hydrofabric/v2.2/hfv2.2-data_model.html"
+        }, 
+        {
+            "type": "feature",
+            "title": "NextGen Model Framework (CIROH-UA/ngen) - fork of NOAA-OWP/ngen",
+            "description": "NGIAB-CloudInfra and NGIAB-HPCInfra now utilize the main branch of CIROH-UA/ngen.",
+            "link": "https://github.com/CIROH-UA/ngen"
+        },     
+        {
+            "type": "feature",
+            "title": "T-route (CIROH-UA/t-route) - fork of NOAA-OWP/t-route",
+            "description": "NGIAB-CloudInfra and NGIAB-HPCInfra now utilize the datastream branch of CIROH-UA/t-route. Main branch is in sync with NOAA-OWP/t-route",
+            "link": "https://github.com/CIROH-UA/t-route"
+        }
+	],
 	"September 2024 Update":  [ 
 		{
 			"type": "news",

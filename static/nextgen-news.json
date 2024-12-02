@@ -1,46 +1,45 @@
 {
 	"November 2024 Update":  [ 
 		{
+			"type": "update",
+			"title": "NGIAB-CloudInfra : NGIAB Docker Image",
+			"description": "New Release v1.3.0 available!!! Used forked ngen and t-route repositories in CIROH-UA github. New sample input data information in README.md file based on hydrofabric v2.2. 15 PRs merged in November, with significant improvements such as the integration with TEEHR, and enhancements to the continuous integration pipeline with a single Dockerfile. Great enhancement made in NGIAB Visualizer. Learn more about the updates here.",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/releases/tag/v1.3.0"
+		} , 
+        {
 			"type": "feature",
-			"title": "Hydrofabric v2.2 Data Model",
-			"description": "Explore the latest Hydrofabric v2.2 release data model.",
+			"title": "Hydrofabric v2.2",
+			"description": "Explore the latest Hydrofabric v2.2 data model here:",
 			"link": "https://lynker-spatial.s3-us-west-2.amazonaws.com/hydrofabric/v2.2/hfv2.2-data_model.html"
-		},  
+		}, 
 		{
+			"type": "update",
+			"title": "NGIAB-HPCInfra: NGIAB Singularity Image",
+			"description": "In November, 4 PRs were merged updating the singularity image to use CIROH-UA/ngen and CIROH-UA/t-route repo. New sample input data information in README.md file based on hydrofabric v2.2. Additional updates to align with Docker image changes.",
+			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2024-11-01&until=2024-11-25"
+		}, 
+        {
 			"type": "feature",
-			"title": "NextGen Model Framework (CIROH-UA/ngen)",
-			"description": "In November, NGIAB-CloudInfra : NGIAB Docker Image and NGIAB-HPCInfra: NGIAB Singularity Image continued using the main branch of CIROH-UA/ngen.Explore more updates here.",
+			"title": "NextGen Model Framework (CIROH-UA/ngen) - fork of NOAA-OWP/ngen",
+			"description": "In November, NGIAB-CloudInfra and NGIAB-HPCInfra started using the main branch of CIROH-UA/ngen. Repository URL can be found here:",
 			"link": "https://github.com/CIROH-UA/ngen"
 		},     
 		{
 			"type": "feature",
-			"title": "T-route (CIROH-UA/t-route)",
-			"description": "In November, NGIAB-CloudInfra : NGIAB Docker Image and NGIAB-HPCInfra: NGIAB Singularity Image started using the datastream branch of CIROH-UA/t-route. Discover more details here.",
+			"title": "T-route (CIROH-UA/t-route)- fork of NOAA-OWP/t-route",
+			"description": "In November, NGIAB-CloudInfra and NGIAB-HPCInfra started using the datastream branch of CIROH-UA/t-route. Repository URL can be found here:",
 			"link": "https://github.com/CIROH-UA/t-route"
 		},
-		
-		{
-			"type": "update",
-			"title": "NGIAB-CloudInfra : NGIAB Docker Image",
-			"description": "9 PRs were merged in November, with significant improvements such as the integration of TEEHR, and enhancements to the continuous integration pipeline with a single Dockerfile. Learn more about the updates here.",
-			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2024-11-01&until=2024-11-25"
-		} , 
-		{
-			"type": "update",
-			"title": "NGIAB-HPCInfra: NGIAB Singularity Image",
-			"description": "In November, 2 PRs were merged updating the t-route branch to datastream, including build modifications to align with Docker changes.",
-			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2024-11-01&until=2024-11-25"
-		}, 
 		{
 			"type": "update",
 			"title": "ngen-datastream",
-			"description": "In November, 2 pull requests were merged: first, an infrastructure update adding a timeout mechanism for AWS instances to protect against unresponsive systems, and second, an update to forcing S3 URL.",
+			"description": "In November, 22 commits pushed to main repo. Explore more updates here.",
 			"link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2024-11-01&until=2024-11-25"
 		},
 		{
 			"type": "update",
 			"title": "NGIAB-data-preprocess",
-			"description": "5 PRs were merged in November, with a major update to the data preprocess to be compatible with the latest hydrofabric v2.2. Explore more updates here. ",
+			"description": "New Release v3.1.2 available!! 7 PRs were merged in November, with a major update to the data preprocess to be compatible with the latest hydrofabric v2.2. Explore more updates here. ",
 			"link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2024-11-01&until=2024-11-25"
 		}
 	],

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { onRampsResourceCatalog, shadowTarget } from '@xras/ui';
 
 const DiscoverNSF = () => {
   useEffect(() => {
@@ -16,9 +17,6 @@ const DiscoverNSF = () => {
     // Dynamically import and initialize the script
     const loadScript = async () => {
       const baseUrl = 'https://esm.sh/@xras/ui@onramps_v1/dist';
-      const { onRampsResourceCatalog, shadowTarget } = await import(
-        'https://esm.sh/@xras/ui@onramps_v1/dist/xras-ui.js'
-      );
 
       onRampsResourceCatalog({
         target: shadowTarget(

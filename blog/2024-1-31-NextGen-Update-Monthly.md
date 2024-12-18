@@ -7,11 +7,11 @@ authors:
     url: https://github.com/arpita0911patel
     image_url: https://avatars.githubusercontent.com/u/54657?v=4
 
-tags: [nextgen]
+tags: [news]
 hide_table_of_contents: false
 ---
 Welcome to the January edition of the CIROH DocuHub blog, where we share the latest updates and news about the Community NextGen project monthly. NextGen is a cutting-edge hydrologic modeling framework that aims to advance the science and practice of hydrology and water resources management. In this month's blog, we will highlight some of the recent achievements and developments of the Community NextGen team.
-
+<!-- truncate -->
 First, we are excited to announce that NextGen In A Box (NGIAB) is now available with Singularity support. This means that you can run NGIAB on any HPC system that does not support Docker, using Singularity containers. Singularity is a popular tool for creating and running portable and reproducible computational environments. To learn how to use NGIAB with Singularity, please visit our GitHub repository: [Ngen-Singularity](https://github.com/CIROH-UA/Ngen-Singularity).
 
 Second, we have made several improvements and enhancements to NGIAB, such as updating the sample input data, upgrading the Boost library, adding auto mode run, and supporting geopackage format. You can find more details about these updates on our GitHub repository: [NGIAB-CloudInfra](https://github.com/CIROH-UA/NGIAB-CloudInfra).

@@ -1,6 +1,6 @@
 
 import News from '../components/news-js';
 
-# Community NextGen and NGIAB Updates
+# Community NextGen Updates
 
 <News/>

@@ -15,7 +15,7 @@ Wukong cluster is accessible to the research community of the Cooperative Instit
 
 To obtain an account, users will need to follow these step:
 
-1. Submit [On-premises Infrastructure Request Form](/docs/services/access#on-premises) and describe full project information and resouce requirements.
+1. Submit [On-premises Infrastructure Request Form](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=on-prem&projects=&template=onprem-request.md&title=) and describe full project information and resouce requirements.
 
 	::::::warning
 	This GitHub issue must be submitted by Principal Investigator (PI) of the project. 

@@ -32,7 +32,7 @@ You can activate the environment as usual, using the path to where you created i
 conda activate ~/conda_envs/my_env
 ```
 
-### 4. Autotomatically activate the environment on restart:
+### 4. Automatically activate the environment on restart:
  If you want this environment to be activated every time you log in or the server restarts, you can add the following to your *.bashrc* or *.bash_profile* file:
 
 ```bash

@@ -1,4 +1,31 @@
 {
+	"December 2024 Update":  [ 
+        {
+            "type": "update",
+            "title": "NGIAB-CloudInfra: NGIAB Docker Image",
+            "description": "Release v1.4.0 has been released. Explore more updates here.",
+            "link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/releases/tag/v1.3.0"
+        }, 
+        {
+            "type": "update",
+            "title": "NGIAB-HPCInfra",
+            "description": "December updates include 1 PR fixing the parallel run for the NGIAB-HPCInfra. Learn more about the updates here.",
+            "link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2024-12-01&until=2024-12-18"
+        },
+        {
+            "type": "update",
+            "title": "ngen-datastream",
+            "description": "NextGen National National Water Model Framework Datastream AGU 2024 poster was added to the main repository. The poster is available here.",
+            "link": "https://github.com/CIROH-UA/ngen-datastream/blob/main/docs/AGU_2024_Poster_FINAL.jpg"
+        },
+        {
+            "type": "update",
+            "title": "NGIAB-data-preprocess",
+            "description": "4 PRs were merged in December to address MacOS compatibility, improve CLI progress bars and download performance, add an empirical model with reduced forcing downloads, and introduce hydrofabric version tracking and VPU subsetting. Discover more updates here.",
+            "link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2024-12-01&until=2024-12-18"
+        }
+		
+	],
 	"November 2024 Update":  [ 
         {
             "type": "update",

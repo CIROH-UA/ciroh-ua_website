@@ -8,7 +8,11 @@ tags:
 ---
 
 
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-import DiscoverNSF from '@site/src/components/DiscoverNSF';
- 
-<DiscoverNSF/>
+<BrowserOnly>
+  {() => {
+    const DiscoverNSF = require('@site/src/components/DiscoverNSF').default;
+    return <DiscoverNSF />;
+  }}
+</BrowserOnly>

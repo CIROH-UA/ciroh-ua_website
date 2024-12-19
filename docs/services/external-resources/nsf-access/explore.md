@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 title: "Discover NSF ACCESS resources"
 description: "Explore NSF resources"
 tags:

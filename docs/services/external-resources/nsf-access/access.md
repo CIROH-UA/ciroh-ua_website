@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 title: "Accessing JetStream2"
 description: "Access JetStream2"
 tags:

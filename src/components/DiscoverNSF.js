@@ -14,6 +14,30 @@ const DiscoverNSF = () => {
     resourceCatalogDiv.id = 'resource-catalog-react';
     document.body.appendChild(resourceCatalogDiv);
 
+    // Function to style badges
+    const styleBadges = (shadowRoot) => {
+      const badges = shadowRoot.querySelectorAll('.badge');
+      badges.forEach((badge) => {
+        badge.classList.remove('text-bg-secondary');
+        badge.style.color = 'black';
+        badge.style.backgroundColor = 'white';
+      });
+    };
+
+    // Function to initialize MutationObserver
+    const observeShadowDom = (shadowRoot) => {
+      const observer = new MutationObserver(() => {
+        styleBadges(shadowRoot);
+      });
+
+      observer.observe(shadowRoot, {
+        childList: true,
+        subtree: true,
+      });
+
+      return observer;
+    };
+
     // Dynamically import and initialize the script
     const loadScript = async () => {
       const baseUrl = 'https://esm.sh/@xras/ui@onramps_v1/dist';
@@ -32,17 +56,11 @@ const DiscoverNSF = () => {
         const shadowRoot = shadowHost.shadowRoot;
 
         if (shadowRoot) {
-          // Query inside shadowRoot for the badges
-          const badges = shadowRoot.querySelectorAll('.badge');
+          // Apply initial styles to badges
+          styleBadges(shadowRoot);
 
-          badges.forEach((badge) => {
-            // Remove the 'text-bg-secondary' class if it exists
-            badge.classList.remove('text-bg-secondary');
-
-            // Apply inline styles for color and background
-            badge.style.color = 'black'; // Set text color to black
-            badge.style.backgroundColor = 'white'; // Clear any background color
-          });
+          // Observe for changes in the shadow DOM
+          const observer = observeShadowDom(shadowRoot);
 
           // Also, check and modify the bootstrap-fonts element's data-bs-theme
           const element = shadowRoot.querySelector('.bootstrap-fonts');
@@ -54,12 +72,12 @@ const DiscoverNSF = () => {
         } else {
           console.log('Shadow root not found');
         }
-      }, 500);
+      }, 100);
     };
 
     loadScript();
 
-    // Cleanup function to remove elements when component unmounts
+    // Cleanup function to remove elements and observer when component unmounts
     return () => {
       document.head.removeChild(link);
       document.body.removeChild(resourceCatalogDiv);

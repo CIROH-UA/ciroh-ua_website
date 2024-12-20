@@ -13,11 +13,11 @@
             "link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2024-12-01&until=2024-12-20"
         },
         {
-            "type": "update",
-            "title": "ngen-datastream",
-            "description": "The repository now includes the AGU 2024 conference poster, 'NextGen National Water Model Framework Datastream'. The poster can be accessed here.",
-            "link": "https://github.com/CIROH-UA/ngen-datastream/blob/main/docs/AGU_2024_Poster_FINAL.jpg"
-        },
+			"type": "update",
+			"title": "ngen-datastream",
+			"description": "The datastream has been updated to the v2.2 hydrofabric and now generates NextGen output in addition to forcings for VPUs 02, 03W, and 16. Additionally, the repository now includes the AGU 2024 conference poster, 'NextGen National Water Model Framework Datastream,' which can be accessed using the link below.",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/blob/main/docs/AGU_2024_Poster_FINAL.jpg"
+		},
         {
             "type": "update",
             "title": "NGIAB-data-preprocess",

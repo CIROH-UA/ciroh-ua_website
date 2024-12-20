@@ -1,4 +1,37 @@
 {
+	"December 2024 Update":  [
+        {
+            "type": "update",
+            "title": "NGIAB-data-preprocess",
+            "description": "Pro Tip: The data-preprocess tool offers VPU subsetting capabilities and can generate configuration files for empirical models like the 'Demonstration LSTM'. Check out these and other new features in the latest release! Discover more updates here.",
+            "link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2024-12-01&until=2024-12-20"
+        },
+        {
+			"type": "update",
+			"title": "NGIAB-CloudInfra: NGIAB Docker Image",
+			"description": "Version 1.4.0 is now available! This release introduces the “demonstration LSTM” within NGIAB, along with sample AWI-008 input data. The LSTM model serves as an educational example to help users get started, though it’s not optimized for maximum prediction accuracy.” Explore more updates here.",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/releases/tag/v1.4.0"
+		},
+        {
+			"type": "update",
+			"title": "ngen-datastream",
+			"description": "Important Update: Datastream has been upgraded to v2.2 hydrofabric and now generates both NextGen outputs and forcings for VPUs 02, 03W, and 16. For more details, visit the Datastream portal at https://datastream.ciroh.org/index.html",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/blob/main/docs/AGU_2024_Poster_FINAL.jpg"
+		},
+        {
+            "type": "update",
+            "title": "NGIAB-HPCInfra: NGIAB Singularity Image",
+            "description": "December updates include 4 PRs adding 'Demostration LSTM' in NGIAB-HPCInfra. Learn more about the updates here.",
+            "link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2024-12-01&until=2024-12-20"
+        },
+        {
+            "type": "update",
+            "title": "NWM BigQuery API Update",
+            "description": "Access NWM streamflow prediction data directly through BigQuery instead of downloading netCDF files. Learn more about this efficient data access method in our documentation here:",
+            "link": "https://docs.ciroh.org/docs/products/Data%20Management%20and%20Access%20Tools/bigquery-api/"
+        }
+		
+	],
 	"November 2024 Update":  [ 
         {
             "type": "update",

@@ -21,7 +21,7 @@
         {
             "type": "update",
             "title": "NGIAB-HPCInfra: NGIAB Singularity Image",
-            "description": "December updates include 2 PRs fixing the parallel run for the NGIAB-HPCInfra. Learn more about the updates here.",
+            "description": "December updates include 4 PRs adding 'Demostration LSTM' in NGIAB-HPCInfra. Learn more about the updates here.",
             "link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2024-12-01&until=2024-12-20"
         },
         {

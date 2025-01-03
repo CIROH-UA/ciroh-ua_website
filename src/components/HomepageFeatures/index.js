@@ -1,9 +1,11 @@
 import React from "react";
 import clsx from "clsx";
-import styles from "./styles.module.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
+import "./bootstrap.min.css";
+import "./cta-2.css";
+import "./cta-1.css";
+import styles from "./styles.module.css";
 // import { library } from "@fortawesome/fontawesome-svg-core";
 // import { fab } from "@fortawesome/free-brands-svg-icons";
 
@@ -430,6 +432,7 @@ export default function HomepageFeatures() {
                 </strong>
               </p>
               <br />
+              
               <div className={styles.flexStart}>
                 <a
                   className={`button button--info ${styles.col4}`}
@@ -456,6 +459,36 @@ export default function HomepageFeatures() {
           </div>
         </div>
       </div>
+      <section class="bsb-cta-2 py-5">
+      <div class="container" >
+        <div
+          class="card rounded-3 overflow-hidden text-center bsb-overlay"
+          style={{
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url('./img/research-image.jpg')",  // camelCase
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "local",
+            "--bsb-overlay-opacity": ".9",
+            "--bsb-overlay-bg-color": "var(--bs-primary-rgb)"
+          }}
+        >
+          <div class="card-body">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-12 col-md-10 col-xl-8 col-xxl-7">
+                <h1 class="h5 mb-4 text-white text-uppercase">Our Research</h1>
+                <h2 class="display-4 text-white mb-5">
+                 Our research focuses on advancing hydrological science through innovative research, collaboration, and technology development.
+                </h2>
+                <a href="https://ciroh.ua.edu/research/" class="btn btn-light bsb-btn-3xl rounded mb-0 text-nowrap">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
       <div className="container" style={{ width: "100%" }}>
         <div className={styles.logoBackground}>
           <div className="container-fluid">

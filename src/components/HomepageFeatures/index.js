@@ -598,8 +598,8 @@ export default function HomepageFeatures() {
                             className={`${styles.imagecontainer} ${styles.darkImage}`}
                             src={"https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Utah_State_University_seal.svg/1200px-Utah_State_University_seal.svg.png"}
                             alt={MemberList[0].name}
-                            width={120}
-                            height={120}
+                            width={90}
+                            height={90}
                           />
                         </a>
                       </div>
@@ -609,8 +609,8 @@ export default function HomepageFeatures() {
                             className={`${styles.imagecontainer} ${styles.darkImage}`}
                             src={"https://www.in-icorps.org/wp-content/uploads/2024/09/UVM-white-resized.png"}
                             alt={MemberList[1].name}
-                            width={240}
-                            height={80}
+                            width={230}
+                            height={70}
                           />
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}

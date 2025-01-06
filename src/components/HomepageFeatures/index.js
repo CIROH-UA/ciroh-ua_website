@@ -379,7 +379,7 @@ export default function HomepageFeatures() {
             />
             <Card
               title="AWS"
-              image="img/aws-logo.jpg"
+              image="img/aws-logo.png"
               description="Leverage the power of CIROH AWS Account to elevate your hydrological research. Get access to enterprise-level AWS cloud platform, and utilize AWS computing resources and scalable storage for your research."
               link="/docs/services/cloudservices/aws"
             />

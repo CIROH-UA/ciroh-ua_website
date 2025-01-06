@@ -98,11 +98,11 @@
 @media (max-width: 1400px) {
   :root {
     /* Adjust the base font size to 90% of the original */
-    font-size: 90%;
+    font-size: 85% !important;
     
     /* Adjust other root variables */
-    --ifm-font-size-base: 90%;
-    --ifm-code-font-size: 90%;
+    --ifm-font-size-base: 90% !important;
+    --ifm-code-font-size: 90% !important;
     
     /* Adjust sidebar widths */
     --doc-sidebar-width: 240px !important; /* 240px * 0.9 */

@@ -1,9 +1,11 @@
-import React from "react";
+import React from 'react';
 import clsx from "clsx";
-import styles from "./styles.module.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
+import "./bootstrap.min.css";
+import "./cta-2.css";
+import "./cta-1.css";
+import styles from "./styles.module.css";
 // import { library } from "@fortawesome/fontawesome-svg-core";
 // import { fab } from "@fortawesome/free-brands-svg-icons";
 
@@ -31,8 +33,8 @@ const SponserList = [
     name: "USGS",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/04/USGS_logo_green-1.png",
     link: "https://www.usgs.gov/",
-    width: "150",
-    height: "60",
+    width: "200",
+    height: "80",
   },
   {
     name: "2I2C",
@@ -45,8 +47,8 @@ const SponserList = [
     name: "Lynker",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/04/Lynker-no-tag.png",
     link: "https://lynker.com/",
-    width: "150",
-    height: "50",
+    width: "200",
+    height: "80",
   },
 ];
 const MemberList = [
@@ -377,7 +379,7 @@ export default function HomepageFeatures() {
             />
             <Card
               title="AWS"
-              image="img/aws-logo.jpg"
+              image="img/aws-logo.png"
               description="Leverage the power of CIROH AWS Account to elevate your hydrological research. Get access to enterprise-level AWS cloud platform, and utilize AWS computing resources and scalable storage for your research."
               link="/docs/services/cloudservices/aws"
             />
@@ -430,6 +432,7 @@ export default function HomepageFeatures() {
                 </strong>
               </p>
               <br />
+              
               <div className={styles.flexStart}>
                 <a
                   className={`button button--info ${styles.col4}`}
@@ -456,6 +459,36 @@ export default function HomepageFeatures() {
           </div>
         </div>
       </div>
+      <section class="bsb-cta-2 py-5">
+      <div class="container" >
+        <div
+          class="card rounded-3 overflow-hidden text-center bsb-overlay"
+          style={{
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url('./img/research-image.jpg')",  // camelCase
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "local",
+            "--bsb-overlay-opacity": ".9",
+            "--bsb-overlay-bg-color": "var(--bs-primary-rgb)"
+          }}
+        >
+          <div class="card-body">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-12 col-md-10 col-xl-8 col-xxl-7">
+                <h1 class="h5 mb-4 text-white text-uppercase">Our Research</h1>
+                <h2 class="display-4 text-white mb-5">
+                 Our research focuses on advancing hydrological science through innovative research, collaboration, and technology development.
+                </h2>
+                <a href="https://ciroh.ua.edu/research/" class="btn btn-light bsb-btn-3xl rounded mb-0 text-nowrap">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
       <div className="container" style={{ width: "100%" }}>
         <div className={styles.logoBackground}>
           <div className="container-fluid">
@@ -484,8 +517,15 @@ export default function HomepageFeatures() {
                   >
                     <a href={SponserList[1].link}>
                       <img
-                        className={styles.sponserimage}
+                        className={`${styles.sponserimage} ${styles.lightImage}`}
                         src={SponserList[1].logo}
+                        alt={SponserList[1].name}
+                        width={SponserList[1].width}
+                        height={SponserList[1].height}
+                      />
+                       <img
+                        className={`${styles.sponserimage} ${styles.darkImage}`}
+                        src={"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/USGS_logo.svg/2560px-USGS_logo.svg.png"}
                         alt={SponserList[1].name}
                         width={SponserList[1].width}
                         height={SponserList[1].height}
@@ -498,8 +538,15 @@ export default function HomepageFeatures() {
                     align="center"
                   >
                     <a href={SponserList[2].link}>
-                      <img
-                        className={styles.sponserimage}
+                    <img
+                        className={`${styles.sponserimage} ${styles.darkImage}`}
+                        src={"https://2i2c.org/kpis/_static/images/logo.png"}
+                        alt={SponserList[2].name}
+                        width={SponserList[2].width}
+                        height={SponserList[2].height}
+                      />
+                    <img
+                        className={`${styles.sponserimage} ${styles.lightImage}`}
                         src={SponserList[2].logo}
                         alt={SponserList[2].name}
                         width={SponserList[2].width}
@@ -509,11 +556,18 @@ export default function HomepageFeatures() {
                   </div>
                   <div className={styles.col1} align="center">
                     <a href={SponserList[3].link}>
-                      <img
-                        className={styles.sponserimage}
+                    <img
+                        className={`${styles.sponserimage} ${styles.lightImage}`}
                         src={SponserList[3].logo}
                         alt={SponserList[3].name}
                         width={SponserList[3].width}
+                        height={SponserList[3].height}
+                      />
+                      <img
+                        className={`${styles.sponserimage} ${styles.darkImage}`}
+                        src={"https://media.licdn.com/dms/image/v2/C5616AQHOWzrClrXOEA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1657224837882?e=2147483647&v=beta&t=t_prAtcAnWVYFnSDKpZhA0yyZqU8PhbHJX7GGtb7rdo"}
+                        alt={SponserList[3].name}
+                        width={260}
                         height={SponserList[3].height}
                       />
                     </a>
@@ -533,19 +587,33 @@ export default function HomepageFeatures() {
                     <div className={styles.row1}>
                       <div className={`${styles.flex} ${styles.col2}`}>
                         <a href={MemberList[0].link}>
-                          <img
-                            className={styles.imagecontainer}
+                        <img
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[0].logo}
                             alt={MemberList[0].name}
                             width={MemberList[0].width}
                             height={MemberList[0].height}
                           />
+                          <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Utah_State_University_seal.svg/1200px-Utah_State_University_seal.svg.png"}
+                            alt={MemberList[0].name}
+                            width={90}
+                            height={90}
+                          />
                         </a>
                       </div>
                       <div className={styles.col2}>
                         <a href={MemberList[1].link}>
+                        <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://www.in-icorps.org/wp-content/uploads/2024/09/UVM-white-resized.png"}
+                            alt={MemberList[1].name}
+                            width={230}
+                            height={70}
+                          />
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[1].logo}
                             alt={MemberList[1].name}
                             width={MemberList[1].width}
@@ -558,7 +626,14 @@ export default function HomepageFeatures() {
                       <div className={styles.col2}>
                         <a href={MemberList[2].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://templates.utah.edu/_main-v2/_images/header/logo/uu-logo.png"}
+                            alt={MemberList[2].name}
+                            width={205}
+                            height={80}
+                          />
+                          <img
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[2].logo}
                             alt={MemberList[2].name}
                             width={MemberList[2].width}
@@ -568,8 +643,15 @@ export default function HomepageFeatures() {
                       </div>
                       <div className={styles.col2}>
                         <a href={MemberList[3].link}>
+                        <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://www.uah.edu/images/administrative/communications/style-guide/downloads/png/UAH_Horizontal_PNG_bluwht.png"}
+                            alt={MemberList[3].name}
+                            width={300.51}
+                            height={100}
+                          />
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[3].logo}
                             alt={MemberList[3].name}
                             width={MemberList[3].width}
@@ -581,20 +663,34 @@ export default function HomepageFeatures() {
                     <div className={styles.row1}>
                       <div className={styles.col2}>
                         <a href={MemberList[4].link}>
-                          <img
-                            className={styles.imagecontainer}
+                        <img
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[4].logo}
                             alt={MemberList[4].name}
                             width={MemberList[4].width}
                             height={MemberList[4].height}
+                          />
+                          <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://www.grantforward.com/sponsor_image/20240508232223_d052f5ca0fe0fb87dc89d7db0e516419.png"}
+                            alt={MemberList[4].name}
+                            width={390}
+                            height={60}
                           />
                         </a>
                       </div>
                       <div className={styles.col2}>
                         <a href={MemberList[5].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[5].logo}
+                            alt={MemberList[5].name}
+                            width={MemberList[5].width}
+                            height={MemberList[5].height}
+                          />
+                          <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://phoenixmed.arizona.edu/sites/default/files/campus/marcomm/brand/master-logo/10-ua-vertical-white/ua_rev_stack_rgb_white.png"}
                             alt={MemberList[5].name}
                             width={MemberList[5].width}
                             height={MemberList[5].height}
@@ -606,8 +702,15 @@ export default function HomepageFeatures() {
                       <div className={styles.col2}>
                         <a href={MemberList[6].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[6].logo}
+                            alt={MemberList[6].name}
+                            width={MemberList[6].width}
+                            height={MemberList[6].height}
+                          />
+                          <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://manoa.hawaii.edu/wp/wp-content/uploads/2017/10/uhm-white-seal-nameplate@2x.png"}
                             alt={MemberList[6].name}
                             width={MemberList[6].width}
                             height={MemberList[6].height}
@@ -630,8 +733,15 @@ export default function HomepageFeatures() {
                       <div className={styles.col2}>
                         <a href={MemberList[8].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[8].logo}
+                            alt={MemberList[8].name}
+                            width={MemberList[8].width}
+                            height={MemberList[8].height}
+                          />
+                           <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://cyberlab.usask.ca/images/usask_logo_black.png"}
                             alt={MemberList[8].name}
                             width={MemberList[8].width}
                             height={MemberList[8].height}
@@ -654,22 +764,37 @@ export default function HomepageFeatures() {
                       <div className={styles.col2}>
                         <a href={MemberList[10].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[10].logo}
                             alt={MemberList[10].name}
                             width={MemberList[10].width}
                             height={MemberList[10].height}
                           />
+                           <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/University_of_Minnesota_Logo.svg/1280px-University_of_Minnesota_Logo.svg.png"}
+                            alt={MemberList[10].name}
+                            width={100}
+                            height={70}
+                          />
+
                         </a>
                       </div>
                       <div className={`${styles.flex} ${styles.col2}`}>
                         <a href={MemberList[11].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[11].logo}
                             alt={MemberList[11].name}
                             width={MemberList[11].width}
                             height={MemberList[11].height}
+                          />
+                          <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://www.tuskegee.edu/Content/Uploads/Tuskegee/Images/f-logo.png"}
+                            alt={MemberList[11].name}
+                            width={180}
+                            height={90}
                           />
                         </a>
                       </div>
@@ -678,22 +803,36 @@ export default function HomepageFeatures() {
                       <div className={styles.col2}>
                         <a href={MemberList[12].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[12].logo}
                             alt={MemberList[12].name}
                             width={MemberList[12].width}
                             height={MemberList[12].height}
+                          />
+                          <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://upload.wikimedia.org/wikipedia/commons/b/b2/Brigham_Young_University_medallion.svg"}
+                            alt={MemberList[12].name}
+                            width={100}
+                            height={100}
                           />
                         </a>
                       </div>
                       <div className={`${styles.flex} ${styles.col2}`}>
                         <a href={MemberList[13].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[13].logo}
                             alt={MemberList[13].name}
                             width={MemberList[13].width}
                             height={MemberList[13].height}
+                          />
+                           <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://images2.teeshirtpalace.com/designs/1711940587680.png?width=700"}
+                            alt={MemberList[13].name}
+                            width={100}
+                            height={130}
                           />
                         </a>
                       </div>
@@ -713,11 +852,18 @@ export default function HomepageFeatures() {
                       <div className={styles.col2}>
                         <a href={PartnerList[0].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[0].logo}
                             alt={PartnerList[0].name}
                             width={PartnerList[0].width}
                             height={PartnerList[0].height}
+                          />
+                          <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://www.baronthreatnet.com/sites/all/themes/barontheme/logo.png"}
+                            alt={PartnerList[0].name}
+                            width={220}
+                            height={70}
                           />
                         </a>
                       </div>
@@ -748,8 +894,15 @@ export default function HomepageFeatures() {
                       <div className={`${styles.flex} ${styles.col2}`}>
                         <a href={PartnerList[3].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[3].logo}
+                            alt={PartnerList[3].name}
+                            width={PartnerList[3].width}
+                            height={PartnerList[3].height}
+                          />
+                          <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://global-uploads.webflow.com/63727ffa52be207cf8bb4aca/63bbfa022801849f49386d3d_unnamed%20(2).webp"}
                             alt={PartnerList[3].name}
                             width={PartnerList[3].width}
                             height={PartnerList[3].height}
@@ -761,8 +914,15 @@ export default function HomepageFeatures() {
                       <div className={styles.col2}>
                         <a href={PartnerList[4].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[4].logo}
+                            alt={PartnerList[4].name}
+                            width={PartnerList[4].width}
+                            height={PartnerList[4].height}
+                          />
+                           <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://ourfragilexworld.org/img/rti-logo-white.png"}
                             alt={PartnerList[4].name}
                             width={PartnerList[4].width}
                             height={PartnerList[4].height}
@@ -785,21 +945,35 @@ export default function HomepageFeatures() {
                       <div className={styles.col2}>
                         <a href={PartnerList[6].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[6].logo}
                             alt={PartnerList[6].name}
                             width={PartnerList[6].width}
                             height={PartnerList[6].height}
+                          />
+                           <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://cdn.prod.website-files.com/5ba032fa3943f8840d5b914f/5d489b063cf49eac67eabd5a_Stevens-Official-WhiteKO-R.png"}
+                            alt={PartnerList[6].name}
+                            width={240}
+                            height={80}
                           />
                         </a>
                       </div>
                       <div className={`${styles.flex} ${styles.col2}`}>
                         <a href={PartnerList[7].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[7].logo}
                             alt={PartnerList[7].name}
                             width={PartnerList[7].width}
+                            height={PartnerList[7].height}
+                          />
+                          <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://cdn.ioos.noaa.gov/media/2021/03/gcoos_med.png"}
+                            alt={PartnerList[7].name}
+                            width={200}
                             height={PartnerList[7].height}
                           />
                         </a>
@@ -820,8 +994,15 @@ export default function HomepageFeatures() {
                       <div className={styles.col2}>
                         <a href={PartnerList[9].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[9].logo}
+                            alt={PartnerList[9].name}
+                            width={PartnerList[9].width}
+                            height={PartnerList[9].height}
+                          />
+                          <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://service.psu.edu/wp-content/themes/genesis-psu/images/PS_HOR_REV_RGB_2C.png"}
                             alt={PartnerList[9].name}
                             width={PartnerList[9].width}
                             height={PartnerList[9].height}
@@ -833,19 +1014,33 @@ export default function HomepageFeatures() {
                       <div className={styles.col2}>
                         <a href={PartnerList[10].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[10].logo}
                             alt={PartnerList[10].name}
                             width={PartnerList[10].width}
                             height={PartnerList[10].height}
+                          />
+                          <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://sc.edu/_global_resources/img/usc_logo_horizontal_rgb_g_rev.svg"}
+                            alt={PartnerList[10].name}
+                            width={280}
+                            height={90}
                           />
                         </a>
                       </div>
                       <div className={`${styles.flex} ${styles.col2}`}>
                         <a href={PartnerList[11].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[11].logo}
+                            alt={PartnerList[11].name}
+                            width={PartnerList[11].width}
+                            height={PartnerList[11].height}
+                          />
+                           <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/UC_Davis_wordmark.svg/2560px-UC_Davis_wordmark.svg.png"}
                             alt={PartnerList[11].name}
                             width={PartnerList[11].width}
                             height={PartnerList[11].height}
@@ -857,19 +1052,33 @@ export default function HomepageFeatures() {
                       <div className={styles.col2}>
                         <a href={PartnerList[12].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[12].logo}
                             alt={PartnerList[12].name}
                             width={PartnerList[12].width}
                             height={PartnerList[12].height}
+                          />
+                           <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://www.yuja.com/wp-content/uploads/logo-Coastal-Carolina-University.png"}
+                            alt={PartnerList[12].name}
+                            width={200}
+                            height={90}
                           />
                         </a>
                       </div>
                       <div className={`${styles.flex} ${styles.col2}`}>
                         <a href={PartnerList[13].link}>
                           <img
-                            className={styles.imagecontainer}
+                            className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[13].logo}
+                            alt={PartnerList[13].name}
+                            width={PartnerList[13].width}
+                            height={PartnerList[13].height}
+                          />
+                          <img
+                            className={`${styles.imagecontainer} ${styles.darkImage}`}
+                            src={"https://illinois.edu/assets/img/branding/illinois_primary_wordmark_reversed_orange.svg"}
                             alt={PartnerList[13].name}
                             width={PartnerList[13].width}
                             height={PartnerList[13].height}

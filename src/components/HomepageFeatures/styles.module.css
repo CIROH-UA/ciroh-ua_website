@@ -23,7 +23,6 @@
 .heading {
   font-size: calc(1.4rem + 0.6vw);
   font-weight: bolder;
-  color: #2c3e50;
   line-height: 1.2;
   padding-top: 4rem;
   padding-bottom: 1.2rem;
@@ -61,12 +60,12 @@
   align-items: center;
 }
 .sponserimage {
-  display: inline-block !important;
+  display: inline-block ;
   margin: 1.1rem auto;
   /* height: auto; */
 }
 [data-theme="dark"] .logoBackground {
-  background-color: #a9a9a9;
+  /* background-color: #a9a9a9; */
   padding: 0 0;
   margin-top: 5%;
   width: 100%;
@@ -274,4 +273,21 @@
 }
 .btn {
   font-size: 1.5rem;
+}
+
+[data-theme="light"] .darkImage {
+  display: none; /* Hide dark image in light mode */
+}
+
+[data-theme="light"] .lightImage {
+  display: block; /* Show light image in light mode */
+}
+
+/* Dark mode */
+[data-theme="dark"] .lightImage {
+  display: none; /* Hide light image in dark mode */
+}
+
+[data-theme="dark"] .darkImage {
+  display: block; /* Show dark image in dark mode */
 }

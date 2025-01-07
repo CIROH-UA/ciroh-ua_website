@@ -4,6 +4,16 @@ Thank you for your interest in contributing to CIROH's DocuHub, our technical do
 
 Our website is constructed using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+## Video Tutorial: 
+
+The following video is a step-by-step guide on how to make minor edits, major edits, and test changes locally:
+
+import VideoPlayer from '/src/components/VideoPlayer.js';
+
+<VideoPlayer url="https://youtu.be/B8wp_eTW204?feature=shared"  />
+
+
+
 ## Minor Edits
 
 To make minor edits, follow these steps:

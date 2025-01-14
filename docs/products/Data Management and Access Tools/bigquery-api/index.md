@@ -14,7 +14,7 @@ tags:
 More details about “Design and implementation of a BigQuery dataset and application programmer interface (API) for the U.S. National Water Model” paper can be found [here.](https://www.sciencedirect.com/science/article/pii/S1364815224001841)
 :::
 
-**Please submit the form below to request access to NWM BigQuery API.**
+**Please submit the form below to request access to [NWM BigQuery API](https://nwm-api.ciroh.org/).**
 
 <a class="button button--active button--primary " style={{'margin-bottom':'1.3rem'}} href="https://forms.office.com/r/FeNpjZstkr">NWM BigQuery API Access Request Form</a>
 

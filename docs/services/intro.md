@@ -4,6 +4,7 @@ title: "CIROH CyberInfrastructure"
 ---
 
 # CIROH CyberInfrastructure: Unleashing Potential in Hydrological Research
+## Computing infrastructure access for consortium members and partners 
 
 			
 The <strong>CIROH CyberInfrastructure</strong> empowers CIROH consortium members by providing a scalable, efficient, and user-friendly computing platform. We understand the challenges researchers face in managing <strong>computational resources</strong>, and the CIROH CyberInfrastructure alleviates these burdens by offering a suite of pre-configured environments and resources. Our team of engineers and developers meticulously optimizes both <strong>cloud-based</strong> (AWS and Google Cloud) and <strong>on-premise infrastructure</strong> (Pantarhei HPC cluster) to ensure unparalleled flexibility and scalability.

@@ -15,7 +15,7 @@ More details about “Design and implementation of a BigQuery dataset and applic
 :::
 
 # Steps to use CIROH NWM API
-1. Submit the form below to request access to [NWM BigQuery API](https://nwm-api.ciroh.org/).**
+1. Submit the form below to request access to [NWM BigQuery API](https://nwm-api.ciroh.org/).
 
 <a class="button button--active button--primary " style={{'margin-bottom':'1.3rem'}} href="https://forms.office.com/r/FeNpjZstkr">NWM BigQuery API Access Request Form</a>
 

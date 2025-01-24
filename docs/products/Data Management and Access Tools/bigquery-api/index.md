@@ -21,6 +21,6 @@ More details about “Design and implementation of a BigQuery dataset and applic
 
 2. For an example usage, please refer to [this script](https://github.com/CIROH-UA/api-nwm-gcp/blob/main/examples/notebooks/nwm_usgs_streamflow_plot.ipynb). Replace your API key and API_URL = 'https://nwm-api.ciroh.org'.
 
-3. Estimate your query before running the actual query. If you're not sure this step, please contact [ciroh it support](ciroh-it-support@ua.edu).
+3. Estimate your query before running the actual query. If you're not sure this step, please contact [ciroh it support](mailto:ciroh-it-support@ua.edu).
 
 For implementation detail, please refer to [this repository](https://github.com/CIROH-UA/api-nwm-gcp).

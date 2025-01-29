@@ -1,4 +1,31 @@
 {
+	"January 2024 Update":  [
+        {
+            "type": "update",
+            "title": "NGIAB-data-preprocess",
+            "description": "January updates includes fixing cfe max_gw_storage unit conversion issues, and enhancing CLI hydrofabric validation. Additional fixes addressed forcing file handling, memory detection, and added CLI command history tracking.",
+            "link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2025-01-01&until=2025-01-29"
+        },
+        {
+			"type": "update",
+			"title": "NGIAB-CloudInfra: NGIAB Docker Image",
+			"description": "In January, the troute component was updated to use the new ngiab branch (identical to ngen-datastream). The Python installation step was also moved earlier to prevent version mismatches.",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-01-01&until=2025-01-29"
+		},
+        {
+			"type": "update",
+			"title": "ngen-datastream",
+			"description": "January updates for datastream include 7 PRs, adding metadata hashes, S3 logging, manifest workflow improvements, script updates, and a community deployment of research_datastream/terraform to AWS.",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2025-01-01&until=2025-01-29"
+		},
+        {
+            "type": "update",
+            "title": "NGIAB-HPCInfra: NGIAB Singularity Image",
+            "description": "A PR was merged in January that fixed the 'srun permission denied' issue on HPC compute nodes by switching to OpenMPI, successfully tested on the Pantarhei and Anvil clusters.",
+            "link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2025-01-01&until=2025-01-29"
+        }
+		
+	],
 	"December 2024 Update":  [
         {
             "type": "update",

@@ -2,10 +2,7 @@
 title: "CIROH Cloud User Success Story"
 description: "August Monthly Blog Update"
 slug: August Monthly Blog Update
-authors:
-  - name: Arpita Patel
-    url: https://github.com/arpita0911patel
-    image_url: https://avatars.githubusercontent.com/u/54657?v=4
+authors: arpita
 tags: [ciroh, 2i2c, aws, google, nextgen, jupyterhub, hpc, teehr, ngen]
 hide_table_of_contents: false
 image: https://github.com/CIROH-UA/ngen-datastream/blob/main/docs/images/ngen-datastream.jpg?raw=true

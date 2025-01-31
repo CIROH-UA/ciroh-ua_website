@@ -2,11 +2,7 @@
 title: Welcome DocuHub's Blog
 description: This is first post on DocuHub about Blog.
 slug: Welcome-DocuHub-Blog
-# authors: apatel
-authors:
-  - name: Arpita Patel
-    url: https://github.com/arpita0911patel
-    image_url: https://avatars.githubusercontent.com/u/54657?v=4
+authors: arpita
 tags: [blog, docuhub, nextgen, ciroh]
 image: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: false

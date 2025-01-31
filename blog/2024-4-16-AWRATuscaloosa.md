@@ -2,11 +2,7 @@
 title: "AWRA 2024 Spring Conference"
 description: "AWRA 2024 Spring Conference"
 slug: AWRA 2024 Spring Conference
-authors:
-  - name: Arpita Patel
-    url: https://github.com/arpita0911patel
-    image_url: https://avatars.githubusercontent.com/u/54657?v=4
-
+authors: arpita
 tags: [awra, tuscaloosa, conference, water resources, modeling]
 hide_table_of_contents: false
 image: /img/awra2024.jpeg

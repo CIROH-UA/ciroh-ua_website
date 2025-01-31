@@ -2,11 +2,7 @@
 title: NextGen Monthly News Update - January 2024
 description: News and release notes for NextGen
 slug: NextGen Updates Jan 2024
-authors:
-  - name: Arpita Patel
-    url: https://github.com/arpita0911patel
-    image_url: https://avatars.githubusercontent.com/u/54657?v=4
-
+authors: arpita
 tags: [news]
 hide_table_of_contents: false
 ---

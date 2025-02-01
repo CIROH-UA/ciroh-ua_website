@@ -17,14 +17,14 @@ Another way to access the testbed is through the Secure Shell Protocol, more com
 ## Data Storage
 The `/netfiles/ciroh/` directory on the NETWA has over 40 terabytes of disk space that researchers can use to store data - that's equivalent to 40 million megabytes! Needless to say, there's plenty of space for data. If you have data you'd like to store here, please create your own directroy titled after your netID. For example, "John Smith" would store their data under `/netfiles/ciroh/jsmith`.
 
-## Setting up Mamba
-[Mamba](https://mamba.readthedocs.io/en/latest/index.html) is a lightweight version of [Conda](https://docs.conda.io/projects/conda/en/stable/), a popular package manager for a variety of programming languages. It is used on the testbed to set up virtual environments that contain all of the relevant packages and dependencies for a given software repository or workflow. There are a few existing mamba environments on the testbed already, such as one that houses all of the packages necessary to run the forecast-workflow repo (more specific instructions for accessing that [here](https://docs.ciroh.org/docs/products/Data%20Management%20and%20Access%20Tools/netwa/)). This section will demonstrate how to initalize mamba for a new user and how to see what virtual enviornments are available
-1. On the testbed, open a terminal and run the following command: `/usr/local/mambaforge/bin/mamba init`
-   1. *Note:* you only have to do this once, not every time you open a new terminal or want to use mamba
+## Setting up Mamba / Conda
+[Mamba](https://mamba.readthedocs.io/en/latest/index.html) is a lightweight version of [Conda](https://docs.conda.io/projects/conda/en/stable/), a popular package manager for a variety of programming languages. It is used on the testbed to set up virtual environments that contain all of the relevant packages and dependencies for a given software repository or workflow. There are a few existing mamba/conda Python environments on the testbed already, such as one that houses all of the packages necessary to run the forecast-workflow repo (more specific instructions for accessing that [here](https://docs.ciroh.org/docs/products/Data%20Management%20and%20Access%20Tools/netwa/)). This section will demonstrate how to initalize mamba or conda for a new user and how to see what virtual enviornments are available.
+1. On the testbed, open a terminal and run the following command: `/usr/local/miniforge3/bin/mamba shell init` to install mamba or '/usr/local/miniforge3/bin/conda init' to install conda or both to install both!
+   1. *Note:* you only have to do this once, not every time you open a new terminal or want to use mamba or conda.
    2. If the command ran successfully, you should see something like this now at the command line:
       1.  `(base) [jsmith@ciroh-testbed ~]$`
-2.  The `(base)` text indicates that you are in the mamba base environment. To see the list of packages in said enviornment (or any environment you happen to be in), run `mamba list`
-    1.  *Note:* from here on out, you can use `mamba` and `conda` at the command line interchangeably, but for simplicity's sake we will stick with using `mamba`
-3.  To see a list of available environments, run `mamba env list`
-    1.  Most relevant mamba environments will be located in `/data/condaEnvs/`
-4.  To activate an environmnet, simply run `mamba activate /data/condaEnvs/env_name` replacing `env_name` with the actual name of the environment
+2.  The `(base)` text indicates that you are in the base environment. To see the list of packages in said enviornment (or any environment you happen to be in), run `mamba list` or `conda list`.
+3.  To see a list of available environments, run `mamba env list` or, if using conda, 'conda info --envs'.
+    1.  Most relevant environments will be located in `/data/condaShared/envs`.
+    2. *Note:* This is one of the VERY few commands that differ between mamba and conda.  Thus, you can mostly use `mamba` and `conda` at the command line interchangeably.
+4.  To activate an environmnet, simply run `mamba activate env_name` replacing `env_name` with the actual name of the environment.

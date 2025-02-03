@@ -1,7 +1,7 @@
 ---
 title: NextGen Framework Forcings
 slug: NextGen Forcings
-authors: jordon
+authors: jordan
 image: https://github.com/CIROH-UA/ngen-datastream/raw/main/docs/gifs/T2D_2_TMP_2maboveground_cali.gif
 tags: [nextgen]
 hide_table_of_contents: false

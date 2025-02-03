@@ -1,7 +1,17 @@
-- name: apatel
-  title: Author Name
-  imageUrl: path/to/author/image.jpg
+arpita:
+  name: Arpita Patel
+  title: DevOps Manager and Enterprise Architect
+  url: 'https://github.com/arpita0911patel'
+  image_url: https://avatars.githubusercontent.com/u/54657?v=4
 
-- name: anotherauthor
-  title: Another Author
-  imageUrl: path/to/another/author/image.jpg
+jordon:
+  name: Jordan Laser
+  title: 'at Lynker'
+  url: 'https://github.com/JordanLaserGit'
+  image_url: https://avatars.githubusercontent.com/u/79336055?v=4
+
+zach:
+  name: Zach Wills
+  title: 'at Lynker'
+  url: https://github.com/orgs/CIROH-UA/people/ZacharyWills
+  image_url: https://avatars.githubusercontent.com/u/60660437?v=4

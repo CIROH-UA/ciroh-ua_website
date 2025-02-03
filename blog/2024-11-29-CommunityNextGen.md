@@ -2,7 +2,7 @@
 title: "Community NextGen Updates"
 description: "November Monthly Blog Update"
 slug: November Monthly Blog Update
-
+authors: arpita
 tags: [ngiab, nextgen, workflow, visualize, evaluate]
 hide_table_of_contents: false
 image: ../../img/NGIABLogoWithoutText-Transparant.png
@@ -11,6 +11,8 @@ image: ../../img/NGIABLogoWithoutText-Transparant.png
 # NextGen In A Box: November 2024 Release Updates
 
 The Community NextGen framework has seen significant advancements in November 2024, with major updates across multiple components and exciting new resources for users. Let's dive into the key developments that are making hydrologic modeling more accessible and powerful than ever.
+
+<!-- truncate -->
 
 ## 🎉 NGIAB-CloudInfra v1.3.0: A Major Milestone
 

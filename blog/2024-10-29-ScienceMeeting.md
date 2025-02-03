@@ -2,10 +2,7 @@
 title: "CIROH Science Meeting 2024"
 description: "October Monthly Blog Update"
 slug: October Monthly Blog Update
-authors:
-  - name: Arpita Patel
-    url: https://github.com/arpita0911patel
-    image_url: https://avatars.githubusercontent.com/u/54657?v=4
+authors: arpita
 tags: [ciroh, science, conference, impact]
 hide_table_of_contents: false
 image: /img/2024CSM_GroupPano.png

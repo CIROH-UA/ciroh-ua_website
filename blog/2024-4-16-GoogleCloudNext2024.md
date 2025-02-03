@@ -2,11 +2,7 @@
 title: "Google Cloud Next '24: A Flood of Innovation and Inspiration"
 description: "Google Cloud Next '24: Las Vegas"
 slug: Google Cloud Next 2024
-authors:
-  - name: Arpita Patel
-    url: https://github.com/arpita0911patel
-    image_url: https://avatars.githubusercontent.com/u/54657?v=4
-
+authors: arpita
 tags: [google, googlecloud, googlecloudnext, conference]
 hide_table_of_contents: false
 image: /img/googlenext-3.jpeg

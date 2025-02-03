@@ -2,11 +2,7 @@
 title: Monthly News Update - March 2024
 description: News and release notes for Community NextGen
 slug: Community NextGen Updates March 2024
-authors:
-  - name: Arpita Patel
-    url: https://github.com/arpita0911patel
-    image_url: https://avatars.githubusercontent.com/u/54657?v=4
-
+authors: arpita
 tags: [ciroh, community-nextgen, news, singularity]
 hide_table_of_contents: false
 ---

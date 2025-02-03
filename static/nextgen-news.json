@@ -15,7 +15,7 @@
         {
 			"type": "update",
 			"title": "ngen-datastream",
-			"description": "January updates for datastream include 7 PRs, adding metadata hashes, S3 logging, manifest workflow improvements, script updates, and a community deployment of research_datastream/terraform to AWS.",
+			"description": "January updates for datastream include 7 PRs, adding metadata hashes, S3 logging, and manifest workflow improvements. Additionally, a text-based graphical interface script was added as an interactive guide for new users to the Datastream CLI tool at scripts/datastream_guide. The terraform and executions for the community Research Datastream in AWS were made public in the ngen-datastream repository at research_datastream/terraform_community.",
 			"link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2025-01-01&until=2025-01-29"
 		},
         {

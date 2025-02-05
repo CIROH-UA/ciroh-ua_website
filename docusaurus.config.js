@@ -32,7 +32,7 @@ const config = {
           trackingID: 'G-TQW7CE7E2P',
           anonymizeIP: true,
         },
-        blog: false,
+        blog: false, // Blogs and its settings are now in the custom blog plugin below. Its because we have tags based filters in community impact page. Those filters are coming from Blog posts.
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
@@ -65,7 +65,8 @@ const config = {
         blogTitle: "DocuHub blog!",
         blogDescription: "A DocuHub powered blog!",
         postsPerPage: "ALL", // Display all posts on a single page
-        authorsMapPath: "blog/authors.yaml", // Path to the authors' mapping file
+        path: "blog", // Path to the blog posts
+        authorsMapPath: "authors.yaml", // Path to the authors' mapping file
       }
     ]
   ],

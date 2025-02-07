@@ -1,30 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 
-const NewsComponent = ({ data }) => {
+const NewsComponent = ({ data, isLatest }) => {
+  const [isExpanded, setIsExpanded] = useState(isLatest); // Expand only the latest
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <div>
       <hr />
-      <ul className="pills  pills--block">
-        <li className="pills__item pills__item--active">{data.date}</li>
+      <ul className="pills pills--block">
+        <li
+          className="pills__item pills__item--active"
+          onClick={toggleExpand}
+        >
+          {data.date}
+        </li>
       </ul>
 
-      {data.items.map((item, index) => (
-        <div key={index} style={{ "padding-bottom": "25px" }}>
-          <span className={`badge badge--${getBadgeClass(item.type)}`}>
-            {item.type}
-          </span>{" "}
-          <strong> {item.title}</strong>
-          <br />
-          {renderDescription(item.description, item.link)}
-          {item.link && (
-            <div>
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
-                Read more...
-              </a>
-            </div>
-          )}
-        </div>
-      ))}
+      {isExpanded &&
+        data.items.map((item, index) => (
+          <div key={index} style={{ paddingBottom: "25px" }}>
+            <span className={`badge badge--${getBadgeClass(item.type)}`}>
+              {item.type}
+            </span>{" "}
+            <strong>{item.title}</strong>
+            <br />
+            {renderDescription(item.description)}
+            {item.link && (
+              <div>
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                  Read more...
+                </a>
+              </div>
+            )}
+          </div>
+        ))}
     </div>
   );
 };
@@ -41,7 +53,7 @@ function getBadgeClass(type) {
     case "news":
       return "info";
     default:
-      return "primary"; // Provide a default class if type doesn't match the cases above
+      return "primary"; // Default class
   }
 }
 
@@ -70,4 +82,5 @@ function renderDescription(description) {
 function isWebLink(part) {
   return part.startsWith("http://") || part.startsWith("https://");
 }
+
 export default NewsComponent;

@@ -8,34 +8,41 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-    <div className="container">
-      <div className="hero-content">
-        <div className="hero-flex-container">
-          <div className="hero-text">
-            <h1 className="hero__title">{siteConfig.title}</h1>
-            <span style={{ fontSize: 20 }}>
-              Welcome to <b>CIROH's DocuHub </b> – a carefully curated central repository
-              providing in-depth technical insights into <b>CIROH's projects, services, and documentation. </b>
-              This invaluable resource is designed to empower team members, collaborators, 
-              and community stakeholders with the knowledge needed to enhance their understanding and contributions. 
-              Explore DocuHub to deepen your understanding and actively engage in our collaborative learning culture.
-            </span>
-          </div>
-          {/* <div className="hero-image">
+      <div className="container">
+        <div className="hero-content">
+          <div className="hero-flex-container">
+            <div className="hero-text">
+              <h1 className="hero__title">{siteConfig.title}</h1>
+              <span style={{ fontSize: 20 }}>
+                Welcome to <b>CIROH's DocuHub </b> – a carefully curated central repository
+                providing in-depth technical insights into <b>CIROH's projects, services, and documentation. </b>
+                This invaluable resource is designed to empower team members, collaborators,
+                and community stakeholders with the knowledge needed to enhance their understanding and contributions.
+                Explore DocuHub to deepen your understanding and actively engage in our collaborative learning culture.
+              </span>
+            </div>
+            {/* <div className="hero-image">
             <img src="img/docuhub-logo.png" alt="Logo" style={{ maxWidth: '15%' }} />
           </div> */}
+          </div>
+          {/* New Why Docuhub image section*/}
+          <div style={{ textAlign: 'center', marginTop: '20px' }}>
+            <h2>Why Docuhub?</h2>
+            <img
+              src="/img/WhyDocuHub.png" alt="Why Docuhub?" style={{ maxWidth: '600px', width: '100%', borderwidth: '10px' }}
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
   );
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`${siteConfig.title}`}

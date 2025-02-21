@@ -6,6 +6,7 @@ import "./bootstrap.min.css";
 import "./cta-2.css";
 import "./cta-1.css";
 import styles from "./styles.module.css";
+import "./whyDocuhub.css";
 // import { library } from "@fortawesome/fontawesome-svg-core";
 // import { fab } from "@fortawesome/free-brands-svg-icons";
 
@@ -459,36 +460,94 @@ export default function HomepageFeatures() {
           </div>
         </div>
       </div>
-      <section class="bsb-cta-2 py-5">
-      <div class="container" >
-        <div
-          class="card rounded-3 overflow-hidden text-center bsb-overlay"
-          style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url('./img/research-image.jpg')",  // camelCase
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "local",
-            "--bsb-overlay-opacity": ".9",
-            "--bsb-overlay-bg-color": "var(--bs-primary-rgb)"
-          }}
-        >
-          <div class="card-body">
-            <div class="row align-items-center justify-content-center">
-              <div class="col-12 col-md-10 col-xl-8 col-xxl-7">
-                <h1 class="h5 mb-4 text-white text-uppercase">Our Research</h1>
-                <h2 class="display-4 text-white mb-5">
-                 Our research focuses on advancing hydrological science through innovative research, collaboration, and technology development.
-                </h2>
-                <a href="https://ciroh.ua.edu/research/" class="btn btn-light bsb-btn-3xl rounded mb-0 text-nowrap">
-                  Learn More
-                </a>
-              </div>
+      <section className="padded-page-section-feature" id="services">
+            <div className="container-feature">
+                <h2 className="text-center-feature mt-0">Why DocuHub? Elevate Your Research Journey</h2>
+                <hr className="divider-feature" />
+                <div className="row-feature ">
+                    <div className="col-lg-3-feature col-md-6-feature text-center">
+                        <div className="mt-5-feature">
+                         
+                            <h3 className="h4 mb-2-feature">Knowledge Hub</h3>
+                            <p className="text-muted-feature mb-0-feature">Access a centralized repository of research and educational resources to enhance your hydrological expertise.</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-3-feature col-md-6-feature text-center">
+                        <div className="mt-5-feature">
+                            <h3 className="h4 mb-2-feature">Research & Growth</h3>
+                            <p className="text-muted-feature mb-0-feature">Explore cutting-edge research and innovative projects driving innovation in hydrology.</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-3-feature col-md-6-feature text-center">
+                        <div className="mt-5-feature">
+                            <h3 className="h4 mb-2-feature">Blog & News</h3>
+                            <p className="text-muted-feature mb-0-feature">Stay updated with the latest news, community insights, and updates about CIROH projects.</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-3-feature col-md-6-feature text-center">
+                        <div className="mt-5-feature">
+                            <h3 className="h4 mb-2-feature">Education & Training</h3>
+                            <p className="text-muted-feature mb-0-feature">Elevate your skills with tutorials, training programs, and educational materials tailored for hydrological research.</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-3-feature col-md-6-feature text-center">
+                        <div className="mt-5-feature">
+                            <h3 className="h4 mb-2-feature">CyberInfrastructure</h3>
+                            <p className="text-muted-feature mb-0-feature">Leverage cloud infrastuctures, including AWS, GCP, CIROH JupyterHub, and on-premises infrastructures tailored to hydrological research needs.</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-3-feature col-md-6-feature text-center">
+                        <div className="mt-5-feature">
+                            <h3 className="h4 mb-2-feature">Global Collaboration</h3>
+                            <p className="text-muted-feature mb-0-feature">Join a global network of researchers and collaborators to share knowledge, resources, and innovations within the CIROH community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      <section
+      className={`bsb-cta-2 py-5 ${styles.features}`}
+      style={{
+        width: "100%", // Ensure the section spans the full width
+        margin: 0, // Remove default margin
+        padding: 0, // Remove default padding if necessary
+      }}
+    >
+      <div
+        className="card rounded-3 overflow-hidden text-center bsb-overlay"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./img/research-image.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "local",
+          width: "100%", // Ensure the card spans the full width
+          margin: 0, // Remove default margin
+          padding: 0, // Remove default padding if necessary
+          "--bsb-overlay-opacity": ".9",
+          "--bsb-overlay-bg-color": "var(--bs-primary-rgb)",
+        }}
+      >
+        <div className="card-body">
+          <div className="row align-items-center justify-content-center">
+            <div className="col-12 col-md-10 col-xl-8 col-xxl-7">
+              <h1 className="h5 mb-4 text-white text-uppercase">Our Research</h1>
+              <h2 className="display-4 text-white mb-5">
+                Our research focuses on advancing hydrological science through
+                innovative research, collaboration, and technology development.
+              </h2>
+              <a
+                href="https://ciroh.ua.edu/research/"
+                className={`button button--secondary ${styles.col6}`}
+              >
+                Learn More
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
       <div className="container" style={{ width: "100%" }}>
         <div className={styles.logoBackground}>
           <div className="container-fluid">

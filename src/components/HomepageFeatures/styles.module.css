@@ -208,7 +208,12 @@
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
 }
-
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
 .button {
   background-color: #f1f3f4;
   color: #333;

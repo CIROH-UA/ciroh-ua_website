@@ -467,38 +467,43 @@ export default function HomepageFeatures() {
                 <div className="row-feature ">
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
-                         
                             <h3 className="h4 mb-2-feature">Knowledge Hub</h3>
+                            <img src="/img/why-docuhub-1.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0-feature">Access a centralized repository of research and educational resources to enhance your hydrological expertise.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">Research & Growth</h3>
+                            <img src="/img/why-docuhub-2.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0-feature">Explore cutting-edge research and innovative projects driving innovation in hydrology.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">Blog & News</h3>
+                            <img src="/img/why-docuhub-3.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0-feature">Stay updated with the latest news, community insights, and updates about CIROH projects.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">Education & Training</h3>
+                            <img src="/img/why-docuhub-4.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0-feature">Elevate your skills with tutorials, training programs, and educational materials tailored for hydrological research.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">CyberInfrastructure</h3>
+                            <img src="/img/why-docuhub-5.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0-feature">Leverage cloud infrastuctures, including AWS, GCP, CIROH JupyterHub, and on-premises infrastructures tailored to hydrological research needs.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">Global Collaboration</h3>
+                            <img src="/img/why-docuhub-6.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0-feature">Join a global network of researchers and collaborators to share knowledge, resources, and innovations within the CIROH community.</p>
                         </div>
                     </div>

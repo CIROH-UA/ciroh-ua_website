@@ -46,7 +46,7 @@ jobs:
     - name: Checkout staging repository
       uses: actions/checkout@v3
       with:
-        repository: 'arpita0911patel/docuhub-staging'  # Replace with your staging repository
+        repository: 'CIROH-UA/docuhub-staging'  # Replace with your staging repository
         token: ${{ secrets.STAGING_REPO_TOKEN }}
         path: 'staging-repo'
 
@@ -71,7 +71,7 @@ jobs:
       uses: actions/github-script@v6
       with:
         script: |
-          const preview_url = 'https://arpita0911patel.github.io/docuhub-staging/${{ env.PREVIEW_PATH }}';
+          const preview_url = 'https://ciroh-ua.github.io/docuhub-staging/${{ env.PREVIEW_PATH }}';
           github.rest.issues.createComment({
             issue_number: context.issue.number,
             owner: context.repo.owner,

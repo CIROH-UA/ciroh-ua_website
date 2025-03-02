@@ -1,4 +1,43 @@
 {
+	"February 2025 Update":  [
+        {
+            "type": "update",
+            "title": "NGIAB-data-preprocess",
+            "description": "🚀 Wrapping up February with great news! AORC has been added as a datasource option for forcings, and the code has been refactored to make it easier to integrate new gridded data sources in the future. Explore more updates here.",
+            "link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2025-01-01&until=2025-02-28"
+        },
+        {
+			"type": "update",
+			"title": "NGIAB-CloudInfra: NGIAB Docker Image",
+			"description": "🔥 We're excited to announce some February updates! CFE and Noah-OWP-Modular have been updated to their latest versions, GDAL dependency has been removed, and remoteless partitioning has been implemented to improve parallel performance.",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-01-01&until=2025-02-28"
+		},
+        {
+			"type": "update",
+			"title": "ngen-datastream",
+			"description": "✨ The terraform and executions for the community Research Datastream in AWS were made public in the ngen-datastream repository at research_datastream/terraform_community. A text-based graphical interface script was added as an interactive guide for new users to the Datastream CLI tool at scripts/datastream_guide.",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2025-01-01&until=2025-02-28"
+		},
+        {
+            "type": "update",
+            "title": "NGIAB-HPCInfra: NGIAB Singularity Image",
+            "description": "⚡ A PR was merged which fixed the 'srun permission denied' issue on HPC compute nodes by switching to OpenMPI, successfully tested on the Pantarhei and Anvil clusters.",
+            "link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2025-01-01&until=2025-02-28"
+        },
+		{
+			"type": "update",
+			"title": "CIROH-UA/ngen",
+			"description": "✨ t-route performance has been improved for parallel execution, with an alternative partitioning scheme optimized for single-machine parallel runs. Configuration options have also been added to disable netCDF forcing caching and catchment output writing.",
+			"link": "https://github.com/CIROH-UA/ngen/commits/main/?since=2025-01-01&until=2025-02-28"  
+		},
+		{
+			"type": "update",
+			"title": "CIROH-UA/t-route",
+			"description": "✨ t-route output writing has been optimized, resulting in ~3x faster performance.",
+			"link": "https://github.com/CIROH-UA/t-route" 
+		}
+		
+	],
 	"December 2024 Update":  [
         {
             "type": "update",

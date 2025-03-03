@@ -6,6 +6,8 @@ name: ciroh-ua-website-ci
 on:
   push:
     branches: ["main"]
+    tags:
+      - 'production-*'
   workflow_call:
     # Map the workflow outputs to job outputs
     # https://docs.github.com/en/github-ae@latest/actions/using-workflows/reusing-workflows
@@ -34,17 +36,61 @@ jobs:
       id: version
       run: echo "::set-output name=VERSION::$(date +'%Y%m%d-%H%M%S')"
 
-    - name: Create version file
+    - name: Install dependencies
+      run: npm ci
+
+    
+    - name: Set build target
+      id: build-target
       run: |
-        echo "Build version:${{steps.version.outputs.VERSION}}"
-        echo "${{steps.version.outputs.VERSION}}"  > version.txt
-   
-    - run: npm ci
-    - run: npm run build --if-present
+          if [[ "${{ github.ref }}" == refs/tags/production-* ]]; then
+            echo "DEPLOY_ENV=production" >> $GITHUB_ENV
+            echo "Building for PRODUCTION environment"
+          else
+            echo "DEPLOY_ENV=staging" >> $GITHUB_ENV
+            echo "Building for STAGING environment"
+          fi
+          
+          echo "VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
+          echo "${{ env.VERSION }}" > version.txt
+
+    # Modify docusaurus.config.js for the appropriate environment
+    - name: Configure baseUrl
+      run: |
+          # Create a backup of the original config
+          cp docusaurus.config.js docusaurus.config.js.bak
+          
+          # Use node to modify the config
+          node -e "
+            const fs = require('fs');
+            const config = require('./docusaurus.config.js');
+            
+            if (process.env.DEPLOY_ENV === 'staging') {
+              console.log('Setting baseUrl for staging');
+              config.baseUrl = '/docuhub-staging/';
+            } else {
+              console.log('Setting baseUrl for production');
+              config.baseUrl = '/';
+            }
+            
+            fs.writeFileSync('docusaurus.config.js', 
+              'module.exports = ' + JSON.stringify(config, null, 2) + ';'
+            );
+          "
+          
+          # Show the changed config
+          echo "Modified docusaurus.config.js:"
+          cat docusaurus.config.js
+
+    # Build the site
+    - name: Build website
+      run: npm run build
+        
     - uses: actions/upload-artifact@v4
       with:
         name: version
         path: version.txt
+        
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4
       with:

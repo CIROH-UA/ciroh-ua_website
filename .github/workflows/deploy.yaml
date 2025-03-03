@@ -1,0 +1,107 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: ciroh-ua-website-cd
+
+on:
+  workflow_run:
+    workflows: ["ciroh-ua-website-ci"]
+    branches:
+      - main
+    types:
+      - completed
+  workflow_call:
+  push:
+    tags:
+      - 'production-*'  # Trigger on production tags for promotion
+  # workflow_dispatch:  # Allows manual triggering
+  
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: |
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') || 
+      (github.event_name == 'push' && startsWith(github.ref, 'refs/tags/production-'))
+
+    name: Deploy to GitHub Pages
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          # Ensure detached HEAD state to avoid conflicts with the main branch
+          ref: refs/heads/main
+
+      - name: Download a Build Artifact Version
+        uses: dawidd6/action-download-artifact@v2.26.1
+        with:
+          workflow: ci_pipeline.yml
+          workflow_conclusion: success
+          branch: main
+          name: version
+          path: ./
+
+      - name: Read file and set variable
+        run: |
+          # Read file and set its value to a variable
+          FILE_CONTENT=$(cat ./version.txt)
+          # Set variable as an environment variable
+          echo "VERSION=$FILE_CONTENT" >> $GITHUB_ENV
+
+      - name: Display variable value
+        run: |
+          # Display value of variable
+          echo "My variable value is $VERSION"
+
+      # https://github.com/marketplace/actions/download-workflow-artifact
+      - name: Download a Build Artifact
+        uses: dawidd6/action-download-artifact@v2.26.1
+        with:
+          workflow: ci_pipeline.yml
+          workflow_conclusion: success
+          branch: main
+          name: build
+          path: ./build/
+
+      - name: Create and switch to a temporary deployment branch
+        run: |
+          git checkout -b temp-deploy-branch-$VERSION
+
+      # Determine if this is a staging or production deployment
+      - name: Set deployment target
+        id: deployment-target
+        run: |
+          if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == refs/tags/production-* ]]; then
+            echo "ENVIRONMENT=production" >> $GITHUB_ENV
+            echo "Deploying to PRODUCTION environment"
+          else
+            echo "ENVIRONMENT=staging" >> $GITHUB_ENV
+            echo "Deploying to STAGING environment"
+          fi
+
+      # For staging deployment to staging directory
+      - name: Deploy to Staging
+        if: env.ENVIRONMENT == 'staging'
+        run: |
+          # Create a staging subdirectory in build folder
+          mkdir -p build/staging-latest
+          cp -R build/* build/staging-latest/ 2>/dev/null || :
+          # Keep the staging directory for deployment
+          echo "Prepared build for staging deployment"
+
+      - name: GitHub Pages deployment
+        uses: JamesIves/github-pages-deploy-action@v4.6.1
+        with:
+          token: ${{ secrets.SECRET_TO_PUSH_TO_AP_GITHUB_IO }}
+          branch: main
+          folder: build
+          repository-name: arpita0911patel/arpita0911patel.github.io
+          
+      - name: Post-deployment notification
+        run: |
+          if [[ "${{ env.ENVIRONMENT }}" == "production" ]]; then
+            echo "Production deployment completed successfully!"
+          else
+            echo "Staging deployment completed successfully!"
+            echo "To promote to production, create a tag with: git tag production-$VERSION && git push origin production-$VERSION"
+          fi

@@ -1,4 +1,42 @@
 {
+	"February 2025 Update":  [
+			{
+			  "type": "feature",
+			  "title": "NGIAB-data-preprocess",
+			  "description": "🚀 New Release v4.0.3! February brings exciting enhancements to our data preprocessing tool! We've now integrated AORC as an additional data source option for forcings. The codebase has been thoroughly refactored to simplify future integration of new gridded data sources. This architectural improvement makes the tool more extensible and easier to maintain going forward.",
+			  "link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2025-01-01&until=2025-02-28"
+			},
+			{
+			  "type": "feature",
+			  "title": "NGIAB-CloudInfra: NGIAB Docker Image",
+			  "description": "🔥 New Release v1.4.2! Our February update delivers significant improvements to the NGIAB Docker image! The container now incorporates the latest code from CIROH-UA/ngen:ngiab and CIROH-UA/t-route:ngiab branches. We've updated CFE and Noah-OWP-Modular to their latest versions, removed the GDAL dependency to streamline the image, and implemented remoteless partitioning for enhanced parallel performance.",
+			  "link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-01-01&until=2025-02-28"
+			},
+			{
+			  "type": "feature",
+			  "title": "ngen-datastream",
+			  "description": "✨ Community Research Tools Now Public! The terraform configurations and executions for the community Research Datastream in AWS are now publicly available in the ngen-datastream repository (path: research_datastream/terraform_community). We've also added an interactive text-based graphical interface script to guide new users through the Datastream CLI tool (path: scripts/datastream_guide), making the onboarding experience more intuitive.",
+			  "link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2025-01-01&until=2025-02-28"
+			},
+			{
+			  "type": "feature",
+			  "title": "NGIAB-HPCInfra: NGIAB Singularity Image",
+			  "description": "⚡ Critical HPC Fix Deployed! The NGIAB Singularity Image now leverages the latest code from CIROH-UA/ngen:ngiab and CIROH-UA/t-route:ngiab branches. A critical pull request was merged to resolve the 'srun permission denied' issue on HPC compute nodes by transitioning to OpenMPI. This fix has been successfully validated on both the Pantarhei and Anvil clusters, ensuring smooth operation in HPC environments.",
+			  "link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2025-01-01&until=2025-02-28"
+			},
+			{
+			  "type": "update",
+			  "title": "CIROH-UA/ngen:ngiab",
+			  "description": "✨ Performance Optimization Update! The NGIAB-CloudInfra and NGIAB-HPCInfra containers now utilize our optimized ngiab branch of CIROH-UA/ngen. T-route performance has been significantly enhanced for parallel execution with an alternative partitioning scheme specifically optimized for single-machine parallel runs. Additionally, we've introduced new configuration options that allow users to disable netCDF forcing caching and catchment output writing for more flexible deployment scenarios.",
+			  "link": "https://github.com/CIROH-UA/ngen/commits/ngiab/?since=2025-01-01&until=2025-02-28"
+			},
+			{
+			  "type": "update",
+			  "title": "CIROH-UA/t-route:ngiab",
+			  "description": "✨ 3x Faster Performance! The NGIAB-CloudInfra and NGIAB-HPCInfra containers now incorporate our optimized ngiab branch of CIROH-UA/t-route. We've drastically improved t-route output writing efficiency, resulting in approximately three times faster performance. This enhancement significantly reduces processing time for hydrological simulations.",
+			  "link": "https://github.com/CIROH-UA/t-route/commits/ngiab/?since=2025-01-01&until=2025-02-28"
+			}
+	],
 	"December 2024 Update":  [
         {
             "type": "update",

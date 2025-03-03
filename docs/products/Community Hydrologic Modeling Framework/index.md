@@ -21,6 +21,7 @@ Community NextGen is a community-accessible verison of NextGen Water Resources M
 
 Interested in running NGIAB on your end?
 Please refer to this link : [NGIAB Tutorial](https://docs.ciroh.org/docs/products/Community%20Hydrologic%20Modeling%20Framework/nextgeninaboxDocker/workflow)
+Latest News : [Community NextGen News](https://docs.ciroh.org/news)
 
 ---
 

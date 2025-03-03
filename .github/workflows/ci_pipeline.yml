@@ -36,10 +36,14 @@ jobs:
       id: version
       run: echo "::set-output name=VERSION::$(date +'%Y%m%d-%H%M%S')"
 
+    - name: Create version file
+      run: |
+        echo "Build version:${{steps.version.outputs.VERSION}}"
+        echo "${{steps.version.outputs.VERSION}}"  > version.txt
+
     - name: Install dependencies
       run: npm ci
 
-    
     - name: Set build target
       id: build-target
       run: |
@@ -51,9 +55,6 @@ jobs:
             echo "Building for STAGING environment"
           fi
           
-          echo "VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
-          echo "${{ env.VERSION }}" > version.txt
-
     - name: Configure baseUrl
       run: |
         # Create a backup of the original config

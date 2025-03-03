@@ -64,12 +64,12 @@ jobs:
           echo "Setting baseUrl for staging"
           sed -i 's|baseUrl: '\''\/'\''|baseUrl: '\''/docuhub-staging/'\''|g' docusaurus.config.js
           # Or if your config uses double quotes:
-          # sed -i 's|baseUrl: "\/"|baseUrl: "\/docuhub-staging\/"|g' docusaurus.config.js
+          sed -i 's|baseUrl: "\/"|baseUrl: "\/docuhub-staging\/"|g' docusaurus.config.js
         else
           echo "Setting baseUrl for production"
           sed -i 's|baseUrl: '\''\/[^'\'']*'\''|baseUrl: '\''\/'\''|g' docusaurus.config.js
           # Or if your config uses double quotes:
-          # sed -i 's|baseUrl: "\/[^"]*"|baseUrl: "\/"|g' docusaurus.config.js
+          sed -i 's|baseUrl: "\/[^"]*"|baseUrl: "\/"|g' docusaurus.config.js
         fi
         
         # Show the changed config

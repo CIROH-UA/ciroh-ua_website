@@ -11,14 +11,6 @@ on:
     types:
       - completed
   workflow_call:
-    inputs:
-      deploy_env:
-        required: true
-        type: string
-      version:
-        required: true
-        type: string
-  
   # workflow_dispatch:  # Allows manual triggering
   
 jobs:
@@ -27,7 +19,6 @@ jobs:
     if: |
       (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
       
-
     name: Deploy to GitHub Pages
     steps:
       - name: Checkout
@@ -56,8 +47,29 @@ jobs:
       - name: Display variable value
         run: |
           # Display value of variable
-          echo "My variable value is $VERSION"
+          echo "My version value is $VERSION"
 
+      - name: Download a Build Artifact Environment File
+        uses: dawidd6/action-download-artifact@v2.26.1
+        with:
+          workflow: ci_pipeline.yml
+          workflow_conclusion: success
+          branch: main
+          name: env_vars
+          path: ./
+
+      - name: Read file and set variable
+        run: |
+          # Read file and set its value to a variable
+          FILE_CONTENT=$(cat ./env_vars.txt)
+          # Set variable as an environment variable
+          echo "DEPLOY_ENV=$FILE_CONTENT" >> $GITHUB_ENV
+
+      - name: Display variable value
+        run: |
+          # Display value of variable
+          echo "My environment value is $DEPLOY_ENV"
+          
       # https://github.com/marketplace/actions/download-workflow-artifact
       - name: Download a Build Artifact
         uses: dawidd6/action-download-artifact@v2.26.1
@@ -72,15 +84,11 @@ jobs:
         run: |
           git checkout -b temp-deploy-branch-$VERSION
 
-      - run: |
-          echo "DEPLOY_ENV=${{ inputs.deploy_env }}" >> $GITHUB_ENV
-          echo "VERSION=${{ inputs.version }}" >> $GITHUB_ENV
-          
         # Determine if this is a staging or production deployment
       - name: Set deployment target
         id: deployment-target
         run: |
-          if [[ "${{ env.DEPLOY_ENV }}" == "production" ]]; then
+          if [[ "$DEPLOY_ENV" == "production" ]]; then
             echo "ENVIRONMENT=production" >> $GITHUB_ENV
             echo "TARGET_REPO=arpita0911patel/arpita0911patel.github.io" >> $GITHUB_ENV
             echo "Deploying to PRODUCTION environment"

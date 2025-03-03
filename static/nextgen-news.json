@@ -1,6 +1,5 @@
 {
 	"February 2025 Update":  [
-        [
 			{
 			  "type": "feature",
 			  "title": "NGIAB-data-preprocess",
@@ -37,7 +36,6 @@
 			  "description": "✨ 3x Faster Performance! The NGIAB-CloudInfra and NGIAB-HPCInfra containers now incorporate our optimized ngiab branch of CIROH-UA/t-route. We've drastically improved t-route output writing efficiency, resulting in approximately three times faster performance. This enhancement significantly reduces processing time for hydrological simulations.",
 			  "link": "https://github.com/CIROH-UA/t-route/commits/ngiab/?since=2025-01-01&until=2025-02-28"
 			}
-		  ]
 	],
 	"December 2024 Update":  [
         {

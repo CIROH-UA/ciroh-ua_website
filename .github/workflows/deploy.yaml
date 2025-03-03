@@ -11,17 +11,22 @@ on:
     types:
       - completed
   workflow_call:
-  push:
-    tags:
-      - 'production-*'  # Trigger on production tags for promotion
+    inputs:
+      deploy_env:
+        required: true
+        type: string
+      version:
+        required: true
+        type: string
+  
   # workflow_dispatch:  # Allows manual triggering
   
 jobs:
   deploy:
     runs-on: ubuntu-latest
     if: |
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') || 
-      (github.event_name == 'push' && startsWith(github.ref, 'refs/tags/production-'))
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+      
 
     name: Deploy to GitHub Pages
     steps:
@@ -67,11 +72,15 @@ jobs:
         run: |
           git checkout -b temp-deploy-branch-$VERSION
 
+      - run: |
+          echo "DEPLOY_ENV=${{ inputs.deploy_env }}" >> $GITHUB_ENV
+          echo "VERSION=${{ inputs.version }}" >> $GITHUB_ENV
+          
         # Determine if this is a staging or production deployment
       - name: Set deployment target
         id: deployment-target
         run: |
-          if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == refs/tags/production-* ]]; then
+          if [[ "${{ env.DEPLOY_ENV }}" == "production" ]]; then
             echo "ENVIRONMENT=production" >> $GITHUB_ENV
             echo "TARGET_REPO=arpita0911patel/arpita0911patel.github.io" >> $GITHUB_ENV
             echo "Deploying to PRODUCTION environment"

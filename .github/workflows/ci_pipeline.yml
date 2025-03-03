@@ -15,10 +15,6 @@ on:
       
 jobs:
   build:
-    outputs:
-      deploy_env: ${{ steps.set-env.outputs.deploy_env }}
-      version: ${{ steps.set-env.outputs.version }}
-      
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -90,6 +86,15 @@ jobs:
         name: version
         path: version.txt
 
+    - name: Create environment file
+      run: |
+        echo "DEPLOY_ENV=${{ env.DEPLOY_ENV }}" > env_vars.txt
+        
+    - uses: actions/upload-artifact@v4
+      with:
+        name: environment
+        path: env_vars.txt
+        
     - id: set-env
       run: |
         echo "deploy_env=${{ env.DEPLOY_ENV }}" >> $GITHUB_OUTPUT

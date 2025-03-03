@@ -15,6 +15,10 @@ on:
       
 jobs:
   build:
+    outputs:
+      deploy_env: ${{ steps.set-env.outputs.deploy_env }}
+      version: ${{ steps.set-env.outputs.version }}
+      
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -35,11 +39,6 @@ jobs:
     - name: Generate version
       id: version
       run: echo "::set-output name=VERSION::$(date +'%Y%m%d-%H%M%S')"
-
-    - name: Create version file
-      run: |
-        echo "Build version:${{steps.version.outputs.VERSION}}"
-        echo "${{steps.version.outputs.VERSION}}"  > version.txt
 
     - name: Install dependencies
       run: npm ci
@@ -80,11 +79,21 @@ jobs:
     # Build the site
     - name: Build website
       run: npm run build
+
+    - name: Create version file
+      run: |
+        echo "Build version:${{steps.version.outputs.VERSION}}"
+        echo "${{steps.version.outputs.VERSION}}"  > version.txt
         
     - uses: actions/upload-artifact@v4
       with:
         name: version
         path: version.txt
+
+    - id: set-env
+      run: |
+        echo "deploy_env=${{ env.DEPLOY_ENV }}" >> $GITHUB_OUTPUT
+        echo "version=${{ env.VERSION }}" >> $GITHUB_OUTPUT
         
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4

@@ -97,7 +97,7 @@ jobs:
           token: ${{ secrets.SECRET_TO_PUSH_TO_AP_GITHUB_IO }}
           branch: main
           folder: build
-          repository-name: arpita0911patel/arpita0911patel.github.io
+          repository-name: ${{ env.TARGET_REPO }}
           
       - name: Post-deployment notification
         run: |

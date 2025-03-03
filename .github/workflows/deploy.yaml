@@ -67,27 +67,29 @@ jobs:
         run: |
           git checkout -b temp-deploy-branch-$VERSION
 
-      # Determine if this is a staging or production deployment
+        # Determine if this is a staging or production deployment
       - name: Set deployment target
         id: deployment-target
         run: |
           if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" == refs/tags/production-* ]]; then
             echo "ENVIRONMENT=production" >> $GITHUB_ENV
+            echo "TARGET_REPO=arpita0911patel/arpita0911patel.github.io" >> $GITHUB_ENV
             echo "Deploying to PRODUCTION environment"
           else
             echo "ENVIRONMENT=staging" >> $GITHUB_ENV
+            echo "TARGET_REPO=arpita0911patel/docuhub-staging" >> $GITHUB_ENV
             echo "Deploying to STAGING environment"
           fi
 
-      # For staging deployment to staging directory
-      - name: Deploy to Staging
-        if: env.ENVIRONMENT == 'staging'
-        run: |
-          # Create a staging subdirectory in build folder
-          mkdir -p build/staging-latest
-          cp -R build/* build/staging-latest/ 2>/dev/null || :
-          # Keep the staging directory for deployment
-          echo "Prepared build for staging deployment"
+      # Set the correct environment for deployment
+      - name: Use deployment environment
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const environment = process.env.ENVIRONMENT;
+            core.info(`Setting environment to: ${environment}`);
+            core.exportVariable('ENVIRONMENT', environment);
+ 
 
       - name: GitHub Pages deployment
         uses: JamesIves/github-pages-deploy-action@v4.6.1

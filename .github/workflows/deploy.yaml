@@ -4,20 +4,13 @@
 name: ciroh-ua-website-deploy
 
 on:
-  workflow_run:
-    workflows: ["ciroh-ua-website-ci"]
-    branches:
-      - main
-    types:
-      - completed
-  workflow_call:
-  workflow_dispatch:  # Allows manual triggering
+  repository_dispatch:
+    types: [build-completed]
+  workflow_dispatch:  # For manual triggering if needed
   
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: |
-      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
       
     name: Deploy to GitHub Pages
     steps:
@@ -28,42 +21,28 @@ jobs:
           # Ensure detached HEAD state to avoid conflicts with the main branch
           ref: refs/heads/main
 
-      - name: Download a Build Artifact Version
+      # Get environment and version from dispatch payload
+      - name: Set environment from dispatch
+        run: |
+          echo "DEPLOY_ENV=${{ github.event.client_payload.env }}" >> $GITHUB_ENV
+          echo "VERSION=${{ github.event.client_payload.version }}" >> $GITHUB_ENV
+          echo "Deploying version: ${{ github.event.client_payload.version }}"
+          echo "Environment: ${{ github.event.client_payload.env }}"
+          
+      - name: Download a Build Artifact Version 
         uses: dawidd6/action-download-artifact@v2.26.1
         with:
           workflow: ci_pipeline.yml
           workflow_conclusion: success
           branch: main
-          name: version
+          name: version-${{ env.DEPLOY_ENV }}
           path: ./
 
-      - name: Read file and set variable
-        run: |
-          # Read file and set its value to a variable
-          FILE_CONTENT=$(cat ./version.txt)
-          # Set variable as an environment variable
-          echo "VERSION=$FILE_CONTENT" >> $GITHUB_ENV
 
       - name: Display variable value
         run: |
           # Display value of variable
           echo "My version value is $VERSION"
-
-      - name: Download a Build Artifact Environment File
-        uses: dawidd6/action-download-artifact@v2.26.1
-        with:
-          workflow: ci_pipeline.yml
-          workflow_conclusion: success
-          branch: main
-          name: env_vars
-          path: ./
-
-      - name: Read file and set variable
-        run: |
-          # Read file and set its value to a variable
-          FILE_CONTENT=$(cat ./env_vars.txt)
-          # Set variable as an environment variable
-          echo "DEPLOY_ENV=$FILE_CONTENT" >> $GITHUB_ENV
 
       - name: Display variable value
         run: |
@@ -75,9 +54,7 @@ jobs:
         uses: dawidd6/action-download-artifact@v2.26.1
         with:
           workflow: ci_pipeline.yml
-          workflow_conclusion: success
-          branch: main
-          name: build
+          name: build-${{ env.DEPLOY_ENV }}
           path: ./build/
 
       - name: Create and switch to a temporary deployment branch

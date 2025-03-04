@@ -29,16 +29,6 @@ jobs:
           echo "Deploying version: ${{ github.event.client_payload.version }}"
           echo "Environment: ${{ github.event.client_payload.env }}"
           
-      - name: Download a Build Artifact Version 
-        uses: dawidd6/action-download-artifact@v2.26.1
-        with:
-          workflow: ci_pipeline.yml
-          workflow_conclusion: success
-          branch: main
-          name: version-${{ env.DEPLOY_ENV }}
-          path: ./
-
-
       - name: Display variable value
         run: |
           # Display value of variable

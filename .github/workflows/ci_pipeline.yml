@@ -123,10 +123,15 @@ jobs:
           draft: false
           prerelease: false
 
+   # Get short SHA first
+    - name: Get short SHA
+      id: short-sha
+      run: echo "SHORT_SHA=$(git rev-parse --short ${{ github.sha }})" >> $GITHUB_OUTPUT
+    
     # Trigger CD workflow using repository dispatch          
     - name: Trigger deployment
       uses: peter-evans/repository-dispatch@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         event-type: build-completed
-        client-payload: '{"short_hash": "$(git rev-parse --short ${{ github.sha }})", "commit_hash": "${{ github.sha }}", "commit_message": "${{ github.event.head_commit.message }}", "branch": "${{ github.ref_name }}", "env": "${{ env.DEPLOY_ENV }}", "version": "${{ env.VERSION }}"}'
+        client-payload: '{"short_hash": "${{ steps.short-sha.outputs.SHORT_SHA }}", "commit_hash": "${{ github.sha }}", "commit_message": "${{ github.event.head_commit.message }}", "branch": "${{ github.ref_name }}", "env": "${{ env.DEPLOY_ENV }}", "version": "${{ env.VERSION }}"}'

@@ -23,10 +23,10 @@ The first thing you need to do in order to be able to use the tools in forecast-
 We recommmend using Jupyter notebooks for interactive computing, but you can also import forecast-workflow tools in a plain old python script as well (see code blocks below).
 
 1. Log onto the CIROH VM using Remote Desktop Viewer or similar software
-2. Open a new terminal and `cd` to your `forecast-workflow` directory
-3. Activate the `forecast` mamba environment with `mamba activate /data/condaEnvs/forecast`
+2. Open a new terminal and `cd` to the top level project directory for your python scripts (it could be your home directory)
+3. Activate the `standard` mamba environment with `mamba activate standard`
 4. Run `jupyter lab` to launch Jupyter
-5. If starting a new notebook, click on the kernel called "forecast" underneath the "Notebooks" banner
+5. If starting a new notebook, click on a kernel underneath the "Notebooks" banner
 6. Or if you have a notebook you're working on, simply open that one and pick up where you left off!
 
 #### Add the repo to your python path variable

@@ -43,12 +43,11 @@ import VideoPlayer from '/src/components/VideoPlayer.js';
 
 ## Step 1: Data Preprocessing
 
-### Clone and Configure Data Preprocess
+### Install and Configure Data Preprocess
 ```bash
-# Clone the repository
-git clone https://github.com/CIROH-UA/NGIAB_data_preprocess
 
-# Navigate to project directory
+# Create a directory where you want to install and navigate to that directory (e.g., NGIAB_data_preprocess)
+mkdir NGIAB_data_preprocess
 cd NGIAB_data_preprocess
 
 # Create and activate virtual environment

@@ -68,16 +68,6 @@ jobs:
             echo "Deploying to STAGING environment"
           fi
 
-      # Set the correct environment for deployment
-      - name: Use deployment environment
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const environment = process.env.ENVIRONMENT;
-            core.info(`Setting environment to: ${environment}`);
-            core.exportVariable('ENVIRONMENT', environment);
- 
-
       - name: GitHub Pages deployment
         uses: JamesIves/github-pages-deploy-action@v4.6.1
         with:

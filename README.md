@@ -17,7 +17,7 @@ The production environment is available at:
 The staging environment is used for testing and validating changes before deploying to production. This allows contributors to preview their changes in a live environment without affecting the production site.
 [https://docs.ciroh.org/docuhub-staging/](https://docs.ciroh.org/docuhub-staging/)
 
-### How to Contribute
+## How to Contribute
 
 1. **Edit Content**: See something that needs to be updated? Click on the "Edit page" button at the bottom of the page to make direct changes to the documentation.
 

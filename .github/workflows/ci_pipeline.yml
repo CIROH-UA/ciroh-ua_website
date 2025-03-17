@@ -57,22 +57,15 @@ jobs:
         fi
           
     - name: Configure baseUrl
+      if: ${{ env.DEPLOY_ENV == 'staging' }}
       run: |
         # Create a backup of the original config
         cp docusaurus.config.js docusaurus.config.js.bak
         
         # Use sed to replace the baseUrl value
-        if [[ "${{ env.DEPLOY_ENV }}" == "staging" ]]; then
-          echo "Setting baseUrl for staging"
-          sed -i 's|baseUrl: '\''\/'\''|baseUrl: '\''/docuhub-staging/'\''|g' docusaurus.config.js
-          # Or if your config uses double quotes:
-          sed -i 's|baseUrl: "\/"|baseUrl: "\/docuhub-staging\/"|g' docusaurus.config.js
-        else
-          echo "Setting baseUrl for production"
-          sed -i 's|baseUrl: '\''\/[^'\'']*'\''|baseUrl: '\''\/'\''|g' docusaurus.config.js
-          # Or if your config uses double quotes:
-          sed -i 's|baseUrl: "\/[^"]*"|baseUrl: "\/"|g' docusaurus.config.js
-        fi
+        echo "Setting baseUrl for staging"
+        sed -i 's|baseUrl: '\''\/'\''|baseUrl: '\''/docuhub-staging/'\''|g' docusaurus.config.js
+        sed -i 's|baseUrl: "\/"|baseUrl: "\/docuhub-staging\/"|g' docusaurus.config.js
         
         # Show the changed config
         echo "Modified docusaurus.config.js:"
@@ -81,25 +74,6 @@ jobs:
     # Build the site
     - name: Build website
       run: npm run build
-
-    - name: Create version file
-      run: |
-        echo "Build version:${{env.VERSION}}"
-        echo "${{env.VERSION}}"  > version.txt
-        
-    - uses: actions/upload-artifact@v4
-      with:
-        name: version-${{ env.DEPLOY_ENV }}
-        path: version.txt
-
-    - name: Create environment file
-      run: |
-        echo "${{ env.DEPLOY_ENV }}" > env_vars.txt
-        
-    - uses: actions/upload-artifact@v4
-      with:
-        name: env_vars-${{ env.DEPLOY_ENV }}
-        path: env_vars.txt
         
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4

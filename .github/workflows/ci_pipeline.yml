@@ -6,10 +6,12 @@ name: ciroh-ua-website-ci
 on:
   push:
     branches: ["main"]
+    tags:
+      - 'production-*'
   workflow_call:
     # Map the workflow outputs to job outputs
     # https://docs.github.com/en/github-ae@latest/actions/using-workflows/reusing-workflows
-  
+  workflow_dispatch:
       
 jobs:
   build:
@@ -34,34 +36,76 @@ jobs:
       id: version
       run: echo "::set-output name=VERSION::$(date +'%Y%m%d-%H%M%S')"
 
-    - name: Create version file
+    - name: Install dependencies
+      run: npm ci
+      
+    # Determine if this is a production build from tag
+    - name: Determine build type and version
+      id: build-info
       run: |
-        echo "Build version:${{steps.version.outputs.VERSION}}"
-        echo "${{steps.version.outputs.VERSION}}"  > version.txt
-   
-    - run: npm ci
-    - run: npm run build --if-present
-    - uses: actions/upload-artifact@v4
-      with:
-        name: version
-        path: version.txt
+        if [[ "${{ github.ref }}" == refs/tags/production-* ]]; then
+          TAG="${{ github.ref }}"
+          VERSION=${TAG#refs/tags/production-}
+          echo "DEPLOY_ENV=production" >> $GITHUB_ENV
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "Building for PRODUCTION environment"
+        else
+          VERSION=$(date +'%Y%m%d-%H%M%S')
+          echo "DEPLOY_ENV=staging" >> $GITHUB_ENV
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "Building for STAGING environment"
+        fi
+          
+    - name: Configure baseUrl
+      if: ${{ env.DEPLOY_ENV == 'staging' }}
+      run: |
+        # Create a backup of the original config
+        cp docusaurus.config.js docusaurus.config.js.bak
+        
+        # Use sed to replace the baseUrl value
+        echo "Setting baseUrl for staging"
+        sed -i 's|baseUrl: '\''\/'\''|baseUrl: '\''/docuhub-staging/'\''|g' docusaurus.config.js
+        sed -i 's|baseUrl: "\/"|baseUrl: "\/docuhub-staging\/"|g' docusaurus.config.js
+        
+        # Show the changed config
+        echo "Modified docusaurus.config.js:"
+        cat docusaurus.config.js
+
+    # Build the site
+    - name: Build website
+      run: npm run build
+        
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4
       with:
         # Artifact name
-        name: build
+        name: build-${{ env.DEPLOY_ENV }}
         #name: ${{env.GitVersion_SemVer}}
         # A file, directory or wildcard pattern that describes what to upload
         path: build/
         # The desired behavior if no files are found using the provided path.
 
     - name: Create release
+      if: ${{ env.DEPLOY_ENV == 'production' }}
       uses: actions/create-release@v1
       id: create_release
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-          tag_name: v${{steps.version.outputs.VERSION}}
-          release_name: Release v${{steps.version.outputs.VERSION}}
+          tag_name: v${{env.VERSION}}
+          release_name: Release v${{env.VERSION}}
           draft: false
           prerelease: false
+
+   # Get short SHA first
+    - name: Get short SHA
+      id: short-sha
+      run: echo "SHORT_SHA=$(git rev-parse --short ${{ github.sha }})" >> $GITHUB_OUTPUT
+    
+    # Trigger CD workflow using repository dispatch          
+    - name: Trigger deployment
+      uses: peter-evans/repository-dispatch@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        event-type: build-completed
+        client-payload: '{"short_hash": "${{ steps.short-sha.outputs.SHORT_SHA }}", "commit_hash": "${{ github.sha }}", "commit_message": "${{ github.event.head_commit.message }}", "branch": "${{ github.ref_name }}", "env": "${{ env.DEPLOY_ENV }}", "version": "${{ env.VERSION }}"}'

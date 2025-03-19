@@ -36,54 +36,54 @@ Community NextGen is a community-accessible verison of NextGen Water Resources M
       <th>DataStreamCLI</th>
     </tr>
   </thead>
-  <tbody style={{'text-align':'left'}}>
+  <tbody>
     <tr>
       <th>Key Features</th>
-      <th>
+      <td>
         - Specializes in initial data preparation
         - Handles subsetting and forcing processing
         - Supports basic data processing tasks
         - Helps with running NGIAB
-      </th>
-      <th>
+      </td>
+      <td>
         - Focused specifically on model execution
         - Core engine for running simulations
         - Does not handle pre/post-processing tasks
-      </th>
-      <th>
+      </td>
+      <td>
         - Handles both input and output processing
         - Supports full workflow, from data preparation to cloud deployment
-      </th>
-      <th>
+      </td>
+      <td>
         - Focused on analysis and validation
         - Supports data processing and output analysis
-      </th>
-      <th>
+      </td>
+      <td>
         - Specialized in visualization tasks
         - Supports output analysis
         - Visual representation of results
-      </th>
+      </td>
     </tr>
     <tr>
       <th>NOAA-OWP Tools/Libraries Utilized</th>
-      <th>
+      <td>
         - t-route
         - htdrotools
         - hydrofabric tools
-      </th>
-      <th>
-      </th>
-      <th>
+      </td>
+      <td>
+      </td>
+      <td>
         Built to evaluate OWP model outputs
-      </th>
-      <th>
+      </td>
+      <td>
         Designed for OWP hydrofabric visualization
-      </th>
-      <th>
+      </td>
+      <td>
         - ngen-cal
         - t-route
         - hydrofabric tools
-      </th>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -200,44 +200,44 @@ Community NextGen is a community-accessible verison of NextGen Water Resources M
   </thead>
   <tbody>
     <tr>
-      <th>Docker</th>
-      <th>-</th>
-      <th>✓</th>
-      <th>✓</th>
-      <th>✓</th>
-      <th>✓</th>
+      <td>Docker</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
     </tr>
     <tr>
-      <th>Python Package (pip)</th>
-      <th>✓</th>
-      <th>✓</th>
-      <th>✓</th>
-      <th>-</th>
-      <th>-</th>
+      <td>Python Package (pip)</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
-      <th>Web Interface</th>
-      <th>✓</th>
-      <th>-</th>
-      <th>-</th>
-      <th>✓</th>
-      <th>-</th>
+      <td>Web Interface</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>-</td>
     </tr>
     <tr>
-      <th>Notebook (ipynb)</th>
-      <th>-</th>
-      <th>-</th>
-      <th>✓</th>
-      <th>-</th>
-      <th>-</th>
+      <td>Notebook (ipynb)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
-      <th>Singularity (HPC)</th>
-      <th>-</th>
-      <th>✓</th>
-      <th>-</th>
-      <th>-</th>
-      <th>-</th>
+      <td>Singularity (HPC)</td>
+      <td>-</td>
+      <td>✓</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
     </tr>
   </tbody>
 </table>

@@ -1,52 +1,78 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: ciroh-ua-website-ci-pr-validation
+name: PR Preview with Codespaces
 
 on:
   pull_request:
-    branches: ["*"]
-      
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [20.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-  
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-      with:
-       fetch-depth: 0
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-        
-    - name: Generate version
-      id: version
-      run: echo "::set-output name=VERSION::$(date +'%Y%m%d-%H%M%S')"
+    types: [opened, synchronize, reopened]
 
-    - name: Create version file
-      run: |
-        echo "Build version:${{steps.version.outputs.VERSION}}"
-        echo "${{steps.version.outputs.VERSION}}"  > version.txt
-   
-    - run: npm ci
-    - run: npm run build --if-present
-    - uses: actions/upload-artifact@v4
-      with:
-        name: version
-        path: version.txt
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        # Artifact name
-        name: build
-        #name: ${{env.GitVersion_SemVer}}
-        # A file, directory or wildcard pattern that describes what to upload
-        path: build/
-        # The desired behavior if no files are found using the provided path.
+jobs:
+  validate-and-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Validate build
+        run: npm run build
+        
+      - name: Add Codespaces Preview Comment
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo, number } = context.issue;
+            const branch = context.payload.pull_request.head.ref;
+            const repoFullName = context.payload.repository.full_name;
+            
+            const codespaceUrl = `https://github.com/codespaces/new?hide_repo_select=true&ref=${branch}&repo=${repoFullName}`;
+            
+            const commentMarker = '<!-- PR-CODESPACES-PREVIEW -->';
+            const commentBody = `${commentMarker}
+            ## 🚀 Preview this PR with GitHub Codespaces
+            
+            You can preview these changes instantly using GitHub Codespaces (free tier includes 60-90 hours/month):
+            
+            [📝 Open in Codespaces](${codespaceUrl})
+            
+            When the Codespace loads:
+            1. Wait for the development server to start automatically
+            2. Click "Open in Browser" when prompted or find port 3000 in the Ports tab
+            `;
+            
+            // Check for existing comment
+            const { data: comments } = await github.rest.issues.listComments({
+              owner,
+              repo,
+              issue_number: number,
+            });
+            
+            const existingComment = comments.find(comment => comment.body.includes(commentMarker));
+            
+            if (existingComment) {
+              // Update existing comment
+              await github.rest.issues.updateComment({
+                owner,
+                repo,
+                comment_id: existingComment.id,
+                body: commentBody
+              });
+            } else {
+              // Create new comment
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: number,
+                body: commentBody
+              });
+            }
+          

@@ -24,3 +24,5 @@ More details about “Design and implementation of a BigQuery dataset and applic
 3. Estimate your query before running the actual query. If you're not sure this step, please contact [ciroh it support](mailto:ciroh-it-support@ua.edu).
 
 For implementation detail, please refer to [this repository](https://github.com/CIROH-UA/api-nwm-gcp).
+
+News Blog: https://docs.ciroh.org/blog/September%20Monthly%20Blog%20Update

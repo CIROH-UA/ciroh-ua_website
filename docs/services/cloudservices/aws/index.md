@@ -28,9 +28,9 @@ CIROH Cloud Hosting services include:
 - Creation of AWS subaccounts for CIROH consortium members and partners.
 - Project PI contact identity creation and access (AWS IAM)
 
-We encourage PI of the project to start here: (select Public Cloud and fill out details for AWS)
+We encourage PI of the project to start here:
 
-<a class="button button--active button--primary" href="../../../../docs/services/access"> Infrastructure Request Form</a>
+<a class="button button--active button--primary" href="../../../../docs/services/access#accessing-public-cloud-services"> Infrastructure Request Form</a>
 
 ---
 
@@ -41,7 +41,7 @@ CIROH Consortium member or partner is responsible for:
 
 
 :::note
-Please refer [link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?q=is%3Aissue+is%3Aclosed+label%3Aaws) for references to submitted forms.
+Please refer to [this link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?q=is%3Aissue+is%3Aclosed+label%3Aaws) for references to submitted forms.
 :::
 
 

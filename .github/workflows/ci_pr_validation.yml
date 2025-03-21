@@ -25,54 +25,28 @@ jobs:
       - name: Validate build
         run: npm run build
         
-      - name: Add Codespaces Preview Comment
-        uses: actions/github-script@v6
+      - name: Add PR Preview Comment
+        uses: marocchino/sticky-pull-request-comment@v2
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const { owner, repo, number } = context.issue;
-            const branch = context.payload.pull_request.head.ref;
-            const repoFullName = context.payload.repository.full_name;
+          header: pr-preview
+          message: |
+            ## 🔍 Preview Options for this PR
             
-            const codespaceUrl = `https://github.com/codespaces/new?hide_repo_select=true&ref=${branch}&repo=${repoFullName}`;
+            ### Option 1: Clone and run locally
+            ```bash
+            git clone https://github.com/${{ github.repository }}.git
+            cd $(basename ${{ github.repository }})
+            git checkout ${{ github.head_ref }}
+            npm install
+            npm start
+            ```
+            Then open http://localhost:3000 in your browser.
             
-            const commentMarker = '<!-- PR-CODESPACES-PREVIEW -->';
-            const commentBody = `${commentMarker}
-            ## 🚀 Preview this PR with GitHub Codespaces
-            
-            You can preview these changes instantly using GitHub Codespaces (free tier includes 60-90 hours/month):
-            
-            [📝 Open in Codespaces](${codespaceUrl})
-            
-            When the Codespace loads:
-            1. Wait for the development server to start automatically
-            2. Click "Open in Browser" when prompted or find port 3000 in the Ports tab
-            `;
-            
-            // Check for existing comment
-            const { data: comments } = await github.rest.issues.listComments({
-              owner,
-              repo,
-              issue_number: number,
-            });
-            
-            const existingComment = comments.find(comment => comment.body.includes(commentMarker));
-            
-            if (existingComment) {
-              // Update existing comment
-              await github.rest.issues.updateComment({
-                owner,
-                repo,
-                comment_id: existingComment.id,
-                body: commentBody
-              });
-            } else {
-              // Create new comment
-              await github.rest.issues.createComment({
-                owner,
-                repo,
-                issue_number: number,
-                body: commentBody
-              });
-            }
-          
+            ### Option 2: Local development with development server
+            If you want to preview this PR from a local development environment:
+            ```bash
+            git fetch origin pull/${{ github.event.pull_request.number }}/head:pr-${{ github.event.pull_request.number }}
+            git checkout pr-${{ github.event.pull_request.number }}
+            npm install
+            npm start
+            ```

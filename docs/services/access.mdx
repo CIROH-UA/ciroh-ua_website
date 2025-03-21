@@ -2,15 +2,17 @@
 sidebar_position: 2
 title: "Infrastructure Access"
 ---
-import Drawio from '@theme/Drawio'
-import simpleGraph from '!!raw-loader!@site/static/files/ciroh-resource-flowchart.drawio'
+<!-- import Drawio from '@theme/Drawio' -->
+<!-- import simpleGraph from '!!raw-loader!@site/static/files/ciroh-resource-flowchart.drawio' -->
 import FoldableButton from "@site/src/components/foldable.js"
 
 # Infrastructure Access Guide
 
 CIROH provides access to both public cloud and on-premises infrastructure to support the research projects of its members and partners.
-<Drawio content={simpleGraph} />
+<!-- <Drawio content={simpleGraph} /> -->
 ---
+
+## Selecting a platform
 
 **What is your primary requirement?**
 <FoldableButton text="High Performance Computing">
@@ -41,17 +43,24 @@ CIROH provides access to both public cloud and on-premises infrastructure to sup
     **What kind of computing environment are you looking for?**
     <FoldableButton text="General Purpose">
         <div class="indent-wrapper">
-            CIROH AWS Instance Link
+            CIROH provides researchers with access to enterprise-level AWS cloud services.
+
+            <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="docs/services/cloudservices/aws/">CIROH AWS Account info</a>
         </div>
     </FoldableButton>
     <FoldableButton text="Google-Specific Services">
         <div class="indent-wrapper">
             CIROH Google VM Link
+            CIROH provides researchers with access to enterprise-level Google Cloud services.
+            
+            <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="docs/services/cloudservices/google cloud/">CIROH Google Account info</a>
         </div>
     </FoldableButton>
     <FoldableButton text="Interactive Computing Environment">
         <div class="indent-wrapper">
-            CIROH JupyterHub Link
+            In collaboration with 2i2c, CIROH offers a dedicated JupyterHub environment on Google Cloud specifically designed for hydrological research.
+
+            <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="docs/services/cloudservices/ciroh jupyterhub/">CIROH JupyterHub info</a>
         </div>
     </FoldableButton>
     ---
@@ -59,24 +68,30 @@ CIROH provides access to both public cloud and on-premises infrastructure to sup
 
 <FoldableButton text="Data Storage and Archival">
     <div class="indent-wrapper">
-        HydroShare Link
+        Hydroshare is a collaborative, general-purpose repository for data, models, and other research products.
+
+        <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="docs/services/cloudservices/ciroh jupyterhub/">HydroShare info</a>
         
-        CIROH AWS Buckets Link
-        
-        CIROH Google Buckets Link
+        Additionally, CIROH provides researchers with access to data buckets for use with AWS and Google Cloud services.
+
+        <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="docs/services/cloudservices/aws/">CIROH AWS Account info</a>
+        <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="docs/services/cloudservices/google cloud/">CIROH Google Account info</a>
     </div>
     ---
 </FoldableButton>
 
 <FoldableButton text="Data-Intensive Computing">
     <div class="indent-wrapper">
-        CIROH AWS Instance Link
-        
-        CIROH Google VMs Link
+        CIROH's AWS instance and Google VMs both offer solid options for data-intensive processes.
+
+        <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="docs/services/cloudservices/aws/">CIROH AWS Account info</a>
+        <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="docs/services/cloudservices/google cloud/">CIROH Google Account info</a>
     </div>
-    ---
 </FoldableButton>
 
+---
+
+<!-- TODO: Streamline and flesh out this section. -->
 
 ## Public Cloud
 

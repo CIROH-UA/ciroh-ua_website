@@ -4,11 +4,79 @@ title: "Infrastructure Access"
 ---
 import Drawio from '@theme/Drawio'
 import simpleGraph from '!!raw-loader!@site/static/files/ciroh-resource-flowchart.drawio'
+import FoldableButton from "@site/src/components/foldable.js"
 
 # Infrastructure Access Guide
 
 CIROH provides access to both public cloud and on-premises infrastructure to support the research projects of its members and partners.
 <Drawio content={simpleGraph} />
+---
+
+**What is your primary requirement?**
+<FoldableButton text="High Performance Computing">
+    **Which HPC platform are you planning to use?**
+    <FoldableButton text="Pantarhei HPC">
+        <div class="indent-wrapper">
+            Pantarhei offers CPU, GPU, and FPGA nodes.
+
+            <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="docs/services/on-prem/Pantarhei/">Get started with Pantarhei</a>
+        </div>
+    </FoldableButton>
+    <FoldableButton text="Wukong HPC">
+        <div class="indent-wrapper">
+            Wukong offers CPU and GPU nodes.
+
+            <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="docs/services/on-prem/Wukong/">Get started with Wukong</a>
+        </div>
+    </FoldableButton>
+    <FoldableButton text="CIROH VMStack">
+        <div class="indent-wrapper">
+            Information on CPU options for this platform will be available soon.
+        </div>
+    </FoldableButton>
+    ---
+</FoldableButton>
+
+<FoldableButton text="Cloud Computing">
+    **What kind of computing environment are you looking for?**
+    <FoldableButton text="General Purpose">
+        <div class="indent-wrapper">
+            CIROH AWS Instance Link
+        </div>
+    </FoldableButton>
+    <FoldableButton text="Google-Specific Services">
+        <div class="indent-wrapper">
+            CIROH Google VM Link
+        </div>
+    </FoldableButton>
+    <FoldableButton text="Interactive Computing Environment">
+        <div class="indent-wrapper">
+            CIROH JupyterHub Link
+        </div>
+    </FoldableButton>
+    ---
+</FoldableButton>
+
+<FoldableButton text="Data Storage and Archival">
+    <div class="indent-wrapper">
+        HydroShare Link
+        
+        CIROH AWS Buckets Link
+        
+        CIROH Google Buckets Link
+    </div>
+    ---
+</FoldableButton>
+
+<FoldableButton text="Data-Intensive Computing">
+    <div class="indent-wrapper">
+        CIROH AWS Instance Link
+        
+        CIROH Google VMs Link
+    </div>
+    ---
+</FoldableButton>
+
 
 ## Public Cloud
 

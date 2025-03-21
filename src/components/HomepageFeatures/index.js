@@ -1159,22 +1159,43 @@ export default function HomepageFeatures() {
           <div className={"row"} style={{ paddingTop: 70 }}>
             <div className="col col--4" style={{ textAlign: "center" }}>
               <img
+                className={`${styles.imagecontainer} ${styles.lightImage}`}
                 alt="noaaImage"
                 src="img/noaalogo.png"
+                style={{ height: 145, width: 145, marginTop: 15 }}
+              />
+              <img
+                className={`${styles.imagecontainer} ${styles.darkImage}`}
+                alt="noaaImage"
+                src="img/noaalogo-white.png"
                 style={{ height: 145, width: 145, marginTop: 15 }}
               />
             </div>
             <div className="col col--4" style={{ textAlign: "center" }}>
               <img
+                className={`${styles.imagecontainer} ${styles.lightImage}`}
                 alt="awiImage"
                 src="img/awi.png"
+                style={{ marginTop: 45, marginBottom: 45 }}
+              />
+              <img
+                className={`${styles.imagecontainer} ${styles.darkImage}`}
+                alt="awiImage"
+                src="img/awi-white.png"
                 style={{ marginTop: 45, marginBottom: 45 }}
               />
             </div>
             <div className="col col--4" style={{ textAlign: "center" }}>
               <img
+                className={`${styles.imagecontainer} ${styles.lightImage}`}
                 alt="cirohImage"
-                src="img/cirohlogo-trans.png"
+                src="img/cirohlogo-transparent.png"
+                style={{ height: 145, width: 145, marginTop: 15 }}
+              />
+              <img
+                className={`${styles.imagecontainer} ${styles.darkImage}`}
+                alt="cirohImage"
+                src="img/cirohlogo-white.png"
                 style={{ height: 145, width: 145, marginTop: 15 }}
               />
             </div>

@@ -63,3 +63,8 @@ To set up the project locally, follow these steps:
    
 6. **View the Site**:
    Open your browser and navigate to http://localhost:3000 to see the local version of DocuHub.
+
+## How to validate PR locally
+
+Go to GitHub Actions and Download the build folder from PR validate Action. Unzip the folder and run below command.
+$ npx http-server

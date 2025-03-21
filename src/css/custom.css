@@ -207,3 +207,14 @@
   margin-bottom: 2rem !important;
   margin-top: 0rem !important;
 }
+
+.indent-wrapper {
+  background-color: #343434;
+  border-left-style: solid;
+  border-color: #999999;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+}

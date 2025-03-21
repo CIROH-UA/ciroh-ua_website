@@ -31,7 +31,7 @@ CIROH Cloud Hosting services include:
 
 We encourage PI of the project to start here: (select Public Cloud and fill out details for Google Cloud)
 
-<a class="button button--active button--primary" href="../../../../docs/services/access"> Infrastructure Request Form</a>
+<a class="button button--active button--primary" href="../../../../docs/services/access#accessing-public-cloud-services"> Infrastructure Request Form</a>
 
 ---
 
@@ -42,7 +42,7 @@ CIROH Consortium member or partner is responsible for:
 
 
 :::note
-Please refer [link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?q=is:issue+is:closed+label:google) for references to submitted forms.
+Please refer to [this link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?q=is:issue+is:closed+label:google) for references to submitted forms.
 :::
 
 

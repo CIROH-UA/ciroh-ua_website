@@ -3,12 +3,12 @@ sidebar_position: 1
 title: "FIMPEF"
 description: "FIMPEF"
 tags:
-    - FIM evaluation,
-    - Large scale evaluation, 
-    - cloud computing,
+    - FIM evaluation
+    - Large scale evaluation 
+    - cloud computing
     - convex hull
     - smallest extent
-    - CONUS, 
+    - CONUS
     - fluvial flood
 ---
 

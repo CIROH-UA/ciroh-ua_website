@@ -32,7 +32,7 @@ import VideoPlayer from '/src/components/VideoPlayer.js';
 
 <VideoPlayer url="https://youtu.be/s5jz6Hvn-6s"  />
 ### Video Contents Timeline
-(System: Using Mac M1 Max Laptop)
+(System: Using Mac M4 Max Laptop)
 
 - 0:00 - Introduction
 - 0:10 - Data Preprocessing Setup

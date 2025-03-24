@@ -207,3 +207,11 @@
   margin-bottom: 2rem !important;
   margin-top: 0rem !important;
 }
+
+.hide {
+  display: none;
+}
+
+.display {
+  display: flex;
+}

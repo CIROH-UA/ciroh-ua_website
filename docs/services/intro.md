@@ -24,7 +24,7 @@ This translates into a powerful platform that includes:
 
 The CIROH CyberInfrastructure is meticulously designed to empower CIROH researchers and innovators to achieve groundbreaking results in hydrology. <strong>Join us and unlock the full potential of your research today!</strong>
 
-<a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="docs/services/access/">Get started</a>
+<a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="/docs/services/access/">Get started</a>
 
 ---
 

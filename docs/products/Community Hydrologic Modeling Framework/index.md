@@ -24,7 +24,7 @@ Community NextGen is a community-accessible verison of NextGen Water Resources M
 
 ---
 
-## NGIAB Tools at a Glance
+## NGIAB Platform at a Glance
 
 import FoldableButton from "@site/src/components/foldable.js"
 

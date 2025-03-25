@@ -35,28 +35,3 @@ jobs:
           path: build/
           # The desired behavior if no files are found using the provided path.
         
-      - name: Add PR Preview Comment
-        uses: marocchino/sticky-pull-request-comment@v2
-        with:
-          header: pr-preview
-          message: |
-            ## 🔍 Preview Options for this PR
-            
-            ### Option 1: Clone and run locally
-            ```bash
-            git clone https://github.com/${{ github.repository }}.git
-            cd $(basename ${{ github.repository }})
-            git checkout ${{ github.head_ref }}
-            npm install
-            npm start
-            ```
-            Then open http://localhost:3000 in your browser.
-            
-            ### Option 2: Local development with development server
-            If you want to preview this PR from a local development environment:
-            ```bash
-            git fetch origin pull/${{ github.event.pull_request.number }}/head:pr-${{ github.event.pull_request.number }}
-            git checkout pr-${{ github.event.pull_request.number }}
-            npm install
-            npm start
-            ```

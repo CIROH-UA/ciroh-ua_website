@@ -47,7 +47,8 @@ import FoldableButton from "@site/src/components/foldable.js"
             - Provides GUI for subsetting
             - Specializes in initial data preparation
             - Handles subsetting and forcing processing
-            - Supports basic data processing tasks            
+            - Supports basic data processing tasks    
+            - Supports NextGen BMI config file generation
             - Helps with running NGIAB            
         </td>
         <td>
@@ -66,8 +67,8 @@ import FoldableButton from "@site/src/components/foldable.js"
         <td>
             - Specializes in initial data preparation
             - Can subset via hfsubset if requested
-            - Handles subsetting and forcing processing
-            - Supports basic data processing tasks
+            - Handles forcing processing from Amazon and Google cloud providers
+            - Supports NextGen BMI config file generation
             - Helps with running NGIAB
         </td>
         </tr>

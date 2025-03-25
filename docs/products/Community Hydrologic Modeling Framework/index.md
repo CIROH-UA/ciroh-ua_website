@@ -44,10 +44,11 @@ import FoldableButton from "@site/src/components/foldable.js"
         <tr>
         <th>Key Features</th>
         <td>
+            - Provides GUI for subsetting
             - Specializes in initial data preparation
             - Handles subsetting and forcing processing
-            - Supports basic data processing tasks
-            - Helps with running NGIAB
+            - Supports basic data processing tasks            
+            - Helps with running NGIAB            
         </td>
         <td>
             - Focused specifically on model execution
@@ -63,30 +64,34 @@ import FoldableButton from "@site/src/components/foldable.js"
             - Supports data processing and output analysis
         </td>
         <td>
-            - Specialized in visualization tasks
-            - Supports output analysis
-            - Visual representation of results
+            - Specializes in initial data preparation
+            - Can subset via hfsubset if requested
+            - Handles subsetting and forcing processing
+            - Supports basic data processing tasks
+            - Helps with running NGIAB
         </td>
         </tr>
         <tr>
         <th>NOAA-OWP Tools/Libraries Utilized</th>
-        <td>
-            - t-route
-            - htdrotools
+        <td>            
+            - hydrotools
             - hydrofabric tools
         </td>
         <td>
-        </td>
-        <td>
-            Built to evaluate OWP model outputs
-        </td>
-        <td>
-            Designed for OWP hydrofabric visualization
-        </td>
-        <td>
-            - ngen-cal
+            - ngen
             - t-route
-            - hydrofabric tools
+            - cfe
+            - noah-owp-modular
+            - lstm
+        </td>
+        <td>
+            Built to evaluate model outputs
+        </td>
+        <td>
+            Designed for hydrofabric visualization
+        </td>
+        <td>
+            - hydrofabric data as an input
         </td>
         </tr>
     </tbody>
@@ -232,7 +237,7 @@ import FoldableButton from "@site/src/components/foldable.js"
       </tr>
       <tr>
         <td>Notebook (ipynb)</td>
-        <td>-</td>
+        <td>✓</td>
         <td>-</td>
         <td>✓</td>
         <td>-</td>

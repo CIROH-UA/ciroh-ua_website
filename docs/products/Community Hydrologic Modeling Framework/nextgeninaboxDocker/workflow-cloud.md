@@ -45,7 +45,7 @@ The first step involves preparing the necessary input data for the NGIAB model:
 
 1. **Access the CIROH JupyterHub**
    - Navigate to [CIROH JupyterHub](https://ciroh.awi.2i2c.cloud/)
-   - If you need access, [request it here](docs/services/cloudservices/ciroh%20jupyterhub/#how-to-get-access-to-these-)
+   - If you need access, [request it here](/docs/services/cloudservices/ciroh%20jupyterhub/#how-to-get-access-to-these-environments)
 
 2. **Select the Appropriate Environment**
    - When starting your server, choose "NGIAB Data Preprocess" from the dropdown menu

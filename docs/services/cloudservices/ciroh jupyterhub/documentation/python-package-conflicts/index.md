@@ -13,8 +13,7 @@ tags:
 
 ### Overview
 
-When Python packages are installed in your home directory (`~/.local`) instead of the system environment, they may conflict with packages provided by your JupyterHub image.. These local installations take precedence over system or environment packages, potentially causing version mismatches and unexpected behavior.
-
+When Python packages are installed in your home directory (`~/.local`) instead of the system environment, they may conflict with packages provided by your JupyterHub image. These local installations take precedence over system or environment packages, potentially causing version mismatches and unexpected behavior.
 ### Common causes include:
 
 - Running `pip install --user <package-name>`

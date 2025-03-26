@@ -1,4 +1,24 @@
 {
+	"March 2025 Update":  [
+			{
+			  "type": "feature",
+			  "title": "NGIAB-data-preprocess",
+			  "description": "🚀 New Release v4.0.5! This month's update focuses on speed and reliability! We've improved initial setup times by switching to boto3 for slightly faster S3 hydrofabric downloads. Plus, we've resolved map display issues by updating our JavaScript dependencies.",
+			  "link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2025-03-01&until=2025-03-26"
+			},
+			{
+			  "type": "feature",
+			  "title": "NGIAB-CloudInfra: NGIAB Docker Image",
+			  "description": "⚡Cross-Platform Compatibility for TEEHR! The new runTeehr.sh script now natively supports both ARM64 and AMD64 platforms.",
+			  "link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-03-01&until=2025-03-26"
+			}, 
+			{
+			  "type": "feature",
+			  "title": " ngen-datastream",
+			  "description": "✨ Added CIROH Community Hydrofabric Testing! Automated CI tests are added for each VPU to ensure the geoppackage is compatible with DataStreamCLI, NextGen and NGIAB. ",
+			  "link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2025-03-01&until=2025-03-26"
+			}
+	],
 	"February 2025 Update":  [
 			{
 			  "type": "feature",

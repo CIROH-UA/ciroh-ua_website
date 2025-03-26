@@ -24,8 +24,8 @@ const NewsComponent = ({ data, isLatest }) => {
       {/* TODO: dark mode/light mode detection */}
       {isExpanded && 
         <div style={{'display':'flex','flexDirection':'row','justifyContent':'center','alignItems':'center'}}>
-          <img class={themes.darkImage} alt="CIROH logo" src="img/CIROH-Transparant.png" style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
-          <img class={themes.lightImage} alt="CIROH logo" src="img/CIROHlogo-trans.png" style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
+          <img class={themes.darkImage} alt="CIROH logo" src="img/cirohlogo-white.png" style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
+          <img class={themes.lightImage} alt="CIROH logo" src="img/cirohlogo-transparent.png" style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
           <div style={{'display':'flex','flexDirection':'column','justifyContent':'center','alignItems':'center'}}>
             <div style={{'display':'flex','flexDirection':'row','margin':'0','padding':'0'}}>
               <img class={themes.darkImage} alt="Wave graphic" src="img/news-sideline-dark.png" style={{'alignSelf':'center','height':'2rem'}}></img>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import themes from "./themes.module.css";
 
 const NewsComponent = ({ data, isLatest }) => {
   const [isExpanded, setIsExpanded] = useState(isLatest); // Expand only the latest
@@ -15,9 +16,32 @@ const NewsComponent = ({ data, isLatest }) => {
           className="pills__item pills__item--active"
           onClick={toggleExpand}
         >
-          {data.date}
+          {isExpanded ? "Click to collapse" : data.date + 's'}
         </li>
       </ul>
+
+
+      {/* TODO: dark mode/light mode detection */}
+      {isExpanded && 
+        <div style={{'display':'flex','flexDirection':'row','justifyContent':'center','alignItems':'center'}}>
+          <img class={themes.darkImage} alt="CIROH logo" src="img/CIROH-Transparant.png" style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
+          <img class={themes.lightImage} alt="CIROH logo" src="img/CIROHlogo-trans.png" style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
+          <div style={{'display':'flex','flexDirection':'column','justifyContent':'center','alignItems':'center'}}>
+            <div style={{'display':'flex','flexDirection':'row','margin':'0','padding':'0'}}>
+              <img class={themes.darkImage} alt="Wave graphic" src="img/news-sideline-dark.png" style={{'alignSelf':'center','height':'2rem'}}></img>
+              <img class={themes.lightImage} alt="Wave graphic" src="img/news-sideline-light.png" style={{'alignSelf':'center','height':'2rem'}}></img>
+              <div style={{'width':'2rem'}} />
+              <p style={{'fontSize':'2rem','margin':'0'}}>News</p>
+              <div style={{'width':'2rem'}} />
+              <img class={themes.darkImage} alt="Wave graphic" src="img/news-sideline-dark.png" style={{'alignSelf':'center','height':'2rem'}}></img>
+              <img class={themes.lightImage} alt="Wave graphic" src="img/news-sideline-light.png" style={{'alignSelf':'center','height':'2rem'}}></img>
+            </div>
+            <p style={{'fontSize':'3rem','margin':'0','textAlign':'center'}}><b>{data.date}s</b></p>
+            <img class={themes.darkImage} alt="Wave graphic" src="img/news-underlines-dark.png" style={{'alignSelf':'center','height':'3.5rem'}}></img>
+            <img class={themes.lightImage} alt="Wave graphic" src="img/news-underlines-light.png" style={{'alignSelf':'center','height':'3.5rem'}}></img>
+          </div>
+        </div>
+      }
 
       {isExpanded &&
         data.items.map((item, index) => (
@@ -55,6 +79,12 @@ function getBadgeClass(type) {
     default:
       return "primary"; // Default class
   }
+}
+
+const NewsHeader = ({ date }) => {
+  return (
+    <img class="imagecontainer_zh05 lightImage_bt2F" alt="cirohImage" src="img/cirohlogo-transparent.png" style={{'height':'145px','width':'145px','margin-top':'15px'}}></img>
+  );
 }
 
 // Function to render the description with links

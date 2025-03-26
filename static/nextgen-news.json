@@ -15,7 +15,7 @@
 			{
 			  "type": "feature",
 			  "title": " ngen-datastream",
-			  "description": "✨ Added CIROH Community Hydrofabric Testing! Automated CI tests are added for each VPU to ensure the geoppackage is compatible with DataStreamCLI, NextGen and NGIAB. ",
+			  "description": "✨ Added CIROH Community Hydrofabric Testing! Automated CI tests are added for each VPU to ensure the geopackage is compatible with DataStreamCLI, NextGen and NGIAB. ",
 			  "link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2025-03-01&until=2025-03-26"
 			}
 	],

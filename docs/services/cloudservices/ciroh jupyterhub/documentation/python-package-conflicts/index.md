@@ -41,7 +41,7 @@ rm -rf ~/.local/lib/pythonX.Y
 ```
 **Note**: This will remove **ALL** Python packages installed in your home directory and ensure that only system or environment packages are used.
 
-#### Step 3: Verify Your Environment
+#### Step 2: Verify Your Environment
 - Verify that you are using the correct JupyterHub image by checking the JUPYTER_IMAGE environment variable:
 
 ```bash

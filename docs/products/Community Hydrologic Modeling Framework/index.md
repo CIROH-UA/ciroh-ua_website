@@ -44,7 +44,7 @@ import FoldableButton from "@site/src/components/foldable.js"
           <p style={{'margin':'0'}}>NGIAB Implementation (<a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxSingularity/">HPC</a>)</p>
         </th>
         <th><a href="/docs/products/Evaluation Tools/rtiteehr/">TEEHR Evaluation</a></th>
-        <th>Data Visualizer</th>
+        <th><a href="/docs/products/Visualization and Analysis Tools/tethys-cses/">Data Visualizer</a></th>
         <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</a></th>
       </tr>
     </thead>
@@ -58,10 +58,14 @@ import FoldableButton from "@site/src/components/foldable.js"
         </td>
         <td></td>
         <td></td>
-        <td></td>
+        <td>
+          <a href="https://github.com/CIROH-UA/Tethys-CSES/blob/main/README.md">
+            <img src="https://camo.githubusercontent.com/02c8977bdb708eb0580786ed92a3b28030e4e1fd640642ce3cdedabade7e9088/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c616e6775616765732f746f702f77686974656c696768746e696e673435302f436f6d6d756e6974792d53747265616d666c6f772d4576616c756174696f6e2d53797374656d3f7374796c653d706c6173746963" alt="Data Visualizer Jupyter Notebook status" />
+          </a>
+        </td>
         <td>
           <a href="https://github.com/CIROH-UA/ngen-datastream/blob/main/STATUS.md">
-            <img src="https://github.com/CIROH-UA/ngen-datastream/actions/workflows/test_datastream_options.yaml/badge.svg" alt="Datastream status" />
+            <img src="https://github.com/CIROH-UA/ngen-datastream/actions/workflows/test_datastream_options.yaml/badge.svg" alt="DataStream status" />
           </a>
         </td>
       </tr>
@@ -77,6 +81,7 @@ import FoldableButton from "@site/src/components/foldable.js"
       <th>NOAA-OWP Tools/Libraries Utilized</th>
     </thead>
     <tbody>
+      <tr>
       <th><a href="/docs/products/Community Hydrologic Modeling Framework/ngiabpreprocessor/">Data Preprocess</a></th>
       <td>
         - Specializes in initial data preparation
@@ -89,51 +94,54 @@ import FoldableButton from "@site/src/components/foldable.js"
         - htdrotools
         - hydrofabric tools
       </td>
+      </tr>
     </tbody>
     <tbody>
-      <th>
-        <p style={{'margin':'0'}}>NGIAB Implementation</p>
-        <p style={{'margin':'0'}}>(<a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxDocker/">Cloud</a>, <a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxSingularity/">HPC</a>)</p>
-      </th>
-      <td>
-        - Focused specifically on model execution
-        - Core engine for running simulations
-        - Does not handle pre/post-processing tasks
-      </td>
-      <td> </td>
-    </tbody>
-    <tbody>
-      <th><a href="/docs/products/Evaluation Tools/rtiteehr/">TEEHR Evaluation</a></th>
-      <td>
-        - Handles both input and output processing
-        - Supports full workflow, from data preparation to cloud deployment
-      </td>
-      <td>
-        Built to evaluate OWP model outputs
-      </td>
-    </tbody>
-    <tbody>
-      <th>Data Visualizer</th>
-      <td>
-        - Focused on analysis and validation
-        - Supports data processing and output analysis
-      </td>
-      <td>
-        Designed for OWP hydrofabric visualization
-      </td>
-    </tbody>
-    <tbody>
-      <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</a></th>
-      <td>
-        - Specialized in visualization tasks
-        - Supports output analysis
-        - Visual representation of results
-      </td>
-      <td>
-        - ngen-cal
-        - t-route
-        - hydrofabric tools
-      </td>
+      <tr>
+        <th>
+          <p style={{'margin':'0'}}>NGIAB Implementation</p>
+          <p style={{'margin':'0'}}>(<a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxDocker/">Cloud</a>, <a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxSingularity/">HPC</a>)</p>
+        </th>
+        <td>
+          - Focused specifically on model execution
+          - Core engine for running simulations
+          - Does not handle pre/post-processing tasks
+        </td>
+        <td> </td>
+      </tr>
+      <tr>
+        <th><a href="/docs/products/Evaluation Tools/rtiteehr/">TEEHR Evaluation</a></th>
+        <td>
+          - Handles both input and output processing
+          - Supports full workflow, from data preparation to cloud deployment
+        </td>
+        <td>
+          Built to evaluate OWP model outputs
+        </td>
+      </tr>
+      <tr>
+        <th><a href="/docs/products/Visualization and Analysis Tools/tethys-cses/">Data Visualizer</a></th>
+        <td>
+          - Focused on analysis and validation
+          - Supports data processing and output analysis
+        </td>
+        <td>
+          Designed for OWP hydrofabric visualization
+        </td>
+      </tr>
+      <tr>
+        <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</a></th>
+        <td>
+          - Specialized in visualization tasks
+          - Supports output analysis
+          - Visual representation of results
+        </td>
+        <td>
+          - ngen-cal
+          - t-route
+          - hydrofabric tools
+        </td>
+      </tr>
     </tbody>
   </table>
 </FoldableButton>
@@ -145,7 +153,7 @@ import FoldableButton from "@site/src/components/foldable.js"
         <th>Capability</th>
         <th><a href="/docs/products/Community Hydrologic Modeling Framework/ngiabpreprocessor/">Data Preprocess</a></th>
         <th><a href="/docs/products/Evaluation Tools/rtiteehr/">TEEHR Evaluation</a></th>
-        <th>Data Visualizer</th>
+        <th><a href="/docs/products/Visualization and Analysis Tools/tethys-cses/">Data Visualizer</a></th>
         <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</a></th>
       </tr>
     </thead>
@@ -249,7 +257,7 @@ import FoldableButton from "@site/src/components/foldable.js"
           <p style={{'margin':'0'}}>(<a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxDocker/">Cloud</a>, <a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxSingularity/">HPC</a>)</p>
         </th>
         <th><a href="/docs/products/Evaluation Tools/rtiteehr/">TEEHR Evaluation</a></th>
-        <th>Data Visualizer</th>
+        <th><a href="/docs/products/Visualization and Analysis Tools/tethys-cses/">Data Visualizer</a></th>
         <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</a></th>
       </tr>
     </thead>

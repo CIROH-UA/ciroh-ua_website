@@ -208,7 +208,18 @@
   margin-top: 0rem !important;
 }
 
-.indent-wrapper {
+[data-theme="light"] .indent-wrapper {
+  background-color: #DEDEDE;
+  border-left-style: solid;
+  border-color: #999999;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+[data-theme="dark"] .indent-wrapper {
   background-color: #343434;
   border-left-style: solid;
   border-color: #999999;

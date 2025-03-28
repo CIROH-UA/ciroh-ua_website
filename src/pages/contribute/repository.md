@@ -1,4 +1,12 @@
-# Working with the DocuHub Repository
+---
+sidebar_position: 1
+title: "Working with the DocuHub repository"
+description: "Learn how to submit pull requests to DocuHub and test changes locally."
+tags:
+  - contribute
+---
+
+# Working with the DocuHub repository
 
 DocuHub is hosted on GitHub, which offers plenty of options to contribute your changes to the site.
 

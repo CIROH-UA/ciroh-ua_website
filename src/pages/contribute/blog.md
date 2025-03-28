@@ -1,8 +1,16 @@
+---
+sidebar_position: 2
+title: "Contributing to the CIROH Blog"
+description: "Find out how to submit a blog post to DocuHub."
+tags:
+  - contribute
+---
+
 # Contributing to the CIROH Blog
 
 Whether it's a new research development, updates to a critical tool, or an exciting conference update, CIROH's blog is a great place to highlight your work with the consortium.
 
-> Before continuing, you may want to set up a local environment for DocuHub. Please see the "Major Edits" section of the [Working with the DocuHub Repository](/contribute/repository#Major%20Edits) page for more information.
+> Before continuing, you may want to set up a local environment for DocuHub. Please see the "Major Edits" section of the [Working with the DocuHub Repository](/contribute/repository#major-edits) page for more information.
 
 ## Adding posts
 

@@ -21,7 +21,6 @@ const NewsComponent = ({ data, isLatest }) => {
       </ul>
 
 
-      {/* TODO: dark mode/light mode detection */}
       {isExpanded && 
         <div style={{'display':'flex','flexDirection':'row','justifyContent':'center','alignItems':'center'}}>
           <img class={themes.darkImage} alt="CIROH logo" src="img/cirohlogo-white.png" style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>

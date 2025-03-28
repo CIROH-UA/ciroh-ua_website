@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-title: "Debugging Package Conflicts"
+title: "Python Package Version Conflicts"
 description: "a tutorial guide to help debug python package conflicts"
 tags:
   - 2i2c
@@ -9,30 +9,21 @@ tags:
   - Package Management
   - Troubleshooting
 ---
-# Debugging Python Package Conflicts
+# Python Package Version Conflicts
 
-### Overview
+### Overview:
 
-When Python packages are installed in your home directory (`~/.local`) instead of the system environment, they may conflict with packages provided by your JupyterHub image. These local installations take precedence over system or environment packages, potentially causing version mismatches and unexpected behavior.
-### Common causes include:
+When different versions of Python packages are installed in your user home directory than the version that was already installed in the JupyterHub image, these local installations take precedence, potentially causing version mismatches and unexpected behavior.
 
-- Running `pip install --user <package-name>`
-- Running `pip install <package-name>` in a non-writable environment
-- Previous manual installations in your home directory
+### Troubleshooting guide:
 
-### How to Identify Package Conflicts
-
-Check for Local Package Installations:
-
+#### Step 1: Identify Package Conflicts
 ```bash
 ls ~/.local/lib/pythonX.Y/site-packages/
 ```
+**Note**: Replace X.Y with your Python version (e.g., 3.10). Find your version with `python --version`.
 
-
-
-### Recommended Solution
-
-#### Step 1: Remove Conflicting Packages
+#### Step 2: Remove conflicting packages from user home directory
 
 Clear all locally installed Python packages:
 
@@ -41,7 +32,7 @@ rm -rf ~/.local/lib/pythonX.Y
 ```
 **Note**: This will remove **ALL** Python packages installed in your home directory and ensure that only system or environment packages are used.
 
-#### Step 2: Verify Your Environment
+#### Step 3: Verify Your Environment
 - Verify that you are using the correct JupyterHub image by checking the JUPYTER_IMAGE environment variable:
 
 ```bash
@@ -51,8 +42,3 @@ echo $JUPYTER_IMAGE
 ```bash
 pip install <package-name>
 ```
-
-### Best Practices
-- Avoid using `pip install --user` in JupyterHub environments
-- Use virtual environments for project-specific packages
-- When installing packages first check if the package is already available in your image

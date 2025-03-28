@@ -23,9 +23,7 @@ Community NextGen is a community-accessible verison of NextGen Water Resources M
 
 ---
 
-## NGIAB Platforms at a Glance
-
-Click the buttons below to open/close their panels.
+## NGIAB Platform at a Glance
 
 import FoldableButton from "@site/src/components/foldable.js"
 
@@ -53,7 +51,7 @@ import FoldableButton from "@site/src/components/foldable.js"
         <td></td>
         <td>
           <a href="https://github.com/CIROH-UA/NGIAB-CloudInfra/blob/main/README.md">
-            <img src="https://github.com/CIROH-UA/NGIAB-CloudInfra/actions/workflows/docker_image_main_branch.yml/badge.svg" alt="NGIAB-CloudInfra status" />
+            <img src="https://github.com/-UA/NGIAB-CloudInfra/actions/workflows/docker_image_main_branch.yml/badge.svg" alt="NGIAB-CloudInfra status" />
           </a>
         </td>
         <td></td>
@@ -288,7 +286,7 @@ import FoldableButton from "@site/src/components/foldable.js"
       </tr>
       <tr>
         <td>Notebook (ipynb)</td>
-        <td>-</td>
+        <td>✓</td>
         <td>-</td>
         <td>✓</td>
         <td>-</td>

@@ -14,6 +14,8 @@ tags:
 More details about “Design and implementation of a BigQuery dataset and application programmer interface (API) for the U.S. National Water Model” paper can be found [here.](https://www.sciencedirect.com/science/article/pii/S1364815224001841)
 :::
 
+**National Water Model API Documentation available here:** [https://nwm-api.ciroh.org/docs](https://nwm-api.ciroh.org/docs)
+
 # Steps to use CIROH NWM API
 1. Submit the form below to request access to [NWM BigQuery API](https://nwm-api.ciroh.org/).
 
@@ -24,3 +26,5 @@ More details about “Design and implementation of a BigQuery dataset and applic
 3. Estimate your query before running the actual query. If you're not sure this step, please contact [ciroh it support](mailto:ciroh-it-support@ua.edu).
 
 For implementation detail, please refer to [this repository](https://github.com/CIROH-UA/api-nwm-gcp).
+
+News Blog: https://docs.ciroh.org/blog/September%20Monthly%20Blog%20Update

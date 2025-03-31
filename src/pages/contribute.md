@@ -1,9 +1,7 @@
 ---
-sidebar_position: 1
 title: "Contributing to CIROH DocuHub"
 description: "Find out how to contribute information to DocuHub."
 tags:
-  - contribute
 ---
 
 

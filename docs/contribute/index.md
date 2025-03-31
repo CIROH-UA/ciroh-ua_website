@@ -17,24 +17,12 @@ Our website is constructed using [Docusaurus](https://docusaurus.io/), a modern 
 - [Working with the DocuHub Repository](/contribute/repository) (Start here!)
 - [How to write blog posts](/contribute/blog)
 - [Requesting product pages](/contribute/product)
-
-### Cheatsheet
-
-- [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- [tina.io](https://tina.io/)
-- [Infima](https://infima.dev/docs/getting-started/introduction)
-<!-- TODO: Not clear what these last two links are for? -->
-
-## Email us
-
-For general inquiries, contact us at: ciroh-it-admin@ua.edu
-
-To add content to this docusite, contact us at: ciroh-it-admin@ua.edu
-
-## CIROH Slack channel
-
-Connect with us on CIROH Slack channel : [ciroh-ua-it-admin](https://cirohworkspace.slack.com/archives/C057BLQB867)
+- [Learn more about DocuHub technologies](/contribute/product)
 
 
+## Help and support
+If you have any questions or issues contributing, please don't hesitate to reach out via Slack or email.
+
+<a class="button button--active button--primary" href="/contact">Contact us</a>
 
 

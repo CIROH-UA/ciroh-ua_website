@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 title: "Contributing to the CIROH Blog"
 description: "Find out how to submit a blog post to DocuHub."
 tags:

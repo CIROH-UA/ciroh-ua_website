@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 title: "Adding products to DocuHub"
 description: "Find out how to request additions to DocuHub's products tab."
 tags:

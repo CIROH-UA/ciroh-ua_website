@@ -8,11 +8,20 @@ tags:
 
 # Contributing to the CIROH Blog
 
-Whether it's a new research development, updates to a critical tool, or an exciting conference update, CIROH's blog is a great place to highlight your work with the consortium.
+The DocuHub Blog showcases research initiatives and CyberInfrastructure related developments supported by the CIROH Science and Technology Team across the entire CIROH consortium. If you have news or updates that you'd like to share, this page offers a guide for creating and submitting new blog posts to the DocuHub blog.
+
+## Contribution Guidelines
+When writing your blog post for DocuHub, please bear in mind the following contribution guidelines:
+- [TODO]
+
+## Submitting a post via GitHub
+If you'd like to request that a blog post be posted for you, you may do so via a GitHub issue request. Please use the template link below and submit all fields, including the body text of your post.
+
+<a class="button button--active button--primary" href="https://github.com/CIROH-UA/ciroh-ua_website/issues/new?assignees=&labels=on-prem&projects=&template=blog-request.md" style={{'marginBottom':'1rem'}}>Blog Post Request Form</a>
+
+## Adding posts manually
 
 > Before continuing, you may want to set up a local environment for DocuHub. Please see the "Major Edits" section of the [Working with the DocuHub Repository](/contribute/repository#major-edits) page for more information.
-
-## Adding posts
 
 All DocuHub blog posts are written in the markdown format, with the extension `.md`. As such, they're compatible with all of the typical markdown syntax. Among other things, you can *italicize text* with `*one asterisk on either side*`, write **bold text** using ``**two asterisks**``, or create subheaders by ``## prefacing a line with two or three hash marks.``
 

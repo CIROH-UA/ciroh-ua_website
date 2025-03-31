@@ -68,6 +68,20 @@ const config = {
         path: "blog", // Path to the blog posts
         authorsMapPath: "authors.yaml", // Path to the authors' mapping file
       }
+    ],
+
+    // Release notes (also based on the custom blog plugin)
+    [
+      './plugins/plugin-content-blog.js', 
+      {
+        id: "release-notes",
+        blogTitle: "DocuHub release notes!",
+        blogDescription: "A monthly guide to what's new in DocuHub.",
+        postsPerPage: "ALL", // Display all posts on a single page
+        path: "release-notes", // Path to the blog posts
+        routeBasePath: 'release-notes', // Slug for the blog
+        authorsMapPath: "authors.yaml", // Path to the authors' mapping file
+      }
     ]
   ],
 
@@ -131,6 +145,11 @@ const config = {
           {
             href: "/news",
             label: "News",
+            position: "right",
+          },
+          {
+            href: "/release-notes",
+            label: "Release Notes",
             position: "right",
           },
           {

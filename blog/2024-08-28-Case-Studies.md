@@ -5,7 +5,7 @@ slug: August Monthly Blog Update
 authors: arpita
 tags: [ciroh, 2i2c, aws, google, nextgen, jupyterhub, hpc, teehr, ngen]
 hide_table_of_contents: false
-image: https://github.com/CIROH-UA/ngen-datastream/blob/main/docs/images/ngen-datastream.jpg?raw=true
+image: /img/ngen-datastream-august-blog.jpg
 ---
 
 This month, we are excited to showcase two case studies that utilized our cyberinfrastructure tools and services. These case studies demonstrate how CIROH's cyberinfrastructure is being utilized to support hydrological research and operational advancements.
@@ -14,7 +14,7 @@ This month, we are excited to showcase two case studies that utilized our cyberi
 
 ## 1. ngen-datastream and NGIAB
 <span className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="https://github.com/CIROH-UA/ngen-datastream/blob/main/docs/images/ngen-datastream.jpg?raw=true" alt="ngen-datastream image" style={{ width: '80%' }} />
+        <img src="/img/ngen-datastream-august-blog.jpg" alt="ngen-datastream image" style={{ width: '80%' }} />
 </span>
 <!-- truncate -->
 ### Overview:

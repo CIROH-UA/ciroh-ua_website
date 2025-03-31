@@ -156,7 +156,7 @@ const config = {
               },
               {
                 label: 'Contribute',
-                href: '/contribute'
+                href: '/docs/contribute'
               },
               {
                 label: 'CIROH Portal',

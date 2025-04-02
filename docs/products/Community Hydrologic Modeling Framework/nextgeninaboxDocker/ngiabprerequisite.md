@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 title: "NGIAB-Prerequisites"
 description: "NextGen In a Box (NGIAB) DevOps"
 tags:

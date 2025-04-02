@@ -229,3 +229,13 @@
   padding-right: 1rem;
   margin-bottom: 1rem;
 }
+
+[data-theme="dark"] .checkmark-color {
+  color: var(--ifm-color-success-light);
+  font-weight: bold;
+}
+
+[data-theme="light"] .checkmark-color {
+  color: var(--ifm-color-success-dark);
+  font-weight: bold;
+}

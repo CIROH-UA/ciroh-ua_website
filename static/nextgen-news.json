@@ -4,20 +4,26 @@
 			  "type": "feature",
 			  "title": "NGIAB-data-preprocess",
 			  "description": "🚀 New Release v4.0.5! This month's update focuses on speed and reliability! We've improved initial setup times by switching to boto3 for slightly faster S3 hydrofabric downloads. Plus, we've resolved map display issues by updating our JavaScript dependencies. 🔥A new image of NGIAB-data-preprocess is now available in the CIROH 2i2c JupyterHub production environment. Access it at https://ciroh.awi.2i2c.cloud/hub/login.",
-			  "link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2025-03-01&until=2025-03-26"
+			  "link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2025-03-01&until=2025-04-02"
 			},
 			{
 			  "type": "feature",
 			  "title": "NGIAB-CloudInfra: NGIAB Docker Image",
 			  "description": "⚡Cross-Platform Compatibility for TEEHR! The new runTeehr.sh script now natively supports both ARM64 and AMD64 platforms.",
-			  "link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-03-01&until=2025-03-26"
+			  "link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-03-01&until=2025-04-02"
 			}, 
 			{
 			  "type": "feature",
 			  "title": " ngen-datastream",
 			  "description": "✨ Added CIROH Community Hydrofabric Testing! Automated CI tests are added for each VPU to ensure the geopackage is compatible with DataStreamCLI, NextGen and NGIAB. ",
-			  "link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2025-03-01&until=2025-03-26"
-			}
+			  "link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2025-03-01&until=2025-04-02"
+			},
+			{
+				"type": "feature",
+				"title": "NGIAB-HPCInfra: NGIAB Singularity Image",
+				"description": "✨ March updates include 2 PRs: adding new sample input data AWI-009 in ReadMe, and bringing HPC-Infra singularity image to latest features from Cloud-Infra",
+				"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2025-03-01&until=2025-04-02"
+			  }
 	],
 	"February 2025 Update":  [
 			{

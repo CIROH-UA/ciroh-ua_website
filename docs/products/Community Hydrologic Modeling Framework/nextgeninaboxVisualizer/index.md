@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: "NGIAB-CLIENT"
+title: "NGIAB Tethys Visualization Integration"
 description: "NextGen In a Box (NGIAB)"
 tags:
   - NextGen In A Box

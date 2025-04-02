@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: "NGIAB-TEEHR"
+title: "NGIAB-TEEHR Integration"
 description: "NextGen In a Box (NGIAB)"
 tags:
   - NextGen In A Box

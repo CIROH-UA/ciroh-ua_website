@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: "NGIAB End-to-End Workflow: Cloud Tutorial"
+title: "NGIAB E2E Workflow: Cloud Tutorial"
 description: "Complete guide for setting up and running NextGen In a Box (NGIAB)"
 tags:
   - NextGen In A Box

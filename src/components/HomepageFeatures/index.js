@@ -418,6 +418,43 @@ export default function HomepageFeatures() {
         <div className="container">
           <div className={styles.flexStart}>
             <div className="hero-text">
+              <h1 className={styles.h1}><b>NEW!</b> DOCUHUB OFFICE HOURS</h1>
+              <br />
+              <p className={styles.heroText}>
+              Join us for our monthly sessions focused on CIROH's research
+              computing resources and the Community NextGen project. These
+              office hours provide an excellent opportunity to engage with
+              experts, ask questions, and stay updated on the latest
+              developments.{" "}
+                <strong>
+                  Click the link below to learn more:
+                </strong>
+              </p>
+              <br />
+              
+              <div className={styles.flexStart}>
+                <a
+                  className={`button button--secondary ${styles.col4}`}
+                  href="/contribute"
+                  style={{ textDecoration: "none", marginRight: "10px" }}
+                >
+                  Learn More About Office Hours
+                </a>
+              </div>
+            </div>
+            <img
+              src="./img/infra.png"
+              alt="DocuHub Office Hours"
+              class={styles.heroimage}
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className={clsx("hero hero--secondary", styles.heroBanner)}>
+        <div className="container">
+          <div className={styles.flexStart}>
+            <div className="hero-text">
               <h1 className={styles.h1}>CONTRIBUTE</h1>
               <br />
               <p className={styles.heroText}>
@@ -425,8 +462,8 @@ export default function HomepageFeatures() {
                 DocuHub. Please contribute by adding product/project
                 documentation, tutorials, training data, or conference
                 presentations. The CIROH DocuHub repository provides a
-                collaborative platform for sharing project's technical
-                documentation.{" "}
+                collaborative platform for sharing technical
+                documentation for projects.{" "}
                 <strong>
                   Learn more about how you can contribute and access the CIROH
                   DocuHub repository here:
@@ -436,11 +473,11 @@ export default function HomepageFeatures() {
               
               <div className={styles.flexStart}>
                 <a
-                  className={`button button--info ${styles.col4}`}
+                  className={`button button--primary ${styles.col4}`}
                   href="/contribute"
                   style={{ textDecoration: "none", marginRight: "10px" }}
                 >
-                  How to Contribute?
+                  How to Contribute
                 </a>
                 <a
                   className={`button button--secondary ${styles.col4}`}
@@ -460,6 +497,7 @@ export default function HomepageFeatures() {
           </div>
         </div>
       </div>
+
       <section className="padded-page-section-feature" id="services">
             <div className="container-feature">
                 <h2 className="text-center-feature mt-0">Why DocuHub? Elevate Your Research Journey</h2>

@@ -8,13 +8,12 @@ We’re here to assist with any questions, inquiries, or feedback. Feel free to 
 
 ## Email Us:
 - For general inquiries, reeach out to us at ciroh-it-admin@ua.edu for any general questions or assistance.
-
 - If you’d like to add content or make changes to this site, please contact us at ciroh-it-admin@ua.edu.
 <br />
 
 ## Connect with Us:
 - Join our discussions on Slack by connecting to the [ciroh-ua-it-admin channel](https://cirohworkspace.slack.com/archives/C057BLQB867).
-
+- Join our <a href="docs/products/Community Hydrologic Modeling Framework/ngiabOfficeHours">Monthly Office Hours</a> to engage with experts and stay updated on the latest developments in CIROH Research Cyberinfrastructure and Community NextGen.
 
 <br />
 

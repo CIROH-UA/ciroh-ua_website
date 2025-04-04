@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useCollapse } from "react-collapsed";
+import React from 'react';
+import { Link } from 'react-router-dom'
 
 const AccessSection = ({ display }) => {
     return (
@@ -8,14 +8,14 @@ const AccessSection = ({ display }) => {
                 <thead>
                 <tr>
                     <th>Access method</th>
-                    <th><a href="/docs/products/Community Hydrologic Modeling Framework/ngiabpreprocessor/">Data Preprocess</a></th>
+                    <th><Link to="/docs/products/Community Hydrologic Modeling Framework/ngiabpreprocessor/">Data Preprocess</Link></th>
                     <th>
                     <p style={{'margin':'0'}}>NGIAB Implementation</p>
-                    <p style={{'margin':'0'}}>(<a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxDocker/">Cloud</a>, <a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxSingularity/">HPC</a>)</p>
+                    <p style={{'margin':'0'}}>(<Link to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxDocker/">Cloud</Link>, <Link to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxSingularity/">HPC</Link>)</p>
                     </th>
-                    <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxTeehr/">TEEHR Evaluation</a></th>
-                    <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxVisualizer/">Data Visualizer</a></th>
-                    <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</a></th>
+                    <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxTeehr/">TEEHR Evaluation</Link></th>
+                    <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxVisualizer/">Data Visualizer</Link></th>
+                    <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</Link></th>
                 </tr>
                 </thead>
                 <tbody>

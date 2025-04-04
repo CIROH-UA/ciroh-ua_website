@@ -13,8 +13,8 @@ const AccessSection = ({ display }) => {
                     <p style={{'margin':'0'}}>NGIAB Implementation</p>
                     <p style={{'margin':'0'}}>(<a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxDocker/">Cloud</a>, <a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxSingularity/">HPC</a>)</p>
                     </th>
-                    <th><a href="/docs/products/Evaluation Tools/rtiteehr/">TEEHR Evaluation</a></th>
-                    <th><a href="/docs/products/Visualization and Analysis Tools/tethys-cses/">Data Visualizer</a></th>
+                    <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxTeehr/">TEEHR Evaluation</a></th>
+                    <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxVisualizer/">Data Visualizer</a></th>
                     <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</a></th>
                 </tr>
                 </thead>

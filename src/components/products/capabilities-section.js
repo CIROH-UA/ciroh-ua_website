@@ -9,8 +9,8 @@ const CapabilitiesSection = ({ display }) => {
                 <tr>
                     <th>Capability</th>
                     <th><a href="/docs/products/Community Hydrologic Modeling Framework/ngiabpreprocessor/">Data Preprocess</a></th>
-                    <th><a href="/docs/products/Evaluation Tools/rtiteehr/">TEEHR Evaluation</a></th>
-                    <th><a href="/docs/products/Visualization and Analysis Tools/tethys-cses/">Data Visualizer</a></th>
+                    <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxTeehr/">TEEHR Evaluation</a></th>
+                    <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxVisualizer/">Data Visualizer</a></th>
                     <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</a></th>
                 </tr>
                 </thead>

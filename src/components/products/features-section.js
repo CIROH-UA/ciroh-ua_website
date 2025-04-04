@@ -44,7 +44,7 @@ const FeaturesSection = ({ display }) => {
                         <td> </td>
                     </tr>
                     <tr>
-                        <th><a href="/docs/products/Evaluation Tools/rtiteehr/">TEEHR Evaluation</a></th>
+                        <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxTeehr/">TEEHR Evaluation</a></th>
                         <td>
                             <ul>
                                 <li>Handles both input and output processing</li>
@@ -56,7 +56,7 @@ const FeaturesSection = ({ display }) => {
                         </td>
                     </tr>
                     <tr>
-                        <th><a href="/docs/products/Visualization and Analysis Tools/tethys-cses/">Data Visualizer</a></th>
+                        <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxVisualizer/">Data Visualizer</a></th>
                         <td>
                             <ul>
                                 <li>Focused on analysis and validation</li>

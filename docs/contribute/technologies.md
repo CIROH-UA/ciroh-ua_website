@@ -1,12 +1,12 @@
 ---
 sidebar_position: 5
-title: "DocuHub technologies info"
+title: "DocuHub technologies"
 description: "Learn more about the technologies that make up DocuHub."
 tags:
   - contribute
 ---
 
-# DocuHub Technologies
+# DocuHub technologies
 
 Here's a quick look at some of the infrastructure that underpins DocuHub.
 

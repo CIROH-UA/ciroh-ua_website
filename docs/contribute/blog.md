@@ -1,23 +1,20 @@
 ---
 sidebar_position: 3
-title: "Contributing to the CIROH Blog"
-description: "Find out how to submit a blog post to DocuHub."
+title: "Adding posts to the DocuHub Blog"
+description: "Find out how to add a blog post to DocuHub."
 tags:
   - contribute
 ---
 
-# Contributing to the CIROH Blog
+# Adding posts to the DocuHub Blog
 
-The DocuHub Blog showcases research initiatives and CyberInfrastructure related developments supported by the CIROH Science and Technology Team across the entire CIROH consortium. If you have news or updates that you'd like to share, this page offers a guide for creating and submitting new blog posts to the DocuHub blog.
+This page explains how to add new posts to the DocuHub Blog's feed as a developer.
 
-## Contribution Guidelines
-When writing your blog post for DocuHub, please bear in mind the following contribution guidelines:
-- [TODO]
+If you're a researcher looking to submit a blog post, you may want to consider filling out the [Blog Post Request Form](https://github.com/CIROH-UA/ciroh-ua_website/issues/new?assignees=&labels=on-prem&projects=&template=blog-request.md) instead.
 
-## Submitting a post via GitHub
-If you'd like to request that a blog post be posted for you, you may do so via a GitHub issue request. Please use the template link below and submit all fields, including the body text of your post.
-
-<a class="button button--active button--primary" href="https://github.com/CIROH-UA/ciroh-ua_website/issues/new?assignees=&labels=on-prem&projects=&template=blog-request.md" style={{'marginBottom':'1rem'}}>Blog Post Request Form</a>
+:::info
+Please remember that blog posts submitted to CIROH DocuHub should discuss projects that make use of CIROH\'s cyberinfrastructure.
+:::
 
 ## Adding posts manually
 

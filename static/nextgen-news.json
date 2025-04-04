@@ -1,4 +1,36 @@
 {
+	"March 2025 Update":  [
+			{
+			  "type": "feature",
+			  "title": "NGIAB-data-preprocess",
+			 "description": "#### 🚀 New Release v4.0.5!\n \n This month's update focuses on speed and reliability! We've improved initial setup times by switching to `boto3` for slightly faster S3 hydrofabric downloads. Plus, we've resolved map display issues by updating our JavaScript dependencies. \n \n 🔥A new image of NGIAB-data-preprocess is now available in the [CIROH 2i2c JupyterHub](https://ciroh.awi.2i2c.cloud/hub/login) production environment. \n \n ![NGIAB-Preprocess Image](./img/ngiab-preprocess-jupyterhub-image.png)",
+			  "link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2025-03-01&until=2025-04-02"
+			},
+			{
+			  "type": "feature",
+			  "title": "NGIAB-CloudInfra: NGIAB Docker Image",
+			  "description": " #### ⚡Cross-Platform Compatibility for TEEHR! \n In March one PR was merged: \n - The new runTeehr.sh script now natively supports both ARM64 and AMD64 platforms.",
+			  "link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-03-01&until=2025-04-02"
+			}, 
+			{
+			  "type": "feature",
+			  "title": " ngen-datastream",
+			  "description": "✨ Added CIROH Community Hydrofabric Testing! Automated CI tests are added for each VPU to ensure the geopackage is compatible with DataStreamCLI, NextGen and NGIAB. ",
+			  "link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2025-03-01&until=2025-04-02"
+			},
+			{
+				"type": "feature",
+				"title": "NGIAB-HPCInfra: NGIAB Singularity Image",
+				"description": "✨ March updates include 2 PRs: \n - Added new sample input data AWI-009 in README. \n - Updated the HPC-Infra singularity image with the latest features from Cloud-Infra.",
+				"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2025-03-01&until=2025-04-02"
+			  },
+			  {
+				"type": "news",
+				"title": "Community Hydrologic Modeling Framework Documentation Page",
+				"description": "📢 We've updated a comprehensive documentation page for the Community Hydrologic Modeling Framework! 📚 This comprehensive resource includes an overview of NGIAB and its extensions.\n - 🔍 Learn more about Data Preprocess, TEEHR Evaluation, Data Visualizer, and DataStreamCLI. \n - 🛠️ Understand each tool's role in data preparation, visualization, model execution, and validation.\n - 💻 Explore libraries that power NGIAB and its extensions, including hydrotopols, hydrofabric tools, ngen, t-route, CFE, and many more.\n - 🔎 Discover which tools offer GUI support, hydrofabric subsetting, and NextGen execution.\n - 🚀 Learn how to use NGIAB and its extensions via Docker, pip, web interfaces, Jupyter notebooks, and HPC environments (Singularity). \n \n \n 🔗 Visit the new Community Hydrologic Modeling Framework documentation page [here](https://docs.ciroh.org/docs/products/Community%20Hydrologic%20Modeling%20Framework/):",
+				"link": "https://docs.ciroh.org/docs/products/Community%20Hydrologic%20Modeling%20Framework/"
+			  }
+	],
 	"February 2025 Update":  [
 			{
 			  "type": "feature",

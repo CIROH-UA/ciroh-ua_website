@@ -11,46 +11,15 @@ tags:
 
 # CIROH AWS Account
 
-
 CIROH Cloud leverages the power of AWS to empower researchers and unlock groundbreaking advancements in hydrology. CIROH provides access to enterprise-level AWS cloud platform to researchers.
 
 <div className="col col--6" style={{ textAlign: 'center' }}>
 				<img src="https://blog.adobe.com/en/publish/2021/08/31/media_1649ebc3fbbce0df508081913819d491fc3f7c7a9.png?width=750&format=png&optimize=medium" alt="AWS" style={{ width: '100%' }} />
 </div>
 
-:::info
-<a href="https://aws.amazon.com/">AWS Cloud Services</a>
-:::
+<a class="button button--active button--primary" href="https://aws.amazon.com/">AWS Cloud Services Homepage</a>
 
-## How to get access to CIROH AWS Account?
-
-CIROH Cloud Hosting services include:
-- Creation of AWS subaccounts for CIROH consortium members and partners.
-- Project PI contact identity creation and access (AWS IAM)
-
-We encourage PI of the project to start here: (select Public Cloud and fill out details for AWS)
-
-<a class="button button--active button--primary" href="../../../../docs/services/access"> Infrastructure Request Form</a>
-
----
-
-CIROH Consortium member or partner is responsible for:
-- Management of CIROH subaccount assigned to them.
-- project specific software and environment configuration.
-- Additional project's contacts creation and/or access.
-
-
-:::note
-Please refer [link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?q=is%3Aissue+is%3Aclosed+label%3Aaws) for references to submitted forms.
-:::
-
-
-## Cost of use:
-- Some uses may be covered by CIROH Infrastructure project funds
-- Extensive uses may be charged to individual CIROH projects
-
-
-# Unleashing Research Potential with AWS Cloud Services
+## Unleashing Research Potential with AWS Cloud Services
 
 Here's how AWS empowers your research:
 
@@ -64,11 +33,41 @@ Here's how AWS empowers your research:
 
 ---
 
-## Where to go for help:
+## Requesting CIROH AWS Accounts
 
-- Email ciroh-it-admin@ua.edu UA CIROH Cloud Team
-- CIROH Cloud Slack Channel - #ciroh-ua-it-admin
-- CIROH AWS support Slack Channel - #aws-ciroh-support
+CIROH Cloud Hosting services include:
+- Creation of AWS subaccounts for CIROH consortium members and partners.
+- Project PI contact identity creation and access (AWS IAM)
+
+CIROH Consortium members or partners are responsible for:
+- Management of CIROH subaccounts assigned to them.
+- Project-specific software and environment configuration.
+- Handling account creation and/or access for project contacts
+To get started, please head to the "Accessing Public Cloud Services" section of the Infrastructure Access page.
+
+<a class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} href="/docs/services/access#accessing-public-cloud-services">Infrastructure Access</a>
+
+:::note
+Please refer to [this link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?q=is%3Aissue+is%3Aclosed+label%3Aaws) for references to submitted forms.
+:::
+
+---
+
+## Cost of Use
+- Individual projects are allotted $500 monthly for use of AWS and Google Cloud services.
+- CIROH projects that anticipate exceeding the monthly budget for cloud services may request additional funds via the form below.
+
+<a class="button button--active button--primary" href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=exceeding_budget_request.md&title=">Exceeding Budget Request Form</a>
+
+---
+
+## Help and Support
+
+- Email UA's CIROH Cloud Team: ciroh-it-admin@ua.edu 
+- Message the CIROH Cloud Slack Channel: #ciroh-ua-it-admin
+- Message the CIROH AWS Support Slack Channel: #aws-ciroh-support
+
+---
 
 import DocCardList from '@theme/DocCardList';
 

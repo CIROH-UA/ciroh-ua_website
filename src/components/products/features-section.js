@@ -1,0 +1,93 @@
+import React, { useState } from 'react';
+import { useCollapse } from "react-collapsed";
+
+const FeaturesSection = ({ display }) => {
+    return (
+        <section style={{'display': display ? 'block' : 'none'}}>
+            <table>
+                <thead>
+                    <th>NGIAB and Extensions</th>
+                    <th>Key features</th>
+                    <th>NOAA-OWP Tools/Libraries Utilized</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><a href="/docs/products/Community Hydrologic Modeling Framework/ngiabpreprocessor/">Data Preprocess</a></th>
+                        <td>
+                            <ul>
+                                <li>Specializes in initial data preparation</li>
+                                <li>Handles subsetting and forcing processing</li>
+                                <li>Supports basic data processing tasks</li>
+                                <li>Helps with running NGIAB</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>t-route</li>
+                                <li>htdrotools</li>
+                                <li>hydrofabric tools</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p style={{'margin':'0'}}>NGIAB Implementation</p>
+                            <p style={{'margin':'0'}}>(<a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxDocker/">Cloud</a>, <a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxSingularity/">HPC</a>)</p>
+                        </th>
+                        <td>
+                            <ul>
+                                <li>Focused specifically on model execution</li>
+                                <li>Core engine for running simulations</li>
+                                <li>Does not handle pre/post-processing tasks</li>
+                            </ul>
+                        </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th><a href="/docs/products/Evaluation Tools/rtiteehr/">TEEHR Evaluation</a></th>
+                        <td>
+                            <ul>
+                                <li>Handles both input and output processing</li>
+                                <li>Supports full workflow, from data preparation to cloud deployment</li>
+                            </ul>
+                        </td>
+                        <td>
+                            Built to evaluate OWP model outputs
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><a href="/docs/products/Visualization and Analysis Tools/tethys-cses/">Data Visualizer</a></th>
+                        <td>
+                            <ul>
+                                <li>Focused on analysis and validation</li>
+                                <li>Supports data processing and output analysis</li>
+                            </ul>
+                        </td>
+                        <td>
+                            Designed for OWP hydrofabric visualization
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</a></th>
+                        <td>
+                            <ul>
+                                <li>Specialized in visualization tasks</li>
+                                <li>Supports output analysis</li>
+                                <li>Visual representation of results</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>ngen-cal</li>
+                                <li>t-route</li>
+                                <li>hydrofabric tools</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    );
+}
+
+export default FeaturesSection;

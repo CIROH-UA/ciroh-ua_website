@@ -18,7 +18,7 @@ Please remember that blog posts submitted to CIROH DocuHub should discuss projec
 
 ## Adding posts manually
 
-> Before continuing, you may want to set up a local environment for DocuHub. Please see the "Major Edits" section of the [Working with the DocuHub Repository](/contribute/repository#major-edits) page for more information.
+> Before continuing, you may want to set up a local environment for DocuHub. Please see the "Major Edits" section of the [Working with the DocuHub Repository](/docs/contribute/repository#major-edits) page for more information.
 
 All DocuHub blog posts are written in the markdown format, with the extension `.md`. As such, they're compatible with all of the typical markdown syntax. Among other things, you can *italicize text* with `*one asterisk on either side*`, write **bold text** using ``**two asterisks**``, or create subheaders by ``## prefacing a line with two or three hash marks.``
 

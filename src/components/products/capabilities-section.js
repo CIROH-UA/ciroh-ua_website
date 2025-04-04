@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { useCollapse } from "react-collapsed";
-
+import React from 'react';
+import { Link } from 'react-router-dom'
 const CapabilitiesSection = ({ display }) => {
     return (
         <section style={{'display': display ? 'block' : 'none'}}>
@@ -8,10 +7,10 @@ const CapabilitiesSection = ({ display }) => {
                 <thead>
                 <tr>
                     <th>Capability</th>
-                    <th><a href="/docs/products/Community Hydrologic Modeling Framework/ngiabpreprocessor/">Data Preprocess</a></th>
-                    <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxTeehr/">TEEHR Evaluation</a></th>
-                    <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxVisualizer/">Data Visualizer</a></th>
-                    <th><a href="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</a></th>
+                    <th><Link to="/docs/products/Community Hydrologic Modeling Framework/ngiabpreprocessor/">Data Preprocess</Link></th>
+                    <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxTeehr/">TEEHR Evaluation</Link></th>
+                    <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxVisualizer/">Data Visualizer</Link></th>
+                    <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</Link></th>
                 </tr>
                 </thead>
                 <tbody>

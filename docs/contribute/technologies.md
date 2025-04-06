@@ -24,7 +24,7 @@ Markdown is used by Docusaurus for interpreting plain-text documentation. If you
 ## Infima
 Infima is an open-source UI styling framework that makes it easier to develop websites using minimal CSS and JS knowledge. All Infima classes are freely available to style and shape your work on Docuhub.
 
-<a class="button button--active button--primary" href="https://docusaurus.io/docs/">Infima Documentation</a>
+<a class="button button--active button--primary" href="https://docusaurus.io/docs/styling-layout#styling-your-site-with-infima">Infima Documentation</a>
 
 <!-- TODO: TinaCMS was listed in the original list of cheat sheets, but its relevance to DocuHub is unclear. -->
 <!-- Original link: https://tina.io/ -->

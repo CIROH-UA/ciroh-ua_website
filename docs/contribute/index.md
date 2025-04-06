@@ -16,7 +16,8 @@ Our website is constructed using [Docusaurus](https://docusaurus.io/), a modern 
 import { contributeSimpleDocsCards,contributeBlogsDocsCards,contributeProductsDocsCards } from './cardContent'
 import StepsCards from "@site/src/components/StepsCards.js"
 
-## Contibuting simple changes to DocuHub
+## Contributing simple changes to DocuHub
+
 <StepsCards
   steps={contributeSimpleDocsCards}
   containerId="add-docs-steps"
@@ -48,6 +49,8 @@ If you'd like to get more closely involved with DocuHub's development, please se
 <div style={{'display':'flex', 'justifyContent':'center'}}>
   <a class="button button--active button--primary" href="/docs/contribute/repository" style={{'marginLeft':'1rem','marginRight':'1rem'}}>Working with the DocuHub repository</a>
   <a class="button button--active button--primary" href="/docs/contribute/technologies" style={{'marginLeft':'1rem','marginRight':'1rem'}}>Learn more about DocuHub technologies</a>
+</div>
+<div style={{'display':'flex', 'justifyContent':'center', 'marginTop':'1rem'}}>
   <a class="button button--active button--primary" href="/docs/contribute/blog" style={{'marginLeft':'1rem','marginRight':'1rem'}}>Adding blog posts to the DocuHub blog</a>
 </div>
 

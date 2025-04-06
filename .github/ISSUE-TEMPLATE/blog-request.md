@@ -1,3 +1,11 @@
+---
+name: Blog post request
+about: This template is used to request for a new blog post to be added to the DocuHub Blog tab.
+title: 'Blog post request: (your title here)'
+labels: Feature
+assignees: ''
+---
+
 # Blog Post Request
 
 ## Post Information
@@ -13,7 +21,7 @@
 
 ## CIROH Cyberinfrastructure
 - **Used CIROH Cyberinfrastructure**: <!-- Yes/No -->
-- **Which Infrastructure Used**: <!-- Specify which CIROH cyberinfrastructure components were utilized -->
+- **Which Components Used**: <!-- Specify which CIROH cyberinfrastructure components were utilized -->
 - **Impact on Project**: <!-- Briefly describe how CIROH cyberinfrastructure benefited the project -->
 
 ---

@@ -9,9 +9,15 @@
 			{
 			  "type": "feature",
 			  "title": "NGIAB-CloudInfra: NGIAB Docker Image",
-			  "description": " #### ⚡Cross-Platform Compatibility for TEEHR! \n In March one PR was merged: \n - The new runTeehr.sh script now natively supports both ARM64 and AMD64 platforms.",
-			  "link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-03-01&until=2025-04-02"
+			  "description": " #### ⚡New Release v1.4.3!\n \nNew calibrated dataset added for Provo River near Woodland, UT AWI_16_10154200_009.tar.gz in README at the link below. Also available in HydroShare!!! \n \n  The new script - runTeehr.sh now available to run NGIAB-TEEHR Evaluation on both ARM64 and AMD64 platforms.",
+			  "link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/blob/main/README.md"
 			}, 
+			{
+				"type": "news",
+				"title": "Updated Community NextGen Documentation Page",
+				"description": "📢 We've new updates under Community NextGen products tab. 📚 This comprehensive resource includes an overview of NGIAB and its extensions.\n - 🔍 Learn more about Data Preprocess, TEEHR Evaluation, Data Visualizer, and DataStreamCLI. \n - 🛠️ Key features, Capabilities and Access Method are included. \n \n \n 🔗 Visit the new Community Hydrologic Modeling Framework documentation page [here](https://docs.ciroh.org/docs/products/Community%20Hydrologic%20Modeling%20Framework/):",
+				"link": "https://docs.ciroh.org/docs/products/Community%20Hydrologic%20Modeling%20Framework/"
+			},
 			{
 			  "type": "feature",
 			  "title": " ngen-datastream",
@@ -20,16 +26,28 @@
 			},
 			{
 				"type": "feature",
-				"title": "NGIAB-HPCInfra: NGIAB Singularity Image",
-				"description": "✨ March updates include 2 PRs: \n - Added new sample input data AWI-009 in README. \n - Updated the HPC-Infra singularity image with the latest features from Cloud-Infra.",
+				"title": "NGIAB-HPCInfra: NGIAB Singularity Image for HPC!",
+				"description": "✨ March updates include 2 PRs: \n - New calibrated dataset added for Provo River near Woodland, UT AWI_16_10154200_009.tar.gz in README at the link below. \n - Synced the NGIAB HPC singularity image with the latest features from NGIAB docker image .",
 				"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2025-03-01&until=2025-04-02"
-			  },
-			  {
+			},
+			{
 				"type": "news",
-				"title": "Community Hydrologic Modeling Framework Documentation Page",
-				"description": "📢 We've updated a comprehensive documentation page for the Community Hydrologic Modeling Framework! 📚 This comprehensive resource includes an overview of NGIAB and its extensions.\n - 🔍 Learn more about Data Preprocess, TEEHR Evaluation, Data Visualizer, and DataStreamCLI. \n - 🛠️ Understand each tool's role in data preparation, visualization, model execution, and validation.\n - 💻 Explore libraries that power NGIAB and its extensions, including hydrotopols, hydrofabric tools, ngen, t-route, CFE, and many more.\n - 🔎 Discover which tools offer GUI support, hydrofabric subsetting, and NextGen execution.\n - 🚀 Learn how to use NGIAB and its extensions via Docker, pip, web interfaces, Jupyter notebooks, and HPC environments (Singularity). \n \n \n 🔗 Visit the new Community Hydrologic Modeling Framework documentation page [here](https://docs.ciroh.org/docs/products/Community%20Hydrologic%20Modeling%20Framework/):",
-				"link": "https://docs.ciroh.org/docs/products/Community%20Hydrologic%20Modeling%20Framework/"
-			  }
+				"title": "Community FIM Documentation on DocuHub",
+				"description": "📢 Both FIM as a service (FIMserv) and FIM Evaluation Framework (FIMPEF) documentation now available on DocuHub!! Go to Products tab -> Community Flood Inundation Mapping",
+				"link": "/docs/products/Community%20Flood%20Inundation%20Mapping/FIM%20as%20a%20Service/"
+			},
+			{
+				"type": "news",
+				"title": "CIROH Portal New Look!!",
+				"description": "📢 BYU Team released newer version of CIROH Portal using docusaurus framework. This brings consistency with CIROH DocuHub!",
+				"link": "https://portal.ciroh.org/"
+			},
+			{
+				"type": "news",
+				"title": "DocuHub Contribute page Updated",
+				"description": "📢 For more ways to contribute to DocuHub. Read below",
+				"link": "/docs/contribute"
+			}
 	],
 	"February 2025 Update":  [
 			{

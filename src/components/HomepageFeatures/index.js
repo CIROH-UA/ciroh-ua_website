@@ -7,6 +7,7 @@ import "./cta-2.css";
 import "./cta-1.css";
 import styles from "./styles.module.css";
 import "./whyDocuhub.css";
+import Link from '@docusaurus/Link';
 // import { library } from "@fortawesome/fontawesome-svg-core";
 // import { fab } from "@fortawesome/free-brands-svg-icons";
 
@@ -413,43 +414,6 @@ export default function HomepageFeatures() {
           </div>
         </Carousel>
       </div>
-      
-      <div className={clsx("hero hero--primary", styles.heroBanner)}>
-        <div className="container">
-          <div className={styles.flexStart}>
-            <div className="hero-text">
-              <h1 className={styles.h1}><b>NEW!</b> DOCUHUB OFFICE HOURS</h1>
-              <br />
-              <p className={styles.heroText}>
-              Join us for our monthly sessions focused on CIROH's research
-              computing resources and the Community NextGen project. These
-              office hours provide an excellent opportunity to engage with
-              experts, ask questions, and stay updated on the latest
-              developments.{" "}
-                <strong>
-                  Click the link below to learn more:
-                </strong>
-              </p>
-              <br />
-              
-              <div className={styles.flexStart}>
-                <a
-                  className={`button button--secondary ${styles.col4}`}
-                  href="/contribute"
-                  style={{ textDecoration: "none", marginRight: "10px" }}
-                >
-                  Learn More About Office Hours
-                </a>
-              </div>
-            </div>
-            <img
-              src="./img/infra.png"
-              alt="DocuHub Office Hours"
-              class={styles.heroimage}
-            />
-          </div>
-        </div>
-      </div>
 
       <div className={clsx("hero hero--secondary", styles.heroBanner)}>
         <div className="container">
@@ -591,6 +555,31 @@ export default function HomepageFeatures() {
         </div>
       </div>
     </section>
+
+    <div className={clsx("hero hero--primary", styles.heroBanner)}>
+        <div className="container">
+          <div className={styles.flexStart}>
+            <div className="hero-text">
+              <h1 className={styles.h1}><b>NEW!</b> CIROH Office Hours</h1>
+              <br />
+              
+              <Link
+                className={`button button--secondary ${styles.col4}`}
+                href="/docs/products/Community Hydrologic Modeling Framework/ngiabOfficeHours"
+                style={{ textDecoration: "none", marginRight: "10px" }}
+              >
+                Learn More
+              </Link>
+            </div>
+            <img
+              src="./img/infra.png"
+              alt="DocuHub Office Hours"
+              class={styles.heroimage}
+            />
+          </div>
+        </div>
+      </div>
+    
       <div className="container" style={{ width: "100%" }}>
         <div className={styles.logoBackground}>
           <div className="container-fluid">

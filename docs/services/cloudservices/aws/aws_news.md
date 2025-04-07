@@ -9,6 +9,8 @@ tags:
   - S3
 ---
 
+import Link from '@docusaurus/Link'
+
 # AWS News Blog
 
 
@@ -21,7 +23,7 @@ tags:
 Stay up-to-date on the latest AWS news and announcements by visiting the official AWS News Blog:
 
 
-<a class="button button--active button--primary" href="https://aws.amazon.com/blogs/aws/"> AWS News Blog</a>
+<Link class="button button--active button--primary" to="https://aws.amazon.com/blogs/aws/"> AWS News Blog</Link>
 
 -----
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './stepsCardsStyles.module.css';
 import { useColorMode } from '@docusaurus/theme-common';
+import Link from '@docusaurus/Link'
 
 const StepsCards = ({ header, steps, containerId }) => {
   const { colorMode } = useColorMode();
@@ -31,7 +32,7 @@ const StepsCards = ({ header, steps, containerId }) => {
 
           if (step.link) {
             return (
-              <a
+              <Link
                 key={index}
                 href={step.link}
                 target="_blank"
@@ -39,7 +40,7 @@ const StepsCards = ({ header, steps, containerId }) => {
                 className={styles.cardLink}
               >
                 {cardContent}
-              </a>
+              </Link>
             );
           }
           return cardContent;

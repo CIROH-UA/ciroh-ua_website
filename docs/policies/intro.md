@@ -3,6 +3,8 @@ sidebar_position: 1
 title: Policies and Best Practices
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 # Data, Code Sharing and Infrastructure Policies
 
 <div className="container">
@@ -13,7 +15,7 @@ title: Policies and Best Practices
         </p>
       </div>
       <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/water_products.png" alt="Water Tools" style={{ width: '50%' }} />
+        <img src={useBaseUrl("/img/water_products.png")} alt="Water Tools" style={{ width: '50%' }} />
       </div>
     </div>
 </div>

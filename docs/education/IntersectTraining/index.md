@@ -6,6 +6,9 @@ tags:
 - training
 - online courses
 ---
+
+import Link from '@docusaurus/Link'
+
 # INTERSECT – Research Software Engineering Training
 
 INTERSECT aims to provide advanced software development and engineering training for intermediate and advanced computational researchers. The program targets the critical skill gap between basic programming knowledge and professional research software engineering.
@@ -87,4 +90,4 @@ The project management module focuses on the application of tools, techniques, a
 To learn more, visit the [INTERSECT Research Software Engineering Training website](https://intersect-training.org/curriculum).
 
 
-<a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="https://intersect-training.org/curriculum/">INTERESECT CURRICULUM</a>
+<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  to="https://intersect-training.org/curriculum/">INTERESECT CURRICULUM</Link>

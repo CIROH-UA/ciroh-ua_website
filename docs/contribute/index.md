@@ -6,7 +6,6 @@ tags:
   - contribute
 ---
 
-
 # Contributing to CIROH DocuHub
 
 Thank you for your interest in contributing to CIROH's DocuHub, our technical documentation site! Whether you're commenting on project information or submitting a pull request, we appreciate all kinds of contributions. This guide will help you understand the process of contributing code to the CIROH DocuHub.
@@ -15,6 +14,7 @@ Our website is constructed using [Docusaurus](https://docusaurus.io/), a modern 
 
 import { contributeSimpleDocsCards,contributeBlogsDocsCards,contributeProductsDocsCards } from './cardContent'
 import StepsCards from "@site/src/components/StepsCards.js"
+import Link from '@docusaurus/Link'
 
 ## Contributing simple changes to DocuHub
 
@@ -30,7 +30,7 @@ import StepsCards from "@site/src/components/StepsCards.js"
 />
 
 <div style={{'display':'flex', 'justifyContent':'center'}}>
-  <a class="button button--active button--primary" href="https://github.com/CIROH-UA/ciroh-ua_website/issues/new?assignees=&labels=on-prem&projects=&template=blog-request.md">Blog Post Request Form</a>
+  <Link class="button button--active button--primary" to="https://github.com/CIROH-UA/ciroh-ua_website/issues/new?assignees=&labels=on-prem&projects=&template=blog-request.md">Blog Post Request Form</Link>
 </div>
 
 ## Requesting a product page on DocuHub
@@ -40,23 +40,23 @@ import StepsCards from "@site/src/components/StepsCards.js"
 />
 
 <div style={{'display':'flex', 'justifyContent':'center'}}>
-  <a class="button button--active button--primary" href="https://github.com/CIROH-UA/ciroh-ua_website/issues/new?assignees=&labels=on-prem&projects=&template=product-request.md">Product Page Request Form</a>
+  <Link class="button button--active button--primary" to="https://github.com/CIROH-UA/ciroh-ua_website/issues/new?assignees=&labels=on-prem&projects=&template=product-request.md">Product Page Request Form</Link>
 </div>
 
 ## For developers
 If you'd like to get more closely involved with DocuHub's development, please see the subpages below:
 
 <div style={{'display':'flex', 'justifyContent':'center'}}>
-  <a class="button button--active button--primary" href="/docs/contribute/repository" style={{'marginLeft':'1rem','marginRight':'1rem'}}>Working with the DocuHub repository</a>
-  <a class="button button--active button--primary" href="/docs/contribute/technologies" style={{'marginLeft':'1rem','marginRight':'1rem'}}>Learn more about DocuHub technologies</a>
+  <Link class="button button--active button--primary" to="/docs/contribute/repository" style={{'marginLeft':'1rem','marginRight':'1rem'}}>Working with the DocuHub repository</Link>
+  <Link class="button button--active button--primary" to="/docs/contribute/technologies" style={{'marginLeft':'1rem','marginRight':'1rem'}}>Learn more about DocuHub technologies</Link>
 </div>
 <div style={{'display':'flex', 'justifyContent':'center', 'marginTop':'1rem'}}>
-  <a class="button button--active button--primary" href="/docs/contribute/blog" style={{'marginLeft':'1rem','marginRight':'1rem'}}>Adding blog posts to the DocuHub blog</a>
+  <Link class="button button--active button--primary" to="/docs/contribute/blog" style={{'marginLeft':'1rem','marginRight':'1rem'}}>Adding blog posts to the DocuHub blog</Link>
 </div>
 
 ## Help and support
 If you have any questions or issues contributing, please don't hesitate to reach out via Slack or email.
 
-<a class="button button--active button--primary" href="/contact">Contact us</a>
+<Link class="button button--active button--primary" to="/contact">Contact us</Link>
 
 

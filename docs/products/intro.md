@@ -7,6 +7,8 @@ tags:
   - research
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 # Products Overview
 
 <div className="container">
@@ -17,7 +19,7 @@ tags:
         </p>
       </div>
       <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/water_products.png" alt="Water Tools" style={{ width: '50%' }} />
+        <img src={useBaseUrl("/img/water_products.png")} alt="Water Tools" style={{ width: '50%' }} />
       </div>
     </div>
 </div>

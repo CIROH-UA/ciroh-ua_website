@@ -10,16 +10,19 @@ tags:
  
 ---
 
+import Link from '@docusaurus/Link'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 # CIROH Google Account
 
 
 CIROH Cloud leverages the power of Google Cloud to empower researchers and unlock groundbreaking advancements in hydrology. CIROH provides access to enterprise-level Google cloud platform to researchers.
 
 <div className="col col--6" style={{ textAlign: 'center'}}>
-				<img src="https://lh3.googleusercontent.com/VEnnK2SyklusfxZ3dIYjlQH3xSwK2BFSJ69TFQ9g8HjM6m3CouRlTia5FW3z3GS0x83WC9TylZCaA9Jf_2kmr7mXxI9_HYLZTFy_bg" alt="Google Cloud" style={{ width: '90%' }} />
+				<img src={useBaseUrl("https://lh3.googleusercontent.com/VEnnK2SyklusfxZ3dIYjlQH3xSwK2BFSJ69TFQ9g8HjM6m3CouRlTia5FW3z3GS0x83WC9TylZCaA9Jf_2kmr7mXxI9_HYLZTFy_bg")} alt="Google Cloud" style={{ width: '90%' }} />
 </div>
 
-<a class="button button--active button--primary" href="https://cloud.google.com/">Google Cloud Homepage</a>
+<Link class="button button--active button--primary" to="https://cloud.google.com/">Google Cloud Homepage</Link>
 
 ## Unleashing Research Potential with Google Cloud Services
 
@@ -43,7 +46,7 @@ CIROH Cloud Hosting services include:
 
 To get started, please head to the "Accessing Public Cloud Services" section of the Infrastructure Access page.
 
-<a class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} href="/docs/services/access#accessing-public-cloud-services">Infrastructure Access</a>
+<Link class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} to="/docs/services/access#accessing-public-cloud-services">Infrastructure Access</Link>
 
 :::note
 Please refer to [this link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?q=is:issue+is:closed+label:google) for references to submitted forms.
@@ -55,7 +58,7 @@ Please refer to [this link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?
 - Individual projects are allotted $500 monthly for use of AWS and Google Cloud services.
 - CIROH projects that anticipate exceeding the monthly budget for cloud services may request additional funds via the form below.
 
-<a class="button button--active button--primary" href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=exceeding_budget_request.md&title=">Exceeding Budget Request Form</a>
+<Link class="button button--active button--primary" to="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=exceeding_budget_request.md&title=">Exceeding Budget Request Form</Link>
 
 ---
 

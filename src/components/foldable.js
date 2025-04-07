@@ -7,9 +7,9 @@ const FoldableButton = ({ text, children }) => {
 
     return (
         <div>
-            <a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} {...getToggleProps()}>
+            <div class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} {...getToggleProps()}>
                 {text}
-            </a>
+            </div>
             <section {...getCollapseProps()}>
                 {children}
             </section>

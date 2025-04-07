@@ -71,8 +71,8 @@ function RepoListSection(organization, repositories) {
     const org_url = organization.html_url;
     const org_avatar = organization.avatar_url;
     const filter_repos = (repositories) => {
-        console.log("Repositories: ", repositories);
-        console.log("Type of repositories: ", typeof repositories);
+        // console.log("Repositories: ", repositories);
+        // console.log("Type of repositories: ", typeof repositories);
         var filtered_repos = [];
         repositories.forEach((repo) => {
             if (repo_names.includes(repo.name)) {
@@ -121,7 +121,7 @@ function GitHubDashboard() {
 
     useEffect(() => {
         async function fetchData(org_name, setter) {
-            console.log('Fetching organization data...');
+            // console.log('Fetching organization data...');
             try {
                 const data = await tryGetOrganization(org_name);
                 // setOrgData(data);
@@ -133,7 +133,7 @@ function GitHubDashboard() {
             }
         }
         async function getRepositories(org_name, setter) {
-            console.log('Fetching repositories...');
+            // console.log('Fetching repositories...');
             try {
                 const repos = await tryListRepositories(org_name);
                 // setRepositories(repos);

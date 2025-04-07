@@ -5,6 +5,7 @@ tags:
 ---
 
 import { Redirect } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 
 <Redirect to="/docs/contribute" />
 
@@ -12,4 +13,4 @@ import { Redirect } from 'react-router-dom'
 
 If you are not redirected automatically, please click below to continue.
 
-<a class="button button--active button--primary" href="/docs/contribute">Contributing to CIROH DocuHub</a>
+<Link class="button button--active button--primary" to="/docs/contribute">Contributing to CIROH DocuHub</Link>

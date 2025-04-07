@@ -56,9 +56,9 @@ const NewsComponent = ({ data, isLatest }) => {
             {renderDescription(item.description)}
             {item.link && (
               <div>
-                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <Link to={item.link} target="_blank" rel="noopener noreferrer">
                   Read more...
-                </a>
+                </Link>
               </div>
             )}
           </div>

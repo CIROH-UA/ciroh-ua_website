@@ -397,7 +397,7 @@ export default function HomepageFeatures() {
               title="CIROH JupyterHub"
               image="img/jupyterhub.jpg"
               description="Access cloud-based JupyterHub environment on Google Cloud tailored for hydrological research. Leverage computing power with both CPU and GPU capabilities for advanced computational needs."
-              link="/docs/services/cloudservices/CIROH JupyterHub"
+              link="/docs/services/cloudservices/ciroh jupyterhub"
             />
             <Card
               title="Pantarhei"

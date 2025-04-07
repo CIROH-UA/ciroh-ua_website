@@ -8,11 +8,7 @@ import "./cta-1.css";
 import styles from "./styles.module.css";
 import "./whyDocuhub.css";
 import Link from '@docusaurus/Link';
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import { fab } from "@fortawesome/free-brands-svg-icons";
 
-// Initialize Font Awesome library
-// library.add(fab);
 const ImpactItem = ({ title, count, imageSrc, users }) => (
   <div className={styles.impactItem}>
     <img src={imageSrc} alt={`${title} icon`} className={styles.impactIcon} />

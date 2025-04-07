@@ -1,5 +1,5 @@
 /**
- * Any CSS included here will be global. The classic template
+ * Any CSS included here will be global.The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
@@ -208,10 +208,50 @@
   margin-top: 0rem !important;
 }
 
-.hide {
-  display: none;
+[data-theme="light"] .indent-wrapper {
+  background-color: #DEDEDE;
+  border-left-style: solid;
+  border-color: #999999;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
 }
 
-.display {
-  display: flex;
+[data-theme="dark"] .indent-wrapper {
+  background-color: #343434;
+  border-left-style: solid;
+  border-color: #999999;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+[data-theme="dark"] .checkmark-color {
+  color: var(--ifm-color-success-light);
+  font-weight: bold;
+}
+
+[data-theme="light"] .checkmark-color {
+  color: var(--ifm-color-success-dark);
+  font-weight: bold;
+}
+
+[data-theme="light"] .darkImage {
+  display: none; /* Hide dark image in light mode */
+}
+
+[data-theme="light"] .lightImage {
+display: block; /* Show light image in light mode */
+}
+
+[data-theme="dark"] .lightImage {
+display: none; /* Hide light image in dark mode */
+}
+
+[data-theme="dark"] .darkImage {
+display: block; /* Show dark image in dark mode */
 }

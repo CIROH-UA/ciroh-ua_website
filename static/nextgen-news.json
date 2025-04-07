@@ -1,4 +1,54 @@
 {
+	"March 2025 Update":  [
+			{
+			  "type": "feature",
+			  "title": "NGIAB-data-preprocess",
+			 "description": "#### 🚀 New Release v4.0.5!\n \n This month's update focuses on speed and reliability! We've improved initial setup times by switching to `boto3` for slightly faster S3 hydrofabric downloads. Plus, we've resolved map display issues by updating our JavaScript dependencies. \n \n 🔥A new image of NGIAB-data-preprocess is now available in the [CIROH 2i2c JupyterHub](https://ciroh.awi.2i2c.cloud/hub/login) production environment. \n \n ![NGIAB-Preprocess Image](/img/ngiab-preprocess-jupyterhub-image.png)",
+			  "link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2025-03-01&until=2025-04-02"
+			},
+			{
+			  "type": "feature",
+			  "title": "NGIAB-CloudInfra: NGIAB Docker Image",
+			  "description": " #### ⚡New Release v1.4.3!\n \nNew calibrated dataset added for Provo River near Woodland, UT AWI_16_10154200_009.tar.gz in README at the link below. Also available in HydroShare!!! \n \n  The new script - runTeehr.sh now available to run NGIAB-TEEHR Evaluation on both ARM64 and AMD64 platforms.",
+			  "link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/blob/main/README.md"
+			}, 
+			{
+				"type": "news",
+				"title": "Updated Community NextGen Documentation Page",
+				"description": "📢 We've new updates under Community NextGen products tab. 📚 This comprehensive resource includes an overview of NGIAB and its extensions.\n - 🔍 Learn more about Data Preprocess, TEEHR Evaluation, Data Visualizer, and DataStreamCLI. \n - 🛠️ Key features, Capabilities and Access Method are included. \n \n \n 🔗 Visit the new Community Hydrologic Modeling Framework documentation page [here](https://docs.ciroh.org/docs/products/Community%20Hydrologic%20Modeling%20Framework/):",
+				"link": "https://docs.ciroh.org/docs/products/Community%20Hydrologic%20Modeling%20Framework/"
+			},
+			{
+			  "type": "feature",
+			  "title": " ngen-datastream",
+			  "description": "✨ Added CIROH Community Hydrofabric Testing! Automated CI tests are added for each VPU to ensure the geopackage is compatible with DataStreamCLI, NextGen and NGIAB. ",
+			  "link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2025-03-01&until=2025-04-02"
+			},
+			{
+				"type": "feature",
+				"title": "NGIAB-HPCInfra: NGIAB Singularity Image for HPC!",
+				"description": "✨ March updates include 2 PRs: \n - New calibrated dataset added for Provo River near Woodland, UT AWI_16_10154200_009.tar.gz in README at the link below. \n - Synced the NGIAB HPC singularity image with the latest features from NGIAB docker image .",
+				"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2025-03-01&until=2025-04-02"
+			},
+			{
+				"type": "news",
+				"title": "Community FIM Documentation on DocuHub",
+				"description": "📢 Both FIM as a service (FIMserv) and FIM Evaluation Framework (FIMPEF) documentation now available on DocuHub!! Go to Products tab -> Community Flood Inundation Mapping",
+				"link": "/docs/products/Community%20Flood%20Inundation%20Mapping/FIM%20as%20a%20Service/"
+			},
+			{
+				"type": "news",
+				"title": "CIROH Portal New Look!!",
+				"description": "📢 BYU Team released newer version of CIROH Portal using docusaurus framework. This brings consistency with CIROH DocuHub!",
+				"link": "https://portal.ciroh.org/"
+			},
+			{
+				"type": "news",
+				"title": "DocuHub Contribute page Updated",
+				"description": "📢 For more ways to contribute to DocuHub. Read below",
+				"link": "/docs/contribute"
+			}
+	],
 	"February 2025 Update":  [
 			{
 			  "type": "feature",

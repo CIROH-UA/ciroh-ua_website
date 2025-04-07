@@ -11,6 +11,8 @@ tags:
   - tutorial
 ---
 
+import Link from '@docusaurus/Link'
+
 # A Step-by-Step Guide: Requesting custom images
 If you have a request for creating custom images, then please follow these instructions.
 ### 1. Create an environment.yml file:
@@ -29,7 +31,7 @@ conda env export -n ENVNAME > environment.yml
 - Select Install Software on CIROH 2i2c JupyterHub as a reason for request. 
 - Fill out remaining sections of the form and submit it.
 
-<a class="button button--active button--primary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) Software Install Form</a>
+<Link class="button button--active button--primary" to="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) Software Install Form</Link>
 
 ### 3. Share your environment.yml file with CIROH-IT support
 

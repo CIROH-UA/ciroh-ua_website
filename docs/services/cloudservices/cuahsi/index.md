@@ -8,17 +8,15 @@ tags:
 - cloud computing
 ---
 
+import Link from '@docusaurus/Link'
+
 ## An Introduction
 
 The CUAHSI JupyterHub is a free cloud computing environment that enables researchers to execute scientific code and explore, modify, and interact with data inside a remote execution environment using Python and/or R programming languages. It is integrated with HydroShare and the Hydrologic Information System data repositories, making it easy to leverage community datasets, collaborate, and disseminate research workflows.
 
-
-<br />
-
 <blockquote>
-  <p><strong>NOTE:</strong> Below content is rendered from <a href="https://github.com/CUAHSI/jupyterhub/blob/main/docs/getting-started.md">https://github.com/CUAHSI/jupyterhub/blob/main/docs/getting-started.md</a></p>
+  <p><strong>NOTE:</strong> Below content is taken from <Link to="https://github.com/CUAHSI/jupyterhub/blob/main/docs/getting-started.md">https://github.com/CUAHSI/jupyterhub/blob/main/docs/getting-started.md</Link></p>
 </blockquote>
-<br />               
 
 # Getting Started
 ---
@@ -30,7 +28,7 @@ To access the CUAHSI JupyterHub platform, you must be a member of the CUAHSI Jup
 
 ## Launching JupyterHub
 
-There are multiple ways to access the CUAHSI JupyterHub platform which are listed below. All of these methods require that you register your HydroShare account with the CUAHSI JupyterHub Group (see [Gaining Access](#gaining-access))
+There are multiple ways to access the CUAHSI JupyterHub platform which are listed below. All of these methods require that you register your HydroShare account with the CUAHSI JupyterHub Group (see :Access" above).
 
 ### HydroShare Web Application
 The simplest way to get started with the CUAHSI JupyterHub is by launching it directly from the HydroShare Apps library ([hydroshare.org/apps](https://hydroshare.org/apps)) by clicking on the CUAHSI JupyterHub icon. This redirect you to the CUAHSI JupyterHub server where you will be asked to login using your HydroShare credentials. Once authenticated, you will be asked to choose a [Profile Environment](https://github.com/CUAHSI/jupyterhub/blob/main/docs/getting-started.md) which will be used to launch an isolated cloud computing environment for you to work in. 

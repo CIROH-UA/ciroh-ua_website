@@ -8,6 +8,8 @@ tags:
   - django
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 # HydroServer
 
 Future iterations of the National Water Model will need to assimilate local-scale data to improve forecasts. The United States Geological Survey (USGS) operates the largest network of operational streamflow gages in the U.S., but generally does not incorporate data from gages operated by other agencies/organizations. A cooperative network of the many streamflow gages outside of the USGS network would enhance data available to national-scale modeling. No cyberinfrastructure currently exists to support such a network.

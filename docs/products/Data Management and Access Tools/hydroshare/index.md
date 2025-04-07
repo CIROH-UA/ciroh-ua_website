@@ -9,6 +9,8 @@ tags:
   - jupyterhub
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 # HydroShare
 
 [HydroShare](https://www.hydroshare.org) is a collaboration environment and repository for data, models, and other research products. Developed and maintained by the Consortium of Universities for the Advancement of Hydrologic Science, Inc. (CUAHSI), HydroShare is a file agnostic, general purpose repository for data, models, computational notebooks, and other content types that accepts upload of any file type. HydroShare allows users to publish data and other content and receive a citable Digital Object Identifier (DOI). Users can keep content files private, share individually with collaborators, make content public, or publish content permanently so that it can be easily cited. HydroShare users can also share their content with groups and communities, such as the [CIROH Community](https://www.hydroshare.org/community/4/), allowing for increased inter-group collaboration. Reach out to help@cuahsi.org for more information or see [https://help.hydroshare.org/](https://help.hydroshare.org/).

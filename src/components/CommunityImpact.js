@@ -3,6 +3,7 @@ import styles from './CommunityImpact.module.css';
 import BlogFilter from './BlogFilter';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const ImpactItem = ({ title, count, imageSrc,users }) => (
   <div className={styles.impactItem}>
@@ -19,25 +20,25 @@ export default function CommunityImpact() {
     {
       title: "AWS Projects",
       count: 24,
-      imageSrc: "/img/aws-logo.svg",
+      imageSrc: useBaseUrl("/img/aws-logo.svg"),
       users:60
     },
     {
       title: "GCP and JupyterHub Projects",
       count: 3,
-      imageSrc: "/img/google-cloud.jpg",
+      imageSrc: useBaseUrl("/img/google-cloud.jpg"),
       users: 171
     },
     {
       title: "On-premise HPC Projects",
       count: 20,
-      imageSrc: "/img/pantarhei-logo.jpg",
+      imageSrc: useBaseUrl("/img/pantarhei-logo.jpg"),
       users: 50
     },
     {
       title: "NSF ACCESS Allocations Projects",
       count: 7,
-      imageSrc: "/img/nsf-logo.png",
+      imageSrc: useBaseUrl("/img/nsf-logo.png"),
       users:27
     }
   ];
@@ -70,7 +71,7 @@ export default function CommunityImpact() {
             key={index}
             title={item.title}
             count={item.count}
-            imageSrc={item.imageSrc}
+            imageSrc={useBaseUrl(item.imageSrc)}
             users={item.users}
           />
         ))}

@@ -436,21 +436,21 @@ export default function HomepageFeatures() {
               <br />
               
               <div className={styles.flexStart}>
-                <a
+                <Link
                   className={`button button--primary ${styles.col4}`}
                   href="/contribute"
                   style={{ textDecoration: "none", marginRight: "10px" }}
                 >
-                  How to Contribute
-                </a>
-                <a
+                  How to Contribute?
+                </Link>
+                <Link
                   className={`button button--secondary ${styles.col4}`}
                   href="https://forms.office.com/r/5ww7qRWwwf"
                   target="_blank"
                   style={{ textDecoration: "none" }}
                 >
                   Your Feedback Matters
-                </a>
+                </Link>
               </div>
             </div>
             <img

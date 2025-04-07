@@ -3,7 +3,7 @@
   <h1>Contact Us</h1>
 </div>
 
-import Link from "@docusaurus/Link"
+import Link from "@docusaurus/Link";
 
 We’re here to assist with any questions, inquiries, or feedback. Feel free to connect with us through the following channels:
 

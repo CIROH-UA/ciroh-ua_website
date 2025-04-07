@@ -7,10 +7,13 @@ assignees: ''
 
 ---
 
-Product name:
-Institute:
-PI name:
-GitHub URL:
+**Product name:**
 
+**Institute:**
+
+**PI name:**
+
+**GitHub URL:**
+
+**Description:**
 [Provide a brief explanation of your product here.]
-

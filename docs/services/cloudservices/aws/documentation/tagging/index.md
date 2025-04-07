@@ -8,6 +8,8 @@ tags:
   - Cost
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 Tags in AWS are essential for organizing resources based on their purpose, owner, or environment, and can also aid in cost tracking when unique key-value pairs are assigned.
 
 # How to Tag Resources on AWS
@@ -21,7 +23,7 @@ Navigate to the desired resource, such as an EC2 instance, and follow these step
 - Add a new tag with a unique Key and Value.
   
 <p align="center">
-<img src="/img/EC2-CreateTag.png" alt="NGIAB Logo" style={{'width':'50%', 'height':'50%'}}/>
+<img src={useBaseUrl("/img/EC2-CreateTag.png")} alt="AWS 'manage tags' window" style={{'width':'50%', 'height':'50%'}}/>
 </p>
 
 - Save the changes.

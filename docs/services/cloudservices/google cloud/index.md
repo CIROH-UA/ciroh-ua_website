@@ -10,48 +10,21 @@ tags:
  
 ---
 
+import Link from '@docusaurus/Link'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 # CIROH Google Account
 
 
 CIROH Cloud leverages the power of Google Cloud to empower researchers and unlock groundbreaking advancements in hydrology. CIROH provides access to enterprise-level Google cloud platform to researchers.
 
 <div className="col col--6" style={{ textAlign: 'center'}}>
-				<img src="https://lh3.googleusercontent.com/VEnnK2SyklusfxZ3dIYjlQH3xSwK2BFSJ69TFQ9g8HjM6m3CouRlTia5FW3z3GS0x83WC9TylZCaA9Jf_2kmr7mXxI9_HYLZTFy_bg" alt="Google Cloud" style={{ width: '90%' }} />
+				<img src={useBaseUrl("https://lh3.googleusercontent.com/VEnnK2SyklusfxZ3dIYjlQH3xSwK2BFSJ69TFQ9g8HjM6m3CouRlTia5FW3z3GS0x83WC9TylZCaA9Jf_2kmr7mXxI9_HYLZTFy_bg")} alt="Google Cloud" style={{ width: '90%' }} />
 </div>
 
-:::info
-<a href="https://cloud.google.com/">Google Cloud Services</a>
-:::
+<Link class="button button--active button--primary" to="https://cloud.google.com/">Google Cloud Homepage</Link>
 
-## How to get access to CIROH Google Account?
-
-CIROH Cloud Hosting services include:
-- Creation of Google Cloud subaccounts for CIROH consortium members and partners.
-- Project PI contact identity creation and access (Google IAM)
-
-We encourage PI of the project to start here: (select Public Cloud and fill out details for Google Cloud)
-
-<a class="button button--active button--primary" href="../../../../docs/services/access"> Infrastructure Request Form</a>
-
----
-
-CIROH Consortium member or partner is responsible for:
-- Management of CIROH subaccount assigned to them.
-- project specific software and environment configuration.
-- Additional project's contacts creation and/or access.
-
-
-:::note
-Please refer [link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?q=is:issue+is:closed+label:google) for references to submitted forms.
-:::
-
-
-## Cost of use:
-- Some uses may be covered by CIROH Infrastructure project funds
-- Extensive uses may be charged to individual CIROH projects
-
-
-# Unleashing Research Potential with Google Cloud Services
+## Unleashing Research Potential with Google Cloud Services
 
 Here's some services and tools offered by Google Cloud:
 
@@ -65,9 +38,33 @@ Here's some services and tools offered by Google Cloud:
 
 ---
 
-## Where to go for help:
+## Requesting CIROH Google Cloud Accounts
 
-- Email ciroh-it-admin@ua.edu UA CIROH Cloud Team
-- CIROH Cloud Slack Channel - #ciroh-ua-it-admin
+CIROH Cloud Hosting services include:
+- Creation of Google Cloud subaccounts for CIROH consortium members and partners.
+- Project PI contact identity creation and access (Google IAM)
+
+To get started, please head to the "Accessing Public Cloud Services" section of the Infrastructure Access page.
+
+<Link class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} to="/docs/services/access#accessing-public-cloud-services">Infrastructure Access</Link>
+
+:::note
+Please refer to [this link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?q=is:issue+is:closed+label:google) for references to submitted forms.
+:::
+
+---
+
+## Cost of Use
+- Individual projects are allotted $500 monthly for use of AWS and Google Cloud services.
+- CIROH projects that anticipate exceeding the monthly budget for cloud services may request additional funds via the form below.
+
+<Link class="button button--active button--primary" to="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=exceeding_budget_request.md&title=">Exceeding Budget Request Form</Link>
+
+---
+
+## Help and Support
+
+- Email UA's CIROH Cloud Team: ciroh-it-admin@ua.edu 
+- Message the CIROH Cloud Slack Channel: #ciroh-ua-it-admin
 
 

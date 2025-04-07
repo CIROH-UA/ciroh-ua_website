@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: "Community Hydrologic Modeling Framework"
+title: "Community Hydrologic Modeling"
 description: "Community NextGen"
 tags:
   - NextGen In A Box
@@ -16,250 +16,42 @@ tags:
   - Singularity
 ---
 
-Community NextGen is a community-accessible verison of NextGen Water Resources Modeling Framework ([NextGen](https://github.com/NOAA-OWP/ngen)). It simplifies deployment with a one-click containerization. NGIAB offers both Docker-based cloud infrastructure ([NGIAB-CloudInfra](https://github.com/CIROH-UA/NGIAB-CloudInfra/blob/main/README.md)) and Singularity-based high-performance computing ([NGIAB-HPCInfra](https://github.com/CIROH-UA/NGIAB-HPCInfra/blob/main/README.md)). NGIAB includes essential tools such as [Data Preprocess](https://github.com/CIROH-UA/NGIAB_data_preprocess/blob/main/README.md), which simplifies data preparation with its interactive map, and [Data Visualizer](https://github.com/CIROH-UA/ngiab-client), which provides geospatial and time series visualization. With [NextGen Datastream](https://github.com/CIROH-UA/ngen-datastream/blob/main/README.md) you can build and validate NextGen input packages, execute NextGen through NGIAB and version the entire run for reproducibility.
+import Link from '@docusaurus/Link'
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
-<a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="/docs/products/Community%20Hydrologic%20Modeling%20Framework/nextgeninaboxDocker/workflow">Get started with NGIAB</a>
+Community NextGen is a community-accessible version of the NextGen Water Resources Modeling Framework ([NextGen](https://github.com/NOAA-OWP/ngen)). It provides hydrologists and researchers with powerful modeling capabilities through simplified deployment options:
 
-<a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="/news">Community NextGen News</a>
+### Deployment Options
+- **Cloud infrastructure** via docker-based [NGIAB-CloudInfra](https://github.com/CIROH-UA/NGIAB-CloudInfra/blob/main/README.md)
+- **High-performance computing** using singularity-based [NGIAB-HPCInfra](https://github.com/CIROH-UA/NGIAB-HPCInfra/blob/main/README.md)
+
+### Essential Components
+NGIAB integrates several powerful tools:
+- [**Data Preprocess**](https://github.com/CIROH-UA/NGIAB_data_preprocess/blob/main/README.md): Simplifies data preparation through an interactive map interface and command line tools
+- [**TEEHR Evaluation**](https://github.com/CIROH-UA/ngiab-teehr/blob/main/README.md): Provides comprehensive model evaluation capabilities
+- [**Data Visualizer**](https://github.com/CIROH-UA/ngiab-client): Delivers sophisticated geospatial and time series visualization
+- [**DataStreamCLI**](https://github.com/CIROH-UA/ngen-datastream/blob/main/README.md): Manages data streams for model input/output
+
+NGIAB and extensions are to make advanced hydrological modeling accessible to the broader community while maintaining the computational power needed for complex water resource simulations.
+
+
+<div class="darkImage" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}><img src={useBaseUrl("/img/NGIAB-extensions-diagram-dark.png")} /></div>
+<div class="lightImage" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}><img src={useBaseUrl("/img/NGIAB-extensions-diagram-light.png")} /></div>
+
+<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/products/Community%20Hydrologic%20Modeling%20Framework/nextgeninaboxDocker/workflow">Get started with NGIAB on local machine</Link>
+
+<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/products/Community%20Hydrologic%20Modeling%20Framework/nextgeninaboxDocker/workflow-cloud">Get started with NGIAB using CIROH JupyterHub</Link>
+
+<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/news">Community NextGen News</Link>
 
 ---
 
 ## NGIAB at a Glance
 
-import FoldableButton from "@site/src/components/foldable.js"
+Explore NextGen In A Box (NGIAB) and extensions through interactive tabs below.
 
-<FoldableButton text="Key Features">
-  <table>
-    <thead>
-        <tr>
-        <th></th>
-        <th>Data Preprocess</th>
-        <th>NGIAB Implementation</th>
-        <th>TEEHR Evaluation</th>
-        <th>Data Visualizer</th>
-        <th>DataStreamCLI</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-        <th>Key Features</th>
-        <td>
-            - Provides GUI for subsetting
-            - Specializes in initial data preparation
-            - Handles subsetting and forcing processing
-            - Supports basic data processing tasks    
-            - Supports NextGen BMI config file generation
-            - Helps with running NGIAB            
-        </td>
-        <td>
-            - Focused specifically on model execution
-            - Core engine for running simulations
-            - Does not handle pre/post-processing tasks
-        </td>
-        <td>
-            - Handles both input and output processing
-            - Supports full workflow, from data preparation to cloud deployment
-        </td>
-        <td>
-            - Focused on analysis and validation
-            - Supports data processing and output analysis
-        </td>
-        <td>
-            - Specializes in initial data preparation
-            - Can subset via hfsubset if requested
-            - Handles forcing processing from Amazon and Google cloud providers
-            - Supports NextGen BMI config file generation
-            - Helps with running NGIAB
-        </td>
-        </tr>
-        <tr>
-        <th>NOAA-OWP Tools/Libraries Utilized</th>
-        <td>            
-            - hydrotools
-            - hydrofabric tools
-        </td>
-        <td>
-            - ngen
-            - t-route
-            - cfe
-            - noah-owp-modular
-            - lstm
-        </td>
-        <td>
-            Built to evaluate model outputs
-        </td>
-        <td>
-            Designed for hydrofabric visualization
-        </td>
-        <td>
-            - hydrofabric data as an input
-        </td>
-        </tr>
-    </tbody>
-  </table>
-</FoldableButton>
+Click on Key Features, Capabilities, or Access Methods to learn more.
 
-<FoldableButton text="Capabilities">
-  <table>
-    <thead>
-      <tr>
-        <th>Capability</th>
-        <th>Data Preprocess</th>
-        <th>TEEHR Evaluation</th>
-        <th>Data Visualizer</th>
-        <th>DataStreamCLI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>GUI</td>
-        <td>✓</td>
-        <td>-</td>
-        <td>✓</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>Hydrofabric Subsetting</td>
-        <td>✓</td>
-        <td>-</td>
-        <td>✓ (view only)</td>
-        <td>✓🔨</td>
-      </tr>
-      <tr>
-        <td>NetCDF Forcing Processing</td>
-        <td>-</td>
-        <td>✓</td>
-        <td>-</td>
-        <td>✓🔨</td>
-      </tr>
-      <tr>
-        <td>Zarr Forcing Processing</td>
-        <td>✓</td>
-        <td>✓</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>Forcing Metadata Generation</td>
-        <td>✓</td>
-        <td>-</td>
-        <td>-</td>
-        <td>✓🔨</td>
-      </tr>
-      <tr>
-        <td>NextGen BMI Configuration File Generation</td>
-        <td>✓</td>
-        <td>-</td>
-        <td>-</td>
-        <td>✓🔨</td>
-      </tr>
-      <tr>
-        <td>Directory and File Format Validation</td>
-        <td>🔨</td>
-        <td>-</td>
-        <td>-</td>
-        <td>✓🔨</td>
-      </tr>
-      <tr>
-        <td>NextGen Execution via NGIAB</td>
-        <td>✓</td>
-        <td>-</td>
-        <td>-</td>
-        <td>✓</td>
-      </tr>
-      <tr>
-        <td>Execution Metadata Generation</td>
-        <td>🔨</td>
-        <td>-</td>
-        <td>-</td>
-        <td>✓🔨</td>
-      </tr>
-      <tr>
-        <td>Calibration</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>Evaluation</td>
-        <td>-</td>
-        <td>✓🔨</td>
-        <td>🔨 (displays TEEHR results)</td>
-        <td>✓</td>
-      </tr>
-      <tr>
-        <td>Visualization</td>
-        <td>-</td>
-        <td>🔨 (metrics visualization)</td>
-        <td>✓</td>
-        <td>-</td>
-      </tr>
-    </tbody>
-  </table>
-</FoldableButton>
+import PlatformModal from "@site/src/components/products/platform-modal.jsx"
 
-<FoldableButton text="Access Methods">
-  <table>
-    <thead>
-      <tr>
-        <th>Access method</th>
-        <th>Data Preprocess</th>
-        <th>NGIAB Implementation</th>
-        <th>TEEHR Evaluation</th>
-        <th>Data Visualizer</th>
-        <th>DataStreamCLI</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Docker</td>
-        <td>-</td>
-        <td>✓</td>
-        <td>✓</td>
-        <td>✓</td>
-        <td>✓</td>
-      </tr>
-      <tr>
-        <td>Python Package (pip)</td>
-        <td>✓</td>
-        <td>✓</td>
-        <td>✓</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>Web Interface</td>
-        <td>✓</td>
-        <td>-</td>
-        <td>-</td>
-        <td>✓</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>Notebook (ipynb)</td>
-        <td>✓</td>
-        <td>-</td>
-        <td>✓</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>Singularity (HPC)</td>
-        <td>-</td>
-        <td>✓</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-    </tbody>
-  </table>
-</FoldableButton>
-
----
-
-## List of NGAIB Tools
-
-import DocCardList from '@theme/DocCardList';
-
-<DocCardList />
+<PlatformModal />

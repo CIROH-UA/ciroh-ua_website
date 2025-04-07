@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
-title: "NGIAB E2E Workflow Video"
+sidebar_position: 4
+title: "NGIAB E2E Workflow Video: Local Setup"
 description: "NextGen In a Box (NGIAB) E2E Workflow Video"
 tags:
   - NextGen In A Box

@@ -11,11 +11,13 @@ tags:
   - Access
 ---
 
+import Link from '@docusaurus/Link'
+
 NCAR's Derecho supercomputer is a high-performance computing system with 19.87 petaflops of processing power. It comprises 2,488 nodes, each equipped with two 64-core AMD EPYC 7763 Milan processors, totaling 323,712 processor cores. Each node has 256 GB of DDR4 memory and is interconnected by an HPE Slingshot v11 high-speed network in a dragonfly configuration. The system supports Earth system science research for U.S. institutions.
 
 <div className="col col--6">
 				<img src="https://ncar-hpc-docs-arc-iframe.readthedocs.io/compute-systems/derecho/media/Derecho_Logo_Landscape_NCARBlue.svg#only-light" alt="NSF NCAR Derecho logo"/>
-				<i>Image Source: <a href="https://arc.ucar.edu/docs">hhttps://arc.ucar.edu/docs</a> </i>
+				<i>Image Source: <Link to="https://arc.ucar.edu/docs">hhttps://arc.ucar.edu/docs</Link> </i>
 </div>
 
 ### Use Cases:
@@ -26,7 +28,7 @@ NCAR's Derecho supercomputer is a high-performance computing system with 19.87 p
 
 To learn more, visit the [NCAR HPC Documentation page](https://arc.ucar.edu/docs).
 
-<a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="https://arc.ucar.edu/docs">NSF NCAR HPC Documentation</a>
+<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="https://arc.ucar.edu/docs">NSF NCAR HPC Documentation</Link>
 
 
 :::info

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import themes from "./themes.module.css";
+import ReactMarkdown from 'react-markdown';
+import Link from '@docusaurus/Link'
 
 const NewsComponent = ({ data, isLatest }) => {
   const [isExpanded, setIsExpanded] = useState(isLatest); // Expand only the latest
@@ -21,7 +23,6 @@ const NewsComponent = ({ data, isLatest }) => {
       </ul>
 
 
-      {/* TODO: dark mode/light mode detection */}
       {isExpanded && 
         <div style={{'display':'flex','flexDirection':'row','justifyContent':'center','alignItems':'center'}}>
           <img class={themes.darkImage} alt="CIROH logo" src="img/cirohlogo-white.png" style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
@@ -46,21 +47,24 @@ const NewsComponent = ({ data, isLatest }) => {
       {isExpanded &&
         data.items.map((item, index) => (
           <div key={index} style={{ paddingBottom: "25px" }}>
-            <span className={`badge badge--${getBadgeClass(item.type)}`}>
-              {item.type}
-            </span>{" "}
-            <strong>{item.title}</strong>
+            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+              <span className={`badge badge--${getBadgeClass(item.type)}`}>
+                {item.type}
+              </span>
+              <strong style={{ fontSize: "25px" }}>{item.title}</strong>
+            </div>
             <br />
             {renderDescription(item.description)}
             {item.link && (
               <div>
-                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <Link to={item.link} target="_blank" rel="noopener noreferrer">
                   Read more...
-                </a>
+                </Link>
               </div>
             )}
           </div>
         ))}
+
     </div>
   );
 };
@@ -89,25 +93,15 @@ const NewsHeader = ({ date }) => {
 
 // Function to render the description with links
 function renderDescription(description) {
-  const parts = description.split(" ");
   return (
-    <>
-      {parts.map((part, index) => (
-        <React.Fragment key={index}>
-          {index > 0 && " "}
-          {isWebLink(part) ? (
-            <a href={part} target="_blank" rel="noopener noreferrer">
-              {part}
-            </a>
-          ) : (
-            <span>{part}</span>
-          )}
-        </React.Fragment>
-      ))}
-    </>
+    <ReactMarkdown
+      children={description}
+      components={{
+        a: ({node, ...props}) => <a target="_blank" rel="noopener noreferrer" {...props} />
+      }}
+    />
   );
 }
-
 // Function to check if a part is a web link
 function isWebLink(part) {
   return part.startsWith("http://") || part.startsWith("https://");

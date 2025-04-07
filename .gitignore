@@ -2,3 +2,5 @@
 build/
 node_modules/
 .github/
+!".github/ISSUE-TEMPLATE/**"
+!".github/workflows/**"

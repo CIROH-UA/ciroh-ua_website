@@ -23,6 +23,8 @@ const help = null; // help keyword in the code can be moused over to see the abo
 import { tryGetOrganization, tryListRepositories } from './GitHubHandling/AccessUtils';
 import { AccessConfig } from './GitHubHandling/AccessConfig';
 import Link from '@docusaurus/Link';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 // making a test component to check if the import and github API both work
 
 function IntroDiv() {
@@ -95,14 +97,17 @@ function RepoListSection(organization, repositories) {
     const repo_list = org_repos.map((repo) => {
         return repo_div(repo);
     });
+    const number_of_repos = org_repos.length;
+    const repo_list_header = number_of_repos > 0 ? <h3>Repositories from this organization:</h3> : <h3>No repositories found in this organization.</h3>;
+    const repo_list_div = <div>{repo_list_header}{repo_list}</div>;
     return (
         <div style={{ border: '2px solid black', padding: '20px' }}>
             <h2>{org_name}</h2>
             <p>{org_desc}</p>
             <p><img src={org_avatar} alt="Organization Avatar" style={{ width: '100px', height: '100px' }} /></p>
             <Link href={org_url} target="_blank" rel="noopener noreferrer">View Organization</Link>
-            <p>Repositories from this organization:</p>
-            {repo_list}
+            {/* <p>Repositories from this organization:</p> */}
+            {repo_list_div}
         </div>
     );
 }
@@ -180,9 +185,25 @@ function GitHubDashboard() {
     return (
         <div>
             <IntroDiv />
-            {ciroh_repo_list}
+            {/* {ciroh_repo_list}
             {awi_repo_list}
-            {noaa_repo_list}
+            {noaa_repo_list} */}
+            <Tabs defaultValue="ciroh" values={[
+                { label: 'CIROH-UA', value: 'ciroh' },
+                { label: 'NOAA-OWP', value: 'noaa' },
+                { label: 'Alabama Water Institute', value: 'awi' },
+            ]}>
+                <TabItem value="ciroh" label="CIROH-UA" default>
+                    {ciroh_repo_list}
+                </TabItem>
+                <TabItem value="noaa" label="NOAA-OWP">
+                    {noaa_repo_list}
+                </TabItem>
+                <TabItem value="awi" label="Alabama Water Institute">
+                    {awi_repo_list}
+                </TabItem>
+            </Tabs>
+            <p>Note: The list of repositories is not exhaustive. It is filtered by name, and currently can miss repositories that have had their names changed after being forked.</p>
         </div>
     );
 }

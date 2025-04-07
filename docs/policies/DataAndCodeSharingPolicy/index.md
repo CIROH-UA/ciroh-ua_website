@@ -3,6 +3,8 @@ sidebar_position: 2
 title: "Data and Code Sharing"
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 <div className="container">
     <div className="hero-content">
       <div className="hero-text">
@@ -13,7 +15,7 @@ title: "Data and Code Sharing"
         </p>
       </div>
       <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/datasharing.jpeg" alt="Water Tools" style={{ width: '50%' }} />
+        <img src={useBaseUrl("/img/datasharing.jpeg")} alt="Water Tools" style={{ width: '50%' }} />
       </div>
     </div>
 </div>

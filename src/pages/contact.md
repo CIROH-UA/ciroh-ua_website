@@ -1,8 +1,9 @@
+import Link from '@docusaurus/Link'
+
 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
   <img src="/img/docuhub-logo.png" alt="DocuHub Logo" width="80" style={{ marginLeft: '-100px', marginBottom: '0' }} />
   <h1>Contact Us</h1>
 </div>
-
 
 We’re here to assist with any questions, inquiries, or feedback. Feel free to connect with us through the following channels:
 
@@ -23,29 +24,29 @@ Stay connected with CIROH on our social media platforms for the latest updates, 
 <div style={{ display: "flex", gap: "20px", alignItems: "center" }}>
 
   <!-- Facebook -->
-  <a href="https://www.facebook.com/UACIROH/" target="_blank" rel="noopener noreferrer">
+  <Link to="https://www.facebook.com/UACIROH/" target="_blank" rel="noopener noreferrer">
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="CIROH Facebook" width="40" />
-  </a>
+  </Link>
 
   <!-- X (formerly Twitter) -->
-  <a href="https://x.com/UA_CIROH" target="_blank" rel="noopener noreferrer">
+  <Link to="https://x.com/UA_CIROH" target="_blank" rel="noopener noreferrer">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/X_logo.jpg/900px-X_logo.jpg" alt="CIROH X (Twitter)" width="40" />
-  </a>
+  </Link>
 
   <!-- Instagram -->
-  <a href="https://www.instagram.com/ua_ciroh/" target="_blank" rel="noopener noreferrer">
+  <Link to="https://www.instagram.com/ua_ciroh/" target="_blank" rel="noopener noreferrer">
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="CIROH Instagram" width="40" />
-  </a>
+  </Link>
 
   <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/company/uaciroh/" target="_blank" rel="noopener noreferrer">
+  <Link to="https://www.linkedin.com/company/uaciroh/" target="_blank" rel="noopener noreferrer">
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="CIROH LinkedIn" width="40" />
-  </a>
+  </Link>
 
   <!-- YouTube -->
-  <a href="https://www.youtube.com/@UA_CIROH" target="_blank" rel="noopener noreferrer">
+  <Link to="https://www.youtube.com/@UA_CIROH" target="_blank" rel="noopener noreferrer">
     <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="CIROH YouTube" width="40" />
-  </a>
+  </Link>
 
 </div>
 <br />

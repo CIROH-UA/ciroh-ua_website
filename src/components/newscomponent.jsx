@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import themes from "./themes.module.css";
 import ReactMarkdown from 'react-markdown';
+import Link from '@docusaurus/Link'
 
 const NewsComponent = ({ data, isLatest }) => {
   const [isExpanded, setIsExpanded] = useState(isLatest); // Expand only the latest

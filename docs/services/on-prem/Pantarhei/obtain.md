@@ -9,7 +9,7 @@ tags:
   - Pantarhei
 ---
 
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 
 Pantarhei cluster is accessible to the CIROH members and partners of the Cooperative Institute for Research to Operations in Hydrology (CIROH).
 

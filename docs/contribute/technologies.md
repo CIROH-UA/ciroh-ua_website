@@ -6,7 +6,7 @@ tags:
   - contribute
 ---
 
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 
 # DocuHub technologies
 

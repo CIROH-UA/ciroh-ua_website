@@ -10,7 +10,7 @@ tags:
  
 ---
 
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # CIROH Google Account

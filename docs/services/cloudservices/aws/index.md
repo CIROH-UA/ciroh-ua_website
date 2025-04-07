@@ -9,7 +9,7 @@ tags:
   - S3
 ---
 
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 
 # CIROH AWS Account
 

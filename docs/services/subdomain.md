@@ -2,7 +2,7 @@
 sidebar_position: 5
 title: "CIROH Subdomain Request Form"
 ---
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 
 # CIROH Subdomain Request Form
 

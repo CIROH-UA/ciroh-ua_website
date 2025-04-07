@@ -16,7 +16,7 @@ tags:
   - Singularity
 ---
 
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 Community NextGen is a community-accessible version of the NextGen Water Resources Modeling Framework ([NextGen](https://github.com/NOAA-OWP/ngen)). It provides hydrologists and researchers with powerful modeling capabilities through simplified deployment options:

@@ -3,7 +3,7 @@ sidebar_position: 1
 title: "CIROH CyberInfrastructure"
 ---
 
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # CIROH CyberInfrastructure: Unleashing Potential in Hydrological Research

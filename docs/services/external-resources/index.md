@@ -5,7 +5,7 @@ title: "External Resources"
 import "/src/components/HomepageFeatures/bootstrap.min.css";
 import "/src/components/HomepageFeatures/cta-2.css";
 import "/src/components/HomepageFeatures/cta-1.css";
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # External Resources

@@ -10,7 +10,7 @@ tags:
   - Access
 ---
 
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 
 JetStream2 is accessible to the CIROH members and partners of the Cooperative Institute for Research to Operations in Hydrology (CIROH).
 

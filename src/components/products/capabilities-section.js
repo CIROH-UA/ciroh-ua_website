@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 const CapabilitiesSection = ({ display }) => {
     return (
         <section style={{'display': display ? 'block' : 'none'}}>

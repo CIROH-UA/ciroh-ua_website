@@ -10,7 +10,7 @@ tags:
   - Access
 ---
 
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 
 Anvil is a powerful supercomputer, offering computing power for demanding research problems. Purdue's Anvil cluster consists of 1,000 nodes with two 64-core AMD EPYC "Milan" processors each and delivers over one billion CPU core hours each year. With a peak performance of 5.1 petaflops and a speed of 100 Gbps interconnect, Anvil ensures rapid data transfer and processing for efficient research workflows. Standard Anvil nodes have 256GB of DDR4-3200 memory each, ideal for most research tasks.
 

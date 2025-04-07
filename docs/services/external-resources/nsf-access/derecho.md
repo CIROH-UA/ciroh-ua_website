@@ -11,7 +11,7 @@ tags:
   - Access
 ---
 
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 
 NCAR's Derecho supercomputer is a high-performance computing system with 19.87 petaflops of processing power. It comprises 2,488 nodes, each equipped with two 64-core AMD EPYC 7763 Milan processors, totaling 323,712 processor cores. Each node has 256 GB of DDR4 memory and is interconnected by an HPE Slingshot v11 high-speed network in a dragonfly configuration. The system supports Earth system science research for U.S. institutions.
 

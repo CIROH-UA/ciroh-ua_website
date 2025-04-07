@@ -14,7 +14,7 @@ Our website is constructed using [Docusaurus](https://docusaurus.io/), a modern 
 
 import { contributeSimpleDocsCards,contributeBlogsDocsCards,contributeProductsDocsCards } from './cardContent'
 import StepsCards from "@site/src/components/StepsCards.js"
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 
 ## Contributing simple changes to DocuHub
 

@@ -8,7 +8,7 @@ tags:
   - gcp
 ---
 
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 
 # National Water Model (NWM) BigQuery API
 

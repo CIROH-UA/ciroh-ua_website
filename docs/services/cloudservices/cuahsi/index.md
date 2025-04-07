@@ -8,7 +8,7 @@ tags:
 - cloud computing
 ---
 
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 
 ## An Introduction
 

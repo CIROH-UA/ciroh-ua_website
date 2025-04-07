@@ -11,7 +11,7 @@ tags:
   - tutorial
 ---
 
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 
 # A Step-by-Step Guide: Requesting custom images
 If you have a request for creating custom images, then please follow these instructions.

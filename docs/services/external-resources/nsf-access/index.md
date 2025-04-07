@@ -3,7 +3,7 @@ sidebar_position: 1
 title: "NSF Access"
 ---
 
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 
 # NSF Access
 **ACCESS** is an advanced computing and data resource program supported by the U.S. National Science Foundation (NSF). Please refer to https://allocations.access-ci.org/ for more information on how to get access to NSF ACCESS resources. 

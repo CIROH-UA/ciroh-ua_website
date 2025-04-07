@@ -7,7 +7,7 @@ tags:
 - online courses
 ---
 
-import { Link } from 'react-router-dom'
+import Link from '@docusaurus/Link'
 
 # INTERSECT – Research Software Engineering Training
 

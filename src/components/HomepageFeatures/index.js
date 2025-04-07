@@ -560,7 +560,7 @@ export default function HomepageFeatures() {
         <div className="container">
           <div className={styles.flexStart}>
             <div className="hero-text">
-              <h1 className={styles.h1}><b>NEW!</b> CIROH Office Hours</h1>
+              <h1 className={styles.h1}>Cyberinfrastructure & Community NextGen Monthly Office Hours</h1>
               <br />
               
               <Link

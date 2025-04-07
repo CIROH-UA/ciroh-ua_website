@@ -3,7 +3,7 @@
 			{
 			  "type": "feature",
 			  "title": "NGIAB-data-preprocess",
-			 "description": "#### 🚀 New Release v4.0.5!\n \n This month's update focuses on speed and reliability! We've improved initial setup times by switching to `boto3` for slightly faster S3 hydrofabric downloads. Plus, we've resolved map display issues by updating our JavaScript dependencies. \n \n 🔥A new image of NGIAB-data-preprocess is now available in the [CIROH 2i2c JupyterHub](https://ciroh.awi.2i2c.cloud/hub/login) production environment. \n \n ![NGIAB-Preprocess Image](./img/ngiab-preprocess-jupyterhub-image.png)",
+			 "description": "#### 🚀 New Release v4.0.5!\n \n This month's update focuses on speed and reliability! We've improved initial setup times by switching to `boto3` for slightly faster S3 hydrofabric downloads. Plus, we've resolved map display issues by updating our JavaScript dependencies. \n \n 🔥A new image of NGIAB-data-preprocess is now available in the [CIROH 2i2c JupyterHub](https://ciroh.awi.2i2c.cloud/hub/login) production environment. \n \n ![NGIAB-Preprocess Image](/img/ngiab-preprocess-jupyterhub-image.png)",
 			  "link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2025-03-01&until=2025-04-02"
 			},
 			{

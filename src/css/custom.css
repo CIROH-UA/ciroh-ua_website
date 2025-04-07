@@ -56,6 +56,14 @@
   color: whitesmoke;
 }
 
+/*
+  This class can be apply to img tag if you want image colors to invert, to look better in a dark mode
+  e.g. <img src="path/to/image.png" class="theme-invert-dark" />
+*/
+[data-theme='dark'] .theme-invert-dark {
+  filter: invert(100%);
+}
+
 /* 
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;

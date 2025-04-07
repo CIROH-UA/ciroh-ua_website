@@ -30,7 +30,7 @@ import Link from '@docusaurus/Link'
 />
 
 <div style={{'display':'flex', 'justifyContent':'center'}}>
-  <Link class="button button--active button--primary" to="https://github.com/CIROH-UA/ciroh-ua_website/issues/new?assignees=&labels=on-prem&projects=&template=blog-request.md">Blog Post Request Form</Link>
+  <Link class="button button--active button--primary" to="https://github.com/CIROH-UA/ciroh-ua_website/blob/main/.github/ISSUE_TEMPLATE/docuhub-blog-post.md">Blog Post Request Form</Link>
 </div>
 
 ## Requesting a product page on DocuHub

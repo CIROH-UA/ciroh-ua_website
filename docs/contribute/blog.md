@@ -10,7 +10,7 @@ tags:
 
 This page explains how to add new posts to the DocuHub Blog's feed as a developer.
 
-If you're a researcher looking to submit a blog post, you may want to consider filling out the [Blog Post Request Form](https://github.com/CIROH-UA/ciroh-ua_website/issues/new?assignees=&labels=on-prem&projects=&template=blog-request.md) instead.
+If you're a researcher looking to submit a blog post, you may want to consider filling out the [Blog Post Request Form](https://github.com/CIROH-UA/ciroh-ua_website/blob/main/.github/ISSUE_TEMPLATE/docuhub-blog-post.md) instead.
 
 :::info
 Please remember that blog posts submitted to CIROH DocuHub should discuss projects that make use of CIROH\'s cyberinfrastructure.

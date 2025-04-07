@@ -10,13 +10,15 @@ tags:
   - Access
 ---
 
+import { Link } from 'react-router-dom'
+
 JetStream2 is accessible to the CIROH members and partners of the Cooperative Institute for Research to Operations in Hydrology (CIROH).
 
 Jetstream2 is a powerful hybrid-cloud platform designed for researchers and educators. It offers a range of flexible, on-demand, and programmable infrastructure tools, from interactive virtual machines (VMs) to advanced infrastructure and orchestration services. The primary resource consists of AMD Milan 7713 CPUs with 128 cores per node and 512 GB RAM per node, all connected by a high-speed 100 gbps wthernet.
 
 <div className="col col--6">
         <img src="https://docs.jetstream-cloud.org/images/JS2-Logo-Transparent.png" alt="JetStream2 logo"/>
-        <i>Image Source: <a href="https://docs.jetstream-cloud.org/">https://docs.jetstream-cloud.org/</a> </i>
+        <i>Image Source: <Link to="https://docs.jetstream-cloud.org/">https://docs.jetstream-cloud.org/</Link> </i>
 </div>
 
 ### Use cases:
@@ -33,19 +35,19 @@ For information about available instance sizes, visit the [JetStream2 VM Sizes](
 ### To gain access to JetStream2:
 Step 1: If you are the PI for your project, please submit the Infrastructure Request Form below to get access to JetStream2.
 
-<a class="button button--active button--primary" href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=on-prem&projects=&template=onprem-request.md&title="> Infrastructure Request Form</a>
+<Link class="button button--active button--primary" to="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=on-prem&projects=&template=onprem-request.md&title="> Infrastructure Request Form</Link>
 
 ---
 
 Step 2: If you don't already have an NSF Access account, register for one using the link below.
 
-<a class="button button--active button--primary" href="https://forms.office.com/r/ERyKyHbdaC"> NSF Access New User Registration</a>
+<Link class="button button--active button--primary" to="https://forms.office.com/r/ERyKyHbdaC"> NSF Access New User Registration</Link>
 
 ---
 
 Step 3: Using your NSF Access ID, submit the JetStream2 Access Request form for individual user accounts on JetStream2.
 
-<a class="button button--active button--primary" href="https://forms.office.com/r/ERyKyHbdaC"> JetStream2 Access Request Form</a>
+<Link class="button button--active button--primary" to="https://forms.office.com/r/ERyKyHbdaC"> JetStream2 Access Request Form</Link>
 
 :::info
 If you are unable to access the JetStream2 forms, please contact the CIROH team at ciroh-it-admin@ua.edu for assistance.
@@ -56,5 +58,5 @@ If you are unable to access the JetStream2 forms, please contact the CIROH team 
 Once you're granted access, you're ready to begin using JetStream2! Visit the [logging in to JetStream2 page](https://docs.jetstream-cloud.org/getting-started/login/) to get started.
 
 :::info
-For a more detailed information on JetStream2, visit the official NSF ACCESS Jetstream2 website <a href="https://docs.jetstream-cloud.org/">here.</a>
+For a more detailed information on JetStream2, visit the official NSF ACCESS Jetstream2 website [here.](https://docs.jetstream-cloud.org/)
 :::

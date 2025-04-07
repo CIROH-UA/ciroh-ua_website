@@ -9,6 +9,8 @@ tags:
   - national water center
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 # CIROH Research Portal
 
 Comprised of a large technologically and topically diverse group of scientists, CIROH and NOAA NWM researchers require a means to organize, catalog, coordinate, and share research data products, tools, visualizations, and interactive software applications in an accessible, consistent, and intuitive manner. This project aims to address this need by building and seeding a web-based catalog of interactive web applications, notebooks, software tools, and learning modules that demonstrate and provide access to NWM modeling advances, datasets, visualizations, and information synthesis innovations.

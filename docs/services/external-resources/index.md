@@ -5,11 +5,13 @@ title: "External Resources"
 import "/src/components/HomepageFeatures/bootstrap.min.css";
 import "/src/components/HomepageFeatures/cta-2.css";
 import "/src/components/HomepageFeatures/cta-1.css";
+import { Link } from 'react-router-dom'
+import useBaseUrl from '@docusaurus/useBaseUrl'
 
 # External Resources
 CIROH recognizes the importance of leveraging external resources to enhance our research capabilities. This section provides information on external computing resources available to CIROH consortium members. Explore options beyond our on-premise and cloud-based services to expand your research horizons.
 
-<a class="button button--active button--primary" style={{marginBottom:"1.4rem"}}href="https://access-ci.org/">Learn about NSF Access</a> 
+<Link class="button button--active button--primary" style={{marginBottom:"1.4rem"}} to="https://access-ci.org/">Learn about NSF Access</Link> 
 
 **ACCESS** is a program established and funded by the National Science Foundation to help researchers and educators, with or without supporting grants, to utilize the nation’s advanced computing systems and services – at no cost.
 
@@ -35,7 +37,7 @@ CIROH recognizes the importance of leveraging external resources to enhance our 
                 <h2 class="display-4 text-white mb-5">
                  ACCESS offers computing and storage resources free of charge to researchers and educators. 
                 </h2>
-                <a class="button button--active button--primary" style={{marginBottom:"1.4rem", fontSize: "1.25rem"}}href="https://allocations.access-ci.org/resources">About ACCESS Resources</a>
+                <Link class="button button--active button--primary" style={{marginBottom:"1.4rem", fontSize: "1.25rem"}} to="https://allocations.access-ci.org/resources">About ACCESS Resources</Link>
               </div>
             </div>
           </div>

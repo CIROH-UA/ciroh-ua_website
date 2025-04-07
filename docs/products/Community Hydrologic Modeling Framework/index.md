@@ -16,6 +16,9 @@ tags:
   - Singularity
 ---
 
+import { Link } from 'react-router-dom'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 Community NextGen is a community-accessible version of the NextGen Water Resources Modeling Framework ([NextGen](https://github.com/NOAA-OWP/ngen)). It provides hydrologists and researchers with powerful modeling capabilities through simplified deployment options:
 
 ### Deployment Options
@@ -32,14 +35,14 @@ NGIAB integrates several powerful tools:
 NGIAB and extensions are to make advanced hydrological modeling accessible to the broader community while maintaining the computational power needed for complex water resource simulations.
 
 
-<div class="darkImage" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}><img src="/img/NGIAB-extensions-diagram-dark.png" /></div>
-<div class="lightImage" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}><img src="/img/NGIAB-extensions-diagram-light.png" /></div>
+<div class="darkImage" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}><img src={useBaseUrl("/img/NGIAB-extensions-diagram-dark.png")} /></div>
+<div class="lightImage" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}><img src={useBaseUrl("/img/NGIAB-extensions-diagram-light.png")} /></div>
 
-<a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="/docs/products/Community%20Hydrologic%20Modeling%20Framework/nextgeninaboxDocker/workflow">Get started with NGIAB on local machine</a>
+<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/products/Community%20Hydrologic%20Modeling%20Framework/nextgeninaboxDocker/workflow">Get started with NGIAB on local machine</Link>
 
-<a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="/docs/products/Community%20Hydrologic%20Modeling%20Framework/nextgeninaboxDocker/workflow-cloud">Get started with NGIAB using CIROH JupyterHub</a>
+<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/products/Community%20Hydrologic%20Modeling%20Framework/nextgeninaboxDocker/workflow-cloud">Get started with NGIAB using CIROH JupyterHub</Link>
 
-<a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="/news">Community NextGen News</a>
+<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/news">Community NextGen News</Link>
 
 ---
 

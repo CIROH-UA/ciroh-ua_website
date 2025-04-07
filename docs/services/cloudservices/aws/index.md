@@ -9,6 +9,8 @@ tags:
   - S3
 ---
 
+import { Link } from 'react-router-dom'
+
 # CIROH AWS Account
 
 CIROH Cloud leverages the power of AWS to empower researchers and unlock groundbreaking advancements in hydrology. CIROH provides access to enterprise-level AWS cloud platform to researchers.
@@ -17,7 +19,7 @@ CIROH Cloud leverages the power of AWS to empower researchers and unlock groundb
 				<img src="https://blog.adobe.com/en/publish/2021/08/31/media_1649ebc3fbbce0df508081913819d491fc3f7c7a9.png?width=750&format=png&optimize=medium" alt="AWS" style={{ width: '100%' }} />
 </div>
 
-<a class="button button--active button--primary" href="https://aws.amazon.com/">AWS Cloud Services Homepage</a>
+<Link class="button button--active button--primary" to="https://aws.amazon.com/">AWS Cloud Services Homepage</Link>
 
 ## Unleashing Research Potential with AWS Cloud Services
 
@@ -45,7 +47,7 @@ CIROH Consortium members or partners are responsible for:
 - Handling account creation and/or access for project contacts
 To get started, please head to the "Accessing Public Cloud Services" section of the Infrastructure Access page.
 
-<a class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} href="/docs/services/access#accessing-public-cloud-services">Infrastructure Access</a>
+<Link class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} link="/docs/services/access#accessing-public-cloud-services">Infrastructure Access</Link>
 
 :::note
 Please refer to [this link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?q=is%3Aissue+is%3Aclosed+label%3Aaws) for references to submitted forms.
@@ -57,7 +59,7 @@ Please refer to [this link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?
 - Individual projects are allotted $500 monthly for use of AWS and Google Cloud services.
 - CIROH projects that anticipate exceeding the monthly budget for cloud services may request additional funds via the form below.
 
-<a class="button button--active button--primary" href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=exceeding_budget_request.md&title=">Exceeding Budget Request Form</a>
+<Link class="button button--active button--primary" to="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=exceeding_budget_request.md&title=">Exceeding Budget Request Form</Link>
 
 ---
 

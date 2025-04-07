@@ -3,6 +3,9 @@ sidebar_position: 1
 title: "CIROH CyberInfrastructure"
 ---
 
+import { Link } from 'react-router-dom'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 # CIROH CyberInfrastructure: Unleashing Potential in Hydrological Research
 ## Computing infrastructure access for consortium members and partners 
 
@@ -24,7 +27,7 @@ This translates into a powerful platform that includes:
 
 The CIROH CyberInfrastructure is meticulously designed to empower CIROH researchers and innovators to achieve groundbreaking results in hydrology. <strong>Join us and unlock the full potential of your research today!</strong>
 
-<a class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}  href="/docs/services/access/">Get started</a>
+<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/services/access/">Get started</Link>
 
 ---
 
@@ -40,20 +43,20 @@ The CIROH CyberInfrastructure is meticulously designed to empower CIROH research
          	
 		<div className="row">
 			<div className="col col--6" style={{ textAlign: 'center' }}>
-				<img src="/img/2i2c-gcp.png" alt="Water Tools" style={{ width: '100%' }} />
-				<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  href="https://docs.ciroh.org/docs/services/cloudservices/ciroh%20jupyterhub/"> CIROH JupyterHub Service</a>
+				<img src={useBaseUrl("/img/2i2c-gcp.png")} alt="Water Tools" style={{ width: '100%' }} />
+				<Link class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} to="https://docs.ciroh.org/docs/services/cloudservices/ciroh%20jupyterhub/"> CIROH JupyterHub Service</Link>
 			</div>		
 			<div className="col col--6" style={{ textAlign: 'center' }}>
 				<img src="https://blog.adobe.com/en/publish/2021/08/31/media_1649ebc3fbbce0df508081913819d491fc3f7c7a9.png?width=750&format=png&optimize=medium" alt="AWS" style={{ width: '100%' }} />
-				<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  href="https://docs.ciroh.org/docs/services/cloudservices/aws/"> CIROH AWS Services</a>
+				<Link class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} to="https://docs.ciroh.org/docs/services/cloudservices/aws/"> CIROH AWS Services</Link>
+			</div>
+            <div className="col col--6" style={{ textAlign: 'center' }}>
+				<img src={useBaseUrl("/img/onprem.jpg")} alt="On-Premises" style={{ width: '100%' }} />
+				<Link class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} to="https://docs.ciroh.org/docs/services/on-prem/Pantarhei/"> Pantarhei HPC</Link>
 			</div>
             		<div className="col col--6" style={{ textAlign: 'center' }}>
-				<img src="/img/onprem.jpg" alt="On-Premises" style={{ width: '100%' }} />
-				<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  href="https://docs.ciroh.org/docs/services/on-prem/Pantarhei/"> Pantarhei HPC</a>
-			</div>
-            		<div className="col col--6" style={{ textAlign: 'center' }}>
-				<img src="/img/google-cloud.webp" alt="On-Premises" style={{ width: '100%' }} />
-				<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  href="https://docs.ciroh.org/docs/services/cloudservices/google%20cloud/"> CIROH Google Cloud Services</a>
+				<img src={useBaseUrl("/img/google-cloud.webp")} alt="On-Premises" style={{ width: '100%' }} />
+				<Link class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} to="https://docs.ciroh.org/docs/services/cloudservices/google%20cloud/"> CIROH Google Cloud Services</Link>
 			</div>
 		</div>
 

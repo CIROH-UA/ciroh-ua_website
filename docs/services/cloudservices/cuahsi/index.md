@@ -8,17 +8,15 @@ tags:
 - cloud computing
 ---
 
+import { Link } from 'react-router-dom'
+
 ## An Introduction
 
 The CUAHSI JupyterHub is a free cloud computing environment that enables researchers to execute scientific code and explore, modify, and interact with data inside a remote execution environment using Python and/or R programming languages. It is integrated with HydroShare and the Hydrologic Information System data repositories, making it easy to leverage community datasets, collaborate, and disseminate research workflows.
 
-
-<br />
-
 <blockquote>
-  <p><strong>NOTE:</strong> Below content is rendered from <a href="https://github.com/CUAHSI/jupyterhub/blob/main/docs/getting-started.md">https://github.com/CUAHSI/jupyterhub/blob/main/docs/getting-started.md</a></p>
+  <p><strong>NOTE:</strong> Below content is taken from <Link to="https://github.com/CUAHSI/jupyterhub/blob/main/docs/getting-started.md">https://github.com/CUAHSI/jupyterhub/blob/main/docs/getting-started.md</Link></p>
 </blockquote>
-<br />               
 
 # Getting Started
 ---

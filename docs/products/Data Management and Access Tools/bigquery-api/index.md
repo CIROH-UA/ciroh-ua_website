@@ -8,6 +8,8 @@ tags:
   - gcp
 ---
 
+import { Link } from 'react-router-dom'
+
 # National Water Model (NWM) BigQuery API
 
 :::info
@@ -19,7 +21,7 @@ More details about “Design and implementation of a BigQuery dataset and applic
 # Steps to use CIROH NWM API
 1. Submit the form below to request access to [NWM BigQuery API](https://nwm-api.ciroh.org/).
 
-<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem'}} href="https://forms.office.com/r/FeNpjZstkr">NWM BigQuery API Access Request Form</a>
+<Link class="button button--active button--primary " style={{'margin-bottom':'1.3rem'}} href="https://forms.office.com/r/FeNpjZstkr">NWM BigQuery API Access Request Form</Link>
 
 2. For an example usage, please refer to [this script](https://github.com/CIROH-UA/api-nwm-gcp/blob/main/examples/notebooks/nwm_usgs_streamflow_plot.ipynb). Replace your API key and API_URL = 'https://nwm-api.ciroh.org'.
 

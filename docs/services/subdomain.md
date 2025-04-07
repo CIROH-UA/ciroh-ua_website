@@ -2,12 +2,13 @@
 sidebar_position: 5
 title: "CIROH Subdomain Request Form"
 ---
+import { Link } from 'react-router-dom'
 
 # CIROH Subdomain Request Form
 
 To request the ciroh.org subdomain, please fill out the following form.
 
-<a class="button button--active button--primary" href="https://github.com/CIROH-UA/ciroh-ua.github.io/issues/new?assignees=&labels=&projects=&template=subdomain-request.md&title=">CIROH Subdomain Request Form</a>
+<Link class="button button--active button--primary" to="https://github.com/CIROH-UA/ciroh-ua.github.io/issues/new?assignees=&labels=&projects=&template=subdomain-request.md&title=">CIROH Subdomain Request Form</Link>
 
 -----
 

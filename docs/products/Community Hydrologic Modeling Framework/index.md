@@ -40,9 +40,9 @@ NGIAB and extensions are to make advanced hydrological modeling accessible to th
 <div class="darkImage" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}><img src={useBaseUrl("/img/NGIAB-extensions-diagram-dark.png")} /></div>
 <div class="lightImage" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}><img src={useBaseUrl("/img/NGIAB-extensions-diagram-light.png")} /></div>
 
-<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/products/Community%20Hydrologic%20Modeling%20Framework/nextgeninaboxDocker/workflow">Get started with NGIAB on local machine</Link>
+<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxDocker/workflow">Get started with NGIAB on local machine</Link>
 
-<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/products/Community%20Hydrologic%20Modeling%20Framework/nextgeninaboxDocker/workflow-cloud">Get started with NGIAB using CIROH JupyterHub</Link>
+<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxDocker/workflow-cloud">Get started with NGIAB using CIROH JupyterHub</Link>
 
 <Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/news">Community NextGen News</Link>
 
@@ -95,7 +95,7 @@ import TabItem from '@theme/TabItem';
           <td> </td>
         </tr>
         <tr>
-          <th><Link to="/docs/products/Evaluation Tools/rtiteehr/">TEEHR Evaluation</Link></th>
+          <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxTeehr/">TEEHR Evaluation</Link></th>
           <td>
             - Handles both input and output processing
             - Supports full workflow, from data preparation to cloud deployment
@@ -105,7 +105,7 @@ import TabItem from '@theme/TabItem';
           </td>
         </tr>
         <tr>
-          <th><Link to="/docs/products/Visualization and Analysis Tools/tethys-cses/">Data Visualizer</Link></th>
+          <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxVisualizer/">Data Visualizer</Link></th>
           <td>
             - Focused on analysis and validation
             - Supports data processing and output analysis
@@ -137,8 +137,8 @@ import TabItem from '@theme/TabItem';
         <tr>
           <th>Capability</th>
           <th><Link to="/docs/products/Community Hydrologic Modeling Framework/ngiabpreprocessor/">Data Preprocess</Link></th>
-          <th><Link to="/docs/products/Evaluation Tools/rtiteehr/">TEEHR Evaluation</Link></th>
-          <th><Link to="/docs/products/Visualization and Analysis Tools/tethys-cses/">Data Visualizer</Link></th>
+          <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxTeehr/">TEEHR Evaluation</Link></th>
+          <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxVisualizer/">Data Visualizer</Link></th>
           <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</Link></th>
         </tr>
       </thead>
@@ -241,8 +241,8 @@ import TabItem from '@theme/TabItem';
             <p style={{'margin':'0'}}>NGIAB Implementation</p>
             <p style={{'margin':'0'}}>(<Link to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxDocker/">Cloud</Link>, <Link to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxSingularity/">HPC</Link>)</p>
           </th>
-          <th><Link to="/docs/products/Evaluation Tools/rtiteehr/">TEEHR Evaluation</Link></th>
-          <th><Link to="/docs/products/Visualization and Analysis Tools/tethys-cses/">Data Visualizer</Link></th>
+          <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxTeehr/">TEEHR Evaluation</Link></th>
+          <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxVisualizer/">Data Visualizer</Link></th>
           <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</Link></th>
         </tr>
       </thead>

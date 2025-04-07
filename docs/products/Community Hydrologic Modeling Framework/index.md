@@ -36,9 +36,9 @@ NGIAB integrates several powerful tools:
 
 NGIAB and extensions are to make advanced hydrological modeling accessible to the broader community while maintaining the computational power needed for complex water resource simulations.
 
-
-<div class="darkImage" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}><img src={useBaseUrl("/img/NGIAB-extensions-diagram-dark.png")} /></div>
-<div class="lightImage" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}><img src={useBaseUrl("/img/NGIAB-extensions-diagram-light.png")} /></div>
+<div style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}>
+  <img class="theme-invert-dark" src={useBaseUrl("/img/NGIAB-extensions-diagram.svg")}/>
+</div>
 
 <Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxDocker/workflow">Get started with NGIAB on local machine</Link>
 

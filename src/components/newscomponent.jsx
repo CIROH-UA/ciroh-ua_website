@@ -32,21 +32,21 @@ const NewsComponent = ({ data, isLatest }) => {
       {/* TODO: dark mode/light mode detection */}
       {isExpanded && 
         <div style={{'display':'flex','flexDirection':'row','justifyContent':'center','alignItems':'center'}}>
-          <img class={themes.darkImage} alt="CIROH logo" src={logoWhiteUrl} style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
-          <img class={themes.lightImage} alt="CIROH logo" src={logoTransparentUrl} style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
-          <div style={{'display':'flex','flexDirection':'column','justifyContent':'center','alignItems':'center'}}>
-            <div style={{'display':'flex','flexDirection':'row','margin':'0','padding':'0'}}>
-              <img class={themes.darkImage} alt="Wave graphic" src={sidelineDarkUrl} style={{'alignSelf':'center','height':'2rem'}}></img>
-              <img class={themes.lightImage} alt="Wave graphic" src={sidelineLightUrl} style={{'alignSelf':'center','height':'2rem'}}></img>
+          <img class={themes.darkImage} alt="CIROH logo" src={logoWhiteUrl} style={{'alignSelf':'center','maxHeight':'145px','maxWidth':'145px','margin':'2rem'}}></img>
+          <img class={themes.lightImage} alt="CIROH logo" src={logoTransparentUrl} style={{'alignSelf':'center','maxHeight':'145px','maxWidth':'145px','margin':'2rem'}}></img>
+          <div style={{'display':'flex','flexDirection':'column','justifyContent':'center'}}>
+            <div style={{'display':'flex','flexDirection':'row','justifyContent':'center','margin':'0','padding':'0','minWidth':'0'}}>
+              <img class={themes.darkImage} alt="Wave graphic" src={sidelineDarkUrl} style={{'alignSelf':'center','maxHeight':'2rem'}}></img>
+              <img class={themes.lightImage} alt="Wave graphic" src={sidelineLightUrl} style={{'alignSelf':'center','maxHeight':'2rem'}}></img>
               <div style={{'width':'2rem'}} />
               <p style={{'fontSize':'2rem','margin':'0'}}>News</p>
               <div style={{'width':'2rem'}} />
-              <img class={themes.darkImage} alt="Wave graphic" src={sidelineDarkUrl} style={{'alignSelf':'center','height':'2rem'}}></img>
-              <img class={themes.lightImage} alt="Wave graphic" src={sidelineLightUrl} style={{'alignSelf':'center','height':'2rem'}}></img>
+              <img class={themes.darkImage} alt="Wave graphic" src={sidelineDarkUrl} style={{'alignSelf':'center','maxHeight':'2rem'}}></img>
+              <img class={themes.lightImage} alt="Wave graphic" src={sidelineLightUrl} style={{'alignSelf':'center','maxHeight':'2rem'}}></img>
             </div>
             <p style={{'fontSize':'3rem','margin':'0','textAlign':'center'}}><b>{data.date}s</b></p>
-            <img class={themes.darkImage} alt="Wave graphic" src={underlinesDarkUrl} style={{'alignSelf':'center','height':'3.5rem'}}></img>
-            <img class={themes.lightImage} alt="Wave graphic" src={underlinesLightUrl} style={{'alignSelf':'center','height':'3.5rem'}}></img>
+            <img class={themes.darkImage} alt="Wave graphic" src={underlinesDarkUrl} style={{'alignSelf':'center','maxHeight':'3.5rem'}}></img>
+            <img class={themes.lightImage} alt="Wave graphic" src={underlinesLightUrl} style={{'alignSelf':'center','maxHeight':'3.5rem'}}></img>
           </div>
         </div>
       }

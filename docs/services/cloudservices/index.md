@@ -3,6 +3,8 @@ sidebar_position: 3
 title: "Public Cloud"
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 # Public Cloud Services
 
 <div className="container">
@@ -18,7 +20,7 @@ title: "Public Cloud"
         </p>
       </div>
       <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/water_products.png" alt="Water Tools" style={{ width: '50%' }} />
+        <img src={useBaseUrl("/img/water_products.png")} alt="Water Tools" style={{ width: '50%' }} />
       </div>
     </div>
 

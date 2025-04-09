@@ -7,11 +7,9 @@ import "./cta-2.css";
 import "./cta-1.css";
 import styles from "./styles.module.css";
 import "./whyDocuhub.css";
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import { fab } from "@fortawesome/free-brands-svg-icons";
+import Link from '@docusaurus/Link';
 
-// Initialize Font Awesome library
-// library.add(fab);
+
 const ImpactItem = ({ title, count, imageSrc, users }) => (
   <div className={styles.impactItem}>
     <img src={imageSrc} alt={`${title} icon`} className={styles.impactIcon} />
@@ -268,7 +266,7 @@ const Member = ({ idx, name, logo, link, width, height }) => (
     <div className="avatar">
       <div className="avatar__intro">
         <div key={idx} className={styles.imagecontainer}>
-          <a href={link} target="_blank" rel="noreferrer">
+          <Link to={link} target="_blank" rel="noreferrer">
             <img
               src={logo}
               alt={name}
@@ -276,7 +274,7 @@ const Member = ({ idx, name, logo, link, width, height }) => (
               height={height}
               className="img-fluid align-center"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -301,9 +299,9 @@ const Card = ({ title, image, description, link }) => (
         <p>{description}</p>
       </div>
       <div className="card__footer">
-        <a href={link} className="button button--info button--block">
+        <Link to={link} className="button button--info button--block">
           Learn More
-        </a>
+        </Link>
       </div>
     </div>
   </div>
@@ -396,7 +394,7 @@ export default function HomepageFeatures() {
               title="CIROH JupyterHub"
               image="img/jupyterhub.jpg"
               description="Access cloud-based JupyterHub environment on Google Cloud tailored for hydrological research. Leverage computing power with both CPU and GPU capabilities for advanced computational needs."
-              link="/docs/services/cloudservices/CIROH JupyterHub"
+              link="/docs/services/cloudservices/ciroh jupyterhub"
             />
             <Card
               title="Pantarhei"
@@ -413,8 +411,8 @@ export default function HomepageFeatures() {
           </div>
         </Carousel>
       </div>
-      
-      <div className={clsx("hero hero--primary", styles.heroBanner)}>
+
+      <div className={clsx("hero hero--secondary", styles.heroBanner)}>
         <div className="container">
           <div className={styles.flexStart}>
             <div className="hero-text">
@@ -425,8 +423,8 @@ export default function HomepageFeatures() {
                 DocuHub. Please contribute by adding product/project
                 documentation, tutorials, training data, or conference
                 presentations. The CIROH DocuHub repository provides a
-                collaborative platform for sharing project's technical
-                documentation.{" "}
+                collaborative platform for sharing technical
+                documentation for projects.{" "}
                 <strong>
                   Learn more about how you can contribute and access the CIROH
                   DocuHub repository here:
@@ -435,21 +433,21 @@ export default function HomepageFeatures() {
               <br />
               
               <div className={styles.flexStart}>
-                <a
+                <Link
                   className={`button button--info ${styles.col4}`}
-                  href="/contribute"
+                  to="/docs/contribute"
                   style={{ textDecoration: "none", marginRight: "10px" }}
                 >
                   How to Contribute?
-                </a>
-                <a
+                </Link>
+                <Link
                   className={`button button--secondary ${styles.col4}`}
-                  href="https://forms.office.com/r/5ww7qRWwwf"
+                  to="https://forms.office.com/r/5ww7qRWwwf"
                   target="_blank"
                   style={{ textDecoration: "none" }}
                 >
                   Your Feedback Matters
-                </a>
+                </Link>
               </div>
             </div>
             <img
@@ -460,6 +458,7 @@ export default function HomepageFeatures() {
           </div>
         </div>
       </div>
+
       <section className="padded-page-section-feature" id="services">
             <div className="container-feature">
                 <h2 className="text-center-feature mt-0">Why DocuHub? Elevate Your Research Journey</h2>
@@ -542,17 +541,42 @@ export default function HomepageFeatures() {
                 Our research focuses on advancing hydrological science through
                 innovative research, collaboration, and technology development.
               </h2>
-              <a
-                href="https://ciroh.ua.edu/research/"
+              <Link
+                to="https://ciroh.ua.edu/research/"
                 className={`button button--secondary ${styles.col6}`}
               >
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <div className={clsx("hero hero--primary", styles.heroBanner)}>
+        <div className="container">
+          <div className={styles.flexStart}>
+            <div className="hero-text">
+              <h1 className={styles.h1}>Cyberinfrastructure & Community NextGen Monthly Office Hours</h1>
+              <br />
+              
+              <Link
+                className={`button button--secondary ${styles.col4}`}
+                href="/docs/products/Community Hydrologic Modeling Framework/ngiabOfficeHours"
+                style={{ textDecoration: "none", marginRight: "10px" }}
+              >
+                Learn More
+              </Link>
+            </div>
+            <img
+              src="./img/infra.png"
+              alt="DocuHub Office Hours"
+              class={styles.heroimage}
+            />
+          </div>
+        </div>
+      </div>
+    
       <div className="container" style={{ width: "100%" }}>
         <div className={styles.logoBackground}>
           <div className="container-fluid">
@@ -565,7 +589,7 @@ export default function HomepageFeatures() {
                 </div>
                 <div className={styles.row1}>
                   <div className={styles.col1} align="center">
-                    <a href={SponserList[0].link}>
+                    <Link to={SponserList[0].link}>
                       <img
                         className={styles.sponserimage}
                         src={SponserList[0].logo}
@@ -573,13 +597,13 @@ export default function HomepageFeatures() {
                         width={SponserList[0].width}
                         height={SponserList[0].height}
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div
                     className={`${styles.flex} ${styles.col1}`}
                     align="center"
                   >
-                    <a href={SponserList[1].link}>
+                    <Link to={SponserList[1].link}>
                       <img
                         className={`${styles.sponserimage} ${styles.lightImage}`}
                         src={SponserList[1].logo}
@@ -594,14 +618,14 @@ export default function HomepageFeatures() {
                         width={SponserList[1].width}
                         height={SponserList[1].height}
                       />
-                    </a>
+                    </Link>
                   </div>
 
                   <div
                     className={`${styles.flex} ${styles.col1}`}
                     align="center"
                   >
-                    <a href={SponserList[2].link}>
+                    <Link to={SponserList[2].link}>
                     <img
                         className={`${styles.sponserimage} ${styles.darkImage}`}
                         src={"https://2i2c.org/kpis/_static/images/logo.png"}
@@ -616,10 +640,10 @@ export default function HomepageFeatures() {
                         width={SponserList[2].width}
                         height={SponserList[2].height}
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div className={styles.col1} align="center">
-                    <a href={SponserList[3].link}>
+                    <Link to={SponserList[3].link}>
                     <img
                         className={`${styles.sponserimage} ${styles.lightImage}`}
                         src={SponserList[3].logo}
@@ -634,7 +658,7 @@ export default function HomepageFeatures() {
                         width={260}
                         height={SponserList[3].height}
                       />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -650,7 +674,7 @@ export default function HomepageFeatures() {
                   <div className="col">
                     <div className={styles.row1}>
                       <div className={`${styles.flex} ${styles.col2}`}>
-                        <a href={MemberList[0].link}>
+                        <Link to={MemberList[0].link}>
                         <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[0].logo}
@@ -665,10 +689,10 @@ export default function HomepageFeatures() {
                             width={90}
                             height={90}
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className={styles.col2}>
-                        <a href={MemberList[1].link}>
+                        <Link to={MemberList[1].link}>
                         <img
                             className={`${styles.imagecontainer} ${styles.darkImage}`}
                             src={"https://www.in-icorps.org/wp-content/uploads/2024/09/UVM-white-resized.png"}
@@ -683,12 +707,12 @@ export default function HomepageFeatures() {
                             width={MemberList[1].width}
                             height={MemberList[1].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className={styles.row1}>
                       <div className={styles.col2}>
-                        <a href={MemberList[2].link}>
+                        <Link to={MemberList[2].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.darkImage}`}
                             src={"https://templates.utah.edu/_main-v2/_images/header/logo/uu-logo.png"}
@@ -703,10 +727,10 @@ export default function HomepageFeatures() {
                             width={MemberList[2].width}
                             height={MemberList[2].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className={styles.col2}>
-                        <a href={MemberList[3].link}>
+                        <Link to={MemberList[3].link}>
                         <img
                             className={`${styles.imagecontainer} ${styles.darkImage}`}
                             src={"https://www.uah.edu/images/administrative/communications/style-guide/downloads/png/UAH_Horizontal_PNG_bluwht.png"}
@@ -721,12 +745,12 @@ export default function HomepageFeatures() {
                             width={MemberList[3].width}
                             height={MemberList[3].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className={styles.row1}>
                       <div className={styles.col2}>
-                        <a href={MemberList[4].link}>
+                        <Link to={MemberList[4].link}>
                         <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[4].logo}
@@ -741,10 +765,10 @@ export default function HomepageFeatures() {
                             width={390}
                             height={60}
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className={styles.col2}>
-                        <a href={MemberList[5].link}>
+                        <Link to={MemberList[5].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[5].logo}
@@ -759,12 +783,12 @@ export default function HomepageFeatures() {
                             width={MemberList[5].width}
                             height={MemberList[5].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className={styles.row1}>
                       <div className={styles.col2}>
-                        <a href={MemberList[6].link}>
+                        <Link to={MemberList[6].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[6].logo}
@@ -779,10 +803,10 @@ export default function HomepageFeatures() {
                             width={MemberList[6].width}
                             height={MemberList[6].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className={styles.col2}>
-                        <a href={MemberList[7].link}>
+                        <Link to={MemberList[7].link}>
                           <img
                             className={styles.imagecontainer}
                             src={MemberList[7].logo}
@@ -790,12 +814,12 @@ export default function HomepageFeatures() {
                             width={MemberList[7].width}
                             height={MemberList[7].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className={styles.row1}>
                       <div className={styles.col2}>
-                        <a href={MemberList[8].link}>
+                        <Link to={MemberList[8].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[8].logo}
@@ -810,10 +834,10 @@ export default function HomepageFeatures() {
                             width={MemberList[8].width}
                             height={MemberList[8].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className={`${styles.flex} ${styles.col2}`}>
-                        <a href={MemberList[9].link}>
+                        <Link to={MemberList[9].link}>
                           <img
                             className={styles.imagecontainer}
                             src={MemberList[9].logo}
@@ -821,12 +845,12 @@ export default function HomepageFeatures() {
                             width={MemberList[9].width}
                             height={MemberList[9].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className={styles.row1}>
                       <div className={styles.col2}>
-                        <a href={MemberList[10].link}>
+                        <Link to={MemberList[10].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[10].logo}
@@ -842,10 +866,10 @@ export default function HomepageFeatures() {
                             height={70}
                           />
 
-                        </a>
+                        </Link>
                       </div>
                       <div className={`${styles.flex} ${styles.col2}`}>
-                        <a href={MemberList[11].link}>
+                        <Link to={MemberList[11].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[11].logo}
@@ -860,12 +884,12 @@ export default function HomepageFeatures() {
                             width={180}
                             height={90}
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className={styles.row1}>
                       <div className={styles.col2}>
-                        <a href={MemberList[12].link}>
+                        <Link to={MemberList[12].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[12].logo}
@@ -880,10 +904,10 @@ export default function HomepageFeatures() {
                             width={100}
                             height={100}
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className={`${styles.flex} ${styles.col2}`}>
-                        <a href={MemberList[13].link}>
+                        <Link to={MemberList[13].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[13].logo}
@@ -898,7 +922,7 @@ export default function HomepageFeatures() {
                             width={100}
                             height={130}
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -914,7 +938,7 @@ export default function HomepageFeatures() {
                   <div className="col">
                     <div className={styles.row1}>
                       <div className={styles.col2}>
-                        <a href={PartnerList[0].link}>
+                        <Link to={PartnerList[0].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[0].logo}
@@ -929,10 +953,10 @@ export default function HomepageFeatures() {
                             width={220}
                             height={70}
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className={`${styles.flex} ${styles.col2}`}>
-                        <a href={PartnerList[1].link}>
+                        <Link to={PartnerList[1].link}>
                           <img
                             className={styles.imagecontainer}
                             src={PartnerList[1].logo}
@@ -940,12 +964,12 @@ export default function HomepageFeatures() {
                             width={PartnerList[1].width}
                             height={PartnerList[1].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className={styles.row1}>
                       <div className={styles.col2}>
-                        <a href={PartnerList[2].link}>
+                        <Link to={PartnerList[2].link}>
                           <img
                             className={styles.imagecontainer}
                             src={PartnerList[2].logo}
@@ -953,10 +977,10 @@ export default function HomepageFeatures() {
                             width={PartnerList[2].width}
                             height={PartnerList[2].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className={`${styles.flex} ${styles.col2}`}>
-                        <a href={PartnerList[3].link}>
+                        <Link to={PartnerList[3].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[3].logo}
@@ -971,12 +995,12 @@ export default function HomepageFeatures() {
                             width={PartnerList[3].width}
                             height={PartnerList[3].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className={styles.row1}>
                       <div className={styles.col2}>
-                        <a href={PartnerList[4].link}>
+                        <Link to={PartnerList[4].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[4].logo}
@@ -991,10 +1015,10 @@ export default function HomepageFeatures() {
                             width={PartnerList[4].width}
                             height={PartnerList[4].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className={`${styles.flex} ${styles.col2}`}>
-                        <a href={PartnerList[5].link}>
+                        <Link to={PartnerList[5].link}>
                           <img
                             className={styles.imagecontainer}
                             src={PartnerList[5].logo}
@@ -1002,12 +1026,12 @@ export default function HomepageFeatures() {
                             width={PartnerList[5].width}
                             height={PartnerList[5].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className={styles.row1}>
                       <div className={styles.col2}>
-                        <a href={PartnerList[6].link}>
+                        <Link to={PartnerList[6].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[6].logo}
@@ -1022,10 +1046,10 @@ export default function HomepageFeatures() {
                             width={240}
                             height={80}
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className={`${styles.flex} ${styles.col2}`}>
-                        <a href={PartnerList[7].link}>
+                        <Link to={PartnerList[7].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[7].logo}
@@ -1040,12 +1064,12 @@ export default function HomepageFeatures() {
                             width={200}
                             height={PartnerList[7].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className={styles.row1}>
                       <div className={styles.col2}>
-                        <a href={PartnerList[8].link}>
+                        <Link to={PartnerList[8].link}>
                           <img
                             className={styles.imagecontainer}
                             src={PartnerList[8].logo}
@@ -1053,10 +1077,10 @@ export default function HomepageFeatures() {
                             width={PartnerList[8].width}
                             height={PartnerList[8].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className={styles.col2}>
-                        <a href={PartnerList[9].link}>
+                        <Link to={PartnerList[9].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[9].logo}
@@ -1071,12 +1095,12 @@ export default function HomepageFeatures() {
                             width={PartnerList[9].width}
                             height={PartnerList[9].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className={styles.row1}>
                       <div className={styles.col2}>
-                        <a href={PartnerList[10].link}>
+                        <Link to={PartnerList[10].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[10].logo}
@@ -1091,10 +1115,10 @@ export default function HomepageFeatures() {
                             width={280}
                             height={90}
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className={`${styles.flex} ${styles.col2}`}>
-                        <a href={PartnerList[11].link}>
+                        <Link to={PartnerList[11].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[11].logo}
@@ -1109,12 +1133,12 @@ export default function HomepageFeatures() {
                             width={PartnerList[11].width}
                             height={PartnerList[11].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className={styles.row1}>
                       <div className={styles.col2}>
-                        <a href={PartnerList[12].link}>
+                        <Link to={PartnerList[12].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[12].logo}
@@ -1129,10 +1153,10 @@ export default function HomepageFeatures() {
                             width={200}
                             height={90}
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className={`${styles.flex} ${styles.col2}`}>
-                        <a href={PartnerList[13].link}>
+                        <Link to={PartnerList[13].link}>
                           <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={PartnerList[13].logo}
@@ -1147,7 +1171,7 @@ export default function HomepageFeatures() {
                             width={PartnerList[13].width}
                             height={PartnerList[13].height}
                           />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

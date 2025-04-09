@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import themes from "./themes.module.css";
+import ReactMarkdown from 'react-markdown';
+import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const NewsComponent = ({ data, isLatest }) => {
   const [isExpanded, setIsExpanded] = useState(isLatest); // Expand only the latest
@@ -7,7 +10,12 @@ const NewsComponent = ({ data, isLatest }) => {
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
-
+  const logoWhiteUrl = useBaseUrl("/img/cirohlogo-white.png");
+  const logoTransparentUrl = useBaseUrl("/img/cirohlogo-transparent.png");
+  const sidelineDarkUrl = useBaseUrl("/img/news-sideline-dark.png");
+  const sidelineLightUrl = useBaseUrl("/img/news-sideline-light.png");
+  const underlinesDarkUrl = useBaseUrl("/img/news-underlines-dark.png");
+  const underlinesLightUrl = useBaseUrl("/img/news-underlines-light.png");
   return (
     <div>
       <hr />
@@ -24,21 +32,21 @@ const NewsComponent = ({ data, isLatest }) => {
       {/* TODO: dark mode/light mode detection */}
       {isExpanded && 
         <div style={{'display':'flex','flexDirection':'row','justifyContent':'center','alignItems':'center'}}>
-          <img class={themes.darkImage} alt="CIROH logo" src="img/cirohlogo-white.png" style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
-          <img class={themes.lightImage} alt="CIROH logo" src="img/cirohlogo-transparent.png" style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
+          <img class={themes.darkImage} alt="CIROH logo" src={logoWhiteUrl} style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
+          <img class={themes.lightImage} alt="CIROH logo" src={logoTransparentUrl} style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
           <div style={{'display':'flex','flexDirection':'column','justifyContent':'center','alignItems':'center'}}>
             <div style={{'display':'flex','flexDirection':'row','margin':'0','padding':'0'}}>
-              <img class={themes.darkImage} alt="Wave graphic" src="img/news-sideline-dark.png" style={{'alignSelf':'center','height':'2rem'}}></img>
-              <img class={themes.lightImage} alt="Wave graphic" src="img/news-sideline-light.png" style={{'alignSelf':'center','height':'2rem'}}></img>
+              <img class={themes.darkImage} alt="Wave graphic" src={sidelineDarkUrl} style={{'alignSelf':'center','height':'2rem'}}></img>
+              <img class={themes.lightImage} alt="Wave graphic" src={sidelineLightUrl} style={{'alignSelf':'center','height':'2rem'}}></img>
               <div style={{'width':'2rem'}} />
               <p style={{'fontSize':'2rem','margin':'0'}}>News</p>
               <div style={{'width':'2rem'}} />
-              <img class={themes.darkImage} alt="Wave graphic" src="img/news-sideline-dark.png" style={{'alignSelf':'center','height':'2rem'}}></img>
-              <img class={themes.lightImage} alt="Wave graphic" src="img/news-sideline-light.png" style={{'alignSelf':'center','height':'2rem'}}></img>
+              <img class={themes.darkImage} alt="Wave graphic" src={sidelineDarkUrl} style={{'alignSelf':'center','height':'2rem'}}></img>
+              <img class={themes.lightImage} alt="Wave graphic" src={sidelineLightUrl} style={{'alignSelf':'center','height':'2rem'}}></img>
             </div>
             <p style={{'fontSize':'3rem','margin':'0','textAlign':'center'}}><b>{data.date}s</b></p>
-            <img class={themes.darkImage} alt="Wave graphic" src="img/news-underlines-dark.png" style={{'alignSelf':'center','height':'3.5rem'}}></img>
-            <img class={themes.lightImage} alt="Wave graphic" src="img/news-underlines-light.png" style={{'alignSelf':'center','height':'3.5rem'}}></img>
+            <img class={themes.darkImage} alt="Wave graphic" src={underlinesDarkUrl} style={{'alignSelf':'center','height':'3.5rem'}}></img>
+            <img class={themes.lightImage} alt="Wave graphic" src={underlinesLightUrl} style={{'alignSelf':'center','height':'3.5rem'}}></img>
           </div>
         </div>
       }
@@ -46,21 +54,24 @@ const NewsComponent = ({ data, isLatest }) => {
       {isExpanded &&
         data.items.map((item, index) => (
           <div key={index} style={{ paddingBottom: "25px" }}>
-            <span className={`badge badge--${getBadgeClass(item.type)}`}>
-              {item.type}
-            </span>{" "}
-            <strong>{item.title}</strong>
+            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+              <span className={`badge badge--${getBadgeClass(item.type)}`}>
+                {item.type}
+              </span>
+              <strong style={{ fontSize: "25px" }}>{item.title}</strong>
+            </div>
             <br />
             {renderDescription(item.description)}
             {item.link && (
               <div>
-                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <Link to={item.link} target="_blank" rel="noopener noreferrer">
                   Read more...
-                </a>
+                </Link>
               </div>
             )}
           </div>
         ))}
+
     </div>
   );
 };
@@ -89,25 +100,15 @@ const NewsHeader = ({ date }) => {
 
 // Function to render the description with links
 function renderDescription(description) {
-  const parts = description.split(" ");
   return (
-    <>
-      {parts.map((part, index) => (
-        <React.Fragment key={index}>
-          {index > 0 && " "}
-          {isWebLink(part) ? (
-            <a href={part} target="_blank" rel="noopener noreferrer">
-              {part}
-            </a>
-          ) : (
-            <span>{part}</span>
-          )}
-        </React.Fragment>
-      ))}
-    </>
+    <ReactMarkdown
+      children={description}
+      components={{
+        a: ({node, ...props}) => <a target="_blank" rel="noopener noreferrer" {...props} />
+      }}
+    />
   );
 }
-
 // Function to check if a part is a web link
 function isWebLink(part) {
   return part.startsWith("http://") || part.startsWith("https://");

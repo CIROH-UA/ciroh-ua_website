@@ -1,7 +1,7 @@
 ---
-sidebar_position: 1
-title: "FIMPEF"
-description: "FIMPEF"
+sidebar_position: 2
+title: "FIM Evaluation Framework"
+description: "FIM Evaluation Framework"
 tags:
     - FIM evaluation
     - Large scale evaluation 

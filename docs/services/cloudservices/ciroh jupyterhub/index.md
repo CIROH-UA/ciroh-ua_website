@@ -9,74 +9,64 @@ tags:
   - notebook
 ---
 
+import Link from '@docusaurus/Link'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 # CIROH JupyterHub
 ## Powered by 2i2c JupyterHub on Google Cloud
 
 CIROH, in collaboration with 2i2c, offers a dedicated JupyterHub environment on Google Cloud specifically designed for hydrological researchers. 2i2c is a cloud service provider specializing in open-source infrastructure for research and development.
 
 <p align="center">
-<img src="/img/2i2c.png" alt="2i2c Image" style={{'width':'80%', 'height':'50%'}}/>
+<img src={useBaseUrl("/img/2i2c.png")} alt="2i2c Image" style={{'width':'80%', 'height':'50%'}}/>
 </p>
 
------
-### How to get access to these environments?
+## **Benefits of CIROH Cloud's 2i2c JupyterHub:**
 
-CIROH JupyterHub provides both CPU and GPU capabilities. Please submit the form below to get access to the CIROH JupyterHub environments:
-
-<a class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) CPU Access Request Form</a>
-<a class="button button--active button--primary" style={{'margin-bottom':'1.3rem'}}  href="https://forms.office.com/r/mkrVJzyg9u"> JupyterHub (2i2c) GPU Access Request Form</a>
-
----
-:::note
-You will need to submit GitHub username for this request. 
-If you do not currently have GitHub account, follow instruction at [GitHub account](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github)
-:::
+*   **Managed JupyterHub as a Service:** CIROH Cloud takes care of the entire JupyterHub infrastructure, allowing researchers to focus on their scientific endeavors.
+    
+*   **Open Source Powerhouse:** Built on open-source tools, 2i2c JupyterHub offers flexibility, scalability, and a collaborative environment that fosters research advancement.
+    
+*   **Leveraging Google Cloud:** 2i2c utilizes Google Cloud's robust infrastructure to deliver a powerful and reliable platform for your computational needs.
 
 -----
-### How to request new software install on 2i2c?
+## Requesting Access to CIROH JupyterHub
 
-Please refer [Dockerfile file](https://github.com/2i2c-org/awi-ciroh-image/blob/main/Dockerfile) for the list of software currently deployed on CIROH JupyterHub.
+CIROH JupyterHub provides both CPU and GPU capabilities. To get started, please head to the Infrastructure Access page.
+
+<Link class="button button--active button--primary" to="/docs/services/access#accessing-ciroh-jupyterhub">Infrastructure Access</Link>
+
+-----
+## Requesting Software Installation on CIROH JupyterHub
+
+Before making a request, please refer to the [Dockerfile](https://github.com/2i2c-org/awi-ciroh-image/blob/main/Dockerfile) for the list of software currently deployed on CIROH JupyterHub.
 
 If your software in not listed in this file, please submit the form below to request new software installation on 2i2c JupyterHub.
 
-<a class="button button--active button--primary" href="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) Software Install Form</a>
+<Link class="button button--active button--primary" to="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u"> JupyterHub (2i2c) Software Install Form</Link>
 
 
 ---
 
-### CIROH JupyterHub Environments:
+## CIROH JupyterHub Environments
 
-Click on below button to access the CIROH JupyterHub environments (production and staging environments):
+Click on the buttons below to access the CIROH JupyterHub environments:
 
-<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  href="https://ciroh.awi.2i2c.cloud/hub/login"> CIROH Production JupyterHub</a>
+<Link class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}}  to="https://ciroh.awi.2i2c.cloud/hub/login"> CIROH Production JupyterHub</Link>
 
-<a class="button button--active button--primary " style={{'margin-bottom':'1.3rem'}} href="https://staging.ciroh.awi.2i2c.cloud/hub/login"> CIROH Staging JupyterHub</a>
-
------
-
-:::note
-Please remember to stop the server when you're not actively using it
-:::
-
+<Link class="button button--active button--primary" style={{'margin-bottom':'1.3rem'}} to="https://staging.ciroh.awi.2i2c.cloud/hub/login"> CIROH Staging JupyterHub</Link>
 
 import VideoPlayer from '/src/components/VideoPlayer.js';
 
-
-<VideoPlayer url="https://youtu.be/VSFs2bu4-74"  />
-
-
-
+<div class="indent-wrapper">
+  <p><b>Please remember to stop the server when you're not actively using it.</b></p>
+  <VideoPlayer url="https://youtu.be/VSFs2bu4-74"/>
+</div>
 _____
 
 <p align="center">
-<img src="/img/2i2c-1.png" alt="2i2c Image" style={{'width':'80%', 'height':'50%'}}/>
+<img src={useBaseUrl("/img/2i2c-1.png")} alt="2i2c Image" style={{'width':'80%', 'height':'50%'}}/>
 </p>
-
-
-### Softwares currently deployed on CIROH JupyterHub
-
-Please refer [Dockerfile file](https://github.com/2i2c-org/awi-ciroh-image/blob/main/Dockerfile)
-of the CIROH JupyterHub for the list of software deployed on CIROH Jupyter.
 
 ### Server Options
 - Small - 5GB RAM, 2 CPUs
@@ -87,18 +77,10 @@ of the CIROH JupyterHub for the list of software deployed on CIROH Jupyter.
 
 - Huge - 52GB RAM, 16 CPUs
 
-### Cost of Use:
+### Softwares currently deployed on CIROH JupyterHub
 
-CIROH 2i2c JupyterHub is free to use (cost covered by CIROH Infrastructure project funds)
-_____
+Please refer to the [Dockerfile](https://github.com/2i2c-org/awi-ciroh-image/blob/main/Dockerfile) for the list of software currently deployed on CIROH JupyterHub.
 
-## **Benefits of CIROH Cloud's 2i2c JupyterHub:**
+### Cost of Use
 
-*   **Managed JupyterHub as a Service:** CIROH Cloud takes care of the entire JupyterHub infrastructure, allowing researchers to focus on their scientific endeavors.
-    
-*   **Open Source Powerhouse:** Built on open-source tools, 2i2c JupyterHub offers flexibility, scalability, and a collaborative environment that fosters research advancement.
-    
-*   **Leveraging Google Cloud:** 2i2c utilizes Google Cloud's robust infrastructure to deliver a powerful and reliable platform for your computational needs.
-
-This reworded version emphasizes the collaboration between CIROH and 2i2c, highlights the benefits specifically for hydrological researchers, and clarifies the role of Google Cloud.
-
+CIROH 2i2c JupyterHub is free to use for consortium members. Its cost is covered by CIROH Infrastructure project funds.

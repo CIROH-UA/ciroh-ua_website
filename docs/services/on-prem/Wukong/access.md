@@ -9,6 +9,8 @@ tags:
   - Wukong
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
 Wukong curretly only supports the Secure Shell (SSH) mechanisms for logging in. The Secure Shell mechanism uses SSH keys. If you need help creating or uploading your SSH keys, please see the Managing SSH Public Keys page for that information.
 
 ### General overview
@@ -97,18 +99,18 @@ For more information on PuTTY, please visit the [PuTTY website](https://www.putt
 		1. **Download PuTTY:** To download PuTTY, click [download page](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 		2. **Open PuTTY:** Open downloaded file `putty.exe`
 			<p align="center">
-				<img src="/img/putty/image.png" alt="putty" style={{'width':'50%', 'height':'50%'}}/>
+				<img src={useBaseUrl("/img/putty/image.png")} alt="putty" style={{'width':'50%', 'height':'50%'}}/>
 			</p>
 		3. **Host Name:** In the <mark>___Host Name (or IP address)___</mark> field enter the `Wukong.ua.edu`
 		4. **Port:** In the <mark>___Port___</mark> field enter the `22`
 		5. **Open:** Click on the <mark>___Open___</mark> button. This will prompt a new login Secure Shell window.
 		6. **User Name:** In given new window, enter your Wukong <mark>___User Name___</mark>.
 			<p align="center">
-				<img src="/img/putty/frame08_1.webp" alt="putty"/>
+				<img src={useBaseUrl("/img/putty/frame08_1.webp")} alt="putty"/>
 			</p>
 		7. **Password:** Enter your Wukong account <mark>___Password___</mark>.
 			<p align="center">
-				<img src="/img/putty/frame09_1.webp" alt="putty"/>
+				<img src={useBaseUrl("/img/putty/frame09_1.webp")} alt="putty"/>
 			</p>
 	</TabItem>
 </Tabs>

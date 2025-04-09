@@ -1,17 +1,28 @@
 ---
-title: April 2025 Release Notes
+title: 04-08-2025 Release
 description: This is the first set of release notes on docuhub
-slug: april-2025
-authors: arpita
-tags: [blog, docuhub, nextgen, ciroh]
+slug: v20250408
+tags: [release-notes, docuhub, nextgen, ciroh]
 image: https://i.imgur.com/mErPwqL.png
 hide_table_of_contents: false
 ---
 
-# Welcome!
+## New content
+- Community Hydrologic Modeling page now features tables detailing features and access methods ([#290](https://github.com/CIROH-UA/ciroh-ua_website/pull/290))
+- Added NGIAB-TEEHR and NGIAB-CLIENT to products section ([#320](https://github.com/CIROH-UA/ciroh-ua_website/pull/320))
+- Added Flood Inundation Mapping Framework to products section ([#300](https://github.com/CIROH-UA/ciroh-ua_website/pull/300))
+- Added documentation on debugging Python package conflicts in CIROH JupyterHub ([#308](https://github.com/CIROH-UA/ciroh-ua_website/pull/308))
+- Added tutorial for running datapreprocess on CIROH JupyterHub ([#299](https://github.com/CIROH-UA/ciroh-ua_website/pull/299))
 
-The release notes work exactly the same way as the DocuHub blog! Traits like formatting and layout will look and feel exactly the same.
+## Blog posts and news updates
+- Blog post: "UA's Alabama Water Institute Showcases 30-Minute Hydrological Modeling Revolution" ([#310](https://github.com/CIROH-UA/ciroh-ua_website/pull/310))
+- News update: March 2025 ([#306](https://github.com/CIROH-UA/ciroh-ua_website/pull/306))
 
-As an aside, though, the authors folder for these release notes is separate from the news section, so plan accordingly.
+## Updates
+- Office Hours page updated; added to homepage and Contact page ([#337](https://github.com/CIROH-UA/ciroh-ua_website/pull/337))
+- Contribute page heavily reworked; now features GitHub issue templates ([#309](https://github.com/CIROH-UA/ciroh-ua_website/pull/309))
+- Added link to National Water Model API documentation ([#307](https://github.com/CIROH-UA/ciroh-ua_website/pull/307))
+- Added graphical headers to News tab ([#305](https://github.com/CIROH-UA/ciroh-ua_website/pull/305))
+- Guidance on accessing services and resources refactored ([#287](https://github.com/CIROH-UA/ciroh-ua_website/pull/287), [#294](https://github.com/CIROH-UA/ciroh-ua_website/pull/294))
 
 <!-- truncate -->

@@ -61,6 +61,26 @@ class AccessConfig {
      * The GitHub organization name of NOAA OWP.
      */
     static NOAA_OWP = "NOAA-OWP";
+
+    /**
+     * @name actions_repo_targets
+     * @type {string[][]}
+     * @description
+     * List of repository candidates to check for GitHub Actions.
+     * Each sub-array contains the organization name and the repository name.
+     * @example
+     * [
+     *     ["CIROH-UA", "NGIAB-CloudInfra"],
+     * ]
+     */
+    static actions_repo_targets = [
+        ["CIROH-UA", "NGIAB-CloudInfra"],
+        ["CIROH-UA", "NGIAB-HPCInfra"],
+        // ["CIROH-UA", "NGIAB_data_preprocess"],
+        ["CIROH-UA", "ngiab-client"],
+        // ["CIROH-UA", "ngiab-teehr"],
+        ["CIROH-UA", "ngen-datastream"],
+    ]
 }
 
 export default AccessConfig;

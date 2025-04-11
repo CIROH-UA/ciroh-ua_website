@@ -335,7 +335,7 @@ function RateLimitStatusMessage(message, rate_limit_max, rate_limit_remaining, r
 /**
  * @name AdjustSemaphore
  * @param {number} semaphore
- * @param {function<number>} setter
+ * @param {function} setter
  * @param {number} value - optional, default is 1
  * @description
  * This function takes a semaphore and a setter function

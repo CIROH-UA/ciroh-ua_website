@@ -29,7 +29,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         gtag: {
-          trackingID: 'G-7KD31X6H62',
+          trackingID: 'G-TQW7CE7E2P',
           anonymizeIP: true,
         },
         blog: false, // Blogs and its settings are now in the custom blog plugin below. Its because we have tags based filters in community impact page. Those filters are coming from Blog posts.

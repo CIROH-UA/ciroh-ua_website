@@ -189,30 +189,46 @@ const config = {
             title: "Follow us on",
             items: [
               {
-                html: `
-                <div class="footer-social-links">
-                <a href="https://www.youtube.com/@UA_CIROH" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH" style="margin-left:-15px">
-                <img src="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png" alt="CIROH on YouTube" width="70" height="60" />
-              </a>
-              <a href="https://www.linkedin.com/company/uaciroh/" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:-15px">
-                <img src="https://static.vecteezy.com/system/resources/previews/018/930/587/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="CIROH on LinkedIn" width="70" height="60" />
-              </a>
-              <a href="https://www.facebook.com/UACIROH/" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:-25px">
-                <img src="https://static.vecteezy.com/system/resources/previews/018/930/702/original/facebook-logo-facebook-icon-transparent-free-png.png" alt="CIROH on Facebook" width="70" height="60" />
-              </a> 
-              </div>
-                `,
+                label: 'Social Media, 1/2',
+                to: 'N/A',
+                iconList: [
+                  {
+                    label: 'CIROH on GitHub',
+                    img: 'img/socials/github_light.svg',
+                    href: 'https://github.com/CIROH-UA'
+                  },
+                  {
+                    label: 'CIROH on YouTube',
+                    img: 'img/socials/youtube_light.svg',
+                    href: 'https://www.youtube.com/@UA_CIROH'
+                  },
+                  {
+                    label: 'CIROH on LinkedIn',
+                    img: 'img/socials/linkedin_light.svg',
+                    href: 'https://www.linkedin.com/company/uaciroh/'
+                  },
+                ]
               },
               {
-                html: `               
-              <a href="https://twitter.com/UA_CIROH" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:5px;">
-                <img src="https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000" alt="CIROH on X" width="40" height="40" />
-              </a>
-              <a href="https://github.com/CIROH-UA" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:5px;">
-                <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="CIROH on GitHUb" width="40" height="40" />
-              </a>
-                
-                `,
+                label: 'Social Media, 2/2',
+                to: 'N/A',
+                iconList: [
+                  {
+                    label: 'CIROH on Facebook',
+                    img: 'img/socials/facebook_light.svg',
+                    href: 'https://www.facebook.com/UACIROH/'
+                  },
+                  {
+                    label: 'CIROH on Instagram',
+                    img: 'img/socials/instagram_light.svg',
+                    href: 'https://www.instagram.com/ua_ciroh/'
+                  },
+                  {
+                    label: 'CIROH on X/Twitter',
+                    img: 'img/socials/x_light.svg',
+                    href: 'https://twitter.com/UA_CIROH'
+                  },
+                ]
               },
             ],
           },

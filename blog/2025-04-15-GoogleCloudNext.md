@@ -50,7 +50,7 @@ Perhaps the most exciting announcement was that Gemini is now available on-premi
 * Robust data sovereignty controls
 * Enterprise-grade security
 
-This addresses the most significant barriers many organizations face when adopting advanced AI capabilities. Learn more about this integration here: NVIDIA and Google Cloud Partnership
+This addresses the most significant barriers many organizations face when adopting advanced AI capabilities. Learn more about this integration here: [NVIDIA and Google Cloud Partnership](https://blogs.nvidia.com/blog/google-cloud-next-agentic-ai-reasoning/?ncid=so-link-994345)
 
 ## Infrastructure Advances: Power to Transform
 
@@ -82,9 +82,9 @@ Check out all the online content that's now available, including:
 
 What particularly caught my attention was Google's focus on agent development technologies:
 
-* **google-adk**: The Agent Development Kit makes building multi-agent applications accessible to developers without deep AI expertise. Learn more
-* **A2A (Agent-to-Agent Communication)**: The frameworks for agent-to-agent interaction open up possibilities for complex automated workflows that were previously impossible. Explore A2A or jump straight to the quickstart code samples
-* **Agentspace**: This collaboration environment for multiple agents feels like the beginning of something truly transformative. Check it out
+* **google-adk**: The Agent Development Kit makes building multi-agent applications accessible to developers without deep AI expertise. [Learn more](https://developers.googleblog.com/en/agent-development-kit-easy-to-build-multi-agent-applications/)
+* **A2A (Agent-to-Agent Communication)**: The frameworks for agent-to-agent interaction open up possibilities for complex automated workflows that were previously impossible. [Explore A2A](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/) or jump straight to the [quickstart code samples](https://google.github.io/A2A/#/)
+* **Agentspace**: This collaboration environment for multiple agents feels like the beginning of something truly transformative. [Check it out](https://cloud.google.com/blog/products/ai-machine-learning/google-agentspace-enables-the-agent-driven-enterprise)
 
 
 ## Final Thoughts

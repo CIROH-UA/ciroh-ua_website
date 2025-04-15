@@ -10,7 +10,8 @@ image: /img/ngiab-march-blog.png
 
 # Google Cloud Next 2025: Innovation at Scale
 
-Always on the lookout for transformative technologies that can reshape how organizations operate. Another #GoogleCloudNext in the books. With more than 30,000 participants, Google Next always amazes me! It's huge, engaging on so many levels! Engaging booths, networking opportunities, great presentations, workshops, AI coach for basketball, incredible keynote from an amazing team! Event was not just a conference, but a celebration of innovation and a glimpse into the future of cloud computing! 
+Always on the lookout for transformative technologies that can reshape how organizations operate. Another #GoogleCloudNext in the books. With more than 30,000 participants, Google Next always amazes me! It's huge, engaging on so many levels! Engaging booths, networking opportunities, great presentations, workshops, AI coach for basketball, incredible keynote from an amazing team! Event was not just a conference, but a celebration of innovation and a glimpse into the future of cloud computing! Great to be a Google Cloud partner!!
+
 Great to see how Gemini is transforming data manipulation in BigQuery. The ability to use natural language to query, transform, and visualize data is revolutionizing how we interact with massive datasets. Gabe Weiss's demo particularly showcased the potential for non-specialists to derive insights from complex data.
 
 If you missed the keynote, I highly recommend watching the recording here: [GCN25 Keynote Video](https://www.youtube.com/live/VABwMpL3JCo?t=3564s)
@@ -19,30 +20,27 @@ If you missed the keynote, I highly recommend watching the recording here: [GCN2
 
 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center', maxWidth: '1200px', margin: '0 auto' }}>
   <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
-    <img src="../img/googlecloudblog25/gcp-1.jpg" alt="GoogleNext-1" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+    <img src="../img/gcp-1.jpg" alt="GoogleNext-1" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
   </div>
-    <div style={{ flex: '1 0 300px', maxWidth: '400px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
-    <img src="../img/googlecloudblog25/gcp-4.jpg" alt="GoogleNext-1" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+ 
+  <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
+    <img src="../img/gcp-2.jpg" alt="GoogleNext-2" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
   </div>
   
   <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
-    <img src="../img/googlecloudblog25/gcp-2.jpg" alt="GoogleNext-2" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
-  </div>
-  
-  <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
-    <img src="../img/googlecloudblog25/gcp-3.jpg" alt="GoogleNext-3" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+    <img src="../img/gcp-3.jpg" alt="GoogleNext-3" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
   </div>
   
   <div style={{ flex: '1 0 300px', maxWidth: '400px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
-    <img src="../img/googlecloudblog25/gcp-4.jpg" alt="GoogleNext-1" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+    <img src="../img/gcp-4.jpg" alt="GoogleNext-1" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
   </div>
   
   <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
-    <img src="../img/googlecloudblog25/gcp-5.jpg" alt="GoogleNext-2" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+    <img src="../img/gcp-5.jpg" alt="GoogleNext-2" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
   </div>
   
   <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
-    <img src="../img/googlecloudblog25/gcp-6.jpg" alt="GoogleNext-3" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+    <img src="../img/gcp-6.jpg" alt="GoogleNext-3" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
   </div>
 </div>
 

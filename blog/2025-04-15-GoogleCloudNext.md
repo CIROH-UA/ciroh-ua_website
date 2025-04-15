@@ -1,5 +1,5 @@
 ---
-title: "🌟 Google Cloud Next 2025: Innovation at Scale🌟"
+title: "Google Cloud Next 2025: Innovation at Scale ✨"
 description: "Google Cloud Next 2025"
 slug: april-2025-update
 authors: [arpita]
@@ -16,9 +16,14 @@ Great to see how Gemini is transforming data manipulation in BigQuery. The abili
 
 If you missed the keynote, I highly recommend watching the recording here: [GCN25 Keynote Video](https://www.youtube.com/live/VABwMpL3JCo?t=3564s)
 
+
+
 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center', maxWidth: '1200px', margin: '0 auto' }}>
   <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
     <img src="/img/googlecloudblog25/gcp-1.jpg" alt="GoogleNext-1" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+  </div>
+    <div style={{ flex: '1 0 300px', maxWidth: '400px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
+    <img src="/img/googlecloudblog25/gcp-4.jpg" alt="GoogleNext-1" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
   </div>
   
   <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
@@ -42,7 +47,9 @@ If you missed the keynote, I highly recommend watching the recording here: [GCN2
   </div>
 </div>
 
-## Google Distributed Cloud: Bringing Gemini On-Premises
+
+
+## 📢 Google Distributed Cloud: Bringing Gemini On-Premises  
 
 Perhaps the most exciting announcement was that Gemini is now available on-premises via Google Distributed Cloud. This is a game-changer for organizations with strict data sovereignty requirements or specialized computing needs. Running on NVIDIA Confidential Computing and NVIDIA Blackwell infrastructure, this solution brings together:
 
@@ -52,7 +59,7 @@ Perhaps the most exciting announcement was that Gemini is now available on-premi
 
 This addresses the most significant barriers many organizations face when adopting advanced AI capabilities. Learn more about this integration here: [NVIDIA and Google Cloud Partnership](https://blogs.nvidia.com/blog/google-cloud-next-agentic-ai-reasoning/?ncid=so-link-994345)
 
-## Infrastructure Advances: Power to Transform
+## 📢 Infrastructure Advances: Power to Transform  
 
 The infrastructure announcements were equally impressive, with serious power upgrades including:
 
@@ -78,7 +85,7 @@ Check out all the online content that's now available, including:
 
 ---
 
-## Agent Development: The Next Frontier
+## 📢 Agent Development: The Next Frontier  
 
 What particularly caught my attention was Google's focus on agent development technologies:
 
@@ -94,3 +101,4 @@ As I reflect on my time at Google Cloud Next 2025, I'm struck by how the landsca
 I left the conference not just with new knowledge but with a renewed sense of excitement about the possibilities ahead. The future of cloud computing isn't just about faster or cheaper computing resources—it's about fundamentally new ways of solving problems and creating value.
 
 #GoogleCloudNext25 #CloudAdvocate #AI #A2A #VertexAI #GoogleDistributedCloud #DevOps #EnterpriseArchitecture
+

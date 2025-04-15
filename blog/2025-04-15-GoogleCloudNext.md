@@ -10,8 +10,7 @@ image: /img/ngiab-march-blog.png
 
 # Google Cloud Next 2025: Innovation at Scale
 
-Always on the lookout for transformative technologies that can reshape how organization operates. Another #GoogleCloudNext in the books. With more than 30,000 participants, Google Next always amazes me! It's huge, engaging on so many levels! Engaging booths, networking opportunities, great presentations, workshops, AI coach for basketball, incredible keynote from an amazing team! Event was not just a conference, but a celebration of innovation and a glimpse into the future of cloud computing! 
-
+Always on the lookout for transformative technologies that can reshape how organizations operate. Another #GoogleCloudNext in the books. With more than 30,000 participants, Google Next always amazes me! It's huge, engaging on so many levels! Engaging booths, networking opportunities, great presentations, workshops, AI coach for basketball, incredible keynote from an amazing team! Event was not just a conference, but a celebration of innovation and a glimpse into the future of cloud computing! 
 Great to see how Gemini is transforming data manipulation in BigQuery. The ability to use natural language to query, transform, and visualize data is revolutionizing how we interact with massive datasets. Gabe Weiss's demo particularly showcased the potential for non-specialists to derive insights from complex data.
 
 If you missed the keynote, I highly recommend watching the recording here: [GCN25 Keynote Video](https://www.youtube.com/live/VABwMpL3JCo?t=3564s)

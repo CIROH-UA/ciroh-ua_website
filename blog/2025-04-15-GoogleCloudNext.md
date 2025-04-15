@@ -19,6 +19,7 @@ If you missed the keynote, I highly recommend watching the recording here: [GCN2
 
 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center', maxWidth: '1200px', margin: '0 auto' }}>
   <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
+<<<<<<< HEAD
     <img src="../img/googlecloudblog25/gcp-1.jpg" alt="GoogleNext-1" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
   </div>
     <div style={{ flex: '1 0 300px', maxWidth: '400px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
@@ -43,6 +44,32 @@ If you missed the keynote, I highly recommend watching the recording here: [GCN2
   
   <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
     <img src="../img/googlecloudblog25/gcp-6.jpg" alt="GoogleNext-3" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+=======
+    <img src="/img/googlecloudblog25/gcp-1.jpg" alt="GoogleNext-1" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+  </div>
+    <div style={{ flex: '1 0 300px', maxWidth: '400px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
+    <img src="/img/googlecloudblog25/gcp-4.jpg" alt="GoogleNext-1" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+  </div>
+  
+  <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
+    <img src="/img/googlecloudblog25/gcp-2.jpg" alt="GoogleNext-2" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+  </div>
+  
+  <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
+    <img src="/img/googlecloudblog25/gcp-3.jpg" alt="GoogleNext-3" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+  </div>
+  
+  <div style={{ flex: '1 0 300px', maxWidth: '400px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
+    <img src="/img/googlecloudblog25/gcp-4.jpg" alt="GoogleNext-1" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+  </div>
+  
+  <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
+    <img src="/img/googlecloudblog25/gcp-5.jpg" alt="GoogleNext-2" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+  </div>
+  
+  <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
+    <img src="/img/googlecloudblog25/gcp-6.jpg" alt="GoogleNext-3" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+>>>>>>> 406019f053806ff19d1b2cebcc6c720c8565a7d4
   </div>
 </div>
 

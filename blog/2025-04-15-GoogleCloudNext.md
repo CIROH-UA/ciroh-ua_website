@@ -9,6 +9,7 @@ image: /img/ngiab-march-blog.png
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl"
+import { Carousel } from "react-responsive-carousel"
 
 # Google Cloud Next 2025: Innovation at Scale
 
@@ -17,35 +18,54 @@ Great to see how Gemini is transforming data manipulation in BigQuery. The abili
 
 If you missed the keynote, I highly recommend watching the recording here: [GCN25 Keynote Video](https://www.youtube.com/live/VABwMpL3JCo?t=3564s)
 
-<div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center', maxWidth: '1200px', margin: '0 auto' }}>
-  <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
-    <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-1.jpg")} alt="GoogleNext-1" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+<Carousel
+  showThumbs={false}
+  autoPlay={true}
+  stopOnHover={false}
+  useKeyboardArrows={true}
+  emulateTouch={true}
+  interval={3500}
+  infiniteLoop
+  showStatus={false}
+  showIndicators={true}
+  >
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-1.jpg")}
+      style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+      alt="Arpita Patel at the Google Cloud Next conference"
+      />
   </div>
-    <div style={{ flex: '1 0 300px', maxWidth: '400px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
-    <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-4.jpg")} alt="GoogleNext-1" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-2.jpg")}
+      style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+      alt="Title slide from the Google Cloud Next conference"
+      />
   </div>
-  
-  <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
-    <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-2.jpg")} alt="GoogleNext-2" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-3.jpg")}
+    style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+    alt="Slide depicting Google's AI stack"
+    />
   </div>
-  
-  <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
-    <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-3.jpg")} alt="GoogleNext-3" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-4.jpg")}
+    style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+    alt='Slide announcing Gemini for Google Distributed Cloud'
+    />
   </div>
-  
-  <div style={{ flex: '1 0 300px', maxWidth: '400px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
-    <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-4.jpg")} alt="GoogleNext-1" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-5.jpg")}
+    style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+    alt='Slide announcing Google Agentspace'
+    />
   </div>
-  
-  <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
-    <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-5.jpg")} alt="GoogleNext-2" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-6.jpg")}
+    style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+    alt="BigQuery and Earth Engine demo at Google Cloud Next conference"
+    />
   </div>
-  
-  <div style={{ flex: '1 0 300px', maxWidth: '600px', textAlign: 'center', transition: 'transform 0.3s ease' }}>
-    <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-6.jpg")} alt="GoogleNext-3" style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
-  </div>
-</div>
-
+</Carousel>
 
 
 ## 📢 Google Distributed Cloud: Bringing Gemini On-Premises  

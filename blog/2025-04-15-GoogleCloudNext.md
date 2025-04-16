@@ -31,43 +31,41 @@ If you missed the keynote, I highly recommend watching the recording here: [GCN2
   >
   <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
     <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-1.jpg")}
-      style={{ width: 'auto', maxHeight: '300px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+      style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
       alt="Arpita Patel at the Google Cloud Next conference"
       />
   </div>
   <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
     <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-2.jpg")}
-      style={{ width: 'auto', maxHeight: '300px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+      style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
       alt="Title slide from the Google Cloud Next conference"
       />
   </div>
   <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
   <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-3.jpg")}
-    style={{ width: 'auto', maxHeight: '300px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+    style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
     alt="Slide depicting Google's AI stack"
     />
   </div>
   <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
   <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-4.jpg")}
-    style={{ width: 'auto', maxHeight: '300px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+    style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
     alt='Slide announcing Gemini for Google Distributed Cloud'
     />
   </div>
   <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
   <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-5.jpg")}
-    style={{ width: 'auto', maxHeight: '300px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+    style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
     alt='Slide announcing Google Agentspace'
     />
   </div>
   <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
   <img src={useBaseUrl("/img/blog/2025-04-gcp/gcp-6.jpg")}
-    style={{ width: 'auto', maxHeight: '300px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
-    alt="NGIAB demo at Google Cloud Next conference"
+    style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+    alt="BigQuery and Earth Engine demo at Google Cloud Next conference"
     />
   </div>
 </Carousel>
-
-<!--truncate-->
 
 
 ## 📢 Google Distributed Cloud: Bringing Gemini On-Premises  

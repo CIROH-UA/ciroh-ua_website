@@ -1,14 +1,12 @@
 import { themes as prismThemes } from "prism-react-renderer";
 
-const baseUrl = "/";
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "CIROH DocuHub",
   staticDirectories: ["static", "img"],
   tagline: "Cooperative Institute for Research to Operations in Hydrology",
   url: "http://ciroh.org",
-  baseUrl: baseUrl,
+  baseUrl: "/staging/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/docuhub-logo.png",
@@ -194,13 +192,13 @@ const config = {
                 html: `
                   <div class="footer-social-links">
                     <a href="https://github.com/CIROH-UA" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH">
-                      <img src="${baseUrl}img/socials/github_light.svg" alt="CIROH on GitHub" width="40" height="40" />
+                      <img src="img/socials/github_light.svg" alt="CIROH on GitHub" width="40" height="40" />
                     </a>
                     <a href="https://www.linkedin.com/company/uaciroh/" target="_blank" rel="noreferrer noopener" aria-label="CIROH on LinkedIn">
-                      <img src="${baseUrl}img/socials/linkedin_light.svg" alt="CIROH on LinkedIn" width="40" height="40" />
+                      <img src="img/socials/linkedin_light.svg" alt="CIROH on LinkedIn" width="40" height="40" />
                     </a>
                     <a href="https://www.youtube.com/@UA_CIROH" target="_blank" rel="noreferrer noopener" aria-label="CIROH on YouTube">
-                      <img src="${baseUrl}img/socials/youtube_light.svg" alt="CIROH on YouTube" width="40" height="40" />
+                      <img src="img/socials/youtube_light.svg" alt="CIROH on YouTube" width="40" height="40" />
                     </a>
                   </div>
                 `,
@@ -209,13 +207,13 @@ const config = {
                 html: `
                 <div class="footer-social-links"> 
                   <a href="https://www.instagram.com/ua_ciroh/" target="_blank" rel="noreferrer noopener" aria-label="CIROH on Instagram">
-                    <img src="${baseUrl}img/socials/instagram_light.svg" alt="CIROH on Instagram" width="40" height="40" />
+                    <img src="img/socials/instagram_light.svg" alt="CIROH on Instagram" width="40" height="40" />
                   </a>       
                   <a href="https://www.facebook.com/UACIROH/" target="_blank" rel="noreferrer noopener" aria-label="CIROH on Facebook">
-                    <img src="${baseUrl}img/socials/facebook_light.svg" alt="CIROH on Facebook" width="40" height="40" />
+                    <img src="img/socials/facebook_light.svg" alt="CIROH on Facebook" width="40" height="40" />
                   </a>              
                   <a href="https://twitter.com/UA_CIROH" target="_blank" rel="noreferrer noopener" aria-label="CIROH on X (Twitter)">
-                    <img src="${baseUrl}img/socials/x_light.svg" alt="CIROH on X (Twitter)" width="40" height="40" />
+                    <img src="img/socials/x_light.svg" alt="CIROH on X (Twitter)" width="40" height="40" />
                   </a>
                 </div>
                 `,

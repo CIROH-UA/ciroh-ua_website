@@ -31,9 +31,9 @@ To obtain an account, users will need to follow these step:
 		* __Affiliated Email Address__ of student
 	:::
 	::::::
-2. Submit On-premise Access Request form in [CIROH Service Request](https://forms.office.com/r/CQucJqqADx).
+2. Submit On-premise Access Request form in [CIROH On-Premise Access Form](https://forms.office.com/r/hED4zGVACM).
 	::::::tip
-	The administration of the Wukong cluster falls under the purview of the CIROH IT Computing group at the University of Alabama (UA). Consequently, individuals lacking UA credentials (*MyBama ID*, *VPN User Name*, and *CWID*) are obliged to complete the __`VPN Access Request`__ form, followed by the __`On-premise Access Request`__ form within [CIROH Service Request](https://forms.office.com/r/CQucJqqADx).
+	The administration of the Wukong cluster falls under the purview of the CIROH IT Computing group at the University of Alabama (UA). Consequently, individuals lacking UA credentials (*MyBama ID*, *VPN User Name*, and *CWID*) are obliged to complete the __`VPN Access Request`__ form, followed by the __`On-premise Access Request`__ form within [CIROH On-Premise Access Form](https://forms.office.com/r/hED4zGVACM).
 
 	:::warning[Account Creation]
 	Creation of accounts on the Wukong system necessitates submission of individual forms by each respective user. 

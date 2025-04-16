@@ -46,12 +46,10 @@ import Link from '@docusaurus/Link'
 ## For developers
 If you'd like to get more closely involved with DocuHub's development, please see the subpages below:
 
-<div style={{'display':'flex', 'justifyContent':'center'}}>
-  <Link class="button button--active button--primary" to="/docs/contribute/repository" style={{'marginLeft':'1rem','marginRight':'1rem'}}>Working with the DocuHub repository</Link>
-  <Link class="button button--active button--primary" to="/docs/contribute/technologies" style={{'marginLeft':'1rem','marginRight':'1rem'}}>Learn more about DocuHub technologies</Link>
-</div>
-<div style={{'display':'flex', 'justifyContent':'center', 'marginTop':'1rem'}}>
-  <Link class="button button--active button--primary" to="/docs/contribute/blog" style={{'marginLeft':'1rem','marginRight':'1rem'}}>Adding blog posts to the DocuHub blog</Link>
+<div style={{'display':'flex', 'justifyContent':'center', 'flexWrap':'wrap'}}>
+  <Link class="button button--active button--primary" to="/docs/contribute/repository" style={{'margin':'0.7rem'}}>Working with the DocuHub repository</Link>
+  <Link class="button button--active button--primary" to="/docs/contribute/technologies" style={{'margin':'0.7rem'}}>Learn more about DocuHub technologies</Link>
+  <Link class="button button--active button--primary" to="/docs/contribute/blog" style={{'margin':'0.7rem'}}>Adding blog posts to the DocuHub blog</Link>
 </div>
 
 ## Help and support

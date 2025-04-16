@@ -67,6 +67,7 @@ const config = {
         postsPerPage: "ALL", // Display all posts on a single page
         path: "blog", // Path to the blog posts
         authorsMapPath: "authors.yaml", // Path to the authors' mapping file
+        blogSidebarCount: 'ALL',
       }
     ],
 

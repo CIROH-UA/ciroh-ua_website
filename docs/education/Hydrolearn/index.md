@@ -2,11 +2,7 @@
 sidebar_position: 2
 title: "HydroLearn"
 description: "hydrolearn"
-tags: 
-- HydroLearn
-- hydrology
-- online courses
-- edX
+tags: [Education, NSF]
 ---
 
 # HydroLearn: An Introduction

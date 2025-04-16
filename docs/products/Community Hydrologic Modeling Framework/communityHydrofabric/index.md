@@ -1,0 +1,11 @@
+---
+sidebar_position: 7
+title: "Hydrofabric Patcher"
+description: "Community Hydrofabric Patcher"
+tags:
+  - hydrofabric
+---
+
+import GitHubReadme from '@site/src/components/GitHubReadme';
+ 
+<GitHubReadme username="CIROH-UA" repo="community_hf_patcher" />

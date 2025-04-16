@@ -19,8 +19,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
         </p>
       </div>
-      <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src={useBaseUrl("/img/water_products.png")} alt="Water Tools" style={{ width: '50%' }} />
+
+      <div className="hero-image" style={{ textAlign: 'left' }}>
+        <img src={useBaseUrl("/img/public_cloud_services.jpeg")} alt="Water Tools" style={{ width: '55%' }} />
+
       </div>
     </div>
 

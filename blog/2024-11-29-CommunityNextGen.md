@@ -3,7 +3,7 @@ title: "Community NextGen Updates"
 description: "November Monthly Blog Update"
 slug: November Monthly Blog Update
 authors: arpita
-tags: [ngiab, nextgen, workflow, visualize, evaluate]
+tags: [Blog, Monthly Update, CIROH, NGIAB, National Water Model, NextGen Datastream, Singularity, HPC]
 hide_table_of_contents: false
 image: ../../img/NGIABLogoWithoutText-Transparant.png
 ---

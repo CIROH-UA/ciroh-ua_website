@@ -3,7 +3,7 @@ title: NextGen Monthly News Update - December 2023
 description: News and release notes for NextGen
 slug: NextGen Updates Dec 2023
 authors: [arpita, zach]
-tags: [news]
+tags: [Blog, Monthly Update]
 hide_table_of_contents: false
 ---
 Happy New Year!!! We are back from SFO after attending AGU last month. We are excited to share the latest updates for NGIAB, NextGen, T-route, Hydrofabric, NextGen forcings, and Community Support from December 2023.

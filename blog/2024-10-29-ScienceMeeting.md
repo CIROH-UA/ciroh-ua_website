@@ -3,7 +3,7 @@ title: "CIROH Science Meeting 2024"
 description: "October Monthly Blog Update"
 slug: October Monthly Blog Update
 authors: arpita
-tags: [ciroh, science, conference, impact]
+tags: [Blog, Monthly Update, CIROH, Conference]
 hide_table_of_contents: false
 image: /img/2024CSM_GroupPano.png
 ---

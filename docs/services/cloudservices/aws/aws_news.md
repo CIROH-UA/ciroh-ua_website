@@ -2,11 +2,7 @@
 sidebar_position: 2
 title: "AWS News Blog"
 description: "AWS News Blog"
-tags:
-  - AWS
-  - Cloud
-  - EC2
-  - S3
+tags: [Services, Cloud Services, AWS]
 ---
 
 import Link from '@docusaurus/Link'

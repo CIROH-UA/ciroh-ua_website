@@ -2,12 +2,7 @@
 sidebar_position: 4
 title: "HydroShare and CIROH JupyterHub Integration"
 description: "HydroShare and CIROH JupyterHub Integration"
-tags:
-  - 2i2c
-  - JupyterHub
-  - GCP
-  - notebook
-  - hydroshare
+tags: [CIROH, Services, Cloud Services, HydroShare, 2i2c, JupyterHub]
 ---
 
 import Link from '@docusaurus/Link'

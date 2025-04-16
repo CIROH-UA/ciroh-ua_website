@@ -2,12 +2,7 @@
 sidebar_position: 1
 title: "Wukong"
 description: "Wukong HPC Cluster"
-tags:
-  - HPC
-  - On-Premises
-  - Overview
-  - Intro
-  - Wukong
+tags: [CIROH, Services, On-Premises Services, Wukong, HPC]
 ---
 Wukong serves as an analytical and computational resource accessible to the research
 community of the Cooperative Institute for Research to Operations in Hydrology (CIROH).

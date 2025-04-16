@@ -2,13 +2,7 @@
 sidebar_position: 4
 title: "NSF NCAR Derecho"
 description: "Accessing and Using JetStream2"
-tags:
-  - NSF
-  - NCAR
-  - Derecho
-  - HPC
-  - Account
-  - Access
+tags: [Services, NSF Access, NSF, HPC, Derecho]
 ---
 
 import Link from '@docusaurus/Link'

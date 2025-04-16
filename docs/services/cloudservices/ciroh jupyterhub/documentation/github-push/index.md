@@ -2,13 +2,7 @@
 sidebar_position: 3
 title: "Push and Pull to GitHub"
 description: "2i2c JupyterHub is a cloud-based JupyterHub environment specifically designed for hydrological researchers. It is powered by 2i2c JupyterHub, a cloud-based JupyterHub environment specifically on Google Cloud"
-tags:
-  - 2i2c
-  - JupyterHub
-  - GCP
-  - notebook
-  - GitHub
-  - tutorial
+tags: [CIROH, Services, Cloud Services, JupyterHub, 2i2c, Google Cloud, Education]
 ---
 
 # A Step-by-Step Guide: Push Code to GitHub from 2i2c JupyterHub

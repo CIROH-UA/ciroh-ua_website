@@ -2,10 +2,7 @@
 sidebar_position: 2
 title: "Tag Resources on AWS"
 description: "AWS tags for cost tracking"
-tags:
-  - AWS
-  - Tag
-  - Cost
+tags: [CIROH, Services, Cloud Services, AWS, Education]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

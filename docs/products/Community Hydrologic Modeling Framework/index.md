@@ -117,9 +117,9 @@ import TabItem from '@theme/TabItem';
         <tr>
           <th><Link to="/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/">DataStreamCLI</Link></th>
           <td>
-            - Specialized in visualization tasks
-            - Supports output analysis
-            - Visual representation of results
+            - Complete workflow for creating inputs for and executing NGIAB and managing outputs
+            - Backend of the NextGen Research DataStream
+            - Discrete tooling for tasks like forcing processing and BMI file generation
           </td>
           <td>
             - ngen-cal

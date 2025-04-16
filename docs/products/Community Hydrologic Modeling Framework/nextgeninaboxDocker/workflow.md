@@ -2,14 +2,10 @@
 sidebar_position: 4
 title: "NGIAB E2E Workflow Video: Local Setup"
 description: "NextGen In a Box (NGIAB) E2E Workflow Video"
-tags:
-  - NextGen In A Box
-  - NGIAB
-  - NGIAB Data Preprocess
-  - Demonstration
-  - Video
-  - Workflow
+tags: [Products, NGIAB, CIROH, Cloud Services, Docker, National Water Model, Education, TEEHR, Tethys Platform]
 ---
+
+<!-- TODO: This is pretty broad... would it be better suited to the Education section? -->
 
 # NGIAB End-to-End Setup Guide
 

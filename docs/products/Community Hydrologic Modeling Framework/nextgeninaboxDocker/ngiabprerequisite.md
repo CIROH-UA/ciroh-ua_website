@@ -2,13 +2,7 @@
 sidebar_position: 3
 title: "NGIAB-Prerequisites"
 description: "NextGen In a Box (NGIAB) DevOps"
-tags:
-  - NextGen In A Box
-  - NGIAB
-  - NextGen framework
-  - National Water Model
-  - national water center
-
+tags: [Products, NGIAB, CIROH, Cloud Services, Docker, National Water Model, Education]
 ---
 
 

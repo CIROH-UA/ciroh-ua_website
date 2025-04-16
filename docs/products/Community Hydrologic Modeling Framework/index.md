@@ -2,18 +2,7 @@
 sidebar_position: 2
 title: "Community Hydrologic Modeling"
 description: "Community NextGen"
-tags:
-  - NextGen In A Box
-  - NGIAB
-  - NextGen framework
-  - National Water Model
-  - national water center
-  - docker
-  - NextGen
-  - ngen-datastream
-  - NGIAB-preprocessor
-  - Data Visualizer
-  - Singularity
+tags: [Products, NGIAB, CIROH, NextGen Datastream, HPC, Cloud Services, Singularity, Docker, National Water Model]
 ---
 
 import Link from '@docusaurus/Link'

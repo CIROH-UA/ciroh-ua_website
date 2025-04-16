@@ -2,9 +2,7 @@
 sidebar_position: 5
 title: "Snow Sensing and Modeling Tools"
 description: "Snow Sensing and Modeling Tools"
-tags:
-  - Snow
-  - Sensing
+tags: [Products, CIROH, Snow Sensing]
 ---
 
 ---

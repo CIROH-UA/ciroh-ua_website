@@ -8,6 +8,8 @@ import "./cta-1.css";
 import styles from "./styles.module.css";
 import "./whyDocuhub.css";
 import Link from '@docusaurus/Link';
+import ResearcherTestimonials from './testimonial';
+
 
 
 const ImpactItem = ({ title, count, imageSrc, users }) => (
@@ -431,7 +433,7 @@ export default function HomepageFeatures() {
                 </strong>
               </p>
               <br />
-              
+
               <div className={styles.flexStart}>
                 <Link
                   className={`button button--info ${styles.col4}`}
@@ -460,106 +462,108 @@ export default function HomepageFeatures() {
       </div>
 
       <section className="padded-page-section-feature" id="services">
-            <div className="container-feature">
-                <h2 className="text-center-feature mt-0">Why DocuHub? Elevate Your Research Journey</h2>
-                <hr className="divider-feature" />
-                <div className="row-feature ">
-                    <div className="col-lg-3-feature col-md-6-feature text-center">
-                        <div className="mt-5-feature">
-                            <h3 className="h4 mb-2-feature">Knowledge Hub</h3>
-                            <img src="/img/why-docuhub-1.png" alt="docuhub image"></img>
-                            <p className="text-muted-feature mb-0 mt-2">Access a centralized repository of research and educational resources to enhance your hydrological expertise.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3-feature col-md-6-feature text-center">
-                        <div className="mt-5-feature">
-                            <h3 className="h4 mb-2-feature">Research & Growth</h3>
-                            <img src="/img/why-docuhub-2.png" alt="docuhub image"></img>
-                            <p className="text-muted-feature mb-0 mt-2">Explore cutting-edge research and innovative projects driving innovation in hydrology.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3-feature col-md-6-feature text-center">
-                        <div className="mt-5-feature">
-                            <h3 className="h4 mb-2-feature">Blog & News</h3>
-                            <img src="/img/why-docuhub-3.png" alt="docuhub image"></img>
-                            <p className="text-muted-feature mb-0 mt-2">Stay updated with the latest news, community insights, and updates about CIROH projects.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3-feature col-md-6-feature text-center">
-                        <div className="mt-5-feature">
-                            <h3 className="h4 mb-2-feature">Education & Training</h3>
-                            <img src="/img/why-docuhub-4.png" alt="docuhub image"></img>
-                            <p className="text-muted-feature mb-0 mt-2">Elevate your skills with tutorials, training programs, and educational materials tailored for hydrological research.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3-feature col-md-6-feature text-center">
-                        <div className="mt-5-feature">
-                            <h3 className="h4 mb-2-feature">CyberInfrastructure</h3>
-                            <img src="/img/why-docuhub-5.png" alt="docuhub image"></img>
-                            <p className="text-muted-feature mb-0 mt-2">Leverage cloud infrastuctures, including AWS, GCP, CIROH JupyterHub, and on-premises infrastructures tailored to hydrological research needs.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3-feature col-md-6-feature text-center">
-                        <div className="mt-5-feature">
-                            <h3 className="h4 mb-2-feature">Global Collaboration</h3>
-                            <img src="/img/why-docuhub-6.png" alt="docuhub image"></img>
-                            <p className="text-muted-feature mb-0 mt-2">Join a global network of researchers and collaborators to share knowledge, resources, and innovations within the CIROH community.</p>
-                        </div>
-                    </div>
-                </div>
+        <div className="container-feature">
+          <h2 className="text-center-feature mt-0">Why DocuHub? Elevate Your Research Journey</h2>
+          <hr className="divider-feature" />
+          <div className="row-feature ">
+            <div className="col-lg-3-feature col-md-6-feature text-center">
+              <div className="mt-5-feature">
+                <h3 className="h4 mb-2-feature">Knowledge Hub</h3>
+                <img src="/img/why-docuhub-1.png" alt="docuhub image"></img>
+                <p className="text-muted-feature mb-0 mt-2">Access a centralized repository of research and educational resources to enhance your hydrological expertise.</p>
+              </div>
             </div>
-        </section>
-        
-      <section
-      className={`bsb-cta-2 py-5 ${styles.features}`}
-      style={{
-        width: "100%", // Ensure the section spans the full width
-        margin: 0, // Remove default margin
-        padding: 0, // Remove default padding if necessary
-      }}
-    >
-      <div
-        className="card rounded-3 overflow-hidden text-center bsb-overlay"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./img/research-image.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "local",
-          width: "100%", // Ensure the card spans the full width
-          margin: 0, // Remove default margin
-          padding: 0, // Remove default padding if necessary
-          "--bsb-overlay-opacity": ".9",
-          "--bsb-overlay-bg-color": "var(--bs-primary-rgb)",
-        }}
-      >
-        <div className="card-body">
-          <div className="row align-items-center justify-content-center">
-            <div className="col-12 col-md-10 col-xl-8 col-xxl-7">
-              <h1 className="h5 mb-4 text-white text-uppercase">Our Research</h1>
-              <h2 className="display-4 text-white mb-5">
-                Our research focuses on advancing hydrological science through
-                innovative research, collaboration, and technology development.
-              </h2>
-              <Link
-                to="https://ciroh.ua.edu/research/"
-                className={`button button--secondary ${styles.col6}`}
-              >
-                Learn More
-              </Link>
+            <div className="col-lg-3-feature col-md-6-feature text-center">
+              <div className="mt-5-feature">
+                <h3 className="h4 mb-2-feature">Research & Growth</h3>
+                <img src="/img/why-docuhub-2.png" alt="docuhub image"></img>
+                <p className="text-muted-feature mb-0 mt-2">Explore cutting-edge research and innovative projects driving innovation in hydrology.</p>
+              </div>
+            </div>
+            <div className="col-lg-3-feature col-md-6-feature text-center">
+              <div className="mt-5-feature">
+                <h3 className="h4 mb-2-feature">Blog & News</h3>
+                <img src="/img/why-docuhub-3.png" alt="docuhub image"></img>
+                <p className="text-muted-feature mb-0 mt-2">Stay updated with the latest news, community insights, and updates about CIROH projects.</p>
+              </div>
+            </div>
+            <div className="col-lg-3-feature col-md-6-feature text-center">
+              <div className="mt-5-feature">
+                <h3 className="h4 mb-2-feature">Education & Training</h3>
+                <img src="/img/why-docuhub-4.png" alt="docuhub image"></img>
+                <p className="text-muted-feature mb-0 mt-2">Elevate your skills with tutorials, training programs, and educational materials tailored for hydrological research.</p>
+              </div>
+            </div>
+            <div className="col-lg-3-feature col-md-6-feature text-center">
+              <div className="mt-5-feature">
+                <h3 className="h4 mb-2-feature">CyberInfrastructure</h3>
+                <img src="/img/why-docuhub-5.png" alt="docuhub image"></img>
+                <p className="text-muted-feature mb-0 mt-2">Leverage cloud infrastuctures, including AWS, GCP, CIROH JupyterHub, and on-premises infrastructures tailored to hydrological research needs.</p>
+              </div>
+            </div>
+            <div className="col-lg-3-feature col-md-6-feature text-center">
+              <div className="mt-5-feature">
+                <h3 className="h4 mb-2-feature">Global Collaboration</h3>
+                <img src="/img/why-docuhub-6.png" alt="docuhub image"></img>
+                <p className="text-muted-feature mb-0 mt-2">Join a global network of researchers and collaborators to share knowledge, resources, and innovations within the CIROH community.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <div className={clsx("hero hero--primary", styles.heroBanner)}>
+      <ResearcherTestimonials />
+
+      <section
+        className={`bsb-cta-2 py-5 ${styles.features}`}
+        style={{
+          width: "100%", // Ensure the section spans the full width
+          margin: 0, // Remove default margin
+          padding: 0, // Remove default padding if necessary
+        }}
+      >
+        <div
+          className="card rounded-3 overflow-hidden text-center bsb-overlay"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./img/research-image.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "local",
+            width: "100%", // Ensure the card spans the full width
+            margin: 0, // Remove default margin
+            padding: 0, // Remove default padding if necessary
+            "--bsb-overlay-opacity": ".9",
+            "--bsb-overlay-bg-color": "var(--bs-primary-rgb)",
+          }}
+        >
+          <div className="card-body">
+            <div className="row align-items-center justify-content-center">
+              <div className="col-12 col-md-10 col-xl-8 col-xxl-7">
+                <h1 className="h5 mb-4 text-white text-uppercase">Our Research</h1>
+                <h2 className="display-4 text-white mb-5">
+                  Our research focuses on advancing hydrological science through
+                  innovative research, collaboration, and technology development.
+                </h2>
+                <Link
+                  to="https://ciroh.ua.edu/research/"
+                  className={`button button--secondary ${styles.col6}`}
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
           <div className={styles.flexStart}>
             <div className="hero-text">
               <h1 className={styles.h1}>Cyberinfrastructure & Community NextGen Monthly Office Hours</h1>
               <br />
-              
+
               <Link
                 className={`button button--secondary ${styles.col4}`}
                 href="/docs/products/Community Hydrologic Modeling Framework/ngiabOfficeHours"
@@ -576,7 +580,7 @@ export default function HomepageFeatures() {
           </div>
         </div>
       </div>
-    
+
       <div className="container" style={{ width: "100%" }}>
         <div className={styles.logoBackground}>
           <div className="container-fluid">
@@ -611,7 +615,7 @@ export default function HomepageFeatures() {
                         width={SponserList[1].width}
                         height={SponserList[1].height}
                       />
-                       <img
+                      <img
                         className={`${styles.sponserimage} ${styles.darkImage}`}
                         src={"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/USGS_logo.svg/2560px-USGS_logo.svg.png"}
                         alt={SponserList[1].name}
@@ -626,14 +630,14 @@ export default function HomepageFeatures() {
                     align="center"
                   >
                     <Link to={SponserList[2].link}>
-                    <img
+                      <img
                         className={`${styles.sponserimage} ${styles.darkImage}`}
                         src={"https://2i2c.org/kpis/_static/images/logo.png"}
                         alt={SponserList[2].name}
                         width={SponserList[2].width}
                         height={SponserList[2].height}
                       />
-                    <img
+                      <img
                         className={`${styles.sponserimage} ${styles.lightImage}`}
                         src={SponserList[2].logo}
                         alt={SponserList[2].name}
@@ -644,7 +648,7 @@ export default function HomepageFeatures() {
                   </div>
                   <div className={styles.col1} align="center">
                     <Link to={SponserList[3].link}>
-                    <img
+                      <img
                         className={`${styles.sponserimage} ${styles.lightImage}`}
                         src={SponserList[3].logo}
                         alt={SponserList[3].name}
@@ -675,7 +679,7 @@ export default function HomepageFeatures() {
                     <div className={styles.row1}>
                       <div className={`${styles.flex} ${styles.col2}`}>
                         <Link to={MemberList[0].link}>
-                        <img
+                          <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[0].logo}
                             alt={MemberList[0].name}
@@ -693,7 +697,7 @@ export default function HomepageFeatures() {
                       </div>
                       <div className={styles.col2}>
                         <Link to={MemberList[1].link}>
-                        <img
+                          <img
                             className={`${styles.imagecontainer} ${styles.darkImage}`}
                             src={"https://www.in-icorps.org/wp-content/uploads/2024/09/UVM-white-resized.png"}
                             alt={MemberList[1].name}
@@ -731,7 +735,7 @@ export default function HomepageFeatures() {
                       </div>
                       <div className={styles.col2}>
                         <Link to={MemberList[3].link}>
-                        <img
+                          <img
                             className={`${styles.imagecontainer} ${styles.darkImage}`}
                             src={"https://www.uah.edu/images/administrative/communications/style-guide/downloads/png/UAH_Horizontal_PNG_bluwht.png"}
                             alt={MemberList[3].name}
@@ -751,7 +755,7 @@ export default function HomepageFeatures() {
                     <div className={styles.row1}>
                       <div className={styles.col2}>
                         <Link to={MemberList[4].link}>
-                        <img
+                          <img
                             className={`${styles.imagecontainer} ${styles.lightImage}`}
                             src={MemberList[4].logo}
                             alt={MemberList[4].name}
@@ -827,7 +831,7 @@ export default function HomepageFeatures() {
                             width={MemberList[8].width}
                             height={MemberList[8].height}
                           />
-                           <img
+                          <img
                             className={`${styles.imagecontainer} ${styles.darkImage}`}
                             src={"https://cyberlab.usask.ca/images/usask_logo_black.png"}
                             alt={MemberList[8].name}
@@ -858,7 +862,7 @@ export default function HomepageFeatures() {
                             width={MemberList[10].width}
                             height={MemberList[10].height}
                           />
-                           <img
+                          <img
                             className={`${styles.imagecontainer} ${styles.darkImage}`}
                             src={"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/University_of_Minnesota_Logo.svg/1280px-University_of_Minnesota_Logo.svg.png"}
                             alt={MemberList[10].name}
@@ -915,7 +919,7 @@ export default function HomepageFeatures() {
                             width={MemberList[13].width}
                             height={MemberList[13].height}
                           />
-                           <img
+                          <img
                             className={`${styles.imagecontainer} ${styles.darkImage}`}
                             src={"https://images2.teeshirtpalace.com/designs/1711940587680.png?width=700"}
                             alt={MemberList[13].name}
@@ -1008,7 +1012,7 @@ export default function HomepageFeatures() {
                             width={PartnerList[4].width}
                             height={PartnerList[4].height}
                           />
-                           <img
+                          <img
                             className={`${styles.imagecontainer} ${styles.darkImage}`}
                             src={"https://ourfragilexworld.org/img/rti-logo-white.png"}
                             alt={PartnerList[4].name}
@@ -1039,7 +1043,7 @@ export default function HomepageFeatures() {
                             width={PartnerList[6].width}
                             height={PartnerList[6].height}
                           />
-                           <img
+                          <img
                             className={`${styles.imagecontainer} ${styles.darkImage}`}
                             src={"https://cdn.prod.website-files.com/5ba032fa3943f8840d5b914f/5d489b063cf49eac67eabd5a_Stevens-Official-WhiteKO-R.png"}
                             alt={PartnerList[6].name}
@@ -1126,7 +1130,7 @@ export default function HomepageFeatures() {
                             width={PartnerList[11].width}
                             height={PartnerList[11].height}
                           />
-                           <img
+                          <img
                             className={`${styles.imagecontainer} ${styles.darkImage}`}
                             src={"https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/UC_Davis_wordmark.svg/2560px-UC_Davis_wordmark.svg.png"}
                             alt={PartnerList[11].name}
@@ -1146,7 +1150,7 @@ export default function HomepageFeatures() {
                             width={PartnerList[12].width}
                             height={PartnerList[12].height}
                           />
-                           <img
+                          <img
                             className={`${styles.imagecontainer} ${styles.darkImage}`}
                             src={"https://www.yuja.com/wp-content/uploads/logo-Coastal-Carolina-University.png"}
                             alt={PartnerList[12].name}

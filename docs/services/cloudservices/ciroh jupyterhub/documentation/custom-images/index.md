@@ -2,13 +2,7 @@
 sidebar_position: 4
 title: "Request custom images"
 description: "2i2c JupyterHub is a cloud-based JupyterHub environment specifically designed for hydrological researchers. It is powered by 2i2c JupyterHub, a cloud-based JupyterHub environment specifically on Google Cloud"
-tags:
-  - 2i2c
-  - JupyterHub
-  - GCP
-  - notebook
-  - custom images
-  - tutorial
+tags: [CIROH, Services, Cloud Services, JupyterHub, 2i2c, Google Cloud, Education]
 ---
 
 import Link from '@docusaurus/Link'

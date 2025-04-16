@@ -3,7 +3,7 @@ title: Monthly News Update - March 2024
 description: News and release notes for Community NextGen
 slug: Community NextGen Updates March 2024
 authors: arpita
-tags: [ciroh, community-nextgen, news, singularity]
+tags: [Blog, Monthly Update, HPC, Singularity, On-Premises Services, NGIAB, National Water Model, CIROH, Conference]
 hide_table_of_contents: false
 ---
 

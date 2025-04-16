@@ -1,4 +1,8 @@
-# Getting Started
+---
+title: "Getting Started"
+description: "Getting started with NETWA"
+tags: [Products, CIROH]
+---
 
 ## Accessing the Testbed
 ### Remote Desktop Software

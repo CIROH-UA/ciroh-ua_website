@@ -1,6 +1,7 @@
 ---
 title: NextGen Framework
 description: A comprehensive guide for integrating models and modules into the NextGen framework
+tags: [CIROH, Policies, NGIAB]
 ---
 
 # Technical guidance for the inclusion of models/modules in the NextGen Water Resources Modeling Framework

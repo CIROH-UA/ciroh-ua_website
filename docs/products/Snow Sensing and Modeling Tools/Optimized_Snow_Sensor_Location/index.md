@@ -2,9 +2,7 @@
 sidebar_position: 2
 title: "Optimized Snow Sensor Location"
 description: "Optimized Snow Sensor Location"
-tags:
-  - Snow
-  - Sensing
+tags: [Products, CIROH, Snow Sensing]
 ---
 
 ---

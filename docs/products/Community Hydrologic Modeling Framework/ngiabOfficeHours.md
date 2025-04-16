@@ -2,10 +2,7 @@
 sidebar_position: 8
 title: "Cyberinfrastructure and Community NextGen Office Hours"
 description: "Cyberinfrastructure and Community NextGen Office Hours"
-tags:
-  - NextGen
-  - Office Hours
-  - Infrastructure
+tags: [Products, CIROH, NGIAB, Services, On-Premises Services, Cloud Services, Education]
 ---
 
 # CIROH Cyberinfrastructure & Community NextGen Monthly Office Hours

@@ -2,12 +2,7 @@
 sidebar_position: 7
 title: "Python Package Version Conflicts"
 description: "a tutorial guide to help debug python package conflicts"
-tags:
-  - 2i2c
-  - JupyterHub
-  - Python
-  - Package Management
-  - Troubleshooting
+tags: [CIROH, Services, Cloud Services, JupyterHub, 2i2c, Google Cloud, Education]
 ---
 # Python Package Version Conflicts
 

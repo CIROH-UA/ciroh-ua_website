@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: "Data and Code Sharing"
+tags: [CIROH, Policies]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

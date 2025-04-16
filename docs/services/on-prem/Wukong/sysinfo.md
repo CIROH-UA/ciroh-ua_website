@@ -2,11 +2,7 @@
 sidebar_position: 1
 title: "System Architecture"
 description: "System Architecture of Wukong"
-tags:
-- HPC
-- On-Premises
-- System Architecture
-- Wukong
+tags: [CIROH, Services, On-Premises Services, Wukong, HPC]
 ---
 ### Comupute Node
 <div class="container">

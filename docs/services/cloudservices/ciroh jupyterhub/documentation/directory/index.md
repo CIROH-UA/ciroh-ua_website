@@ -2,13 +2,7 @@
 sidebar_position: 1
 title: "JupyterHub User Directory"
 description: "2i2c JupyterHub File System"
-tags:
-  - 2i2c
-  - JupyterHub
-  - GCP
-  - notebook
-  - directory
-  - filesystem
+tags: [CIROH, Services, Cloud Services, JupyterHub, 2i2c, Google Cloud, Education]
 ---
 
 This is a guide for understanding the File System in CIROH JupyterHub. You can find detailed explanation on [2i2c docs site](https://docs.2i2c.org/user/topics/data/filesystem/).

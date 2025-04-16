@@ -3,7 +3,7 @@ title: NextGen Monthly News Update - January 2024
 description: News and release notes for NextGen
 slug: NextGen Updates Jan 2024
 authors: arpita
-tags: [news]
+tags: [Blog, CIROH, Monthly Update, NGIAB, HPC, Singularity, Cloud Services, NextGen Datastream, National Water Model]
 hide_table_of_contents: false
 ---
 Welcome to the January edition of the CIROH DocuHub blog, where we share the latest updates and news about the Community NextGen project monthly. NextGen is a cutting-edge hydrologic modeling framework that aims to advance the science and practice of hydrology and water resources management. In this month's blog, we will highlight some of the recent achievements and developments of the Community NextGen team.

@@ -1,12 +1,7 @@
 ---
 sidebar_position: 3
 description: "AWS Data Science Tools"
-tags:
-  - AWS
-  - Data Science
-  - AWS S3
-  - EC2
-  - S3
+tags: [CIROH, Services, Cloud Services, AWS, Education]
 ---
 
 import Link from '@docusaurus/Link'

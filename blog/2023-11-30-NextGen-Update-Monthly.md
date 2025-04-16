@@ -3,7 +3,7 @@ title: NextGen Monthly News Update - November 2023
 description: News and release notes for NextGen
 slug: NextGen Updates Nov 2023
 authors: [arpita, zach]
-tags: [news]
+tags: [Blog, Monthly Update]
 hide_table_of_contents: false
 ---
 

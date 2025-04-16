@@ -2,14 +2,7 @@
 sidebar_position: 7
 title: "Conference Material"
 description: "NextGen In a Box (NGIAB) Conference Material"
-tags:
-  - NextGen In A Box
-  - NGIAB
-  - NextGen framework
-  - National Water Model
-  - national water center
-  - slides
-  - recordings
+tags: [Education, CIROH, NGIAB, National Water Model, Conference, DevCon, NextGen Datastream]
 ---
 
 

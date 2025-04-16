@@ -2,13 +2,7 @@
 sidebar_position: 2
 title: "Manage files in GCP bucket"
 description: "2i2c JupyterHub Google Cloud Buckets"
-tags:
-  - 2i2c
-  - JupyterHub
-  - GCP
-  - notebook
-  - custom images
-  - tutorial
+tags: [CIROH, Services, Cloud Services, JupyterHub, 2i2c, Google Cloud, Education]
 ---
 
 This guide is for managing objects in GCP buckets available on 2i2c CIROH JupyterHub. For more detailed explanation, you can visit [2i2c docs site](https://docs.2i2c.org/user/topics/data/object-storage/manage-object-storage-gcp/).

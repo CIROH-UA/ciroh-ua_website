@@ -2,8 +2,7 @@
 sidebar_position: 3
 title: "Adding posts to the DocuHub Blog"
 description: "Find out how to add a blog post to DocuHub."
-tags:
-  - contribute
+tags: [CIROH, DocuHub, Contribute, Blog]
 ---
 
 # Adding posts to the DocuHub Blog

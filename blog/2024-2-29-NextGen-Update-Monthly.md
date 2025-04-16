@@ -3,7 +3,7 @@ title: Monthly News Update - February 2024
 description: News and release notes for Community NextGen
 slug: Community NextGen Updates Feb 2024
 authors: arpita
-tags: [ciroh, community-nextgen, on-premises, nwm, news]
+tags: [Blog, Monthly Update, CIROH, On-Premises Services, National Water Model, NGIAB]
 hide_table_of_contents: false
 ---
 Welcome to the February edition of the CIROH DocuHub blog, where we bring you the latest updates and news about the Community NextGen project and CIROH's Cloud and on-premise Infrastructure.

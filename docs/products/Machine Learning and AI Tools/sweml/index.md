@@ -2,8 +2,7 @@
 sidebar_position: 8
 title: "SWEML"
 description: "Snow Water Equivalent Machine Learning"
-tags:
-  - national_snow_model
+tags: [Products, CIROH, Snow Sensing]
 ---
 
 # Advancing Snow Modeling

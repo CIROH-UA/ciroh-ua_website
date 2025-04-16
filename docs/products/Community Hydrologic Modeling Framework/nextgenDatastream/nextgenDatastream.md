@@ -2,9 +2,7 @@
 sidebar_position: 6
 title: "NextGen Datastream"
 description: "NextGen Datastream"
-tags:
-  - datastream
-  - NextGen
+tags: [Products, CIROH, NGIAB, NextGen Datastream, AWS, National Water Model]
 ---
 
 :::info

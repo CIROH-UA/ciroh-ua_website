@@ -2,11 +2,7 @@
 sidebar_position: 3
 title: "Accessing the System"
 description: "Access of On-Premises Cluster Pantarhei"
-tags:
-  - HPC
-  - On-Premises
-  - Access
-  - Pantarhei
+tags: [CIROH, Services, On-Premises Services, Pantarhei, HPC]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

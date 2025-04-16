@@ -1,11 +1,8 @@
 ---
 sidebar_position: 4
 title: "NextGen Framework"
-description: "NWM"
-tags: 
-- NWM
-- BMI
-
+description: "Introduction to the NextGen Framework"
+tags: [Education, National Water Model, NOAA]
 ---
 
 # NextGen Framework: Building Novel and Mimic Model Formulations

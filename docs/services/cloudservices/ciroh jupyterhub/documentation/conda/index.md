@@ -2,12 +2,7 @@
 sidebar_position: 5
 title: "Persistent Conda Environment"
 description: "2i2c JupyterHub is a cloud-based JupyterHub environment specifically designed for hydrological researchers. It is powered by 2i2c JupyterHub, a cloud-based JupyterHub environment specifically on Google Cloud"
-tags:
-  - 2i2c
-  - JupyterHub
-  - conda
-  - persistent
-  - tutorial
+tags: [CIROH, Services, Cloud Services, JupyterHub, 2i2c, Google Cloud, Education]
 ---
 
 # Persistent Conda Environments on CIROH 2i2c Server

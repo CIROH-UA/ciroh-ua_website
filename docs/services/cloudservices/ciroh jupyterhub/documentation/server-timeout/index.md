@@ -1,14 +1,8 @@
 ---
 sidebar_position: 6
 title: "Prevent Server Timeout"
-description: "
-Currently, user servers on JupyterHub stop after about an hour of inactivity. While this helps save costs, it can be problematic for long-running jobs if there is no active interaction with the notebook."
-tags:
-  - 2i2c
-  - JupyterHub
-  - timeout
-  - notebook
-  - tutorial
+description: "Currently, user servers on JupyterHub stop after about an hour of inactivity. While this helps save costs, it can be problematic for long-running jobs if there is no active interaction with the notebook."
+tags: [CIROH, Services, Cloud Services, JupyterHub, 2i2c, Google Cloud, Education]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

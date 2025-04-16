@@ -2,12 +2,7 @@
 sidebar_position: 2
 title: "CIROH Google Account"
 description: "Google Research Cloud"
-tags:
-  - Google
-  - Cloud
-  - CIROH
-  - GCP
- 
+tags: [CIROH, Services, Cloud Services, Google Cloud]
 ---
 
 import Link from '@docusaurus/Link'

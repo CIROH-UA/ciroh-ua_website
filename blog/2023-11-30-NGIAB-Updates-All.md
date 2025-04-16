@@ -3,7 +3,7 @@ title: NextGen In A Box v1.1.0 Release
 description: News and release notes for NGIAB
 slug: NextGen In A Box Release Notes 
 authors: [arpita, zach]
-tags: [nextgen]
+tags: [Blog, NGIAB, CIROH, Cloud Services, National Water Model]
 hide_table_of_contents: false
 image: https://github.com/CIROH-UA/NGIAB-CloudInfra/raw/main/image/README/ngiab.png
 ---

@@ -1,10 +1,11 @@
 ---
 sidebar_position: 1
 title: Policy and Guidance
-description: "Policy and Guidance for  Data and Code Sharing Policy"
+description: "Policy and Guidance for Data and Code Sharing Policy"
+tags: [CIROH, Policies]
 ---
 
-# Policy and Guidance for  Data and Code Sharing Policy
+# Policy and Guidance for Data and Code Sharing Policy
 
 ## Guiding Principles
 We provide the following principles that guide CIROH’s activities and associated data sharing:

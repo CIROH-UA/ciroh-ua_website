@@ -2,10 +2,7 @@
 sidebar_position: 10
 title: "HydroServer"
 description: "HydroServer Portal"
-tags:
-  - hydroserver
-  - python
-  - django
+tags: [Products, CIROH, National Water Model, AWS]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

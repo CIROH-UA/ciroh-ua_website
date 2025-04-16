@@ -2,11 +2,7 @@
 sidebar_position: 14
 title: "Tethys-CSES"
 description: "Community Streamflow Evaluation System (CSES) - Tethys Web Application"
-tags:
-  - tethys
-  - cses
-  - ciroh
-
+tags: [Products, CIROH, NOAA, Alabama Water Institute, Tethys Platform, CSES]
 ---
 
 import GitHubReadme from '@site/src/components/GitHubReadme';

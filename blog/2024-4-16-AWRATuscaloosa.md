@@ -3,7 +3,7 @@ title: "AWRA 2024 Spring Conference"
 description: "AWRA 2024 Spring Conference"
 slug: AWRA 2024 Spring Conference
 authors: arpita
-tags: [awra, tuscaloosa, conference, water resources, modeling]
+tags: [Blog, Conference, Alabama Water Institute, CIROH, NGIAB, NextGen Datastream, National Water Model]
 hide_table_of_contents: false
 image: /img/awra2024.jpeg
 ---

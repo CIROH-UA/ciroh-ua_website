@@ -3,7 +3,7 @@ title: "Google Cloud Next '24: A Flood of Innovation and Inspiration"
 description: "Google Cloud Next '24: Las Vegas"
 slug: Google Cloud Next 2024
 authors: arpita
-tags: [google, googlecloud, googlecloudnext, conference]
+tags: [Blog, Conference, Google Cloud, Google Cloud Next, CIROH, National Water Model, NGIAB, BYU]
 hide_table_of_contents: false
 image: /img/googlenext-3.jpeg
 ---

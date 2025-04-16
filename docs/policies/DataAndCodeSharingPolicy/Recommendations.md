@@ -1,10 +1,11 @@
 ---
 sidebar_position: 2
 title: Recommendations
-description: "Recommendations for  Data and Code Sharing Policy"
+description: "Recommendations for Data and Code Sharing Policy"
+tags: [CIROH, Policies]
 ---
 
-# Recommendations for  Data and Code Sharing Policy
+# Recommendations for Data and Code Sharing Policy
 
 In the following sections, we provide some practical guidance for CIROH researchers designed to help them meet the terms and conditions of CIROH’s Data and Code Sharing Policy, as discussed above, for different types of research products. Each section is focused on providing guidance for a particular type of product, but these sections may not be inclusive of all of the types of products that may fall under NOAA’s requirements for sharing data and research products.
 

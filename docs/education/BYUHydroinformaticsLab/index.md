@@ -2,11 +2,7 @@
 sidebar_position: 4
 title: "BYU Hydroinformatics courses"
 description: "Online courses powered by Open edX"
-tags: 
-- education
-- BYU
-- hydroinformatics
-- online courses
+tags: [BYU, Education]
 ---
 # BYU Hydroinformatics Courses: Enhance Your Skillds in Water Resources Management
 

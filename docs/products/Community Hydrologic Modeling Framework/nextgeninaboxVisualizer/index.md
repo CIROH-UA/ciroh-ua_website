@@ -2,14 +2,7 @@
 sidebar_position: 5
 title: "NGIAB Tethys Visualization Integration"
 description: "NextGen In a Box (NGIAB)"
-tags:
-  - NextGen In A Box
-  - NGIAB
-  - NextGen framework
-  - National Water Model
-  - national water center
-  - visualizer
-  - ngiab-client
+tags: [Products, NGIAB, CIROH, Cloud Services, Docker, National Water Model, Education, Tethys Platform]
 ---
 
 import GitHubReadme from '@site/src/components/GitHubReadme';

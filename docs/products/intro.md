@@ -1,10 +1,7 @@
 ---
 sidebar_position: 1
 title: "Products"
-tags:
-  - products
-  - tools
-  - research
+tags: [CIROH, Products]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

@@ -2,10 +2,7 @@
 sidebar_position: 9
 title: "Water Prediction Node"
 description: "Water Node Website"
-tags:
-  - waternode
-  - CoastWatch
-  - national water center
+tags: [Products, NOAA, CIROH]
 ---
 
 # Welcome to the Water Prediction Node

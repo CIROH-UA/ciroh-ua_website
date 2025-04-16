@@ -3,11 +3,7 @@ sidebar_position: 1
 title: "System Architecture"
 description: "System Architecture of Pantarhei"
 hide_table_of_contents: true
-tags:
-- HPC
-- On-Premises
-- System Architecture
-- Pantarhei
+tags: [CIROH, Services, On-Premises Services, Pantarhei, HPC]
 ---
 
 import Tabs from '@theme/Tabs';

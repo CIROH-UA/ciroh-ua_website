@@ -2,12 +2,7 @@
 sidebar_position: 7
 title: "Data Access"
 description: "Input and Output of NWM"
-tags:
-  - NOMADS
-  - NODD
-  - Microsoft Planetary Computer
-  - AWS Open data registry
-  - ESRI
+tags: [Products, CIROH, National Water Model, AWS, Google Cloud, NOAA]
 ---
 
 # NWM Data Access

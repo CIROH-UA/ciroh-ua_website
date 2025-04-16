@@ -2,12 +2,7 @@
 sidebar_position: 1
 title: "Pantarhei"
 description: "Pantarhei HPC Cluster"
-tags:
-  - HPC
-  - On-Premises
-  - Overview
-  - Intro
-  - Pantarhei
+tags: [CIROH, Services, On-Premises Services, Pantarhei, HPC]
 ---
 Pantarhei serves as an analytical and computational resource accessible to the research community of the Cooperative Institute for Research to Operations in Hydrology (CIROH). This cluster is managed by the CIROH IT Computing group at the University of Alabama. 
 

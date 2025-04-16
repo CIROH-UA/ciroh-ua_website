@@ -2,8 +2,7 @@
 sidebar_position: 7
 title: "Forcing Processor"
 description: "NextGen Forcing Processor"
-tags:
-  - forcings
+tags: [Products, CIROH, NGIAB, NextGen Datastream, AWS, National Water Model]
 ---
 
 # Forcing Processor

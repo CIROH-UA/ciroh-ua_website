@@ -2,11 +2,7 @@
 sidebar_position: 3
 title: "Accessing the System"
 description: "Access of On-Premises Cluster Wukong"
-tags:
-  - HPC
-  - On-Premises
-  - Access
-  - Wukong
+tags: [CIROH, Services, On-Premises Services, Wukong, HPC]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

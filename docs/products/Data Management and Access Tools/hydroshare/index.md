@@ -2,11 +2,7 @@
 sidebar_position: 12
 title: "HydroShare"
 description: "HydroShare"
-tags:
-  - hydroshare
-  - data sharing
-  - repository
-  - jupyterhub
+tags: [Products, CIROH, HydroShare, JupyterHub, CUAHSI]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

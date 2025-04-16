@@ -2,11 +2,7 @@
 sidebar_position: 2
 title: "Obtaining an Account"
 description: "Obtain an account on Pantarhei"
-tags:
-  - HPC
-  - On-Premises
-  - Account
-  - Pantarhei
+tags: [CIROH, Services, On-Premises Services, Pantarhei, HPC]
 ---
 
 import Link from '@docusaurus/Link'

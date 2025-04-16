@@ -66,6 +66,8 @@ jobs:
         echo "Setting baseUrl for staging"
         sed -i 's|baseUrl: '\''\/'\''|baseUrl: '\''/docuhub-staging/'\''|g' docusaurus.config.js
         sed -i 's|baseUrl: "\/"|baseUrl: "\/docuhub-staging\/"|g' docusaurus.config.js
+        sed -i 's|baseUrl = '\''\/'\''|baseUrl = '\''/docuhub-staging/'\''|g' docusaurus.config.js
+        sed -i 's|baseUrl = "\/"|baseUrl = "\/docuhub-staging\/"|g' docusaurus.config.js
         
         # Show the changed config
         echo "Modified docusaurus.config.js:"

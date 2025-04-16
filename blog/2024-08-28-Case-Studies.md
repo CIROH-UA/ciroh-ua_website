@@ -3,7 +3,7 @@ title: "CIROH Cloud User Success Story"
 description: "August Monthly Blog Update"
 slug: August Monthly Blog Update
 authors: arpita
-tags: [Blog, CIROH, Monthly Update, 2i2c, AWS, Google Cloud, NGIAB, JupyterHub, HPC, NextGen Datastream, Cloud Services]
+tags: [Blog, CIROH, Monthly Update, 2i2c, AWS, Google Cloud, NGIAB, JupyterHub, HPC, NextGen Datastream, Cloud Services, National Water Model]
 hide_table_of_contents: false
 image: /img/ngen-datastream-august-blog.jpg
 ---

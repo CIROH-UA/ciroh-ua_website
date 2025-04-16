@@ -111,28 +111,40 @@ const config = {
             label: "Services",
           },
           {
-            type: "doc",
-            docId: "education/education",
-            position: "left",
-            label: "Education",
-          },
-          {
-            type: "doc",
-            docId: "policies/intro",
-            position: "left",
-            label: "Policies and Best Practices",
-          },
-          
-          {
             href: "/impact",
             label: "Community Impact",
             position: "left",
           },
           {
+            type: 'dropdown',
+            label: 'Learn',
+            position: 'left',
+            items:[
+              {
+                type: "doc",
+                docId: "education/education",
+                label: "Education",
+              },
+              {
+                type: "doc",
+                docId: "policies/intro",
+                label: "Policies and Best Practices",
+              },
+            ]
+          },
+                    
+          
+          {
             href: "/news",
             label: "News",
             position: "right",
           },
+          {
+            href: "https://portal.ciroh.org/", // Research portal URL
+            label: "Portal",
+            position: "right",
+          },
+      
           {
             href: "https://forms.office.com/r/5ww7qRWwwf",
             label: "Feedback",

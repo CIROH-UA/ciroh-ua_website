@@ -25,7 +25,7 @@ function HomepageHeader() {
             </span>
           </div>
           {/* <div className="hero-image">
-            <img src="img/docuhub-logo.png" alt="Logo" style={{ maxWidth: '15%' }} />
+            <img src="img/logos/docuhub.png" alt="Logo" style={{ maxWidth: '15%' }} />
           </div> */}
         </div>
       </div>

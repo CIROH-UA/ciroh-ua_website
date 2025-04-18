@@ -12,7 +12,7 @@ import DocsMDLight from '@site/static/img/contribute/docuhub_md_light3.png';
 import GitHubLogoLight from '@site/static/img/contribute/github_logo_light.png';
 import GitHubLogoDark from '@site/static/img/contribute/github_logo_dark.png';
 
-import TypingGraphic from '@site/static/img/why-docuhub-5.png'
+import TypingGraphic from '@site/static/img/graphics/why-docuhub-5.png'
 
 export const contributeSimpleDocsCards = [
     {

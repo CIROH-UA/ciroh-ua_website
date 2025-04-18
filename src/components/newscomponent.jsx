@@ -10,12 +10,12 @@ const NewsComponent = ({ data, isLatest }) => {
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
-  const logoWhiteUrl = useBaseUrl("/img/cirohlogo-white.png");
-  const logoTransparentUrl = useBaseUrl("/img/cirohlogo-transparent.png");
-  const sidelineDarkUrl = useBaseUrl("/img/news-sideline-dark.png");
-  const sidelineLightUrl = useBaseUrl("/img/news-sideline-light.png");
-  const underlinesDarkUrl = useBaseUrl("/img/news-underlines-dark.png");
-  const underlinesLightUrl = useBaseUrl("/img/news-underlines-light.png");
+  const logoDarkUrl = useBaseUrl("/img/logos/ciroh-dark.png");
+  const logoLightUrl = useBaseUrl("/img/logos/ciroh-light.png");
+  const sidelineDarkUrl = useBaseUrl("/img/graphics/news/sideline-dark.png");
+  const sidelineLightUrl = useBaseUrl("/img/graphics/news/sideline-light.png");
+  const underlinesDarkUrl = useBaseUrl("/img/graphics/news/underlines-dark.png");
+  const underlinesLightUrl = useBaseUrl("/img/graphics/news/underlines-light.png");
   return (
     <div>
       <hr />
@@ -32,8 +32,8 @@ const NewsComponent = ({ data, isLatest }) => {
       {/* TODO: dark mode/light mode detection */}
       {isExpanded && 
         <div style={{'display':'flex','flexDirection':'row','justifyContent':'center','alignItems':'center'}}>
-          <img class={themes.darkImage} alt="CIROH logo" src={logoWhiteUrl} style={{'alignSelf':'center','maxHeight':'145px','maxWidth':'145px','margin':'2rem'}}></img>
-          <img class={themes.lightImage} alt="CIROH logo" src={logoTransparentUrl} style={{'alignSelf':'center','maxHeight':'145px','maxWidth':'145px','margin':'2rem'}}></img>
+          <img class={themes.darkImage} alt="CIROH logo" src={logoDarkUrl} style={{'alignSelf':'center','maxHeight':'145px','maxWidth':'145px','margin':'2rem'}}></img>
+          <img class={themes.lightImage} alt="CIROH logo" src={logoLightUrl} style={{'alignSelf':'center','maxHeight':'145px','maxWidth':'145px','margin':'2rem'}}></img>
           <div style={{'display':'flex','flexDirection':'column','justifyContent':'center'}}>
             <div style={{'display':'flex','flexDirection':'row','justifyContent':'center','margin':'0','padding':'0','minWidth':'0'}}>
               <img class={themes.darkImage} alt="Wave graphic" src={sidelineDarkUrl} style={{'alignSelf':'center','maxHeight':'2rem'}}></img>
@@ -94,7 +94,7 @@ function getBadgeClass(type) {
 
 const NewsHeader = ({ date }) => {
   return (
-    <img class="imagecontainer_zh05 lightImage_bt2F" alt="cirohImage" src="img/cirohlogo-transparent.png" style={{'height':'145px','width':'145px','margin-top':'15px'}}></img>
+    <img class="imagecontainer_zh05 lightImage_bt2F" alt="cirohImage" src="img/ciroh-light.png" style={{'height':'145px','width':'145px','margin-top':'15px'}}></img>
   );
 }
 

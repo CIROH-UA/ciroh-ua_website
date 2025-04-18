@@ -310,25 +310,25 @@ const impactData = [
   {
     title: "CIROH AWS Projects",
     count: 24,
-    imageSrc: "/img/aws-logo.svg",
+    imageSrc: "/img/logos/corp/aws-black.svg",
     users: 60,
   },
   {
     title: "CIROH Google Cloud and CIROH JupyterHub Projects",
     count: 50,
-    imageSrc: "/img/google-cloud.jpg",
+    imageSrc: "/img/logos/corp/google-cloud.jpg",
     users: 171,
   },
   {
     title: "CIROH On-premise HPC Projects",
     count: 20,
-    imageSrc: "/img/pantarhei-logo.jpg",
+    imageSrc: "/img/logos/pantarhei.jpg",
     users: 50,
   },
   {
     title: "CIROH NSF ACCESS Allocations Projects",
     count: 8,
-    imageSrc: "/img/nsf-logo.png",
+    imageSrc: "/img/logos/nsf-logo.png",
     users: 27,
   },
 ];
@@ -351,19 +351,19 @@ export default function HomepageFeatures() {
           <div className="row">
             <Card
               title="Documentation"
-              image="img/documentation.png"
+              image="img/graphics/documentation.png"
               description="Dive into our comprehensive documentation to access in-depth information about various CIROH products, including but not limited to NextGen, Snow model, Tethys, and more."
               link="/docs/products/intro"
             />
             <Card
               title="Cloud Services"
-              image="img/cloud.png"
+              image="img/graphics/cloud.png"
               description="Explore our array of cloud services and offerings, where you can delve into the specifics of CIROH-AWS cloud. Learn how to gain access to this cloud infrastructure and uncover insights into working seamlessly with the 2i2c cloud services."
               link="/docs/services/intro"
             />
             <Card
               title="Training"
-              image="img/tutorial.png"
+              image="img/graphics/tutorial.png"
               description="Elevate your expertise through our training programs. Delve into our tutorials and educational resources, covering topics such as the NextGen framework, Data Science model, and more."
               link="/docs/education/"
             />
@@ -377,13 +377,13 @@ export default function HomepageFeatures() {
             />
             <Card
               title="AWS"
-              image="img/aws-logo.png"
+              image="img/logos/corp/aws-circle.png"
               description="Leverage the power of CIROH AWS Account to elevate your hydrological research. Get access to enterprise-level AWS cloud platform, and utilize AWS computing resources and scalable storage for your research."
               link="/docs/services/cloudservices/aws"
             />
             <Card
               title="Google Cloud"
-              image="img/google-cloud.jpg"
+              image="img/logos/corp/google-cloud.jpg"
               description="Explore different services and tools offered by CIROH Google Cloud. Learn how to access Google Cloud Platform (GCP) and leverage its resources for your research and projects."
               link="/docs/services/cloudservices/google cloud"
             />
@@ -391,19 +391,19 @@ export default function HomepageFeatures() {
           <div className="row">
             <Card
               title="CIROH JupyterHub"
-              image="img/jupyterhub.jpg"
+              image="img/logos/corp/jupyterhub.jpg"
               description="Access cloud-based JupyterHub environment on Google Cloud tailored for hydrological research. Leverage computing power with both CPU and GPU capabilities for advanced computational needs."
               link="/docs/services/cloudservices/ciroh jupyterhub"
             />
             <Card
               title="Pantarhei"
-              image="img/pantarhei-logo.jpg"
+              image="img/logos/pantarhei.jpg"
               description="Access Pantarhei, a high-performance computing (HPC) cluster, to run computationally intensive hydrological models. Utilize Pantarhei to perform large-scale simulations and data processing tasks."
               link="/docs/services/on-prem/Pantarhei"
             />
             <Card
               title="CIROH Portal"
-              image="img/ciroh-logo.jpg"
+              image="img/graphics/ciroh-synergy.jpg"
               description="This portal enhances collaboration and innovation by providing access to interactive web apps, datasets, and learning modules, supporting CIROH and NOAA NWM researchers in advancing hydrological science."
               link="https://portal.ciroh.org/"
             />
@@ -450,7 +450,7 @@ export default function HomepageFeatures() {
               </div>
             </div>
             <img
-              src="./img/contribute.png"
+              src="./img/graphics/contribute.png"
               alt="Contribute to CIROH DocuHub"
               class={styles.heroimage}
             />
@@ -466,42 +466,42 @@ export default function HomepageFeatures() {
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">Knowledge Hub</h3>
-                            <img src="/img/why-docuhub-1.png" alt="docuhub image"></img>
+                            <img src="/img/graphics/why-docuhub-1.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0 mt-2">Access a centralized repository of research and educational resources to enhance your hydrological expertise.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">Research & Growth</h3>
-                            <img src="/img/why-docuhub-2.png" alt="docuhub image"></img>
+                            <img src="/img/graphics/why-docuhub-2.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0 mt-2">Explore cutting-edge research and innovative projects driving innovation in hydrology.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">Blog & News</h3>
-                            <img src="/img/why-docuhub-3.png" alt="docuhub image"></img>
+                            <img src="/img/graphics/why-docuhub-3.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0 mt-2">Stay updated with the latest news, community insights, and updates about CIROH projects.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">Education & Training</h3>
-                            <img src="/img/why-docuhub-4.png" alt="docuhub image"></img>
+                            <img src="/img/graphics/why-docuhub-4.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0 mt-2">Elevate your skills with tutorials, training programs, and educational materials tailored for hydrological research.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">CyberInfrastructure</h3>
-                            <img src="/img/why-docuhub-5.png" alt="docuhub image"></img>
+                            <img src="/img/graphics/why-docuhub-5.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0 mt-2">Leverage cloud infrastuctures, including AWS, GCP, CIROH JupyterHub, and on-premises infrastructures tailored to hydrological research needs.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">Global Collaboration</h3>
-                            <img src="/img/why-docuhub-6.png" alt="docuhub image"></img>
+                            <img src="/img/graphics/why-docuhub-6.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0 mt-2">Join a global network of researchers and collaborators to share knowledge, resources, and innovations within the CIROH community.</p>
                         </div>
                     </div>
@@ -521,7 +521,7 @@ export default function HomepageFeatures() {
         className="card rounded-3 overflow-hidden text-center bsb-overlay"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./img/research-image.jpg')",
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./img/graphics/research-image.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "local",
@@ -568,7 +568,7 @@ export default function HomepageFeatures() {
               </Link>
             </div>
             <img
-              src="./img/infra.png"
+              src="./img/graphics/infra.png"
               alt="DocuHub Office Hours"
               class={styles.heroimage}
             />
@@ -637,21 +637,21 @@ export default function HomepageFeatures() {
             <div style={{ textAlign: "center" }}>
               <img
                 alt="noaaImage"
-                src="img/noaalogo.png"
+                src="img/logos/noaa.png"
                 style={{ maxHeight: '145px', width: 'auto', padding: '1rem' }}
               />
             </div>
             <div style={{ textAlign: "center" }}>
               <img
                 alt="awiImage"
-                src="img/awi.png"
+                src="img/logos/awi.png"
                 style={{ maxHeight: '70px', width: 'auto', padding: '1rem' }}
               />
             </div>
             <div style={{ textAlign: "center" }}>
               <img
                 alt="cirohImage"
-                src="img/cirohlogo-transparent.png"
+                src="img/logos/ciroh-light.png"
                 style={{ maxHeight: '145px', width: 'auto', padding: '1rem' }}
               />
             </div>

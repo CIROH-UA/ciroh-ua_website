@@ -5,7 +5,7 @@ slug: November Monthly Blog Update
 authors: arpita
 tags: [ngiab, nextgen, workflow, visualize, evaluate]
 hide_table_of_contents: false
-image: ../../img/NGIABLogoWithoutText-Transparant.png
+image: ../../img/logos/ngiab.png
 ---
 
 # NextGen In A Box: November 2024 Release Updates

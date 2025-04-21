@@ -1,9 +1,8 @@
 ---
-title: 04-08-2025 Release
-description: This is the first set of release notes on docuhub
+title: 04-08-2025 Release Notes
+description: Major DocuHub update for April 2025!
 slug: v20250408
-tags: [release-notes, docuhub, nextgen, ciroh]
-image: https://i.imgur.com/mErPwqL.png
+tags: ["Release Notes", DocuHub]
 hide_table_of_contents: false
 ---
 
@@ -15,7 +14,7 @@ hide_table_of_contents: false
 - Added tutorial for running datapreprocess on CIROH JupyterHub ([#299](https://github.com/CIROH-UA/ciroh-ua_website/pull/299))
 
 ## Blog posts and news updates
-- Blog post: "UA's Alabama Water Institute Showcases 30-Minute Hydrological Modeling Revolution" ([#310](https://github.com/CIROH-UA/ciroh-ua_website/pull/310))
+- Blog post: ["UA's Alabama Water Institute Showcases 30-Minute Hydrological Modeling Revolution"](/blog/march-2025-update) ([#310](https://github.com/CIROH-UA/ciroh-ua_website/pull/310))
 - News update: March 2025 ([#306](https://github.com/CIROH-UA/ciroh-ua_website/pull/306))
 
 ## Updates

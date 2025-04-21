@@ -7,7 +7,7 @@ hide_table_of_contents: false
 ---
 
 ## Blog posts and news updates
-- Blog post: ["Google Cloud Next 2025: Innovation at Scale"](/april-2025-update) ([#345](https://github.com/CIROH-UA/ciroh-ua_website/pull/345))
+- Blog post: ["Google Cloud Next 2025: Innovation at Scale"](/blog/april-2025-update) ([#345](https://github.com/CIROH-UA/ciroh-ua_website/pull/345))
 
 ## Updates
 - Blog's left sidebar now correctly displays all posts ([#350](https://github.com/CIROH-UA/ciroh-ua_website/pull/350))

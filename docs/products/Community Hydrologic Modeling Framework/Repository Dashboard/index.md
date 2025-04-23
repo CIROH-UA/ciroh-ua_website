@@ -1,6 +1,6 @@
 ---
 sidebar_position: 10
-title: 'Repository Dashboard'
+title: 'GitHub Repository Dashboard'
 description: "Dashboard for viewing CIROH's managed repositories"
 tags:
   - ciroh
@@ -12,6 +12,6 @@ tags:
 
 import GitHubDashboard from '@site/src/components/GitHubDashboard';
 
-# Test Repository Dashboard
+# GitHub Repository Dashboard
 
 <GitHubDashboard />

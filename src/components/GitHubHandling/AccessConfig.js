@@ -74,12 +74,15 @@ class AccessConfig {
      * ]
      */
     static actions_repo_targets = [
+        ["CIROH-UA", "NGIAB_data_preprocess"],
         ["CIROH-UA", "NGIAB-CloudInfra"],
         ["CIROH-UA", "NGIAB-HPCInfra"],
-        // ["CIROH-UA", "NGIAB_data_preprocess"],
         ["CIROH-UA", "ngiab-client"],
-        // ["CIROH-UA", "ngiab-teehr"],
+        ["CIROH-UA", "ngiab-teehr"],
         ["CIROH-UA", "ngen-datastream"],
+        ["CIROH-UA", "ngen"],
+        ["CIROH-UA", "t-route"],
+        ["CIROH-UA", "lstm"],
     ]
 }
 

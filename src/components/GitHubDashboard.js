@@ -34,12 +34,15 @@ function IntroDiv() {
     // Further details will be given in further sections.
     var repo_names = AccessConfig.target_repo_names;
     var org_names = AccessConfig.target_org_names;
-    var intro_paragraph = "This page contains the list of repositories that CIROH is interested in taking ownership of."
-    var org_desc = "All repositories originate from the NOAA-OWP organization, but the ones CIROH has taken ownership of can be found as forks in the CIROH-UA organization."
-    var repo_desc = "The repositories are as follows:"
-    var repo_list = repo_names.map((repo) => {
-        return <li key={repo}>{repo}</li>;
-    });
+    var intro_paragraph = "This page contains the list of Community NextGen related repositories that CIROH is maintaining."
+    // var org_desc = "All repositories originate from the NOAA-OWP organization, but the ones CIROH has taken ownership of can be found as forks in the CIROH-UA organization."
+    var org_desc = "Some repositories originate from the NOAA-OWP organization, but are now forks and maintained by CIROH."
+    // var repo_desc = "The repositories are as follows:"
+    // var repo_list = repo_names.map((repo) => {
+    //     return <li key={repo}>{repo}</li>;
+    // });
+    var repo_desc = null;
+    var repo_list = null;
     return (
         <div style={{ border: '1px solid black', padding: '10px', margin: '10px' }}>
             <h2>Introduction</h2>

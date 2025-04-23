@@ -1,4 +1,4 @@
-import Link from '@docusaurus/Link'
+import Link from "@docusaurus/Link";
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
   <img src="/img/docuhub-logo.png" alt="DocuHub Logo" width="80" style={{ marginLeft: '-100px', marginBottom: '0' }} />
@@ -8,14 +8,13 @@ import Link from '@docusaurus/Link'
 We’re here to assist with any questions, inquiries, or feedback. Feel free to connect with us through the following channels:
 
 ## Email Us:
-- For general inquiries, reeach out to us at ciroh-it-admin@ua.edu for any general questions or assistance.
-
+- For general inquiries, reach out to us at ciroh-it-admin@ua.edu for any general questions or assistance.
 - If you’d like to add content or make changes to this site, please contact us at ciroh-it-admin@ua.edu.
 <br />
 
 ## Connect with Us:
-- Join our discussions on Slack by connecting to the [ciroh-ua-it-admin channel](https://cirohworkspace.slack.com/archives/C057BLQB867).
-
+- Join our discussions on Slack by connecting to the [ciroh-ua-it-support channel](https://cirohworkspace.slack.com/archives/C057BLQB867).
+- Join our <Link to="docs/products/Community Hydrologic Modeling Framework/ngiabOfficeHours">Monthly Office Hours</Link> to engage with experts and stay updated on the latest developments in CIROH Research Cyberinfrastructure and Community NextGen.
 
 <br />
 

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import themes from "./themes.module.css";
 import ReactMarkdown from 'react-markdown';
-import Link from '@docusaurus/Link'
+import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const NewsComponent = ({ data, isLatest }) => {
   const [isExpanded, setIsExpanded] = useState(isLatest); // Expand only the latest
@@ -9,7 +10,12 @@ const NewsComponent = ({ data, isLatest }) => {
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
-
+  const logoWhiteUrl = useBaseUrl("/img/cirohlogo-white.png");
+  const logoTransparentUrl = useBaseUrl("/img/cirohlogo-transparent.png");
+  const sidelineDarkUrl = useBaseUrl("/img/news-sideline-dark.png");
+  const sidelineLightUrl = useBaseUrl("/img/news-sideline-light.png");
+  const underlinesDarkUrl = useBaseUrl("/img/news-underlines-dark.png");
+  const underlinesLightUrl = useBaseUrl("/img/news-underlines-light.png");
   return (
     <div>
       <hr />
@@ -23,23 +29,24 @@ const NewsComponent = ({ data, isLatest }) => {
       </ul>
 
 
+      {/* TODO: dark mode/light mode detection */}
       {isExpanded && 
         <div style={{'display':'flex','flexDirection':'row','justifyContent':'center','alignItems':'center'}}>
-          <img class={themes.darkImage} alt="CIROH logo" src="img/cirohlogo-white.png" style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
-          <img class={themes.lightImage} alt="CIROH logo" src="img/cirohlogo-transparent.png" style={{'alignSelf':'center','height':'145px','width':'145px','margin':'2rem'}}></img>
-          <div style={{'display':'flex','flexDirection':'column','justifyContent':'center','alignItems':'center'}}>
-            <div style={{'display':'flex','flexDirection':'row','margin':'0','padding':'0'}}>
-              <img class={themes.darkImage} alt="Wave graphic" src="img/news-sideline-dark.png" style={{'alignSelf':'center','height':'2rem'}}></img>
-              <img class={themes.lightImage} alt="Wave graphic" src="img/news-sideline-light.png" style={{'alignSelf':'center','height':'2rem'}}></img>
+          <img class={themes.darkImage} alt="CIROH logo" src={logoWhiteUrl} style={{'alignSelf':'center','maxHeight':'145px','maxWidth':'145px','margin':'2rem'}}></img>
+          <img class={themes.lightImage} alt="CIROH logo" src={logoTransparentUrl} style={{'alignSelf':'center','maxHeight':'145px','maxWidth':'145px','margin':'2rem'}}></img>
+          <div style={{'display':'flex','flexDirection':'column','justifyContent':'center'}}>
+            <div style={{'display':'flex','flexDirection':'row','justifyContent':'center','margin':'0','padding':'0','minWidth':'0'}}>
+              <img class={themes.darkImage} alt="Wave graphic" src={sidelineDarkUrl} style={{'alignSelf':'center','maxHeight':'2rem'}}></img>
+              <img class={themes.lightImage} alt="Wave graphic" src={sidelineLightUrl} style={{'alignSelf':'center','maxHeight':'2rem'}}></img>
               <div style={{'width':'2rem'}} />
               <p style={{'fontSize':'2rem','margin':'0'}}>News</p>
               <div style={{'width':'2rem'}} />
-              <img class={themes.darkImage} alt="Wave graphic" src="img/news-sideline-dark.png" style={{'alignSelf':'center','height':'2rem'}}></img>
-              <img class={themes.lightImage} alt="Wave graphic" src="img/news-sideline-light.png" style={{'alignSelf':'center','height':'2rem'}}></img>
+              <img class={themes.darkImage} alt="Wave graphic" src={sidelineDarkUrl} style={{'alignSelf':'center','maxHeight':'2rem'}}></img>
+              <img class={themes.lightImage} alt="Wave graphic" src={sidelineLightUrl} style={{'alignSelf':'center','maxHeight':'2rem'}}></img>
             </div>
             <p style={{'fontSize':'3rem','margin':'0','textAlign':'center'}}><b>{data.date}s</b></p>
-            <img class={themes.darkImage} alt="Wave graphic" src="img/news-underlines-dark.png" style={{'alignSelf':'center','height':'3.5rem'}}></img>
-            <img class={themes.lightImage} alt="Wave graphic" src="img/news-underlines-light.png" style={{'alignSelf':'center','height':'3.5rem'}}></img>
+            <img class={themes.darkImage} alt="Wave graphic" src={underlinesDarkUrl} style={{'alignSelf':'center','maxHeight':'3.5rem'}}></img>
+            <img class={themes.lightImage} alt="Wave graphic" src={underlinesLightUrl} style={{'alignSelf':'center','maxHeight':'3.5rem'}}></img>
           </div>
         </div>
       }

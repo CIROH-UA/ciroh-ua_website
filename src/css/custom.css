@@ -1,5 +1,5 @@
 /**
- * Any CSS included here will be global. The classic template
+ * Any CSS included here will be global.The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
@@ -54,6 +54,14 @@
 /* Styling one class specially in dark mode */
 [data-theme='dark'] .hero__title, .hero__subtitle{
   color: whitesmoke;
+}
+
+/*
+  This class can be apply to img tag if you want image colors to invert, to look better in a dark mode
+  e.g. <img src="path/to/image.png" class="theme-invert-dark" />
+*/
+[data-theme='dark'] .theme-invert-dark {
+  filter: invert(100%);
 }
 
 /* 

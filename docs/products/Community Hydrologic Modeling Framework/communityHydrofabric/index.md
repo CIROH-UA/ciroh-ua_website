@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-title: "Hydrofabric Patcher"
+title: "Community Hydrofabric Patcher"
 description: "Community Hydrofabric Patcher"
 tags:
   - hydrofabric

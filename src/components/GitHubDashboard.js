@@ -20,12 +20,13 @@ import React, { useEffect, useState } from 'react';
  */
 const help = null; // help keyword in the code can be moused over to see the above explanation
 
-import { tryGetOrganization, tryListRepositories, tryGetRepositoryWorkflows, tryGetRepository, getRateLimitStatus } from './GitHubHandling/AccessUtils';
+import { tryGetOrganization, tryListRepositories, tryGetRepositoryWorkflows, tryGetRepository, getRateLimitStatus, tryGetCachedRepository, tryCacheOrgRepos } from './GitHubHandling/AccessUtils';
 import { AccessConfig } from './GitHubHandling/AccessConfig';
 import Link from '@docusaurus/Link';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Details from '@theme/Details';
+import { use } from 'react';
 // making a test component to check if the import and github API both work
 
 function IntroDiv() {
@@ -147,6 +148,227 @@ function RepoListSection(organization, repositories) {
 }
 
 /**
+ * @name OrgInfoDiv
+ * @param {Organization} organization
+ * @param {string} [padding] - optional, default null
+ * @description
+ * This function takes an organization and returns a HTML element
+ * that displays the organization information.
+ * @returns {JSX.Element}
+ */
+function OrgInfoDiv(organization, padding = null) {
+    // Organization information
+    const org_name = organization.login;
+    const org_desc = organization.description;
+    const org_url = organization.html_url;
+    const org_avatar = organization.avatar_url;
+    var outer_style = {
+        border: '1px solid black',
+    }
+    outer_style.padding = (padding) ? padding : '3px';
+    return (
+        <div style={outer_style}>
+            <h2>{org_name}</h2>
+            <p>{org_desc}</p>
+            <p><img src={org_avatar} alt="Organization Avatar" style={{ width: '100px', height: '100px' }} /></p>
+            <Link href={org_url} target="_blank" rel="noopener noreferrer">View Organization</Link>
+        </div>
+    );
+}
+
+/**
+ * @name RepoInfoDiv
+ * @param {Repository} repository
+ * @param {string} [padding] - optional, default null
+ * @description
+ * This function takes a repository and returns a HTML element
+ * that displays the repository information.
+ * @returns {JSX.Element}
+ */
+function RepoInfoDiv(repository, padding = null) {
+    // Repository information
+    const repo_name = repository.name;
+    const repo_desc = repository.description;
+    const repo_url = repository.html_url;
+    var outer_style = {
+        border: '1px solid black',
+    }
+    outer_style.padding = (padding) ? padding : '3px';
+    return (
+        <div style={outer_style}>
+            <h2>{repo_name}</h2>
+            <p>{repo_desc}</p>
+            <Link href={repo_url} target="_blank" rel="noopener noreferrer">View Repository</Link>
+        </div>
+    );
+}
+
+/**
+ * @name RepoDiv
+ * @description
+ * This function takes a repository's name and org and returns a HTML element
+ * that displays the repository information.
+ * @param {Object} props
+ * @param {string} props.org_name - The name of the organization.
+ * @param {string} props.repo_name - The name of the repository.
+ * @param {string} [padding] - The padding of the element. Default is null.
+ * @returns {JSX.Element}
+ */
+function RepoDiv({ org_name, repo_name, padding = null }) {
+    // Repository information
+    const [loading, setLoading] = useState(true);
+    const [repoData, setRepoData] = useState(null);
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                const data = await tryGetCachedRepository(org_name, repo_name);
+                setRepoData(data);
+            } catch (error) {
+                console.error('Error fetching repository data:', error);
+            }
+            finally {
+                setLoading(false);
+            }
+        }
+        fetchData();
+    }, [org_name, repo_name]);
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+    else {
+        return RepoInfoDiv(repoData, padding);
+    }
+}
+
+/**
+ * @name RepoListSectionElement
+ * @description
+ * This function is intended to be imported and used as an HTML element.
+ * As such, the arguments are strings rather than objects.
+ * @param {Object} props
+ * @param {string} props.org_name - The name of the organization.
+ * @param {string} props.repo_list - The list of repositories in the organization.
+ * @param {string} [props.padding] - The padding of the element. Default is null.
+ * @param {string} [props.innerPadding] - The inner padding of the element. Default is null.
+ * @returns {JSX.Element}
+ */
+export function RepoListSectionElement({ org_name, repo_list, padding = null, innerPadding = null }) {
+    if (!org_name) {
+        throw new Error('Organization name is required' + ` Provided props were: ${JSON.stringify({ org_name, repo_list })}`);
+    }
+    if (!repo_list) {
+        throw new Error('Repository list is required' + ` Provided props were: ${JSON.stringify({ org_name, repo_list })}`);
+    }
+    // Display the provided list of repositories in a vertical manner.
+    // Need states for:
+    // - loading
+    // - organization data (organization name, description, avatar, url)
+    // - repositories (repository name, description, avatar, url)
+    const [loading, setLoading] = useState(true);
+    const [orgData, setOrgData] = useState(null);
+    const [orgRepositories, setRepositories] = useState([]);
+    const [repoData, setRepoData] = useState(null);
+    // repo_list is a string that contains the list of repositories.
+    // we should use regex to parse possible list formats.
+    const list_delimiter = /[\s,]+/;
+    const repo_list_array = repo_list.split(list_delimiter);
+    const repo_list_set = new Set(repo_list_array);
+
+    var inner_style = {
+        border: '1px solid black',
+    }
+    inner_style.padding = (innerPadding) ? innerPadding : '3px';
+    var outer_style = {
+        border: '1px solid black',
+    }
+    outer_style.padding = (padding) ? padding : '3px';
+    useEffect(() => {
+        async function fetchData() {
+            try {
+                const data = await tryGetOrganization(org_name);
+                setOrgData(data);
+            } catch (error) {
+                console.error('Error fetching organization data:', error);
+            } finally {
+                setLoading(false);
+            }
+        }
+        fetchData();
+    }, [org_name]);
+    useEffect(() => {
+        async function getRepositories() {
+            try {
+                const repos = await tryListRepositories(org_name);
+                setRepositories(repos);
+            } catch (error) {
+                console.error('Error fetching repositories:', error);
+            } finally {
+                setLoading(false);
+            }
+        }
+        getRepositories();
+    }, [org_name]);
+    useEffect(() => {
+        async function filterRepositories() {
+            if (!orgRepositories || !Array.isArray(orgRepositories)) {
+                // orgRepositories not ready yet
+                return;
+            }
+            try {
+                const repos = orgRepositories;
+                var repo_data_obj = {};
+                for (const repo of repos) {
+                    if (repo_list_set.has(repo.name)) {
+                        repo_data_obj[repo.name] = repo;
+                    }
+                }
+                // console.log("Filtered repositories: ", repo_obj)
+                setRepoData(repo_data_obj);
+
+            } catch (error) {
+                console.error('Error filtering repositories:', error);
+            } finally {
+                setLoading(false);
+            }
+        }
+        filterRepositories();
+    }, [orgRepositories, repo_list]);
+    var result = [];
+    if (loading) {
+        result.push(<div>Loading...</div>);
+    } else {
+        if (orgData) {
+            result.push(OrgInfoDiv(orgData));
+        } else {
+            result.push(<div>Error loading organization data</div>);
+        }
+        if (Object.keys(repoData).length > 0) {
+            var repo_li_s = [];
+            var repositories = Object.values(repoData);
+            for (var i = 0; i < repositories.length; i++) {
+                var repo = repositories[i];
+                var repo_div = RepoInfoDiv(repo);
+                var repo_li = <li key={repo.name}>{repo_div}</li>;
+                repo_li_s.push(repo_li);
+            }
+            var repo_list_div = <div style={inner_style}>
+                <ul>
+                    {repo_li_s}
+                </ul>
+            </div>;
+            result.push(repo_list_div);
+        } else {
+            result.push(<div>Error loading repositories</div>);
+        }
+    }
+    return (
+        <div style={outer_style}>
+            {result}
+        </div>
+    );
+}
+
+/**
  * @name MakeCollapsibleObjectRepresentation
  * @param {Object} obj
  * @param {number} level - optional, default 0
@@ -220,7 +442,7 @@ function RepoWorkflowsSection(repository, workflows_0) {
         workflows = Array.of(...workflows_0);
     }
     // List of workflows in the repository
-    console.log("Repository: ", repository);
+    // console.log("Repository: ", repository);
     const repo_name = repository.name;
     const repo_desc = repository.description;
     const repo_url = repository.html_url;
@@ -359,7 +581,7 @@ function AdjustSemaphore(semaphore, setter, value = null) {
     setter(semaphore + value);
 }
 
-function GitHubDashboard() {
+export function GitHubDashboard() {
 
     // const [loading, setLoading] = useState(true);
     // Emulate a semaphore with the loading state to ensure all requests are finished before displaying the data
@@ -580,5 +802,3 @@ function GitHubDashboard() {
         </div>
     );
 }
-
-export default GitHubDashboard;

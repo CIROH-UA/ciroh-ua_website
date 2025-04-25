@@ -170,6 +170,7 @@ async function tryListRepositories(organization_name, max_count = 100) {
     // Have to use same method as tryGetCommits
     if (max_count == -1) {
         max_count = await tryGetRepositoryNumber(organization_name);
+        // console.log("Max count: " + max_count);
     }
     var url = org_url + organization_name + "/repos";
     var req = getPaginatedRequest(url, 1, max_count);
@@ -335,6 +336,102 @@ async function tryGetRepositoryWorkflows(repo) {
     return data;
 }
 
+export var RepoCache = {}
+/**
+ * @name tryCacheOrgRepos
+ * @param {string} organization_name
+ * @param {number} max_count - The maximum number of repositories to fetch.
+ * @default -1
+ * @description
+ * Fetches the repository data from GitHub API. Blocks until the data is received.
+ * Uses a cache to avoid hitting the API too often.
+ */
+async function tryCacheOrgRepos(organization_name, max_count = 400) {
+    if (typeof RepoCache[organization_name] === "object") {
+        return RepoCache[organization_name];
+    }
+    const repos = await tryListRepositories(organization_name, max_count);
+    RepoCache[organization_name] = {};
+    for (let i = 0; i < repos.length; i++) {
+        const repo = repos[i];
+        RepoCache[organization_name][repo["name"]] = repo;
+    }
+    return RepoCache[organization_name];
+}
+
+/**
+ * @name tryGetCachedRepository
+ * @param {string} organization_name
+ * @param {string} repo_name
+ * @description
+ * Fetches the repository data from the cache. Blocks until the data is received.
+ * Uses a cache to avoid hitting the API too often.
+ */
+async function tryGetCachedRepository(organization_name, repo_name) {
+    if (RepoCache[organization_name]) {
+        if (RepoCache[organization_name][repo_name]) {
+            return RepoCache[organization_name][repo_name];
+        }
+        else {
+            const old_repos = RepoCache[organization_name];
+            RepoCache[organization_name] = null;
+            await tryCacheOrgRepos(organization_name);
+            for (let i = 0; i < old_repos.length; i++) {
+                const repo = old_repos[i];
+                if (RepoCache[organization_name][repo["name"]]) {
+                    continue;
+                }
+                RepoCache[organization_name][repo["name"]] = repo;
+            }
+            return RepoCache[organization_name][repo_name];
+        }
+    }
+    const repos = await tryCacheOrgRepos(organization_name);
+    return repos[repo_name];
+}
+
+var OrgCache = {}
+/**
+ * @name tryGetCachedOrganization
+ * @param {string} organization_name
+ * @description
+ * Fetches the organization data from the cache. Blocks until the data is received.
+ * Uses a cache to avoid hitting the API too often.
+ */
+async function tryGetCachedOrganization(organization_name) {
+    if (OrgCache[organization_name]) {
+        return OrgCache[organization_name];
+    }
+    const org = await tryGetOrganization(organization_name);
+    OrgCache[organization_name] = org;
+    return org;
+}
+
+var RepoWorkflowCache = {}
+/**
+ * @name tryGetCachedRepositoryWorkflows
+ * @param {string} organization_name
+ * @param {string} repo_name
+ * @description
+ * Fetches the workflows of the repository from the cache. Blocks until the data is received.
+ * Uses a cache to avoid hitting the API too often.
+ */
+async function tryGetCachedRepositoryWorkflows(organization_name, repo_name) {
+    if (RepoWorkflowCache[organization_name] && RepoWorkflowCache[organization_name][repo_name]) {
+        return RepoWorkflowCache[organization_name][repo_name];
+    }
+    const repo = await tryGetCachedRepository(organization_name, repo_name);
+    if (!repo) {
+        console.log("Repo not found: " + repo_name);
+    }
+    const workflows = await tryGetRepositoryWorkflows(repo);
+    if (!RepoWorkflowCache[organization_name]) {
+        RepoWorkflowCache[organization_name] = {};
+    }
+    RepoWorkflowCache[organization_name][repo_name] = workflows;
+    return workflows;
+}
+
 export {
     getRateLimitStatus,
     tryGetOrganization,
@@ -345,4 +442,8 @@ export {
     tryGetCommitCount,
     tryGetCommit,
     tryGetRepositoryWorkflows,
+    tryGetCachedRepository,
+    tryCacheOrgRepos,
+    tryGetCachedOrganization,
+    tryGetCachedRepositoryWorkflows
 };

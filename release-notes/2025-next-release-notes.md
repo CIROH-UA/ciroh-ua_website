@@ -13,6 +13,7 @@ Please be sure to update this file's metadata and remove any work-in-progress fi
 :::
 
 ## New content
+- Added dedicated page for external cloud service blogs ([#360](https://github.com/CIROH-UA/ciroh-ua_website/pull/360))
 - Added Community Hydrofabric Patcher under Products tab ([#354](https://github.com/CIROH-UA/ciroh-ua_website/pull/354))
 - Added researcher testimonials to homepage ([#353](https://github.com/CIROH-UA/ciroh-ua_website/pull/353))
 - DocuHub now has a release notes feed! ([#318](https://github.com/CIROH-UA/ciroh-ua_website/pull/318))

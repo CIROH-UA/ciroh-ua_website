@@ -84,3 +84,18 @@ Please refer to the [Dockerfile](https://github.com/2i2c-org/awi-ciroh-image/blo
 ### Cost of Use
 
 CIROH 2i2c JupyterHub is free to use for consortium members. Its cost is covered by CIROH Infrastructure project funds.
+
+---
+
+## 2i2c Blog
+
+Stay up-to-date on the latest 2i2c news and announcements by visiting the official 2i2c Blog:
+
+<Link class="button button--active button--primary" to="https://2i2c.org/blog/"> 2i2c Blog</Link>
+
+---
+
+## Help and Support
+
+- Email UA's CIROH Cloud Team: ciroh-it-admin@ua.edu 
+- Message the CIROH Cloud Slack Channel: #ciroh-ua-it-admin

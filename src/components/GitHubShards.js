@@ -21,14 +21,16 @@ import React, { useEffect, useState } from 'react';
 const help = null; // help keyword in the code can be moused over to see the above explanation
 
 import { tryGetCachedRepository, tryGetCachedOrganization, tryGetCachedRepositoryWorkflows } from './GitHubHandling/AccessUtils';
+import { RateLimitError } from './GitHubHandling/RateLimitError';
 import { AccessConfig } from './GitHubHandling/AccessConfig';
+import { useObserveFraction } from './GitHubHandling/VisibilityUtil';
 import Link from '@docusaurus/Link';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import Details from '@theme/Details';
 
 /**
- * @name RepoInfoDiv
+ * @name BuildRepoDiv
  * @param {Repository} repository
  * @param {string} [padding] - optional, default null
  * @description
@@ -36,7 +38,7 @@ import Details from '@theme/Details';
  * that displays the repository information.
  * @returns {JSX.Element}
  */
-function RepoInfoDiv(repository, padding = null) {
+function BuildRepoDiv(repository, padding = null) {
     // Repository information
     const repo_name = repository.name;
     const repo_desc = repository.description;
@@ -69,30 +71,50 @@ function RepoDiv({ org_name, repo_name, padding = null }) {
     // Repository information
     const [loading, setLoading] = useState(true);
     const [repoData, setRepoData] = useState(null);
+    const [rateError, setError] = useState(null);
+    // Only fetch the data once the component is visible
+    const ref = React.useRef(null);
+    const visibleFraction = useObserveFraction(ref, true);
     useEffect(() => {
+        if (visibleFraction === 0) {
+            return;
+        }
         async function fetchData() {
             try {
                 const data = await tryGetCachedRepository(org_name, repo_name);
                 setRepoData(data);
             } catch (error) {
-                console.error('Error fetching repository data:', error);
+                // console.error('Error fetching repository data:', error);
+                if (error instanceof RateLimitError) {
+                    setError(error);
+                }
+                else {
+                    console.error('Error fetching repository data:', error);
+                }
             }
             finally {
                 setLoading(false);
+                setError(null);
             }
         }
         fetchData();
-    }, [org_name, repo_name]);
-    if (loading) {
-        return <div>Loading...</div>;
+    }, [org_name, repo_name, visibleFraction]);
+    let content;
+    if (rateError && rateError instanceof RateLimitError) {
+        content = rateError.asJSXElement();
+    }
+    else if (loading) {
+        content = <div>Loading...</div>;
     }
     else {
-        return RepoInfoDiv(repoData, padding);
+        content = BuildRepoDiv(repoData, padding);
     }
+    // Add the ref to the content before returning
+    return <div ref={ref}>{content}</div>;
 }
 
 /**
- * @name OrgInfoDiv
+ * @name BuildOrgDiv
  * @param {Organization} organization
  * @param {string} [padding] - optional, default null
  * @description
@@ -100,7 +122,7 @@ function RepoDiv({ org_name, repo_name, padding = null }) {
  * that displays the organization information.
  * @returns {JSX.Element}
  */
-function OrgInfoDiv(organization, padding = null) {
+function BuildOrgDiv(organization, padding = null) {
     // Organization information
     const org_name = organization.login;
     const org_desc = organization.description;
@@ -114,7 +136,7 @@ function OrgInfoDiv(organization, padding = null) {
         <div style={outer_style}>
             <h2>{org_name}</h2>
             <p>{org_desc}</p>
-            <p><img src={org_avatar} alt="Organization Avatar" style={{ width: '100px', height: '100px' }} /></p>
+            <p><img className="image" crossOrigin="anonymous" src={org_avatar} alt="Organization Avatar" style={{ width: '100px', height: '100px' }} /></p>
             <Link href={org_url} target="_blank" rel="noopener noreferrer">View Organization</Link>
         </div>
     );
@@ -134,30 +156,58 @@ function OrgDiv({ org_name, padding = null }) {
     // Organization information
     const [loading, setLoading] = useState(true);
     const [orgData, setOrgData] = useState(null);
+    const [rateError, setError] = useState(null);
+    // Only fetch the data once the component is visible
+    const ref = React.useRef(null);
+    const visibleFraction = useObserveFraction(ref, true);
     useEffect(() => {
+        if (visibleFraction === 0) {
+            return;
+        }
         async function fetchData() {
             try {
                 const data = await tryGetCachedOrganization(org_name);
                 setOrgData(data);
             } catch (error) {
-                console.error('Error fetching organization data:', error);
+                // console.error('Error fetching organization data:', error);
+                if (error && error instanceof RateLimitError) {
+                    setError(error);
+                }
+                else {
+                    console.error('Error fetching organization data:', error);
+                }
             }
             finally {
                 setLoading(false);
             }
         }
         fetchData();
-    }, [org_name]);
-    if (loading) {
-        return <div>Loading...</div>;
+    }, [org_name, visibleFraction]);
+    // if (rateError && rateError instanceof RateLimitError) {
+    //     return rateError.asJSXElement();
+    // }
+    // else if (loading) {
+    //     return <div>Loading...</div>;
+    // }
+    // else {
+    //     return BuildOrgDiv(orgData, padding);
+    // }
+    let content;
+    if (rateError && rateError instanceof RateLimitError) {
+        content = rateError.asJSXElement();
+    }
+    else if (loading) {
+        content = <div>Loading...</div>;
     }
     else {
-        return OrgInfoDiv(orgData, padding);
+        content = BuildOrgDiv(orgData, padding);
     }
+    // Add the ref to the content before returning
+    return <div ref={ref}>{content}</div>;
 }
 
 /**
- * @name RepoWorkflowsSection
+ * @name BuildRepoWorkflowsDiv
  * @param {Repository} repository
  * @param {Workflow[]} workflows
  * @description
@@ -167,7 +217,7 @@ function OrgDiv({ org_name, padding = null }) {
  * The workflows are displayed in a vertical manner.
  * @returns {JSX.Element}
  */
-function RepoWorkflowsSection(repository, workflows_0) {
+function BuildRepoWorkflowsDiv(repository, workflows_0) {
     var workflows = workflows_0;
     if (!Array.isArray(workflows)) {
         // if it's an iterable object, unpack it into an array
@@ -182,34 +232,51 @@ function RepoWorkflowsSection(repository, workflows_0) {
             console.log("Workflows is not an array or iterable object.");
         }
     }
-    const repo_name = repository.name;
-    const repo_desc = repository.description;
-    const repo_url = repository.html_url;
-    const repo_avatar = repository.owner.avatar_url;
     const repo_workflow_contents = (workflow) => {
-        var result = [];
-        result.push(<h3>{workflow.name}</h3>);
-        result.push(<p>{workflow.description}</p>);
-        result.push(<Link to={workflow.html_url} target="_blank" rel="noopener noreferrer">
-            <img src={workflow.badge_url} alt="Workflow Badge" />
-        </Link>);
-        if (workflow.state === "active") {
-            result.push(<p style={{ color: 'green' }}>Active</p>);
-        }
-        else {
-            result.push(<p style={{ color: 'red' }}>Inactive</p>);
-        }
-        result.push(<p>Created at: {new Date(workflow.created_at).toLocaleString()}</p>);
-        result.push(<p>Updated at: {new Date(workflow.updated_at).toLocaleString()}</p>);
-        result.push(<Link href={workflow.html_url} target="_blank" rel="noopener noreferrer">View Workflow</Link>);
-        return result;
+        // var result = [];
+        // result.push(<h3>{workflow.name}</h3>);
+        // result.push(<p>{workflow.description}</p>);
+        // result.push(<Link to={workflow.html_url} target="_blank" rel="noopener noreferrer">
+        //     <img src={workflow.badge_url} alt="Workflow Badge" />
+        // </Link>);
+        // if (workflow.state === "active") {
+        //     result.push(<p style={{ color: 'green' }}>Active</p>);
+        // }
+        // else {
+        //     result.push(<p style={{ color: 'red' }}>Inactive</p>);
+        // }
+        // result.push(<p>Created at: {new Date(workflow.created_at).toLocaleString()}</p>);
+        // result.push(<p>Updated at: {new Date(workflow.updated_at).toLocaleString()}</p>);
+        // result.push(<Link href={workflow.html_url} target="_blank" rel="noopener noreferrer">View Workflow</Link>);
+        // return result;
+        return [
+            <h3 key={workflow.id}>{workflow.name}</h3>,
+            <p key={workflow.id + "_desc"}>{workflow.description}</p>,
+            <Link key={workflow.id + "_link"} to={workflow.html_url} target="_blank" rel="noopener noreferrer">
+                <img className="image" src={workflow.badge_url} alt="Workflow Badge" />
+            </Link>,
+            <p key={workflow.id + "_state"} style={{ color: workflow.state === "active" ? 'green' : 'red' }}>
+                {workflow.state === "active" ? "Active" : "Inactive"}
+            </p>,
+            <p key={workflow.id + "_created"}>Created at: {new Date(workflow.created_at).toLocaleString()}</p>,
+            <p key={workflow.id + "_updated"}>Updated at: {new Date(workflow.updated_at).toLocaleString()}</p>,
+            <Link key={workflow.id + "_view"} href={workflow.html_url} target="_blank" rel="noopener noreferrer">View Workflow</Link>
+        ];
     }
     const repo_workflow_listitem = (workflow) => {
-        return (
+        const listitem = (
             <li key={workflow.id} style={{ border: '1px solid black', margin: '10px', padding: '10px' }}>
                 {repo_workflow_contents(workflow)}
             </li>
         );
+        // verify that the list item has a unique key
+        if (listitem.key === undefined) {
+            console.error("List item does not have a unique key.");
+        }
+        else {
+            // console.log("List item has a unique key: " + listitem.key);
+        }
+        return listitem;
     }
     const workflow_list = workflows.map(repo_workflow_listitem);
     var workflows_div_interior = (<div>No workflows found for this repository.</div>);
@@ -224,13 +291,18 @@ function RepoWorkflowsSection(repository, workflows_0) {
         )
     }
     const workflows_div = <Details summary="Workflows">{workflows_div_interior}</Details>;
+    var workflows_div_key = "workflows_div";
+    workflows_div_key += "_" + repository.id;
+    for (const workflow of workflows) {
+        workflows_div_key += "_" + workflow.id;
+    }
     return (
-        <div>
+        <div key={workflows_div_key}>
             {/* <h2>{repo_name}</h2>
             <p>{repo_desc}</p>
             <p><img src={repo_avatar} alt="Repository Avatar" style={{ width: '100px', height: '100px' }} /></p>
             <Link href={repo_url} target="_blank" rel="noopener noreferrer">View Repository</Link> */}
-            {RepoInfoDiv(repository)}
+            {BuildRepoDiv(repository)}
             {workflows_div}
         </div>
     );
@@ -252,52 +324,82 @@ function RepoWorkflowsDiv({ org_name, repo_name, padding = null }) {
     const [loading, setLoading] = useState(true);
     const [repoData, setRepoData] = useState(null);
     const [workflowsData, setWorkflowsData] = useState(null);
+    const [rateError, setError] = useState(null);
+    // Only fetch the data once the component is visible
+    const ref = React.useRef(null);
+    const visibleFraction = useObserveFraction(ref, true);
     useEffect(() => {
+        if (visibleFraction === 0) {
+            return;
+        }
         async function fetchRepo() {
             try {
                 const data = await tryGetCachedRepository(org_name, repo_name);
                 setRepoData(data);
             } catch (error) {
-                console.error('Error fetching repository data:', error);
+                // console.log('Error fetching repository data:', error);
+                if (error && error instanceof RateLimitError) {
+                    setError(error);
+                }
+                else {
+                    // console.warn('Error fetching repository data:', error);
+                }
+            }
+            finally {
+                setLoading(false);
+                setError(null);
             }
         }
         fetchRepo();
-    }, [org_name, repo_name]);
+    }, [org_name, repo_name, visibleFraction]);
     useEffect(() => {
+        if (repoData === null) {
+            return;
+        }
         async function fetchWorkflows() {
             try {
                 const data = await tryGetCachedRepositoryWorkflows(org_name, repo_name);
                 setWorkflowsData(data);
             } catch (error) {
-                console.error('Error fetching workflows data:', error);
+                // console.log('Error fetching workflows data:', error);
+                if (error && error instanceof RateLimitError) {
+                    setError(error);
+                }
+                else {
+                    // console.warn('Error fetching workflows data:', error);
+                }
             }
             finally {
                 setLoading(false);
+                setError(null);
             }
         }
         fetchWorkflows();
     }, [repoData]);
-    if (loading) {
-        return <div>Loading...</div>;
+    let content; // Variable to store the JSX content
+
+    if (rateError && rateError instanceof RateLimitError) {
+        content = rateError.asJSXElement();
+    } else if (loading) {
+        content = <div>Loading...</div>;
+    } else if (repoData === null) {
+        content = (
+            <div>
+                <p>Repository not found.</p>
+                <p>Found Repositories:</p>
+                <p>{JSON.stringify(Object.keys(RepoCache[AccessConfig.CIROH]))}</p>
+            </div>
+        );
+    } else if (workflowsData === null) {
+        content = <div>Workflows not found.</div>;
+    } else if (workflowsData.length === 0) {
+        content = <div>No workflows found for this repository.</div>;
+    } else {
+        content = BuildRepoWorkflowsDiv(repoData, workflowsData);
     }
-    else if (repoData === null) {
-        return <div>
-            <p>Repository not found.</p>
-            <p>Found Repositories:</p>
-            <p>
-                {JSON.stringify(Object.keys(RepoCache[AccessConfig.CIROH]))}
-            </p>
-        </div>;
-    }
-    else if (workflowsData === null) {
-        return <div>Workflows not found.</div>;
-    }
-    else if (workflowsData.length === 0) {
-        return <div>No workflows found for this repository.</div>;
-    }
-    else {
-        return RepoWorkflowsSection(repoData, workflowsData);
-    }
+
+    // Add the ref to the content before returning
+    return <div ref={ref}>{content}</div>;
 }
 
 export { RepoDiv, OrgDiv, RepoWorkflowsDiv };

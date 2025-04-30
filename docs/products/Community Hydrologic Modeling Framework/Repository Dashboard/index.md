@@ -23,9 +23,10 @@ This page is incomplete and will be updated in the future.
 
 :::
 
-# GitHub Repository Dashboard
-
-<!-- <GitHubDashboard /> -->
+<!-- # GitHub Repository Dashboard -->
+<!--
+  Heading is provided by the "title:" field in the front matter.
+ -->
 
 <Tabs
   defaultValue="intro"
@@ -36,19 +37,13 @@ This page is incomplete and will be updated in the future.
   ]}>
   <TabItem value="intro">
     <h2>Introduction</h2>
-    <p>
-      This page contains the list of Community NextGen related repositories that CIROH is maintaining.
-    </p>
-    <p>
-      Some repositories originate from the NOAA-OWP organization, but are now forks and maintained by CIROH.
-    </p>
+    <p>This page contains the list of Community NextGen related repositories that CIROH is maintaining.</p>
+    <p>Some repositories originate from the NOAA-OWP organization, but are now forks and maintained by CIROH.</p>
     <OrgDiv org_name="CIROH-UA" />
   </TabItem>
   <TabItem value="ngiab">
     <h2>NGIAB-related Repositories</h2>
-    <p>
-      This section contains the list of NGIAB-related repositories that CIROH is maintaining.
-    </p>
+    <p>This section contains the list of NGIAB-related repositories that CIROH is maintaining.</p>
     <RepoListSectionElement
       org_name="CIROH-UA"
       repo_list="NGIAB_data_preprocess, NGIAB-CloudInfra, NGIAB-HPCInfra"
@@ -56,9 +51,7 @@ This page is incomplete and will be updated in the future.
   </TabItem>
   <TabItem value="workflow">
     <h2>CIROH Workflow Statuses</h2>
-    <p>
-      This section workflow status information for some of CIROH's managed repositories that have active workflows.
-    </p>
+    <p>This section workflow status information for some of CIROH's managed repositories that have active workflows.</p>
     <div style={{ border: '1px solid black', padding: '10px' }}>
       <RepoWorkflowsDiv
         org_name="CIROH-UA"
@@ -97,10 +90,6 @@ This page is incomplete and will be updated in the future.
         repo_name="lstm"
         />
     </div>
-    <p>
-      The workflow status information is provided by the GitHub Actions API.
-    </p>
+    <p>The workflow status information is provided by the GitHub Actions API.</p>
   </TabItem>
 </Tabs>
-
-

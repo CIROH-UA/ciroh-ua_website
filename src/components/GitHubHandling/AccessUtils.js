@@ -9,76 +9,183 @@
  * Importing the types from GitHubTypes.js to use in this file.
  */
 
+/**
+ * @import { RateLimitData } from './RateLimitError.js';
+ */
+
+import { RateLimitError } from './RateLimitError.js';
+import { getLinkHeaderData } from './LinkHeaders.js';
+import { useState } from 'react';
 
 const base_url = "https://api.github.com";
 const org_url = base_url + "/orgs/";
 const repo_url = base_url + "/repos/";
 const user_url = base_url + "/users/";
 
+// /**
+//  * @name getRateLimitStatus
+//  * @description
+//  * Fetches the rate limit status from GitHub API. 
+//  * Uses time based caching to avoid hitting the API too often.
+//  * @returns {RateLimitStatus}
+//  * @throws {Error} If the rate limit status is not found or if there is an error in the request.
+//  */
+// async function getRateLimitStatus() {
+//     const now = new Date();
+//     var response = null;
+//     if (Object.hasOwn(getRateLimitStatus, "last_call")) {
+//         const diff = now - getRateLimitStatus.last_call;
+//         if (diff < 10 * 1000) { // 10 seconds
+//             response = getRateLimitStatus.last_response;
+//         }
+//     }
+//     if (!response) {
+//         const url = base_url + "/rate_limit";
+//         response = await fetch(url);
+//         getRateLimitStatus.last_call = now;
+//         getRateLimitStatus.last_response = response;
+//     }
+//     if (!response.ok) {
+//         throw new Error(`Rate limit status not found: ${response.statusText}`);
+//     }
+//     const data = await response.json();
+//     return data;
+// }
 /**
  * @name getRateLimitStatus
  * @description
- * Fetches the rate limit status from GitHub API. 
- * Uses time based caching to avoid hitting the API too often.
- * @returns {RateLimitStatus}
+ * Fetches the rate limit without spending requests.
+ * Querying the rate limit does not count against the rate limit.
+ * @returns {RateLimitError}
  * @throws {Error} If the rate limit status is not found or if there is an error in the request.
+ * @throws {RateLimitError} If the rate limit is exhausted.
  */
 async function getRateLimitStatus() {
-    const now = new Date();
-    var response = null;
-    if (Object.hasOwn(getRateLimitStatus, "last_call")) {
-        const diff = now - getRateLimitStatus.last_call;
-        if (diff < 10 * 1000) { // 10 seconds
-            response = getRateLimitStatus.last_response;
-        }
-    }
-    if (!response) {
-        const url = base_url + "/rate_limit";
-        response = await fetch(url);
-        getRateLimitStatus.last_call = now;
-        getRateLimitStatus.last_response = response;
-    }
+    const url = base_url + "/rate_limit";
+    const conf = {
+        method: "GET",
+        headers: {
+            "X-GitHub-Api-Version": "2022-11-28",
+            "accept": "application/vnd.github.v3+json",
+        },
+    };
+    const response = await fetch(url, conf);
     if (!response.ok) {
         throw new Error(`Rate limit status not found: ${response.statusText}`);
     }
-    const data = await response.json();
-    return data;
+    const data = RateLimitError.getRateLimitDataFromRateLimitResponseData(await response.json());
+    return new RateLimitError(data, "Rate limit status");
+}
+
+let lastRateLimitData = null;
+
+/**
+ * @name safeGitHubFetch
+ * @param {string} resource - The resource to fetch.
+ * @param {Object} [options={}] - The options for the fetch request.
+ * @returns {Promise<Response>} - The response object.
+ * @description
+ * Fetches the URL with the given configuration.
+ * Prevents querying the API when the rate limit is exhausted.
+ * Uses the RateLimitError class to get rate limit data and update the lastRateLimitData state.
+ * Then uses the lastRateLimitData to determine if the rate limit is exhausted or not without querying the API.
+ * @throws {RateLimitError} If the rate limit is exhausted.
+ */
+async function safeGitHubFetch(resource, options = {}) {
+    if (!lastRateLimitData) {
+        lastRateLimitData = await getRateLimitStatus();
+    }
+    // If the last rate limit data is not null, check if we are rate limited
+    if (lastRateLimitData) {
+        const limit_data = lastRateLimitData.limit_data;
+        if (limit_data.exhausted) {
+            console.log("Rate limit exists and is exhausted.")
+            const timeLeft = lastRateLimitData.timeLeft();
+            console.log("Time left: " + timeLeft);
+            if (timeLeft > 0) {
+                // throw new RateLimitError(limit_data);
+                // Why make new object if we can use the old one?
+                throw lastRateLimitData;
+            }
+        }
+    }
+    const response = await fetch(resource, options);
+    if (RateLimitError.responseHasRateLimitData(response)) {
+        const limit_error = new RateLimitError(response, `Targeted resource: ${resource}`);
+        // setLastRateLimitData(limit_error);
+        lastRateLimitData = limit_error;
+        if (limit_error.isError()) {
+            throw limit_error;
+        }
+    }
+    return response;
 }
 
 
 /**
  * @name getPaginatedRequest
- * @param {string} url - The URL to fetch.
- * @param {number} page - The page number to fetch.
- * @default 1
- * @param {number} per_page - The number of items per page.
- * @default 100
- * @param {string} first_option - The option, if any, to be added to the URL first.
- * @default null
- * @returns {Array} - An array containing the URL and the configuration object.
+ * @param {string} url - The base URL to fetch.
+ * @param {number} [page=1] - The page number to fetch.
+ * @param {number} [per_page=100] - The number of items per page.
+ * @param {Object} [params={}] - Additional query parameters to include in the request.
+ * @returns {[string, Object]} - The full URL and the request configuration.
  * @description
- * Generates a paginated request for the GitHub API.
+ * Generates a paginated request for the GitHub API using URLSearchParams for query parameter handling.
  */
-function getPaginatedRequest(url, page = 1, per_page = 100, first_option = null) {
-    var headers = {
+function getPaginatedRequest(url, page = 1, per_page = 100, params = {}) {
+    const headers = {
         "X-GitHub-Api-Version": "2022-11-28",
         "accept": "application/vnd.github.v3+json",
     };
-    var conf = {
+    const conf = {
         method: "GET",
         headers: headers,
     };
-    if (first_option) {
-        url += "?" + first_option + "&";
-    }
-    else {
-        url += "?";
-    }
-    url += "per_page=" + per_page;
-    url += "&page=" + page;
-    return [url, conf];
+
+    // Use URLSearchParams to construct the query string
+    const queryParams = new URLSearchParams({
+        ...params,
+        per_page: per_page,
+        page: page,
+    });
+
+    // Append the query string to the base URL
+    const fullUrl = `${url}?${queryParams.toString()}`;
+
+    return [fullUrl, conf];
 }
 
+/**
+ * @name tryGetItemCount
+ * @param {string} baseUrl - The base URL to fetch.
+ * @param {Object} [queryParams={}] - Additional query parameters to include in the request.
+ * @returns {number} - The total number of items.
+ */
+async function tryGetItemCount(baseUrl, queryParams = {}) {
+    // Use the getPaginatedRequest function to construct the URL and configuration
+    const [url, conf] = getPaginatedRequest(baseUrl, 1, 1, queryParams);
+    // Fetch the first page of results
+    const response = await safeGitHubFetch(url, conf);
+    if (!response.ok) {
+        if (RateLimitError.isRateLimitError(response)) {
+            throw new RateLimitError(response);
+        }
+        throw new Error(`Item count not found: ${response.statusText}`);
+    }
+    const linkData = getLinkHeaderData(response);
+    if (linkData.per_page === null) {
+        throw new Error(`Per page not found: ${linkData.per_page}`);
+    }
+    else if (linkData.per_page !== 1) {
+        throw new Error(`Per page not 1: ${linkData.per_page}`);
+    }
+    // linkData.pages.last is the number of the last page
+    const lastPage = linkData.pages.last;
+    if (lastPage === null) {
+        throw new Error(`Last page not found: ${linkData.pages}`);
+    }
+    return lastPage;
+}
 
 /**
  * @name tryGetOrganization
@@ -90,8 +197,11 @@ function getPaginatedRequest(url, page = 1, per_page = 100, first_option = null)
  */
 async function tryGetOrganization(organization_name) {
     const url = org_url + organization_name;
-    const response = await fetch(url);
+    const response = await safeGitHubFetch(url);
     if (!response.ok) {
+        if (RateLimitError.isRateLimitError(response)) {
+            throw new RateLimitError(response);
+        }
         throw new Error(`Organization not found: ${response.statusText}`);
     }
     const data = await response.json();
@@ -109,9 +219,12 @@ async function tryGetOrganization(organization_name) {
  */
 async function tryGetRepository(organization_name, repo_name) {
     const url = repo_url + organization_name + "/" + repo_name;
-    const response = await fetch(url);
+    const response = await safeGitHubFetch(url);
     const data = await response.json();
     if (!response.ok) {
+        if (RateLimitError.isRateLimitError(response)) {
+            throw new RateLimitError(response);
+        }
         return null;
     }
     // const data = await response.json();
@@ -127,35 +240,13 @@ async function tryGetRepository(organization_name, repo_name) {
  * @throws {Error} If the organization is not found or if there is an error in the request.
  */
 async function tryGetRepositoryNumber(organization_name) {
-    // Have to use same method as tryGetCommitCount
+    // Create the base URL
     var url = org_url + organization_name + "/repos";
-    var req = getPaginatedRequest(url, 1, 1);
-    url = req[0];
-    var conf = req[1];
-    const response = await fetch(url, conf);
-    if (!response.ok) {
-        throw new Error(`Repositories not found: ${response.statusText}`);
-    }
-    var link = response.headers.get("Link");
-    // find rel="last", then get next previous page
-    var last_page = null;
-    if (link) {
-        var last_page = link.match(/<([^>]+)>;\s*rel="last"/);
-        if (last_page) {
-            last_page = last_page[1];
-        }
-        else {
-            throw new Error(`Last page not found: ${link}`);
-        }
-    }
-    else {
-        throw new Error(`Link header not found: ${link}`);
-    }
-    var last_page_url = new URL(last_page);
-    var last_page_number = last_page_url.searchParams.get("page");
-
-    return last_page_number;
+    // Use the getItemCount function to get the total number of repositories
+    const count = await tryGetItemCount(url);
+    return count;
 }
+
 
 /**
  * @param {string} organization_name
@@ -176,8 +267,11 @@ async function tryListRepositories(organization_name, max_count = 100) {
     var req = getPaginatedRequest(url, 1, max_count);
     url = req[0];
     var conf = req[1];
-    const response = await fetch(url, conf);
+    const response = await safeGitHubFetch(url, conf);
     if (!response.ok) {
+        if (RateLimitError.isRateLimitError(response)) {
+            throw new RateLimitError(response);
+        }
         throw new Error(`Repositories not found: ${response.statusText}`);
     }
     const data = await response.json();
@@ -195,8 +289,11 @@ async function tryListRepositories(organization_name, max_count = 100) {
  */
 async function tryGetBranches(repo) {
     const url = repo["branches_url"].replace("{/branch}", "");
-    const response = await fetch(url);
+    const response = await safeGitHubFetch(url);
     if (!response.ok) {
+        if (RateLimitError.isRateLimitError(response)) {
+            throw new RateLimitError(response);
+        }
         throw new Error(`Branches not found: ${response.statusText}`);
     }
     const data = await response.json();
@@ -230,8 +327,11 @@ async function tryGetCommits(branch, start = null, per_page = 100, page = 1) {
     url = req[0];
     const conf = req[1];
 
-    const response = await fetch(url, conf);
+    const response = await safeGitHubFetch(url, conf);
     if (!response.ok) {
+        if (RateLimitError.isRateLimitError(response)) {
+            throw new RateLimitError(response);
+        }
         throw new Error(`Commits not found: ${response.statusText}`);
     }
     const data = await response.json();
@@ -241,7 +341,6 @@ async function tryGetCommits(branch, start = null, per_page = 100, page = 1) {
 /**
  * @param {Branch} branch
  * @param {string|Sha|null} start - Sha or branch name to start listing commits from.
- * @default Repository.default_branch
  * @returns {number}
  * @description
  * Fetches the number of commits in the branch from GitHub API. Blocks until the data is received.
@@ -250,47 +349,10 @@ async function tryGetCommits(branch, start = null, per_page = 100, page = 1) {
 async function tryGetCommitCount(branch, start = null) {
     var url = branch["commit"]["url"]; // repo/commits/sha
     url = url.replace(/\/commits\/.*/, "/commits");
-    var headers = {
-        "X-GitHub-Api-Version": "2022-11-28",
-        "accept": "application/vnd.github.v3+json",
-    };
-    var conf = {
-        method: "GET",
-        headers: headers,
-    };
-    if (start) {
-        url += "?sha=" + start;
-    }
-    else {
-        url += "?sha=" + branch.name;
-    }
-    url += "&per_page=1";
-    const response = await fetch(url, conf);
-    if (!response.ok) {
-        console.log(url);
-        console.log(response);
-        throw new Error(`Commits not found: ${response.statusText}`);
-    }
-    var link = response.headers.get("Link");
-    // find rel="last", then get next previous page
-    var last_page = null;
-    if (link) {
-        var last_page = link.match(/<([^>]+)>;\s*rel="last"/);
-        if (last_page) {
-            last_page = last_page[1];
-        }
-        else {
-            throw new Error(`Last page not found: ${link}`);
-        }
-    }
-    else {
-        throw new Error(`Link header not found: ${link}`);
-    }
-    var last_page_url = new URL(last_page);
-    var last_page_number = last_page_url.searchParams.get("page");
-    return last_page_number;
+    const sha = start ? start : branch["name"];
+    const count = await tryGetItemCount(url, { sha: sha });
+    return count;
 }
-
 
 /**
  * @name tryGetCommit
@@ -310,8 +372,11 @@ async function tryGetCommit(repo, branch, sha = null) {
     else {
         url += "/" + branch["commit"]["sha"];
     }
-    const response = await fetch(url);
+    const response = await safeGitHubFetch(url);
     if (!response.ok) {
+        if (RateLimitError.isRateLimitError(response)) {
+            throw new RateLimitError(response);
+        }
         throw new Error(`Commit not found: ${response.statusText}`);
     }
     const data = await response.json();
@@ -328,8 +393,11 @@ async function tryGetCommit(repo, branch, sha = null) {
  */
 async function tryGetRepositoryWorkflows(repo) {
     const url = repo["url"] + "/actions/workflows";
-    const response = await fetch(url);
+    const response = await safeGitHubFetch(url);
     if (!response.ok) {
+        if (RateLimitError.isRateLimitError(response)) {
+            throw new RateLimitError(response);
+        }
         throw new Error(`Workflows not found: ${response.statusText}`);
     }
     const data = await response.json();
@@ -431,6 +499,8 @@ async function tryGetCachedRepositoryWorkflows(organization_name, repo_name) {
     RepoWorkflowCache[organization_name][repo_name] = workflows;
     return workflows;
 }
+
+
 
 export {
     getRateLimitStatus,

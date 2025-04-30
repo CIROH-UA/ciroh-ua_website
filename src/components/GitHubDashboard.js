@@ -91,35 +91,7 @@ function RepoListSection(organization, repositories) {
     const total_repos = repositories.length;
     // const org_repos = repositories.filter(repo => repo_names.includes(repo.name));
     const org_repos = filter_repos(repositories);
-    const repo_workflows_subdiv = (repo) => {
-        // console.log("Repo: ", repo);
-        // if not workflows attribute, return empty div
-        if (repo.workflows === undefined || !repo.workflows) {
-            return <div></div>;
-        }
-        // console.log("Repo workflows: ", repo.workflows);
-        // console.log("Type of repo workflows: ", typeof repo.workflows);
-        if (repo.workflows.length > 0) {
-            return (
-                <div>
-                    <h4>Workflows:</h4>
-                    <ul>
-                        {repo.workflows.map((workflow) => {
-                            return (<div>
-                                {JSON.stringify(workflow)}
-                            </div>);
-                        })}
-                    </ul>
-                </div>
-            );
-        } else {
-            return (
-                <div>
-                    <h4>No workflows found for this repository.</h4>
-                </div>
-            );
-        }
-    }
+
     const repo_div = (repo) => {
         return (
             <div key={repo.id} style={{ border: '1px solid black', margin: '10px', padding: '10px' }}>
@@ -135,8 +107,12 @@ function RepoListSection(organization, repositories) {
     const number_of_repos = org_repos.length;
     const repo_list_header = number_of_repos > 0 ? <h3>Repositories from this organization:</h3> : <h3>No repositories found in this organization.</h3>;
     const repo_list_div = <div>{repo_list_header}{repo_list}</div>;
+    var repo_list_section_key = `repo_list_section_${org_name}`;
+    for (var i = 0; i < repo_names.length; i++) {
+        repo_list_section_key += `_${repo_names[i]}`;
+    }
     return (
-        <div style={{ border: '2px solid black', padding: '20px' }}>
+        <div style={{ border: '2px solid black', padding: '20px' }} key={repo_list_section_key}>
             <h2>{org_name}</h2>
             <p>{org_desc}</p>
             <p><img src={org_avatar} alt="Organization Avatar" style={{ width: '100px', height: '100px' }} /></p>
@@ -195,7 +171,7 @@ function RepoInfoDiv(repository, padding = null) {
     }
     outer_style.padding = (padding) ? padding : '3px';
     return (
-        <div style={outer_style}>
+        <div style={outer_style} key={repo_name}>
             <h2>{repo_name}</h2>
             <p>{repo_desc}</p>
             <Link href={repo_url} target="_blank" rel="noopener noreferrer">View Repository</Link>
@@ -238,6 +214,22 @@ function RepoDiv({ org_name, repo_name, padding = null }) {
     else {
         return RepoInfoDiv(repoData, padding);
     }
+}
+
+function getChildren(elem) {
+    if (!elem.props) {
+        throw new Error("Element has no props");
+    }
+    if (!elem.props.children) {
+        return [];
+    }
+    if (Array.isArray(elem.props.children)) {
+        return elem.props.children;
+    }
+    if (typeof elem.props.children === 'object') {
+        return [elem.props.children];
+    }
+    return [];
 }
 
 /**
@@ -333,16 +325,13 @@ export function RepoListSectionElement({ org_name, repo_list, padding = null, in
         }
         filterRepositories();
     }, [orgRepositories, repo_list]);
-    var result = [];
-    if (loading) {
-        result.push(<div>Loading...</div>);
-    } else {
-        if (orgData) {
-            result.push(OrgInfoDiv(orgData));
-        } else {
-            result.push(<div>Error loading organization data</div>);
+    function unstyledResult() {
+        if (loading) {
+            return [<div>Loading...</div>];
         }
-        if (Object.keys(repoData).length > 0) {
+        const org_info = orgData ? OrgInfoDiv(orgData) : <div>Error loading organization data</div>;
+        var repo_list_div = null;
+        if (repoData) {
             var repo_li_s = [];
             var repositories = Object.values(repoData);
             for (var i = 0; i < repositories.length; i++) {
@@ -351,78 +340,33 @@ export function RepoListSectionElement({ org_name, repo_list, padding = null, in
                 var repo_li = <li key={repo.name}>{repo_div}</li>;
                 repo_li_s.push(repo_li);
             }
-            var repo_list_div = <div style={inner_style}>
+            repo_list_div = <div style={inner_style}>
                 <ul>
                     {repo_li_s}
                 </ul>
             </div>;
-            result.push(repo_list_div);
-        } else {
-            result.push(<div>Error loading repositories</div>);
         }
-    }
-    return (
-        <div style={outer_style}>
-            {result}
-        </div>
-    );
-}
+        else {
+            repo_list_div = <div>Error loading repositories</div>;
+        }
+        return [
+            org_info,
+            repo_list_div
+        ];
 
-/**
- * @name MakeCollapsibleObjectRepresentation
- * @param {Object} obj
- * @param {number} level - optional, default 0
- * @param {string} key - optional, default null
- * @param {string} summary - optional, default null
- * @description
- * This function takes an object and returns a HTML element that displays
- * the object in a collapsible manner.
- * Only large objects and lists are made collapsible.
- * @returns {JSX.Element}
- */
-function MakeCollapsibleObjectRepresentation(obj, level = 0, key = null, summary = null) {
-    if (obj === null || obj === undefined) {
-        return <div>Null</div>;
     }
-    if (typeof obj === 'string') {
-        return <a style={{ color: 'brown', outlineColor: 'black' }}>
-            {obj}
-        </a>;
+    var result = unstyledResult();
+    if (result.length === 1) {
+        return <div style={outer_style} key={`${org_name}_${repo_list}`}>
+            {result[0]}
+        </div>;
     }
-    if (typeof obj !== 'object') {
-        return <div>{JSON.stringify(obj)}</div>;
+    else {
+        return <div style={outer_style} key={`${org_name}_${repo_list}`}>
+            {result[0]}
+            {result[1]}
+        </div>;
     }
-    if (Array.isArray(obj)) {
-        return (
-            <ul>
-                {obj.map((item, index) => {
-                    return (
-                        <li key={index}>
-                            {MakeCollapsibleObjectRepresentation(item, level + 1)}
-                        </li>
-                    );
-                })}
-            </ul>
-        );
-    }
-    const keys = Object.keys(obj);
-    if (keys.length === 0) {
-        return <div>Empty object</div>;
-    }
-
-    return (
-        <Details summary={summary || key || "Object"} open={level > 0}>
-            <ul>
-                {keys.map((key) => {
-                    return (
-                        <li key={key}>
-                            {key}: {MakeCollapsibleObjectRepresentation(obj[key], level + 1)}
-                        </li>
-                    );
-                })}
-            </ul>
-        </Details>
-    );
 }
 
 /**

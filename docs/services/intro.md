@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: "CIROH CyberInfrastructure"
+tags: ["CIROH", "Services", "HPC", "On-Premises Services", "Cloud Services"]
 ---
 
 import Link from '@docusaurus/Link'

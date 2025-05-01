@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Policies and Best Practices
+tags: [CIROH, Policies]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

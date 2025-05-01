@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: "NSF Access"
+tags: [Services, NSF Access, NSF, HPC]
 ---
 
 import Link from '@docusaurus/Link'

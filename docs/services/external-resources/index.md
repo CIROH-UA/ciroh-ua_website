@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 title: "External Resources"
+tags: [Services, NSF Access, NSF, HPC]
 ---
 import "/src/components/HomepageFeatures/bootstrap.min.css";
 import "/src/components/HomepageFeatures/cta-2.css";

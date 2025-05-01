@@ -2,12 +2,7 @@
 sidebar_position: 2
 title: "JetStream2"
 description: "Accessing and Using JetStream2"
-tags:
-  - NSF
-  - JetStream2
-  - HPC
-  - Account
-  - Access
+tags: [Services, NSF Access, NSF, HPC, Indiana University, JetStream2]
 ---
 
 import Link from '@docusaurus/Link'

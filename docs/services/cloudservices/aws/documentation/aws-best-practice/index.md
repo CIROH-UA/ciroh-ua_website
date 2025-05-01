@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: AWS Best Practices
+tags: [CIROH, Services, Cloud Services, AWS, Education]
 ---
 
 # AWS Best Practices for CIROH AWS Users

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: "Public Cloud"
+tags: [CIROH, Services, Cloud Services]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'

@@ -2,9 +2,7 @@
 sidebar_position: 1
 title: "Intro to Snow Observations Modeling Analysis"
 description: "Intro to Snow Observations Modeling Analysis"
-tags:
-  - Snow
-  - Sensing
+tags: [Products, CIROH, Snow Sensing]
 ---
 
 ---

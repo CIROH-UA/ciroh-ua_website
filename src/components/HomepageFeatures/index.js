@@ -8,6 +8,8 @@ import "./cta-1.css";
 import styles from "./styles.module.css";
 import "./whyDocuhub.css";
 import Link from '@docusaurus/Link';
+import ResearcherTestimonials from './testimonial';
+
 
 
 const ImpactItem = ({ title, count, imageSrc, users }) => (
@@ -430,7 +432,7 @@ export default function HomepageFeatures() {
                 </strong>
               </p>
               <br />
-              
+
               <div className={styles.flexStart}>
                 <Link
                   className={`button button--info ${styles.col4}`}
@@ -466,49 +468,49 @@ export default function HomepageFeatures() {
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">Knowledge Hub</h3>
-                            <img src="/img/graphics/why-docuhub-1.png" alt="docuhub image"></img>
+                            <img src="img/graphics/why-docuhub-1.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0 mt-2">Access a centralized repository of research and educational resources to enhance your hydrological expertise.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">Research & Growth</h3>
-                            <img src="/img/graphics/why-docuhub-2.png" alt="docuhub image"></img>
+                            <img src="img/graphics/why-docuhub-2.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0 mt-2">Explore cutting-edge research and innovative projects driving innovation in hydrology.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">Blog & News</h3>
-                            <img src="/img/graphics/why-docuhub-3.png" alt="docuhub image"></img>
+                            <img src="img/graphics/why-docuhub-3.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0 mt-2">Stay updated with the latest news, community insights, and updates about CIROH projects.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">Education & Training</h3>
-                            <img src="/img/graphics/why-docuhub-4.png" alt="docuhub image"></img>
+                            <img src="img/graphics/why-docuhub-4.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0 mt-2">Elevate your skills with tutorials, training programs, and educational materials tailored for hydrological research.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">CyberInfrastructure</h3>
-                            <img src="/img/graphics/why-docuhub-5.png" alt="docuhub image"></img>
+                            <img src="img/graphics/why-docuhub-5.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0 mt-2">Leverage cloud infrastuctures, including AWS, GCP, CIROH JupyterHub, and on-premises infrastructures tailored to hydrological research needs.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">Global Collaboration</h3>
-                            <img src="/img/graphics/why-docuhub-6.png" alt="docuhub image"></img>
+                            <img src="img/graphics/why-docuhub-6.png" alt="docuhub image"></img>
                             <p className="text-muted-feature mb-0 mt-2">Join a global network of researchers and collaborators to share knowledge, resources, and innovations within the CIROH community.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+         <ResearcherTestimonials />
       <section
       className={`bsb-cta-2 py-5 ${styles.features}`}
       style={{
@@ -552,13 +554,13 @@ export default function HomepageFeatures() {
       </div>
     </section>
 
-    <div className={clsx("hero hero--primary", styles.heroBanner)}>
+      <div className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
           <div className={styles.flexStart}>
             <div className="hero-text">
               <h1 className={styles.h1}>Cyberinfrastructure & Community NextGen Monthly Office Hours</h1>
               <br />
-              
+
               <Link
                 className={`button button--secondary ${styles.col4}`}
                 href="/docs/products/Community Hydrologic Modeling Framework/ngiabOfficeHours"
@@ -575,7 +577,7 @@ export default function HomepageFeatures() {
           </div>
         </div>
       </div>
-    
+
       <div className="container" style={{ width: "100%" }}>
         <div className={styles.logoBackground}>
           <div className="container-fluid">

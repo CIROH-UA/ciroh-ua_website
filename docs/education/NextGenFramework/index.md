@@ -1,9 +1,8 @@
 ---
 sidebar_position: 2
 title: "National Water Model"
-description: "NWM"
-tags: 
-- NWM
+description: "Introduction to the National Water Model"
+tags: [Education, National Water Model, NOAA]
 ---
 
 # What is National Water Model (NWM)?

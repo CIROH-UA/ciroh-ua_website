@@ -2,14 +2,7 @@
 sidebar_position: 1
 title: "NGIAB Data Preprocess"
 description: "NextGen Data Preprocess"
-tags:
-  - NextGen In A Box
-  - NGIAB
-  - NextGen framework
-  - National Water Model
-  - national water center
-  - docker
-  - data preprocessor
+tags: [Products, NGIAB, CIROH, National Water Model]
 ---
 
 import GitHubReadme from '@site/src/components/GitHubReadme';

@@ -2,12 +2,7 @@
 sidebar_position: 2
 title: "JetStream2"
 description: "Accessing and Using JetStream2"
-tags:
-  - NSF
-  - JetStream2
-  - HPC
-  - Account
-  - Access
+tags: [Services, NSF Access, NSF, HPC, Indiana University, JetStream2]
 ---
 
 import Link from '@docusaurus/Link'
@@ -41,7 +36,7 @@ Step 1: If you are the PI for your project, please submit the Infrastructure Req
 
 Step 2: If you don't already have an NSF Access account, register for one using the link below.
 
-<Link class="button button--active button--primary" to="https://forms.office.com/r/ERyKyHbdaC"> NSF Access New User Registration</Link>
+<Link class="button button--active button--primary" to="https://operations.access-ci.org/identity/new-user"> NSF Access New User Registration</Link>
 
 ---
 

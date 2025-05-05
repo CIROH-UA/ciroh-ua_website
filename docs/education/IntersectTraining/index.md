@@ -2,9 +2,7 @@
 sidebar_position: 6
 title: "INTERSECT Training Modules"
 description: "training"
-tags: 
-- training
-- online courses
+tags: [Education]
 ---
 
 import Link from '@docusaurus/Link'

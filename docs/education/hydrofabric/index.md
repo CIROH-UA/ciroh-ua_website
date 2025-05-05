@@ -2,17 +2,12 @@
 sidebar_position: 2
 title: "Hydrofabric"
 description: "An open-source R package for working with hydrologic data"
-tags: 
-- hydrofabric
-- lynker-spatial
-- hydrology
-- R
-- data anlysis
+tags: [Education, NOAA]
 ---
 
 # Hydrofabric: An Introduction
 
-Hydrofabric is a collection of open-source R package that provides a comprehensive set of tools for working with hydrologic data. Hydrofabric is designed to be user-friendly and accessible to researchers and practitioners with varying levels of expertise in hydrology and data science. It is also highly extensible, allowing users to develop custom modules and plugins to meet their specific needs.
+Hydrofabric is a collection of open-source R packages that provides a comprehensive set of tools for working with hydrologic data. Hydrofabric is designed to be user-friendly and accessible to researchers and practitioners with varying levels of expertise in hydrology and data science. It is also highly extensible, allowing users to develop custom modules and plugins to meet their specific needs.
 
 ## Getting Started with Hydrofabric
 

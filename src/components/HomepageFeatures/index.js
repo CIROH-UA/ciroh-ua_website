@@ -21,8 +21,7 @@ const ImpactItem = ({ title, count, imageSrc, users }) => (
   </div>
 );
 
-const FeatureList = [];
-const SponserList = [
+const SponsorList = [
   {
     name: "NOAA",
     logo: "https://ciroh.ua.edu/wp-content/uploads/2023/04/noaa-emblem-rgb-2022-1-150x150.png",
@@ -313,25 +312,25 @@ const impactData = [
   {
     title: "CIROH AWS Projects",
     count: 24,
-    imageSrc: "/img/aws-logo.svg",
+    imageSrc: "/img/logos/corp/aws-black.svg",
     users: 60,
   },
   {
     title: "CIROH Google Cloud and CIROH JupyterHub Projects",
     count: 50,
-    imageSrc: "/img/google-cloud.jpg",
+    imageSrc: "/img/logos/corp/google-cloud.jpg",
     users: 171,
   },
   {
     title: "CIROH On-premise HPC Projects",
     count: 20,
-    imageSrc: "/img/pantarhei-logo.jpg",
+    imageSrc: "/img/logos/pantarhei.jpg",
     users: 50,
   },
   {
     title: "CIROH NSF ACCESS Allocations Projects",
     count: 8,
-    imageSrc: "/img/nsf-logo.png",
+    imageSrc: "/img/logos/nsf-logo.png",
     users: 27,
   },
 ];
@@ -354,19 +353,19 @@ export default function HomepageFeatures() {
           <div className="row">
             <Card
               title="Documentation"
-              image="img/documentation.png"
+              image="img/graphics/documentation.png"
               description="Dive into our comprehensive documentation to access in-depth information about various CIROH products, including but not limited to NextGen, Snow model, Tethys, and more."
               link="/docs/products/intro"
             />
             <Card
               title="Cloud Services"
-              image="img/cloud.png"
+              image="img/graphics/cloud.png"
               description="Explore our array of cloud services and offerings, where you can delve into the specifics of CIROH-AWS cloud. Learn how to gain access to this cloud infrastructure and uncover insights into working seamlessly with the 2i2c cloud services."
               link="/docs/services/intro"
             />
             <Card
               title="Training"
-              image="img/tutorial.png"
+              image="img/graphics/tutorial.png"
               description="Elevate your expertise through our training programs. Delve into our tutorials and educational resources, covering topics such as the NextGen framework, Data Science model, and more."
               link="/docs/education/"
             />
@@ -380,13 +379,13 @@ export default function HomepageFeatures() {
             />
             <Card
               title="AWS"
-              image="img/aws-logo.png"
+              image="img/logos/corp/aws-circle.png"
               description="Leverage the power of CIROH AWS Account to elevate your hydrological research. Get access to enterprise-level AWS cloud platform, and utilize AWS computing resources and scalable storage for your research."
               link="/docs/services/cloudservices/aws"
             />
             <Card
               title="Google Cloud"
-              image="img/google-cloud.jpg"
+              image="img/logos/corp/google-cloud.jpg"
               description="Explore different services and tools offered by CIROH Google Cloud. Learn how to access Google Cloud Platform (GCP) and leverage its resources for your research and projects."
               link="/docs/services/cloudservices/google cloud"
             />
@@ -394,19 +393,19 @@ export default function HomepageFeatures() {
           <div className="row">
             <Card
               title="CIROH JupyterHub"
-              image="img/jupyterhub.jpg"
+              image="img/logos/corp/jupyterhub.jpg"
               description="Access cloud-based JupyterHub environment on Google Cloud tailored for hydrological research. Leverage computing power with both CPU and GPU capabilities for advanced computational needs."
               link="/docs/services/cloudservices/ciroh jupyterhub"
             />
             <Card
               title="Pantarhei"
-              image="img/pantarhei-logo.jpg"
+              image="img/logos/pantarhei.jpg"
               description="Access Pantarhei, a high-performance computing (HPC) cluster, to run computationally intensive hydrological models. Utilize Pantarhei to perform large-scale simulations and data processing tasks."
               link="/docs/services/on-prem/Pantarhei"
             />
             <Card
               title="CIROH Portal"
-              image="img/ciroh-logo.jpg"
+              image="img/graphics/ciroh-synergy.jpg"
               description="This portal enhances collaboration and innovation by providing access to interactive web apps, datasets, and learning modules, supporting CIROH and NOAA NWM researchers in advancing hydrological science."
               link="https://portal.ciroh.org/"
             />
@@ -453,7 +452,7 @@ export default function HomepageFeatures() {
               </div>
             </div>
             <img
-              src="./img/contribute.png"
+              src="./img/graphics/contribute.png"
               alt="Contribute to CIROH DocuHub"
               class={styles.heroimage}
             />
@@ -462,100 +461,98 @@ export default function HomepageFeatures() {
       </div>
 
       <section className="padded-page-section-feature" id="services">
-        <div className="container-feature">
-          <h2 className="text-center-feature mt-0">Why DocuHub? Elevate Your Research Journey</h2>
-          <hr className="divider-feature" />
-          <div className="row-feature ">
-            <div className="col-lg-3-feature col-md-6-feature text-center">
-              <div className="mt-5-feature">
-                <h3 className="h4 mb-2-feature">Knowledge Hub</h3>
-                <img src="/img/why-docuhub-1.png" alt="docuhub image"></img>
-                <p className="text-muted-feature mb-0 mt-2">Access a centralized repository of research and educational resources to enhance your hydrological expertise.</p>
-              </div>
+            <div className="container-feature">
+                <h2 className="text-center-feature mt-0">Why DocuHub? Elevate Your Research Journey</h2>
+                <hr className="divider-feature" />
+                <div className="row-feature ">
+                    <div className="col-lg-3-feature col-md-6-feature text-center">
+                        <div className="mt-5-feature">
+                            <h3 className="h4 mb-2-feature">Knowledge Hub</h3>
+                            <img src="/img/graphics/why-docuhub-1.png" alt="docuhub image"></img>
+                            <p className="text-muted-feature mb-0 mt-2">Access a centralized repository of research and educational resources to enhance your hydrological expertise.</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-3-feature col-md-6-feature text-center">
+                        <div className="mt-5-feature">
+                            <h3 className="h4 mb-2-feature">Research & Growth</h3>
+                            <img src="/img/graphics/why-docuhub-2.png" alt="docuhub image"></img>
+                            <p className="text-muted-feature mb-0 mt-2">Explore cutting-edge research and innovative projects driving innovation in hydrology.</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-3-feature col-md-6-feature text-center">
+                        <div className="mt-5-feature">
+                            <h3 className="h4 mb-2-feature">Blog & News</h3>
+                            <img src="/img/graphics/why-docuhub-3.png" alt="docuhub image"></img>
+                            <p className="text-muted-feature mb-0 mt-2">Stay updated with the latest news, community insights, and updates about CIROH projects.</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-3-feature col-md-6-feature text-center">
+                        <div className="mt-5-feature">
+                            <h3 className="h4 mb-2-feature">Education & Training</h3>
+                            <img src="/img/graphics/why-docuhub-4.png" alt="docuhub image"></img>
+                            <p className="text-muted-feature mb-0 mt-2">Elevate your skills with tutorials, training programs, and educational materials tailored for hydrological research.</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-3-feature col-md-6-feature text-center">
+                        <div className="mt-5-feature">
+                            <h3 className="h4 mb-2-feature">CyberInfrastructure</h3>
+                            <img src="/img/graphics/why-docuhub-5.png" alt="docuhub image"></img>
+                            <p className="text-muted-feature mb-0 mt-2">Leverage cloud infrastuctures, including AWS, GCP, CIROH JupyterHub, and on-premises infrastructures tailored to hydrological research needs.</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-3-feature col-md-6-feature text-center">
+                        <div className="mt-5-feature">
+                            <h3 className="h4 mb-2-feature">Global Collaboration</h3>
+                            <img src="/img/graphics/why-docuhub-6.png" alt="docuhub image"></img>
+                            <p className="text-muted-feature mb-0 mt-2">Join a global network of researchers and collaborators to share knowledge, resources, and innovations within the CIROH community.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="col-lg-3-feature col-md-6-feature text-center">
-              <div className="mt-5-feature">
-                <h3 className="h4 mb-2-feature">Research & Growth</h3>
-                <img src="/img/why-docuhub-2.png" alt="docuhub image"></img>
-                <p className="text-muted-feature mb-0 mt-2">Explore cutting-edge research and innovative projects driving innovation in hydrology.</p>
-              </div>
-            </div>
-            <div className="col-lg-3-feature col-md-6-feature text-center">
-              <div className="mt-5-feature">
-                <h3 className="h4 mb-2-feature">Blog & News</h3>
-                <img src="/img/why-docuhub-3.png" alt="docuhub image"></img>
-                <p className="text-muted-feature mb-0 mt-2">Stay updated with the latest news, community insights, and updates about CIROH projects.</p>
-              </div>
-            </div>
-            <div className="col-lg-3-feature col-md-6-feature text-center">
-              <div className="mt-5-feature">
-                <h3 className="h4 mb-2-feature">Education & Training</h3>
-                <img src="/img/why-docuhub-4.png" alt="docuhub image"></img>
-                <p className="text-muted-feature mb-0 mt-2">Elevate your skills with tutorials, training programs, and educational materials tailored for hydrological research.</p>
-              </div>
-            </div>
-            <div className="col-lg-3-feature col-md-6-feature text-center">
-              <div className="mt-5-feature">
-                <h3 className="h4 mb-2-feature">CyberInfrastructure</h3>
-                <img src="/img/why-docuhub-5.png" alt="docuhub image"></img>
-                <p className="text-muted-feature mb-0 mt-2">Leverage cloud infrastuctures, including AWS, GCP, CIROH JupyterHub, and on-premises infrastructures tailored to hydrological research needs.</p>
-              </div>
-            </div>
-            <div className="col-lg-3-feature col-md-6-feature text-center">
-              <div className="mt-5-feature">
-                <h3 className="h4 mb-2-feature">Global Collaboration</h3>
-                <img src="/img/why-docuhub-6.png" alt="docuhub image"></img>
-                <p className="text-muted-feature mb-0 mt-2">Join a global network of researchers and collaborators to share knowledge, resources, and innovations within the CIROH community.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <ResearcherTestimonials />
-
+        </section>
+         <ResearcherTestimonials />
       <section
-        className={`bsb-cta-2 py-5 ${styles.features}`}
+      className={`bsb-cta-2 py-5 ${styles.features}`}
+      style={{
+        width: "100%", // Ensure the section spans the full width
+        margin: 0, // Remove default margin
+        padding: 0, // Remove default padding if necessary
+      }}
+    >
+      <div
+        className="card rounded-3 overflow-hidden text-center bsb-overlay"
         style={{
-          width: "100%", // Ensure the section spans the full width
+          backgroundImage:
+            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./img/graphics/research-image.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "local",
+          width: "100%", // Ensure the card spans the full width
           margin: 0, // Remove default margin
           padding: 0, // Remove default padding if necessary
+          "--bsb-overlay-opacity": ".9",
+          "--bsb-overlay-bg-color": "var(--bs-primary-rgb)",
         }}
       >
-        <div
-          className="card rounded-3 overflow-hidden text-center bsb-overlay"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./img/research-image.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundAttachment: "local",
-            width: "100%", // Ensure the card spans the full width
-            margin: 0, // Remove default margin
-            padding: 0, // Remove default padding if necessary
-            "--bsb-overlay-opacity": ".9",
-            "--bsb-overlay-bg-color": "var(--bs-primary-rgb)",
-          }}
-        >
-          <div className="card-body">
-            <div className="row align-items-center justify-content-center">
-              <div className="col-12 col-md-10 col-xl-8 col-xxl-7">
-                <h1 className="h5 mb-4 text-white text-uppercase">Our Research</h1>
-                <h2 className="display-4 text-white mb-5">
-                  Our research focuses on advancing hydrological science through
-                  innovative research, collaboration, and technology development.
-                </h2>
-                <Link
-                  to="https://ciroh.ua.edu/research/"
-                  className={`button button--secondary ${styles.col6}`}
-                >
-                  Learn More
-                </Link>
-              </div>
+        <div className="card-body">
+          <div className="row align-items-center justify-content-center">
+            <div className="col-12 col-md-10 col-xl-8 col-xxl-7">
+              <h1 className="h5 mb-4 text-white text-uppercase">Our Research</h1>
+              <h2 className="display-4 text-white mb-5">
+                Our research focuses on advancing hydrological science through
+                innovative research, collaboration, and technology development.
+              </h2>
+              <Link
+                to="https://ciroh.ua.edu/research/"
+                className={`button button--secondary ${styles.col6}`}
+              >
+                Learn More
+              </Link>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       <div className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
@@ -573,7 +570,7 @@ export default function HomepageFeatures() {
               </Link>
             </div>
             <img
-              src="./img/infra.png"
+              src="./img/graphics/infra.png"
               alt="DocuHub Office Hours"
               class={styles.heroimage}
             />
@@ -584,647 +581,80 @@ export default function HomepageFeatures() {
       <div className="container" style={{ width: "100%" }}>
         <div className={styles.logoBackground}>
           <div className="container-fluid">
-            <div className="row">
-              <div className="col col--12">
-                <div className="row">
-                  <div className="col col--12">
-                    <div className={styles.heading}>Consortium Sponsers</div>
-                  </div>
-                </div>
-                <div className={styles.row1}>
-                  <div className={styles.col1} align="center">
-                    <Link to={SponserList[0].link}>
-                      <img
-                        className={styles.sponserimage}
-                        src={SponserList[0].logo}
-                        alt={SponserList[0].name}
-                        width={SponserList[0].width}
-                        height={SponserList[0].height}
-                      />
-                    </Link>
-                  </div>
-                  <div
-                    className={`${styles.flex} ${styles.col1}`}
-                    align="center"
-                  >
-                    <Link to={SponserList[1].link}>
-                      <img
-                        className={`${styles.sponserimage} ${styles.lightImage}`}
-                        src={SponserList[1].logo}
-                        alt={SponserList[1].name}
-                        width={SponserList[1].width}
-                        height={SponserList[1].height}
-                      />
-                      <img
-                        className={`${styles.sponserimage} ${styles.darkImage}`}
-                        src={"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/USGS_logo.svg/2560px-USGS_logo.svg.png"}
-                        alt={SponserList[1].name}
-                        width={SponserList[1].width}
-                        height={SponserList[1].height}
-                      />
-                    </Link>
-                  </div>
-
-                  <div
-                    className={`${styles.flex} ${styles.col1}`}
-                    align="center"
-                  >
-                    <Link to={SponserList[2].link}>
-                      <img
-                        className={`${styles.sponserimage} ${styles.darkImage}`}
-                        src={"https://2i2c.org/kpis/_static/images/logo.png"}
-                        alt={SponserList[2].name}
-                        width={SponserList[2].width}
-                        height={SponserList[2].height}
-                      />
-                      <img
-                        className={`${styles.sponserimage} ${styles.lightImage}`}
-                        src={SponserList[2].logo}
-                        alt={SponserList[2].name}
-                        width={SponserList[2].width}
-                        height={SponserList[2].height}
-                      />
-                    </Link>
-                  </div>
-                  <div className={styles.col1} align="center">
-                    <Link to={SponserList[3].link}>
-                      <img
-                        className={`${styles.sponserimage} ${styles.lightImage}`}
-                        src={SponserList[3].logo}
-                        alt={SponserList[3].name}
-                        width={SponserList[3].width}
-                        height={SponserList[3].height}
-                      />
-                      <img
-                        className={`${styles.sponserimage} ${styles.darkImage}`}
-                        src={"https://media.licdn.com/dms/image/v2/C5616AQHOWzrClrXOEA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1657224837882?e=2147483647&v=beta&t=t_prAtcAnWVYFnSDKpZhA0yyZqU8PhbHJX7GGtb7rdo"}
-                        alt={SponserList[3].name}
-                        width={260}
-                        height={SponserList[3].height}
-                      />
-                    </Link>
-                  </div>
-                </div>
+            <div className="col col--12">
+              <div className={styles.heading}>Consortium Sponsors</div>
+              <div className={styles.flexListContainer}>
+                { SponsorList.map(sponsor => 
+                  <Link to={sponsor.link} className={styles.sponsorwrapper} align="center">
+                    <img
+                      className={styles.sponsorcontainer}
+                      src={sponsor.logo}
+                      alt={sponsor.name}
+                      width={sponsor.width}
+                      height={sponsor.height}
+                    />
+                  </Link>
+                )}
               </div>
             </div>
+
             <div className="row">
               <div className="col">
-                <div className="row">
-                  <div className="col">
-                    <div className={styles.heading}>Consortium Members</div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col">
-                    <div className={styles.row1}>
-                      <div className={`${styles.flex} ${styles.col2}`}>
-                        <Link to={MemberList[0].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={MemberList[0].logo}
-                            alt={MemberList[0].name}
-                            width={MemberList[0].width}
-                            height={MemberList[0].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Utah_State_University_seal.svg/1200px-Utah_State_University_seal.svg.png"}
-                            alt={MemberList[0].name}
-                            width={90}
-                            height={90}
-                          />
-                        </Link>
-                      </div>
-                      <div className={styles.col2}>
-                        <Link to={MemberList[1].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://www.in-icorps.org/wp-content/uploads/2024/09/UVM-white-resized.png"}
-                            alt={MemberList[1].name}
-                            width={230}
-                            height={70}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={MemberList[1].logo}
-                            alt={MemberList[1].name}
-                            width={MemberList[1].width}
-                            height={MemberList[1].height}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    <div className={styles.row1}>
-                      <div className={styles.col2}>
-                        <Link to={MemberList[2].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://templates.utah.edu/_main-v2/_images/header/logo/uu-logo.png"}
-                            alt={MemberList[2].name}
-                            width={205}
-                            height={80}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={MemberList[2].logo}
-                            alt={MemberList[2].name}
-                            width={MemberList[2].width}
-                            height={MemberList[2].height}
-                          />
-                        </Link>
-                      </div>
-                      <div className={styles.col2}>
-                        <Link to={MemberList[3].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://www.uah.edu/images/administrative/communications/style-guide/downloads/png/UAH_Horizontal_PNG_bluwht.png"}
-                            alt={MemberList[3].name}
-                            width={300.51}
-                            height={100}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={MemberList[3].logo}
-                            alt={MemberList[3].name}
-                            width={MemberList[3].width}
-                            height={MemberList[3].height}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    <div className={styles.row1}>
-                      <div className={styles.col2}>
-                        <Link to={MemberList[4].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={MemberList[4].logo}
-                            alt={MemberList[4].name}
-                            width={MemberList[4].width}
-                            height={MemberList[4].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://www.grantforward.com/sponsor_image/20240508232223_d052f5ca0fe0fb87dc89d7db0e516419.png"}
-                            alt={MemberList[4].name}
-                            width={390}
-                            height={60}
-                          />
-                        </Link>
-                      </div>
-                      <div className={styles.col2}>
-                        <Link to={MemberList[5].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={MemberList[5].logo}
-                            alt={MemberList[5].name}
-                            width={MemberList[5].width}
-                            height={MemberList[5].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://phoenixmed.arizona.edu/sites/default/files/campus/marcomm/brand/master-logo/10-ua-vertical-white/ua_rev_stack_rgb_white.png"}
-                            alt={MemberList[5].name}
-                            width={MemberList[5].width}
-                            height={MemberList[5].height}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    <div className={styles.row1}>
-                      <div className={styles.col2}>
-                        <Link to={MemberList[6].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={MemberList[6].logo}
-                            alt={MemberList[6].name}
-                            width={MemberList[6].width}
-                            height={MemberList[6].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://manoa.hawaii.edu/wp/wp-content/uploads/2017/10/uhm-white-seal-nameplate@2x.png"}
-                            alt={MemberList[6].name}
-                            width={MemberList[6].width}
-                            height={MemberList[6].height}
-                          />
-                        </Link>
-                      </div>
-                      <div className={styles.col2}>
-                        <Link to={MemberList[7].link}>
-                          <img
-                            className={styles.imagecontainer}
-                            src={MemberList[7].logo}
-                            alt={MemberList[7].name}
-                            width={MemberList[7].width}
-                            height={MemberList[7].height}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    <div className={styles.row1}>
-                      <div className={styles.col2}>
-                        <Link to={MemberList[8].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={MemberList[8].logo}
-                            alt={MemberList[8].name}
-                            width={MemberList[8].width}
-                            height={MemberList[8].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://cyberlab.usask.ca/images/usask_logo_black.png"}
-                            alt={MemberList[8].name}
-                            width={MemberList[8].width}
-                            height={MemberList[8].height}
-                          />
-                        </Link>
-                      </div>
-                      <div className={`${styles.flex} ${styles.col2}`}>
-                        <Link to={MemberList[9].link}>
-                          <img
-                            className={styles.imagecontainer}
-                            src={MemberList[9].logo}
-                            alt={MemberList[9].name}
-                            width={MemberList[9].width}
-                            height={MemberList[9].height}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    <div className={styles.row1}>
-                      <div className={styles.col2}>
-                        <Link to={MemberList[10].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={MemberList[10].logo}
-                            alt={MemberList[10].name}
-                            width={MemberList[10].width}
-                            height={MemberList[10].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/University_of_Minnesota_Logo.svg/1280px-University_of_Minnesota_Logo.svg.png"}
-                            alt={MemberList[10].name}
-                            width={100}
-                            height={70}
-                          />
-
-                        </Link>
-                      </div>
-                      <div className={`${styles.flex} ${styles.col2}`}>
-                        <Link to={MemberList[11].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={MemberList[11].logo}
-                            alt={MemberList[11].name}
-                            width={MemberList[11].width}
-                            height={MemberList[11].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://www.tuskegee.edu/Content/Uploads/Tuskegee/Images/f-logo.png"}
-                            alt={MemberList[11].name}
-                            width={180}
-                            height={90}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    <div className={styles.row1}>
-                      <div className={styles.col2}>
-                        <Link to={MemberList[12].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={MemberList[12].logo}
-                            alt={MemberList[12].name}
-                            width={MemberList[12].width}
-                            height={MemberList[12].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://upload.wikimedia.org/wikipedia/commons/b/b2/Brigham_Young_University_medallion.svg"}
-                            alt={MemberList[12].name}
-                            width={100}
-                            height={100}
-                          />
-                        </Link>
-                      </div>
-                      <div className={`${styles.flex} ${styles.col2}`}>
-                        <Link to={MemberList[13].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={MemberList[13].logo}
-                            alt={MemberList[13].name}
-                            width={MemberList[13].width}
-                            height={MemberList[13].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://images2.teeshirtpalace.com/designs/1711940587680.png?width=700"}
-                            alt={MemberList[13].name}
-                            width={100}
-                            height={130}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
+                <div className={styles.heading}>Consortium Members</div>
+                <div className={styles.flexListContainer}>
+                  { MemberList.map(member => 
+                    <Link to={member.link} className={styles.imagewrapper} align="center">
+                      <img
+                        className={styles.imagecontainer}
+                        src={member.logo}
+                        alt={member.name}
+                        width={member.width}
+                        height={member.height}
+                      />
+                    </Link>
+                  )}
                 </div>
               </div>
+
               <div className="col">
-                <div className="row">
-                  <div className="col">
-                    <div className={styles.heading}>Consortium Partners</div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col">
-                    <div className={styles.row1}>
-                      <div className={styles.col2}>
-                        <Link to={PartnerList[0].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={PartnerList[0].logo}
-                            alt={PartnerList[0].name}
-                            width={PartnerList[0].width}
-                            height={PartnerList[0].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://www.baronthreatnet.com/sites/all/themes/barontheme/logo.png"}
-                            alt={PartnerList[0].name}
-                            width={220}
-                            height={70}
-                          />
-                        </Link>
-                      </div>
-                      <div className={`${styles.flex} ${styles.col2}`}>
-                        <Link to={PartnerList[1].link}>
-                          <img
-                            className={styles.imagecontainer}
-                            src={PartnerList[1].logo}
-                            alt={PartnerList[1].name}
-                            width={PartnerList[1].width}
-                            height={PartnerList[1].height}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    <div className={styles.row1}>
-                      <div className={styles.col2}>
-                        <Link to={PartnerList[2].link}>
-                          <img
-                            className={styles.imagecontainer}
-                            src={PartnerList[2].logo}
-                            alt={PartnerList[2].name}
-                            width={PartnerList[2].width}
-                            height={PartnerList[2].height}
-                          />
-                        </Link>
-                      </div>
-                      <div className={`${styles.flex} ${styles.col2}`}>
-                        <Link to={PartnerList[3].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={PartnerList[3].logo}
-                            alt={PartnerList[3].name}
-                            width={PartnerList[3].width}
-                            height={PartnerList[3].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://global-uploads.webflow.com/63727ffa52be207cf8bb4aca/63bbfa022801849f49386d3d_unnamed%20(2).webp"}
-                            alt={PartnerList[3].name}
-                            width={PartnerList[3].width}
-                            height={PartnerList[3].height}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    <div className={styles.row1}>
-                      <div className={styles.col2}>
-                        <Link to={PartnerList[4].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={PartnerList[4].logo}
-                            alt={PartnerList[4].name}
-                            width={PartnerList[4].width}
-                            height={PartnerList[4].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://ourfragilexworld.org/img/rti-logo-white.png"}
-                            alt={PartnerList[4].name}
-                            width={PartnerList[4].width}
-                            height={PartnerList[4].height}
-                          />
-                        </Link>
-                      </div>
-                      <div className={`${styles.flex} ${styles.col2}`}>
-                        <Link to={PartnerList[5].link}>
-                          <img
-                            className={styles.imagecontainer}
-                            src={PartnerList[5].logo}
-                            alt={PartnerList[5].name}
-                            width={PartnerList[5].width}
-                            height={PartnerList[5].height}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    <div className={styles.row1}>
-                      <div className={styles.col2}>
-                        <Link to={PartnerList[6].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={PartnerList[6].logo}
-                            alt={PartnerList[6].name}
-                            width={PartnerList[6].width}
-                            height={PartnerList[6].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://cdn.prod.website-files.com/5ba032fa3943f8840d5b914f/5d489b063cf49eac67eabd5a_Stevens-Official-WhiteKO-R.png"}
-                            alt={PartnerList[6].name}
-                            width={240}
-                            height={80}
-                          />
-                        </Link>
-                      </div>
-                      <div className={`${styles.flex} ${styles.col2}`}>
-                        <Link to={PartnerList[7].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={PartnerList[7].logo}
-                            alt={PartnerList[7].name}
-                            width={PartnerList[7].width}
-                            height={PartnerList[7].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://cdn.ioos.noaa.gov/media/2021/03/gcoos_med.png"}
-                            alt={PartnerList[7].name}
-                            width={200}
-                            height={PartnerList[7].height}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    <div className={styles.row1}>
-                      <div className={styles.col2}>
-                        <Link to={PartnerList[8].link}>
-                          <img
-                            className={styles.imagecontainer}
-                            src={PartnerList[8].logo}
-                            alt={PartnerList[8].name}
-                            width={PartnerList[8].width}
-                            height={PartnerList[8].height}
-                          />
-                        </Link>
-                      </div>
-                      <div className={styles.col2}>
-                        <Link to={PartnerList[9].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={PartnerList[9].logo}
-                            alt={PartnerList[9].name}
-                            width={PartnerList[9].width}
-                            height={PartnerList[9].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://service.psu.edu/wp-content/themes/genesis-psu/images/PS_HOR_REV_RGB_2C.png"}
-                            alt={PartnerList[9].name}
-                            width={PartnerList[9].width}
-                            height={PartnerList[9].height}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    <div className={styles.row1}>
-                      <div className={styles.col2}>
-                        <Link to={PartnerList[10].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={PartnerList[10].logo}
-                            alt={PartnerList[10].name}
-                            width={PartnerList[10].width}
-                            height={PartnerList[10].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://sc.edu/_global_resources/img/usc_logo_horizontal_rgb_g_rev.svg"}
-                            alt={PartnerList[10].name}
-                            width={280}
-                            height={90}
-                          />
-                        </Link>
-                      </div>
-                      <div className={`${styles.flex} ${styles.col2}`}>
-                        <Link to={PartnerList[11].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={PartnerList[11].logo}
-                            alt={PartnerList[11].name}
-                            width={PartnerList[11].width}
-                            height={PartnerList[11].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/UC_Davis_wordmark.svg/2560px-UC_Davis_wordmark.svg.png"}
-                            alt={PartnerList[11].name}
-                            width={PartnerList[11].width}
-                            height={PartnerList[11].height}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    <div className={styles.row1}>
-                      <div className={styles.col2}>
-                        <Link to={PartnerList[12].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={PartnerList[12].logo}
-                            alt={PartnerList[12].name}
-                            width={PartnerList[12].width}
-                            height={PartnerList[12].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://www.yuja.com/wp-content/uploads/logo-Coastal-Carolina-University.png"}
-                            alt={PartnerList[12].name}
-                            width={200}
-                            height={90}
-                          />
-                        </Link>
-                      </div>
-                      <div className={`${styles.flex} ${styles.col2}`}>
-                        <Link to={PartnerList[13].link}>
-                          <img
-                            className={`${styles.imagecontainer} ${styles.lightImage}`}
-                            src={PartnerList[13].logo}
-                            alt={PartnerList[13].name}
-                            width={PartnerList[13].width}
-                            height={PartnerList[13].height}
-                          />
-                          <img
-                            className={`${styles.imagecontainer} ${styles.darkImage}`}
-                            src={"https://illinois.edu/assets/img/branding/illinois_primary_wordmark_reversed_orange.svg"}
-                            alt={PartnerList[13].name}
-                            width={PartnerList[13].width}
-                            height={PartnerList[13].height}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
+                <div className={styles.heading}>Consortium Partners</div>
+                <div className={styles.flexListContainer}>
+                  { PartnerList.map(partner => 
+                    <Link to={partner.link} className={styles.imagewrapper} align="center">
+                      <img
+                        className={styles.imagecontainer}
+                        src={partner.logo}
+                        alt={partner.name}
+                        width={partner.width}
+                        height={partner.height}
+                      />
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
           </div>
 
-          <div className={"row"} style={{ paddingTop: 70 }}>
-            <div className="col col--4" style={{ textAlign: "center" }}>
+          <div className={styles.longwrapper}>
+            <div style={{ textAlign: "center" }}>
               <img
-                className={`${styles.imagecontainer} ${styles.lightImage}`}
                 alt="noaaImage"
-                src="img/noaalogo.png"
-                style={{ height: 145, width: 145, marginTop: 15 }}
-              />
-              <img
-                className={`${styles.imagecontainer} ${styles.darkImage}`}
-                alt="noaaImage"
-                src="img/noaalogo-white.png"
-                style={{ height: 145, width: 145, marginTop: 15 }}
+                src="img/logos/noaa.png"
+                style={{ maxHeight: '145px', width: 'auto', padding: '1rem' }}
               />
             </div>
-            <div className="col col--4" style={{ textAlign: "center" }}>
+            <div style={{ textAlign: "center" }}>
               <img
-                className={`${styles.imagecontainer} ${styles.lightImage}`}
                 alt="awiImage"
-                src="img/awi.png"
-                style={{ marginTop: 45, marginBottom: 45 }}
-              />
-              <img
-                className={`${styles.imagecontainer} ${styles.darkImage}`}
-                alt="awiImage"
-                src="img/awi-white.png"
-                style={{ marginTop: 45, marginBottom: 45 }}
+                src="img/logos/awi.png"
+                style={{ maxHeight: '70px', width: 'auto', padding: '1rem' }}
               />
             </div>
-            <div className="col col--4" style={{ textAlign: "center" }}>
+            <div style={{ textAlign: "center" }}>
               <img
-                className={`${styles.imagecontainer} ${styles.lightImage}`}
                 alt="cirohImage"
-                src="img/cirohlogo-transparent.png"
-                style={{ height: 145, width: 145, marginTop: 15 }}
-              />
-              <img
-                className={`${styles.imagecontainer} ${styles.darkImage}`}
-                alt="cirohImage"
-                src="img/cirohlogo-white.png"
-                style={{ height: 145, width: 145, marginTop: 15 }}
+                src="img/logos/ciroh-light.png"
+                style={{ maxHeight: '145px', width: 'auto', padding: '1rem' }}
               />
             </div>
           </div>

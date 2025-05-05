@@ -2,12 +2,7 @@
 sidebar_position: 1
 title: "CIROH AWS Office Hours"
 description: "CIROH AWS Office Hours"
-tags:
-  - AWS
-  - Cloud
-  - EC2
-  - S3
-  - Q&A
+tags: [CIROH, Services, Cloud Services, AWS, Education]
 ---
 
 # CIROH AWS Office Hours

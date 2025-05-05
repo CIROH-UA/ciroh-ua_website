@@ -2,10 +2,7 @@
 sidebar_position: 5
 title: "CUAHSI JupyterHub"
 description: "cuahsi jupyterhub"
-tags: 
-- cuahsi
-- jupyterhub
-- cloud computing
+tags: [CIROH, Services, Cloud Services, CUAHSI, JupyterHub]
 ---
 
 import Link from '@docusaurus/Link'

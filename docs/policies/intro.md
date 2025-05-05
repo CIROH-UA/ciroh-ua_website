@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Policies and Best Practices
+tags: [CIROH, Policies]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
@@ -15,7 +16,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
         </p>
       </div>
       <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src={useBaseUrl("/img/water_products.png")} alt="Water Tools" style={{ width: '50%' }} />
+        <img src={useBaseUrl("/img/graphics/policies_best_practices.png")} alt="Policies" style={{ width: '50%' }} />
       </div>
     </div>
 </div>

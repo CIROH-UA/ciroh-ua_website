@@ -2,17 +2,13 @@
 sidebar_position: 3
 title: "CIROH JupyterHub"
 description: "2i2c JupyterHub is a cloud-based JupyterHub environment specifically designed for hydrological researchers. It is powered by 2i2c JupyterHub, a cloud-based JupyterHub environment specifically on Google Cloud"
-tags:
-  - 2i2c
-  - JupyterHub
-  - GCP
-  - notebook
+tags: [CIROH, Services, Cloud Services, JupyterHub, 2i2c, Google Cloud]
 ---
 
 import Link from '@docusaurus/Link'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# CIROH JupyterHub
+# CIROH-2i2c JupyterHub
 ## Powered by 2i2c JupyterHub on Google Cloud
 
 CIROH, in collaboration with 2i2c, offers a dedicated JupyterHub environment on Google Cloud specifically designed for hydrological researchers. 2i2c is a cloud service provider specializing in open-source infrastructure for research and development.
@@ -20,6 +16,15 @@ CIROH, in collaboration with 2i2c, offers a dedicated JupyterHub environment on 
 <p align="center">
 <img src={useBaseUrl("/img/2i2c.png")} alt="2i2c Image" style={{'width':'80%', 'height':'50%'}}/>
 </p>
+
+## Video Tutorial
+
+Watch this video to find out how to access CIROH Jupyterhub and how to launch and use CIROH Jupyterhub with HydroShare:
+
+<div style={{textAlign: 'center'}}>
+  <iframe width="791" height="421" src="https://www.youtube.com/embed/DnbxhLdb6TM" title="CIROH Jupyterhub" style={{border: 'none'}} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 
 ## **Benefits of CIROH Cloud's 2i2c JupyterHub:**
 
@@ -84,3 +89,18 @@ Please refer to the [Dockerfile](https://github.com/2i2c-org/awi-ciroh-image/blo
 ### Cost of Use
 
 CIROH 2i2c JupyterHub is free to use for consortium members. Its cost is covered by CIROH Infrastructure project funds.
+
+---
+
+## 2i2c Blog
+
+Stay up-to-date on the latest 2i2c news and announcements by visiting the official 2i2c Blog:
+
+<Link class="button button--active button--primary" to="https://2i2c.org/blog/"> 2i2c Blog</Link>
+
+---
+
+## Help and Support
+
+- Email UA's CIROH Cloud Team: ciroh-it-admin@ua.edu 
+- Message the CIROH Cloud Slack Channel: #ciroh-ua-it-admin

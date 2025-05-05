@@ -2,12 +2,7 @@
 sidebar_position: 2
 title: "CIROH Google Account"
 description: "Google Research Cloud"
-tags:
-  - Google
-  - Cloud
-  - CIROH
-  - GCP
- 
+tags: [CIROH, Services, Cloud Services, Google Cloud]
 ---
 
 import Link from '@docusaurus/Link'
@@ -59,6 +54,14 @@ Please refer to [this link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?
 - CIROH projects that anticipate exceeding the monthly budget for cloud services may request additional funds via the form below.
 
 <Link class="button button--active button--primary" to="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=exceeding_budget_request.md&title=">Exceeding Budget Request Form</Link>
+
+---
+
+## Google Cloud Blog
+
+Stay up-to-date on the latest Google Cloud news and announcements by visiting the official Google Cloud Blog:
+
+<Link class="button button--active button--primary" to="https://cloud.google.com/blog"> Google Cloud Blog</Link>
 
 ---
 

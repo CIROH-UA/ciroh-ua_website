@@ -1,15 +1,17 @@
 import { themes as prismThemes } from "prism-react-renderer";
 
+const baseUrl = "/";
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "CIROH DocuHub",
   staticDirectories: ["static", "img"],
   tagline: "Cooperative Institute for Research to Operations in Hydrology",
   url: "http://ciroh.org",
-  baseUrl: "/",
+  baseUrl: baseUrl,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/docuhub-logo.png",
+  favicon: "img/logos/docuhub.png",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -69,7 +71,7 @@ const config = {
         authorsMapPath: "authors.yaml", // Path to the authors' mapping file
         blogSidebarCount: 'ALL',
       }
-    ]
+    ] 
   ],
 
   themeConfig:
@@ -92,10 +94,10 @@ const config = {
         // ... other stylesheets
       ],
       navbar: {
-        title: "CIROH DocuHub",
+        title: "DocuHub",
         logo: {
           alt: "CIROH Logo",
-          src: "img/docuhub-logo.png",
+          src: "img/logos/docuhub.png",
         },
         items: [
           { to: "blog", label: "Blog", position: "right" },
@@ -112,31 +114,37 @@ const config = {
             label: "Services",
           },
           {
-            type: "doc",
-            docId: "education/education",
-            position: "left",
-            label: "Education",
-          },
-          {
-            type: "doc",
-            docId: "policies/intro",
-            position: "left",
-            label: "Policies and Best Practices",
-          },
-          
-          {
             href: "/impact",
             label: "Community Impact",
             position: "left",
           },
+          {
+            type: 'dropdown',
+            label: 'Learn',
+            position: 'left',
+            items:[
+              {
+                type: "doc",
+                docId: "education/education",
+                label: "Education",
+              },
+              {
+                type: "doc",
+                docId: "policies/intro",
+                label: "Policies",
+              },
+            ]
+          },
+                    
+          
           {
             href: "/news",
             label: "News",
             position: "right",
           },
           {
-            href: "https://forms.office.com/r/5ww7qRWwwf",
-            label: "Feedback",
+            href: "https://portal.ciroh.org/", // Research portal URL
+            label: "Portal",
             position: "right",
           }
         ],
@@ -158,6 +166,10 @@ const config = {
               {
                 label: 'Contribute',
                 href: '/docs/contribute'
+              },
+              {
+                label: 'Feeback',
+                href: 'https://forms.office.com/r/5ww7qRWwwf'
               },
               {
                 label: 'CIROH Portal',
@@ -191,41 +203,47 @@ const config = {
             items: [
               {
                 html: `
-                <div class="footer-social-links">
-                <a href="https://www.youtube.com/@UA_CIROH" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH" style="margin-left:-15px">
-                <img src="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png" alt="CIROH on YouTube" width="70" height="60" />
-              </a>
-              <a href="https://www.linkedin.com/company/uaciroh/" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:-15px">
-                <img src="https://static.vecteezy.com/system/resources/previews/018/930/587/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="CIROH on LinkedIn" width="70" height="60" />
-              </a>
-              <a href="https://www.facebook.com/UACIROH/" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:-25px">
-                <img src="https://static.vecteezy.com/system/resources/previews/018/930/702/original/facebook-logo-facebook-icon-transparent-free-png.png" alt="CIROH on Facebook" width="70" height="60" />
-              </a> 
-              </div>
+                  <div class="footer-social-links">
+                    <a href="https://github.com/CIROH-UA" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH">
+                      <img src="${baseUrl}img/socials/github_light.svg" alt="CIROH on GitHub" width="40" height="40" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/uaciroh/" target="_blank" rel="noreferrer noopener" aria-label="CIROH on LinkedIn">
+                      <img src="${baseUrl}img/socials/linkedin_light.svg" alt="CIROH on LinkedIn" width="40" height="40" />
+                    </a>
+                    <a href="https://www.youtube.com/@UA_CIROH" target="_blank" rel="noreferrer noopener" aria-label="CIROH on YouTube">
+                      <img src="${baseUrl}img/socials/youtube_light.svg" alt="CIROH on YouTube" width="40" height="40" />
+                    </a>
+                  </div>
                 `,
               },
               {
-                html: `               
-              <a href="https://twitter.com/UA_CIROH" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:5px;">
-                <img src="https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000" alt="CIROH on X" width="40" height="40" />
-              </a>
-              <a href="https://github.com/CIROH-UA" target="_blank" rel="noreferrer noopener" aria-label="Visit CIROH"  style="margin-left:5px;">
-                <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="CIROH on GitHUb" width="40" height="40" />
-              </a>
-                
+                html: `
+                <div class="footer-social-links"> 
+                  <a href="https://www.instagram.com/ua_ciroh/" target="_blank" rel="noreferrer noopener" aria-label="CIROH on Instagram">
+                    <img src="${baseUrl}img/socials/instagram_light.svg" alt="CIROH on Instagram" width="40" height="40" />
+                  </a>       
+                  <a href="https://www.facebook.com/UACIROH/" target="_blank" rel="noreferrer noopener" aria-label="CIROH on Facebook">
+                    <img src="${baseUrl}img/socials/facebook_light.svg" alt="CIROH on Facebook" width="40" height="40" />
+                  </a>              
+                  <a href="https://twitter.com/UA_CIROH" target="_blank" rel="noreferrer noopener" aria-label="CIROH on X (Twitter)">
+                    <img src="${baseUrl}img/socials/x_light.svg" alt="CIROH on X (Twitter)" width="40" height="40" />
+                  </a>
+                </div>
                 `,
-              },
+              }
             ],
           },
         ],
-        copyright: `<div class="footer__funding">
-        This project received funding under award NA22NWS4320003 from NOAA Cooperative Institute Program. 
-        The statements, findings, conclusions, and recommendations are those of the author(s) and do not 
-        necessarily reflect the views of NOAA.
-      </div>
-      <div class="footer__bottom">
-        Copyright © ${new Date().getFullYear()} CIROH - The University of Alabama
-      </div>`,
+        copyright: `
+          <div class="footer__funding">
+            This project received funding under award NA22NWS4320003 from NOAA Cooperative Institute Program. 
+            The statements, findings, conclusions, and recommendations are those of the author(s) and do not 
+            necessarily reflect the views of NOAA.
+          </div>
+          <div class="footer__bottom">
+            Copyright © ${new Date().getFullYear()} CIROH - The University of Alabama
+          </div>
+          `,
       },
       prism: {
         theme: prismThemes.github,

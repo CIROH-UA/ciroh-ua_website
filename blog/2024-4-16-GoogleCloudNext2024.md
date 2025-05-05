@@ -3,7 +3,7 @@ title: "Google Cloud Next '24: A Flood of Innovation and Inspiration"
 description: "Google Cloud Next '24: Las Vegas"
 slug: Google Cloud Next 2024
 authors: arpita
-tags: [google, googlecloud, googlecloudnext, conference]
+tags: [Blog, Conference, Google Cloud, Google Cloud Next, CIROH, National Water Model, NGIAB, BYU]
 hide_table_of_contents: false
 image: /img/googlenext-3.jpeg
 ---
@@ -18,22 +18,22 @@ One of the highlights was undoubtedly the abundance of AI announcements and adva
 
 Among the many highlights, **CIROH** achieved a significant milestone with its **first-ever session at Google Cloud Next**. The presentation, titled **"Channel the Flood Data Deluge: Unlocking the American National Water Model,"** [link](https://cloud.withgoogle.com/next/session-library?session=DEV209&utm_source=copylink&utm_medium=unpaidsoc&utm_campaign=FY24-Q2-global-ENDM33-physicalevent-er-next-2024-mc&utm_content=next-homepage-social-share&utm_term=-#all> ) led by **Kel Markert (Google), Dr. Dan Ames (BYU), and Michael Ames(SADA)** was a resounding success. The session [link](https://assets.swoogo.com/uploads/3771985-6615e3b5da2cf.pdf) shed light on the immense potential of the National Water Model and its ability to revolutionize water resource management.
  <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/GoogleCloudNext2024.png" alt="GoogleCloudNext2024" style={{ width: '80%' }} />
+        <img src="/img/blog/2024-04-gcn/GoogleCloudNext2024.png" alt="GoogleCloudNext2024" style={{ width: '80%' }} />
 </div>
 
 
 The conference was a truly enjoyable experience, especially collaborating with Dan, Kel, Michael and others. We had a great time  together and sharing our insights.
 
 <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/googlenext-1.jpeg" alt="GoogleNext-1" style={{ width: '80%' }} />
+        <img src="/img/blog/2024-04-gcn/googlenext-1.jpeg" alt="GoogleNext-1" style={{ width: '80%' }} />
 </div>
 
 <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/googlenext-2.jpeg" alt="GoogleNext-2" style={{ width: '80%' }} />
+        <img src="/img/blog/2024-04-gcn/googlenext-2.jpeg" alt="GoogleNext-2" style={{ width: '80%' }} />
 </div>
 
 <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/googlenext-3.jpeg" alt="GoogleNext-3" style={{ width: '80%' }} />
+        <img src="/img/blog/2024-04-gcn/googlenext-3.jpeg" alt="GoogleNext-3" style={{ width: '80%' }} />
 </div>
 
 The **energy and enthusiasm** throughout the event were contagious, and I left feeling incredibly **motivated and inspired**. I connected with numerous individuals from diverse backgrounds, fostering **new collaborations** and sparking exciting ideas for the future of water research and technology.

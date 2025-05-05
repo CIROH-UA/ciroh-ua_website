@@ -2,13 +2,7 @@
 sidebar_position: 3
 title: "NGIAB-HPCInfra"
 description: "NextGen In a Box (NGIAB)"
-tags:
-  - NextGen In A Box
-  - NGIAB
-  - NextGen framework
-  - National Water Model
-  - national water center
-  - singularity
+tags: [Products, NGIAB, CIROH, HPC, Singularity, National Water Model]
 ---
 
 import GitHubReadme from '@site/src/components/GitHubReadme';

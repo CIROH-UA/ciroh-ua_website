@@ -23,7 +23,7 @@ CIROH recognizes the importance of leveraging external resources to enhance our 
         <div
           class="card rounded-3 overflow-hidden text-center bsb-overlay"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url('/img/graphics/access-resource.jpg')",  // camelCase
+            backgroundImage: `url(${useBaseUrl('/img/graphics/access-resource.jpg')})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "local",

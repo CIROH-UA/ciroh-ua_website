@@ -150,13 +150,13 @@ const config = {
             ]
           },
           {
-            href: "/release-notes",
-            label: "Release Notes",
+            href: "/news",
+            label: "News",
             position: "right",
           },
           {
-            href: "/news",
-            label: "News",
+            href: "/release-notes",
+            label: "Release Notes",
             position: "right",
           },
           {

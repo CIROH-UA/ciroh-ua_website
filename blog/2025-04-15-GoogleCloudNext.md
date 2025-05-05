@@ -5,7 +5,7 @@ slug: april-2025-update
 authors: [arpita]
 tags: [Blog, Conference, Google Cloud, Google Cloud Next]
 hide_table_of_contents: false
-image: /img/blog/2025-03-awi/ngiab-stack.png
+image: img/blog/2025-04-gcp/gcp-1.jpg
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl"

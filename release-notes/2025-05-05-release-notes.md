@@ -1,26 +1,18 @@
 ---
-title: Upcoming Release Notes
-description: Major DocuHub update for [TBD]!
-slug: vTBD
+title: 05-05-2025 Release Notes
+description: Major DocuHub update for May 2025!
+slug: "v20250505"
 tags: ["Release Notes", DocuHub]
 hide_table_of_contents: false
 ---
 
-:::info <!--[TODO]-->
-This is a prospective set of release notes for the next update! Currently unmerged PRs are included.
-
-Please be sure to update this file's metadata and remove any work-in-progress filler before pushing to production.
-:::
-
 ## New content
-- Added Community Hydrofabric Patcher under Products tab ([#354](https://github.com/CIROH-UA/ciroh-ua_website/pull/354))
-- Added researcher testimonials to homepage ([#353](https://github.com/CIROH-UA/ciroh-ua_website/pull/353))
+- Added researcher testimonials to homepage ([#358](https://github.com/CIROH-UA/ciroh-ua_website/pull/358))
 - DocuHub now has a release notes feed! ([#318](https://github.com/CIROH-UA/ciroh-ua_website/pull/318))
 
-## Blog posts and news updates
-- (None yet - remove before release if appropriate)
-
 ## Updates
+- Added workshop IT support form to services access page ([#362](https://github.com/CIROH-UA/ciroh-ua_website/pull/362))
+- Reorganized links to blogs for cloud services ([#360](https://github.com/CIROH-UA/ciroh-ua_website/pull/360))
 - Video tutorial added to "HydroShare and CIROH JupyterHub Intergration" product page ([#357](https://github.com/CIROH-UA/ciroh-ua_website/pull/357))
 - Reworked homepage display of CIROH sponsors, members, and partners ([#356](https://github.com/CIROH-UA/ciroh-ua_website/pull/356))
 - Added link to CIROH Portal in DocuHub navbar ([#355](https://github.com/CIROH-UA/ciroh-ua_website/pull/355))

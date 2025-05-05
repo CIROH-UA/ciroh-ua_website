@@ -253,9 +253,10 @@ const config = {
         ],
         copyright: `
           <div class="footer__funding">
-            This project received funding under award NA22NWS4320003 from NOAA Cooperative Institute Program. 
-            The statements, findings, conclusions, and recommendations are those of the author(s) and do not 
-            necessarily reflect the views of NOAA.
+            This research was supported by the Cooperative Institute for Research to Operations in Hydrology
+            (CIROH) with funding under award NA22NWS4320003 from the NOAA Cooperative Institute Program.
+            The statements, findings, conclusions, and recommendations are those of the author(s) and do not
+            necessarily reflect the opinions of NOAA.
           </div>
           <div class="footer__bottom">
             Copyright © ${new Date().getFullYear()} CIROH - The University of Alabama

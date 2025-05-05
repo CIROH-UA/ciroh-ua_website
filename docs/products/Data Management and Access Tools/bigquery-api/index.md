@@ -2,10 +2,7 @@
 sidebar_position: 18
 title: "NWM BigQuery API"
 description: "REST API backed by National Water Model data, developed on Google Cloud Platform"
-tags:
-  - api
-  - bigquery
-  - gcp
+tags: [Products, National Water Model, Google Cloud, BigQuery, CIROH]
 ---
 
 import Link from '@docusaurus/Link'

@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 title: "External Resources"
+tags: [Services, NSF Access, NSF, HPC]
 ---
 import "/src/components/HomepageFeatures/bootstrap.min.css";
 import "/src/components/HomepageFeatures/cta-2.css";
@@ -16,13 +17,12 @@ CIROH recognizes the importance of leveraging external resources to enhance our 
 **ACCESS** is a program established and funded by the National Science Foundation to help researchers and educators, with or without supporting grants, to utilize the nation’s advanced computing systems and services – at no cost.
 
 
-
 <section class="bsb-cta-2 py-5">
       <div class="container" >
         <div
           class="card rounded-3 overflow-hidden text-center bsb-overlay"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url('/img/access-resource.jpg')",  // camelCase
+            backgroundImage: "url(" + useBaseUrl("/img/graphics/access-resource.jpg") + ")",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "local",

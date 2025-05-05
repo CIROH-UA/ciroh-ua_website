@@ -1,10 +1,7 @@
 ---
 sidebar_position: 4
 title: "On-Premises"
-tags:
-  - HPC
-  - On-Premises
-  - Overview
+tags: [CIROH, Services, On-Premises Services, Pantarhei, Wukong, HPC]
 ---
 
 # Overview

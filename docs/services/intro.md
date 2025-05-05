@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: "CIROH CyberInfrastructure"
+tags: ["CIROH", "Services", "HPC", "On-Premises Services", "Cloud Services"]
 ---
 
 import Link from '@docusaurus/Link'
@@ -43,7 +44,7 @@ The CIROH CyberInfrastructure is meticulously designed to empower CIROH research
          	
 		<div className="row">
 			<div className="col col--6" style={{ textAlign: 'center' }}>
-				<img src={useBaseUrl("/img/2i2c-gcp.png")} alt="Water Tools" style={{ width: '100%' }} />
+				<img src={useBaseUrl("/img/graphics/2i2c-gcp.png")} alt="Water Tools" style={{ width: '100%' }} />
 				<Link class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} to="https://docs.ciroh.org/docs/services/cloudservices/ciroh%20jupyterhub/"> CIROH JupyterHub Service</Link>
 			</div>		
 			<div className="col col--6" style={{ textAlign: 'center' }}>
@@ -51,11 +52,11 @@ The CIROH CyberInfrastructure is meticulously designed to empower CIROH research
 				<Link class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} to="https://docs.ciroh.org/docs/services/cloudservices/aws/"> CIROH AWS Services</Link>
 			</div>
             <div className="col col--6" style={{ textAlign: 'center' }}>
-				<img src={useBaseUrl("/img/onprem.jpg")} alt="On-Premises" style={{ width: '100%' }} />
+				<img src={useBaseUrl("/img/graphics/onprem.jpg")} alt="On-Premises" style={{ width: '100%' }} />
 				<Link class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} to="https://docs.ciroh.org/docs/services/on-prem/Pantarhei/"> Pantarhei HPC</Link>
 			</div>
             		<div className="col col--6" style={{ textAlign: 'center' }}>
-				<img src={useBaseUrl("/img/google-cloud.webp")} alt="On-Premises" style={{ width: '100%' }} />
+				<img src={useBaseUrl("/img/graphics/google-cloud.webp")} alt="Google-Cloud" style={{ width: '100%' }} />
 				<Link class="button button--active button--primary " style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} to="https://docs.ciroh.org/docs/services/cloudservices/google%20cloud/"> CIROH Google Cloud Services</Link>
 			</div>
 		</div>

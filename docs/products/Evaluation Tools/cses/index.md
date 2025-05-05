@@ -2,9 +2,7 @@
 sidebar_position: 1
 title: "CSES"
 description: "Community Streamflow Evaluation System"
-tags:
-  - roset
-  - python
+tags: [Products, CIROH, CSES]
 ---
 
 # CSES

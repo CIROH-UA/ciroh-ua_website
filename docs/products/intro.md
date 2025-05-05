@@ -15,9 +15,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
           At CIROH, our team of researchers, hydrologists, and engineers is committed to advancing our understanding of hydrologic processes, improving operational hydrologic forecasting techniques and workflows, collaborating on community water modeling, converting forecasts into practical solutions, and utilizing water predictions to help guide decision-making processes.
         </p>
       </div>
-      <div className="hero-image" style={{ textAlign: 'left' }}>
-        <img src={useBaseUrl("/img/water_products.jpeg")} alt="Water Tools" style={{ width: '55%' }} />
-
+      <div className="hero-image" style={{ textAlign: 'center' }}>
+        <img src={useBaseUrl("/img/graphics/water_products.png")} alt="Water Tools" style={{ width: '50%' }} />
       </div>
     </div>
 </div>

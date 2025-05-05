@@ -11,7 +11,7 @@ const config = {
   baseUrl: baseUrl,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/docuhub-logo.png",
+  favicon: "img/logos/docuhub.png",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -97,7 +97,7 @@ const config = {
         title: "CIROH DocuHub",
         logo: {
           alt: "CIROH Logo",
-          src: "img/docuhub-logo.png",
+          src: "img/logos/docuhub.png",
         },
         items: [
           { to: "blog", label: "Blog", position: "right" },

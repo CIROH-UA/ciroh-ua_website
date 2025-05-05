@@ -15,9 +15,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
           In the following sections, we provide some practical guidance for CIROH researchers designed to help them meet the terms and conditions of CIROH’s Data, Code, and Infrastructure Policy, as discussed above, for different types of research products. Each section is focused on providing guidlines and recommendations for data, code, and infrastructure use.
         </p>
       </div>
-      <div className="hero-image" style={{ textAlign: 'left' }}>
-        <img src={useBaseUrl("/img/policies_best_practices.png")} alt="Policies and Best Practices Image" style={{ width: '55%' }} />
-
+      <div className="hero-image" style={{ textAlign: 'center' }}>
+        <img src={useBaseUrl("/img/graphics/policies_best_practices.png")} alt="Policies" style={{ width: '50%' }} />
       </div>
     </div>
 </div>

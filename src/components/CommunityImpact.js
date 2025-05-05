@@ -20,25 +20,25 @@ export default function CommunityImpact() {
     {
       title: "AWS Projects",
       count: 24,
-      imageSrc: useBaseUrl("/img/aws-logo.svg"),
+      imageSrc: useBaseUrl("/img/logos/corp/aws-black.svg"),
       users:60
     },
     {
       title: "GCP and JupyterHub Projects",
       count: 3,
-      imageSrc: useBaseUrl("/img/google-cloud.jpg"),
+      imageSrc: useBaseUrl("/img/logos/corp/google-cloud.jpg"),
       users: 171
     },
     {
       title: "On-premise HPC Projects",
       count: 20,
-      imageSrc: useBaseUrl("/img/pantarhei-logo.jpg"),
+      imageSrc: useBaseUrl("/img/logos/pantarhei.jpg"),
       users: 50
     },
     {
       title: "NSF ACCESS Allocations Projects",
       count: 7,
-      imageSrc: useBaseUrl("/img/nsf-logo.png"),
+      imageSrc: useBaseUrl("/img/logos/nsf-logo.png"),
       users:27
     }
   ];
@@ -58,7 +58,7 @@ export default function CommunityImpact() {
             </span>
           </div>
           {/* <div className="hero-image">
-            <img src="img/docuhub-logo.png" alt="Logo" style={{ maxWidth: '15%' }} />
+            <img src="img/logos/docuhub.png" alt="Logo" style={{ maxWidth: '15%' }} />
           </div> */}
         </div>
       </div>

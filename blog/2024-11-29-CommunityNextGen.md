@@ -5,7 +5,7 @@ slug: November Monthly Blog Update
 authors: arpita
 tags: [Blog, Monthly Update, CIROH, NGIAB, National Water Model, NextGen Datastream, Singularity, HPC, TEEHR]
 hide_table_of_contents: false
-image: ../../img/NGIABLogoWithoutText-Transparant.png
+image: ../../img/logos/ngiab.png
 ---
 
 # NextGen In A Box: November 2024 Release Updates

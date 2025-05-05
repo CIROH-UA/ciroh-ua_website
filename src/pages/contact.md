@@ -7,7 +7,7 @@ tags: [CIROH, DocuHub]
 import Link from "@docusaurus/Link";
 
 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-  <img src="/img/docuhub-logo.png" alt="DocuHub Logo" width="80" style={{ marginLeft: '-100px', marginBottom: '0' }} />
+  <img src="/img/logos/docuhub.png" alt="DocuHub Logo" width="80" style={{ marginLeft: '-100px', marginBottom: '0' }} />
   <h1>Contact Us</h1>
 </div>
 

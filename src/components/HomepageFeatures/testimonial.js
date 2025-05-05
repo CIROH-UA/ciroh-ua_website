@@ -27,7 +27,8 @@ export default function ResearcherTestimonials() {
             name: "Gio",
             initial: "G",
             quote: "What I like the most about using docuhub is that it is easy to contribute to the documentation when I update or want to add my research work. Also, I like the idea that I can contribute with blogs and tutorials depending on the needs of the community",
-            date: "April 2025"
+            date: "April 2025",
+            image: "https://ca.slack-edge.com/T03UUB7CE83-U057VCZQWRW-fe48d8f10837-192"
         },
         {
             name: "Dr. Shahab Alam",

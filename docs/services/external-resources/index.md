@@ -17,13 +17,12 @@ CIROH recognizes the importance of leveraging external resources to enhance our 
 **ACCESS** is a program established and funded by the National Science Foundation to help researchers and educators, with or without supporting grants, to utilize the nation’s advanced computing systems and services – at no cost.
 
 
-
 <section class="bsb-cta-2 py-5">
       <div class="container" >
         <div
           class="card rounded-3 overflow-hidden text-center bsb-overlay"
           style={{
-            backgroundImage: `url(${useBaseUrl('/img/graphics/access-resource.jpg')})`,
+            backgroundImage: "url(" + useBaseUrl("/img/graphics/access-resource.jpg") + ")",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "local",

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, RefObject } from "react";
+import React, { useState, useEffect, useRef, RefObject } from "react";
 
 
 /**
@@ -67,4 +67,69 @@ export function useResizeTuple(ref) {
     }, [ref]);
 
     return size;
+}
+
+/**
+ * @name visibleOnce
+ * @description A custom hook that updates only when the component is visible in the viewport for the first time.
+ * @param {RefObject} ref - The ref of the component.
+ * @returns {boolean} Whether the component is visible in the viewport.
+ */
+export function visibleOnce(ref) {
+    const [success, setSuccess] = useState(false);
+    const visibleFraction = useObserveFraction(ref, true);
+    useEffect(() => {
+        if (success) {
+            return;
+        }
+        if (visibleFraction > 0) {
+            setSuccess(true);
+        }
+    }, [visibleFraction]);
+    return success;
+}
+
+
+/**
+ * @param {Object} props - The props object.
+ * @param {React.ReactNode} props.children - The children to render.
+ * @description Only renders the children when they are visible in the viewport for the first time.
+ * @returns {JSX.Element} The resulting JSX element.
+ * @example
+ * <LazyLoader>
+ *   <MyComponent />
+ * </LazyLoader>
+ */
+export function LazyLoader({ children }) {
+    const [isVisible, setIsVisible] = useState(false);
+    const ref = useRef(null);
+    const success = visibleOnce(ref);
+    useEffect(() => {
+        if (success) {
+            setIsVisible(true);
+        }
+    }, [success]);
+    return (
+        <div ref={ref} style={{ width: "100%", height: "100%" }}>
+            {isVisible ? children : null}
+        </div>
+    );
+}
+
+/**
+ * @param {Object} props - The props object.
+ * @param {string} [props.msg] - Message to send to the console on load.
+ * @description A test component that announces itself to the console whenever it is loaded.
+ * @returns {JSX.Element} The resulting JSX element.
+ * @example
+ * <LoudLoader msg="Hello World!" />
+ * // This will log "Hello World!" to the console when the component is loaded.
+ */
+export function LoudLoader({ msg }) {
+    console.log(msg);
+    return (
+        <div>
+            <p>LoudLoader: {msg}</p>
+        </div>
+    );
 }

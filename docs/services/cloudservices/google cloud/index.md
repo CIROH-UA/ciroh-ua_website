@@ -57,6 +57,14 @@ Please refer to [this link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?
 
 ---
 
+## Google Cloud Blog
+
+Stay up-to-date on the latest Google Cloud news and announcements by visiting the official Google Cloud Blog:
+
+<Link class="button button--active button--primary" to="https://cloud.google.com/blog"> Google Cloud Blog</Link>
+
+---
+
 ## Help and Support
 
 - Email UA's CIROH Cloud Team: ciroh-it-admin@ua.edu 

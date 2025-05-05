@@ -59,6 +59,14 @@ Please refer to [this link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?
 
 ---
 
+## AWS News Blog
+
+Stay up-to-date on the latest AWS news and announcements by visiting the official AWS News Blog:
+
+<Link class="button button--active button--primary" to="https://aws.amazon.com/blogs/aws/"> AWS News Blog</Link>
+
+---
+
 ## Help and Support
 
 - Email UA's CIROH Cloud Team: ciroh-it-admin@ua.edu 

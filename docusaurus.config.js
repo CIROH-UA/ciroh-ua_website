@@ -91,7 +91,7 @@ const config = {
         // ... other stylesheets
       ],
       navbar: {
-        title: "CIROH DocuHub",
+        title: "DocuHub",
         logo: {
           alt: "CIROH Logo",
           src: "img/docuhub-logo.png",
@@ -128,7 +128,7 @@ const config = {
               {
                 type: "doc",
                 docId: "policies/intro",
-                label: "Policies and Best Practices",
+                label: "Policies",
               },
             ]
           },
@@ -142,12 +142,6 @@ const config = {
           {
             href: "https://portal.ciroh.org/", // Research portal URL
             label: "Portal",
-            position: "right",
-          },
-      
-          {
-            href: "https://forms.office.com/r/5ww7qRWwwf",
-            label: "Feedback",
             position: "right",
           }
         ],
@@ -169,6 +163,10 @@ const config = {
               {
                 label: 'Contribute',
                 href: '/docs/contribute'
+              },
+              {
+                label: 'Feeback',
+                href: 'https://forms.office.com/r/5ww7qRWwwf'
               },
               {
                 label: 'CIROH Portal',

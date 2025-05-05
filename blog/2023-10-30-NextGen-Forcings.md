@@ -3,7 +3,7 @@ title: NextGen Framework Forcings
 slug: NextGen Forcings
 authors: jordan
 image: https://github.com/CIROH-UA/ngen-datastream/raw/main/docs/gifs/T2D_2_TMP_2maboveground_cali.gif
-tags: [nextgen]
+tags: [NGIAB, NextGen Datastream, National Water Model, Blog, CIROH]
 hide_table_of_contents: false
 ---
 

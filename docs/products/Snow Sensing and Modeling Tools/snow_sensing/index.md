@@ -2,9 +2,7 @@
 sidebar_position: 3
 title: "Snow Sensing"
 description: "Snow Sensing"
-tags:
-  - Snow
-  - Sensing
+tags: [Products, CIROH, Snow Sensing]
 ---
 
 ---

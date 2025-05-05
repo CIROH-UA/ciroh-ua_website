@@ -2,11 +2,7 @@
 sidebar_position: 1
 title: "CIROH AWS Account"
 description: "AWS Research Cloud"
-tags:
-  - AWS
-  - Cloud
-  - EC2
-  - S3
+tags: [CIROH, Services, Cloud Services, AWS]
 ---
 
 import Link from '@docusaurus/Link'
@@ -60,6 +56,14 @@ Please refer to [this link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?
 - CIROH projects that anticipate exceeding the monthly budget for cloud services may request additional funds via the form below.
 
 <Link class="button button--active button--primary" to="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=exceeding_budget_request.md&title=">Exceeding Budget Request Form</Link>
+
+---
+
+## AWS News Blog
+
+Stay up-to-date on the latest AWS news and announcements by visiting the official AWS News Blog:
+
+<Link class="button button--active button--primary" to="https://aws.amazon.com/blogs/aws/"> AWS News Blog</Link>
 
 ---
 

@@ -2,13 +2,7 @@
 sidebar_position: 1
 title: "FIM as a Service"
 description: "FIM as a Service"
-tags:
-    - FIM as a service
-    - Operational flood model, 
-    - Global streamflow, 
-    - cloud computing,
-    - CONUS, 
-    - fluvial flood
+tags: [Products, Flood Inundation Mapping]
 ---
 
 import GitHubReadme from '@site/src/components/GitHubReadme';

@@ -1,9 +1,8 @@
 ---
 sidebar_position: 3
 title: "t-route: Tree-Based Channel Routing"
-description: "t-route repo"
-tags: 
-- t-route
+description: "Introduction to t-route"
+tags: [Education, National Water Model, NOAA]
 ---
 
 # t-route: Tree-Based Channel Routing

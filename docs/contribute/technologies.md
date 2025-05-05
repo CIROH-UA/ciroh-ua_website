@@ -2,8 +2,7 @@
 sidebar_position: 5
 title: "DocuHub technologies"
 description: "Learn more about the technologies that make up DocuHub."
-tags:
-  - contribute
+tags: [CIROH, DocuHub, Contribute]
 ---
 
 import Link from '@docusaurus/Link'

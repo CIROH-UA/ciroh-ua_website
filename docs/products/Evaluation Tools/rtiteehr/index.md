@@ -2,9 +2,7 @@
 sidebar_position: 7
 title: "TEEHR"
 description: "Tools for Exploratory Evaluation in Hydrologic Research"
-tags:
-  - teehr
-  - python
+tags: [Products, National Water Model, TEEHR, CIROH]
 ---
 
 # TEEHR

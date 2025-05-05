@@ -3,9 +3,9 @@ title: "CIROH Science Meeting 2024"
 description: "October Monthly Blog Update"
 slug: October Monthly Blog Update
 authors: arpita
-tags: [ciroh, science, conference, impact]
+tags: [Blog, Monthly Update, CIROH, Conference]
 hide_table_of_contents: false
-image: /img/2024CSM_GroupPano.png
+image: /img/blog/2024-10-sci-meet/2024CSM_GroupPano.png
 ---
 
 The 2024 CIROH Science Meeting was a huge success, bringing together researchers, federal partners, and consortium members both in person and virtually. We're excited to share the valuable resources from this year's meeting with the wider CIROH community.
@@ -77,25 +77,25 @@ The success of the 2024 Science Meeting reinforces CIROH's role in shaping the f
 
 ## Photo Gallery
 <div className="hero-image" style={{ textAlign: 'center' }}>
-    <img src="/img/2024CSM_GroupPano.png" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
+    <img src="/img/blog/2024-10-sci-meet/2024CSM_GroupPano.png" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
 </div>
 <div className="hero-image" style={{ textAlign: 'center' }}>
-    <img src="/img/2024CSM_WomenOfCIROH.png" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
+    <img src="/img/blog/2024-10-sci-meet/2024CSM_WomenOfCIROH.png" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
 </div>
 <div className="hero-image" style={{ textAlign: 'center' }}>
-    <img src="/img/science-meeting2024-2.jpeg" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
+    <img src="/img/blog/2024-10-sci-meet/science-meeting2024-2.jpeg" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
 </div>
 <div className="hero-image" style={{ textAlign: 'center' }}>
-    <img src="/img/science-meeting2024-3.jpeg" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
+    <img src="/img/blog/2024-10-sci-meet/science-meeting2024-3.jpeg" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
 </div>
 <div className="hero-image" style={{ textAlign: 'center' }}>
-    <img src="/img/science-meeting2024-1.jpeg" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
+    <img src="/img/blog/2024-10-sci-meet/science-meeting2024-1.jpeg" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
 </div>
 <div className="hero-image" style={{ textAlign: 'center' }}>
-    <img src="/img/science-meeting2024-4.jpeg" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
+    <img src="/img/blog/2024-10-sci-meet/science-meeting2024-4.jpeg" alt="CIROH 2024 Science Meeting" style={{ width: '100%', marginBottom: '2rem' }} />
 </div>
 <div className="hero-image" style={{ textAlign: 'center' }}>
-    <img src="/img/science-meeting2024-5.jpeg" alt="CIROH 2024 Science Meeting" style={{ width: '100%'}} />
+    <img src="/img/blog/2024-10-sci-meet/science-meeting2024-5.jpeg" alt="CIROH 2024 Science Meeting" style={{ width: '100%'}} />
 </div>
 
 

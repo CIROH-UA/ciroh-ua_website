@@ -3,9 +3,9 @@ title: "AWRA 2024 Spring Conference"
 description: "AWRA 2024 Spring Conference"
 slug: AWRA 2024 Spring Conference
 authors: arpita
-tags: [awra, tuscaloosa, conference, water resources, modeling]
+tags: [Blog, Conference, Alabama Water Institute, CIROH, NGIAB, NextGen Datastream, National Water Model]
 hide_table_of_contents: false
-image: /img/awra2024.jpeg
+image: /img/blog/2024-04-AWRA/awra2024.jpeg
 ---
 
 **AWRA 2024 Spring Conference**
@@ -22,19 +22,19 @@ CIROH CyberInfrastructure team presented on these topics:
 CIROH team member **James Halgren** presented the work on **"Accelerating Community Contribution to the Next Generation Water Resources Modeling Framework." The presentation focused on building and sharing a continuous research data stream using the NextGen Water Resources Modeling Framework with NextGen IN A Box (NGIAB).** This project, a collaboration with Lynker members, showcases the potential for open-source tools and community-driven efforts to advance water resources modeling and research.
 
 <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/awra2024.jpeg" alt="AWRA2024Spring" style={{ width: '80%' }} />
+        <img src="/img/blog/2024-04-AWRA/awra2024.jpeg" alt="AWRA2024Spring" style={{ width: '80%' }} />
 </div>
 
 CIROH team member **Sepehr Karimi** presented the work on **"Creating a community dataset for high-speed national water model data access"**
 
 <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/AWRA2024-2.png" alt="AWRA2024Spring-2" style={{ width: '80%' }} />
+        <img src="/img/blog/2024-04-AWRA/AWRA2024-2.png" alt="AWRA2024Spring-2" style={{ width: '80%' }} />
 </div>
 
 CIROH team member **Shahab Alam** presented the work on **"Model structure selection for the flood and drought predictions using the NextGen Framework based on the extreme event simulations"**
 
 <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/AWRA2024-3.png" alt="AWRA2024Spring-3" style={{ width: '80%' }} />
+        <img src="/img/blog/2024-04-AWRA/AWRA2024-3.png" alt="AWRA2024Spring-3" style={{ width: '80%' }} />
 </div>
 
 These presentations showcased CIROH's expertise in open-source tools, community-driven efforts, and water resources modeling. The team's contributions sparked insightful discussions and potential collaborations for future projects.

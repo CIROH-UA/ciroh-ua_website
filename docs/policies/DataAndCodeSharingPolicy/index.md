@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: "Data and Code Sharing"
+tags: [CIROH, Policies]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
@@ -15,7 +16,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
         </p>
       </div>
       <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src={useBaseUrl("/img/datasharing.jpeg")} alt="Water Tools" style={{ width: '50%' }} />
+        <img src={useBaseUrl("/img/graphics/datasharing.jpeg")} alt="Water Tools" style={{ width: '50%' }} />
       </div>
     </div>
 </div>

@@ -2,11 +2,7 @@
 sidebar_position: 2
 title: "Obtaining an Account"
 description: "Obtain an account on Wukong"
-tags:
-  - HPC
-  - On-Premises
-  - Account
-  - Wukong
+tags: [CIROH, Services, On-Premises Services, Wukong, HPC]
 ---
 
 Wukong cluster is accessible to the research community of the Cooperative Institute for Research to Operations in Hydrology (CIROH). 

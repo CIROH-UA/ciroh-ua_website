@@ -3,9 +3,9 @@ title: "Google Cloud Next 2025: Innovation at Scale ✨"
 description: "Google Cloud Next 2025"
 slug: april-2025-update
 authors: [arpita]
-tags: [ciroh, cloudcomputing, googlecloud, AI, infrastructure]
+tags: [Blog, Conference, Google Cloud, Google Cloud Next]
 hide_table_of_contents: false
-image: /img/ngiab-march-blog.png
+image: /img/blog/2025-03-awi/ngiab-stack.png
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl"

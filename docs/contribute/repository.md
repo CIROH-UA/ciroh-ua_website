@@ -2,8 +2,7 @@
 sidebar_position: 2
 title: "Working with the DocuHub repository"
 description: "Learn how to submit pull requests to DocuHub and test changes locally."
-tags:
-  - contribute
+tags: [CIROH, DocuHub, Contribute]
 ---
 
 # Working with the DocuHub repository

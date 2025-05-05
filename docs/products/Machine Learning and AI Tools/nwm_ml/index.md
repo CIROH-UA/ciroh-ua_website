@@ -2,10 +2,7 @@
 sidebar_position: 13
 title: "NWM-ML"
 description: "National Water Model - Machine Learning"
-tags:
-  - NWM
-  - ML
-  - python
+tags: [Products, CIROH, National Water Model]
 ---
 
 import GitHubReadme from '@site/src/components/GitHubReadme';

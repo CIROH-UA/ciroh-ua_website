@@ -1,7 +1,6 @@
 ---
 title: "Contributing to CIROH DocuHub"
 description: "This page has been moved."
-tags:
 ---
 
 import { Redirect } from 'react-router-dom'

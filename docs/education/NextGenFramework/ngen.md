@@ -1,9 +1,8 @@
 ---
 sidebar_position: 2
 title: "ngen Model Framework"
-description: "ngen repo"
-tags: 
-- ngen
+description: "Introduction to the ngen Framework"
+tags: [Education, National Water Model, NOAA]
 ---
 
 ngen: Next Generation Water Modeling Engine and Framework Prototype

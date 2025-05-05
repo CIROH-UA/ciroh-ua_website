@@ -2,10 +2,7 @@
 sidebar_position: 1
 title: Education and Training 
 description: "Educational resouces for water resouces professionals and students"
-tags:
-- education
-- training
-- water resources
+tags: [Education]
 ---
 # Education and Training
 

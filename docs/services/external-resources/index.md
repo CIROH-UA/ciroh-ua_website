@@ -1,6 +1,7 @@
 ---
 sidebar_position: 5
 title: "External Resources"
+tags: [Services, NSF Access, NSF, HPC]
 ---
 import "/src/components/HomepageFeatures/bootstrap.min.css";
 import "/src/components/HomepageFeatures/cta-2.css";
@@ -22,7 +23,7 @@ CIROH recognizes the importance of leveraging external resources to enhance our 
         <div
           class="card rounded-3 overflow-hidden text-center bsb-overlay"
           style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url('/img/access-resource.jpg')",  // camelCase
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),url('/img/graphics/access-resource.jpg')",  // camelCase
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundAttachment: "local",

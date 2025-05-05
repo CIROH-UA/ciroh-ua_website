@@ -2,12 +2,7 @@
 sidebar_position: 3
 title: "Anvil"
 description: "Accessing and Using Anvil"
-tags:
-  - NSF
-  - Anvil
-  - HPC
-  - Account
-  - Access
+tags: [Services, NSF Access, NSF, HPC, Purdue University, Anvil]
 ---
 
 import Link from '@docusaurus/Link'

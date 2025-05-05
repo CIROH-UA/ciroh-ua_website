@@ -2,11 +2,7 @@
 sidebar_position: 3
 title: "CIROH JupyterHub"
 description: "2i2c JupyterHub is a cloud-based JupyterHub environment specifically designed for hydrological researchers. It is powered by 2i2c JupyterHub, a cloud-based JupyterHub environment specifically on Google Cloud"
-tags:
-  - 2i2c
-  - JupyterHub
-  - GCP
-  - notebook
+tags: [CIROH, Services, Cloud Services, JupyterHub, 2i2c, Google Cloud]
 ---
 
 import Link from '@docusaurus/Link'
@@ -20,6 +16,15 @@ CIROH, in collaboration with 2i2c, offers a dedicated JupyterHub environment on 
 <p align="center">
 <img src={useBaseUrl("/img/2i2c.png")} alt="2i2c Image" style={{'width':'80%', 'height':'50%'}}/>
 </p>
+
+## Video Tutorial
+
+Watch this video to find out how to access CIROH Jupyterhub and how to launch and use CIROH Jupyterhub with HydroShare:
+
+<div style={{textAlign: 'center'}}>
+  <iframe width="791" height="421" src="https://www.youtube.com/embed/DnbxhLdb6TM" title="CIROH Jupyterhub" style={{border: 'none'}} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 
 ## **Benefits of CIROH Cloud's 2i2c JupyterHub:**
 

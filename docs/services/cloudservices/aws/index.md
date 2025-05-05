@@ -2,11 +2,7 @@
 sidebar_position: 1
 title: "CIROH AWS Account"
 description: "AWS Research Cloud"
-tags:
-  - AWS
-  - Cloud
-  - EC2
-  - S3
+tags: [CIROH, Services, Cloud Services, AWS]
 ---
 
 import Link from '@docusaurus/Link'

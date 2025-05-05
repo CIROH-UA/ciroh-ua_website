@@ -2,11 +2,7 @@
 sidebar_position: 3
 title: "Documentation and Tutorial"
 description: "AWS documentations"
-tags:
-  - aws
-  - documentation
-  - tutorial
-  - AWS
+tags: [CIROH, Services, Cloud Services, AWS, Education]
 ---
 
 

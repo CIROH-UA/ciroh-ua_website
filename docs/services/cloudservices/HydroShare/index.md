@@ -2,12 +2,7 @@
 sidebar_position: 4
 title: "HydroShare and CIROH JupyterHub Integration"
 description: "HydroShare and CIROH JupyterHub Integration"
-tags:
-  - 2i2c
-  - JupyterHub
-  - GCP
-  - notebook
-  - hydroshare
+tags: [CIROH, Services, Cloud Services, HydroShare, 2i2c, JupyterHub]
 ---
 
 import Link from '@docusaurus/Link'
@@ -43,3 +38,17 @@ Users now have the capability to directly launch and execute computational noteb
 <p align="center">
 <img src={useBaseUrl("/img/hydroshare-2.png")} alt="HydroShare 2i2c Image" style={{'width':'80%', 'height':'50%'}}/>
 </p>
+
+## Video Tutorial
+
+Watch this video to find out how to access CIROH Jupyterhub and how to launch and use CIROH Jupyterhub with HydroShare:
+
+<div style={{textAlign: 'center'}}>
+  <iframe width="791" height="421" src="https://www.youtube.com/embed/DnbxhLdb6TM" title="CIROH Jupyterhub" style={{border: 'none'}} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+:::info
+To learn more about CIROH Jupyterhub and gain access go to: [CIROH JupyterHub Documentation](/docs/services/cloudservices/ciroh%20jupyterhub/)
+:::
+
+&nbsp;&nbsp;&nbsp;&nbsp;To join a group and gain access to the CIROH HydroShare community go to: [HydroShare Communities](https://www.hydroshare.org/communities/)

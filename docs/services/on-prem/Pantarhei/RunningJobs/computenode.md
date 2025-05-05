@@ -1,12 +1,8 @@
 ---
 sidebar_position: 1
 title: "Accessing the Compute Nodes"
-description: ""
-tags:
-  - HPC
-  - On-Premises
-  - Slurm
-  - Pantarhei
+description: "Accessing compute notes in Pantarhei"
+tags: [CIROH, Services, On-Premises Services, Pantarhei, HPC]
 ---
 
 Pantarhei employs the [Slurm Workload Manager](https://slurm.schedmd.com/documentation.html) for the purpose of job scheduling and management. Utilizing Slurm, a user initiates a request for resources and submits a job to a designated queue. Subsequently, the system undertakes the task of extracting jobs from the queues, assigning the requisite compute nodes, and executing the submitted tasks. Although users typically access the Slurm job scheduler by SSH-ing to a Pantarhei login node, it is imperative to emphasize that the recommended practice entails utilizing Slurm to submit work as a job, as opposed to executing computationally intensive tasks directly on a login node. Given that all users share the login nodes, running anything beyond minimal test jobs can adversely affect the collective ability of users to effectively utilize Pantarhei resources.

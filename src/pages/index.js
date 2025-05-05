@@ -16,17 +16,21 @@ function HomepageHeader() {
         <div className="hero-flex-container">
           <div className="hero-text">
             <h1 className="hero__title">{siteConfig.title}</h1>
-            <span style={{ fontSize: 20 }}>
-              Welcome to <b>CIROH's DocuHub </b> – a carefully curated central repository
-              providing in-depth technical insights into <b>CIROH's projects, services, and documentation. </b>
-              This invaluable resource is designed to empower team members, collaborators, 
-              and community stakeholders with the knowledge needed to enhance their understanding and contributions. 
-              Explore DocuHub to deepen your understanding and actively engage in our collaborative learning culture.
-            </span>
+            <div className={styles.flexContainer}>
+            <div className={styles.flexitem1}>
+              <img src="img/logos/ciroh-dark.png" alt="CIROH Logo" />
+            </div>
+            <div className={styles.flexitem1}>
+              <p style={{fontSize: 20}}>
+                Welcome to <b>CIROH's DocuHub</b> – a carefully curated central repository
+                providing in-depth technical insights into <b>CIROH's projects, services, and documentation.</b>
+                This invaluable resource is designed to empower team members, collaborators, 
+                and community stakeholders with the knowledge needed to enhance their understanding and contributions.
+              </p>
+            </div>
           </div>
-          {/* <div className="hero-image">
-            <img src="img/logos/docuhub.png" alt="Logo" style={{ maxWidth: '15%' }} />
-          </div> */}
+          </div>
+         
         </div>
       </div>
     </div>

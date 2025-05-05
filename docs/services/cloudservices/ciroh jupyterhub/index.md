@@ -12,7 +12,7 @@ tags:
 import Link from '@docusaurus/Link'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# CIROH JupyterHub
+# CIROH-2i2c JupyterHub
 ## Powered by 2i2c JupyterHub on Google Cloud
 
 CIROH, in collaboration with 2i2c, offers a dedicated JupyterHub environment on Google Cloud specifically designed for hydrological researchers. 2i2c is a cloud service provider specializing in open-source infrastructure for research and development.

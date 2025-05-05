@@ -79,11 +79,11 @@ hr.divider-feature {
 /* Headings */
 h3.h4 {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: var(--ifm-card-color);
 }
 
 /* Description text */
 .text-muted-feature {
-    color: #ffffff;
+    color: var(--ifm-card-color);
     font-size: 1rem;
 }

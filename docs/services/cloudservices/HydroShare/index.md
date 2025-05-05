@@ -49,7 +49,7 @@ Users now have the capability to directly launch and execute computational noteb
 Watch this video to find out how to access CIROH Jupyterhub and how to launch and use CIROH Jupyterhub with HydroShare:
 
 <div style={{textAlign: 'center'}}>
-  <iframe width="791" height="421" src="https://www.youtube.com/embed/DnbxhLdb6TM" title="CIROH Jupyterhub" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="791" height="421" src="https://www.youtube.com/embed/DnbxhLdb6TM" title="CIROH Jupyterhub" style={{border: 'none'}} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 :::info

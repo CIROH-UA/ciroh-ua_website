@@ -81,7 +81,7 @@ const config = {
         postsPerPage: "ALL", // Display all posts on a single page
         path: "release-notes", // Path to the blog posts
         routeBasePath: 'release-notes', // Slug for the blog
-        authorsMapPath: "authors.yaml", // Path to the authors' mapping file
+        //authorsMapPath: "authors.yaml", // Path to the authors' mapping file
       }
     ]
   ],

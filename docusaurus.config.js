@@ -69,7 +69,7 @@ const config = {
         authorsMapPath: "authors.yaml", // Path to the authors' mapping file
         blogSidebarCount: 'ALL',
       }
-    ], 
+    ] 
   ],
 
   themeConfig:

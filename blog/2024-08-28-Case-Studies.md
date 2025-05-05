@@ -5,8 +5,9 @@ slug: August Monthly Blog Update
 authors: arpita
 tags: [Blog, CIROH, Monthly Update, 2i2c, AWS, Google Cloud, NGIAB, JupyterHub, HPC, NextGen Datastream, Cloud Services, National Water Model, TEEHR]
 hide_table_of_contents: false
-image: /img/blog/2024-08-case-studies/ngen-datastream-august-blog.jpg
+image: img/blog/2024-08-case-studies/ngen-datastream-august-blog.jpg
 ---
+import useBaseUrl from "@docusaurus/useBaseUrl"
 
 This month, we are excited to showcase two case studies that utilized our cyberinfrastructure tools and services. These case studies demonstrate how CIROH's cyberinfrastructure is being utilized to support hydrological research and operational advancements.
 
@@ -14,7 +15,7 @@ This month, we are excited to showcase two case studies that utilized our cyberi
 
 ## 1. ngen-datastream and NGIAB
 <span className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/blog/2024-08-case-studies/ngen-datastream-august-blog.jpg" alt="ngen-datastream image" style={{ width: '80%' }} />
+        <img src={useBaseUrl("/img/blog/2024-08-case-studies/ngen-datastream-august-blog.jpg")} alt="ngen-datastream image" style={{ width: '80%' }} />
 </span>
 <!-- truncate -->
 ### Overview:
@@ -47,7 +48,7 @@ The goal of this project is to investigate, design, and build a prototype hydrol
 
 
 <span className="hero-image" style={{ textAlign: 'center' }}>
-        <img src="/img/blog/2024-08-case-studies/teehr-image.png" alt="teehr image" style={{ width: '40%' }} />
+        <img src={useBaseUrl("/img/blog/2024-08-case-studies/teehr-image.png")} alt="teehr image" style={{ width: '40%' }} />
 </span>
 
 ### Contribution to CIROH: 

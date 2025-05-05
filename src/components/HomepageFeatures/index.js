@@ -373,7 +373,7 @@ export default function HomepageFeatures() {
           <div className="row">
             <Card
               title="NextGen In A Box"
-              image="img/NGIAB-logo.jpg"
+              image="img/logos/ngiab.png"
               description="Utilize NextGen In A Box (NGIAB) to locally run NextGen framework. Choose specific regions or basins for analysis, control input data, and modify confiurations, all within a containerized environment."
               link="/docs/products/Community%20Hydrologic%20Modeling%20Framework/nextgeninaboxDocker"
             />

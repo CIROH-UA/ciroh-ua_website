@@ -64,12 +64,14 @@ const config = {
     [
       './plugins/plugin-content-blog.js', 
       {
+        id: "Blog",
         blogTitle: "DocuHub blog!",
         blogDescription: "A DocuHub powered blog!",
         postsPerPage: "ALL", // Display all posts on a single page
         path: "blog", // Path to the blog posts
         authorsMapPath: "authors.yaml", // Path to the authors' mapping file
-        blogSidebarCount: 'ALL',
+        blogSidebarCount: "ALL",
+        blogSidebarTitle: "DocuHub Blog",
       }
     ],
 

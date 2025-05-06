@@ -91,15 +91,16 @@ const config = {
   ],
 
   customFields: {
-
     // Workaround to add descriptive text to blog sidebars.
     // Supports any number of blogs.
     // 
-    // The contents of html will be added below the title
-    // in the blog with the target ID.
+    // For each blog, the injector matches against the
+    // sidebar title. If it matches, the html segment
+    // will be inserted below the sidebar title.
     // 
-    // This approach is... pretty unfortunate, but the plug-in
-    // is locked down in ways that limit other approaches.
+    // This approach is somewhat hacky, but the blog
+    // plug-in locks down access to custom fields,
+    // so it's the best option available for now.
     blogSidebarInjection: [
       {
         sidebarTitle: "DocuHub Blog",

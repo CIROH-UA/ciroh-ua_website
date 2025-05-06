@@ -46,6 +46,7 @@ function BlogInjectionDesktop({sidebar}: Props) {
     if (entry.sidebarTitle === sidebar.title && typeof entry.html === 'string') {
       output = (
         <div 
+          // (Referenced from Docusaurus footer component.)
           // Developer provided the HTML, so assume it's safe.
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{__html: entry.html}}
@@ -73,7 +74,6 @@ function BlogSidebarDesktop({sidebar}: Props) {
         </div>
         <BlogInjectionDesktop
           sidebar={sidebar}
-          
         /> {/* Added 05/06/2025 */}
         <BlogSidebarContent
           items={items}

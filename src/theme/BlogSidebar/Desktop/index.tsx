@@ -35,7 +35,7 @@ function BlogInjectionDesktop({sidebar}: Props) {
   if (typeof siteConfig.customFields == 'object') {
     let customFields: any = siteConfig.customFields as any;
     if (Array.isArray(customFields.blogSidebarInjection)) {
-      blogSidebarInjection = customFields.blogSidebarInjection as [any];
+      blogSidebarInjection = customFields.blogSidebarInjection as any[];
     }
   }
   if (blogSidebarInjection == null) return (<></>);

@@ -64,12 +64,14 @@ const config = {
     [
       './plugins/plugin-content-blog.js', 
       {
+        id: "blog",
         blogTitle: "DocuHub blog!",
         blogDescription: "A DocuHub powered blog!",
         postsPerPage: "ALL", // Display all posts on a single page
         path: "blog", // Path to the blog posts
         authorsMapPath: "authors.yaml", // Path to the authors' mapping file
-        blogSidebarCount: 'ALL',
+        blogSidebarCount: "ALL",
+        blogSidebarTitle: "DocuHub Blog",
       }
     ],
 
@@ -87,6 +89,37 @@ const config = {
       }
     ]
   ],
+
+  customFields: {
+    // Workaround to add descriptive text to blog sidebars.
+    // Supports any number of blogs.
+    // 
+    // For each blog, the injector matches against the
+    // sidebar title. If it matches, the html segment
+    // will be inserted below the sidebar title.
+    // 
+    // This approach is somewhat hacky, but the blog
+    // plug-in locks down access to custom fields,
+    // so it's the best option available for now.
+    blogSidebarInjection: [
+      {
+        sidebarTitle: "DocuHub Blog",
+        html: `
+          <div style="font-size: 0.9rem; margin-bottom: 0.6rem; margin-right:1rem">
+            Exclusive content for researchers utilizing CIROH Cyberinfrastructure resources.
+            Share your insights, discoveries, and experiences with the hydrologic science community.
+          </div>
+          <div style="font-size: 0.9rem; margin-right:1rem">
+            This blog platform is dedicated to highlighting the innovative work of researchers who
+            have leveraged CIROH's computational tools and resources to advance water science.
+            Your stories help demonstrate the value of our shared infrastructure and inspire new
+            applications across the field.
+          </div>
+        `
+      },
+    ],
+
+  },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

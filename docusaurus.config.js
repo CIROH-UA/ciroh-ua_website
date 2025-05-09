@@ -285,6 +285,9 @@ const config = {
           },
         ],
         copyright: `
+          <div class="footer__attrib">
+            Developed with ❤️ by DocuHub Team at CIROH
+          </div>
           <div class="footer__funding">
             This research was supported by the Cooperative Institute for Research to Operations in Hydrology
             (CIROH) with funding under award NA22NWS4320003 from the NOAA Cooperative Institute Program.

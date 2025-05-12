@@ -1,5 +1,6 @@
 import React from 'react';
 import './teamMembers.css';
+import useBaseUrl from '@docusaurus/useBaseUrl'; 
 
 const team = [
     { name: "Arpita Patel", initial: "AP", role: "Enterprise Architect and DevOps Manager", image: "/img/teamMember1.png"},
@@ -20,7 +21,7 @@ const team = [
   {team.map((member, index) => (
     <div key={index} className="team-tile">
       {member.image ? (
-        <img src={member.image} alt={member.name} className="tile-avatar" />
+        <img src={useBaseUrl(member.image)} alt={member.name} className="tile-avatar" />
       ) : (
         <div className="tile-initials">{member.initial}</div>
       )}

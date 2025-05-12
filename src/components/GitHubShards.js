@@ -359,27 +359,6 @@ function RepoWorkflowsDiv({ org_name, repo_name, padding = null }) {
         }
         fetchWorkflows();
     }, [repoData]);
-    // let content; // Variable to store the JSX content
-
-    // if (rateError && rateError instanceof RateLimitError) {
-    //     content = rateError.asJSXElement();
-    // } else if (loading) {
-    //     content = <div>Loading...</div>;
-    // } else if (repoData === null) {
-    //     content = (
-    //         <div>
-    //             <p>Repository not found.</p>
-    //             <p>Found Repositories:</p>
-    //             <p>{JSON.stringify(Object.keys(RepoCache[AccessConfig.CIROH]))}</p>
-    //         </div>
-    //     );
-    // } else if (workflowsData === null) {
-    //     content = <div>Workflows not found.</div>;
-    // } else if (workflowsData.length === 0) {
-    //     content = <div>No workflows found for this repository.</div>;
-    // } else {
-    //     content = BuildRepoWorkflowsDiv(repoData, workflowsData);
-    // }
     let repoContent, workflowsContent;
     let didRepoError = (repoRateError && repoRateError instanceof RateLimitError);
     let didWorkflowsError = (workflowsRateError && workflowsRateError instanceof RateLimitError);

@@ -9,6 +9,7 @@ import styles from "./styles.module.css";
 import "./whyDocuhub.css";
 import Link from '@docusaurus/Link';
 import ResearcherTestimonials from './testimonial';
+import TeamMembers from './teamMembers';
 
 
 
@@ -510,6 +511,7 @@ export default function HomepageFeatures() {
                 </div>
             </div>
         </section>
+        <TeamMembers />
          <ResearcherTestimonials />
       <section
       className={`bsb-cta-2 py-5 ${styles.features}`}

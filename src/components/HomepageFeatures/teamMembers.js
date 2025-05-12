@@ -3,7 +3,7 @@ import './teamMembers.css';
 import useBaseUrl from '@docusaurus/useBaseUrl'; 
 
 const team = [
-    { name: "Arpita Patel", initial: "AP", role: "Enterprise Architect and DevOps Manager", image: "/img/teamMember1.png"},
+    { name: "Arpita Patel", initial: "AP", role: "DevOps Manager and Enterprise Architect", image: "/img/teamMember1.png"},
     { name: "Benjamin Lee", initial: "B", role: "DevOps Engineer", image: "/img/teamMember2.png" },
     { name: "Trupesh Patel", initial: "T", role: "Research Software Engineer", image: "/img/teamMember3.png"},
     { name: "Manjila Singh", initial: "M", role: "Graduate Research Assistant ", image: "/img/teamMember4.png"},

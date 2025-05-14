@@ -151,7 +151,7 @@ function BuildOrgDiv(organization, padding = null) {
         border: '1px solid var(--ifm-color-emphasis-500)',
         borderRadius: '25px',
         padding: '22px',
-        backgroundColor: 'var(--ifm-background-color)',
+        backgroundColor: '#ffffff',
         boxShadow: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
         transition: 'all 0.3s cubic-bezier(.25,.8,.25,1)',
     }
@@ -172,7 +172,7 @@ function BuildOrgDiv(organization, padding = null) {
                 />
                 <div>
                     <h2 style={{ margin: 0, color: 'var(--ifm-color-primary)', fontSize: '1.5rem' }}>{org_name}</h2>
-                    <p style={{ color: 'var(--ifm-color-emphasis-700)', margin: '5px 0 0 0' }}>{org_desc}</p>
+                    <p style={{ color: 'grey', margin: '5px 0 0 0' }}>{org_desc}</p>
                 </div>
             </div>
             <Link 
@@ -370,21 +370,22 @@ function BuildRepoWorkflowsDiv(repository, workflows_0, isExpanded, setIsExpande
                 onClick={() => setIsExpanded(!isExpanded)}
                 style={{
                     display: 'inline-block',
-                    padding: '6px 18px',
-                    backgroundColor: '#19A7CE',
+                    padding: '6px 16px',
+                    backgroundColor: '#6c757d',
                     color: '#ffffff',
                     textDecoration: 'none',
-                    borderRadius: '11px',
+                    borderRadius: '2px',
                     transition: 'background-color 0.2s',
                     border: 'none',
                     cursor: 'pointer',
                     marginBottom: '20px',
+                    marginLeft: '2px',
                     fontSize: '1rem',
                     fontWeight: 'normal',
-                    lineHeight: '1.5'
+                    fontFamily: 'inherit',
                 }}
-                onMouseOver={(e) => e.target.style.backgroundColor = '#217a96'}
-                onMouseOut={(e) => e.target.style.backgroundColor = '#19A7CE'}
+                onMouseOver={(e) => e.target.style.backgroundColor = '#5a6268'}
+                onMouseOut={(e) => e.target.style.backgroundColor = '#6c757d'}
             >
                 Show Workflows
             </button>

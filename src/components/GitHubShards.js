@@ -172,7 +172,7 @@ function BuildOrgDiv(organization, padding = null) {
                 />
                 <div>
                     <h2 style={{ margin: 0, color: 'var(--ifm-color-primary)', fontSize: '1.5rem' }}>{org_name}</h2>
-                    <p style={{ color: 'var(--ifm-color-emphasis-700)', margin: '5px 0 0 0' }}>{org_desc}</p>
+                    <p style={{ color: 'grey', margin: '5px 0 0 0' }}>{org_desc}</p>
                 </div>
             </div>
             <Link 

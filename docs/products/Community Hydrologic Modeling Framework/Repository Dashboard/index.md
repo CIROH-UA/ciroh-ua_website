@@ -19,7 +19,6 @@ import Details from '@theme/Details';
 
 :::note
 
-This page is incomplete and will be updated in the future.
 
 :::
 

@@ -44,14 +44,32 @@ function BuildRepoDiv(repository, padding = null) {
     const repo_desc = repository.description;
     const repo_url = repository.html_url;
     var outer_style = {
-        border: '1px solid black',
+        marginBottom: '0px',
+        backgroundColor: 'var(--ifm-background-color)',
+        transition: 'all 0.3s cubic-bezier(.25,.8,.25,1)',
     }
-    outer_style.padding = (padding) ? padding : '3px';
     return (
         <div style={outer_style}>
-            <h2>{repo_name}</h2>
-            <p>{repo_desc}</p>
-            <Link href={repo_url} target="_blank" rel="noopener noreferrer">View Repository</Link>
+            <h2 style={{ marginTop: 0, color: 'var(--ifm-color-primary)', fontSize: '1.5rem' }}>{repo_name}</h2>
+            <p style={{ color: 'var(--ifm-color-emphasis-900)', marginBottom: '15px' }}>{repo_desc}</p>
+            <Link 
+                href={repo_url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{
+                    display: 'inline-block',
+                    padding: '6px 18px',
+                    backgroundColor: '#19A7CE',
+                    color: '#ffffff',
+                    textDecoration: 'none',
+                    borderRadius: '11px',
+                    transition: 'background-color 0.2s',
+                }}
+                onMouseOver={(e) => e.target.style.backgroundColor = '#217a96'}
+                onMouseOut={(e) => e.target.style.backgroundColor = '#19A7CE'}
+            >
+                View Repository
+            </Link>
         </div>
     );
 }
@@ -130,15 +148,51 @@ function BuildOrgDiv(organization, padding = null) {
     const org_url = organization.html_url;
     const org_avatar = organization.avatar_url;
     var outer_style = {
-        border: '1px solid black',
+        border: '1px solid var(--ifm-color-emphasis-500)',
+        borderRadius: '25px',
+        padding: '22px',
+        backgroundColor: 'var(--ifm-background-color)',
+        boxShadow: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
+        transition: 'all 0.3s cubic-bezier(.25,.8,.25,1)',
     }
-    outer_style.padding = (padding) ? padding : '3px';
     return (
         <div style={outer_style}>
-            <h2>{org_name}</h2>
-            <p>{org_desc}</p>
-            <p><img className="image" crossOrigin="anonymous" src={org_avatar} alt="Organization Avatar" style={{ width: '100px', height: '100px' }} /></p>
-            <Link href={org_url} target="_blank" rel="noopener noreferrer">View Organization</Link>
+            <div style={{ display: 'flex', alignItems: 'center', marginBottom: '15px' }}>
+                <img 
+                    className="image" 
+                    crossOrigin="anonymous" 
+                    src={org_avatar} 
+                    alt="Organization Avatar" 
+                    style={{ 
+                        width: '80px', 
+                        height: '80px', 
+                        marginRight: '15px',
+                        marginBottom: '10px',
+                    }} 
+                />
+                <div>
+                    <h2 style={{ margin: 0, color: 'var(--ifm-color-primary)', fontSize: '1.5rem' }}>{org_name}</h2>
+                    <p style={{ color: 'var(--ifm-color-emphasis-700)', margin: '5px 0 0 0' }}>{org_desc}</p>
+                </div>
+            </div>
+            <Link 
+                href={org_url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{
+                    display: 'inline-block',
+                    padding: '6px 18px',
+                    backgroundColor: '#19A7CE',
+                    color: '#ffffff',
+                    textDecoration: 'none',
+                    borderRadius: '11px',
+                    transition: 'background-color 0.2s',
+                }}
+                onMouseOver={(e) => e.target.style.backgroundColor = '#217a96'}
+                onMouseOut={(e) => e.target.style.backgroundColor = '#19A7CE'}
+            >
+                View Organization
+            </Link>
         </div>
     );
 }
@@ -219,7 +273,7 @@ function OrgDiv({ org_name, padding = null }) {
  * The workflows are displayed in a vertical manner.
  * @returns {JSX.Element}
  */
-function BuildRepoWorkflowsDiv(repository, workflows_0) {
+function BuildRepoWorkflowsDiv(repository, workflows_0, isExpanded, setIsExpanded) {
     var workflows = workflows_0;
     if (!Array.isArray(workflows)) {
         // if it's an iterable object, unpack it into an array
@@ -236,22 +290,56 @@ function BuildRepoWorkflowsDiv(repository, workflows_0) {
     }
     const repo_workflow_contents = (workflow) => {
         return [
-            <h3 key={workflow.id}>{workflow.name}</h3>,
-            <p key={workflow.id + "_desc"}>{workflow.description}</p>,
+            <h3 key={workflow.id} style={{ color: 'var(--ifm-color-primary)', fontSize: '1.2rem', marginBottom: '10px' }}>{workflow.name}</h3>,
+            <p key={workflow.id + "_desc"} style={{ color: 'var(--ifm-color-emphasis-900)', marginBottom: '10px' }}>{workflow.description}</p>,
             <Link key={workflow.id + "_link"} to={workflow.html_url} target="_blank" rel="noopener noreferrer">
-                <img className="image" src={workflow.badge_url} alt="Workflow Badge" />
+                <img className="image" src={workflow.badge_url} alt="Workflow Badge" style={{ marginBottom: '10px' }} />
             </Link>,
-            <p key={workflow.id + "_state"} style={{ color: workflow.state === "active" ? 'green' : 'red' }}>
+            <p key={workflow.id + "_state"} style={{ 
+                color: workflow.state === "active" ? '#2ea44f' : '#cb2431',
+                fontWeight: 'bold',
+                marginBottom: '5px'
+            }}>
                 {workflow.state === "active" ? "Active" : "Inactive"}
             </p>,
-            <p key={workflow.id + "_created"}>Created at: {new Date(workflow.created_at).toLocaleString()}</p>,
-            <p key={workflow.id + "_updated"}>Updated at: {new Date(workflow.updated_at).toLocaleString()}</p>,
-            <Link key={workflow.id + "_view"} href={workflow.html_url} target="_blank" rel="noopener noreferrer">View Workflow</Link>
+            <p key={workflow.id + "_created"} style={{ color: 'var(--ifm-color-emphasis-900)', fontSize: '0.9rem', marginBottom: '5px' }}>
+                Created at: {new Date(workflow.created_at).toLocaleString()}
+            </p>,
+            <p key={workflow.id + "_updated"} style={{ color: 'var(--ifm-color-emphasis-900)', fontSize: '0.9rem', marginBottom: '10px' }}>
+                Updated at: {new Date(workflow.updated_at).toLocaleString()}
+            </p>,
+            <Link 
+                key={workflow.id + "_view"} 
+                href={workflow.html_url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{
+                    display: 'inline-block',
+                    padding: '6px 18px',
+                    backgroundColor: '#19A7CE',
+                    color: '#ffffff',
+                    textDecoration: 'none',
+                    borderRadius: '11px',
+                    transition: 'background-color 0.2s',
+                }}
+                onMouseOver={(e) => e.target.style.backgroundColor = '#217a96'}
+                onMouseOut={(e) => e.target.style.backgroundColor = '#19A7CE'}
+            >
+                View Workflow
+            </Link>
         ];
     }
     const repo_workflow_listitem = (workflow) => {
         const listitem = (
-            <li key={workflow.id} style={{ border: '1px solid black', margin: '10px', padding: '10px' }}>
+            <li key={workflow.id} style={{ 
+                border: '1px solid var(--ifm-color-emphasis-500)',
+                borderRadius: '25px',
+                margin: '10px 0',
+                padding: '15px',
+                backgroundColor: 'var(--ifm-background-color)',
+                boxShadow: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
+                transition: 'all 0.3s cubic-bezier(.25,.8,.25,1)',
+            }}>
                 {repo_workflow_contents(workflow)}
             </li>
         );
@@ -269,14 +357,44 @@ function BuildRepoWorkflowsDiv(repository, workflows_0) {
     if (workflow_list.length > 0) {
         workflows_div_interior = (
             <div>
-                <h3>Workflows:</h3>
-                <ul>
+                <h3 style={{ color: 'var(--ifm-color-primary)', marginBottom: '15px' }}>Workflows:</h3>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                     {workflow_list}
                 </ul>
             </div>
         )
     }
-    const workflows_div = <Details summary="Workflows">{workflows_div_interior}</Details>;
+    const workflows_div = (
+        <div>
+            <button
+                onClick={() => setIsExpanded(!isExpanded)}
+                style={{
+                    display: 'inline-block',
+                    padding: '6px 18px',
+                    backgroundColor: '#19A7CE',
+                    color: '#ffffff',
+                    textDecoration: 'none',
+                    borderRadius: '11px',
+                    transition: 'background-color 0.2s',
+                    border: 'none',
+                    cursor: 'pointer',
+                    marginBottom: '20px',
+                    fontSize: '1rem',
+                    fontWeight: 'normal',
+                    lineHeight: '1.5'
+                }}
+                onMouseOver={(e) => e.target.style.backgroundColor = '#217a96'}
+                onMouseOut={(e) => e.target.style.backgroundColor = '#19A7CE'}
+            >
+                Show Workflows
+            </button>
+            {isExpanded && (
+                <div style={{ marginTop: '10px' }}>
+                    {workflows_div_interior}
+                </div>
+            )}
+        </div>
+    );
     var workflows_div_key = "workflows_div";
     workflows_div_key += "_" + repository.id;
     for (const workflow of workflows) {
@@ -307,6 +425,7 @@ function RepoWorkflowsDiv({ org_name, repo_name, padding = null }) {
     const [workflowsData, setWorkflowsData] = useState(null);
     const [repoRateError, setRepoError] = useState(null);
     const [workflowsRateError, setWorkflowsError] = useState(null);
+    const [isExpanded, setIsExpanded] = useState(false);
     // Only fetch the data once the component is visible
     const ref = React.useRef(null);
     // const visibleFraction = useObserveFraction(ref, true);
@@ -410,13 +529,25 @@ function RepoWorkflowsDiv({ org_name, repo_name, padding = null }) {
         repoContent = BuildRepoDiv(repoData, padding);
     }
     else {
-        workflowsContent = BuildRepoWorkflowsDiv(repoData, workflowsData);
+        workflowsContent = BuildRepoWorkflowsDiv(repoData, workflowsData, isExpanded, setIsExpanded);
         repoContent = BuildRepoDiv(repoData, padding);
     }
     // Add the ref to the content before returning
-    return <div ref={ref}>
-        {repoContent}
-        {workflowsContent}
+    return <div ref={ref} style={{ 
+        marginBottom: '30px',
+        border: '1px solid var(--ifm-color-emphasis-500)',
+        borderRadius: '25px',
+        backgroundColor: 'var(--ifm-background-color)',
+        boxShadow: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
+    }}>
+        <div style={{ padding: '22px' }}>
+            {repoContent}
+        </div>
+        <div style={{ 
+            padding: '2px 20px',
+        }}>
+            {workflowsContent}
+        </div>
     </div>;
 }
 

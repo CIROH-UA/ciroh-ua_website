@@ -267,26 +267,34 @@ export function RepoListSectionElement({ org_name, repo_list, padding = null, in
     const repo_list_set = new Set(repo_list_array);
 
     var inner_style = {
-        border: '1px solid black',
+        border: '1px solid var(--ifm-color-emphasis-500)',
+        borderRadius: '25px',
+        padding: '22px',
+        marginBottom: '20px',
+        backgroundColor: 'var(--ifm-background-color)',
+        boxShadow: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
+        transition: 'all 0.3s cubic-bezier(.25,.8,.25,1)',
     }
-    inner_style.padding = (innerPadding) ? innerPadding : '3px';
-    var outer_style = {
-        border: '1px solid black',
-    }
-    outer_style.padding = (padding) ? padding : '3px';
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                const data = await tryGetOrganization(org_name);
-                setOrgData(data);
-            } catch (error) {
-                console.error('Error fetching organization data:', error);
-            } finally {
-                setLoading(false);
-            }
-        }
-        fetchData();
-    }, [org_name]);
+    // inner_style.padding = (innerPadding) ? innerPadding : '3px';
+    // var outer_style = {
+    //     border: '1px solid black',
+    // }
+    // outer_style.padding = (padding) ? padding : '3px';
+    // useEffect(() => {
+    //     async function fetchData() {
+    //         try {
+    //             const data = await tryGetOrganization(org_name);
+    //             setOrgData(data);
+    //         } catch (error) {
+    //             console.error('Error fetching organization data:', error);
+    //         } finally {
+    //             setLoading(false);
+    //         }
+    //     }
+    //     fetchData();
+    // }, [org_name]);
+    inner_style.padding = (innerPadding) ? innerPadding : '22px';
+
     useEffect(() => {
         async function getRepositories() {
             try {
@@ -325,48 +333,50 @@ export function RepoListSectionElement({ org_name, repo_list, padding = null, in
         }
         filterRepositories();
     }, [orgRepositories, repo_list]);
-    function unstyledResult() {
-        if (loading) {
-            return [<div>Loading...</div>];
-        }
-        const org_info = orgData ? OrgInfoDiv(orgData) : <div>Error loading organization data</div>;
-        var repo_list_div = null;
-        if (repoData) {
-            var repo_li_s = [];
-            var repositories = Object.values(repoData);
-            for (var i = 0; i < repositories.length; i++) {
-                var repo = repositories[i];
-                var repo_div = RepoInfoDiv(repo);
-                var repo_li = <li key={repo.name}>{repo_div}</li>;
-                repo_li_s.push(repo_li);
-            }
-            repo_list_div = <div style={inner_style}>
-                <ul>
-                    {repo_li_s}
-                </ul>
-            </div>;
-        }
-        else {
-            repo_list_div = <div>Error loading repositories</div>;
-        }
-        return [
-            org_info,
-            repo_list_div
-        ];
 
+    if (loading) {
+        return <div>Loading...</div>;
     }
-    var result = unstyledResult();
-    if (result.length === 1) {
-        return <div style={outer_style} key={`${org_name}_${repo_list}`}>
-            {result[0]}
-        </div>;
+
+    if (!repoData) {
+        return <div>Error loading repositories</div>;
     }
-    else {
-        return <div style={outer_style} key={`${org_name}_${repo_list}`}>
-            {result[0]}
-            {result[1]}
-        </div>;
-    }
+
+    const repositories = Object.values(repoData);
+    const repo_li_s = repositories.map(repo => (
+        <li key={repo.name} style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+            <div style={inner_style}>
+                <h2 style={{ marginTop: 0, color: 'var(--ifm-color-primary)', fontSize: '1.5rem' }}>{repo.name}</h2>
+                <p style={{ color: 'var(--ifm-color-emphasis-900)', marginBottom: '15px' }}>{repo.description}</p>
+                <Link 
+                    href={repo.html_url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style={{
+                        display: 'inline-block',
+                        padding: '6px 18px',
+                        backgroundColor: '#19A7CE',
+                        color: '#ffffff',
+                        textDecoration: 'none',
+                        borderRadius: '11px',
+                        transition: 'background-color 0.2s',
+                    }}
+                    onMouseOver={(e) => e.target.style.backgroundColor = '#217a96'}
+                    onMouseOut={(e) => e.target.style.backgroundColor = '#19A7CE'}
+                >
+                    View Repository
+                </Link>
+            </div>
+        </li>
+    ));
+
+    return (
+        <div key={`${org_name}_${repo_list}`}>
+            <ul style={{ margin: 0, padding: 0 }}>
+                {repo_li_s}
+            </ul>
+        </div>
+    );
 }
 
 /**

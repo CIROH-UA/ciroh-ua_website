@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 1
 title: 'GitHub Repository Dashboard'
 description: "Dashboard for viewing CIROH's managed repositories"
 tags:
@@ -46,13 +46,13 @@ This page is incomplete and will be updated in the future.
     <p>This section contains the list of NGIAB-related repositories that CIROH is maintaining.</p>
     <RepoListSectionElement
       org_name="CIROH-UA"
-      repo_list="NGIAB_data_preprocess, NGIAB-CloudInfra, NGIAB-HPCInfra"
+      repo_list="NGIAB_data_preprocess, NGIAB-CloudInfra, NGIAB-HPCInfra, ngiab-client, ngiab-teehr, ngiab_cal, ngen-datastream, ngiab-website, training-NGIAB-101"
     />
   </TabItem>
   <TabItem value="workflow">
     <h2>CIROH Workflow Statuses</h2>
     <p>This section workflow status information for some of CIROH's managed repositories that have active workflows.</p>
-    <div style={{ border: '1px solid black', padding: '10px' }}>
+    <div style={{ padding: '10px' }}>
       <RepoWorkflowsDiv
         org_name="CIROH-UA"
         repo_name="NGIAB_data_preprocess"

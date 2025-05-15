@@ -1,9 +1,41 @@
 {
+	"April 2025 Update": [
+			{
+			"type": "feature",
+			"title": "New Calibration Feature🎉",
+			"description": "⚙️ Major update to NextGen In A Box! It now supports extended calibration for CFE and NOAA OWP modules. The new calibration framework provides more flexible parameter tuning and improved model performance.\n\n👨‍💻 Uses ngen-cal branch: [https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal](https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal) \n\n📖 For detailed instructions on how to use the new calibration capabilities, please check out: [https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal#how-to-use-this](https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal#how-to-use-this)",
+			"link": "https://github.com/CIROH-UA/ngiab_cal"
+			},
+			{
+			"type": "news",
+			"title": "New NextGen In A Box Product Website",
+			"description": "🎉 We're excited to announce the launch of our new NGIAB dedicated website! Visit our NGIAB webiste at [https://ngiab.ciroh.org/](https://ngiab.ciroh.org/) to explore all NGIAB tools, documentation, and resources all in one place.\n \n ![NGIAB Website Image](/img/news/April-2025-ngiab-website.png)",
+			"link": "https://ngiab.ciroh.org/"
+			},
+			{
+			"type": "news",
+			"title": "NGIAB 101 Training Module Now Available",
+			"description": "📚 The new NGIAB 101 training module is now available with comprehensive documentation, installation guides, and step-by-step instructions for the complete NGIAB end-to-end workflow. It is perfect for new users and those looking to deepen their understanding of the platform. \n \n ![NGIAB 101 Image](/img/news/April-2025-ngiab-101.png)",
+			"link": "https://docs.ciroh.org/training-NGIAB-101"
+			},
+			{
+			"type": "feature",
+			"title": "Datastream Visualization: NGIAB-client (Visualizer) v0.1.3 released",
+			"description": "🚀 The visualizer now includes DataStream S3 bucket visualization, which allows users to download data from DataStream S3 bucket and visualize data directly. The new update improves time series data handling, fixes some graph display issues and ensures proper datastream-ensemble associations. \n \n ![Datastream Visualization](/img/news/April-2025-datastream-vis.png)",
+			"link": "https://github.com/CIROH-UA/ngiab-client/commits/main/?since=2025-04-01&until=2025-04-30"
+			},
+			{
+			"type": "feature",
+			"title": "NGIAB-CloudInfra: New and improved guide scripts",
+			"description": "✨ The guide scripts in NGIAB have gotten a new look! The entire NGIAB workflow has been polished for a clean, intuitive experience.",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-04-01&until=2025-04-30"
+			}
+		],
 	"March 2025 Update":  [
 			{
 			  "type": "feature",
 			  "title": "NGIAB-data-preprocess",
-			 "description": "#### 🚀 New Release v4.0.5!\n \n This month's update focuses on speed and reliability! We've improved initial setup times by switching to `boto3` for slightly faster S3 hydrofabric downloads. Plus, we've resolved map display issues by updating our JavaScript dependencies. \n \n 🔥A new image of NGIAB-data-preprocess is now available in the [CIROH 2i2c JupyterHub](https://ciroh.awi.2i2c.cloud/hub/login) production environment. \n \n ![NGIAB-Preprocess Image](/img/ngiab-preprocess-jupyterhub-image.png)",
+			 "description": "#### 🚀 New Release v4.0.5!\n \n This month's update focuses on speed and reliability! We've improved initial setup times by switching to `boto3` for slightly faster S3 hydrofabric downloads. Plus, we've resolved map display issues by updating our JavaScript dependencies. \n \n 🔥A new image of NGIAB-data-preprocess is now available in the [CIROH 2i2c JupyterHub](https://ciroh.awi.2i2c.cloud/hub/login) production environment. \n \n ![NGIAB-Preprocess Image](/img/news/March-2025-ngiab-preprocess-jupyterhub-image.png)",
 			  "link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/commits/main/?since=2025-03-01&until=2025-04-02"
 			},
 			{

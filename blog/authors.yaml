@@ -22,9 +22,14 @@ yalan:
   url: 'https://www.linkedin.com/in/yalan-song-psu/'
   image_url: https://ca.slack-edge.com/T03UUB7CE83-U0583PXP58U-02e6df150857-192
 
-
 tadd:
   name: Tadd Bindas
   title: Graduate Researcher
   url: 'https://www.linkedin.com/in/taddbindas/'
   image_url: https://avatars.githubusercontent.com/u/16233925?v=4
+
+leo:
+  name: Leo Lonzarich
+  title: Graduate Researcher
+  url: 'https://www.linkedin.com/in/leoglonz'
+  image_url: https://ca.slack-edge.com/T03UUB7CE83-U075PFL5NUE-150fbf871a79-512

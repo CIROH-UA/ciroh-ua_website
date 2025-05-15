@@ -1,0 +1,71 @@
+---
+title: "Pennsylvania State University Researchers Leverage CIROH Cyberinfrastructure for Advanced Hydrological Modeling "
+description: "February Monthly Blog Update"
+slug: February Monthly Blog Update
+authors: [arpita, yalan, tadd]
+tags: [CIROH, Blog, Pennsylvania State University, Monthly Update, Wukong, AWS, HPC, NGIAB, National Water Model, On-Premises Services, Cloud Services]
+hide_table_of_contents: false
+image: "https://brand.psu.edu/images/shared-images/PSU-mark-navy.jpg"
+---
+
+# 🌊 Pennsylvania State University Researchers Leverage CIROH Cyberinfrastructure for Advanced Hydrological Modeling 🌍
+
+Pennsylvania State University (PSU) researchers have been leveraging CIROH Cyberinfrastructure to tackle complex hydrological modeling challenges. This post highlights their innovative approach using the [Wukong computing platform](https://docs.ciroh.org/docs/services/on-prem/Wukong/) in conjunction with Amazon S3 bucket storage to efficiently process and analyze large-scale environmental datasets. 🚀
+
+<!-- truncate -->
+---
+
+## 💻 The Computing and Storage Infrastructure
+
+### **Wukong Computing Platform**
+The PSU team has been utilizing Wukong, a high-performance computing (HPC) cluster specifically designed for data-intensive scientific applications, such as the high-resolution physics-informed machine learning for national water modeling (Song et al. 2024[YS1] ). Wukong provides the computational power necessary for running complex simulations and processing large environmental datasets that traditional computing resources would struggle with. 🔍
+
+
+
+#### Key advantages of Wukong include:
+- 🎯 **Large GPU capacity** for high-resolution ML/differentiable process-based models
+- ⚙️ **Scalable parallel processing** capabilities
+- 🚀 **Optimized performance** for data-intensive workloads
+- ⏳ **Reduced processing time** for big data
+- 🌐 **Support for multi-node computation** to handle larger geographical areas
+
+#### **S3 Bucket Integration**: 
+To complement Wukong’s computational power, the PSU researchers and AWI DevOps staff implemented **Amazon S3 (Simple Storage Service)** buckets as their secondary data storage solution. This integration offers several benefits:
+- 🗄️ **Virtually unlimited storage capacity** for growing datasets
+- 🔒 **Data durability and redundancy**
+- 💰 **Cost-effective long-term storage**, with the use of S3 intelligent tiering to automate the storage cost savings by moving data when access patterns change
+- 🔄 **Seamless data transfer** between computing nodes
+- 📝 **Version control** for dataset iterations
+- 🤝 **Easy data sharing** with users not on Wukong
+
+---
+
+## 🔬 Research Applications
+
+The PSU team has applied this powerful computing infrastructure to several critical research areas:
+
+1. **National Streamflow Modeling** 🌊  
+   Training differentiable hydrologic models with high-resolution forcing and static attribute data across extensive geographical regions using observations from thousands of gauges, followed by whole-domain forwarding.
+
+2. **National River Routing** 🗺️  
+   Conducting river routing on MERIT/HydroFabric river networks, combined with neural network-supported routing parameter learning.
+
+3. **NextGen Candidate Models & Data Assimilation** 🔄  
+   Applying multiple NextGen candidate models and data assimilation algorithms within the differentiable modeling framework, which supports compliance with [BMI](https://doi.org/10.5281/zenodo.14827983).
+
+4. **Foundation Model Development** 🏞️  
+   Developing a foundation model to explore co-evolution between landscapes.
+
+---
+
+### Thank you to all those who contributed towards this effort.
+
+## 🔗 Learn More
+For more details on the Wukong computing platform, check out the official documentation:  
+👉 [Wukong Documentation](https://docs.ciroh.org/docs/services/on-prem/Wukong/)
+
+For the full research paper by Song et al. (2024), visit:  
+👉 [DOI: 10.22541/essoar.172736277.74497104/v1](https://doi.org/10.22541/essoar.172736277.74497104/v1)
+
+---
+

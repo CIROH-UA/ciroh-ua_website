@@ -48,7 +48,7 @@ hr.divider-feature {
 
 /* Feature box styling */
 .mt-5-feature {
-    background: white;
+    background: var(--ifm-card-background-color);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -79,11 +79,11 @@ hr.divider-feature {
 /* Headings */
 h3.h4 {
     font-size: 1.5rem;
-    color: #333;
+    color: var(--ifm-card-color);
 }
 
 /* Description text */
 .text-muted-feature {
-    color: #111111;
+    color: var(--ifm-card-color);
     font-size: 1rem;
 }

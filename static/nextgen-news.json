@@ -2,7 +2,7 @@
 	"April 2025 Update": [
 			{
 			"type": "feature",
-			"title": "New Calibration Feature🎉",
+			"title": "New NGIAB-Calibration Feature🎉",
 			"description": "⚙️ Major update to NextGen In A Box! It now supports extended calibration for CFE and NOAA OWP modules. The new calibration framework provides more flexible parameter tuning and improved model performance.\n\n👨‍💻 Uses ngen-cal branch: [https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal](https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal) \n\n📖 For detailed instructions on how to use the new calibration capabilities, please check out: [https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal#how-to-use-this](https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal#how-to-use-this)",
 			"link": "https://github.com/CIROH-UA/ngiab_cal"
 			},
@@ -26,8 +26,8 @@
 			},
 			{
 			"type": "feature",
-			"title": "NGIAB-CloudInfra: New and improved guide scripts",
-			"description": "✨ The guide scripts in NGIAB have gotten a new look! The entire NGIAB workflow has been polished for a clean, intuitive experience.",
+			"title": "NGIAB-CloudInfra: New and improved shell scripts",
+			"description": "✨ The shell scripts in NGIAB have gotten a new look! The entire NGIAB workflow has been polished for a clean, intuitive experience.",
 			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-04-01&until=2025-04-30"
 			}
 		],

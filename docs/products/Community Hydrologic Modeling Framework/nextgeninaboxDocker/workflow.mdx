@@ -5,8 +5,6 @@ description: "NextGen In a Box (NGIAB) E2E Workflow Video"
 tags: [Products, NGIAB, CIROH, Cloud Services, Docker, National Water Model, Education, TEEHR, Tethys Platform]
 ---
 
-<!-- TODO: This is pretty broad... would it be better suited to the Education section? -->
-
 # NGIAB End-to-End Setup Guide
 
 ## Overview
@@ -17,6 +15,7 @@ This guide provides step-by-step instructions for setting up and running the com
 - Git
 - Docker
 - Terminal access
+- Astral UV
 
 ## Video Tutorial
 
@@ -26,44 +25,22 @@ You can watch our step-by-step video guide here:
 
 import VideoPlayer from '/src/components/VideoPlayer.js';
 
-<VideoPlayer url="https://youtu.be/s5jz6Hvn-6s"  />
+<VideoPlayer url="https://youtu.be/7kjJXvionyw"  />
 ### Video Contents Timeline
 (System: Using Mac M4 Max Laptop)
 
-- 0:00 - Introduction
-- 0:10 - Data Preprocessing Setup
-- 2:32 - NGIAB Installation
-- 3:05 - Running TEEHR Evaluation
-- 4:30 - Visualization using Tethys Portal
-- 5:05 - Verify Output Plot and Conclusion
-
 ## Step 1: Data Preprocessing
 
-### Install and Configure Data Preprocess
-```bash
-
-# Create a directory where you want to install and navigate to that directory (e.g., NGIAB_data_preprocess)
-mkdir NGIAB_data_preprocess
-cd NGIAB_data_preprocess
-
-# Create and activate virtual environment
-python3 -m venv .venv
-source .venv/bin/activate
-
-# Install required package
-pip install 'ngiab_data_preprocess'
-```
-
-### Run Data Preprocess
+### Run Data Preprocess tool
 ```bash
 # Execute preprocess for sample catchment
-python -m ngiab_data_cli -i cat-2863657 --subset --start 2010-01-01 --end 2010-01-02 --forcings --realization
+uvx --from ngiab_data_preprocess cli -i gage-10154200 -sfr --start 2017-09-01 --end 2018-09-01 --source aorc 
 ```
 
 ### Parameters Explained
 | Parameter | Description |
 |-----------|-------------|
-| `-i cat-2863657` | Specifies the catchment ID |
+| `-i gage-10154200` | Specifies the gage ID |
 | `--subset` | Creates a subset of the data |
 | `--start` | Start date for the analysis |
 | `--end` | End date for the analysis |
@@ -91,13 +68,13 @@ cd NGIAB-CloudInfra
 The `guide.sh` script automatically:
 - Sets up the NGIAB environment
 - Launches the NextGen model
-- Initializes and run TEEHR analysis tools
-- Starts the visualization interface
+- Initializes and run TEEHR evaluation
+- Starts the Tethys visualization interface
 
 ## Accessing the Tools
 
 After successful execution, you can access:
-- Visualizer: `http://localhost/apps/ngiab`
+- NGIAB Visualizer: `http://localhost/apps/ngiab`
 
 ## Troubleshooting
 
@@ -120,6 +97,7 @@ Common issues and solutions:
 ## Additional Resources
 
 ### Documentation
+- [NGIAB 101 Training Module](https://docs.ciroh.org/training-NGIAB-101/)
 - [NGIAB Data Preprocessor](https://github.com/CIROH-UA/NGIAB_data_preprocess)
 - [NGIAB Cloud Infrastructure](https://github.com/CIROH-UA/NGIAB-CloudInfra)
 - [TEEHR Documentation](https://github.com/RTIInternational/teehr)

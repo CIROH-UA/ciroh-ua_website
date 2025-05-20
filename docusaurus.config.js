@@ -5,6 +5,7 @@ const baseUrl = "/";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "CIROH DocuHub",
+  tagline: "Documenting Water Research in the Digital Age",
   staticDirectories: ["static", "img"],
   tagline: "Cooperative Institute for Research to Operations in Hydrology",
   url: "http://ciroh.org",

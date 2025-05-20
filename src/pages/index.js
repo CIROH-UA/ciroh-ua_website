@@ -19,6 +19,7 @@ function HomepageHeader() {
                 <img src="img/logos/ciroh-dark.png" alt="CIROH Logo" />
               </div>
               <h1 className="hero__title">{siteConfig.title}</h1>
+              <h2 className='hero__subtitle'>{siteConfig.tagline}</h2>
               <div className={styles.flexContainer}>
 
                 <div className={styles.flexitem1}>

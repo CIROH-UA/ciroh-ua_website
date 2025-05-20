@@ -10,6 +10,10 @@ tags: [Products, NGIAB, CIROH, Cloud Services, Docker, National Water Model, Edu
 ## Overview
 This guide provides step-by-step instructions for setting up and running the complete NGIAB workflow, including data preprocessor, model execution, TEEHR evaluation and Tethys visualization.
 
+:::info
+For a slightly more in-depth tutorial, please see the [NGIAB 101 module](https://docs.ciroh.org/training-NGIAB-101/). 
+:::
+
 ## Prerequisites
 - Python 3.x
 - Git
@@ -26,7 +30,7 @@ You can watch our step-by-step video guide here:
 import VideoPlayer from '/src/components/VideoPlayer.js';
 
 <VideoPlayer url="https://youtu.be/7kjJXvionyw"  />
-### Video Contents Timeline
+
 (System: Using Mac M4 Max Laptop)
 
 ## Step 1: Data Preprocessing
@@ -86,13 +90,13 @@ Common issues and solutions:
    - Check Docker permissions
 
 2. **Virtual Environment**
-   - Confirm activation status
+   - Confirm that the virtual environment was activated
    - Check Python version compatibility
 
-4. **Installation Problems**
-   - Verify prerequisites
-   - Check system requirements
-   - Review error logs
+3. **Installation Problems**
+   - Verify that prerequisites and system requirements are met
+   - Review error logs for further information
+   - If using WSL: ensure that the repository was pulled using [LF line endings](https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings)
 
 ## Additional Resources
 

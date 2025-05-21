@@ -161,6 +161,18 @@
   margin-top: 0.5rem;
 }
 
+.footer__attrib {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.5;
+}
+
 .footer__funding {
   text-align: center;
   max-width: 800px;

@@ -106,12 +106,20 @@ function renderDescription(description) {
       components={{
         a: ({node, ...props}) => <a target="_blank" rel="noopener noreferrer" {...props} />
       }}
+      urlTransform={safelyUseBaseUrl}
     />
   );
 }
+
 // Function to check if a part is a web link
 function isWebLink(part) {
   return part.startsWith("http://") || part.startsWith("https://");
+}
+
+// Function to safely handle internal links
+function safelyUseBaseUrl(link) {
+  if (isWebLink(link)) return link;
+  else return useBaseUrl(link);
 }
 
 export default NewsComponent;

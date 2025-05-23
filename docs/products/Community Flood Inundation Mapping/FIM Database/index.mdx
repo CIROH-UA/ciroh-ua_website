@@ -27,7 +27,10 @@ To access this application, click the arrow symbol located in the middle of the 
 
 ## Creating a FIM database
 
-It is assumed that users already have at least one hydraulic model from which flood maps can be generated for any area of interest. We guide users to be able to compare the flood map from that model with the baseline flood map for the same area from NWM HAND using FIMServ tool developed by our CIROH partners in University of Alabama. 
+It is assumed that users already have at least one hydraulic model from which flood maps can be generated for any area of interest. We guide users to be able to compare the flood map from that model with the baseline flood map for the same area from NWM HAND using FIMServ tool developed by our CIROH partners in University of Alabama. The flowchart for the overall methodology for creating the database and using it for visualization is shown in Figure 4 and explained in detail in subsequent section.
+<img alt="Methodology" src={require('@site/static/img/products/fim-db/process.png').default} style={{maxHeight: "30rem"}} />
+
+**Figure 4:** Methodology
 
 **Step 1:**
 
@@ -112,7 +115,7 @@ After completing the code execution from Step 6:
 - `{filename}_vis.json` is used for scenario visualization
 
 <img alt="Flood map" src={require('@site/static/img/products/fim-db/HydroShare.png').default} style={{maxHeight: "30rem"}} />
-**Figure 4:** HydroShare resource with GIS files and two JSON files used for visualization
+**Figure 5:** HydroShare resource with GIS files and two JSON files used for visualization
 
 
 ## Visualization of database
@@ -121,16 +124,26 @@ After completing the code execution from Step 6:
 To view the individual flood maps, paste the URL of the `{databasename}.json` file in the FIM database uploader section of FIM Visualization Application. This will give you the list of all the flood map files available in your database. You can select the desired files that you want to visualize. The selected files will appear in the "User Files" section in the map layers of the visualization application. You can toggle between each individual files as shown in Figure 5. 
 <img alt="Flood map" src={require('@site/static/img/products/fim-db/custom.png').default} style={{maxHeight: "30rem"}} />
 
-**Figure 5:** Custom files visualization in FIM visualization Application
+**Figure 6:** Custom files visualization in FIM visualization Application
 ### Scenario visualization
-To view the scenarios, paste the URL of the `{databasename}_vis.json` file in the FIM Scenarios uploader section of the Visualization application. You can select the model type from the dropdown available in the top right panel. For a model, you can move the slider button and change the flow values to visualize the corresponding flood map as shown in Figure 6.
+To view the scenarios, paste the URL of the `{databasename}_vis.json` file in the FIM Scenarios uploader section of the Visualization application. You can select the model type from the dropdown available in the top right panel. For a model, you can move the slider button and change the flow values to visualize the corresponding flood map as shown in Figure 7.
 <img alt="Flood map" src={require('@site/static/img/products/fim-db/Scenario.png').default} style={{maxHeight: "30rem"}} />
 
-**Figure 6:** Scenario visualization in FIM visualization Application
+**Figure 7:** Scenario visualization in FIM visualization Application
 
 ### Comparison of flood maps
 
-Any two flood maps from any two models across any scenarios can be compared. To do this, select the FIM comparison option in the Data Uploader section and choose "Existing Scenarios". Select the name of database, names of model, and the scenarios that you want to compare. This will allow comparative visualization of those scenarios along with displaying the comparison metrics as shown in Figure 7. Similar comparison can also be performed by uploading any two flood map raster files (with same raster boundary) externally from your machine by selecting "User file upload" instead of "Existing Scenarios". 
+Any two flood maps from any two models across any scenarios can be compared. To do this, select the FIM comparison option in the Data Uploader section and choose "Existing Scenarios". Select the name of database, names of model, and the scenarios that you want to compare. This will allow comparative visualization of those scenarios along with displaying the comparison metrics as shown in Figure 8. Similar comparison can also be performed by uploading any two flood map raster files (with same raster boundary) externally from your machine by selecting "User file upload" instead of "Existing Scenarios".
 <img alt="Comparison of flood maps" src={require('@site/static/img/products/fim-db/compare.png').default} style={{maxHeight: "30rem"}} />
 
-**Figure 7:** Comparison of two flood maps indicating different inundation extents and displaying comparison metrics for the two inundation maps, including proportion correction, bias ratio, hit rate, kappa value, fitness statistics, and mixed index 
+**Figure 8:** Comparison of two flood maps indicating different inundation extents and displaying comparison metrics for the two inundation maps, including proportion correction, bias ratio, hit rate, kappa value, fitness statistics, and mixed index
+
+## Funding Acknowledgement
+This research was supported by the Cooperative Institute for Research to Operations in Hydrology (CIROH) with funding under award NA22NWS4320003 from the NOAA Cooperative Institute Program.
+
+## Contact information
+If you have any queries, please contact:
+
+Pitamber Wagle  
+Ph.D. Student, Brigham Young University  
+Email : waglep@byu.edu

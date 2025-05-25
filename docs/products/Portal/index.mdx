@@ -19,7 +19,7 @@ The resulting serves as a pathway for advances in research tools to inform the d
 
 The proposed catalog is being built using Docusaurus, Tethys Platform, HydroShare, HydroLearn, Amazon AWS cloud computing infrastructure, and an agile, continuous integration development and deployment approach. Use the following links to learn more about the technologies powering the NWM Research Apps Portal:
 
-- [Docusaurus](https://www.django-cms.org/) - Docusaurus is a project for building, deploying, and maintaining open source project websites easily.
+- [Docusaurus](https://docusaurus.io/) - Docusaurus is a project for building, deploying, and maintaining open source project websites easily.
 - [Tethys Platform](https://www.tethysplatform.org/) - An open-source web framework for build and hosting geospatial and scientific web applications.
 - [HydroShare](https://www.hydroshare.org/) - CUAHSI's online collaboration environment for sharing data, models, and code.
 - [HydroLearn](https://www.hydrolearn.org/) - A platform for instructors to find and collaborate on developing learning modules, and for students to discover and learn from authentic problems.
@@ -47,6 +47,8 @@ Native applications are application developed using the [Tethys Platform framewo
 - [Snow Inspector](https://github.com/BYU-Hydroinformatics/snow-inspector): Open-source web tool designed for visualizing and analyzing snow cover data using imagery from the MODIS_Terra satellite. It leverages interactive maps and time-series plots to provide insights into snow coverage and depth over specified periods. The application fetches data from NASA's GIBS WMTS service, processes the imagery to extract snow percentage values, and presents the information through a user-friendly interface. This tool is particularly valuable for researchers, hydrologists, and environmental scientists studying snow dynamics and their impact on water resources.
 - [Community Streamflow Evaluation System (CSES)](https://github.com/CIROH-UA/Tethys-CSES): Open-source web application designed to evaluate hydrological model performance using the National Water Model (NWM) and USGS monitoring data. It provides interactive visualizations for over 5,000 monitoring sites, enabling users to analyze streamflow data and assess model accuracy. The application supports various evaluation methods, including state, reach, and HUC (Hydrologic Unit Code) evaluations, and leverages data from the Alabama Water Institute hosted on Amazon AWS S3. Researchers can also use a Python-based package for hands-on model evaluation and are encouraged to contribute to the development and integration of additional hydrological modeling components.
 
+Native Application can be found at the [Tethys Portal](https://tethys.ciroh.org/apps/)
+
 ### Proxy Applications
 
 [Proxy applications](https://docs.tethysplatform.org/en/stable/tethys_portal/admin_pages.html#proxy-apps) are applications developed using frameworks other than the Tethys platform and are deployed outside the CIROH research portal. However, they are integrated into the portal through Tethys' capability to incorporate external applications. This allows users to access and utilize these applications seamlessly within the CIROH research portal environment.
@@ -56,7 +58,36 @@ Native applications are application developed using the [Tethys Platform framewo
 - [CIROH JupyterHub](https://jupyterhub.cuahsi.org/hub/login): Cloud computing service that enables users to execute scientific code and explore, modify, and interact with data inside a remote execution environment using Python and/or R programming languages. Our JupyterHub is closely integrated with CUAHSI’s HydroShare and Hydrologic Information System data repositories, making it easy to leverage community datasets, collaborate, and disseminate research workflows. This platform provides all users with a modest amount of persistent disk space to store files as well as free cloud computing, making it ideal for water science education, data analysis, and research dissemination. To access this system you must become a member of the CUAHSI HydroShare and join our Cloud Computing group
 - [HydroShare](https://www.hydroshare.org/home/): Online, collaborative system for sharing, publishing, and discovering water-related data and models. It is developed and maintained by the Consortium of Universities for the Advancement of Hydrologic Science, Inc. (CUAHSI).
 - [Numerical Flash-Flood Alerts](https://numericalflashfloodalertsolutions.com/): The Numerical Flash Flood Alert APP (NFFA APP) proudly supports the water science community across the United States by offering streamlined access to essential flood data from all USGS stations
+
 You can develop an application using the [Tethys platform](https://www.tethysplatform.org/), which can later be installed in the portal for greater visibility. Similarly, if you already have an application developed using another framework already deployed it can be added to the portal as a proxy applications
+
+
+### Develop Your Own Apps Using the Tethys Platform
+
+Besides Adding your application to the portal, you can also use the [Tethys Platform](https://www.tethysplatform.org/) to boost your applications and datasets.
+Tethys Platform has been designed to lower the barrier to geospatial web app development. Convey your models and data as interactive web apps.
+
+![Portal Develop Page](/img/products/portal/develop_page.png)
+
+#### Python Powered
+
+Tethys web apps are built using a Python-powered Software Development Kit (SDK) that is backed by Conda. Install any of a large assortment of scientific Python modules you need to build out your app. Many of these libraries come installed with the platform including Plotly, Bokeh, Numpy, Pandas, and Dask, to name a few
+
+#### Data Oriented
+
+Data is at the core of any modern web application. Tethys Platform provides an API for incorporating data from various sources. Publish and store your own data using services like THREDDS, GeoServer, PostgreSQL, CKAN, or HydroShare. You can also leverage any number of publicly available data services such as Google Earth Engine or Microsoft's AI for Earth technical resources.
+
+#### Cloud Analysis
+
+Need more computing power to run your models? Create a Tethys web app that will run your analysis in the cloud. Scale computing nodes to match demand using commercial cloud solutions like Amazon AWS or Microsoft Azure. Have your own servers for processing? Tethys Platform also comes with built-in support for HTCondor and Dask that can be used to make the most of your available compute capacity.
+
+#### Models 
+
+Make your earth science models more accessible by creating a web app that facilitates model editing, running, and results visualization. Run your models dynamically from the web combining frontend and backend communication protocols, and job management tools.
+
+- Explore more at the Tethys Platform [Documentation](https://docs.tethysplatform.org/en/stable/)
+- Follow some [Tutorials](https://docs.tethysplatform.org/en/stable/tutorials.html)
+- Explore the [source code](https://github.com/tethysplatform/tethys)
 
 
 ## Research Datasets
@@ -240,7 +271,6 @@ Under the hood the form creates a HydroShare resource for your course. If you wo
    - `page_url`
    - `thumbnail_url`
 
-
 7. Make the resource public.
 
 After following these steps, you will be able to see your Course
@@ -252,17 +282,10 @@ After following these steps, you will be able to see your Course
 - [Uploading and Publishing Data and Models](https://help.hydroshare.org/creating-and-managing-resources/)
 - [Zotero Getting Started] (https://www.zotero.org/support/quick_start_guide)
 
-
-## Develop Your Own Apps Using the Tethys Platform
-
-![Portal Develop Page](/img/products/portal/develop_page.png)
-
-
 ## Code
 
-The source code for the NWM Research Apps Portal can be found on GitHub:
-
-- [https://github.com/CIROH-UA/tethysportal-ciroh](https://github.com/CIROH-UA/tethysportal-ciroh)
+The source code for the NWM Research Portal can be found on [GitHub](https://github.com/CIROH-UA/ciroh-portal)
+The source ciode for the portal containg the native Tethys applications can be found on [GitHub](https://github.com/CIROH-UA/tethysportal-ciroh)
 
 ## Bugs and Issues
 

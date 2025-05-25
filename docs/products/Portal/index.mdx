@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
 
 Comprised of a large technologically and topically diverse group of scientists, CIROH and NOAA NWM researchers require a means to organize, catalog, coordinate, and share research data products, tools, visualizations, and interactive software applications in an accessible, consistent, and intuitive manner. This project aims to address this need by building and seeding a web-based catalog of interactive web applications, notebooks, software tools, and learning modules that demonstrate and provide access to NWM modeling advances, datasets, visualizations, and information synthesis innovations.
 
-![CIROH Portal](/img/ciroh-portal-home-page.png)
+![CIROH Portal](/img/products/portal/ciroh_portal_home.png)
 
 The resulting serves as a pathway for advances in research tools to inform the development of future applications within the National Water Center – e.g. within the Water Prediction Operations Division (WPOD) and the Geo Intelligence Division (GID). This project is a cross-cutting activity, exposing NWM research results across disciplines and institutions. The NWM Research Apps Portal is a highly visible resource that NOAA and CIROH leadership can use to showcase the work accomplished by the collaboration and within the cooperative institute. It also serve as a communication tool to allow the broader hydrologic research community to connect with the NWM research activities.
 
@@ -25,9 +25,15 @@ The proposed catalog is being built using Docusaurus, Tethys Platform, HydroShar
 - [HydroLearn](https://www.hydrolearn.org/) - A platform for instructors to find and collaborate on developing learning modules, and for students to discover and learn from authentic problems.
 - [Amazon AWS](https://aws.amazon.com/) - The NWM Research Apps Portal is hosted on AWS cloud resources.
 
+The developed NWM Research Portal is hosted at https://portal.ciroh.org and serves as a platform that links and organizes together a curated selection of publicly-facing NWM visualization and analysis tools developed by CIROH and NOAA.
+
 ## Research Applications
 
-The portal includes applications developed using the [Tethys Platform framework](https://www.tethysplatform.org/), and external applications. Please use the following information to learn more about the applications hosted in the portal:
+![CIROH Portal Applications](/img/products/portal/apps_page.png)
+
+The portal includes applications developed using the [Tethys Platform framework](https://www.tethysplatform.org/), and external applications.
+
+Please use the following information to learn more about the applications hosted in the portal.
 
 ### Native Applications
 
@@ -52,94 +58,205 @@ Native applications are application developed using the [Tethys Platform framewo
 - [Numerical Flash-Flood Alerts](https://numericalflashfloodalertsolutions.com/): The Numerical Flash Flood Alert APP (NFFA APP) proudly supports the water science community across the United States by offering streamlined access to essential flood data from all USGS stations
 You can develop an application using the [Tethys platform](https://www.tethysplatform.org/), which can later be installed in the portal for greater visibility. Similarly, if you already have an application developed using another framework already deployed it can be added to the portal as a proxy applications
 
-## Access
 
-The developed NWM Research Apps Portal is hosted at https://portal.ciroh.org and serves as a platform that links and organizes together a curated selection of publicly-facing NWM visualization and analysis tools developed by CIROH and NOAA.
+## Research Datasets
+
+The CIROH portal also allows users to find **Datasets** from CIROH and NOAA's hydrologic research, designed to enhance forecasting, analysis, and management of water resources. 
+
+The portal offers all the **Datasets** or a list of curated datasets.
+
+![CIROH Portal Datasets](/img/products/portal/datasets_page.png)
+
+
+## Research Publications
+
+The CIROH portal also allows users to ex­plore a rich selection of pub­lic­a­tions and papers featuring CIROH and NOAA's collaborative research in hydrology using [Zotero](https://www.zotero.org/). Discover insights on water management, forecasting, and climate impacts through this comprehensive resource for scholars and professionals.
+
+Users can filter by searching by title, author. or year. Users can also search for publication type: Book, Journal, Conference Paper, etc. Users can also search by Date added to the Zotero library, Date Published, etc. Users can also filter by collection: 
+
+- Artificial Intelligence
+- Ciroh CyberInfrastructure.
+- Community Resources
+- Hydrologic Modeling
+- Flood Inundation Modeling
+- Model and Forecast Evaluation
+- Hydroinformatics
+- Decision Support
+- Early Career
+
+> **Note** Filtering by title, author. or year only works if the exact text you type occurs anywhere in the citation’s title, author, or year.
+
+![CIROH Portal Publications](/img/products/portal/publications_page.png)
+
+CIROH Zotero's group libary can be found [here](https://www.zotero.org/groups/5261687/ciroh/library)
+
+## Research Courses
+
+Users can access a range of open courses in hydrology, enriched with CIROH and NOAA research, designed for learners at all levels seeking to deepen their understanding of water science.
+
+![CIROH Portal Courses](/img/products/portal/courses_page.png)
 
 ## Contribute
 
-There are many ways to contribute to the NWM Research Apps Portal. You can contribute applications, datasets, Courses, and publications, which will gain greater visibility within the CIROH community.
+There are many ways to contribute to the NWM Research Apps Portal. You can contribute Applications, Datasets, Courses, and Publications, which will gain greater visibility within the CIROH community.
+The Portal allows the users to contribute applications, datasets, publications, and courses through different forms at the [contribute](https://portal.ciroh.org/contribute) page.
+
+
+![Portal Contribute page](/img/products/portal/portal_contribute_page.png)
 
 ### Applications
 
-If you would like any current application that you have to appear on the [portal application page](http://portal.ciroh.org/apps/). You can use our form and submit your application
+If you would like any current application that you have to appear on the [portal](http://portal.ciroh.org/apps/). 
 
+You can use our [form](https://portal.ciroh.org/contribute?current-contribution=apps) and submit your application through the portal page.
 
-If you would like to add your application using [HydroShare](https://www.hydroshare.org/home/) directly, you can do the following:
+![Portal Contribute Applications Page](/img/products/portal/apps_contribute_form.png)
+
+You need the following infomation:
+
+1. HydroShare Account.
+2. Application  Title
+3. Aplication URL where your app is hosted, (or any url realtd to your app) (Optional)
+4. Documentation URL, (Optional).
+5. Thumbnail image. (Optional)
+6. Application Descriptions (at least 150 words) 
+7. keyword (e.g. hydrology, water data. etc) (Optional)
+
+Under the hood the form creates a HydroShare resource for your application. If you would like to add your application using [HydroShare](https://www.hydroshare.org/home/) directly, you can do the following:
 
 1. Log in to HydroShare or create an account.
 2. Create a **HydroShare Resource**.
 3. Add the following keyword: `nwm_portal_app`.
-4. Fill in the following metadata in the **additional metadata portion**:
+4. Add any files related to you Application if any
+5. Add any spatial or temporal coverages associated to your application if any
+6. Fill in the following metadata in the **additional metadata portion**:
 
    - `page_url`
    - `thumbnail_url`
    - `docs_url`
 
-5. Make the resource public.
+7. Make the resource public.
 
-After following these steps, you will be able to see your app as shown below:
+After following these steps, you will be able to see your app on the apps page of the portal
 
-![applications](/img/applications.png)
+### Datasets
 
-### Data
+If you would like any current dataset that you have to appear on the [portal](http://portal.ciroh.org/datasets/). 
 
+You can use our [form](https://portal.ciroh.org/contribute?current-contribution=datasets) and submit your dataset through the portal page.
 
-If you would like any current dataset that you have to appear on the [portal data access page](http://portal.ciroh.org/datasets/). You can use our form and submit your dataset
+![Portal Contribute Dataset Page](/img/products/portal/datasets_contribute_form.png)
+
+You need the following infomation:
+
+1. HydroShare Account.
+2. Dataset  Title
+3. Dataset URL where your app is hosted, (or any url realtd to your dataset) (Optional)
+4. Documentation URL, (Optional).
+5. Thumbnail image. (Optional)
+6. Dataset Descriptions (at least 150 words) 
+7. keyword (e.g. hydrology, water data. etc) (Optional)
+8. Dataset Files  (Optional)
+
+Similarly to the applications, the dataset form creates a HydroShare resource under the hood for you datasets
 
 If you would like to add your dataset using [HydroShare](https://www.hydroshare.org/home/) directly, you can do the following:
 
 1. Log in to HydroShare or create an account.
 2. Create a **HydroShare Resource**.
 3. Add the following keyword: `nwm_portal_data`.
-4. Fill in the following metadata in the **additional metadata portion**:
+4. Add any files related to you dataset if any
+5. Add any spatial or temporal coverages associated to your dataset if any
+6. Fill in the following metadata in the **additional metadata portion**:
 
    - `page_url`
    - `thumbnail_url`
    - `docs_url`
 
-5. Make the resource public.
+7. Make the resource public.
 
-After following these steps, you will be able to see your dataset:
+After following these steps, you will be able to see your dataset
 
 ### Publications
 
-If you would like any current or previous publication to appear on the [portal publications page](http://portal.ciroh.org/publications/). You can use our form and submit your publication
+If you would like any current or previous publication to appear on the [portal publications page](http://portal.ciroh.org/publications/). 
+
+You can use our [form](https://portal.ciroh.org/contribute?current-contribution=publications) and submit your publication through the portal page.
+
+![Portal Contribute Publication Page](/img/products/portal/publications_contribute_form.png)
+
+You need the following infomation:
+
+1. doi of your publication  Do not use a url but the format 10.1234/abcd.efgh
+2. Collection that you will like to add the publication
+   - Artificial Intelligence
+   - Ciroh CyberInfrastructure.
+   - Community Resources
+   - Hydrologic Modeling
+   - Flood Inundation Modeling
+   - Model and Forecast Evaluation
+   - Hydroinformatics
+   - Decision Support
+   - Early Career
+
+
+under the hood The publications form imports the given publication to the selected collection inside of the zoteros CIROH group library.
 
 If you would like to add your publication to [Zotero](https://www.zotero.org/), you can do the following:
-
 
 1. Request access to the [Zotero CIROH Library Group](https://www.zotero.org/groups/5261687/ciroh/library).
 2. Return to your Zotero library.
 3. Sync your Zotero account to see the CIROH group folder.
 4. Click on any collection of the CIROH group folder, then add new citations using the Zotero icon in the URL bar or drag and drop items to the desired collections.
 
-After following these steps, you will be able to see your publications:
-
-![publications](/img/publications.png)
+After following these steps, you will be able to see your publications on the CIROH portal publications page
 
 ### Courses
 
-If you would like any [HydroLearn](https://www.hydrolearn.org/) learning module to appear on the [portal learning modules page](http://portal.ciroh.org/courses/). You can use our form and submit your publication
+If you would like any  to appear on the [portal courses page](http://portal.ciroh.org/courses/).
+You can use our [form](https://portal.ciroh.org/contribute?current-contribution=courses) and submit your course through the portal page.
+
+![Portal Contribute Courses Page](/img/products/portal/courses_contribute_form.png)
+
+You need the following infomation:
+
+1. HydroShare Account.
+2. Course  Title
+3. Course URL where your app is hosted, (or any url realatd to your Course) (Optional)
+4. Documentation URL, (Optional).
+5. Thumbnail image. (Optional)
+6. Course Descriptions (at least 150 words) 
+7. keyword (e.g. hydrology, water data. etc) (Optional)
+
+Under the hood the form creates a HydroShare resource for your course. If you would like to add your course using [HydroShare](https://www.hydroshare.org/home/) directly, you can do the following:
 
 1. Log in to HydroShare or create an account.
 2. Create a **HydroShare Resource**.
-3. Add the following keyword: `nwm_portal_module`.
-4. Fill in the following metadata in the **additional metadata portion**:
+3. Add the following keyword: `nwm_portal_app`.
+4. Add any files related to you Course if any
+5. Add any spatial or temporal coverages associated to your course if any
+6. Fill in the following metadata in the **additional metadata portion**:
 
    - `page_url`
    - `thumbnail_url`
-   - `docs_url`
-   
-5. Make the resource public.
 
-After following these steps, you will be able to see your learning module
 
-### Resources
+7. Make the resource public.
+
+After following these steps, you will be able to see your Course
+
+### Link to useful Resources
 
 - [Making Resources Public](https://help.hydroshare.org/sharing-and-privacy/sharing-and-publishing-resources/)
 - [HydroShare Resources](https://help.hydroshare.org/hydroshare-resources/)
 - [Uploading and Publishing Data and Models](https://help.hydroshare.org/creating-and-managing-resources/)
+- [Zotero Getting Started] (https://www.zotero.org/support/quick_start_guide)
+
+
+## Develop Your Own Apps Using the Tethys Platform
+
+![Portal Develop Page](/img/products/portal/develop_page.png)
+
 
 ## Code
 
@@ -155,7 +272,7 @@ Please report bugs and issues on the GitHub Issues page:
 
 ## Team
 
-- Brigham Young University - Roja Najafi, Iman Maghami, Dan Ames, Jim Nelson
+- Brigham Young University - Dan Ames, Jim Nelson
 - University of Iowa - Ibrahim Demir
 - Aquaveo Contractors - Gio Romero, Michael Souffront, Nathan Swain
 

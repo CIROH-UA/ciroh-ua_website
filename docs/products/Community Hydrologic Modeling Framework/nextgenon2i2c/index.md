@@ -1,11 +1,11 @@
 ---
 sidebar_position: 9
-title: "NextGen on 2i2c JupyterHub"
+title: "NextGen on CIROH JupyterHub"
 description: "Running NextGen on JupyterHub platform"
 tags: [Products, CIROH, NGIAB, Services, JupyterHub]
 ---
 
-The NextGen image is available on the 2i2c JupyterHub under the name "NextGen National Water Model (NWM)".
+New CIROH JupyterHub image named "NextGen National Water Model (NWM)" has both NGIAB Data Preprocess and NextGen packges installed".
 > You can access 2i2c JupyterHub here: [https://ciroh.awi.2i2c.cloud/hub/login](https://ciroh.awi.2i2c.cloud/hub/login).
 
  ![JupyterHub](/img/products/nextgen-on-2i2c/jupyterhub.png)
@@ -46,10 +46,6 @@ python -m ngiab_data_cli -i "cat-2861446" -r --start "2021-10-01" --end "2022-09
 ## Visualizations
 
 Below are some visualizations related to the data:
-
-![Watershed Map](/img/products/nextgen-on-2i2c/visualization-1.png)
-
-![Sub-watershed Map](/img/products/nextgen-on-2i2c/visualization-2.png)
 
 ![Graph](/img/products/nextgen-on-2i2c/graph.png)
 

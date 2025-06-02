@@ -107,8 +107,6 @@ jobs:
     # Trigger CD workflow using repository dispatch          
     - name: Trigger deployment
       uses: peter-evans/repository-dispatch@v2
-      env:
-        
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         event-type: build-completed

@@ -1,4 +1,11 @@
 {
+	"May 2025 Update": [
+			{
+			"type": "news",
+			"title": "CIROH Developer's Conference 2025 Workshops!",
+			"description": "📚 Content from many of DevCon2025's workshops have been made publicly available! Links to several of them are provided below.\n\n> *Note that some workshops made use of resources that were deployed specifically during DevCon. However, their steps should still work when adapted for local installations.*\n\n- [CIROH Community NextGen 2025](https://github.com/CIROH-UA/Conferences/blob/main/CIROHDevCon2025/CIROH%20Community%20NextGen%202025_Final.pdf)\n- [Working with HydroShare, AORC data, HydroFabric and NextGen on CIROH JupyterHub](https://www.hydroshare.org/resource/fc8539358fe64ca6a47468728a0687a1/)"
+			}
+	],
 	"April 2025 Update": [
 			{
 			"type": "feature",

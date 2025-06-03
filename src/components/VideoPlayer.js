@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player';
 
 const ResponsivePlayer = ({ url }) => {
   return (
-    <div className="player-wrapper">
+    <div className="player-wrapper"z>
       <ReactPlayer
         className="react-player"
         url={url}

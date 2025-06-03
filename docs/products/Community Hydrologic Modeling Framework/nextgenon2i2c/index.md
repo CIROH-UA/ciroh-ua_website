@@ -45,7 +45,7 @@ python -m ngiab_data_cli -i "cat-2861446" -r --start "2021-10-01" --end "2022-09
 
 ## Visualizations
 
-Below are some visualizations related to the data:
+Shown below is a sample visualization based on the above command-line example:
 
 ![Graph](/img/products/nextgen-on-2i2c/graph.png)
 

@@ -1,4 +1,17 @@
 {
+	"May 2025 Update": [
+			{
+			"type": "news",
+			"title": "CIROH Developer's Conference 2025: NextGen Workshops",
+			"description": "📚 Content from many of DevCon2025's workshops has been made publicly available! Links to several of them are provided below.\n\n> *Note that some workshops made use of resources that were deployed specifically during DevCon. However, their steps should still work when adapted for local installations.*\n\n- [Navigating the NextGen Ecosystem and NextGen In A Box (NGIAB)](https://github.com/CIROH-UA/Conferences/blob/main/CIROHDevCon2025/CIROH%20Community%20NextGen%202025_Final.pdf)\n- [BMI Basics for NGIAB](https://github.com/CIROH-UA/Conferences/blob/main/CIROHDevCon2025/BMI%20Basics%20Workshop.md)\n- [Output visualization through Tethys and evaluation customization using TEEHR](https://github.com/CIROH-UA/Conferences/blob/main/CIROHDevCon2025/OutputVisualizationThroughTethysAndTEEHREvaluation_DevCon2025_IntroSlides.pdf)\n- [NextGen Calibration Workshop](https://github.com/skoriche/NGIAB-Calibration-DevCon25/blob/main/README.md)\n- [NextGen Research Datastream: How to Contribute to Improving NextGen Forecasts](https://github.com/CIROH-UA/Conferences/blob/main/CIROHDevCon2025/ResearchDataStream_workshop.md) ([Slides](https://github.com/CIROH-UA/Conferences/blob/main/CIROHDevCon2025/ResearchDataStream_presentation.pdf))\n- [Working with HydroShare, AORC data, HydroFabric and NextGen on CIROH JupyterHub](https://www.hydroshare.org/resource/fc8539358fe64ca6a47468728a0687a1/)"
+			},
+			{
+			  "type": "feature",
+			  "title": "CIROH-2i2c JupyterHub: New NextGen National Water Model Image",
+			  "description": "🚀 The NextGen In A Box ecosystem is now available for use on CIROH-2i2c JupyterHub! Select the \"NextGen National Water Model (NWM)\" image to get started.",
+			  "link": "ciroh.awi.2i2c.cloud/"
+			}
+	],
 	"April 2025 Update": [
 			{
 			"type": "feature",

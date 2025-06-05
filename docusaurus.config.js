@@ -18,6 +18,12 @@ const config = {
   organizationName: "CIROH-UA", // Usually your GitHub org/user name.
   projectName: "CIROH-UA", // Usually your repo name.
 
+  // Future flags. (In preparation for DocuHub v4.)
+  future: {
+    v4: true,
+    experimental_faster: true,
+  },
+
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".

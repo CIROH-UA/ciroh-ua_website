@@ -195,6 +195,11 @@ const config = {
             to: '/docs/services/cloudservices/google-cloud',
             from: '/docs/products/cloudservices/google cloud',
           },
+          // Contribute: older redirect (formerly used react-router-dom)
+          {
+            to: '/docs/contribute',
+            from: '/contribute',
+          },
         ],
         createRedirects(existingPath) {
           // JupyterHub redirects

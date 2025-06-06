@@ -1,12 +1,24 @@
 import React, { useEffect, useState } from 'react';
 
-function GitHubReadme({ repo, username, subfolder = '', readmeFileName = '' }) {
+function GitHubReadme({ repo, username, subfolder = '', readmeFileName = '', trimTitle = 'false' }) {
     const [readmeContent, setReadmeContent] = useState('');
 
-    const convertRelativePaths = (html, baseUrl) => {
+    const applyHtmlTransformations = (html, baseUrl) => {
         const parser = new DOMParser();
-        const doc = parser.parseFromString(html, 'text/html');
+        var doc = parser.parseFromString(html, 'text/html');
 
+        // Transformations
+        doc = unshellReadme(doc);
+        doc = convertRelativePaths(doc);
+        if (trimTitle === 'true') doc = trimFirstLine(doc); // Yes, this feels silly, but having it line up semantically with the JSX matters
+
+        return doc.body.innerHTML;
+    };
+
+    // Converts GitHub paths to DocuHub paths, where appropriate.
+    // References that jump to other parts of the page are
+    // non-functional in DocuHub, so they are discarded.
+    const convertRelativePaths = (doc) => {
         // Convert image sources
         doc.querySelectorAll('img[src]').forEach(img => {
             const src = img.getAttribute('src');
@@ -23,26 +35,63 @@ function GitHubReadme({ repo, username, subfolder = '', readmeFileName = '' }) {
                 const relativePath = href.replace(/^\//, '');
                 anchor.href = `https://github.com/${username}/${repo}/blob/main/${subfolder ? subfolder + '/' : ''}${relativePath}`;
             }
+            else if (href && href.startsWith('#')) {
+                var span = doc.createElement("span");
+                span.innerHTML = anchor.innerHTML;
+                anchor.replaceWith(span);
+            }
         });
 
-        return doc.body.innerHTML;
-    };
+        return doc;
+    }
+
+    // Removes much of the cruft from a GitHub README.
+    const unshellReadme = (doc) => {
+        const content = doc.querySelector("article").childNodes;
+        var newContent = [];
+
+        for (var i = 0; i < content.length; i++) {
+            const node = content[i];
+            if (node.className === "markdown-heading") {
+                // The second element is a relative link that
+                // does not work within our renderer,
+                // so we simply discard it.
+                newContent.push(node.childNodes[0]);
+            }
+            else newContent.push(node);
+        }
+        
+        doc.body.innerHTML='';
+        doc.body.replaceChildren(...newContent);
+        return doc;
+    }
+
+    // Trims the first element of the HTML body.
+    const trimFirstLine = (doc) => {
+        if (doc.body.firstElementChild.tagName === "H1") {
+            doc.body.removeChild(doc.body.firstElementChild);
+        }
+        return doc;
+    }
 
     useEffect(() => {
         // Construct the GitHub API URL to fetch the README as HTML
-        let apiUrl = '';
+        let slug = '';
         if (subfolder !== '') {
             if (readmeFileName !== '') 
-                apiUrl = `https://api.github.com/repos/${username}/${repo}/contents/${subfolder}/${readmeFileName}?ref=main`;
+                slug = `${subfolder}/${readmeFileName}`;
             else
-                apiUrl = `https://api.github.com/repos/${username}/${repo}/contents/${subfolder}/readme?ref=main`;
+                slug = `${subfolder}/README.md`;
         } 
         else {
             if (readmeFileName !== '') 
-                apiUrl = `https://api.github.com/repos/${username}/${repo}/${readmeFileName}?ref=main`;
+                slug = `${readmeFileName}`;
             else
-                apiUrl = `https://api.github.com/repos/${username}/${repo}/readme?ref=main`;
+                slug = `README.md`;
         }
+
+        const apiUrl = `https://api.github.com/repos/${username}/${repo}/contents/${slug}?ref=main`;
+        const srcUrl = `https://github.com/${username}/${repo}/blob/main/${slug}`;
 
         fetch(apiUrl, {
             headers: {
@@ -56,23 +105,22 @@ function GitHubReadme({ repo, username, subfolder = '', readmeFileName = '' }) {
                 return response.text();
             })
             .then(html => {
-                // Convert relative paths to absolute
-                const processedHtml = convertRelativePaths(html);
+                // Apply transformations to html
+                var processedHtml = applyHtmlTransformations(html);
 
                 // Define the note markdown as a string
-                const noteMarkdown = `
-                <blockquote style='padding:10px;font-size:1.1rem;'>
-                    <p><strong>NOTE</strong></p>
-                    <p>Below content is rendered from <a href='https://github.com/${username}/${repo}/blob/main/README.md'>https://github.com/${username}/${repo}/blob/main/README.md</a></p>
-                    <p></p>
+                const noteHtml = `
+                <blockquote style='padding:20px;font-size:1.1rem;'>
+                    <strong>NOTE</strong><br>
+                    Below content is rendered from <a href='${srcUrl}'>${srcUrl}</a>.
                 </blockquote>
                 `;
 
                 // Prepend the note markdown to the processed README content
-                const combinedContent = noteMarkdown + processedHtml;
+                const combinedHtml = noteHtml + processedHtml;
 
                 // Update the state with the combined content
-                setReadmeContent(combinedContent);
+                setReadmeContent(combinedHtml);
             })
             .catch(err => console.error('Error fetching README:', err));
     }, [repo, username, subfolder, readmeFileName]);
@@ -82,3 +130,5 @@ function GitHubReadme({ repo, username, subfolder = '', readmeFileName = '' }) {
 }
 
 export default GitHubReadme;
+
+React.Fragment;

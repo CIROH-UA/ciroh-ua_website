@@ -100,6 +100,7 @@ const config = {
       '@docusaurus/plugin-client-redirects',
       {
         redirects: [
+          // NGIAB: manual redirects to reflect heavy folder refactoring
           {
             to: '/docs/products/ngiab',
             from: '/docs/products/Community Hydrologic Modeling Framework',
@@ -151,12 +152,57 @@ const config = {
             to: '/docs/products/ngiab/office-hours',
             from: '/docs/products/Community Hydrologic Modeling Framework/ngiabOfficeHours',
           },
+          // Snow sensing: manual redirects to normalize URL style
+          {
+            to: '/docs/products/snow-tools',
+            from: '/docs/products/Snow Sensing and Modeling Tools',
+          },
+          {
+            to: '/docs/products/snow-tools/snow-intro',
+            from: '/docs/products/Snow Sensing and Modeling Tools/Intro-to-Snow-Observations-Modeling-Analysis',
+          },
+          {
+            to: '/docs/products/snow-tools/optimize-sensors',
+            from: '/docs/products/Snow Sensing and Modeling Tools/Optimized_Snow_Sensor_Location',
+          },
+          {
+            to: '/docs/products/snow-tools/snow-sensing',
+            from: '/docs/products/Snow Sensing and Modeling Tools/snow_sensing',
+          },
+          {
+            to: '/docs/products/snow-tools/sweml-v2-0',
+            from: '/docs/products/Snow Sensing and Modeling Tools/SWEMLv2.0',
+          },
         ],
         createRedirects(existingPath) {
+          // Paths have only been changed for the products section, so return early if not in there
+          if (!existingPath.includes('/docs/products/')) {
+            return undefined; // Return a falsy value: no redirect created
+          }
+          // Products redirects
           if (existingPath.includes('/docs/products/ngiab/ngiab-intro')) {
-            console.log(existingPath);
             return [
               existingPath.replace('/docs/products/ngiab/ngiab-intro', '/docs/products/Community Hydrologic Modeling Framework/ngiabintro'),
+            ];
+          }
+          if (existingPath.includes('/docs/products/ml-ai')) {
+            return [
+              existingPath.replace('/docs/products/ml-ai', '/docs/products/Machine Learning and AI Tools'),
+            ];
+          }
+          if (existingPath.includes('/docs/products/evaluation')) {
+            return [
+              existingPath.replace('/docs/products/evaluation', '/docs/products/Evaluation Tools'),
+            ];
+          }
+          if (existingPath.includes('/docs/products/visualization')) {
+            return [
+              existingPath.replace('/docs/products/visualization', '/docs/products/Visualization and Analysis Tools'),
+            ];
+          }
+          if (existingPath.includes('/docs/products/mobile-apps')) {
+            return [
+              existingPath.replace('/docs/products/mobile-apps', '/docs/products/Mobile Apps'),
             ];
           }
           return undefined; // Return a falsy value: no redirect created

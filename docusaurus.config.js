@@ -93,7 +93,155 @@ const config = {
         routeBasePath: 'release-notes', // Slug for the blog
         //authorsMapPath: "authors.yaml", // Path to the authors' mapping file (unneeded in this case)
       }
-    ]
+    ],
+
+    // Redirects (handler for dead links)
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          // NGIAB: manual redirects to reflect heavy folder refactoring
+          {
+            to: '/docs/products/ngiab',
+            from: '/docs/products/Community Hydrologic Modeling Framework',
+          },
+          {
+            to: '/docs/products/ngiab/components/ngiab-preprocessor',
+            from: '/docs/products/Community Hydrologic Modeling Framework/ngiabpreprocessor',
+          },
+          {
+            to: '/docs/products/ngiab/components/ngiab-teehr',
+            from: '/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxTeehr',
+          },
+          {
+            to: '/docs/products/ngiab/components/ngiab-visualizer',
+            from: '/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxVisualizer',
+          },
+          {
+            to: '/docs/products/ngiab/components/ngiab-calibration',
+            from: '/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxCalibration',
+          },
+          {
+            to: '/docs/products/ngiab/distributions/ngiab-docker',
+            from: '/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxDocker',
+          },
+          {
+            to: '/docs/products/ngiab/distributions/ngiab-singularity',
+            from: '/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxSingularity',
+          },
+          {
+            to: '/docs/products/ngiab/distributions/nextgen-2i2c',
+            from: '/docs/products/Community Hydrologic Modeling Framework/nextgenon2i2c',
+          },
+          {
+            to: '/docs/products/ngiab/extensions/nextgen-datastream',
+            from: [
+              '/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/nextgenDatastream',
+              '/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream',
+            ],
+          },
+          {
+            to: '/docs/products/ngiab/extensions/community-hydrofabric',
+            from: '/docs/products/Community Hydrologic Modeling Framework/communityHydrofabric',
+          },
+          {
+            to: '/docs/products/ngiab/dashboard',
+            from: '/docs/products/Community Hydrologic Modeling Framework/repositorydashboard',
+          },
+          {
+            to: '/docs/products/ngiab/office-hours',
+            from: '/docs/products/Community Hydrologic Modeling Framework/ngiabOfficeHours',
+          },
+          // Snow sensing: manual redirects to normalize URL style
+          {
+            to: '/docs/products/snow-tools',
+            from: '/docs/products/Snow Sensing and Modeling Tools',
+          },
+          {
+            to: '/docs/products/snow-tools/snow-intro',
+            from: '/docs/products/Snow Sensing and Modeling Tools/Intro-to-Snow-Observations-Modeling-Analysis',
+          },
+          {
+            to: '/docs/products/snow-tools/optimize-sensors',
+            from: '/docs/products/Snow Sensing and Modeling Tools/Optimized_Snow_Sensor_Location',
+          },
+          {
+            to: '/docs/products/snow-tools/snow-sensing',
+            from: '/docs/products/Snow Sensing and Modeling Tools/snow_sensing',
+          },
+          {
+            to: '/docs/products/snow-tools/sweml-v2-0',
+            from: '/docs/products/Snow Sensing and Modeling Tools/SWEMLv2.0',
+          },
+          // Community FIM: manual redirects to normalize URL style
+          {
+            to: '/docs/products/community-fim',
+            from: '/docs/products/Community Flood Inundation Mapping',
+          },
+          {
+            to: '/docs/products/community-fim/fimserv',
+            from: '/docs/products/Community Flood Inundation Mapping/FIM as a Service',
+          },
+          {
+            to: '/docs/products/community-fim/fimeval',
+            from: '/docs/products/Community Flood Inundation Mapping/FIM Evaluation Framework',
+          },
+          {
+            to: '/docs/products/community-fim/fim-database',
+            from: '/docs/products/Community Flood Inundation Mapping/FIM Database',
+          },
+          // Google Cloud: standalone fix
+          {
+            to: '/docs/services/cloudservices/google-cloud',
+            from: '/docs/products/cloudservices/google cloud',
+          },
+        ],
+        createRedirects(existingPath) {
+          // JupyterHub redirects
+          if (existingPath.includes('/docs/services/cloudservices/2i2c/')) {
+            return [
+              existingPath.replace('/docs/services/cloudservices/2i2c/', '/docs/services/cloudservices/ciroh jupyterhub/'),
+            ];
+          }
+          // Otherwise, paths have only been changed en masse for the products section, so return early if not in there
+          if (!existingPath.includes('/docs/products/')) {
+            return undefined; // Return a falsy value: no redirect created
+          }
+          // Products redirects
+          if (existingPath.includes('/docs/products/ngiab/ngiab-intro')) {
+            return [
+              existingPath.replace('/docs/products/ngiab/ngiab-intro', '/docs/products/Community Hydrologic Modeling Framework/ngiabintro'),
+            ];
+          }
+          if (existingPath.includes('/docs/products/ml-ai')) {
+            return [
+              existingPath.replace('/docs/products/ml-ai', '/docs/products/Machine Learning and AI Tools'),
+            ];
+          }
+          if (existingPath.includes('/docs/products/evaluation')) {
+            return [
+              existingPath.replace('/docs/products/evaluation', '/docs/products/Evaluation Tools'),
+            ];
+          }
+          if (existingPath.includes('/docs/products/visualization')) {
+            return [
+              existingPath.replace('/docs/products/visualization', '/docs/products/Visualization and Analysis Tools'),
+            ];
+          }
+          if (existingPath.includes('/docs/products/mobile-apps')) {
+            return [
+              existingPath.replace('/docs/products/mobile-apps', '/docs/products/Mobile Apps'),
+            ];
+          }
+          if (existingPath.includes('/docs/products/data-management')) {
+            return [
+              existingPath.replace('/docs/products/data-management', '/docs/products/Data Management and Access Tools'),
+            ];
+          }
+          return undefined; // Return a falsy value: no redirect created
+        },
+      },
+    ],
   ],
 
   customFields: {

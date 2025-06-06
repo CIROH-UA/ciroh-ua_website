@@ -60,8 +60,8 @@
 			{
 				"type": "news",
 				"title": "Updated Community NextGen Documentation Page",
-				"description": "📢 We've new updates under Community NextGen products tab. 📚 This comprehensive resource includes an overview of NGIAB and its extensions.\n - 🔍 Learn more about Data Preprocess, TEEHR Evaluation, Data Visualizer, and DataStreamCLI. \n - 🛠️ Key features, Capabilities and Access Method are included. \n \n \n 🔗 Visit the new Community Hydrologic Modeling Framework documentation page [here](https://docs.ciroh.org/docs/products/Community%20Hydrologic%20Modeling%20Framework/):",
-				"link": "https://docs.ciroh.org/docs/products/Community%20Hydrologic%20Modeling%20Framework/"
+				"description": "📢 We've new updates under Community NextGen products tab. 📚 This comprehensive resource includes an overview of NGIAB and its extensions.\n - 🔍 Learn more about Data Preprocess, TEEHR Evaluation, Data Visualizer, and DataStreamCLI. \n - 🛠️ Key features, Capabilities and Access Method are included. \n \n \n 🔗 Visit the new Community Hydrologic Modeling Framework documentation page [here](https://docs.ciroh.org/docs/products/ngiab/):",
+				"link": "https://docs.ciroh.org/docs/products/ngiab/"
 			},
 			{
 			  "type": "feature",
@@ -161,7 +161,7 @@
             "type": "update",
             "title": "NWM BigQuery API Update",
             "description": "Access NWM streamflow prediction data directly through BigQuery instead of downloading netCDF files. Learn more about this efficient data access method in our documentation here:",
-            "link": "https://docs.ciroh.org/docs/products/Data%20Management%20and%20Access%20Tools/bigquery-api/"
+            "link": "https://docs.ciroh.org/docs/products/data-management/bigquery-api/"
         }
 		
 	],
@@ -232,7 +232,7 @@
 			"type": "news",
 			"title": "NextGen Community Office Hours",
 			"description": "We are excited to invite you to join our NextGen Community Office Hours. It is an excellent opportunity for everyone to stay up to date with the latest developments in hydrologic modeling at CIROH. Join us to engage with the team and learn more about ongoing projects and advancements.",
-			"link": "https://docs.ciroh.org/docs/products/Community%20Hydrologic%20Modeling%20Framework/ngiabOfficeHours"
+			"link": "https://docs.ciroh.org/docs/products/ngiab/office-hours"
 		} , 
 		
 		{
@@ -471,7 +471,7 @@
 			"type": "news",
 			"title": "NextGen In A Box (NGIAB)",
 			"description": "We have made some improvements to NGIAB: 10 PRs merged. Sample input data updated to use AWI_003(with new data provider names). Boost upgraded to v1.79. Self-hosted Runner can start and stop automatically with GitHub Actions. NGIAB image can run in auto mode. Geopackage support added. Documentation available at CIROH DocuHub",
-			"link": " https://docs.ciroh.org/docs/products/Community%20Hydrologic%20Modeling%20Framework/nextgeninaboxDocker"
+			"link": " https://docs.ciroh.org/docs/products/ngiab/distributions/ngiab-docker"
 		},
 		{
 			"type": "feature",

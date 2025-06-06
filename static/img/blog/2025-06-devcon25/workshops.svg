@@ -1,0 +1,190 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="675" fill="white"/>
+  
+  <!-- Definitions -->
+  <defs>
+    <!-- Gradient for LIVE badge -->
+    <linearGradient id="liveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC2626;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Title gradient -->
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Platform gradients -->
+    <linearGradient id="googleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4285F4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34A853;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="nsfGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="awsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9900;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6600;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="bigqueryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#669DF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4285F4;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Card backgrounds -->
+    <linearGradient id="cardBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EFF6FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DBEAFE;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cardBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FEF3C7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FDE68A;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cardBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF7ED;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FED7AA;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cardBg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0F9FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F2FE;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.15"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Pulse animation for LIVE badge -->
+    <animate id="pulse" attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </defs>
+  
+  <!-- Background decoration -->
+  <circle cx="100" cy="100" r="200" fill="#DBEAFE" opacity="0.2"/>
+  <circle cx="1100" cy="575" r="150" fill="#FEE2E2" opacity="0.2"/>
+  <circle cx="600" cy="400" r="300" fill="#F3E8FF" opacity="0.1"/>
+  
+  <!-- Header Section -->
+  <g transform="translate(60, 40)">
+    <!-- DevCon 2025 Title -->
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="url(#titleGradient)">CIROH DevCon 2025</text>
+    <text x="0" y="80" font-family="Arial, sans-serif" font-size="32" font-weight="600" fill="#1F2937">Infrastructure is</text>
+    
+    <!-- LIVE Badge -->
+    <rect x="280" y="50" width="100" height="40" rx="20" fill="url(#liveGradient)" filter="url(#shadow)">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="330" y="75" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">LIVE!</text>
+    
+    <!-- Pulsing circle indicator -->
+    <circle cx="400" cy="70" r="8" fill="#EF4444">
+      <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- 12 Workshops badge -->
+    <rect x="450" y="50" width="130" height="40" rx="20" fill="#10B981" filter="url(#shadow)"/>
+    <text x="515" y="75" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">12 Workshops</text>
+  </g>
+  
+  <!-- Platform Cards -->
+  <!-- 2i2c JupyterHub on Google Cloud -->
+  <g transform="translate(60, 180)">
+    <rect width="540" height="140" rx="16" fill="url(#cardBg1)" filter="url(#shadow)"/>
+    <circle cx="50" cy="70" r="25" fill="url(#googleGradient)"/>
+    <text x="50" y="78" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">G</text>
+    
+    <text x="90" y="50" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#1E40AF">CIROH 2i2c JupyterHub on Google Cloud</text>
+    <text x="90" y="75" font-family="Arial, sans-serif" font-size="18" fill="#64748B">Platform for interactive computing</text>
+    
+    <rect x="90" y="90" width="100" height="30" rx="15" fill="#10B981"/>
+    <text x="140" y="109" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="white" text-anchor="middle">131 attendees</text>
+  </g>
+  
+  <!-- NSF ACCESS JetStream2 -->
+  <g transform="translate(640, 180)">
+    <rect width="500" height="140" rx="16" fill="url(#cardBg2)" filter="url(#shadow)"/>
+    <circle cx="50" cy="70" r="25" fill="url(#nsfGradient)"/>
+    <text x="50" y="78" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">NSF</text>
+    
+    <text x="90" y="50" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#92400E">NSF ACCESS JetStream2</text>
+    <text x="90" y="75" font-family="Arial, sans-serif" font-size="18" fill="#64748B">NextGen water modeling</text>
+    
+    <rect x="90" y="90" width="120" height="30" rx="15" fill="#8B5CF6"/>
+    <text x="150" y="109" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="white" text-anchor="middle">105 NextGen inst.</text>
+  </g>
+  
+  <!-- AWS S3 -->
+  <g transform="translate(60, 350)">
+    <rect width="540" height="140" rx="16" fill="url(#cardBg3)" filter="url(#shadow)"/>
+    <circle cx="50" cy="70" r="25" fill="url(#awsGradient)"/>
+    <text x="50" y="78" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">AWS</text>
+    
+    <text x="90" y="50" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#EA580C">AWS</text>
+    <text x="90" y="75" font-family="Arial, sans-serif" font-size="18" fill="#64748B">Cloud infrastructure platform</text>
+    
+    <rect x="90" y="90" width="90" height="30" rx="15" fill="#EC4899"/>
+    <text x="135" y="109" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="white" text-anchor="middle">51 attendees</text>
+  </g>
+  
+  <!-- Google Cloud BigQuery -->
+  <g transform="translate(640, 350)">
+    <rect width="500" height="140" rx="16" fill="url(#cardBg4)" filter="url(#shadow)"/>
+    <circle cx="50" cy="70" r="25" fill="url(#bigqueryGradient)"/>
+    <text x="50" y="78" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">BQ</text>
+    
+    <text x="90" y="50" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="#0891B2">Google Cloud BigQuery</text>
+    <text x="90" y="75" font-family="Arial, sans-serif" font-size="18" fill="#64748B">Data analytics platform</text>
+    
+    <rect x="90" y="90" width="90" height="30" rx="15" fill="#14B8A6"/>
+    <text x="135" y="109" font-family="Arial, sans-serif" font-size="14" font-weight="500" fill="white" text-anchor="middle">50 attendees</text>
+  </g>
+  
+  <!-- Summary Stats -->
+  <g transform="translate(60, 530)">
+    <rect width="1080" height="80" rx="20" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2"/>
+    
+    <!-- Total workshops -->
+    <g transform="translate(150, 20)">
+      <text x="0" y="25" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#3B82F6">12</text>
+      <text x="0" y="50" font-family="Arial, sans-serif" font-size="16" fill="#64748B">Total Workshops</text>
+    </g>
+    
+    <!-- Total attendees -->
+    <g transform="translate(400, 20)">
+      <text x="0" y="25" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#10B981">337</text>
+      <text x="0" y="50" font-family="Arial, sans-serif" font-size="16" fill="#64748B">Total Attendees</text>
+    </g>
+    
+    <!-- Platforms -->
+    <g transform="translate(650, 20)">
+      <text x="0" y="25" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#8B5CF6">4</text>
+      <text x="0" y="50" font-family="Arial, sans-serif" font-size="16" fill="#64748B">Cloud Platforms</text>
+    </g>
+    
+    <!-- Ready message -->
+    <g transform="translate(850, 20)">
+      <text x="0" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#1F2937">Ready to power</text>
+      <text x="0" y="55" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#1F2937">water science innovation!</text>
+    </g>
+  </g>
+  
+  <!-- Hashtags -->
+  <text x="600" y="650" font-family="Arial, sans-serif" font-size="16" fill="#6366F1" text-anchor="middle">#DevCon2025  #CloudComputing  #WaterScience</text>
+</svg>

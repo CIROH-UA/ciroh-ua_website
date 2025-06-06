@@ -190,9 +190,20 @@ const config = {
             to: '/docs/products/community-fim/fim-database',
             from: '/docs/products/Community Flood Inundation Mapping/FIM Database',
           },
+          // Google Cloud: standalone fix
+          {
+            to: '/docs/services/cloudservices/google-cloud',
+            from: '/docs/products/cloudservices/google cloud',
+          },
         ],
         createRedirects(existingPath) {
-          // Paths have only been changed en masse for the products section, so return early if not in there
+          // JupyterHub redirects
+          if (existingPath.includes('/docs/services/cloudservices/2i2c/')) {
+            return [
+              existingPath.replace('/docs/services/cloudservices/2i2c/', '/docs/services/cloudservices/ciroh jupyterhub/'),
+            ];
+          }
+          // Otherwise, paths have only been changed en masse for the products section, so return early if not in there
           if (!existingPath.includes('/docs/products/')) {
             return undefined; // Return a falsy value: no redirect created
           }

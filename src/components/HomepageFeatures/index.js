@@ -388,15 +388,15 @@ export default function HomepageFeatures() {
               title="Google Cloud"
               image="img/logos/corp/google-cloud.jpg"
               description="Explore different services and tools offered by CIROH Google Cloud. Learn how to access Google Cloud Platform (GCP) and leverage its resources for your research and projects."
-              link="/docs/services/cloudservices/google cloud"
+              link="/docs/services/cloudservices/google-cloud"
             />
           </div>
           <div className="row">
             <Card
-              title="CIROH JupyterHub"
+              title="CIROH-2i2c JupyterHub"
               image="img/logos/corp/jupyterhub.jpg"
               description="Access cloud-based JupyterHub environment on Google Cloud tailored for hydrological research. Leverage computing power with both CPU and GPU capabilities for advanced computational needs."
-              link="/docs/services/cloudservices/ciroh jupyterhub"
+              link="/docs/services/cloudservices/2i2c"
             />
             <Card
               title="Pantarhei"

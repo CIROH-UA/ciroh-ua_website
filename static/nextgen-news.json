@@ -161,7 +161,7 @@
             "type": "update",
             "title": "NWM BigQuery API Update",
             "description": "Access NWM streamflow prediction data directly through BigQuery instead of downloading netCDF files. Learn more about this efficient data access method in our documentation here:",
-            "link": "https://docs.ciroh.org/docs/products/Data%20Management%20and%20Access%20Tools/bigquery-api/"
+            "link": "https://docs.ciroh.org/docs/products/data-management/bigquery-api/"
         }
 		
 	],

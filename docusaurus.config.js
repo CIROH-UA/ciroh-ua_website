@@ -173,9 +173,26 @@ const config = {
             to: '/docs/products/snow-tools/sweml-v2-0',
             from: '/docs/products/Snow Sensing and Modeling Tools/SWEMLv2.0',
           },
+          // Community FIM: manual redirects to normalize URL style
+          {
+            to: '/docs/products/community-fim',
+            from: '/docs/products/Community Flood Inundation Mapping',
+          },
+          {
+            to: '/docs/products/community-fim/fimserv',
+            from: '/docs/products/Community Flood Inundation Mapping/FIM as a Service',
+          },
+          {
+            to: '/docs/products/community-fim/fimeval',
+            from: '/docs/products/Community Flood Inundation Mapping/FIM Evaluation Framework',
+          },
+          {
+            to: '/docs/products/community-fim/fim-database',
+            from: '/docs/products/Community Flood Inundation Mapping/FIM Database',
+          },
         ],
         createRedirects(existingPath) {
-          // Paths have only been changed for the products section, so return early if not in there
+          // Paths have only been changed en masse for the products section, so return early if not in there
           if (!existingPath.includes('/docs/products/')) {
             return undefined; // Return a falsy value: no redirect created
           }
@@ -203,6 +220,11 @@ const config = {
           if (existingPath.includes('/docs/products/mobile-apps')) {
             return [
               existingPath.replace('/docs/products/mobile-apps', '/docs/products/Mobile Apps'),
+            ];
+          }
+          if (existingPath.includes('/docs/products/data-management')) {
+            return [
+              existingPath.replace('/docs/products/data-management', '/docs/products/Data Management and Access Tools'),
             ];
           }
           return undefined; // Return a falsy value: no redirect created

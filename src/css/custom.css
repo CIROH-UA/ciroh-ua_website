@@ -76,15 +76,15 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 } */
  
-.hidden {
-display: none !important;
-}
-
 .docs-wrapper .container {
   max-width: 100%;
   margin-left: 1.3rem;
   margin-right: 1.3rem;
 }
+
+
+
+
 
 .embed-wrapper {
   position: relative;

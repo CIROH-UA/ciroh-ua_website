@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 9
 title: "NextGen on CIROH JupyterHub"
 description: "Running NextGen on JupyterHub platform"
 tags: [Products, CIROH, NGIAB, Services, JupyterHub, 2i2c, HydroShare, Hydrofabric]

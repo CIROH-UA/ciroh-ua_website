@@ -93,7 +93,76 @@ const config = {
         routeBasePath: 'release-notes', // Slug for the blog
         //authorsMapPath: "authors.yaml", // Path to the authors' mapping file (unneeded in this case)
       }
-    ]
+    ],
+
+    // Redirects (handler for dead links)
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/docs/products/ngiab',
+            from: '/docs/products/Community Hydrologic Modeling Framework',
+          },
+          {
+            to: '/docs/products/ngiab/components/ngiab-preprocessor',
+            from: '/docs/products/Community Hydrologic Modeling Framework/ngiabpreprocessor',
+          },
+          {
+            to: '/docs/products/ngiab/components/ngiab-teehr',
+            from: '/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxTeehr',
+          },
+          {
+            to: '/docs/products/ngiab/components/ngiab-visualizer',
+            from: '/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxVisualizer',
+          },
+          {
+            to: '/docs/products/ngiab/components/ngiab-calibration',
+            from: '/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxCalibration',
+          },
+          {
+            to: '/docs/products/ngiab/distributions/ngiab-docker',
+            from: '/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxDocker',
+          },
+          {
+            to: '/docs/products/ngiab/distributions/ngiab-singularity',
+            from: '/docs/products/Community Hydrologic Modeling Framework/nextgeninaboxSingularity',
+          },
+          {
+            to: '/docs/products/ngiab/distributions/nextgen-2i2c',
+            from: '/docs/products/Community Hydrologic Modeling Framework/nextgenon2i2c',
+          },
+          {
+            to: '/docs/products/ngiab/extensions/nextgen-datastream',
+            from: [
+              '/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/nextgenDatastream',
+              '/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream',
+            ],
+          },
+          {
+            to: '/docs/products/ngiab/extensions/community-hydrofabric',
+            from: '/docs/products/Community Hydrologic Modeling Framework/communityHydrofabric',
+          },
+          {
+            to: '/docs/products/ngiab/dashboard',
+            from: '/docs/products/Community Hydrologic Modeling Framework/repositorydashboard',
+          },
+          {
+            to: '/docs/products/ngiab/office-hours',
+            from: '/docs/products/Community Hydrologic Modeling Framework/ngiabOfficeHours',
+          },
+        ],
+        createRedirects(existingPath) {
+          if (existingPath.includes('/docs/products/ngiab/ngiab-intro')) {
+            console.log(existingPath);
+            return [
+              existingPath.replace('/docs/products/ngiab/ngiab-intro', '/docs/products/Community Hydrologic Modeling Framework/ngiabintro'),
+            ];
+          }
+          return undefined; // Return a falsy value: no redirect created
+        },
+      },
+    ],
   ],
 
   customFields: {

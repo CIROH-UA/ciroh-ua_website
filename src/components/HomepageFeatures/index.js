@@ -565,7 +565,7 @@ export default function HomepageFeatures() {
 
               <Link
                 className={`button button--secondary ${styles.col4}`}
-                href="/docs/products/Community Hydrologic Modeling Framework/ngiabOfficeHours"
+                href="/docs/products/ngiab/office-hours"
                 style={{ textDecoration: "none", marginRight: "10px" }}
               >
                 Learn More

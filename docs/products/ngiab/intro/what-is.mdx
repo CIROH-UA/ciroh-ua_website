@@ -1,0 +1,65 @@
+---
+sidebar_position: 1
+title: "What is the NextGen Framework?"
+description: "An introduction to the NextGen Framework and its related models."
+tags: [Products, NGIAB, CIROH, National Water Model, Education]
+---
+
+import Link from '@docusaurus/Link'
+
+The Next Generation Water Resources Modeling Framework, most frequently referred to as NextGen,
+is a hydrologic modeling framework currently under development for use in the National Water Model.
+The National Water Model is the United States' core water prediction framework, offering predictions
+for the Continental United States (CONUS), Alaska, Hawaii, Puerto Rico, and the U.S. Virgin Islands.
+
+Prior to NextGen, the National Water Model applied the same module formulation everywhere, which didn't
+fully capture the breadth of behavior across the US. After all, different regions face both different
+factor that impact their hydrology, such as the snowpack and melt of the Northern U.S., as well as different
+core challenges that they need to address, such as water conservation efforts in the West and flood prediction
+in the Southeast.
+
+The NextGen Framework aims to resolve these limitations by transitioning to a highly modular, model-agnostic framework
+that improves regional interoperability and opening model contributions to the broader hydrological community.
+To enable these tenets, NextGen uses the Basic Model Interface (BMI) to standardize the format of each model's
+input, output, and properties, thus allowing for models written in any language to quickly be coupled together
+to create new outcomes.
+
+As of version 3.0 of the National Water Model, which was adopted in 2024, the NWM represents a specific configuration
+of the NextGen Framework, which is freely available for use by the scientific community.
+
+> *Source: [The National Water Model, NOAA-OWP](https://www.weather.gov/media/owp/oh/docs/2021-OWP-NWM-NextGen-Framework.pdf)*
+
+## What is NGen?
+
+[NGen](https://github.com/NOAA-OWP/ngen/tree/master) is the canonical implementation of the NextGen framework,
+responsible for administering connections between encapsulated models.
+While NGen is currently still under development, it's already become an incredibly powerful tool for novel approaches to hydrology.
+
+Unfortunately, these advantages are stymied somewhat by the difficulty of installing NGen.
+No standard installation process is currently available,
+instead requiring users to manage a [lengthy chain](https://github.com/NOAA-OWP/ngen/blob/master/INSTALL.md)
+of dependencies, compilers, and environmental conditions.
+This can already be time-consuming a time-consuming task for experienced programmers,
+so for scientists wanting to apply it in their own research,
+installing and configuring NGen is extremely unapproachable.
+
+## What is NextGen In A Box?
+
+Fortunately, there's a solution to this problem!
+[NextGen In A Box](https://ngiab.ciroh.org) is a *containerized* distribution of the NextGen framework.
+Containerization is an approach to software distribution and deployment that directly defines
+the host operating system, dependencies, and run conditions for software,
+which allows the software to be run in effectively identical conditions regardless of the host system.
+This means that with NextGen In A Box, anyone can get NextGen up and running *in as few as 30 minutes!*
+
+Additionally, NextGen In A Box acts as the host platform for a full ecosystem of free, open-source
+utilities that allow users to customize, evaluate, and visualize their model runs.
+These tools lower the barrier to entry even further, allowing scientists to seamlessly
+integrate the NextGen framework into their workflows and produce exciting new discoveries.
+
+---
+
+If you'd like to get started with NextGen In A Box, check out the NGIAB 101 module,
+which contains everything you'll need to know to get started.
+
+<Link class="button button--active button--primary" style={{'margin-right':'1.4rem', 'margin-bottom':'1.3rem'}} to="https://docs.ciroh.org/training-NGIAB-101/">NGIAB 101 Module</Link>

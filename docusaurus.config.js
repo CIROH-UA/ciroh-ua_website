@@ -134,14 +134,18 @@ const config = {
             from: '/docs/products/Community Hydrologic Modeling Framework/nextgenon2i2c',
           },
           {
-            to: '/docs/products/ngiab/extensions/nextgen-datastream',
+            to: '/docs/products/research-datastream/',
             from: [
               '/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/nextgenDatastream',
               '/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream',
             ],
           },
           {
-            to: '/docs/products/ngiab/extensions/community-hydrofabric',
+            to: '/docs/products/research-datastream/components/forcingprocessor/',
+            from: '/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/forcingprocessor/',
+          },
+          {
+            to: '/docs/products/ngiab/components/community-hydrofabric',
             from: '/docs/products/Community Hydrologic Modeling Framework/communityHydrofabric',
           },
           {

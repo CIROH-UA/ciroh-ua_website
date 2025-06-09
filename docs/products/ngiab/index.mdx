@@ -1,318 +1,57 @@
 ---
 sidebar_position: 2
-title: "Community Hydrologic Modeling"
+title: "NextGen In A Box"
 description: "Community NextGen"
 tags: [Products, NGIAB, CIROH, NextGen Datastream, HPC, Cloud Services, Singularity, Docker, National Water Model]
 ---
 
+<!-- UNDER HEAVY CONSTRUCTION -->
+
 import Link from '@docusaurus/Link'
+import DocCardList from '@theme/DocCardList';
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-Community NextGen is a community-accessible verison of NextGen Water Resources Modeling Framework ([NextGen](https://github.com/NOAA-OWP/ngen)). It simplifies deployment with a one-click containerization. NGIAB offers both Docker-based cloud infrastructure ([NGIAB-CloudInfra](https://github.com/CIROH-UA/NGIAB-CloudInfra/blob/main/README.md)) and Singularity-based high-performance computing ([NGIAB-HPCInfra](https://github.com/CIROH-UA/NGIAB-HPCInfra/blob/main/README.md)). New NGIAB product website is now available at [NGIAB website](https://ngiab.ciroh.org). NGIAB includes essential tools such as [Data Preprocess](https://github.com/CIROH-UA/NGIAB_data_preprocess/blob/main/README.md), which simplifies data preparation with its interactive map, and [Data Visualizer](https://github.com/CIROH-UA/ngiab-client), which provides geospatial and time series visualization. With [NextGen Datastream](https://github.com/CIROH-UA/ngen-datastream/blob/main/README.md) you can build and validate NextGen input packages, execute NextGen through NGIAB and version the entire run for reproducibility. [NGIAB-Cal](https://github.com/CIROH-UA/ngiab-cal) allows researchers to calibrate NGIAB-compliant data packages, such as CFE and NOAH-OWP modules.
-
-Community NextGen provides hydrologists and researchers with powerful modeling capabilities through simplified deployment options:
-
-### Community NextGen Related Websites
-- [**NGIAB Website**](https://ngiab.ciroh.org/): Transforming Hydrology Modeling using open-source technologies
-- [**NGIAB 101 Training Module**](https://docs.ciroh.org/training-NGIAB-101/): Online training module for NGIAB and its essential components
-
-### Deployment Options
-- **Cloud Infrastructure** via docker-based [NGIAB-CloudInfra](https://github.com/CIROH-UA/NGIAB-CloudInfra/blob/main/README.md)
-- **High-Performance Computing** using singularity-based [NGIAB-HPCInfra](https://github.com/CIROH-UA/NGIAB-HPCInfra/blob/main/README.md)
-
-### Essential Components
-NGIAB integrates several powerful tools:
-- [**Data Preprocess**](https://github.com/CIROH-UA/NGIAB_data_preprocess/blob/main/README.md): Simplifies data preparation through an interactive map interface and command line tools
-- [**TEEHR Evaluation**](https://github.com/CIROH-UA/ngiab-teehr/blob/main/README.md): Provides comprehensive model evaluation capabilities
-- [**Data Visualizer**](https://github.com/CIROH-UA/ngiab-client): Delivers sophisticated geospatial and time series visualization
-- [**DataStreamCLI**](https://github.com/CIROH-UA/ngen-datastream/blob/main/README.md): Manages data streams for model input/output
-- [**NGIAB-Cal**](https://github.com/CIROH-UA/ngiab-cal): Calibrates hydrologic models for NGIAB workflows
-
-NGIAB and extensions are to make advanced hydrological modeling accessible to the broader community while maintaining the computational power needed for complex water resource simulations.
-
-<div style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}}>
-  <img class="theme-invert-dark" src={useBaseUrl("/img/NGIAB-extensions-diagram.svg")}/>
+<div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+    <img src="/img/logos/ngiab-blurb.png" width="600px" max-width="80%" />
+    <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'row' }}>
+      <Link class="button button--active button--primary" style={{'margin':'0.5rem'}} to="https://ngiab.ciroh.org/">NextGen In A Box Website</Link>
+      <Link class="button button--active button--primary" style={{'margin':'0.5rem'}} to="https://docs.ciroh.org/training-NGIAB-101/">NGIAB 101 Learning Module</Link>
+    </div>
 </div>
-
-<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/products/ngiab/ngiab-intro/workflow">Get started with NGIAB on local machine</Link>
-
-<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/products/ngiab/ngiab-intro/workflow-cloud">Get started with NGIAB using CIROH JupyterHub</Link>
-
-<Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/news">Community NextGen News</Link>
 
 ---
 
-## NGIAB at a Glance
 
-Explore NextGen In A Box (NGIAB) and extensions through the interactive tabs below.
+NextGen In A Box is a community-accessible verison of NextGen Water Resources Modeling Framework ([NextGen](https://github.com/NOAA-OWP/ngen)).
+It simplifies deployment through containerization, which allows the entire NextGen workflow to be run using just a single script.
+Additionally, the broader NextGen In A Box ecosystem offers essential tools to improve, validate, and visualize your models at every stage of the process.
 
-Click on Key Features, Capabilities, or Access Methods to learn more.
+### Deployment Options
+- [**NGIAB-CloudInfra**](/docs/products/ngiab/distributions/ngiab-docker): A Docker-based NGIAB distribution suitable for both local and cloud-based workflows. ([Installation](/docs/products/ngiab/intro/install))
+- [**NGIAB-HPCInfra**](/docs/products/ngiab/distributions/ngiab-singularity): A Singularity-based NGIAB distribution suitable for high-performance computing (HPC) environments.
+- [**NextGen on CIROH-2i2c JupyterHub**](/docs/products/ngiab/distributions/nextgen-2i2c): A dedicated image on CIROH-2i2c JupyterHub for running NextGen In A Box.
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+### Core Components
+- [**Data Preprocess**](/docs/products/ngiab/components/ngiab-preprocessor): Simplifies data preparation for the NGIAB workflow through an interactive map interface and straightforward command line tools.
+- [**TEEHR Evaluation**](/docs/products/ngiab/components/ngiab-teehr): Provides comprehensive model evaluation capabilities.
+- [**Data Visualizer**](/docs/products/ngiab/components/ngiab-visualizer): Delivers sophisticated geospatial and time series visualization.
+- [**NGIAB Calibration**](/docs/products/ngiab/components/ngiab-calibration): Offers intuitive calibration for models in NGIAB workflows, including the CFE and NOAH-OWP modules.
 
-<Tabs>
-  <TabItem value="features" label="Key Features" default>
-    <table>
-      <thead>
-        <th>NGIAB and Extensions</th>
-        <th>Key features</th>
-        <th>NOAA-OWP Tools/Libraries Utilized</th>
-      </thead>
-      <tbody>
-        <tr>
-        <th><Link to="/docs/products/ngiab/components/ngiab-preprocessor/">Data Preprocess</Link></th>
-        <td>
-          - Specializes in initial data preparation
-          - Handles subsetting and forcing processing
-          - Supports basic data processing tasks
-          - Helps with running NGIAB
-        </td>
-        <td>
-          - t-route
-          - hydrotools
-          - hydrofabric tools
-        </td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <th>
-            <p style={{'margin':'0'}}>NGIAB Implementation</p>
-            <p style={{'margin':'0'}}>(<Link to="/docs/products/ngiab/distributions/ngiab-docker/">Cloud</Link>, <Link to="/docs/products/ngiab/distributions/ngiab-singularity/">HPC</Link>)</p>
-          </th>
-          <td>
-            - Focused specifically on model execution
-            - Core engine for running simulations
-            - Does not handle pre/post-processing tasks
-          </td>
-          <td> </td>
-        </tr>
-        <tr>
-          <th><Link to="/docs/products/ngiab/components/ngiab-teehr/">TEEHR Evaluation</Link></th>
-          <td>
-            - Handles both input and output processing
-            - Supports full workflow, from data preparation to cloud deployment
-          </td>
-          <td>
-            Built to evaluate OWP model outputs
-          </td>
-        </tr>
-        <tr>
-          <th><Link to="/docs/products/ngiab/components/ngiab-visualizer/">Data Visualizer</Link></th>
-          <td>
-            - Focused on analysis and validation
-            - Supports data processing and output analysis
-          </td>
-          <td>
-            Designed for OWP hydrofabric visualization
-          </td>
-        </tr>
-        <tr>
-          <th><Link to="/docs/products/ngiab/extensions/nextgen-datastream/">DataStreamCLI</Link></th>
-          <td>
-            - Complete workflow for creating inputs for and executing NGIAB and managing outputs
-            - Backend of the NextGen Research DataStream
-            - Discrete tooling for tasks like forcing processing and BMI file generation
-          </td>
-          <td>
-            - ngen-cal
-            - t-route
-            - hydrofabric tools
-          </td>
-        </tr>
-        <tr>
-          <th><Link to="/docs/products/ngiab/components/ngiab-calibration/">NGIAB-Cal</Link></th>
-          <td>
-            - Simplifies hydrologic model calibration for NGIAB workflows
-            - Creates calibration directory and configurations within the NGIAB folder structure
-            - Runs calibration process using Docker
-            - Copies calibrated parameters to model configurations
-          </td>
-          <td>
-            - ngen-cal
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </TabItem>
+---
 
-  <TabItem value="capabilities" label="Capabilities">
-    <table>
-      <thead>
-        <tr>
-          <th>Capability</th>
-          <th><Link to="/docs/products/ngiab/components/ngiab-preprocessor/">Data Preprocess</Link></th>
-          <th><Link to="/docs/products/ngiab/components/ngiab-teehr/">TEEHR Evaluation</Link></th>
-          <th><Link to="/docs/products/ngiab/components/ngiab-visualizer/">Data Visualizer</Link></th>
-          <th><Link to="/docs/products/ngiab/extensions/nextgen-datastream/">DataStreamCLI</Link></th>
-          <th><Link to="/docs/products/ngiab/components/ngiab-calibration/">NGIAB-Cal</Link></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>GUI</td>
-          <td>✅</td>
-          <td>-</td>
-          <td>✅</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Hydrofabric Subsetting</td>
-          <td>✅</td>
-          <td>-</td>
-          <td>✅ (view only)</td>
-          <td>✅🔨</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>NetCDF Forcing Processing</td>
-          <td>-</td>
-          <td>✅</td>
-          <td>-</td>
-          <td>✅🔨</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Zarr Forcing Processing</td>
-          <td>✅</td>
-          <td>✅</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Forcing Metadata Generation</td>
-          <td>✅</td>
-          <td>-</td>
-          <td>-</td>
-          <td>✅🔨</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>NextGen BMI Configuration File Generation</td>
-          <td>✅</td>
-          <td>-</td>
-          <td>-</td>
-          <td>✅🔨</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Directory and File Format Validation</td>
-          <td>🔨</td>
-          <td>-</td>
-          <td>-</td>
-          <td>✅🔨</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>NextGen Execution via NGIAB</td>
-          <td>✅</td>
-          <td>-</td>
-          <td>-</td>
-          <td>✅</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Execution Metadata Generation</td>
-          <td>🔨</td>
-          <td>-</td>
-          <td>-</td>
-          <td>✅🔨</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Calibration</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-          <td>✅</td>
-        </tr>
-        <tr>
-          <td>Evaluation</td>
-          <td>-</td>
-          <td>✅🔨</td>
-          <td>🔨 (displays TEEHR results)</td>
-          <td>✅</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Visualization</td>
-          <td>-</td>
-          <td>🔨 (metrics visualization)</td>
-          <td>✅</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-      </tbody>
-    </table>
-  </TabItem>
+### Getting Started
+- [**NGIAB 101 Training Module**](https://docs.ciroh.org/training-NGIAB-101/): The best place to learn how to start using NGIAB.
+- [**NWM, NextGen, and NGIAB**](/docs/products/ngiab/intro/what-is): A quick summary of the National Water Model, the NextGen Framework, and NGIAB's place in making them more accessible.
+- [**NGIAB at a Glance**](/docs/products/ngiab/intro/at-a-glance): An overview of compatibility, capbilities, and access methods for tools within the NGIAB ecosystem.
+- [**Glossary**](/docs/products/ngiab/intro/glossary): A reference for tools, file formats, and terminology that may be unfamiliar.
+- [**Directory Structure**](/docs/products/ngiab/intro/directories): The directory structure used for running simulations with NextGen.
 
-  <TabItem value="access" label="Access Methods">
-    <table>
-      <thead>
-        <tr>
-          <th>Access method</th>
-          <th><Link to="/docs/products/ngiab/components/ngiab-preprocessor/">Data Preprocess</Link></th>
-          <th>
-            <p style={{'margin':'0'}}>NGIAB Implementation</p>
-            <p style={{'margin':'0'}}>(<Link to="/docs/products/ngiab/distributions/ngiab-docker/">Cloud</Link>, <Link to="/docs/products/ngiab/distributions/ngiab-docker/">HPC</Link>)</p>
-          </th>
-          <th><Link to="/docs/products/ngiab/components/ngiab-teehr/">TEEHR Evaluation</Link></th>
-          <th><Link to="/docs/products/ngiab/components/ngiab-visualizer/">Data Visualizer</Link></th>
-          <th><Link to="/docs/products/ngiab/extensions/nextgen-datastream/">DataStreamCLI</Link></th>
-          <th><Link to="/docs/products/ngiab/components/ngiab-calibration/">NGIAB-Cal</Link></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Docker</td>
-          <td>-</td>
-          <td>✅</td>
-          <td>✅</td>
-          <td>✅</td>
-          <td>✅</td>
-          <td>✅</td>
-        </tr>
-        <tr>
-          <td>Python Package (pip/uv)</td>
-          <td>✅</td>
-          <td>✅</td>
-          <td>✅</td>
-          <td>-</td>
-          <td>-</td>
-          <td>✅</td>
-        </tr>
-        <tr>
-          <td>Web Interface</td>
-          <td>✅</td>
-          <td>-</td>
-          <td>-</td>
-          <td>✅</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Notebook (ipynb)</td>
-          <td>-</td>
-          <td>-</td>
-          <td>✅</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td>Singularity (HPC)</td>
-          <td>-</td>
-          <td>✅</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-      </tbody>
-    </table>
-  </TabItem>
-</Tabs>
+---
+
+### Other Resources
+- [**NGIAB Website**](https://ngiab.ciroh.org/): A high-level overview of everything NGIAB can do.
+- [**Community NextGen News**](/news): Get the latest updates on NGIAB development and more.
+
+---
+
+<DocCardList />

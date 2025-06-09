@@ -9,14 +9,14 @@
 			  "type": "feature",
 			  "title": "CIROH-2i2c JupyterHub: New NextGen National Water Model Image",
 			  "description": "🚀 The NextGen In A Box ecosystem is now available for use on CIROH-2i2c JupyterHub! Select the \"NextGen National Water Model (NWM)\" image to get started.",
-			  "link": "ciroh.awi.2i2c.cloud/"
+			  "link": "https://ciroh.awi.2i2c.cloud/"
 			}
 	],
 	"April 2025 Update": [
 			{
 			"type": "feature",
 			"title": "New NGIAB-Calibration Feature🎉",
-			"description": "⚙️ Major update to NextGen In A Box! It now supports extended calibration for CFE and NOAA OWP modules. The new calibration framework provides more flexible parameter tuning and improved model performance.\n\n👨‍💻 Uses ngen-cal branch: [https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal](https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal) \n\n📖 For detailed instructions on how to use the new calibration capabilities, please check out: [https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal#how-to-use-this](https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal#how-to-use-this)",
+			"description": "⚙️ Major update to NextGen In A Box! It now supports extended calibration for CFE and NOAA OWP modules. The new calibration framework provides more flexible parameter tuning and improved model performance.\n\n👨‍💻 Uses ngen-cal branch: [https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal](https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal) \n\n📖 For detailed instructions on how to use the new calibration capabilities, please check out: [https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal#how-to-use-this](https://github.com/CIROH-UA/ngen-cal/tree/ngiab_cal#how-to-use-this)\n![A snaphot of the NGIAB CLI's \"guide.sh\" script.](/img/news/April-2025-ngiab-cli.png)",
 			"link": "https://github.com/CIROH-UA/ngiab_cal"
 			},
 			{

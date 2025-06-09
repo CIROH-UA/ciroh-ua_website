@@ -145,7 +145,7 @@ const config = {
             from: '/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/forcingprocessor/',
           },
           {
-            to: '/docs/products/ngiab/other/community-hydrofabric',
+            to: '/docs/products/ngiab/components/community-hydrofabric',
             from: '/docs/products/Community Hydrologic Modeling Framework/communityHydrofabric',
           },
           {

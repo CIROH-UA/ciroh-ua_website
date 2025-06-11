@@ -10,12 +10,8 @@ import Link from '@docusaurus/Link'
 
 # Infrastructure Access Guide
 
-CIROH provides access to both public cloud and on-premises infrastructure to support the research projects of its members and partners.
-<!-- <Drawio content={simpleGraph} /> -->
+CIROH provides access to public cloud services, HPC, and on-premises infrastructure to support the research projects of CIROH's members and partners.
 
-:::info
-Please note that CIROH does not manage access to NSF Access services. For information on those, please see [NSF Access](/docs/services/external-resources/nsf-access/) and its subpages.
-:::
 ---
 
 ## Selecting a platform
@@ -96,12 +92,15 @@ Click the buttons below to open/close their panels.
 
 ## Accessing Public Cloud Services
 
-<!-- HTML links needed due to spaces in file path -->
-<p>CIROH has partnered with <b><Link to="/docs/services/cloudservices/2i2c">2i2c</Link></b>, <b><Link to="/docs/services/cloudservices/aws/">AWS</Link></b>, and <b><Link to="/docs/services/cloudservices/google-cloud/">Google Cloud</Link></b> to provide access to their cloud computing services.</p>
+CIROH has partnered with [**AWS**](/docs/services/cloudservices/aws/) and [**Google Cloud**](/docs/services/cloudservices/google-cloud/) to provide access to their cloud computing services.
+
+:::note
+If using CIROH-2i2c services, please see the "Accessing CIROH JupyterHub" section below for additional steps.
+:::
 
 ### Requesting Project Access
 
-PIs or Workshops Lead leading CIROH projects or workshops may use this form to request cloud computing resources (AWS, Google Cloud, CIROH-2i2c JupyterHub). Access is available to all consortium members and partners.
+PIs or Workshops Lead leading CIROH projects or workshops may use this form to request cloud computing resources on AWS or Google Cloud. Access is available to all consortium members and partners.
 
 1. Submit a GitHub template request detailing your project requirements and specifications.
 2. Our team will review your request and assist you in obtaining the necessary access.
@@ -117,9 +116,6 @@ CIROH Consortium members or partners are responsible for:
 * Project-specific software and environment configuration.
 * Handling account creation and/or access for project contacts.
 
-:::note
-If using CIROH-2i2c services, please see the "Accessing CIROH JupyterHub" section below for additional steps.
-:::
 
 ### Cost of Use
 
@@ -133,8 +129,7 @@ If using CIROH-2i2c services, please see the "Accessing CIROH JupyterHub" sectio
 
 ## Accessing CIROH-2i2c JupyterHub
 
-<!-- HTML links needed due to spaces in file path -->
-<p>In partnership with <b><Link to="https://2i2c.org/">2i2c</Link></b>, CIROH provides <b><Link to="/docs/services/cloudservices/2i2c">JupyterHub</Link></b> with both CPU and GPU capabilities.</p>
+In partnership with [**2i2c**](https://2i2c.org/), CIROH provides [**JupyterHub**](/docs/services/cloudservices/2i2c) with both CPU and GPU capabilities.
 
 ### Requesting Project Access
 
@@ -175,7 +170,7 @@ CIROH operates an on-premises infrastructure that includes high-performance comp
 
 ### Requesting Project Access
 
-Principle Investigators (PIs) leading CIROH projects may use this form to request CIROH on-premise requests (Pantarhei, Wukong and NSF Allocation - JetStream). Access is available to all consortium members and partners.
+Principle Investigators (PIs) leading CIROH projects may use this form to request CIROH on-premise resources for their teams, including Pantarhei and Wukong. Access is available to all consortium members and partners.
 
 1. Submit a GitHub template request detailing your project requirements and specifications.
 2. Our team will review your request and assist you in obtaining the necessary access.
@@ -186,6 +181,8 @@ Principle Investigators (PIs) leading CIROH projects may use this form to reques
 
 ### Requesting Individual Access
 
+> **Note**: Before requesting individual access, the On-Premises Infrastructure Request Form above **must** be completed by your PI.
+
 Non-UA users should complete the VPN Access Request section of the form below before proceeding.
 
 From there, please complete the On-Premise Access Request section of the form below to request individual access to Pantarhei or Wukong.
@@ -194,21 +191,47 @@ From there, please complete the On-Premise Access Request section of the form be
 
 ---
 
+## Accessing JetStream2 through CIROH
+
+In collaboration with [NSF Access](/docs/services/external-resources/nsf-access/), CIROH offers access to an allocation on the [JetStream2](/docs/services/external-resources/nsf-access/jetstream) computing platform.
+
+**Step 1:** The PI for your project must submit the Infrastructure Request Form below to request team-wide access to JetStream2.
+
+<Link class="button button--active button--primary" to="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=on-prem&projects=&template=onprem-request.md&title=">Infrastructure Request Form</Link>
+<br /><br />
+
+**Step 2:** If you don't already have an NSF Access account, register for one using the link below.
+
+<Link class="button button--active button--primary" to="https://operations.access-ci.org/identity/new-user"> NSF Access New User Registration</Link>
+<br /><br />
+
+**Step 3:** Using your NSF Access ID, submit the JetStream2 Access Request form for individual user accounts on JetStream2.
+
+<Link class="button button--active button--primary" to="https://forms.office.com/r/ERyKyHbdaC"> JetStream2 Access Request Form</Link>
+<br /><br />
+
+:::info
+If you are unable to access the JetStream2 forms, please contact the CIROH team at ciroh-it-admin@ua.edu for assistance.
+:::
+
+Once you're granted access, you're ready to begin using JetStream2! Visit the [logging in to JetStream2 page](https://docs.jetstream-cloud.org/getting-started/login/) to get started.
+
+---
+
 ## Accessing NWM BigQuery API
 
-<!-- HTML links needed due to spaces in file path -->
-<p>To access CIROH's <b><Link to="/docs/products/data-management/bigquery-api/">NWM BigQuery API</Link></b>, please submit the form below.</p>
+To access CIROH's [**NWM BigQuery API**](/docs/products/data-management/bigquery-api/), please submit the form below.
 
 <Link class="button button--active button--primary" style={{'margin-bottom':'1.3rem'}} to="https://forms.office.com/r/FeNpjZstkr">NWM BigQuery API Access Request Form</Link>
 
 ---
 
-## Requesting Workshop Infrastructure Support
+## Requesting Infrastructure Support for Conferences and Programs
 
-CIROH Project Leads can request computing resources for workshops using this process. Available infrastructure includes NSF Access VM, CIROH-2i2c JupyterHub, AWS, GCP, and Azure - accessible to all consortium members and partners.
+CIROH Project Leads can request computing resources for workshops using this process. Available infrastructure includes NSF Access VMs, CIROH-2i2c JupyterHub, AWS, and Google Cloud - accessible to all consortium members and partners.
 
-1. Complete our GitHub template with your workshop's technical requirements
-2. Our team will process your request and ensure participants have necessary access before your workshop begins
+1. Complete our GitHub template with your workshop's technical requirements.
+2. Our team will process your request and ensure participants have necessary access before your workshop begins.
 
 <Link class="button button--active button--primary" to="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&projects=&template=workshop_IT_request.md">Workshop IT Request Form</Link>
 

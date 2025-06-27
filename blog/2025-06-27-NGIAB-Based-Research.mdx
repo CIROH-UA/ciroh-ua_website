@@ -1,0 +1,25 @@
+---
+title: "Assessing streamflow forecast over the Hackensack River Watershed using the NextGen framework"
+description: "A summary of the research presented at the 2025 CIROH DevCon, focusing on streamflow forecasting in the Hackensack River Watershed using the NextGen framework."
+slug: ngiab-based-research
+authors: [jorge]
+tags: [Blog, Stevens Institute of Technology, NGIAB, CIROH DevCon]
+image: /img/blog/2025-06-ewri-devcon/DevCon_AWI_Team.png
+---
+
+<div style={{ textAlign: 'center' }}>
+  ![Poster Presented @ CIROH DevCon2025](/img/blog/2025-06-27-ngiab-based-research/blog_CIROH_DevCon.png)
+</div>
+
+The densely populated Hackensack River watershed lies within the New York City Metropolitan Area, which spans northern New Jersey and southern New York. Accurate streamflow forecasting is therefore essential for effective water resource management, flood prediction, and disaster preparedness.
+Precipitation data is critical for effective hydrological modeling, making the identification of reliable data sources a key priority. This is why the Integrated Spatial Modeling and Remote Sensing Technologies Laboratory (I-SMART), an interdisciplinary research unit within the Davidson Laboratory at Stevens Institute of Technology in Hoboken, New Jersey, uses the latest developments in both atmospheric and hydrological modeling to address the flooding issue in The Hackensack Watershed with solutions that could be expanded to the entire New York City Metropolitan Area.
+
+{/* truncate */}
+
+The goal of this work is to assess the performance of the National Water Model in the Hackensack Watershed, leveraging the NGIAB tool, and investigate the sensitivity of the model to various meteorological forcing.
+
+Recently, the I-SMART team has tested various regional atmospheric models grounded in physical equations, including traditional models like WRF and next-generation atmospheric models such as MPAS. Additionally, given the increasing popularity and adoption of AI/ML-based approaches, the team has also begun exploring their potential. The initial and/or boundary conditions for all the models were determined from the Global Forecast System (GFS).
+
+Given the large volume of precipitation data from various models, each with different spatial resolutions and, in some cases, such as MPAS, using unstructured grids, one of the key challenges was finding a hydrological modeling framework flexible enough to accommodate such diversity. To address this, we adopted the NextGen Water Modeling Framework (Next-Gen), which allowed us to integrate precipitation forcing from various sources with the appropriate pre-processing to align them with the model’s requirement in terms of spatial and temporal scales.
+
+The NextGen framework was implemented and executed using NextGen In A Box (NGIAB), a containerized and user-friendly environment that simplifies local deployment by providing full control over model inputs, configurations, and runtime operations. The use of NGIAB successfully enabled the integration of diverse precipitation sources, allowing the I-SMART group to be among the first to force the NextGen framework with multiple atmospheric models for comparative analysis during a real-world event, specifically, the passage of Superstorm Ida over the New York metropolitan area in September 2021. The image in this blog shows a poster presented at the CIROH Developers Conference held at the University of Vermont in Burlington from May 28 to 30, 2025.

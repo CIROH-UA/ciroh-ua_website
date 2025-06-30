@@ -1,5 +1,20 @@
 {
-	"May 2025 Update": [
+	"June 2025 Update": [
+			{
+			"type": "feature",
+			"title": "NGIAB-data-preprocess",
+			"description": "A new release of ngiab_data_preprocess, version **v4.3.0**, is now available. This update primarily includes small improvements and bug fixes. Among the more noticeable changes, the map application can now display data source chunking. Additionally, missing values in the AORC forcing data will now be filled using interpolation. \n \n Beyond these changes, an **'alias'** for ngiab_data_preprocess has been created. This allows users to execute the command-line interface (CLI) more concisely, for example, using `uvx ngiab-prep -i cat-123` instead of the longer `uvx --from ngiab_data_preprocess cli -i cat-123`. This alias functions as a separate pip package that simply depends on ngiab_data_preprocess.",
+			"link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.3.0"
+			},
+			{
+			"type": "feature",
+			"title": "ngen-datastream",
+			"description": "For this month, we primarily focused on cleaning up the code and updating to the **latest Python version, 3.12**. In terms of system operations, we have scaled back to **VPU16** and are now exclusively running only VPU16. \n \n It's been observed that the NWM analysis_assim_extend forcings are intermittent, which is causing similar intermittent behavior in the analogous datastream runs.",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/commits/main/?since=2025-06-01&until=2025-06-30"
+			}
+			
+		],
+		"May 2025 Update": [
 			{
 			"type": "news",
 			"title": "CIROH Developer's Conference 2025: NextGen Workshops",

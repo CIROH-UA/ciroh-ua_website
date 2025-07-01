@@ -50,13 +50,13 @@ jorge:
   name: Jorge Bravo
   title: Graduate Research Assistant
   url: 'https://www.linkedin.com/in/jhbravo/'
-  image_url: https://scholar.googleusercontent.com/citations?view_op=view_photo&user=BoSNeFUAAAAJ&citpid=1
+  image_url: https://web.stevens.edu/ismart/images/s3.jpg
 
 marouane:
   name: Marouane Temini
   title: Associate Professor
   url: 'https://scholar.google.com/citations?user=5v7tTVgAAAAJ&hl=en'
-  image_url: https://scholar.googleusercontent.com/citations?view_op=view_photo&user=5v7tTVgAAAAJ&citpid=3
+  image_url: https://web.stevens.edu/ismart/images/s4.jpg
 
 homa:
   name: Homa Salehabadi
@@ -68,4 +68,4 @@ david:
   name: David Tarboton
   title: Director at Utah Water Research Laboratory
   url: 'https://www.linkedin.com/in/dtarb/'
-  image_url: https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=fo6rTT8AAAAJ&citpid=2
+  image_url: /img/blog/authors/david_tarboton.jpg

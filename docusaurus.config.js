@@ -310,40 +310,38 @@ const config = {
           src: "img/logos/docuhub.png",
         },
         items: [
-          { to: "blog", label: "Blog", position: "right" },
           {
             type: "doc",
             docId: "products/intro",
-            position: "left",
             label: "Products",
+            position: "left",
           },
           {
             type: "doc",
             docId: "services/intro",
-            position: "left",
             label: "Services",
+            position: "left",
+          },
+          {
+            type: "doc",
+            docId: "policies/intro",
+            label: "Policies",
+            position: "left",
+          },
+          {
+            href: "https://portal.ciroh.org/", // Research portal URL
+            label: "CIROH Portal",
+            position: "left",
           },
           {
             href: "/impact",
             label: "Community Impact",
-            position: "left",
+            position: "right",
           },
           {
-            type: 'dropdown',
-            label: 'Learn',
-            position: 'left',
-            items:[
-              {
-                type: "doc",
-                docId: "education/education",
-                label: "Education",
-              },
-              {
-                type: "doc",
-                docId: "policies/intro",
-                label: "Policies",
-              },
-            ]
+            href: "/blog",
+            label: "Blog",
+            position: "right",
           },
           {
             href: "/news",
@@ -355,11 +353,6 @@ const config = {
             label: "Release Notes",
             position: "right",
           },
-          {
-            href: "https://portal.ciroh.org/", // Research portal URL
-            label: "Portal",
-            position: "right",
-          }
         ],
       },
       footer: {
@@ -369,8 +362,8 @@ const config = {
             title: 'Quick Links',
             items: [
               {
-                label: 'Education',
-                href: '/docs/education/'
+                label: 'CIROH Portal',
+                href: 'http://portal.ciroh.org/'
               },
               {
                 label: 'Contact Us',
@@ -384,10 +377,6 @@ const config = {
                 label: 'Feedback',
                 href: 'https://forms.office.com/r/5ww7qRWwwf'
               },
-              {
-                label: 'CIROH Portal',
-                href: 'http://portal.ciroh.org/'
-              }
             ]
           },
           {
@@ -408,7 +397,7 @@ const config = {
               {
                 label: 'DocuHub Repository',
                 href: 'https://github.com/CIROH-UA/ciroh-ua_website'
-              }
+              },
             ]
           },
           {
@@ -443,7 +432,7 @@ const config = {
                   </a>
                 </div>
                 `,
-              }
+              },
             ],
           },
         ],

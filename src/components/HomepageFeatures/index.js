@@ -365,10 +365,10 @@ export default function HomepageFeatures() {
               link="/docs/services/intro"
             />
             <Card
-              title="Training"
+              title="Policies"
               image="img/graphics/tutorial.png"
-              description="Elevate your expertise through our training programs. Delve into our tutorials and educational resources, covering topics such as the NextGen framework, Data Science model, and more."
-              link="/docs/education/"
+              description="Discover recommendations and best practices for CIROH's research, projects, and infrastructure."
+              link="/docs/policies/intro"
             />
           </div>
           <div className="row">

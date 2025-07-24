@@ -310,7 +310,6 @@ const config = {
           src: "img/logos/docuhub.png",
         },
         items: [
-          { to: "blog", label: "Blog", position: "right" },
           {
             type: "doc",
             docId: "products/intro",
@@ -324,26 +323,24 @@ const config = {
             label: "Services",
           },
           {
-            href: "/impact",
-            label: "Community Impact",
+            href: "/policies/intro",
+            label: "Policies",
             position: "left",
           },
           {
-            type: 'dropdown',
-            label: 'Learn',
-            position: 'left',
-            items:[
-              {
-                type: "doc",
-                docId: "education/education",
-                label: "Education",
-              },
-              {
-                type: "doc",
-                docId: "policies/intro",
-                label: "Policies",
-              },
-            ]
+            href: "https://portal.ciroh.org/", // Research portal URL
+            label: "CIROH Portal",
+            position: "left",
+          },
+          {
+            href: "/impact",
+            label: "Community Impact",
+            position: "right",
+          },
+          {
+            href: "/blog",
+            label: "Blog",
+            position: "right",
           },
           {
             href: "/news",
@@ -355,11 +352,6 @@ const config = {
             label: "Release Notes",
             position: "right",
           },
-          {
-            href: "https://portal.ciroh.org/", // Research portal URL
-            label: "Portal",
-            position: "right",
-          }
         ],
       },
       footer: {

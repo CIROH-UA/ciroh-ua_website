@@ -16,7 +16,7 @@
 			  "type": "update",
 			  "title": "CIROH-UA/t-route",
 			  "description": "This month's updates for T-route focused on performance optimization. Memory usage has been reduced by 30% when writing output, which means it is less likely to crash during large runs that don't use intermediate parquet files.",
-			  "link": "https://github.com/CIROH-UA/t-route/commits/ngiab/?since=2025-01-01&until=2025-02-28"
+			  "link": "https://github.com/CIROH-UA/t-route/commits/ngiab/?since=2025-07-01&until=2025-07-31"
 			}
 			
 		],

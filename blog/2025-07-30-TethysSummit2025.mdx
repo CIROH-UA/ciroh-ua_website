@@ -1,0 +1,91 @@
+---
+title: "Tethys Summit 2025: Advancing Geoscience with Open-Source Web Apps"
+description: "Explore the workshop materials and our experience at Tethys Summit 2025."
+slug: tethys-platform-summit-2025
+authors: [gio, manjila]
+tags: [Blog, Conference, Tethys Platform, Geoscience, Open Source]
+image: /img/blog/2025-07-tethyssummit/tethys-summit-7.jpg
+---
+import useBaseUrl from "@docusaurus/useBaseUrl"
+import { Carousel } from "react-responsive-carousel"
+
+<Carousel
+  showThumbs={false}
+  autoPlay={true}
+  stopOnHover={false}
+  useKeyboardArrows={true}
+  emulateTouch={true}
+  interval={2500}
+  infiniteLoop
+  showStatus={false}
+  showIndicators={true}
+  >
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <img src={useBaseUrl("/img/blog/2025-07-tethyssummit/tethys-summit-7.jpg")}
+      style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+      alt="A group photo from Tethys Summit 2025"
+      />
+  </div>
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <img src={useBaseUrl("/img/blog/2025-07-tethyssummit/tethys-summit-2.jpg")}
+      style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+      alt="A workshop at Tethys Summit 2025"
+      />
+  </div>
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <img src={useBaseUrl("/img/blog/2025-07-tethyssummit/tethys-summit-3.jpg")}
+    style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+    alt="A workshop at Tethys Summit 2025"
+    />
+  </div>
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <img src={useBaseUrl("/img/blog/2025-07-tethyssummit/tethys-summit-4.jpg")}
+    style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+    alt='A workshop at Tethys Summit 2025'
+    />
+  </div>
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <img src={useBaseUrl("/img/blog/2025-07-tethyssummit/tethys-summit-5.jpg")}
+    style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+    alt='A workshop at Tethys Summit 2025'
+    />
+  </div>
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <img src={useBaseUrl("/img/blog/2025-07-tethyssummit/tethys-summit-6.jpg")}
+    style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+    alt="Musicians at Tethys Summit 2025"
+    />
+  </div>
+</Carousel>
+
+## My Experience at Tethys Summit 2025
+
+Earlier this month, I had the opportunity to attend Tethys Summit 2025 in Tampa, FL. It was a rewarding experience to learn about the Tethys Platform and how researchers, hydrologists, and geospatial scientists are applying it in their work. Through workshops and technical demonstrations, I gained insights into how this open-source Earth science platform is advancing environmental problem-solving.
+
+On Day 1, I participated in the **Tethys Dash** workshop led by Corey Krewson, where I learned to build a Tethys dashboard without writing any code. During the hands-on session, I was surprised by how easily I was able to build dashboards using a drag-and-drop interface, as much of the technical implementation was abstracted for simplicity. I also attended the **Tethys Component Apps (ReactPy)** workshop by Shawn Crawley. Unlike the no-code approach of the first session, this workshop focused on building a basic interactive Tethys web app in under 50 lines of Python code.
+
+On Day 2, I also took part in the **Contributing to Tethys Core** workshop led by Nathan Swain. This workshop outlined the steps for first-time contributors to get involved and submit pull requests to the Tethys Core repository. Aside from the workshops, I took part in Tethys App Competition where I presented the Tethys app I developed. It was a great learning experience to understand more about web app developments using Tethys. I ended up winning second place and got a bonsai tree LEGO set!  
+
+Overall, it was a very engaging and informative summit. For anyone who missed the session, the workshop materials are available here: [**Workshop Materials**](https://drive.google.com/drive/folders/1y9Ay5sJm0FhOMsdZuU570-88ye_71pOe)
+
+*— Manjila*
+
+---
+
+## What is Tethys?
+
+[**Tethys Platform**](https://www.tethysplatform.org) is an open-source, Python-powered framework that lets geoscientists and developers turn complex environmental data and models into browser-based, interactive web GIS apps—without having to become web gurus. Built on [Django](https://www.djangoproject.com), it bundles a full spatial stack ([PostGIS](https://postgis.net), [GeoServer](http://geoserver.org), [OpenLayers](https://openlayers.org)/[Cesium](https://cesium.com)) plus handy "Gizmos" for maps, charts, and dashboards, and it integrates seamlessly with scientific libraries like NumPy, Pandas, Plotly, and Bokeh. A built-in job manager runs heavy climate or hydrologic models—locally or in the cloud—while APIs make it easy to pull data from THREDDS servers or PostGIS databases. The result is a low-barrier path to custom interfaces, 2D/3D visualizations, and scalable computing that's already powering water-resource tools, climate-scenario explorers, and disaster-monitoring apps worldwide. Backed by the [Tethys Geoscience Foundation](https://www.tethysgeoscience.org), the platform's active open-source community keeps it evolving to meet new Earth-science challenges.
+
+
+## Community Impact
+
+Thanks to these capabilities, Tethys Platform is widely adopted in the geoscience community. Scientists around the world use it for a range of applications—water resource management, climate change analysis, natural disaster monitoring, environmental planning, and more. In each case, Tethys helps turn complex datasets and model outputs into accessible tools for decision-makers. As an open-source project under the [**Tethys Geoscience Foundation**](https://www.tethysgeoscience.org), it benefits from an active user community that continually contributes improvements and new features. This collaborative growth ensures the platform keeps pace with emerging needs in Earth science, effectively lowering the barrier for geoscientists to share data and models as powerful web applications.
+
+
+## Tethys Platform Resources
+
+Tethys Platform offers several resources to help you get started, including comprehensive official documentation, step-by-step tutorials, and a live demo portal. [The official documentation](https://docs.tethysplatform.org) covers everything from installation and "Hello World" examples to advanced topics and architecture (explaining how the Django backend and various services fit together). For hands-on learning, the [tutorials](https://docs.tethysplatform.org/en/stable/tutorials.html) guide you through setting up your first app, incorporating spatial data with built-in map layouts, connecting to GeoServer or THREDDS data servers, and even running cloud computations. And if you want to see Tethys in action without installing anything, the [**Tethys Demo Portal**](https://demo.tethysplatform.org/apps) showcases a gallery of live example apps, such as a Gizmo Showcase of interactive widgets and a Wildfire Visualizer that displays wildfire data on a map, giving you a clear idea of the platform's capabilities and inspiring ideas for your own geoscientific web applications.
+
+Each of these resources will help you dive deeper into the Tethys Platform. Whether you're looking to develop a water resources tool, a climate data viewer, or any geoscientific web application, the combination of documentation, tutorials, and live demos will support you on your journey with Tethys. **Happy app building!**
+
+*— Gio*

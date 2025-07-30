@@ -70,6 +70,12 @@ david:
   url: 'https://www.linkedin.com/in/dtarb/'
   image_url: /img/blog/authors/david_tarboton.jpg
 
+shahab:
+  name: Md Shahabul Alam
+  title: Research Scientist, University of Alabama
+  url: 'https://www.linkedin.com/in/md-shahabul-alam/'
+  image_url: /img/blog/authors/shahab.jpeg
+
 manjila:
   name: Manjila Singh
   title: Graduate Research Assistant
@@ -81,3 +87,4 @@ gio:
   title: Hydroinformatics Engineer
   url: 'https://www.linkedin.com/in/elkin-giovanni-romero-bustamante-b834b5a8'
   image_url: https://ca.slack-edge.com/T03UUB7CE83-U057VCZQWRW-fe48d8f10837-192
+

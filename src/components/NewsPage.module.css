@@ -1,5 +1,5 @@
 .newsPageContainer {
-  padding: 2rem 5rem;
+  padding: 2rem 0rem;
 }
 
 .pageHeader {
@@ -28,9 +28,15 @@
   opacity: 0.6;
 }
 
+@media (max-width: 1550px) {
+  .newsPageContainer {
+    padding: 2rem 5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .newsPageContainer {
-    padding: 1rem;
+    padding: 0.5rem;
   }
   
   .pageHeader {

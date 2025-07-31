@@ -136,7 +136,6 @@
 }
 
 .newsContent {
-  padding: 2rem;
   background: white;
   animation: slideDown 0.3s ease-out;
 }
@@ -146,7 +145,7 @@
 }
 
 .newsItem {
-  margin-bottom: 2.5rem;
+  margin: 2.5rem;
   padding: 1.5rem;
   border-radius: 12px;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -333,12 +332,15 @@
   .logoSection {
     display:none;
   }
-  
+
   .headerSection {
     flex-direction: column;
     text-align: center;
-    gap: 1rem;
+    gap: 0rem;
     padding: 1rem;
+  }
+  .newsItem {
+    margin: 1rem 0.2rem;
   }
 }
 

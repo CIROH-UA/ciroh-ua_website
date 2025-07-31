@@ -282,8 +282,6 @@
 
 @media (max-width: 865px) {
   .headerSection {
-    /* flex-direction: column;
-    text-align: center; */
     gap: 1rem;
     padding: 1.5rem;
   }

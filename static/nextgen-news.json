@@ -10,13 +10,19 @@
 			"type": "feature",
 			"title": "NGIAB-CloudInfra",
 			"description": "This month's updates for NGIAB-CloudInfra consist mostly of documentation improvements. The primary focus was updating information on the Provo River basin case study, with comprehensive details including calibration files, input data, and setup information now accessible through the [HydroShare resource page](https://www.hydroshare.org/resource/88e0ebf2719c492381efcb27fba71032/). Additionally, the output folder path description in `runteehr.sh` has been corrected to improve clarity. This month also saw significant activity with the docker pull count for awiciroh/ciroh-ngen-image, though many of these pulls are attributed to internal runs due to frequent building and updates of the image.",
-			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-04-01&until=2025-04-30"
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-07-01&until=2025-07-31"
+			},
+			{
+			"type": "feature",
+			"title": "ngen-datastream",
+			"description": "July's developments for datastream were focused on reproducibility by implementing the creation of two files on each execution. The first file, datastream.env, can be used to identically reproduce a datastream execution via the `CONF_FILE` argument and the second file, datastream_steps.txt, lists every relevant internal command datastream makes. The intention for these files is to make it easier for community members to first reproduce research datastream executions and then begin improving the NextGen configuration and contributing their findings back to the system.",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/releases/tag/v1.0.1"
 			},
 			{
 			  "type": "update",
 			  "title": "CIROH-UA/t-route",
 			  "description": "This month's updates for T-route focused on performance optimization. Memory usage has been reduced by 30% when writing output, which means it is less likely to crash during large runs that don't use intermediate parquet files.",
-			  "link": "https://github.com/CIROH-UA/t-route/commits/ngiab/?since=2025-01-01&until=2025-02-28"
+			  "link": "https://github.com/CIROH-UA/t-route/commits/ngiab/?since=2025-07-01&until=2025-07-31"
 			}
 			
 		],

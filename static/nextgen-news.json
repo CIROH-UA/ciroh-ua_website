@@ -1,4 +1,31 @@
 {
+	"July 2025 Update": [
+			{
+			"type": "feature",
+			"title": "NGIAB-data-preprocess",
+			"description": "A new release of ngiab_data_preprocess, version v4.4.0, is now available!🎉 This update includes several improvements and bug fixes. Notable changes include a warning prompt that now displays when attempting to overwrite subset gpkg files, and the graph pickle file download has been integrated with the hf download process. Additionally, a missing scipy dependency has been added. Performance enhancements include estimating t-route RAM usage to create parquet files accordingly, and forcing interpolation now works without requiring a dask cluster. The CLI experience has also been improved with the download dashboard URL now being printed during execution.",
+			"link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.4.0"
+			},
+			{
+			"type": "feature",
+			"title": "NGIAB-CloudInfra",
+			"description": "This month's updates for NGIAB-CloudInfra consist mostly of documentation improvements. The primary focus was updating information on the Provo River basin case study, with comprehensive details including calibration files, input data, and setup information now accessible through the [HydroShare resource page](https://www.hydroshare.org/resource/88e0ebf2719c492381efcb27fba71032/). New documentation has been added to the [docs folder](https://github.com/CIROH-UA/NGIAB-CloudInfra/tree/main/docs). Additionally, the output folder path description in `runteehr.sh` has been corrected to improve clarity. This month also saw significant activity with the docker pull count for awiciroh/ciroh-ngen-image, though many of these pulls are attributed to internal runs due to frequent building and updates of the image.",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-07-01&until=2025-07-31"
+			},
+			{
+			"type": "feature",
+			"title": "ngen-datastream",
+			"description": "Release 1.0.0 and Release 1.0.1 recently released in July! Initial stable release of the Research DataStream infrastructure and DataStreamCLI workflow tool for automated NextGen hydrologic simulations. Release 1.0.1 captures metadata related improvements. Moreover, July's developments were focused on reproducibility by implementing the creation of two files on each execution. The first file, datastream.env, can be used to identically reproduce a datastream execution via the CONF_FILE argument and the second file, datastream_steps.txt, lists every relevant internal command datastream makes. The intention for these files is to make it easier for community members to first reproduce research datastream executions and then begin improving the NextGen configuration and contributing their findings back to the system.",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/releases/tag/v1.0.1"
+			},
+			{
+			  "type": "update",
+			  "title": "CIROH-UA/t-route",
+			  "description": "This month's updates for T-route focused on performance optimization. Memory usage has been reduced by 30% when writing output, which means it is less likely to crash during large runs that don't use intermediate parquet files.",
+			  "link": "https://github.com/CIROH-UA/t-route/commits/ngiab/?since=2025-07-01&until=2025-07-31"
+			}
+			
+		],
 	"June 2025 Update": [
 			{
 			"type": "feature",

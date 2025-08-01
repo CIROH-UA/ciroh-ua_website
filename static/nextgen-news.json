@@ -9,7 +9,7 @@
 			{
 			"type": "feature",
 			"title": "NGIAB-CloudInfra",
-			"description": "This month's updates for NGIAB-CloudInfra consist mostly of documentation improvements. The primary focus was updating information on the Provo River basin case study, with comprehensive details including calibration files, input data, and setup information now accessible through the [HydroShare resource page](https://www.hydroshare.org/resource/88e0ebf2719c492381efcb27fba71032/). Additionally, the output folder path description in `runteehr.sh` has been corrected to improve clarity. This month also saw significant activity with the docker pull count for awiciroh/ciroh-ngen-image, though many of these pulls are attributed to internal runs due to frequent building and updates of the image.",
+			"description": "This month's updates for NGIAB-CloudInfra consist mostly of documentation improvements. The primary focus was updating information on the Provo River basin case study, with comprehensive details including calibration files, input data, and setup information now accessible through the [HydroShare resource page](https://www.hydroshare.org/resource/88e0ebf2719c492381efcb27fba71032/). New documentation has been added to the [docs folder](https://github.com/CIROH-UA/NGIAB-CloudInfra/tree/main/docs). Additionally, the output folder path description in `runteehr.sh` has been corrected to improve clarity. This month also saw significant activity with the docker pull count for awiciroh/ciroh-ngen-image, though many of these pulls are attributed to internal runs due to frequent building and updates of the image.",
 			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-07-01&until=2025-07-31"
 			},
 			{

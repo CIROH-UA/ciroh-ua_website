@@ -12,8 +12,7 @@ const NewsComponent = ({ data, isLatest }) => {
     setIsExpanded(!isExpanded);
   };
 
-  const logoDarkUrl = useBaseUrl("/img/logos/ciroh-dark.png");
-  const logoLightUrl = useBaseUrl("/img/logos/ciroh-light.png");
+  const logoSafeUrl = useBaseUrl("/img/logos/ciroh-bgsafe.png");
   const sidelineDarkUrl = useBaseUrl("/img/graphics/news/sideline-dark.png");
   const sidelineLightUrl = useBaseUrl("/img/graphics/news/sideline-light.png");
   const underlinesDarkUrl = useBaseUrl("/img/graphics/news/underlines-dark.png");
@@ -26,8 +25,8 @@ const NewsComponent = ({ data, isLatest }) => {
         onClick={toggleExpand}
       >
         <div className={styles.logoSection}>
-          <img className={`${themes.darkImage} ${styles.logo}`} alt="CIROH logo" src={logoDarkUrl} />
-          <img className={`${themes.lightImage} ${styles.logo}`} alt="CIROH logo" src={logoLightUrl} />
+          <img className={`${themes.darkImage} ${styles.logo}`} alt="CIROH logo" src={logoSafeUrl} />
+          <img className={`${themes.lightImage} ${styles.logo}`} alt="CIROH logo" src={logoSafeUrl} />
         </div>
         
         <div className={styles.titleSection}>

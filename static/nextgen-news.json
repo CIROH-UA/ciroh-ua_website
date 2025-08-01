@@ -19,6 +19,12 @@
 			"link": "https://github.com/CIROH-UA/ngen-datastream/releases/tag/v1.0.1"
 			},
 			{
+			"type": "feature",
+			"title": "ngiab-cal",
+			"description": "A new release of ngiab-cal, version v0.3.3, is now available. This update includes several important fixes and improvements. The observation unit has been corrected to cms, and the system now prevents auto-running when the configuration has not been updated. Additionally, build and release GitHub actions have been added to streamline the development workflow.",
+			"link": "https://github.com/CIROH-UA/ngiab-cal/releases"
+			},
+			{
 			  "type": "update",
 			  "title": "CIROH-UA/t-route",
 			  "description": "This month's updates for T-route focused on performance optimization. Memory usage has been reduced by 30% when writing output, which means it is less likely to crash during large runs that don't use intermediate parquet files.",

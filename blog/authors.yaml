@@ -88,3 +88,24 @@ gio:
   url: 'https://www.linkedin.com/in/elkin-giovanni-romero-bustamante-b834b5a8'
   image_url: https://ca.slack-edge.com/T03UUB7CE83-U057VCZQWRW-fe48d8f10837-192
 
+hudson:
+  name: Hudson Finley Davis
+  title: Hydroinformatics Engineer
+  url: 'https://www.linkedin.com/in/elkin-giovanni-romero-bustamante-b834b5a8'
+  image_url: https://ui-avatars.com/api/?name=Hudson+Finley+Davis&background=0D8ABC&color=fff
+
+josh:
+  name: Josh Cunningham
+  title: DevOps Software Engineer
+  url: 'https://www.linkedin.com/in/josh-cunningham-6906a7108/'
+  image_url: /img/blog/authors/josh.jpeg
+
+seann:
+  name: Seann Reed
+  title: DevOps Software Engineer
+  url: 'https://www.linkedin.com/in/josh-cunningham-6906a7108/'
+  image_url: https://ui-avatars.com/api/?name=Seann+Reed&background=0D8ABC&color=fff
+
+
+
+

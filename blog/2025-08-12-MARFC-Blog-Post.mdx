@@ -1,0 +1,103 @@
+---
+title: "Evaluating NextGen’s Performance in the MARFC Region with NGIAB"
+description: "A case study on using NextGen in a Box (NGIAB) to assess the NextGen Hydro Framework in the Middle Atlantic River Forecast Center (MARFC) region, comparing its performance with CHPS and NWM 3.0."
+slug: nextgen-marfc-performance
+authors: [hudson, seann, josh, arpita, james, sifan]
+tags: [Blog, NGIAB, MARFC, Hydrology, Modeling, NOAA, NWM, NextGen, CHPS]
+---
+
+<div className="margin-bottom--lg" />
+
+The National Weather Service's Middle Atlantic River Forecast Center (MARFC) sees large variations in the performance of the National Water Model 3.0. Through its support for regionalized parameters and models, NOAA-OWP’s Next Generation Water Resources Modeling Framework (NextGen framework) offers a potential solution to address these inconsistencies. As such, this study took advantage of NextGen in a Box (NGIAB) to evaluate the NextGen framework’s performance in the MARFC region.
+
+This study evaluated three operational hydrologic modeling frameworks targetted at the National Water Model (NWM): the Community Hydrologic Prediction System (CHPS), the NextGen framework, and version 3.0 of the National Water Model itself.
+- CHPS is the current operational framework used by NOAA's River Forecast Centers. It incorporates the SNOW-17 model for snowmelt and the Sacramento Soil Moisture Accounting (SAC-SMA) model for runoff generation.
+- For the early phases of this study, the NextGen framework was used with the default model configuration provided by the NGIAB ecosystem, which combines the Noah-OWP-Modular land surface model and the Conceptual Functional Equivalent (CFE) rainfall runoff model [[2]](#references).
+  - After initial runs with the baseline configuration, Noah-OWP-Modular was replaced with SNOW-17 output and simplified Potential Evapotranspiration (PET) values from the MARFC database.
+  - The models were calibrated using two objective functions: Kling-Gupta Efficiency (KGE) [[6][7]](#references) and Nash-Sutcliffe Efficiency (NSE) [[4][5]](#references).
+- The National Water Model 3.0 uses the Noah-MP land surface model coupled with the Weather Research and Forecasting Hydrologic model (WRF-Hydro) [[2][3]](#references) to simulate hydrological processes across CONUS. 
+
+The case studies focused on the Westfield and Elkland basins in North-Central Pennsylvania.
+These basins provide good locations for comparison due to the presence of USGS stream gages
+and their "flashy" behavior, characterized by rapid and unpredictable rises and falls in streamflow.
+Additionally, both Westfield and Elkland were sites of catastrophic flooding during Tropical Storm Debby in 2024,
+which allowed for the models to be evaluated on a recent extreme flood event. Results from Westfield, PA are shown in Figure 1.
+
+<figure style={{ textAlign:'center', margin:'1.5rem 0' }}>
+  <img
+    src="/img/blog/2025-08-MARFC/fig1.png"
+    alt="A bar graph titled 'Westfield, PA Nash-Sutcliffe Efficiency values'. SAC-SMA displayed the best performance, closely followed by SAC-SMA Uncalibrated and NGen Calibrated (NSE OFunc). NGen Calibrated (KGE OFunc) fell slightly further behind, while NGEN Uncalibrated was by far the lowest."
+    style={{ maxWidth:'100%', height:'auto' }}
+  />
+  <figcaption style={{ fontSize:'0.95rem', lineHeight:1.6, marginTop:'0.6rem', opacity:0.9 }}>
+    **Figure 1**) Nash-Sutcliffe Efficiency (NSE) Metric for simulations from 2007 to 2020.
+  </figcaption>
+</figure>
+
+The simulations executed for the case study are listed below:
+
+- **Uncalibrated CHPS**
+- **Calibrated CHPS**
+- **Uncalibrated NextGen** (AORC forcings)
+- **Uncalibrated NextGen** (MARFC forcings)
+- **Calibrated NextGen** (AORC forcings; calibrated on KGE objective function)
+- **Calibrated NextGen** (AORC forcings; calibrated on NSE objective function)
+- **Calibrated NextGen** (MARFC forcings; calibrated on KGE objective function)
+- **National Water Model 3.0**
+
+The researchers observed that the calibrated runs for both NextGen and CHPS showed significant improvements over uncalibrated runs in both Westfield and Elkland basins. Among the calibrated runs, CHPS marginally outperformed NextGen. Additionally, both CHPS and NextGen outperformed NWM 3.0 in Westfield basin.
+
+<figure style={{ textAlign:'center', margin:'1.5rem 0' }}>
+  <div style={{ display:'flex', maxWidth:'100%' }}>
+    <img
+      src="/img/blog/2025-08-MARFC/fig2_1.png"
+      alt="A bar graph titled 'NSE of NextGen vs NextGen with Forcings Change'. The version of NextGen that used MARFC forcings yielded a greater NSE value."
+      style={{ maxWidth:'50%', height:'auto' }}
+    />
+    <img
+      src="/img/blog/2025-08-MARFC/fig2_2.png"
+      alt="A bar graph titled 'PBIAS of NextGen vs NextGen with Forcings Change'. While both PBIAS values were negative, the version of NextGen that used MARFC forcings showed far lower PBIAS."
+      style={{ maxWidth:'50%', height:'auto' }}
+    />
+  </div>
+  <figcaption style={{ fontSize:'0.95rem', lineHeight:1.6, marginTop:'0.6rem', opacity:0.9 }}>
+    **Figure 2**)  Percent Bias and NSE of simulations from 2007 to 2020 generated with different forcings - AORC (referred as NextGen) and MARFC Hourly Operational Grids (referred as NextGen FC).
+  </figcaption>
+</figure>
+
+When running the NextGen-based models, substitution of SNOW-17 output and simpler PET for the NOAH-OWP reduced calibration time by 50% and produced similar outputs.
+
+However, the models that performed best during calibration did not necessarily perform best during the Hurricane Debby extreme event. This suggests that including a greater number of extreme events in the calibration period is necessary to improve model robustness.
+
+<figure style={{ textAlign:'center', margin:'1.5rem 0' }}>
+  <img
+    src="/img/blog/2025-08-MARFC/fig3.png"
+    alt="A hydrograph depicting streamflow observations and outputs for Tropical Storm Debby on 08/09/2024."
+    style={{ maxWidth:'100%', height:'auto' }}
+  />
+  <figcaption style={{ fontSize:'0.95rem', lineHeight:1.6, marginTop:'0.6rem', opacity:0.9 }}>
+    **Figure 3**) Hydrograph of Tropical Storm Debby on 08/09/2024. It is important to note that the observed data, denoted by black dots, cuts out halfway through the hydrograph. For this window, peak flow was estimated by the USGS to be just under 20,000 cfs, which is nearly double the second largest event on record.
+  </figcaption>
+</figure>
+
+NGIAB served as a critical enabler in this study, allowing for rapid iteration and in-depth exploration of the NextGen framework’s configuration space. This evaluation of objective functions, forcing datasets, and baseline models would have been significantly more challenging with traditional workflows.
+
+---
+
+## References
+
+<ol>
+  <li>National Oceanic and Atmospheric Administration. <em>Community Hydrologic Prediction System (CHPS) Documentation</em> [Internet]. National Oceanic and Atmospheric Administration; [updated 2024 Nov 26; cited 2025 Jul 28]. Available from: <a href="https://vlab.noaa.gov/web/chps" target="_blank">https://vlab.noaa.gov/web/chps</a></li>
+
+  <li>Araki R, Ogden FL, McMillan HK. Testing Soil Moisture Performance Measures in the Conceptual‐Functional Equivalent to the WRF-Hydro National Water Model. <em>JAWRA Journal of the American Water Resources Association</em>. 2025 Feb;61(1):e70002.</li>
+
+  <li>National Oceanic and Atmospheric Administration. <em>The National Water Model</em> [Internet]. National Water Prediction Service; [cited 2025 Jul 29]. Available from: <a href="https://water.noaa.gov/about/nwm" target="_blank">https://water.noaa.gov/about/nwm</a></li>
+
+  <li>Tijerina‐Kreuzer D, Condon L, FitzGerald K, Dugger A, O’Neill MM, Sampson K, Gochis D, Maxwell R. Continental hydrologic intercomparison project, phase 1: A large‐scale hydrologic model comparison over the continental United States. <em>Water Resources Research</em>. 2021 Jul;57(7):e2020WR028931.</li>
+
+  <li>Moriasi DN, Arnold JG, Van Liew MW, Bingner RL, Harmel RD, Veith TL. Model evaluation guidelines for systematic quantification of accuracy in watershed simulations. <em>Transactions of the ASABE</em>. 2007;50(3):885-900.</li>
+
+  <li>Gupta HV, Kling H, Yilmaz KK, Martinez GF. Decomposition of the mean squared error and NSE performance criteria: Implications for improving hydrological modelling. <em>Journal of Hydrology</em>. 2009 Oct 20;377(1-2):80-91.</li>
+
+  <li>Vrugt JA, de Oliveira DY. Confidence intervals of the Kling-Gupta efficiency. <em>Journal of Hydrology</em>. 2022 Sep 1;612:127968.</li>
+</ol>

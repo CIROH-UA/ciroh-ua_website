@@ -8,32 +8,20 @@ tags: [Blog, NGIAB, MARFC, Hydrology, Modeling, NOAA, NWM, NextGen, CHPS]
 
 <div className="margin-bottom--lg" />
 
-The region encompassed by the National Weather Service’s (NWS) Middle Atlantic River Forecast Center (MARFC) sees large variations in the performance of the National Water Model 3.0. NOAA-OWP’s NextGen Hydro Framework could be a potential solution to address these inconsistencies. Cooperative Institute for Research to Operations in Hydrology’s (CIROH) NextGen in a Box (NGIAB) provides an accessible method of running the NextGen Framework, which was used to evaluate NextGen’s performance in the MARFC region.
+The National Weather Service's Middle Atlantic River Forecast Center (MARFC) sees large variations in the performance of the National Water Model 3.0. Through its support for regionalized parameters and models, NOAA-OWP’s Next Generation Water Resources Modeling Framework (NextGen framework) offers a potential solution to address these inconsistencies. As such, this study took advantage of NextGen in a Box (NGIAB) to evaluate the NextGen framework’s performance in the MARFC region.
 
-This study evaluated three operational hydrologic modeling frameworks to support improvements in the National Water Model (NWM). This includes the Community Hydrologic Prediction System (CHPS), National Water Model 3.0 (NWM 3.0), and the NextGen. CHPS is the current operational framework used by NOAA's River Forecast Centers. It incorporates the SNOW-17 model for snowmelt and the Sacramento Soil Moisture Accounting (SAC-SMA) model for runoff generation. The National Water Model 3.0 uses the Noah-MP land surface model coupled with the Weather Research and Forecasting Hydrologic model (WRF-Hydro)[2][3] to simulate hydrological processes across CONUS. NextGen framework in this study includes the baseline models in the Basic Model Interface (BMI) - the Noah-OWP-Modular land surface model and the Conceptual Functional Equivalent (CFE)[2]. After initial runs with NextGen baseline configuration, Noah-OWP-Modular was replaced with SNOW-17 output and simplified Potential Evapotranspiration (PET) values from the MARFC database. The models were calibrated using two objective functions namely Kling-Gupta Efficiency (KGE)[6][7] and Nash-Sutcliffe Efficiency (NSE)[4][5].
+This study evaluated three operational hydrologic modeling frameworks targetted at the National Water Model (NWM): the Community Hydrologic Prediction System (CHPS), the NextGen framework, and version 3.0 of the National Water Model itself.
+- CHPS is the current operational framework used by NOAA's River Forecast Centers. It incorporates the SNOW-17 model for snowmelt and the Sacramento Soil Moisture Accounting (SAC-SMA) model for runoff generation.
+- For the early phases of this study, the NextGen framework was used with the default model configuration provided by the NGIAB ecosystem, which combines the Noah-OWP-Modular land surface model and the Conceptual Functional Equivalent (CFE) rainfall runoff model [[2]](#references).
+  - After initial runs with the baseline configuration, Noah-OWP-Modular was replaced with SNOW-17 output and simplified Potential Evapotranspiration (PET) values from the MARFC database.
+  - The models were calibrated using two objective functions: Kling-Gupta Efficiency (KGE) [[6][7]](#references) and Nash-Sutcliffe Efficiency (NSE) [[4][5]](#references).
+- The National Water Model 3.0 uses the Noah-MP land surface model coupled with the Weather Research and Forecasting Hydrologic model (WRF-Hydro) [[2][3]](#references) to simulate hydrological processes across CONUS. 
 
-The case studies focused on two flashy basins in North-Central Pennsylvania - Westfield and Elkland. These basins provide good locations for comparison due to the presence of USGS stream gages and their unpredictable nature, which is inherent to flashy basins. Additionally, both Westfield and Elkland were sites of catastrophic flooding during Tropical Storm Debby in 2024, which allowed evaluation of the models on a recent extreme flood event. Results from Westfield, PA are shown in the Figure 1.
-
-The simulations executed for the case study are listed below:
-
-- **Uncalibrated CHPS**
-- **Calibrated CHPS**
-- **Uncalibrated NextGen** (AORC forcings)
-- **Uncalibrated NextGen** (MARFC forcings)
-- **Calibrated NextGen** (AORC forcings; KGE objective function)
-- **Calibrated NextGen** (AORC forcings; NSE objective function)
-- **Calibrated NextGen** (MARFC forcings; KGE objective function)
-- **National Water Model 3.0**
-
-
-The researchers observed that the calibrated runs for both NextGen and CHPS improved greatly over uncalibrated runs in both Westfield and Elkland basins. Among the calibrated runs, CHPS marginally outperformed NextGen. Additionally, both the CHPS and NextGen outperformed NWM 3.0 in Westfield basin.
-
-Substitution of SNOW-17 output and simpler PET for the NextGen’s NOAH-OWP reduces calibration time by 50% and produced similar outputs.
-
-However, the models that performed best during calibration did not necessarily perform best during the Hurricane Debby extreme event. This suggests that including a greater number of extreme events in the calibration period is necessary to improve model robustness.
-
-NGIAB served as a critical enabler in this study, allowing for rapid iteration and in-depth exploration of the NextGen framework’s configuration space - evaluation of objective functions, forcing datasets, and baseline models – which would have been significantly more challenging with traditional workflows.
-
+The case studies focused on the Westfield and Elkland basins in North-Central Pennsylvania.
+These basins provide good locations for comparison due to the presence of USGS stream gages
+and their "flashy" behavior, characterized by rapid and unpredictable rises and falls in streamflow.
+Additionally, both Westfield and Elkland were sites of catastrophic flooding during Tropical Storm Debby in 2024,
+which allowed for the models to be evaluated on a recent extreme flood event. Results from Westfield, PA are shown in Figure 1.
 
 <figure style={{ textAlign:'center', margin:'1.5rem 0' }}>
   <img
@@ -48,6 +36,26 @@ NGIAB served as a critical enabler in this study, allowing for rapid iteration a
     c) Hydrograph of Tropical Storm Debby on 08/09/2024. It is important to note that observed data, denoted by black dots, cuts out halfway through the hydrograph and therefore peak flow was estimated by the USGS to be just under 20,000 cfs, which is nearly double the second largest event on record.
   </figcaption>
 </figure>
+
+The simulations executed for the case study are listed below:
+
+- **Uncalibrated CHPS**
+- **Calibrated CHPS**
+- **Uncalibrated NextGen** (AORC forcings)
+- **Uncalibrated NextGen** (MARFC forcings)
+- **Calibrated NextGen** (AORC forcings; calibrated on KGE objective function)
+- **Calibrated NextGen** (AORC forcings; calibrated on NSE objective function)
+- **Calibrated NextGen** (MARFC forcings; calibrated on KGE objective function)
+- **National Water Model 3.0**
+
+The researchers observed that the calibrated runs for both NextGen and CHPS showed significant improvements over uncalibrated runs in both Westfield and Elkland basins. Among the calibrated runs, CHPS marginally outperformed NextGen. Additionally, both CHPS and NextGen outperformed NWM 3.0 in Westfield basin.
+
+When running the NextGen-based models, substitution of SNOW-17 output and simpler PET for the NOAH-OWP reduced calibration time by 50% and produced similar outputs.
+
+However, the models that performed best during calibration did not necessarily perform best during the Hurricane Debby extreme event. This suggests that including a greater number of extreme events in the calibration period is necessary to improve model robustness.
+<!-- TODO: Which models actually performed best? We can't just talk around that... -->
+
+NGIAB served as a critical enabler in this study, allowing for rapid iteration and in-depth exploration of the NextGen framework’s configuration space. This evaluation of objective functions, forcing datasets, and baseline models would have been significantly more challenging with traditional workflows.
 
 ---
 

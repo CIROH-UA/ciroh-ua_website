@@ -5,17 +5,36 @@ description: "A quick reference for terms and jargon pertaining to NGIAB."
 tags: [Products, NGIAB, CIROH, National Water Model, Education]
 ---
 
+<!--
+NOTE: Changes to this page should be mirrored to NGIAB 101 as appropriate.
+https://github.com/CIROH-UA/training-NGIAB-101/edit/main/learners/reference.md
+
+Automatic rendering was considered, but ultimately rejected in order to retain links
+to section headers, which DocuHub's README renderer doesn't currently support.
+-->
+
 ## Concepts and Terms
 
 ### Catchment
-A specific, contiguous geographic area. In hydrologic modeling, larger regions are divided into catchments to allow for localized modeling and outputs.
+A specific, contiguous geographic area from which precipitation collects and drains into an output point like a river or water body. In hydrologic modeling, these catchments offer natural geographic subdivisions for localized modeling and outputs.
 
-Note that catchment IDs may not be persistent across hydrofabrics. Instead, [points of interest](#point-of-interest) should be used as persistent identifiers.
+Also known as a [**watershed**](#watershed) or **drainage basin**.
+
+Note that catchment identifiers may not be persistent across hydrofabrics. Instead, [points of interest](#point-of-interest) should be used as persistent identifiers.
 
 ### Calibration
 The process of tuning a hydrologic model's parameters to more accurately match observed outcomes.
 
 The NGIAB ecosystem offers the [NGIAB Calibration](/docs/products/ngiab/components/ngiab-calibration) utility to streamline this process.
+
+### Channel Routing
+Predicting the magnitude and shape of a [hydrograph](#hydrograph) as water moves through waterways.
+
+### CONUS
+Common shorthand for the **Con**tinental **U**nited **S**tates.
+
+### Discharge
+The rate at which water flows through a channel, measured in units of volume/time (e.g. cubic meters per second (CMS), cubic feet per second (CFS)). Also referred to as **[streamflow](#streamflow)**.
 
 ### Evaluation
 The process of assessing the quality and performance of a hydrologic model.
@@ -26,7 +45,7 @@ The NGIAB ecosystem offers [integration](/docs/products/ngiab/components/ngiab-t
 Values provided as inputs for a hydrologic model. The term comes from the practice of experimentally "forcing" certain input values by overriding the usual flow of data into a model.
 
 ### Formulation
-Some set of defined links between modules within the NextGen Framework.
+A subset of model definitions within a NextGen model [realization](#realization).
 
 ### Gage
 Short for a stream gauge or streamgage. Fixed locations where streamflow properties such as water level and streamflow are measured and recorded.
@@ -38,8 +57,14 @@ These hydrofabrics are defined by physical attributes and the links between thos
 *For the R library, see "[Hydrofabric (R library)](#hydrofabric-r-library)".*  
 *For the hydrofabric used as a baseline by most NextGen models, see "[USGS-NOAA Reference Fabric](#usgs-noaa-reference-fabric)".*
 
+### Hydrograph
+A graph that depicts streamflow at a specific location over time.
+
+### Hydrologic Signature
+Quantitative metrics that define streamflow, such as maximum flow, baseflow, mean flow, or slope.
+
 ### Nexus
-A point of data exchange within a NextGen network. Nexuses are placed at endpoint locations where water flows to within a [catchment](#catchment), such as along its borders.
+A point of data exchange within a NextGen-compatible hydrofabric network. Nexuses are placed at endpoint locations where water flows to within a [catchment](#catchment), such as along its borders.
 
 Note that nexus IDs may not be persistent across hydrofabrics. Instead, [points of interest](#point-of-interest) should be used as persistent identifiers.
 
@@ -52,17 +77,29 @@ Within the [USGS-NOAA reference fabric](#usgs-noaa-reference-fabric), points of 
 ### Realization
 The instructions that tell the NextGen Framework how to run a simulation.
 
-Realizations are stored in model realization files. These files contain [formulations](#formulation) of modules, along with the order in which those modules should be run.
+Realizations are stored in model realization files. These files contain [formulations](#formulation) of modules, along with the order in which those modules should be run. Exact specifications for NextGen realizations are provided in the [NGIAB-CloudInfra documentation](/docs/products/ngiab/distributions/ngiab-docker/specifications/realizations).
+
+### Streamflow
+In a general sense, the way that water flows through a channel. When referenced as a metric, it refers specifically to [discharge](#discharge).
 
 ### Subsetting
 The practice of taking a subset of a larger dataset. Subsetting is both common and highly recommended for model runs, as it can greatly reduce the computational load required.
 
 Both GUI and command-line utilities for subsetting the NextGen reference fabric are available within the [Data Preprocess](/docs/products/ngiab/components/ngiab-preprocessor/) utility.
 
+### Surface runoff
+Unconfined flow of water over the ground surface.
+
 ### Vector Processing Unit (VPU)
 Regional discretizations used by the [USGS-NOAA reference fabric](#usgs-noaa-reference-fabric). These VPUs designate fixed regions for model runs and data collections.
 
 Somewhat related to [catchments](#catchment), though VPUs are significantly larger and act as collections of contiguous catchments.
+
+### Watershed
+In North American English: See [catchment].  
+In other English dialects: Typically refers to a *drainage divide line*, or an area of elevated land that separates neighboring drainage basins. Also known as a *height of land* in North American English.
+
+*As CIROH is a United States-based organization, the term "watershed" typically refers to catchments within CIROH projects, websites, and other materials.*
 
 ## File Formats
 
@@ -74,6 +111,9 @@ Short for "JavaScript Object Notation", JSON files are used to store objects con
 
 NextGen uses JSON to store its model [realization](#realization) files (`ngen-run/config/realization.json`), which tell the NextGen engine how to execute a model run.
 
+### Model Run Directory (NGIAB)
+A standardized format for defining and importing NGIAB model runs. Exact specifications are provided in the [NGIAB-CloudInfra documentation](/docs/products/ngiab/distributions/ngiab-docker/specifications/run-directories).
+
 ### NetCDF (`.nc`)
 An open standard for arrays of scientific data. NextGen uses the netCDF-4 standard to contain model variable metadata.
 
@@ -84,6 +124,13 @@ A common archive format among Linux users. Analogously to formats like `.zip` an
 Short for "Yet Another Markup Language", YAML files are typically used to store metadata.
 NextGen uses a YAML file to store run configurations (`ngen-run/config/ngen.yaml`).
 
+## BMI Models
+
+### t-route
+A dynamic channel routing model using in determining routing for river networks. T-route is BMI-compliant and is used to prepare hydrofabrics for both the National Water Model and NGIAB.
+
+Information on t-route is available [here](https://github.com/NOAA-OWP/t-route).
+
 ## Tools and Software
 
 ### Basic Modeling Interface (BMI)
@@ -91,6 +138,20 @@ NextGen uses a YAML file to store run configurations (`ngen-run/config/ngen.yaml
 A standardized set of function and parameter bindings that allow models to interact with external components in a predictable, modular way.
 
 BMI has been adopted as the standard for models compatible with the NextGen framework. Documentation for BMI is available [here](https://bmi.csdms.io/en/stable/).
+
+### CIROH Community Hydrofabric
+
+A fork of the [NextGen Hydrofabric](#usgs-noaa-reference-fabric) optimized for performance with the NGIAB ecosystem. While it is currently used as a source hydrofabric, it will eventually be superceded as the reference hydrofabric matures.
+
+Updates to this fork are managed by the [Community Hydrofabric Patcher](/docs/products/ngiab/components/community-hydrofabric/).
+
+### Data Preprocess (NGIAB)
+
+A Python-based tool that automates the process of preparing a [model run directory](#model-run-directory) for NGIAB. See its [documentation](/docs/products/ngiab/components/ngiab-preprocessor) for more information.
+
+### Data Visualizer (NGIAB)
+
+A (Tethys)[#tethys-platform]-based application that visualizes NGIAB model outputs, including map-based navigation of gage locations and graphing of both model and baseline time-series. See its [documentation](/docs/products/ngiab/components/ngiab-tethys) for more information.
 
 ### Hydrofabric (R library)
 A standard library maintained by NOAA-OWP for processing and updating [hydrofabrics](#hydrofabric) in R.
@@ -100,24 +161,38 @@ Information on Hydrofabric is available [here](https://github.com/NOAA-OWP/hydro
 ### National Hydrography Dataset Plus (NHDPlus)
 A comprehensive reference [hydrofabric](#hydrofabric) for the United States, maintained by the EPA and USGS. [NHDPlusV2](https://www.epa.gov/waterdata/get-nhdplus-national-hydrography-dataset-plus-data) is the most current and relevant version.
 
-Relevant to NextGen due to its use as a base for the [USGS-NOAA reference fabric](#usgs-noaa-reference-fabric). As such, many tools and utilities designed for the NHD and its descendents will also work for NextGen hydrofabrics.
+Relevant to NextGen due to its use as a base for the [NextGen Hydrofabric](#usgs-noaa-reference-fabric). As such, many tools and utilities designed for the NHD and its descendents will also work for NextGen hydrofabrics.
+
+### NextGen Hydrofabric
+
+See [USGS-NOAA Reference Fabric](#usgs-noaa-reference-fabric).
+
+### ngen
+The [NextGen model engine](https://github.com/NOAA-OWP/ngen). NGIAB provides an [optimized fork](https://github.com/CIROH-UA/ngen) of this software.
+
+### NGIAB-CloudInfra
+
+[NGIAB's Docker-based distribution](/docs/products/ngiab/distributions/ngiab-docker/). It is suitable for the vast majority of purposes, including both local and cloud computing.
+
+### NGIAB-HPCInfra
+
+[NGIAB's Singularity-based distribution](/docs/products/ngiab/distributions/ngiab-singularity/). It is preferable in high-performance computing environments that benefit from Singularity's HPC-centric design.
 
 ### TEEHR
 Short for "Tools for Exploratory Evolution in Hydrologic Research", TEEHR is a Python library that provides comprehensive tooling for model [evaluation](#evaluation). TEEHR is [included as a part of the NGIAB ecosystem](/docs/products/ngiab/components/ngiab-teehr).
 
 Information on TEEHR is available [here](https://rtiinternational.github.io/teehr/).
 
+### TEEHR Integration (NGIAB)
+
+A containerized component within the NGIAB workflow that automates baseline evaluation of streamflow outputs. See its [documentation](/docs/products/ngiab/components/ngiab-teehr) for more information.
+
 ### Tethys Platform
 Tethys is a Python-based platform for building geospatial web apps. It forms the core of NGIAB's [Data Visualizer](/docs/products/ngiab/components/ngiab-visualizer), alongside many other CIROH applications.
 
 Information on the Tethys Platform is available [here](https://www.tethysplatform.org/).
 
-### t-route
-A dynamic channel routing model using in determining routing for river networks. T-route is BMI-compliant and is used to prepare hydrofabrics for both the National Water Model and NGIAB.
-
-Information on t-route is available [here](https://github.com/NOAA-OWP/t-route).
-
 ### USGS-NOAA Reference Fabric
-A [hydrofabric](#hydrofabric) jointly developed by the NOAA, USGS, and Lynker Spatial, which provides a shared baseline for NextGen models.
+A [hydrofabric](#hydrofabric) jointly developed by the NOAA, USGS, and Lynker Spatial, which provides a shared baseline for NextGen models. More commonly known as the **NextGen Hydrofabric**.
 
 Implementation and usage information for this fabric is available [here](https://noaa-owp.github.io/hydrofabric/articles/02-design-deep-dive.html).

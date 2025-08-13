@@ -6,6 +6,8 @@ authors: [hudson, seann, josh, arpita, james, sifan]
 tags: [Blog, NGIAB, MARFC, Hydrology, Modeling, NOAA, NWM, NextGen, CHPS]
 ---
 
+import useBaseUrl from "@docusaurus/useBaseUrl"
+
 <div className="margin-bottom--lg" />
 
 The National Weather Service's Middle Atlantic River Forecast Center (MARFC) sees large variations in the performance of the National Water Model 3.0. Through its support for regionalized parameters and models, NOAA-OWP’s Next Generation Water Resources Modeling Framework (NextGen framework) offers a potential solution to address these inconsistencies. As such, this study took advantage of NextGen in a Box (NGIAB) to evaluate the NextGen framework’s performance in the MARFC region.
@@ -25,7 +27,7 @@ which allowed for the models to be evaluated on a recent extreme flood event. Re
 
 <figure style={{ textAlign:'center', margin:'1.5rem 0' }}>
   <img
-    src="/img/blog/2025-08-MARFC/fig1.png"
+    src={useBaseUrl("/img/blog/2025-08-MARFC/fig1.png")}
     alt="A bar graph titled 'Westfield, PA Nash-Sutcliffe Efficiency values'. SAC-SMA displayed the best performance, closely followed by SAC-SMA Uncalibrated and NGen Calibrated (NSE OFunc). NGen Calibrated (KGE OFunc) fell slightly further behind, while NGEN Uncalibrated was by far the lowest."
     style={{ maxWidth:'100%', height:'auto' }}
   />
@@ -50,12 +52,12 @@ The researchers observed that the calibrated runs for both NextGen and CHPS show
 <figure style={{ textAlign:'center', margin:'1.5rem 0' }}>
   <div style={{ display:'flex', maxWidth:'100%' }}>
     <img
-      src="/img/blog/2025-08-MARFC/fig2_1.png"
+      src={useBaseUrl("/img/blog/2025-08-MARFC/fig2_1.png")}
       alt="A bar graph titled 'NSE of NextGen vs NextGen with Forcings Change'. The version of NextGen that used MARFC forcings yielded a greater NSE value."
       style={{ maxWidth:'50%', height:'auto' }}
     />
     <img
-      src="/img/blog/2025-08-MARFC/fig2_2.png"
+      src={useBaseUrl("/img/blog/2025-08-MARFC/fig2_2.png")}
       alt="A bar graph titled 'PBIAS of NextGen vs NextGen with Forcings Change'. While both PBIAS values were negative, the version of NextGen that used MARFC forcings showed far lower PBIAS."
       style={{ maxWidth:'50%', height:'auto' }}
     />
@@ -71,7 +73,7 @@ However, the models that performed best during calibration did not necessarily p
 
 <figure style={{ textAlign:'center', margin:'1.5rem 0' }}>
   <img
-    src="/img/blog/2025-08-MARFC/fig3.png"
+    src={useBaseUrl("/img/blog/2025-08-MARFC/fig3.png")}
     alt="A hydrograph depicting streamflow observations and outputs for Tropical Storm Debby on 08/09/2024."
     style={{ maxWidth:'100%', height:'auto' }}
   />
@@ -87,11 +89,11 @@ NGIAB served as a critical enabler in this study, allowing for rapid iteration a
 ## References
 
 <ol>
-  <li>National Oceanic and Atmospheric Administration. <em>Community Hydrologic Prediction System (CHPS) Documentation</em> [Internet]. National Oceanic and Atmospheric Administration; [updated 2024 Nov 26; cited 2025 Jul 28]. Available from: <a href="https://vlab.noaa.gov/web/chps" target="_blank">https://vlab.noaa.gov/web/chps</a></li>
+  <li>National Oceanic and Atmospheric Administration. <em>Community Hydrologic Prediction System (CHPS) Documentation</em> [Internet]. National Oceanic and Atmospheric Administration; [updated 2024 Nov 26; cited 2025 Jul 28]. Available from: [https://vlab.noaa.gov/web/chps](https://vlab.noaa.gov/web/chps) </li>
 
   <li>Araki R, Ogden FL, McMillan HK. Testing Soil Moisture Performance Measures in the Conceptual‐Functional Equivalent to the WRF-Hydro National Water Model. <em>JAWRA Journal of the American Water Resources Association</em>. 2025 Feb;61(1):e70002.</li>
 
-  <li>National Oceanic and Atmospheric Administration. <em>The National Water Model</em> [Internet]. National Water Prediction Service; [cited 2025 Jul 29]. Available from: <a href="https://water.noaa.gov/about/nwm" target="_blank">https://water.noaa.gov/about/nwm</a></li>
+  <li>National Oceanic and Atmospheric Administration. <em>The National Water Model</em> [Internet]. National Water Prediction Service; [cited 2025 Jul 29]. Available from: [https://water.noaa.gov/about/nwm](https://water.noaa.gov/about/nwm) </li>
 
   <li>Tijerina‐Kreuzer D, Condon L, FitzGerald K, Dugger A, O’Neill MM, Sampson K, Gochis D, Maxwell R. Continental hydrologic intercomparison project, phase 1: A large‐scale hydrologic model comparison over the continental United States. <em>Water Resources Research</em>. 2021 Jul;57(7):e2020WR028931.</li>
 

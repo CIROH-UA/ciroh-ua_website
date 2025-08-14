@@ -106,6 +106,10 @@ seann:
   url: 'https://www.linkedin.com/in/josh-cunningham-6906a7108/'
   image_url: https://ui-avatars.com/api/?name=Seann+Reed&background=0D8ABC&color=fff
 
-
+trupesh:
+  name: Trupesh Patel
+  title: Research Software Engineer
+  url: https://www.linkedin.com/in/trupeshkumarpatel
+  image_url: /img/teamMember3.png
 
 

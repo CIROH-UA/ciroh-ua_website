@@ -92,7 +92,7 @@ hudson:
   name: Hudson Finley Davis
   title: Hydroinformatics Engineer
   url: 'https://www.linkedin.com/in/elkin-giovanni-romero-bustamante-b834b5a8'
-  image_url: https://ui-avatars.com/api/?name=Hudson+Finley+Davis&background=0D8ABC&color=fff
+  image_url: /img/blog/authors/hudson.jpeg
 
 josh:
   name: Josh Cunningham
@@ -111,5 +111,17 @@ trupesh:
   title: Research Software Engineer
   url: https://www.linkedin.com/in/trupeshkumarpatel
   image_url: /img/teamMember3.png
+
+bhavya: 
+  name: Bhavya Duvuri
+  title: Machine Learning Researcher
+  url: https://www.linkedin.com/in/duvvuribhavya/
+  image_url: /img/blog/authors/bhavya.jpeg
+
+ayman:
+  name: Ayman Nassar
+  title: Postdoctoral Researcher
+  url: https://www.linkedin.com/in/ayman-nassar-24a92723/
+  image_url: https://ui-avatars.com/api/?name=Ayman+Nassar&background=0D8ABC&color=fff
 
 

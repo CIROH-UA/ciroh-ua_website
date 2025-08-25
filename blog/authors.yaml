@@ -91,7 +91,7 @@ gio:
 hudson:
   name: Hudson Finley Davis
   title: Hydrologist, NOAA Office of Water Prediction
-  url: 'hudson.davis@noaa.gov'
+  url: 'mailto:hudson.davis@noaa.gov'
   image_url: /img/blog/authors/hudson.jpeg
 
 josh:

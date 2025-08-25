@@ -90,8 +90,8 @@ gio:
 
 hudson:
   name: Hudson Finley Davis
-  title: Hydroinformatics Engineer
-  url: 'https://www.linkedin.com/in/elkin-giovanni-romero-bustamante-b834b5a8'
+  title: Hydrologist, NOAA Office of Water Prediction
+  url: 'hudson.davis@noaa.gov'
   image_url: /img/blog/authors/hudson.jpeg
 
 josh:
@@ -102,9 +102,9 @@ josh:
 
 seann:
   name: Seann Reed
-  title: DevOps Software Engineer
-  url: 'https://www.linkedin.com/in/josh-cunningham-6906a7108/'
-  image_url: https://ui-avatars.com/api/?name=Seann+Reed&background=0D8ABC&color=fff
+  title: Hydrologist, NOAA Office of Water Prediction
+  url: 'mailto:seann.reed@noaa.gov'
+  image_url: /img/blog/authors/seann.png
 
 trupesh:
   name: Trupesh Patel

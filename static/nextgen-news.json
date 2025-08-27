@@ -1,5 +1,38 @@
 {
-	"July 2025 Update": [
+	"August 2025 Update": [
+			{
+			"type": "announcement",
+			"title": "NGIAB Journal Paper",
+			"description": "We are excited to announce that our NGIAB paper 'NextGen In A Box (NGIAB): Open-Source Containerization of the NextGen Framework to Enable Community-Driven Hydrology Modeling' has been accepted for publication in Environmental Modelling and Software!🎉. The paper is now available online!.",
+			"link": "https://www.sciencedirect.com/science/article/pii/S1364815225003500"
+			},
+			{
+			"type": "feature",
+			"title": "NGIAB-data-preprocess",
+			"description": "A new release of ngiab_data_preprocess, version v4.5.0, is now available!🎉 LSTM model is now integrated in DataPreprocess. You could now run LSTM using NGIAB-DataPreprocess",
+			"link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.5.0"
+			},
+			{
+			"type": "feature",
+			"title": "NGIAB-CloudInfra",
+			"description": "NGIAB version 1.5.0 is available now. This update includes restriction of realization.json search to config folder. Additionally, LSTM model is now integrated in NGIAB Cloud Image, and could be used to run LSTM. Lastly, the build process now includes SMP (Soil Moisture Profiles) and SFT (Soil Freeze Thaw).",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-07-01&until=2025-07-31"
+			},
+			{
+			"type": "feature",
+			"title": "ngen-datastream",
+			"description": "Waiting on Jordan's updates",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/releases/tag/v1.0.1"
+			},
+			
+			{
+			  "type": "update",
+			  "title": "CIROH-UA/ngen",
+			  "description": "For this month, there was an update to the CFE module with fixes for volume start and pointer handling. Additionally, the build process has been improved to correctly include SMP (Soil Moisture Profiles) and SFT (Soil Freeze Thaw).",
+			  "link": "https://github.com/CIROH-UA/ngen/commits/ngiab/?since=2025-01-01&until=2025-02-28"
+			}			
+		],
+		"July 2025 Update": [
 			{
 			"type": "feature",
 			"title": "NGIAB-data-preprocess",

@@ -6,40 +6,39 @@ import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const ImpactItem = ({ title, count, imageSrc,users }) => (
-  <div className={styles.impactItem}>
+  <div className={clsx(styles.impactItem, 'card')}>
     <img src={imageSrc} alt={`${title} icon`} className={styles.impactIcon} />
     <h3 className={styles.impactTitle}>{title}</h3>
-    <p className={styles.impactCount}>{count}</p>
+    <p className={styles.impactCount}>{count} ongoing projects</p>
     <p className={styles.impactCount}>{users} active users</p>
-
   </div>
 );
 
 export default function CommunityImpact() {
   const impactData = [
     {
-      title: "AWS Projects",
+      title: "Amazon Web Services",
       count: 24,
       imageSrc: useBaseUrl("/img/logos/corp/aws-black.svg"),
-      users:60
+      users: 69,
     },
     {
-      title: "GCP and JupyterHub Projects",
+      title: "GCP and JupyterHub",
       count: 3,
       imageSrc: useBaseUrl("/img/logos/corp/google-cloud.jpg"),
-      users: 171
+      users: 183,
     },
     {
-      title: "On-premise HPC Projects",
+      title: "On-premise HPC",
       count: 20,
       imageSrc: useBaseUrl("/img/logos/pantarhei.jpg"),
-      users: 50
+      users: 50,
     },
     {
-      title: "NSF ACCESS Allocations Projects",
+      title: "NSF ACCESS Allocations",
       count: 7,
       imageSrc: useBaseUrl("/img/logos/nsf-logo.png"),
-      users:27
+      users: 75,
     }
   ];
 
@@ -64,7 +63,6 @@ export default function CommunityImpact() {
       </div>
     </div>
   </header>
-        
       <div className={styles.impactGrid}>
         {impactData.map((item, index) => (
           <ImpactItem 

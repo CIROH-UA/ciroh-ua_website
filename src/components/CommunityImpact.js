@@ -30,9 +30,9 @@ export default function CommunityImpact() {
     },
     {
       title: "On-premise HPC",
-      count: 20,
+      count: 57,
       imageSrc: useBaseUrl("/img/logos/pantarhei.jpg"),
-      users: 50,
+      users: 78,
     },
     {
       title: "NSF ACCESS Allocations",

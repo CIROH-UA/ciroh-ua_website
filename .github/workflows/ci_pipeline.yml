@@ -56,7 +56,7 @@ jobs:
           echo "Building for STAGING environment"
         fi
           
-    - name: Configure baseUrl
+    - name: Configure baseUrl (staging)
       if: ${{ env.DEPLOY_ENV == 'staging' }}
       run: |
         # Create a backup of the original config
@@ -64,10 +64,27 @@ jobs:
         
         # Use sed to replace the baseUrl value
         echo "Setting baseUrl for staging"
-        sed -i 's|baseUrl: '\''\/'\''|baseUrl: '\''/docuhub-staging/'\''|g' docusaurus.config.js
-        sed -i 's|baseUrl: "\/"|baseUrl: "\/docuhub-staging\/"|g' docusaurus.config.js
-        sed -i 's|baseUrl = '\''\/'\''|baseUrl = '\''/docuhub-staging/'\''|g' docusaurus.config.js
-        sed -i 's|baseUrl = "\/"|baseUrl = "\/docuhub-staging\/"|g' docusaurus.config.js
+        sed -i 's|baseUrl: '\''\/local\/'\''|baseUrl: '\''/docuhub-staging/'\''|g' docusaurus.config.js
+        sed -i 's|baseUrl: "\/local\/"|baseUrl: "\/docuhub-staging\/"|g' docusaurus.config.js
+        sed -i 's|baseUrl = '\''\/local\/'\''|baseUrl = '\''/docuhub-staging/'\''|g' docusaurus.config.js
+        sed -i 's|baseUrl = "\/local\/"|baseUrl = "\/docuhub-staging\/"|g' docusaurus.config.js
+        
+        # Show the changed config
+        echo "Modified docusaurus.config.js:"
+        cat docusaurus.config.js
+    
+    - name: Configure baseUrl (production)
+      if: ${{ env.DEPLOY_ENV == 'production' }}
+      run: |
+        # Create a backup of the original config
+        cp docusaurus.config.js docusaurus.config.js.bak
+        
+        # Use sed to replace the baseUrl value
+        echo "Setting baseUrl for production"
+        sed -i 's|baseUrl: '\''\/local\/'\''|baseUrl: '\''/'\''|g' docusaurus.config.js
+        sed -i 's|baseUrl: "\/local\/"|baseUrl: "\/"|g' docusaurus.config.js
+        sed -i 's|baseUrl = '\''\/local\/'\''|baseUrl = '\''/'\''|g' docusaurus.config.js
+        sed -i 's|baseUrl = "\/local\/"|baseUrl = "\/"|g' docusaurus.config.js
         
         # Show the changed config
         echo "Modified docusaurus.config.js:"

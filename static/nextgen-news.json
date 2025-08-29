@@ -9,26 +9,32 @@
 			{
 			"type": "feature",
 			"title": "NGIAB-data-preprocess",
-			"description": "A new release of ngiab_data_preprocess, version v4.5.0, is now available! LSTM model has now been integrated. You could now run LSTM using NGIAB-DataPreprocess",
+			"description": "A new release of ngiab_data_preprocess, version v4.5.0, is now available! Preprocessing support for the LSTM model has now been integrated, making LSTM-based NGIAB configurations far more accessible.",
 			"link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.5.0"
 			},
 			{
 			"type": "feature",
 			"title": "NGIAB-CloudInfra",
-			"description": "NGIAB version 1.5.0 is available now. This update includes restriction of realization.json search to the config folder. Additionally, LSTM model has been integrated into NGIAB image, and can be used to run LSTM model. Lastly, the build process now includes SMP (Soil Moisture Profiles) and SFT (Soil Freeze Thaw).",
+			"description": "NGIAB version 1.5.0 is available now. This update restricts searches for realization.json to the config folder. Additionally, the LSTM model has been integrated into the NGIAB image, enabling AI-powered hydrologic prediction.",
 			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-08-01&until=2025-08-29"
 			},
 			{
 			"type": "feature",
+			"title": "NGIAB-HPCInfra",
+			"description": "NGIAB-HPCInfra's image has been updated for parity with NGIAB-CloudInfra, including full support for LSTM-based models.",
+			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2025-08-01&until=2025-08-29"
+			},
+			{
+			"type": "feature",
 			"title": "ngen-datastream",
-			"description": "Release v1.1.0 recently released! Major enhancements include implementation of medium range ensemble members in DataStreamCLI and NRDS infrastructure, enhanced metadata and CI/CD with semantic versioning implementation, development towards automated testing and production deployment, DataStreamCLI skip feature, increased test coverage, and documentation updates.",
+			"description": "ngen-datastream is now known as the **NextGen Research DataStream (NRDS)**! We hope to continue using this platform to advance the boundaries of continental-scale modeling.\n\nRelease v1.1.0 recently released! Major enhancements include implementation of medium range ensemble members in DataStreamCLI and NRDS infrastructure, enhanced metadata and CI/CD with semantic versioning implementation, development towards automated testing and production deployment, the DataStreamCLI skip feature, increased test coverage, and documentation updates.",
 			"link": "https://github.com/CIROH-UA/ngen-datastream/releases/tag/v1.1.0"
 			},
 			
 			{
 			  "type": "update",
 			  "title": "CIROH-UA/ngen",
-			  "description": "For this month, there was an update to the CFE module with fixes for volume start and pointer handling. Additionally, the build process has been improved to correctly include SMP and SFT.",
+			  "description": "For this month, there was an upstream update to the CFE module with fixes for volume start and pointer handling.",
 			  "link": "https://github.com/CIROH-UA/ngen/commits/ngiab/?since=2025-08-01&until=2025-08-29"
 			}			
 		],

@@ -1,5 +1,38 @@
 {
-	"July 2025 Update": [
+	"August 2025 Update": [
+			{
+			"type": "announcement",
+			"title": "NGIAB Journal Paper",
+			"description": "🎉We are excited to announce that our NGIAB paper 'NextGen In A Box (NGIAB): Open-Source Containerization of the NextGen Framework to Enable Community-Driven Hydrology Modeling' has been accepted for publication in Environmental Modelling and Software! \n\nThe paper is now available online and can be accessed [here](https://www.sciencedirect.com/science/article/pii/S1364815225003500).",
+			"link": "https://www.sciencedirect.com/science/article/pii/S1364815225003500"
+			},
+			{
+			"type": "feature",
+			"title": "NGIAB-data-preprocess",
+			"description": "A new release of ngiab_data_preprocess, version v4.5.0, is now available! LSTM model has now been integrated. You could now run LSTM using NGIAB-DataPreprocess",
+			"link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.5.0"
+			},
+			{
+			"type": "feature",
+			"title": "NGIAB-CloudInfra",
+			"description": "NGIAB version 1.5.0 is available now. This update includes restriction of realization.json search to the config folder. Additionally, LSTM model has been integrated into NGIAB image, and can be used to run LSTM model. Lastly, the build process now includes SMP (Soil Moisture Profiles) and SFT (Soil Freeze Thaw).",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-08-01&until=2025-08-29"
+			},
+			{
+			"type": "feature",
+			"title": "ngen-datastream",
+			"description": "Release v1.1.0 recently released! Major enhancements include implementation of medium range ensemble members in DataStreamCLI and NRDS infrastructure, enhanced metadata and CI/CD with semantic versioning implementation, development towards automated testing and production deployment, DataStreamCLI skip feature, increased test coverage, and documentation updates.",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/releases/tag/v1.1.0"
+			},
+			
+			{
+			  "type": "update",
+			  "title": "CIROH-UA/ngen",
+			  "description": "For this month, there was an update to the CFE module with fixes for volume start and pointer handling. Additionally, the build process has been improved to correctly include SMP and SFT.",
+			  "link": "https://github.com/CIROH-UA/ngen/commits/ngiab/?since=2025-08-01&until=2025-08-29"
+			}			
+		],
+		"July 2025 Update": [
 			{
 			"type": "feature",
 			"title": "NGIAB-data-preprocess",

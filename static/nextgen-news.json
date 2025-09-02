@@ -16,13 +16,13 @@
 			"type": "feature",
 			"title": "NGIAB-CloudInfra",
 			"description": "NGIAB version 1.5.0 is available now. This update restricts searches for realization.json to the config folder. Additionally, the LSTM model has been integrated into the NGIAB image, enabling AI-powered hydrologic prediction.",
-			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/commits/main/?since=2025-08-01&until=2025-08-29"
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/releases/tag/v1.5.0"
 			},
 			{
 			"type": "feature",
 			"title": "NGIAB-HPCInfra",
-			"description": "NGIAB-HPCInfra's image has been updated for parity with NGIAB-CloudInfra, including full support for LSTM-based models.",
-			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/commits/main/?since=2025-08-01&until=2025-08-29"
+			"description": "NGIAB-HPCInfra version 1.1.0 is available now. This update brings parity with NGIAB-CloudInfra's recent changes, including full support for LSTM-based models.",
+			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/releases/tag/1.1.0"
 			},
 			{
 			"type": "feature",
@@ -30,13 +30,18 @@
 			"description": "ngen-datastream is now known as the **NextGen Research DataStream (NRDS)**! We hope to continue using this platform to advance the boundaries of continental-scale modeling.\n\nRelease v1.1.0 recently released! Major enhancements include implementation of medium range ensemble members in DataStreamCLI and NRDS infrastructure, enhanced metadata and CI/CD with semantic versioning implementation, development towards automated testing and production deployment, the DataStreamCLI skip feature, increased test coverage, and documentation updates.",
 			"link": "https://github.com/CIROH-UA/ngen-datastream/releases/tag/v1.1.0"
 			},
-			
 			{
 			  "type": "update",
 			  "title": "CIROH-UA/ngen",
-			  "description": "For this month, there was an upstream update to the CFE module with fixes for volume start and pointer handling.",
+			  "description": "Upstream updates to BMI submodules have been merged! The CFE module has fixes to volume start and pointer handling, and the LSTM module has been updated to fully incorporate the CIROH community fork.",
 			  "link": "https://github.com/CIROH-UA/ngen/commits/ngiab/?since=2025-08-01&until=2025-08-29"
-			}			
+			},
+			{
+			  "type": "update",
+			  "title": "CIROH-UA/t-route",
+			  "description": "Version v0.2.0 of CIROH-UA/t-route is available now. This marks the formal release of last month's memory and performance improvements.",
+			  "link": "https://github.com/CIROH-UA/t-route/releases/tag/v0.2.0"
+			}
 		],
 		"July 2025 Update": [
 			{

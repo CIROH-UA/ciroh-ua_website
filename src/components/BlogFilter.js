@@ -8,7 +8,7 @@ export default function BlogFilter() {
   const [activeTag, setActiveTag] = useState('*');
   
   // Extract unique tags from your posts
-  const tags = ['AWS', 'Google', 'Conference', 'NextGen'];
+  const tags = ['AWS', 'Google Cloud', 'Conference', 'NextGen'];
 
   // Filter posts based on the selected tag
   const filteredPosts = activeTag === '*'
@@ -16,6 +16,9 @@ export default function BlogFilter() {
     : recentPosts.filter(post => 
         post.metadata.tags?.some(tag => tag.label.toLowerCase() === activeTag.toLowerCase())
       );
+
+  // Base URL hack to circumvent issues with React re-rendering
+  const baseURL = useBaseUrl('/');
 
   return (
     <div>
@@ -51,10 +54,17 @@ export default function BlogFilter() {
           <li key={post.id} className={clsx(styles.postCard, 'card')}>
             <div className={styles.postImage}>
               {post.metadata.frontMatter.image ? (
-                <img
-                  src={useBaseUrl(post.metadata.frontMatter.image)}
-                  alt={post.metadata.title}
-                />
+                post.metadata.frontMatter.image.substring(0, 4) === 'http' ? (
+                  <img
+                    src={post.metadata.frontMatter.image}
+                    alt={post.metadata.title}
+                  />
+                ) : (
+                  <img
+                    src={baseURL + post.metadata.frontMatter.image}
+                    alt={post.metadata.title}
+                  />
+                )
               ) : (
                 post.metadata.title.toLowerCase().includes('monthly news update') && (
                   <div style={{

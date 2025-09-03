@@ -24,7 +24,7 @@ export default function CommunityImpact() {
     },
     {
       title: "GCP and JupyterHub",
-      count: 3,
+      count: 63,
       imageSrc: useBaseUrl("/img/logos/corp/google-cloud.jpg"),
       users: 183,
     },

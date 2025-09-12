@@ -19,6 +19,11 @@ export default function BlogFilter() {
 
   // Base URL hack to circumvent issues with React re-rendering
   const baseURL = useBaseUrl('/');
+  const safeUseBaseUrl = (rawURL) => {
+    if (rawURL.indexOf('http') == 0) return rawURL;
+    else if (rawURL.indexOf("/") == 0) return baseURL + rawURL.substring(1);
+    else return baseURL + rawURL;
+  };
 
   return (
     <div>
@@ -54,17 +59,10 @@ export default function BlogFilter() {
           <li key={post.id} className={clsx(styles.postCard, 'card')}>
             <div className={styles.postImage}>
               {post.metadata.frontMatter.image ? (
-                post.metadata.frontMatter.image.substring(0, 4) === 'http' ? (
-                  <img
-                    src={post.metadata.frontMatter.image}
+                <img
+                    src={safeUseBaseUrl(post.metadata.frontMatter.image)}
                     alt={post.metadata.title}
                   />
-                ) : (
-                  <img
-                    src={baseURL + post.metadata.frontMatter.image}
-                    alt={post.metadata.title}
-                  />
-                )
               ) : (
                 post.metadata.title.toLowerCase().includes('monthly news update') && (
                   <div style={{

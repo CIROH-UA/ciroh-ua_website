@@ -141,8 +141,23 @@ const config = {
             ],
           },
           {
-            to: '/docs/products/research-datastream/components/forcingprocessor/',
-            from: '/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/forcingprocessor/',
+            to: '/docs/products/research-datastream/forcingprocessor/',
+            from: [
+              '/docs/products/Community Hydrologic Modeling Framework/nextgenDatastream/forcingprocessor/',
+              '/docs/products/research-datastream/components/forcingprocessor/'
+            ]
+          },
+          {
+            to: '/docs/products/research-datastream/datastreamcli/python_tools/',
+            from: [
+              '/docs/products/research-datastream/components/python_tools/'
+            ]
+          },
+          {
+            to: '/docs/products/research-datastream/nrds-aws/',
+            from: [
+              '/docs/products/research-datastream/components/research_datastream/'
+            ]
           },
           {
             to: '/docs/products/ngiab/components/community-hydrofabric',
@@ -217,6 +232,11 @@ const config = {
             return undefined; // Return a falsy value: no redirect created
           }
           // Products redirects
+          if (existingPath.includes('/docs/products/ngiab/research-datastream/datastreamcli')) {
+            return [
+              existingPath.replace('/docs/products/ngiab/research-datastream/datastreamcli', '/docs/products/research-datastream/cli'),
+            ];
+          }
           if (existingPath.includes('/docs/products/ngiab/ngiab-intro')) {
             return [
               existingPath.replace('/docs/products/ngiab/ngiab-intro', '/docs/products/Community Hydrologic Modeling Framework/ngiabintro'),

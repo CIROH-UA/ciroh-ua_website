@@ -3,23 +3,58 @@ title: "From Research to Impact: CIROH Science Meeting 2025 Resources and Reflec
 description: "Best CIROH Science Meeting Yet! Reflecting on the 2025 CIROH Science Meeting held September 15-18 in Tuscaloosa, Alabama. Access meeting resources, session recordings, and presentation slides while we celebrate four days of collaborative water science research and community building."
 slug: best-ciroh-science-meeting-yet
 tags: [Blog, CIROH, ]
-authors: [arpita]
+authors: [arpita, charity]
 image: /img/blog/2025-09-science-meeting/group.jpg
 ---
 
 import useBaseUrl from "@docusaurus/useBaseUrl"
+import { Carousel } from "react-responsive-carousel"
 
 <figure style={{ textAlign: "center" }}>
   <img src={useBaseUrl("/img/blog/2025-09-science-meeting/group.jpg")} alt="Group photo from the CIROH science meeting" style={{ maxWidth: "100%" }} />
-  <figcaption><em>Figure 1. Group photo from the CIROH science meeting.</em></figcaption>
+  <figcaption><em>Group photo from the CIROH science meeting</em></figcaption>
 </figure>
 
 ## Meeting Highlights: Transforming Research into Real-World Impact
 
 Over four days, our community showed how scientific innovation translates into tools and systems that support communities, enhance resilience, and improve decision-making across the nation. From AI advances in water prediction to flood inundation mapping, the presentations and discussions demonstrated the collaborative, open-science approach that defines CIROH.
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7373443742671888384?compact=1" height="399" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-
+<Carousel
+  showThumbs={false}
+  autoPlay={true}
+  stopOnHover={false}
+  useKeyboardArrows={true}
+  emulateTouch={true}
+  interval={3500}
+  infiniteLoop
+  showStatus={false}
+  showIndicators={true}
+  >
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <img src={useBaseUrl("/img/blog/2025-09-science-meeting/carousel_1.JPG")}
+      style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+      alt="Dr. Steve Burian presenting at the CIROH science meeting"
+      />
+  </div>
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <img src={useBaseUrl("/img/blog/2025-09-science-meeting/carousel_2.JPG")}
+      style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+      alt="Matt Womble presenting at the CIROH science meeting"
+      />
+  </div>
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <img src={useBaseUrl("/img/blog/2025-09-science-meeting/carousel_3.JPG")}
+    style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+    alt="Dr. Jim Nelson presenting at the CIROH science meeting"
+    />
+  </div>
+   <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+  <img src={useBaseUrl("/img/blog/2025-09-science-meeting/carousel_4.jpeg")}
+    style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+    alt="2025 CIROH Science Meeting Trivia Session"
+    />
+  </div>
+</Carousel>
 
 ## Access Meeting Resources
 

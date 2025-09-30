@@ -20,19 +20,19 @@
 			},
 			{
 			"type": "NRDS",
-			"title": "ngen-datastream",
+			"title": "NGEN-DataStream",
 			"description": "🎉Major milestone for the NextGen Research DataStream! Version v2.0.0 marks a significant reorganization with the ngen-datastream repository splitting into modular components:\n\n**[DataStreamCLI](https://github.com/CIROH-UA/datastreamcli)** and **[ForcingProcessor](https://github.com/CIROH-UA/forcingprocessor)** are now independent repositories. This structures the infrastructure for the NRDS in a more conventional way in order to facilitate CI/CD. Going forward, ngen-datastream repository will continue to hold NRDS infrastructure, deployment tooling, and documentation.",
 			"link": "https://github.com/CIROH-UA/ngen-datastream/releases/tag/v2.0.0"
 			},
 			{
 			"type": "NRDS",
-			"title": "forcingprocessor",
+			"title": "ForcingProcessor",
 			"description": "ForcingProcessor version v1.1.1 launches as an independent repository!This repository has been created from the forcingprocessor module within the NextGen Research DataStream's repository ngen-datastream. All related tooling is planned to be removed from the ngen-datastream repository. Future development on forcingprocessor will occur only in this repository. Since the split, primarily CI/CD and directory structure changes have been made. The tooling remains unchanged.",
 			"link": "https://github.com/CIROH-UA/forcingprocessor/releases/tag/v1.1.1"
 			},
 			{
 			"type": "NRDS",
-			"title": "datastreamcli",
+			"title": "DataStreamCLI",
 			"description": "DataStreamCLI debuts as a standalone repository with version v1.1.1! This repository has been created from the DataStreamCLI module within the NextGen Research DataStream's repository ngen-datastream. Since the split, only directory structure changes have been made. The tooling remains unchanged.",
 			"link": "https://github.com/CIROH-UA/datastreamcli/releases/tag/v1.1.1"
 			}

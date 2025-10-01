@@ -15,10 +15,10 @@ The National Weather Service's Middle Atlantic River Forecast Center (MARFC) see
 
 This study evaluated three operational hydrologic modeling frameworks targetted at the National Water Model (NWM): the Community Hydrologic Prediction System (CHPS), the NextGen framework, and version 3.0 of the National Water Model itself.
 - CHPS is the current operational framework used by NOAA's River Forecast Centers. It incorporates the SNOW-17 model for snowmelt and the Sacramento Soil Moisture Accounting (SAC-SMA) model for runoff generation.
-- For the early phases of this study, the NextGen framework was used with the default model configuration provided by the NGIAB ecosystem, which combines the Noah-OWP-Modular land surface model and the Conceptual Functional Equivalent (CFE) rainfall runoff model [[2]](#references).
+- For the early phases of this study, the NextGen framework was used with the default model configuration provided by the NGIAB ecosystem, which combines the Noah-OWP-Modular land surface model and the Conceptual Functional Equivalent (CFE) rainfall runoff model [[2]](/blog/nextgen-marfc-performance#references).
   - After initial runs with the baseline configuration, Noah-OWP-Modular was replaced with SNOW-17 output and simplified Potential Evapotranspiration (PET) values from the MARFC database.
-  - The models were calibrated using two objective functions: Kling-Gupta Efficiency (KGE) [[6][7]](#references) and Nash-Sutcliffe Efficiency (NSE) [[4][5]](#references).
-- The National Water Model 3.0 uses the Noah-MP land surface model coupled with the Weather Research and Forecasting Hydrologic model (WRF-Hydro) [[2][3]](#references) to simulate hydrological processes across CONUS. 
+  - The models were calibrated using two objective functions: Kling-Gupta Efficiency (KGE) [[6][7]](/blog/nextgen-marfc-performance#references) and Nash-Sutcliffe Efficiency (NSE) [[4][5]](/blog/nextgen-marfc-performance#references).
+- The National Water Model 3.0 uses the Noah-MP land surface model coupled with the Weather Research and Forecasting Hydrologic model (WRF-Hydro) [[2][3]](/blog/nextgen-marfc-performance#references) to simulate hydrological processes across CONUS. 
 
 The case studies focused on the Westfield and Elkland basins in North-Central Pennsylvania.
 These basins provide good locations for comparison due to the presence of USGS stream gages
@@ -36,6 +36,8 @@ which allowed for the models to be evaluated on a recent extreme flood event. Re
     **Figure 1**) Nash-Sutcliffe Efficiency (NSE) Metric for simulations from 2007 to 2020.
   </figcaption>
 </figure>
+
+<!-- truncate -->
 
 The simulations executed for the case study are listed below:
 

@@ -100,6 +100,11 @@ const config = {
       '@docusaurus/plugin-client-redirects',
       {
         redirects: [
+          // Feedback page: grandfather in old Science Meeting survey links
+          {
+            to: '/feedback',
+            from: '/scimeet25survey',
+          },
           // NGIAB: manual redirects to reflect heavy folder refactoring
           {
             to: '/docs/products/ngiab',
@@ -209,7 +214,9 @@ const config = {
           // JupyterHub redirects
           if (existingPath.includes('/docs/services/cloudservices/2i2c/')) {
             return [
+              existingPath.replace('/docs/services/cloudservices/2i2c/', '/docs/services/cloudservices/2i2c/documentation/'),
               existingPath.replace('/docs/services/cloudservices/2i2c/', '/docs/services/cloudservices/ciroh jupyterhub/'),
+              existingPath.replace('/docs/services/cloudservices/2i2c/', '/docs/services/cloudservices/ciroh jupyterhub/documentation'),
             ];
           }
           // Otherwise, paths have only been changed en masse for the products section, so return early if not in there

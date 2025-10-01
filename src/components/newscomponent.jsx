@@ -106,6 +106,8 @@ function getBadgeClass(type) {
       return "warning";
     case "NRDS":
       return "primary";
+    case "blog":  
+      return "info";
     default:
       return "primary";
   }

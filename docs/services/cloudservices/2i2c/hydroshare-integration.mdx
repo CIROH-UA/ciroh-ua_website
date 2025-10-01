@@ -21,7 +21,7 @@ import VideoPlayer from '/src/components/VideoPlayer.js'
 
 HydroShare is a repository, website, and hydrologic information system for sharing hydrologic data and models aimed at giving users the cyberinfrastructure needed to innovate and collaborate in research to solve water problems.
 
-<Link class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1rem'}} to="https://www.hydroshare.org">HydroShare Homepage</Link> <Link class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} to="docs/services/cloudservices/hydroshare">HydroShare on DocuHub</Link>
+<Link class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1rem'}} to="https://www.hydroshare.org">HydroShare Homepage</Link> <Link class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} to="/docs/services/cloudservices/HydroShare">HydroShare on DocuHub</Link>
 
 Users now have the capability to directly launch and execute computational notebooks from HydroShare resources into the CIROH Jupyterhub environments.
 
@@ -49,20 +49,36 @@ Users now have the capability to directly launch and execute computational noteb
 
 ## Using HydroShare resources in JupyterHub
 
-The *Open With* command will copy files from the HydroShare resource into the Downloads directory in your CIROH JupyterHub user account in a folder named with the HydroShare resource unique identifier (GUID). Your work will use and add to these local versions of files and will not affect the original files in the hydroShare resource. Once your work is complete, you should save results you want to retain, either by downloading them or saving them to the HydroShare repository.
+The *Open With* command will copy files from the HydroShare resource into the Downloads directory in your CIROH JupyterHub user account in a folder named with the HydroShare resource unique identifier (GUID). Your work will use and add to these local versions of files and will not affect the original files in the HydroShare resource. Once your work is complete, you should save results you want to retain, either by downloading them or saving them to the HydroShare repository.
 
 There are a number of HydroShare resources developed specifically to use this CIROH HydroShare integration:
 
-<!-- Note: each of these descriptions has an invisible sub-linebreak (two spaces) at its end -->
+<!-- The wonky <span>s and other explicit tags are used to mitigate minifier warnings. -->
+<!-- They need to be on the same lines as their respective text because, of course, MDX is extremely whitespace-sensitive. Sigh. -->
 
-- [**Working with HydroShare, AORC data, HydroFabric and NextGen on CIROH JupyterHub Tutorial**](https://www.hydroshare.org/resource/fc8539358fe64ca6a47468728a0687a1/): This HydroShare resource provides a tutorial on the use of the CIROH JupyterHub linked from HydroShare. It introduces use of Jupyter Notebooks for retrieval of NOAA Analysis of Record for Calibration (AORC) datasets and setting up and executing NextGen for a small test watershed as a starting point for research with NextGen.  
-<details><summary>*Citation info*</summary>Tarboton, D., H. Salehabadi, A. Nassar, F. Baig, A. M. Castronova, I. Garousi-Nejad, A. Patel, P. Dash (2025). Working with HydroShare, AORC data, HydroFabric and NextGen on CIROH JupyterHub Tutorial, HydroShare, https://doi.org/10.4211/hs.fc8539358fe64ca6a47468728a0687a1</details>
-
-- [**Jupyter Notebooks for the Retrieval of AORC Data for Hydrologic Analysis**](https://www.hydroshare.org/resource/72ea9726187e43d7b50a624f2acf591f/): This HydroShare resource contains Jupyter Notebooks with instructions and code for accessing and subsetting the NOAA Analysis of Record for Calibration (AORC) dataset.  
-<details><summary>*Citation info*</summary>Salehabadi, H., D. Tarboton, A. Nassar, A. M. Castronova, P. Dash, A. Patel, F. Baig (2025). Jupyter Notebooks for the Retrieval of AORC Data for Hydrologic Analysis, HydroShare, http://www.hydroshare.org/resource/72ea9726187e43d7b50a624f2acf591f </details>
+<ul>
+  <li>
+    <span>[**Working with HydroShare, AORC data, HydroFabric and NextGen on CIROH JupyterHub Tutorial**](https://www.hydroshare.org/resource/fc8539358fe64ca6a47468728a0687a1/)</span>
+    <span>: This HydroShare resource provides a tutorial on the use of the CIROH JupyterHub linked from HydroShare. It introduces use of Jupyter Notebooks for retrieval of NOAA Analysis of Record for Calibration (AORC) datasets and setting up and executing NextGen for a small test watershed as a starting point for research with NextGen.</span>
+    <br />
+    <details>
+      <summary>*Citation info*</summary>
+      <span>Tarboton, D., H. Salehabadi, A. Nassar, F. Baig, A. M. Castronova, I. Garousi-Nejad, A. Patel, P. Dash (2025). Working with HydroShare, AORC data, HydroFabric and NextGen on CIROH JupyterHub Tutorial, HydroShare, https://doi.org/10.4211/hs.fc8539358fe64ca6a47468728a0687a1</span>
+    </details>
+  </li>
+  <li>
+    <span>[**Jupyter Notebooks for the Retrieval of AORC Data for Hydrologic Analysis**](https://www.hydroshare.org/resource/72ea9726187e43d7b50a624f2acf591f/)</span>
+    <span>: This HydroShare resource contains Jupyter Notebooks with instructions and code for accessing and subsetting the NOAA Analysis of Record for Calibration (AORC) dataset.</span>
+    <br />
+    <details>
+      <summary>*Citation info*</summary>
+      <span>Salehabadi, H., D. Tarboton, A. Nassar, A. M. Castronova, P. Dash, A. Patel, F. Baig (2025). Jupyter Notebooks for the Retrieval of AORC Data for Hydrologic Analysis, HydroShare, http://www.hydroshare.org/resource/72ea9726187e43d7b50a624f2acf591f</span>
+    </details>
+  </li>
+</ul>
 
 :::info
-NextGen and its preprocessor tools are pre-installed in the NextGen National Water Model (NWM) image in CIROH JupyterHub on 2i2c. This provides the capability for them to be run from JupyterHub without users needing to install software or configure dependencies. For more information, see the [Server Image Configurations](docs/services/cloudservices/2i2c/available-images) page.
+NextGen and its preprocessor tools are pre-installed in the NextGen National Water Model (NWM) image in CIROH JupyterHub on 2i2c. This provides the capability for them to be run from JupyterHub without users needing to install software or configure dependencies. For more information, see the [Server Image Configurations](/docs/services/cloudservices/2i2c/available-images) page.
 :::
 
 ## hsfiles_jupyter: HydroShare File Manager for Jupyter

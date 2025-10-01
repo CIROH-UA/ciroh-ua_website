@@ -35,6 +35,12 @@
 			"title": "DataStreamCLI",
 			"description": "DataStreamCLI debuts as a standalone repository with version v1.1.1! This repository has been created from the DataStreamCLI module within the NextGen Research DataStream's repository ngen-datastream. Since the split, only directory structure changes have been made. The tooling remains unchanged.",
 			"link": "https://github.com/CIROH-UA/datastreamcli/releases/tag/v1.1.1"
+			},
+			{
+			"type": "update",
+			"title": "CIROH-UA/lstm",
+			"description": "Significant performance improvements have been merged into the LSTM module. This update delivers approximately 2x speedup. More information can be found in [this PR](https://github.com/CIROH-UA/lstm/pull/3).",
+			"link": "https://github.com/CIROH-UA/lstm/pull/3"
 			}
 		],
 

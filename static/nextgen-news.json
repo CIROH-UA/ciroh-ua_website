@@ -1,4 +1,61 @@
 {
+	"September 2025 Update": [
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-data-preprocess",
+			"description": "Version v4.6.0 is now available with more web app improvements! Key enhancements include a progress bar for forcing generation, improved map preview that reflects the actual subset area, and the addition of a Rust LSTM option.",
+			"link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.6.0"
+			},
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-CloudInfra",
+			"description": "NGIAB version 1.5.1 has been released! This update delivers significant LSTM speedup improvements from [this PR](https://github.com/CIROH-UA/lstm/pull/3).",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/releases/tag/v1.5.1"
+			},
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-HPCInfra",
+			"description": "NGIAB-HPCInfra version 1.1.1 is available now. This update mirrors NGIAB-CloudInfra's latest changes, including LSTM speedup improvements.",
+			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/releases/tag/v1.1.1"
+			},
+			{
+			"type": "NRDS",
+			"title": "NGEN-DataStream",
+			"description": "🎉Major milestone for the NextGen Research DataStream! Version v2.0.0 marks a significant reorganization with the ngen-datastream repository splitting into modular components:\n\n**[DataStreamCLI](https://github.com/CIROH-UA/datastreamcli)** and **[ForcingProcessor](https://github.com/CIROH-UA/forcingprocessor)** are now independent repositories. This structures the infrastructure for the NRDS in a more conventional way in order to facilitate CI/CD. Going forward, ngen-datastream repository will continue to hold NRDS infrastructure, deployment tooling, and documentation.",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/releases/tag/v2.0.0"
+			},
+			{
+			"type": "NRDS",
+			"title": "ForcingProcessor",
+			"description": "ForcingProcessor version v1.1.1 launches as an independent repository!This repository has been created from the forcingprocessor module within the NextGen Research DataStream's repository ngen-datastream. All related tooling is planned to be removed from the ngen-datastream repository. Future development on forcingprocessor will occur only in this repository. Since the split, primarily CI/CD and directory structure changes have been made. The tooling remains unchanged.",
+			"link": "https://github.com/CIROH-UA/forcingprocessor/releases/tag/v1.1.1"
+			},
+			{
+			"type": "NRDS",
+			"title": "DataStreamCLI",
+			"description": "DataStreamCLI debuts as a standalone repository with version v1.1.1! This repository has been created from the DataStreamCLI module within the NextGen Research DataStream's repository ngen-datastream. Since the split, only directory structure changes have been made. The tooling remains unchanged.",
+			"link": "https://github.com/CIROH-UA/datastreamcli/releases/tag/v1.1.1"
+			},
+			{
+			"type": "update",
+			"title": "CIROH-UA/lstm",
+			"description": "Significant performance improvements have been merged into the LSTM module. This update delivers approximately 2x speedup. More information can be found in [this PR](https://github.com/CIROH-UA/lstm/pull/3).",
+			"link": "https://github.com/CIROH-UA/lstm/pull/3"
+			},
+			{
+			"type": "blog",
+			"title": "\"From Research to Impact: CIROH Science Meeting 2025 Resources and Reflections\"",
+			"description": "Over four days, our community showed how scientific innovation translates into tools and systems that support communities, enhance resilience, and improve decision-making across the nation. From AI advances in water prediction to flood inundation mapping, this blog post discusses the presentations and discussions that demonstrated the collaborative, open-science approach that defines CIROH.",
+			"link": "/blog/science-meeting-2025"
+			},
+			{
+			"type": "blog",
+			"title": "\"Focusing on Streamflow Data: New Software for Camera-Based Hydrologic Modeling\"",
+			"description": "Camera-based monitoring offers a promising, non-contact alternative to or augmentation of traditional streamflow gages. However, broad use of camera-based streamflow monitoring has been limited by operational challenges including how to collect, store, manage, and process the large volume of image and video data produced by monitoring cameras. Read how researchers at Utah State University utilized CIROH cyberinfrastructure to advance camera-based hydrologic monitoring.",
+			"link": "/blog/streamflow-data-camera-based-hydrologic-modeling-software"
+			}
+		],
+
 	"August 2025 Update": [
 			{
 			"type": "announcement",

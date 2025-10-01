@@ -147,9 +147,16 @@ sierra:
   title: Assistant Professor
   url: https://www.linkedin.com/in/sierrayoung/
   image_url: /img/blog/authors/sierra.jpeg
+
 jeffery:
   name: Jeffery S. Horsburgh
   title: Professor at Utah State University
   url: https://www.linkedin.com/in/jeffery-horsburgh-aa1760b3/
   image_url: /img/blog/authors/jeffery.jpg
+
+charity:
+  name: Charity McCalpin
+  title: The University of Alabama
+  url: https://www.linkedin.com/in/charity-mccalpin/
+  image_url: /img/blog/authors/charity.jpeg
 

@@ -1,0 +1,66 @@
+---
+sidebar_position: 8.5
+title: Tethys Portal
+description: CIROH’s Tethys Portal — overview, links, and how it fits with NGIAB/NextGen.
+tags: [ciroh, tethys, portal, hydrology, django, kubernetes, nextgen, jupyterhub]
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import Link from '@docusaurus/Link';
+
+
+# 💧 CIROH Tethys Portal
+
+The **CIROH Tethys Portal** is the web entry point for CIROH’s hydrology applications.  
+
+It provides researchers, partners, and developers with a unified platform for **visualization, data access, and app hosting**.
+
+---
+
+## 🌍 What It Is
+
+- Deployed in a **Kubernetes (Amazon EKS) environment** for scalability and reliability.  
+- Hosts a mix of **native CIROH apps** (dashboards, data explorers) and **proxied tools** (JupyterHub, HydroShare, NWM Map Viewer).  
+
+This architecture ensures:
+- 🔒 Only the Application Load Balancer is internet-facing.  
+- 🗂️ Data storage and caching (Postgres, Redis) remain secure and internal.  
+- 📈 CIROH hydrologic models and data products are easily visualized in the browser.  
+
+---
+
+## 📚 Built-in Apps
+
+The portal aggregates CIROH’s tools in one place:
+
+- **Native apps**: Tethys Dash, Water Data Explorer, HydroCompute/HydroLang demo, SWEML, Ground Subsetting Tool, Snow Inspector, CSES.  
+- **Proxied apps**: NWM Map Viewer, CIROH JupyterHub, HydroShare, FIM Visualization, Numerical Flash-Flood Alerts.  
+
+---
+
+## 🚀 Why It Matters
+
+- **Researchers** → visualize NextGen model outputs (ngen, troute, LSTM).  
+- **Developers** → deploy and test hydrology apps inside CIROH’s infrastructure.  
+
+---
+
+## 🔗 Resources
+
+For technical details (deployment, Helm upgrades, Terraform modules, troubleshooting), please see the CIROH GitHub repository:
+
+👉 [CIROH Tethys Portal on GitHub](https://github.com/CIROH-UA/tethysportal-ciroh)
+
+---
+
+## 🗺️ Related Products And More Information
+
+- <Link to={useBaseUrl('/docs/products/ngiab/')}>NGIAB (NextGen in a Box)</Link> – bundled environment for NextGen models.  
+
+- <Link to={useBaseUrl('/docs/products/visualization')}>Visualization Tools</Link> – additional CIROH front-end tools.  
+
+- <Link to={useBaseUrl('/docs/products/portal')}>CIROHH Research Portal</Link> – oranized platform sharing critical water research resources. 
+
+---
+
+> _This page is a scaffold; we’ll expand with app examples and deployment steps in follow-ups._

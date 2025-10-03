@@ -6,4 +6,3 @@ node_modules/
 !".github/workflows/**"
 .DS_Store
 .idea/
-package-lock.json

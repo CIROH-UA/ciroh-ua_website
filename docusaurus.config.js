@@ -10,7 +10,6 @@ const config = {
   url: "http://ciroh.org",
   baseUrl: baseUrl,
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
   favicon: "img/logos/docuhub.png",
 
   // GitHub pages deployment config.
@@ -22,6 +21,13 @@ const config = {
   future: {
     v4: true,
     experimental_faster: true,
+  },
+
+  markdown: {
+    hooks: {
+    onBrokenMarkdownLinks: "warn",
+    onBrokenMarkdownImages: "warn",
+    }
   },
 
   // Even if you don't use internalization, you can use this field to set useful

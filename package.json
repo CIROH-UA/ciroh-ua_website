@@ -37,7 +37,7 @@
     "update": "^0.7.4"
   },
   "devDependencies": {
-    "@docusaurus/faster": "^3.9.2",
+    "@docusaurus/faster": "3.9.1",
     "@docusaurus/module-type-aliases": "^3.9.1",
     "@docusaurus/plugin-content-docs": "^3.9.1"
   },

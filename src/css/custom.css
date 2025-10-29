@@ -238,6 +238,24 @@ display: none !important;
   margin-top: 0rem !important;
 }
 
+.responsive-float-figure {
+  float: right;
+  clear: right;
+  max-width: 40%;
+  max-height: 100%;
+}
+
+@media (max-width: 800px) {
+  .responsive-float-figure {
+    float: none;
+    clear: none;
+    max-width: 50%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 [data-theme="light"] .indent-wrapper {
   background-color: #DEDEDE;
   border-left-style: solid;

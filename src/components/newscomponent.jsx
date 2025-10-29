@@ -102,6 +102,12 @@ function getBadgeClass(type) {
       return "info";
     case "update":
       return "warning";
+    case "NGIAB":
+      return "warning";
+    case "NRDS":
+      return "primary";
+    case "blog":  
+      return "info";
     default:
       return "primary";
   }

@@ -10,7 +10,6 @@ const config = {
   url: "http://ciroh.org",
   baseUrl: baseUrl,
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
   favicon: "img/logos/docuhub.png",
 
   // GitHub pages deployment config.
@@ -22,6 +21,13 @@ const config = {
   future: {
     v4: true,
     experimental_faster: true,
+  },
+
+  markdown: {
+    hooks: {
+    onBrokenMarkdownLinks: "warn",
+    onBrokenMarkdownImages: "warn",
+    }
   },
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -100,6 +106,11 @@ const config = {
       '@docusaurus/plugin-client-redirects',
       {
         redirects: [
+          // Feedback page: grandfather in old Science Meeting survey links
+          {
+            to: '/feedback',
+            from: '/scimeet25survey',
+          },
           // NGIAB: manual redirects to reflect heavy folder refactoring
           {
             to: '/docs/products/ngiab',
@@ -224,7 +235,9 @@ const config = {
           // JupyterHub redirects
           if (existingPath.includes('/docs/services/cloudservices/2i2c/')) {
             return [
+              existingPath.replace('/docs/services/cloudservices/2i2c/', '/docs/services/cloudservices/2i2c/documentation/'),
               existingPath.replace('/docs/services/cloudservices/2i2c/', '/docs/services/cloudservices/ciroh jupyterhub/'),
+              existingPath.replace('/docs/services/cloudservices/2i2c/', '/docs/services/cloudservices/ciroh jupyterhub/documentation'),
             ];
           }
           // Otherwise, paths have only been changed en masse for the products section, so return early if not in there
@@ -308,14 +321,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     (
       {
-      announcementBar: {
+      /*announcementBar: {
         id: 'scimeet25_survey_notice',
         content:
           '🔧 Do you have any thoughts on CIROH DocuHub or Portal? We\'d love to hear from you! <a target="_blank" rel="noopener noreferrer" href="'+baseUrl+'scimeet25survey">Take the DocuHub/Portal User Survey here</a>.',
         backgroundColor: '#0081d2ff',
         textColor: '#fff',
         isCloseable: true,
-      },
+      },*/
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,

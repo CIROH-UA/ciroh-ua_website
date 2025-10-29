@@ -1,0 +1,47 @@
+---
+sidebar_position: 30
+title: "Persistent Conda Environment"
+description: "Maintain your Conda environments between sessions."
+tags: [CIROH, Services, Cloud Services, JupyterHub, 2i2c, Google Cloud, Education]
+---
+
+<!--
+    SIDEBAR POSITION INDEXING
+    00-09: Base-level information
+    10-19: Integrations with outside cloud providers
+    20-29: Custom image information
+    30-39: Miscellaneous/Troubleshooting
+-->
+
+# Persistent Conda Environments on CIROH 2i2c Server
+To ensure your Conda environments persist across server restarts on the CIROH 2i2c server, create them in your home directory. Follow these steps:
+
+### 1. Create a directory for Conda environments:
+You can set up a directory within your home folder to store all your Conda environments. This prevents them from being removed when the server is restarted. For example:
+
+```bash
+mkdir -p ~/conda_envs
+```
+### 2. Create a new environment in that directory:
+Use the *--prefix* option with conda create to specify the location where you want to create your environment. For example, to create an environment called *my_env* in *~/conda_envs*:
+
+```bash
+conda create --prefix ~/conda_envs/my_env python=3.9
+```
+### 3. Activate the environment:
+You can activate the environment as usual, using the path to where you created it:
+
+```bash
+conda activate ~/conda_envs/my_env
+```
+
+### 4. Automatically activate the environment on restart:
+ If you want this environment to be activated every time you log in or the server restarts, you can add the following to your *.bashrc* or *.bash_profile* file:
+
+```bash
+conda activate ~/conda_envs/my_env
+```
+
+By creating your environments in your home folder (e.g., *~/conda_envs/*), they will persist across server restarts, ensuring that you don't have to recreate them every time.
+
+ 

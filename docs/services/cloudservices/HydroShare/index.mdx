@@ -1,54 +1,61 @@
 ---
 sidebar_position: 4
-title: "HydroShare and CIROH JupyterHub Integration"
-description: "HydroShare and CIROH JupyterHub Integration"
-tags: [CIROH, Services, Cloud Services, HydroShare, 2i2c, JupyterHub]
+title: "HydroShare"
+description: "A web-based hydrologic information system for data and model sharing."
+tags: [CIROH, Services, Cloud Services, HydroShare]
 ---
 
 import Link from '@docusaurus/Link'
 import useBaseUrl from '@docusaurus/useBaseUrl'
 
-# CIROH JupyterHub via HydroShare
+# HydroShare
 
-HydroShare is a repository, website, and hydrologic information system for sharing hydrologic data and models aimed at giving users the cyberinfrastructure needed to innovate and collaborate in research to solve water problems.
+![The HydroShare logo.](https://storage.googleapis.com/hydroshare-prod-static-media/static/img/logo-lg.cf4395806c8e.png)
+
+CUAHSI HydroShare is part of CIROH’s enabling cyberinfrastructure. HydroShare is a web-based hydrologic information system for data and model sharing developed over more than a decade with National Science Foundation (NSF) support, now operated by CUAHSI. CIROH supports the use of HydroShare for collaboration, data and model sharing and data publication.  
+
+The HydroShare repository serves as the data storage for [CIROH Portal](/docs/products/portal). Data and presentations uploaded via CIROH Portal are hosted in HydroShare.
 
 <Link class="button button--active button--primary" to="https://www.hydroshare.org">HydroShare Homepage</Link>
 
-## HydroShare and CIROH JupyterHub Integration
+## HydroShare communities
+[**HydroShare communities**](https://www.hydroshare.org/communities/) are designed to allow broader collectives of researchers to share resources more seamlessly, fostering public data sharing and open access. A community is a set of HydroShare groups, which allows several differently administered groups to be combined to collaborate toward a common goal.
 
-Users now have the capability to directly launch and execute computational notebooks from HydroShare resources into the CIROH Jupyterhub environments. Here's how to get started:
+The [**Cooperative Institute for Research to Operations in Hydrology (CIROH) community**](https://www.hydroshare.org/community/4) brings together the CIROH groups in HydroShare for easier data access and sharing. Group members can share content with a group.  Content shared with a group in the CIROH community, are listed on both the CIROH community page and the CIROH Portal website.
 
-1. First, confirm that you have access to the CIROH Jupyterhub. If not, follow [these steps](/docs/services/access#accessing-ciroh-2i2c-jupyterhub)
+## Hydroshare groups
+A **HydroShare group** is a collaborative space where users can share, organize, and discover resources related to a particular project, research group, institution, or area of interest. Any HydroShare user can create a group.  
 
-2. CIROH Jupyterhub is an approved app, and appears on https://www.hydroshare.org/apps/. Navigate to this page to access it directly, or select it from the "Open with" list on any resource that you have access to containing a Jupyter notebook. 
+### Join a group
+To **join a group**, navigate to Collaborate → Groups, then search for the name of group and request to join. To create a group, click the green "Create group" button.
 
-3. In CIROH JupyterHub, click on the "Login to continue" button. Select one of the server options that is appropriate for the analysis you need to run (small, medium, large, or huge), as well as the "New Pangeo Notebook" base image. Then, click the "Start" button to launch your server.
+![A flowchart depicting the process of joining a HydroShare group or community.](/img/services/hydroshare/group-tutorial.png)
 
-<p align="center">
-<img src={useBaseUrl("/img/hydroshare.png")} alt="HydroShare 2i2c Image" style={{'width':'80%', 'height':'50%'}}/>
-</p>
+### Share resources with a group
+When you share a resource, you can share it with specific groups so that resources appear in both group pages and in any upstream community pages, such as the CIROH Community page.
 
-<p align="center">
-<img src={useBaseUrl("/img/hydroshare-1.png")} alt="HydroShare 2i2c Image" style={{'width':'80%', 'height':'50%'}}/>
-</p>
------
+To **share a resource with a group**, go to the "manage who has access" panel on your resource and select groups, then type the name of the group to which you want to share and designate an access level. Groups cannot be owners of resources (resource ownership remains with individuals), but they serve as shared access/visibility points.
 
-4. You will now be inside the CIROH JupyterHub. All of the files from your HydroShare resource will appear in the file browser on the left, including any notebooks that were in your resource. Double click on a notebook to open it and then run it.
+![A screenshot of HydroShare's "Manage Access" dialogue for a resource. By selecting the "Groups" option under the "Give Access" section, you can share a resource with a specific HydroShare group.](/img/services/hydroshare/group-share-tutorial.png)
 
-<p align="center">
-<img src={useBaseUrl("/img/hydroshare-2.png")} alt="HydroShare 2i2c Image" style={{'width':'80%', 'height':'50%'}}/>
-</p>
+## Mirroring resources onto CIROH Portal
 
-## Video Tutorial
+[**CIROH Portal**](/docs/products/portal) mirrors the majority of its content from HydroShare resources. While [**Portal's Contribute page**](https://portal.ciroh.org/contribute) makes it easy to submit new Portal-compatible HydroShare resources, already-existing resources can also be added to Portal through the addition of subject keywords and additional metadata.
 
-Watch this video to find out how to access CIROH Jupyterhub and how to launch and use CIROH Jupyterhub with HydroShare:
+<!-- TODO: How much of this should be on Portal's page? -->
 
-<div style={{textAlign: 'center'}}>
-  <iframe width="791" height="421" src="https://www.youtube.com/embed/DnbxhLdb6TM" title="CIROH Jupyterhub" style={{border: 'none'}} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+### Subject keywords
+By adding them to the "Subject Keywords" field, the following subject keywords can be used to surface HydroShare resources on Portal:
+- `nwm_portal_app`: Surfaces resources on the Applications page. The `page_url` additional metadata field is strongly recommended, see below.
+- `ciroh_portal_data`: Surfaces resources on the Datasets page.
+- `ciroh_portal_presentation`: Surfaces resources on the Presentations page. The `pres_path` additional metadata field is strongly recommended; see below.
+- `ciroh_portal_pres_collections`: Surfaces resources on the "Collections" tab of the Presentations page. Recommended as a way to surface HydroShare collections that contain many presentations from a single conference or event.
+- `nwm_portal_module`: Surfaces resources on the Courses page. The `page_url` additional metadata field is strongly recommended, see below.
 
-:::info
-To learn more about CIROH Jupyterhub and gain access go to: [CIROH JupyterHub Documentation](/docs/services/cloudservices/2i2c/)
-:::
-
-&nbsp;&nbsp;&nbsp;&nbsp;To join a group and gain access to the CIROH HydroShare community go to: [HydroShare Communities](https://www.hydroshare.org/communities/)
+### Additional metadata fields
+By adding these to a resource's "Additional Metadata" section, you can manage how the resource is displayed on Portal:
+- `thumbnail_url`: A URL for the thumbnail used as a resource preview on Portal. These can include permalinks to files within the resource or to external images.
+  - If not present, the thumbnail will simply be the CIROH logo.
+- `page_url`: The primary URL that Portal will link to for the resource. Strongly recommended for web apps and courses.
+  - If not present, the primary link will be to the HydroShare resource.
+- `pres_path`: A path to a PDF file that will be embedded as a presentation. This path should be relative to the root of the HydroShare resource.

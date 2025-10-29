@@ -1,0 +1,60 @@
+---
+title: "Focusing on Streamflow Data: New Software for Camera-Based Hydrologic Modeling"
+description: "New open-source software tools enable scalable, automated camera-based streamflow monitoring using low-cost field computers and cloud computing services."
+slug: streamflow-data-camera-based-hydrologic-modeling-software
+tags: [Blog, Serverless Compute, Hydrologic Monitoring, Streamflow, Gage, CIROH, USGS, HydrocamCompute, HydrocamCollect, Camera-Based Monitoring, Computer Vision, Utah State University]
+authors: [sajan, razin, safran, sierra, jeffery]
+image: /img/blog/2025-09-camera-based-hydrologic-modeling/segmented_image.png
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl"
+
+
+
+Reliable and high-resolution streamflow data are essential for hydrologic research, flood forecasting, and water resource management. Streamflow gages provide necessary measurements but can be difficult and expensive to build and operate. Camera-based monitoring offers a promising, non-contact alternative to or augmentation of traditional streamflow gages. However, broad use of camera-based streamflow monitoring has been limited by operational challenges including how to collect, store, manage, and process the large volume of image and video data produced by monitoring cameras. 
+
+With help from Arpita Patel and the CIROH Cyberinfrastructure and DevOps Team, who assisted our team with access to [Amazon Web Services and the Google Cloud Platform](https://docs.ciroh.org/docs/services/cloudservices/), we developed and tested new cyberinfrastructure that advances camera-based hydrologic monitoring. 
+
+Traditional dataloggers used in hydrologic monitoring focus on interfacing with conventional sensors (e.g., pressure transducers, float gages, etc.) and lack some capabilities required for camera-based monitoring. Low-cost field computers like the [Raspberry Pi](https://www.raspberrypi.com/) provide a capable alternative, but lack out-of-the-box software required to support high-resolution image and video capture, management of the large volume of data that accumulates, data processing, and cloud uploading processes. Because of this, we had to build the functionality required to combine low-cost field computers with cloud computing services to produce an operational, real-time, cloud-integrated, camera-based streamflow monitoring system.
+
+
+<figure style={{ textAlign: "center" }}>
+  <img src={useBaseUrl("/img/blog/2025-09-camera-based-hydrologic-modeling/segmented_image.png")} alt="Segmented images by the Hydrocamcompute software" style={{ maxWidth: "100%" }} />
+  <figcaption><em>Figure 1. Segmented images showing pixels identified as water by the HydrocamCompute software. Quantifying water pixels within the rectangular areas of interest provide an estimate of stream stage and related discharge.</em></figcaption>
+</figure>
+
+We developed two new Python-based software programs compatible with inexpensive field computers such as Raspberry Pi: one that captures and processes the data from cameras, and one that automatically extracts hydrologically relevant data from image data in the cloud.
+
+1. **Hydrocam Collect**: automatically captures images and videos at user-specified intervals, manages local storage on field computers, and uploads captured image and video data to the cloud. Real-time data monitoring and alerts minimize potential for data loss.
+2. **Hydrocam Compute**: This serverless cloud computing workflow extracts relevant hydrologic data from camera images and videos, such as depth/stage and velocity. Automated and scalable, the workflow can handle a large number of independent monitoring sites, each executing their own serverless functions using isolated cloud resources.
+
+In an operational context, automation is key to a scalable, robust system capable of integrating camera-based monitoring with larger hydrologic monitoring networks such as those managed by the United States Geological Survey (USGS). We tested the automation of the system we developed using commercial cloud services via Amazon Web Services and Google Cloud Platform with access provided through CIROH. By leveraging CIROH-provided cloud services, our team was able to prototype, test, and scale the software to bridge the gap between proof-of-concept research and practical field use.
+ 
+This linked software system we developed responds to data events (i.e., capture and upload of an image or video to the cloud) instantly and minimizes human intervention and error correction. The serverless and event driven design of Hydrocam Compute reduces infrastructure management overhead and cost because cloud resources are only used during execution of data processing tasks with no need to manage or maintain physical compute infrastructure. The models used for processing images and video can be swapped out to meet the needs of particular monitoring locations.
+ 
+The Hydrocam workflows enhance the feasibility, reliability, and efficiency of camera-based streamflow monitoring. As hydrological conditions become more variable, access to high-resolution, real-time data becomes increasingly important for flood forecasting, water resource management, and long-term climate adaptation strategies. This work supports these broader goals in making camera-based monitoring more practical and scalable.
+ 
+---
+
+## Resources and Publications
+
+### Open Source Software
+
+The [HydrocamCollect](https://github.com/hydrocam/collector) and [HydrocamCompute](https://github.com/hydrocam/serverlesscompute) software programs are available in GitHub repositories within the [hydrocam GitHub Organization](https://github.com/hydrocam).
+
+### Publications
+
+Access the pre-prints of papers related to the Hydrocam software and camera-based monitoring:
+<ol>
+    <li>Neupane, S., Horsburgh, J. S., Bin Issa, R., Young, S. (2025). HydrocamCollect: A robust data acquisition and cloud data transfer workflow for camera-based hydrological monitoring. <i>Environmental Modelling & Software</i> (submitted). Available at SSRN: https://ssrn.com/abstract=5451102 or https://doi.org/10.2139/ssrn.5451102 </li>
+
+    <li>Neupane, S., Horsburgh, J. S., Bin Issa, R., Young, S. (2025). HydrocamCompute: Serverless cloud computing workflow for camera-based hydrological monitoring. <i>Environmental Modelling & Software</i> (submitted). Available at SSRN: https://ssrn.com/abstract=5451100 or https://doi.org/10.2139/ssrn.5451100  </li>
+
+    <li>Bin Issa, R., Neupane, S., Khan, S., Horsburgh, J. S., Young, S. (2025). Towards Real-Time Water Level and Discharge Measurements using Imagery, Machine Learning, and Edge Computing. <i>Journal of Hydrology</i> (submitted). Available at SSRN: https://ssrn.com/abstract=5531964 or https://doi.org/10.2139/ssrn.5531964 </li>
+</ol>
+
+## Contact
+<ul>
+<li>Dr. Sierra Young, Utah State University, sierra.young@usu.edu</li>
+<li>Dr. Jeff Horsburgh, Utah State University, jeff.horsburgh@usu.edu</li>
+</ul>

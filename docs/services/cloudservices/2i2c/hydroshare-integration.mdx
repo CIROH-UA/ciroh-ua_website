@@ -1,0 +1,125 @@
+---
+sidebar_position: 10
+title: "HydroShare Integration"
+description: "Easily launch and execute notebooks from HydroShare."
+tags: [CIROH, Services, Cloud Services, JupyterHub, 2i2c, HydroShare, Google Cloud, Education]
+---
+
+<!--
+    SIDEBAR POSITION INDEXING
+    00-09: Base-level information
+    10-19: Integrations with outside cloud providers
+    20-29: Custom image information
+    30-39: Miscellaneous/Troubleshooting
+-->
+
+import Link from '@docusaurus/Link'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+import VideoPlayer from '/src/components/VideoPlayer.js'
+
+# CIROH-2i2c JupyterHub: HydroShare Integration
+
+HydroShare is a repository, website, and hydrologic information system for sharing hydrologic data and models aimed at giving users the cyberinfrastructure needed to innovate and collaborate in research to solve water problems.
+
+<Link class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1rem'}} to="https://www.hydroshare.org">HydroShare Homepage</Link> <Link class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} to="/docs/services/cloudservices/HydroShare">HydroShare on DocuHub</Link>
+
+Users have the capability to directly launch and execute computational notebooks from HydroShare resources into the CIROH JupyterHub environments.
+
+## Getting started
+
+<figure style={{ textAlign: "center" }}>
+  <img src={useBaseUrl("/img/services/2i2c-hs-integration/tutorial-1.png")} alt="Screenshots depicting all steps of the HydroShare integration tutorial." style={{ maxWidth: "80%" }} />
+</figure>
+
+1. If you have not already, [request CPU access to the CIROH-2i2c JupyterHub](/docs/services/access#accessing-ciroh-2i2c-jupyterhub).
+
+2. CIROH Jupyterhub is a CUAHSI approved app. As such, it appears on the "Open with" list on any HydroShare resource that you have access to.
+
+3. In CIROH JupyterHub, click on the "Login to continue" button. 
+
+4. You may be prompted to sign in to your GitHub account and authorize access if this is your first time using CIROH JupyterHub.
+
+<figure style={{ textAlign: "center" }}>
+  <img src={useBaseUrl("/img/services/2i2c-hs-integration/tutorial-2.png")} alt='Screenshots depicting additional log-in prompts during GitHub log-in. The user is asked to complete two-factor authentication and to authorize the "AWI CIROH prod" application.' style={{ maxWidth: "80%" }} />
+</figure>
+
+5. You will then be directed to the Server Options page. Select one of the server options that is appropriate for the analysis you need to run (small, medium, large, or huge), as well as the "New Pangeo Notebook" base image or NextGen National Water Model (NWM). Then, click the “Start” button at the bottom to launch the JupyterHub. 
+
+6. You will now be inside the CIROH JupyterHub. All of the files from your HydroShare resource will appear in the file browser on the left, including any notebooks that were in your resource. Double click on a notebook to open it and then run it.
+
+## Using HydroShare resources in JupyterHub
+
+The *Open With* command will copy files from the HydroShare resource into the Downloads directory in your CIROH JupyterHub user account in a folder named with the HydroShare resource unique identifier (GUID). Your work will use and add to these local versions of files and will not affect the original files in the HydroShare resource. Once your work is complete, you should save results you want to retain, either by downloading them or saving them to the HydroShare repository.
+
+:::info
+For information about how to save files back to HydroShare, see the sections below on the [**hsfiles_jupyter integration**](#hsfiles_jupyter-hydroshare-file-manager-for-jupyter), which is available by right clicking on files in the JupyterHub table of contents, or the [**hsclient**](#hsclient) Python library.
+:::
+
+There are a number of HydroShare resources developed specifically to use this CIROH HydroShare integration:
+
+<!-- The wonky <span>s and other explicit tags are used to mitigate minifier warnings. -->
+<!-- They need to be on the same lines as their respective text because, of course, MDX is extremely whitespace-sensitive. Sigh. -->
+
+<ul>
+  <li>
+    <span>[**Working with HydroShare, AORC data, HydroFabric and NextGen on CIROH JupyterHub Tutorial**](https://www.hydroshare.org/resource/fc8539358fe64ca6a47468728a0687a1/)</span>
+    <span>: This HydroShare resource provides a tutorial on the use of the CIROH JupyterHub linked from HydroShare. It introduces use of Jupyter Notebooks for retrieval of NOAA Analysis of Record for Calibration (AORC) datasets and setting up and executing NextGen for a small test watershed as a starting point for research with NextGen.</span>
+    <br />
+    <details>
+      <summary>*Citation info*</summary>
+      <span>Tarboton, D., H. Salehabadi, A. Nassar, F. Baig, A. M. Castronova, I. Garousi-Nejad, A. Patel, P. Dash (2025). Working with HydroShare, AORC data, HydroFabric and NextGen on CIROH JupyterHub Tutorial, HydroShare, https://doi.org/10.4211/hs.fc8539358fe64ca6a47468728a0687a1</span>
+    </details>
+  </li>
+  <li>
+    <span>[**Jupyter Notebooks for the Retrieval of AORC Data for Hydrologic Analysis**](https://www.hydroshare.org/resource/72ea9726187e43d7b50a624f2acf591f/)</span>
+    <span>: This HydroShare resource contains Jupyter Notebooks with instructions and code for accessing and subsetting the NOAA Analysis of Record for Calibration (AORC) dataset.</span>
+    <br />
+    <details>
+      <summary>*Citation info*</summary>
+      <span>Salehabadi, H., D. Tarboton, A. Nassar, A. M. Castronova, P. Dash, A. Patel, F. Baig (2025). Jupyter Notebooks for the Retrieval of AORC Data for Hydrologic Analysis, HydroShare, http://www.hydroshare.org/resource/72ea9726187e43d7b50a624f2acf591f</span>
+    </details>
+  </li>
+</ul>
+
+:::info
+NextGen and its preprocessor tools are pre-installed in the NextGen National Water Model (NWM) image in CIROH JupyterHub on 2i2c. This provides the capability for them to be run from JupyterHub without users needing to install software or configure dependencies. For more information, see the [Server Image Configurations](/docs/services/cloudservices/2i2c/available-images) page.
+:::
+
+## hsfiles_jupyter: HydroShare File Manager for Jupyter
+
+hsfiles_jupyter (HydroShare File Manager for Jupyter) is an extension that enables seamless integration between HydroShare and Jupyter environments that are accessible through HydroShare’s “Open with” functionality, such as the CIROH 2i2c JupyterHub. It allows users to easily manage files between the HydroShare repository and Jupyter environments directly through right-click context menu options in the JupyterLab file browser, eliminating the need to manually transfer files between platforms. 
+
+<figure class="responsive-float-figure">
+  <img src={useBaseUrl("/img/services/2i2c-hs-integration/context-menu.png")} alt='Screenshots depicting additional log-in prompts during GitHub log-in. The user is asked to complete two-factor authentication and to authorize the "AWI CIROH prod" application.' />
+</figure>
+
+The following are five file management options provided by the hsfiles_jupyter extension. The HydroShare-specific file menu options are only available when you are inside a HydroShare resource folder in the JupyterLab file browser, where the resource was downloaded using HydroShare’s “Open with” functionality. 
+
+### Upload File to HydroShare
+You can use this option to upload local files from your JupyterLab workplace to your HydroShare resource. This allows you to add new files or update existing files in your HydroShare resource without leaving the JupyterHub environment. If that file already exists in HydroShare it would prompt you to overwrite. If the file upload is successful, you should see a message accordingly.
+
+### Replace with File from HydroShare
+You can use this option to overwrite a local version of the resource file by fetching the same file from HydroShare. This works when a matching file is in HydroShare resource, otherwise, you would see an error message accordingly. 
+
+### Delete File in HydroShare
+Use this option to delete files from your HydroShare resource directly from the JupyterHub environment. It deletes the files on HydroShare only and not the local copy. This provides a convenient way to manage and clean up files in your HydroShare resource.
+
+### Check Status of File in HydroShare
+Use this option to check if a matching file is in your HydroShare resource and if they are identical or not. This helps you identify which files have been modified locally and need synchronization.
+
+### Download from HydroShare 
+Use this option to download a specific file from your current hydroshare resource (the one you are browsing in the Jupyter file browser) into your local JupyterLab workplace. Once you navigate to a resource’s /data/contents/ path in the Jupyter file browser, right-click anywhere in the file listing area to see the option “Download from HydroShare”. Selecting this option opens a dialog box where you can select from a list of files that exist in HydroShare but are not available in JupyterLab. If all files for the resource already exist locally on JupyterLab, a message will be displayed confirming this when you select “Download from HydroShare”. If you see a list of files, select one file and then click Download. The selected file will be downloaded. Currently, you can only download one file at a time.
+
+## hsclient
+
+Another effective way to transfer files to and from the HydroShare repository is by using the HydroShare Python Client Library (hsclient). This Python-based interface facilitates communication between HydroShare and external programs or systems. It enables users to automate nearly all functions available through HydroShare’s web interface, making it a powerful tool for integrating HydroShare into data workflows and research applications. To learn more and get started, visit the resource here:  https://www.hydroshare.org/resource/7561aa12fd824ebb8edbee05af19b910/ 
+
+## Video Tutorial
+
+Watch this video to find out how to access CIROH Jupyterhub and how to launch and use CIROH Jupyterhub with HydroShare:
+
+<VideoPlayer url="https://www.youtube.com/embed/DnbxhLdb6TM" />
+
+:::info
+To join a group and gain access to the CIROH HydroShare community, go to [HydroShare Communities](https://www.hydroshare.org/communities/).:::
+:::

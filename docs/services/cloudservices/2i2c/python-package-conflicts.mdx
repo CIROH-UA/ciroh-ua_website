@@ -1,0 +1,48 @@
+---
+sidebar_position: 32
+title: "Python Package Version Conflicts"
+description: "Debug version conflicts between your Python packages."
+tags: [CIROH, Services, Cloud Services, JupyterHub, 2i2c, Google Cloud, Education]
+---
+
+<!--
+    SIDEBAR POSITION INDEXING
+    00-09: Base-level information
+    10-19: Integrations with outside cloud providers
+    20-29: Custom image information
+    30-39: Miscellaneous/Troubleshooting
+-->
+
+# Python Package Version Conflicts
+
+### Overview:
+
+When different versions of Python packages are installed in your user home directory than the version that was already installed in the JupyterHub image, these local installations take precedence, potentially causing version mismatches and unexpected behavior.
+
+### Troubleshooting guide:
+
+#### Step 1: Identify Package Conflicts
+```bash
+ls ~/.local/lib/pythonX.Y/site-packages/
+```
+**Note**: Replace X.Y with your Python version (e.g., 3.10). Find your version with `python --version`.
+
+#### Step 2: Remove conflicting packages from user home directory
+
+Clear all locally installed Python packages:
+
+```bash
+rm -rf ~/.local/lib/pythonX.Y
+```
+**Note**: This will remove **ALL** Python packages installed in your home directory and ensure that only system or environment packages are used.
+
+#### Step 3: Verify Your Environment
+- Verify that you are using the correct JupyterHub image by checking the JUPYTER_IMAGE environment variable:
+
+```bash
+echo $JUPYTER_IMAGE
+```
+- Reinstall needed packages properly
+```bash
+pip install <package-name>
+```

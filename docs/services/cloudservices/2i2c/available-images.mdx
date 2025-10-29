@@ -1,0 +1,34 @@
+---
+sidebar_position: 21
+title: "Server Image Configurations"
+description: "Explore CIROH's available image configurations."
+tags: [CIROH, Services, Cloud Services, JupyterHub, 2i2c, Google Cloud, Education]
+---
+
+<!--
+    SIDEBAR POSITION INDEXING
+    00-09: Base-level information
+    10-19: Integrations with outside cloud providers
+    20-29: Custom image information
+    30-39: Miscellaneous/Troubleshooting
+-->
+
+Server image configurations are options for what software environment you want your Jupyter Notebook server to run in.
+
+:::note
+This list is currently non-comprehensive and will be expanded soon.  
+For a complete listing of available server images, see [the branches of **awi-ciroh-image** on GitHub](https://github.com/CIROH-UA/awi-ciroh-image/branches).
+:::
+
+## Pangeo Notebook base image
+
+This configuration has a general set of pre-installed libraries and tools commonly used in geoscience for tasks such as data analysis and mapping. It allows users to run workflows directly from JupyterHub without the need to install software or manage dependencies. This base image serves as a starting point; users can run it as-is for general analysis or build on it with additional packages tailored to hydrology, climate science, and beyond.
+
+## NextGen National Water Model
+
+This configuration has the NextGen Framework and its preprocessor tools pre-installed, allowing for them to be run from JupyterHub without users needing to install software or configure dependencies.
+
+The below HydroShare resource contains a tutorial for using this image:
+> Tarboton, D., H. Salehabadi, A. Nassar, F. Baig, A. M. Castronova, I. Garousi-Nejad, A. Patel, P. Dash (2025). Working with HydroShare, AORC data, HydroFabric and NextGen on CIROH JupyterHub Tutorial, HydroShare, https://doi.org/10.4211/hs.fc8539358fe64ca6a47468728a0687a1
+
+<!-- TODO: Add info on more images, if available -->

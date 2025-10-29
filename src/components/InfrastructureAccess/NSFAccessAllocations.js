@@ -28,7 +28,7 @@ const NSFAccessAllocations = () => {
     },
     {
       title: "Submit NSF ACCESS Resources Request",
-      description: "Using your ACCESS Allocation ID, submit the NSF ACCESS Resources Request form for individual user accounts.",
+      description: "After your project has been approved, using your ACCESS Allocation ID, submit the NSF ACCESS Resources Request form for individual user accounts.",
       buttons: [
         {
           text: "NSF ACCESS Resources Request Form",

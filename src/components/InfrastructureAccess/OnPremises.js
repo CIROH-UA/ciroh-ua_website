@@ -5,7 +5,7 @@ const OnPremises = () => {
   const steps = [
     {
       title: "Submit Project Access Request",
-      description: "PIs leading CIROH projects may use this form to request CIROH on-premise resources for their teams, including Pantarhei and Wukong.",
+      description: "Primary Investigators (PIs) leading CIROH projects may use this form to request CIROH on-premise resources for their teams, including Pantarhei and Wukong.",
       buttons: [
         {
           text: "On-premises Infrastructure Request Form",

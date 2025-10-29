@@ -10,7 +10,7 @@ const PublicCloud = () => {
   const steps = [
     {
       title: "Requesting Project Access",
-      description: "PIs or Workshop Leads leading CIROH projects or workshops may use this form to request cloud computing resources on AWS or Google Cloud. Access is available to all consortium members and partners.",
+      description: "Primary Investigators (PIs) or Workshop Leads leading CIROH projects or workshops may use this form to request cloud computing resources on AWS or Google Cloud. Access is available to all consortium members and partners.",
       buttons: [
         {
           text: "Cloud Infrastructure Request Form",

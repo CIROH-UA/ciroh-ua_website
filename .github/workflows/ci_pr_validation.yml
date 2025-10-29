@@ -18,11 +18,16 @@ jobs:
         with:
           node-version: '22'
           cache: 'npm'
-          
-      - name: Clean install dependencies
+      
+      - name: Install dependencies
         run: |
-          rm -rf node_modules
           npm ci
+      # If you're here because of an error about dependencies:
+      # that issue is most likely because of the `package-lock.json`.
+      # Delete `node_modules` and `package-lock.json` on your
+      # development environment, then run `npm i` to generate
+      # a fresh lock file.
+      # See also: https://github.com/npm/cli/issues/4828
         
       - name: Validate build
         run: npm run build

@@ -1,4 +1,60 @@
 {
+	"October 2025 Update": [
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-data-preprocess",
+			"description": "Version v4.6.4 is now available with dependency fixes. This update resolves compatibility issues and adds LSTM documentation to the README. NGIAB-data-preprocess now introduces the --lstm_rust option that allows users to select between Rust-based and Python-based LSTM implementations.",
+			"link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.6.4"
+			},
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-CloudInfra",
+			"description": "NGIAB version 1.6.0 has been released! This update integrates the Rust-based LSTM implementation for improved performance.",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/releases/tag/v1.6.0"
+			},
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-HPCInfra",
+			"description": "placeholder",
+			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/releases/tag/v1.1.1"
+			},
+			{
+			"type": "NRDS",
+			"title": "NGEN-DataStream",
+			"description": "Version v2.0.1 completes the repository split. With datastreamcli and forcingprocessor now fully separated, ngen-datastream focuses exclusively on NextGen Research DataStream infrastructure, deployment tooling, and community documentation.",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/releases/tag/v2.0.1"
+			},
+			{
+			"type": "NRDS",
+			"title": "ForcingProcessor",
+			"description": "placeholder",
+			"link": "https://github.com/CIROH-UA/forcingprocessor/releases/tag/v1.1.1"
+			},
+			{
+			"type": "NRDS",
+			"title": "DataStreamCLI",
+			"description": "DataStreamCLI version v1.1.2 is now available! Following the repository split, all documentation links have been updated to reflect the current repository and directory structure.",
+			"link": "https://github.com/CIROH-UA/datastreamcli/releases/tag/v1.1.2"
+			},
+			{
+			"type": "update",
+			"title": "ciroh-portal",
+			"description": "The CIROH Portal has few updates this month. New search and sort functionality has been added to Apps, Datasets, Presentations, and Courses pages with filtering, sort options and live results counters. HydroShare resource input forms have been improved with better authentication handling, reordered inputs for better user experience, and a new authors field. Additionally, a Community Impact page has been added showcasing CIROH's reach with statistics on products, datasets, presentations, publications, courses, and infrastructure services across AWS, GCP, HPC, and NSF ACCESS platforms.",
+			"link": "https://github.com/CIROH-UA/ciroh-portal/commits/main/?since=2025-10-01&until=2025-10-29"
+			},
+			{
+			"type": "update",
+			"title": "t-route",
+			"description": "For this month, we primarily focused on documentation improvements. The installation documentation has been clarified with clearer instructions and typo corrections for better readability.",
+			"link": "https://github.com/CIROH-UA/datastreamcli/releases/tag/v1.1.2"
+			},
+			{
+			"type": "update",
+			"title": "ngen",
+			"description": " A new paritioning script round_robin.py has been added to the ngen repository.",
+			"link": "https://github.com/CIROH-UA/ngen/commit/9175b640a4e6f1d90e58e0a65662174d08f052ef"
+			}
+		],
 	"September 2025 Update": [
 			{
 			"type": "NGIAB",

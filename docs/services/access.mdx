@@ -3,237 +3,57 @@ sidebar_position: 2
 title: "Infrastructure Access"
 tags: ["CIROH", "Services", "HPC", "On-Premises Services", "Cloud Services", "2i2c", "AWS", "Google Cloud", "JupyterHub", "Pantarhei", "Wukong", "BigQuery"]
 ---
-<!-- import Drawio from '@theme/Drawio' -->
-<!-- import simpleGraph from '!!raw-loader!@site/static/files/ciroh-resource-flowchart.drawio' -->
+
 import FoldableButton from "@site/src/components/foldable.js"
 import Link from '@docusaurus/Link'
+import InfrastructureNavigator from '@site/src/components/InfrastructureAccess/InfrastructureNavigator';
+import SectionWrapper from '@site/src/components/InfrastructureAccess/SectionWrapper';
+import TableOfContents from '@site/src/components/InfrastructureAccess/TableOfContents';
+import NSFAccessAllocations from '@site/src/components/InfrastructureAccess/NSFAccessAllocations';
+import CIROHJupyterHub from '@site/src/components/InfrastructureAccess/CIROHJupyterHub';
+import OnPremises from '@site/src/components/InfrastructureAccess/OnPremises';
+import PublicCloud from '@site/src/components/InfrastructureAccess/PublicCloud';
+import NWMBigQuery from '@site/src/components/InfrastructureAccess/NWMBigQuery';
+import WorkshopSupport from '@site/src/components/InfrastructureAccess/WorkshopSupport';
 
-# Infrastructure Access Guide
+<TableOfContents />
 
 CIROH provides access to public cloud services, HPC, and on-premises infrastructure to support the research projects of CIROH's members and partners.
 
----
-
-## Selecting a platform
-
-Click the buttons below to open/close their panels.
-
-**What is your primary requirement?**
-<FoldableButton text="High Performance Computing">
-    **Which HPC platform are you planning to use?**
-    <FoldableButton text="Pantarhei HPC">
-        <div class="indent-wrapper">
-            Pantarhei offers CPU, GPU, and FPGA nodes.
-
-            <Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/services/on-prem/Pantarhei/">Get started with Pantarhei</Link>
-        </div>
-    </FoldableButton>
-    <FoldableButton text="Wukong HPC">
-        <div class="indent-wrapper">
-            Wukong offers CPU and GPU nodes.
-
-            <Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/services/on-prem/Wukong/">Get started with Wukong</Link>
-        </div>
-    </FoldableButton>
-    ---
-</FoldableButton>
-
-<FoldableButton text="Cloud Computing">
-    **What kind of computing environment are you looking for?**
-    <FoldableButton text="General Purpose">
-        <div class="indent-wrapper">
-            CIROH provides researchers with access to enterprise-level AWS cloud services.
-
-            <Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/services/cloudservices/aws/">CIROH AWS Account info</Link>
-        </div>
-    </FoldableButton>
-    <FoldableButton text="Google-Specific Services">
-        <div class="indent-wrapper">
-            CIROH Google VM Link
-            CIROH provides researchers with access to enterprise-level Google Cloud services.
-            
-            <Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/services/cloudservices/google-cloud/">CIROH Google Account info</Link>
-        </div>
-    </FoldableButton>
-    <FoldableButton text="Interactive Computing Environment">
-        <div class="indent-wrapper">
-            In collaboration with 2i2c, CIROH offers a dedicated JupyterHub environment on Google Cloud specifically designed for hydrological research. Both CPU and GPU options are available.
-
-            <Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/services/cloudservices/2i2c/">CIROH-2i2c JupyterHub info</Link>
-        </div>
-    </FoldableButton>
-    ---
-</FoldableButton>
-
-<FoldableButton text="Data Storage and Archival">
-    <div class="indent-wrapper">
-        Hydroshare is a collaborative, general-purpose repository for data, models, and other research products.
-
-        <Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/services/cloudservices/HydroShare/">HydroShare info</Link>
-        
-        Additionally, CIROH provides researchers with access to data buckets for use with AWS and Google Cloud services.
-
-        <Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/services/cloudservices/aws/">CIROH AWS Account info</Link>
-        <Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/services/cloudservices/google-cloud/">CIROH Google Account info</Link>
-    </div>
-    ---
-</FoldableButton>
-
-<FoldableButton text="Data-Intensive Computing">
-    <div class="indent-wrapper">
-        CIROH's AWS instance and Google VMs both offer solid options for data-intensive processes.
-
-        <Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/services/cloudservices/aws/">CIROH AWS Account info</Link>
-        <Link class="button button--active button--primary" style={{'margin-right':'1.3rem','margin-bottom':'1.3rem'}} to="/docs/services/cloudservices/google-cloud/">CIROH Google Account info</Link>
-    </div>
-</FoldableButton>
+<InfrastructureNavigator />
 
 ---
 
-## Accessing Public Cloud Services
-
-CIROH has partnered with [**AWS**](/docs/services/cloudservices/aws/) and [**Google Cloud**](/docs/services/cloudservices/google-cloud/) to provide access to their cloud computing services.
-
-:::note
-If using CIROH-2i2c services, please see the "Accessing CIROH JupyterHub" section below for additional steps.
-:::
-
-### Requesting Project Access
-
-PIs or Workshops Lead leading CIROH projects or workshops may use this form to request cloud computing resources on AWS or Google Cloud. Access is available to all consortium members and partners.
-
-1. Submit a GitHub template request detailing your project requirements and specifications.
-2. Our team will review your request and assist you in obtaining the necessary access.
-
-<Link class="button button--active button--primary" style={{'margin-bottom':'1.3rem', 'margin-right':'1.4rem'}} to="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=case_studies_call.md&title=">Cloud Infrastructure Request Form</Link>
-
-:::note
-Please refer to [this link](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues?q=is%3Aissue%20is%3Aclosed%20label%3Agoogle%2C%222i2c%20JupyterHub%22%2Caws%20) for references to submitted forms.
-:::
-
-CIROH Consortium members or partners are responsible for:
-* Management of CIROH subaccounts assigned to them.
-* Project-specific software and environment configuration.
-* Handling account creation and/or access for project contacts.
-
-
-### Cost of Use
-
-- Use of CIROH JupyterHub is free for all consortium projects.
-- Individual projects are allotted $500 monthly for use of AWS and Google Cloud services.
-- CIROH projects that anticipate exceeding the monthly budget for cloud services may request additional funds via the form below.
-
-<Link class="button button--active button--primary" to="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=exceeding_budget_request.md&title=">Exceeding Budget Request Form</Link>
+<SectionWrapper id="public-cloud">
+  <PublicCloud />
+</SectionWrapper>
 
 ---
 
-## Accessing CIROH-2i2c JupyterHub
-
-In partnership with [**2i2c**](https://2i2c.org/), CIROH provides [**JupyterHub**](/docs/services/cloudservices/2i2c) with both CPU and GPU capabilities.
-
-### Requesting Project Access
-
-PIs or Workshop Leads leading CIROH projects or workshops may use this form to request cloud computing resources (CIROH-2i2c JupyterHub). Access is available to all consortium members and partners.
-
-1. Submit a GitHub template request detailing your project requirements and specifications.
-2. Our team will review your request and assist you in obtaining the necessary access.
-
-<Link class="button button--active button--primary" to="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=case_studies_call.md&title=">Cloud Infrastructure Request Form</Link>
-
-### Requesting Individual Access
-
-Submit one of the following forms to get access to CIROH JupyterHub environments:
-
-<Link class="button button--active button--primary" style={{'margin-bottom': '1.3rem', 'margin-right': '1.4rem'}} to="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u">CIROH-2i2c JupyterHub CPU Access Request Form</Link>
-
-<Link class="button button--active button--primary" style={{'margin-bottom': '1.3rem'}} to="https://forms.office.com/r/mkrVJzyg9u">CIROH-2i2c JupyterHub GPU Access Request Form</Link>
-
-:::note
-You will need to submit your GitHub username for this request. 
-If you do not currently have a GitHub account, follow the instructions at [GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github).
-:::
-
-### Requesting Custom Images
-
-To request custom images:
-
-1. Create an `environment.yml` file by exporting your conda environment.
-2. Fill out the CIROH-2i2c JupyterHub Software Install form.
-
-<Link class="button button--active button--primary" to="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUNUoyV1UxNFIzV1AyTDhTNzdOT1Q5NVlLTC4u">CIROH-2i2c JupyterHub Software Install Form</Link>
+<SectionWrapper id="jupyterhub">
+  <CIROHJupyterHub />
+</SectionWrapper>
 
 ---
 
-## Accessing On-Premises Infrastructure
-
-CIROH operates an on-premises infrastructure that includes high-performance computing (HPC) resources and specialized software via the [**Pantarhei**](on-prem/Pantarhei/) and [**Wukong**](on-prem/Wukong/) systems.
-
-### Requesting Project Access
-
-Principle Investigators (PIs) leading CIROH projects may use this form to request CIROH on-premise resources for their teams, including Pantarhei and Wukong. Access is available to all consortium members and partners.
-
-1. Submit a GitHub template request detailing your project requirements and specifications.
-2. Our team will review your request and assist you in obtaining the necessary access.
-
-> **Note**: The On-Premises Infrastructure Request Form must be submitted by the PI of the project.
-
-<Link class="button button--active button--primary" to="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=on-prem&projects=&template=onprem-request.md&title=">On-premises Infrastructure Request Form</Link>
-
-### Requesting Individual Access
-
-> **Note**: Before requesting individual access, the On-Premises Infrastructure Request Form above **must** be completed by your PI.
-
-Non-UA users should complete the VPN Access Request section of the form below before proceeding.
-
-From there, please complete the On-Premise Access Request section of the form below to request individual access to Pantarhei or Wukong.
-
-<Link class="button button--active button--primary" style={{'margin-bottom': '1.3rem'}} to="https://forms.office.com/Pages/ResponsePage.aspx?id=jnIAKtDwtECk6M5DPz-8p4IIpHdEnmhNgjOa9FjrwGtUMzdTOUpKVU5UWFNCU0ZQUlowS0cxV0xFRy4u">On-Premise Access Request Form</Link>
+<SectionWrapper id="on-premises">
+  <OnPremises />
+</SectionWrapper>
 
 ---
 
-## Accessing JetStream2 through CIROH
-
-In collaboration with [NSF Access](/docs/services/external-resources/nsf-access/), CIROH offers access to an allocation on the [JetStream2](/docs/services/external-resources/nsf-access/jetstream) computing platform.
-
-**Step 1:** The PI for your project must submit the Infrastructure Request Form below to request team-wide access to JetStream2.
-
-<Link class="button button--active button--primary" to="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=on-prem&projects=&template=onprem-request.md&title=">Infrastructure Request Form</Link>
-<br /><br />
-
-**Step 2:** If you don't already have an NSF Access account, register for one using the link below.
-
-<Link class="button button--active button--primary" to="https://operations.access-ci.org/identity/new-user"> NSF Access New User Registration</Link>
-<br /><br />
-
-**Step 3:** Using your NSF Access ID, submit the JetStream2 Access Request form for individual user accounts on JetStream2.
-
-<Link class="button button--active button--primary" to="https://forms.office.com/r/ERyKyHbdaC"> JetStream2 Access Request Form</Link>
-<br /><br />
-
-:::info
-If you are unable to access the JetStream2 forms, please contact the CIROH team at ciroh-it-admin@ua.edu for assistance.
-:::
-
-Once you're granted access, you're ready to begin using JetStream2! Visit the [logging in to JetStream2 page](https://docs.jetstream-cloud.org/getting-started/login/) to get started.
+<SectionWrapper id="nsf-access">
+  <NSFAccessAllocations />
+</SectionWrapper>
 
 ---
 
-## Accessing NWM BigQuery API
-
-To access CIROH's [**NWM BigQuery API**](/docs/products/data-management/bigquery-api/), please submit the form below.
-
-<Link class="button button--active button--primary" style={{'margin-bottom':'1.3rem'}} to="https://forms.office.com/r/FeNpjZstkr">NWM BigQuery API Access Request Form</Link>
+<SectionWrapper id="bigquery">
+  <NWMBigQuery />
+</SectionWrapper>
 
 ---
 
-## Requesting Infrastructure Support for Conferences and Programs
-
-CIROH Project Leads can request computing resources for workshops using this process. Available infrastructure includes NSF Access VMs, CIROH-2i2c JupyterHub, AWS, and Google Cloud - accessible to all consortium members and partners.
-
-1. Complete our GitHub template with your workshop's technical requirements.
-2. Our team will process your request and ensure participants have necessary access before your workshop begins.
-
-<Link class="button button--active button--primary" to="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&projects=&template=workshop_IT_request.md">Workshop IT Request Form</Link>
-
-
-
+<SectionWrapper id="workshops">
+  <WorkshopSupport />
+</SectionWrapper>

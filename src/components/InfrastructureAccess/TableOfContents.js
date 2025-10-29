@@ -8,8 +8,8 @@ const TableOfContents = () => {
 
   const sections = [
     { id: 'public-cloud', label: 'Public Cloud Services' },
-    { id: 'jupyterhub', label: 'CIROH JupyterHub' },
-    { id: 'on-premises', label: 'On-Premises Infrastructure' },
+    { id: 'jupyterhub', label: 'CIROH-2i2c JupyterHub' },
+    { id: 'on-premises', label: 'On-Premises Infra (HPC)' },
     { id: 'nsf-access', label: 'NSF ACCESS Allocations' },
     { id: 'bigquery', label: 'NWM BigQuery API' },
     { id: 'workshops', label: 'Workshop Support' }

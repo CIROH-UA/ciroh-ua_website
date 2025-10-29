@@ -17,11 +17,11 @@ const InfrastructureNavigator = () => {
   );
 
   const sections = [
-    { id: 'public-cloud', label: 'Public Cloud', shortLabel: 'Cloud', icon: '☁️', type: 'emoji' },
-    { id: 'jupyterhub', label: 'JupyterHub', shortLabel: 'Jupyter', icon: '📓', type: 'emoji' },
-    { id: 'on-premises', label: 'On-Premises', shortLabel: 'On-Prem', icon: '🖥️', type: 'emoji' },
-    { id: 'nsf-access', label: 'NSF ACCESS', shortLabel: 'NSF', icon: '🚀', type: 'emoji' },
-    { id: 'bigquery', label: 'BigQuery API', shortLabel: 'BigQuery', icon: 'bigquery', type: 'svg' },
+    { id: 'public-cloud', label: 'Public Cloud', shortLabel: 'Public Cloud', icon: '☁️', type: 'emoji' },
+    { id: 'jupyterhub', label: 'CIROH-2i2c JupyterHub', shortLabel: 'CIROH-2i2c JupyterHub', icon: '📓', type: 'emoji' },
+    { id: 'on-premises', label: 'On-Premises (HPC)', shortLabel: 'On-Premises (HPC)', icon: '🖥️', type: 'emoji' },
+    { id: 'nsf-access', label: 'NSF ACCESS', shortLabel: 'NSF Access', icon: '🚀', type: 'emoji' },
+    { id: 'bigquery', label: 'NWM BigQuery API', shortLabel: 'NWM BigQuery API', icon: 'bigquery', type: 'svg' },
     { id: 'workshops', label: 'Workshops', shortLabel: 'Workshops', icon: '🎓', type: 'emoji' }
   ];
 

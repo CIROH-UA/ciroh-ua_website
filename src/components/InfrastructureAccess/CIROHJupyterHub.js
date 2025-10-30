@@ -21,7 +21,7 @@ const CIROHJupyterHub = () => {
     },
     {
       title: "Request Individual Access",
-      description: "After your project has been approved, submit one of the following forms to get access to CIROH JupyterHub environments.",
+      description: "After your project has been approved, submit one of the following forms to get access to CIROH-2i2c JupyterHub environments.",
       buttons: [
         {
           text: "CPU Access Request Form",

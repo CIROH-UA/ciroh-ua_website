@@ -57,7 +57,7 @@ const PublicCloud = () => {
         borderLeft: '4px solid var(--ifm-color-info)'
       }}>
         <p style={{margin: 0, color: 'var(--ifm-color-emphasis-800)'}}>
-          <strong>Note:</strong> If using CIROH-2i2c services, please see the "Accessing CIROH JupyterHub" section below for additional steps.
+          <strong>Note:</strong> If using CIROH-2i2c services, please see the "Accessing CIROH-2i2c JupyterHub" section below for additional steps.
         </p>
       </div>
     </div>
@@ -228,7 +228,7 @@ const PublicCloud = () => {
                 fontWeight: 'bold',
                 fontSize: '1.2rem'
               }}>★</span>
-              Use of CIROH JupyterHub is <strong>free</strong> for all consortium projects
+              Use of CIROH-2i2c JupyterHub is <strong>free</strong> for all consortium projects
             </li>
             <li style={{
               marginBottom: '0.75rem',

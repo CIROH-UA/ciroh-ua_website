@@ -15,7 +15,7 @@
 			{
 			"type": "NGIAB",
 			"title": "NGIAB-HPCInfra",
-			"description": "placeholder",
+			"description": "",
 			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/releases/tag/v1.1.1"
 			},
 			{
@@ -27,8 +27,8 @@
 			{
 			"type": "NRDS",
 			"title": "ForcingProcessor",
-			"description": "placeholder",
-			"link": "https://github.com/CIROH-UA/forcingprocessor/releases/tag/v1.1.1"
+			"description": "ForcingProcessor version v1.1.2 is now available! Following the repository split, comprehensive CI/CD workflows have been implemented with unit tests and in-container testing on both ARM and x86 architectures.",
+			"link": "https://github.com/CIROH-UA/forcingprocessor/releases/tag/v1.1.2"
 			},
 			{
 			"type": "NRDS",

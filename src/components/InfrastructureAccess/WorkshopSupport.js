@@ -25,7 +25,7 @@ const WorkshopSupport = () => {
   return (
     <InfrastructureAccessSection
       badge="Workshop & Events"
-      title="Requesting Infrastructure Support for Conferences and Programs"
+      title="Requesting Infrastructure Support for Workshops"
       description={description}
       steps={steps}
       helpBox={{

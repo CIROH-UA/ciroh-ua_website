@@ -1,0 +1,88 @@
+---
+title: "Building Bridges: CIROH–Penn State Collaboration Formalizes Differentiable Modeling for NRDS"
+description: "Collaboration between CIROH and Penn State introduces differentiable models to the Next Generation Research Data Stream."
+slug: ciroh-psu-collab
+tags: [CIROH, Blog, Alabama Water Institute, Pennsylvania State University, Hydrology, Differentiable Modeling, NextGen, NGIAB, NRDS, National Water Model, Cloud Services, AI and Machine Learning]
+authors: [leo, quinn, josh, arpita, james]
+image: /img/blog/2025-10-psu-ngiab/group.jpeg
+---
+
+import useBaseUrl from "@docusaurus/useBaseUrl"
+import { Carousel } from "react-responsive-carousel"
+
+<Carousel
+  showThumbs={false}
+  autoPlay={true}
+  stopOnHover={false}
+  useKeyboardArrows={true}
+  emulateTouch={true}
+  interval={3500}
+  infiniteLoop
+  showStatus={false}
+  showIndicators={true}
+  >
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <img src={useBaseUrl("/img/blog/2025-10-psu-collab/carousel-1.jpeg")}
+      style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+      alt="Assemblage of collaborators at AWI and Penn State"
+      />
+  </div>
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <img src={useBaseUrl("/img/blog/2025-10-psu-collab/carousel-2.jpeg")}
+      style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+      alt="Leo Lonzarich, Quinn Lee, and Arpita Patel at University of Alabama's Diwali event"
+      />
+  </div>
+  <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <img src={useBaseUrl("/img/blog/2025-10-psu-collab/carousel-3.jpeg")}
+      style={{ width: 'auto', maxHeight: '500px', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
+      alt="Josh Cunningham, Quinn Lee, and Leo Lonzarich deep in a debugging session"
+      />
+  </div>
+</Carousel>
+<br />
+Almost from the start, 2025 has been a banner year in hydrologic modeling, with advancements in capabilities on both sides of the aisle of CIROH's research-to-operations (R2O) pipeline. 
+
+- From the **research** skunkworks, Penn State's [MHPI](https://sites.google.com/view/mhpi/team) group, led by Dr. Chaopeng Shen introduced a new generation of distributed, differentiable hydrologic models spearheaded by [δHBV 2.0](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024WR038928). Capable of high-resolution, continental-scale streamflow forecasting across the CONUS Hydrofabric, δHBV 2.0 fuses process-based modeling and machine learning to enable efficient parameter calibration and interpretable predictions at scale -- with demonstrated viability as a National Water Model 3.0 successor.
+
+- Meanwhile, from the **operations** core, CIROH's Science and Cyberinfrastructure team at the [Alabama Water institute (AWI)](https://awi.ua.edu), headed by Arpita Patel and James Halgren, debuted an operational pipeline composed chiefly of flagships [NextGen In a Box (NGIAB)](https://ngiab.ciroh.org) and the [Next Generation Research Datastream (NRDS)](https://docs.ciroh.org/docs/products/research-datastream/), forming an open-source software stack powering an accessible operational implementation of NOAA's Next Generation National Water Model. NRDS, in particular, executes a regularly scheduled set of continental-scale, NextGen-based hydrologic forecasts on CIROH's cloud-based cyberinfrastructure, and is designed to be a canvas for showcasing community modeling advances as potential R2O opportunities for NextGen.
+
+As destined in CIROH, these two efforts converged in early October during a week-long collaboration hosted by AWI, bringing Penn State researcher Leo Lonzarich south to Tuscaloosa, Alabama, to join in facilitating the formal introduction of differentiable models like δHBV 2.0 into the NRDS.
+
+## Keyboard Accomplishments 👾
+
+During the visit, the CIROH Science and Cyberinfrastructure team worked with Leo to finalize the formal integration of the δHBV 2.0 model into the NextGen ecosystem. Between extensive code reviews, model refactoring, and validation runs, we verified δHBV 2.0's operations-ready performance through its Basic Model Interface (BMI) within the NextGen runtime, ensuring full compliance with BMI standards and alignment with previously published benchmarks. We enhanced the model to support both batch and sequential timestep simulations — the latter mirroring the runtime behavior of NextGen — while maintaining high computational efficiency and reproducibility across environments.
+
+Once δHBV 2.0 was verified and tuned, we expanded the scope to broader ecosystem integration. The model was finalized on GitHub with modular configuration capabilities, daily and hourly (model coming soon) simulation modes, and confirmed compatibility with the T-route routing component. Significant performance optimizations were implemented to improve scalability across large basin networks. We added δHBV 2.0 support to the NGIAB distribution, enabling cloud-based state loading from AWS S3 (PR coming soon), and extended its reach into the [NGIAB Data Preprocess](https://github.com/CIROH-UA/NGIAB_data_preprocess) to allow on-demand generation of forcings, static catchment attributes, and model realizations for NextGen. Finally, the static catchment attributes were incorporated into the CIROH Community Hydrofabric, ensuring the model is represented and interoperable within the hydrologic framework used across the consortium.
+
+The beauty of these efforts lies in the fact that δHBV 2.0 is built upon a model-agnostic, differentiable modeling framework — [δMG](https://github.com/mhpi/generic_deltamodel). Therefore, the formalization accomplished during this visit scales to all new research products and advancements made through the framework, streamlining future NGIAB and NRDS integrations and reducing development overhead across projects.
+
+## Beyond the Keyboard
+
+Out of the office, this week also offered opportunities for cross-team engagement and a deeper look into CIROH's computational backbone. In one such case, Leo and the team toured the **University of Alabama's data center**, meeting with Josh Lotfi and other members of the **Office of Information Technology (OIT)** who help manage CIROH's on-premises high-performance computing resources. Naturally, this included 1-on-1 time with the flashing lights and silicon of Wukong (which supports a bulk of Penn State's R&D) and Pantarhei HPCs. Across the board, these interactions gave valuable insight into work going on behind the scenes at AWI and about how CIROH's cyberinfrastructure supports researchers and partners across academia, government, and industry.
+
+It is easy to see these collaborations as purely technical exchanges. However, the deep friendships that were built during this visit are at least as important, they inevitably inspire open flows of ideas, mentorship, and future synergies in service of CIROH's mission and the broader community.
+
+## Looking Forward
+
+With δHBV 2.0's integration near completion, differentiable models will soon be running as part of CIROH's NRDS nightly forecasts — accessible through the NRDS Visualizer where other researchers and community members will be able to explore, assess, and iterate on simulations from this latest crop of hydrologic models in real time.
+
+We anticipate continuing this AWI-Penn State collaboration, with future projects e.g., being additions to NGIAB and NRDS including more differentiable models, a formal hourly δHBV 2.0 model, and differentiable routing. Some of this work may also arrive in a DevCon to showcase the efforts of both of groups.
+
+Overall, this visit exemplifies how CIROH's approach to developing a community of practice catalyzes scientific advancements, fosters lasting inter-institutional relationships, and makes normally lab-bound research products salient to the broader R2O community. In these collaborations, CIROH's core mission, strengthening the link between scientific discovery and operational forecasting, remains clear and in view.
+
+Many thanks are owed to Arpita, James, and the whole of CIROH's Science and Cyberinfrastructure team -- `git merge` on research products has never been easier.
+
+### Resources for the Curious 
+
+- [δHBV 2.0 Operational Model Repository](https://github.com/mhpi/dhbv2)
+
+- [δMG Differentiable Modeling Framework](https://github.com/mhpi/generic_deltamodel) (Backbone for δHBV 2.0; includes documentation and tutorials for building custom differentiable hydrologic models.)
+
+- [MHPI Codebase](https://mhpi.github.io/codes/)
+
+### Publication
+
+<ol>
+    <li>Song, Y., Bindas, T., Shen, C., Ji, H., Knoben, W. J. M., Lonzarich, L., et al. (2025). High-resolution national-scale water modeling is enhanced by multiscale differentiable physics-informed machine learning. Water Resources Research, 61, e2024WR038928. https://doi.org/10.1029/2024WR038928</li>
+</ol>

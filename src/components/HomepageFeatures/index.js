@@ -317,7 +317,7 @@ const impactData = [
     users: 60,
   },
   {
-    title: "CIROH Google Cloud and CIROH JupyterHub Projects",
+    title: "CIROH Google Cloud and CIROH-2i2c JupyterHub Projects",
     count: 50,
     imageSrc: "/img/logos/corp/google-cloud.jpg",
     users: 171,
@@ -498,7 +498,7 @@ export default function HomepageFeatures() {
                         <div className="mt-5-feature">
                             <h3 className="h4 mb-2-feature">CyberInfrastructure</h3>
                             <img src="img/graphics/why-docuhub-5.png" alt="docuhub image"></img>
-                            <p className="text-muted-feature mb-0 mt-2">Leverage cloud infrastuctures, including AWS, GCP, CIROH JupyterHub, and on-premises infrastructures tailored to hydrological research needs.</p>
+                            <p className="text-muted-feature mb-0 mt-2">Leverage cloud infrastuctures, including AWS, GCP, CIROH-2i2c JupyterHub, and on-premises infrastructures tailored to hydrological research needs.</p>
                         </div>
                     </div>
                     <div className="col-lg-3-feature col-md-6-feature text-center">

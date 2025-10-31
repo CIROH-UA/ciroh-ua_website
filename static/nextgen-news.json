@@ -39,7 +39,7 @@
 			{
 			"type": "update",
 			"title": "CIROH DocuHub",
-			"description": "DocuHub has been updated! This month's updates feature an overhaul of the Infrastructure Access page, making it easier than ever to request access to CIROH CyberInfrastructure, alongside a new blog post highlighting collaboration between the Alabama Water Institute and Pennsylvania State University.",
+			"description": "DocuHub has been updated! This month's updates feature an overhaul of the [Infrastructure Access page](/docs/services/access), making it easier than ever to request access to CIROH CyberInfrastructure, alongside a [new blog post](/blog/ciroh-psu-collab) highlighting collaboration between the Alabama Water Institute and Pennsylvania State University.",
 			"link": "release-notes/v20251103"
 			},
 			{
@@ -52,18 +52,18 @@
 			"type": "update",
 			"title": "NGIAB Website",
 			"description": "A new community spotlight video featuring Leo Lonzarich from Pennsylvania State University has been added!",
-			"link": "ngiab.ciroh.org"
+			"link": "https://ngiab.ciroh.org"
 			},
 			{
 			"type": "update",
 			"title": "t-route",
 			"description": "For this month, we primarily focused on documentation improvements. The installation documentation has been clarified with clearer instructions and typo corrections for better readability.",
-			"link": "https://github.com/CIROH-UA/datastreamcli/releases/tag/v1.1.2"
+			"link": "https://github.com/CIROH-UA/t-route/"
 			},
 			{
 			"type": "update",
 			"title": "ngen",
-			"description": "A new paritioning script, round_robin.py, has been added to the ngen repository.",
+			"description": "A new partitioning script, round_robin.py, has been added to the ngen repository.",
 			"link": "https://github.com/CIROH-UA/ngen/commit/9175b640a4e6f1d90e58e0a65662174d08f052ef"
 			}
 		],

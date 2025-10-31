@@ -55,7 +55,7 @@ const NSFAccessAllocations = () => {
         title: "Need Help?",
         content: (
           <>
-            If you are unable to access the forms, please contact the CIROH team at <a href="mailto:ciroh-it-admin@ua.edu">ciroh-it-admin@ua.edu</a> for assistance.
+            If you are unable to access the forms, please contact the CIROH team at <a href="mailto:ciroh-it-support@ua.edu">ciroh-it-support@ua.edu</a> for assistance.
           </>
         )
       }}

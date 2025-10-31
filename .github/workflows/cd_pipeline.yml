@@ -15,7 +15,7 @@ jobs:
     name: ${{ github.event.client_payload.env }} - Deploy ${{ github.event.client_payload.short_hash }} from ${{ github.event.client_payload.branch }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           # Ensure detached HEAD state to avoid conflicts with the main branch

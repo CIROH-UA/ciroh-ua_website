@@ -13,11 +13,11 @@ tags: [CIROH, Services, Cloud Services, JupyterHub, 2i2c, Google Cloud, Educatio
     30-39: Miscellaneous/Troubleshooting
 -->
 
-This guide is for managing objects in GCP buckets available on 2i2c CIROH JupyterHub. For more detailed explanation, you can visit [2i2c docs site](https://docs.2i2c.org/user/topics/data/object-storage/manage-object-storage-gcp/).
+This guide is for managing objects in GCP buckets available on 2i2c CIROH-2i2c JupyterHub. For more detailed explanation, you can visit [2i2c docs site](https://docs.2i2c.org/user/topics/data/object-storage/manage-object-storage-gcp/).
 
 ### 1. Overview
-CIROH JupyterHub uses object Google Cloud Storage to store data in buckets (containers for objects). Currently, there are two buckets available to use on CIROH JupyterHub. 
-- **Scratch Bucket**: It is intended for storing temporary files since any files in scratch bucket get deleted after seven days. Open a terminal in CIROH JupyterHub and run this command to display your scratch bucket name:
+CIROH-2i2c JupyterHub uses object Google Cloud Storage to store data in buckets (containers for objects). Currently, there are two buckets available to use on CIROH-2i2c JupyterHub. 
+- **Scratch Bucket**: It is intended for storing temporary files since any files in scratch bucket get deleted after seven days. Open a terminal in CIROH-2i2c JupyterHub and run this command to display your scratch bucket name:
 
 ```
 echo $SCRATCH_BUCKET
@@ -25,7 +25,7 @@ gs://awi-ciroh-scratch/<username>
 ```
 **Note:** In the above command output, the name of the bucket is 'awi-ciroh-scratch' and `<username>` is the folder in the bucket.
 
-- **Persistent Bucket**: It is recommended to use for storing files that you will be using for a longer period of time. Open a terminal in CIROH JupyterHub and run this command to display your persistent bucket name:
+- **Persistent Bucket**: It is recommended to use for storing files that you will be using for a longer period of time. Open a terminal in CIROH-2i2c JupyterHub and run this command to display your persistent bucket name:
 
 ```
 echo $PERSISTENT_BUCKET
@@ -33,14 +33,14 @@ gs://awi-ciroh-persistent/<username>
 ```
 
 ### 2. Copying file to a bucket
-You can copy files on your CIROH JupyterHub to an available bucket using the following command.
+You can copy files on your CIROH-2i2c JupyterHub to an available bucket using the following command.
 
 ```
 gcloud storage cp <filepath> $PERSISTENT_BUCKET/<filepath>
 ```
 
-### 3. Copying file from a bucket to CIROH JupyterHub
-You can copy files from an accessible bucket to your CIROH JupyterHub using the following command.
+### 3. Copying file from a bucket to CIROH-2i2c JupyterHub
+You can copy files from an accessible bucket to your CIROH-2i2c JupyterHub using the following command.
 
 ```
 gcloud storage cp $PERSISTENT_BUCKET/<filepath> <destination-filepath>

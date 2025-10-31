@@ -40,7 +40,7 @@
 			"type": "update",
 			"title": "CIROH DocuHub",
 			"description": "DocuHub has been updated! This month's updates feature an overhaul of the Infrastructure Access page, making it easier than ever to request access to CIROH CyberInfrastructure, alongside a new blog post highlighting collaboration between the Alabama Water Institute and Pennsylvania State University.",
-			"link": "https://github.com/CIROH-UA/ciroh-ua_website/commits/main/?since=2025-10-01&until=2025-10-29"
+			"link": "release-notes/v20251103"
 			},
 			{
 			"type": "update",

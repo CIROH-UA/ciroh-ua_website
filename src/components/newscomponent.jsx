@@ -103,7 +103,7 @@ function getBadgeClass(type) {
     case "update":
       return "warning";
     case "NGIAB":
-      return "warning";
+      return "success";
     case "NRDS":
       return "primary";
     case "blog":  

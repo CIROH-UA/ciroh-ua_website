@@ -1,4 +1,72 @@
 {
+	"October 2025 Update": [
+			{
+			"type": "NGIAB",
+			"title": "rust-lstm",
+			"description": "The first working Rust-based version of the LSTM BMI module is now available!",
+			"link": "https://github.com/CIROH-UA/rust-lstm-1025/releases/tag/v0.1.0"
+			},
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-data-preprocess",
+			"description": "Version v4.6.4 is now available with dependency fixes. This update resolves compatibility issues and adds LSTM documentation to the README. NGIAB-data-preprocess now introduces the --lstm_rust option that allows users to select between Rust-based and Python-based LSTM implementations.",
+			"link": "https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.6.4"
+			},
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-CloudInfra",
+			"description": "NGIAB version 1.6.0 has been released! This update integrates the Rust-based LSTM implementation for improved performance.",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/releases/tag/v1.6.0"
+			},
+			{
+			"type": "NRDS",
+			"title": "NGEN-DataStream",
+			"description": "Version v2.0.1 completes the repository split. With datastreamcli and forcingprocessor now fully separated, ngen-datastream focuses exclusively on NextGen Research DataStream infrastructure, deployment tooling, and community documentation.",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/releases/tag/v2.0.1"
+			},
+			{
+			"type": "NRDS",
+			"title": "ForcingProcessor",
+			"description": "ForcingProcessor version v1.1.2 is now available! Following the repository split, comprehensive CI/CD workflows have been implemented with unit tests and in-container testing on both ARM and x86 architectures.",
+			"link": "https://github.com/CIROH-UA/forcingprocessor/releases/tag/v1.1.2"
+			},
+			{
+			"type": "NRDS",
+			"title": "DataStreamCLI",
+			"description": "DataStreamCLI version v1.1.2 is now available! Following the repository split, all documentation links have been updated to reflect the current repository and directory structure.",
+			"link": "https://github.com/CIROH-UA/datastreamcli/releases/tag/v1.1.2"
+			},
+			{
+			"type": "update",
+			"title": "CIROH DocuHub",
+			"description": "DocuHub has been updated! This month's updates feature an overhaul of the Infrastructure Access page, making it easier than ever to request access to CIROH CyberInfrastructure, alongside a new blog post highlighting collaboration between the Alabama Water Institute and Pennsylvania State University.",
+			"link": "https://github.com/CIROH-UA/ciroh-ua_website/commits/main/?since=2025-10-01&until=2025-10-29"
+			},
+			{
+			"type": "update",
+			"title": "CIROH Portal",
+			"description": "The CIROH Portal has a few updates this month. New search and sort functionality has been added to Apps, Datasets, Presentations, and Courses pages with filtering, sort options and live results counters. HydroShare resource input forms have been improved with better authentication handling, reordered inputs for better user experience, and a new authors field. Additionally, a Community Impact page has been added showcasing CIROH's reach with statistics on products, datasets, presentations, publications, courses, and infrastructure services across AWS, GCP, HPC, and NSF ACCESS platforms.",
+			"link": "https://github.com/CIROH-UA/ciroh-portal/commits/main/?since=2025-10-01&until=2025-10-29"
+			},
+			{
+			"type": "update",
+			"title": "NGIAB Website",
+			"description": "A new community spotlight video featuring Leo Lonzarich from Pennsylvania State University has been added!",
+			"link": "ngiab.ciroh.org"
+			},
+			{
+			"type": "update",
+			"title": "t-route",
+			"description": "For this month, we primarily focused on documentation improvements. The installation documentation has been clarified with clearer instructions and typo corrections for better readability.",
+			"link": "https://github.com/CIROH-UA/datastreamcli/releases/tag/v1.1.2"
+			},
+			{
+			"type": "update",
+			"title": "ngen",
+			"description": "A new paritioning script, round_robin.py, has been added to the ngen repository.",
+			"link": "https://github.com/CIROH-UA/ngen/commit/9175b640a4e6f1d90e58e0a65662174d08f052ef"
+			}
+		],
 	"September 2025 Update": [
 			{
 			"type": "NGIAB",

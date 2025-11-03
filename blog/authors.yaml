@@ -1,10 +1,11 @@
-arpita-patel:
+arpita-2025:
   name: Arpita Patel
   title: Assistant Director of DevOps and IT
   url: 'https://github.com/arpita0911patel'
   image_url: https://avatars.githubusercontent.com/u/54657?v=4
 
-arpita:
+# Legacy entry, do not use for new blog posts
+arpita-2023:
   name: Arpita Patel
   title: DevOps Manager and Enterprise Architect
   url: 'https://github.com/arpita0911patel'

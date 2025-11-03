@@ -1,6 +1,12 @@
-arpita:
+arpita-patel:
   name: Arpita Patel
   title: Assistant Director of DevOps and IT
+  url: 'https://github.com/arpita0911patel'
+  image_url: https://avatars.githubusercontent.com/u/54657?v=4
+
+arpita:
+  name: Arpita Patel
+  title: DevOps Manager and Enterprise Architect
   url: 'https://github.com/arpita0911patel'
   image_url: https://avatars.githubusercontent.com/u/54657?v=4
 
@@ -96,7 +102,7 @@ hudson:
 
 josh:
   name: Josh Cunningham
-  title: DevOps Software Engineer
+  title: Software Engineer
   url: 'https://www.linkedin.com/in/josh-cunningham-6906a7108/'
   image_url: /img/blog/authors/josh.jpeg
 
@@ -156,7 +162,7 @@ jeffery:
 
 charity:
   name: Charity McCalpin
-  title: The University of Alabama
+  title: Research Project Coordinator
   url: https://www.linkedin.com/in/charity-mccalpin/
   image_url: /img/blog/authors/charity.jpeg
 

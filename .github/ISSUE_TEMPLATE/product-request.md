@@ -39,7 +39,7 @@ assignees: ''
 ---
 
 ### Links 
-`Required: Atleast one`
+`Required: at least one`
 
 Please provide the following links for your product:
 

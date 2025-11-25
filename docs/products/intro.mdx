@@ -5,6 +5,8 @@ tags: [CIROH, Products]
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl'
+import ProductCards from '@site/src/components/Product/ProductCards'
+import productsData from '@site/src/data/products.json'
 
 # Products Overview
 
@@ -13,9 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl'
       <div className="hero-text">
         At CIROH, our team of researchers, hydrologists, and engineers is committed to advancing our understanding of hydrologic processes, improving operational hydrologic forecasting techniques and workflows, collaborating on community water modeling, converting forecasts into practical solutions, and utilizing water predictions to help guide decision-making processes.
       </div>
-      <div className="hero-image" style={{ textAlign: 'center' }}>
-        <img src={useBaseUrl("/img/graphics/water_products.png")} alt="Water Tools" style={{ width: '50%' }} />
-      </div>
     </div>
 </div>
 
+<ProductCards productsData={productsData} />

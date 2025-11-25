@@ -2,11 +2,38 @@
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
- .heroBanner {
+.heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  /* Add modern gradient background */
+  background: linear-gradient(135deg, 
+    #0ea5e9 0%, 
+    #06b6d4 25%, 
+    #0891b2 50%, 
+    #0e7490 75%, 
+    #155e75 100%) !important;
+  color: white;
+}
+
+/* Add gradient animation overlay */
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  animation: gradientShift 8s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(10px) translateY(10px); }
 }
 
 @media screen and (max-width: 996px) {
@@ -29,6 +56,7 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  z-index: 10;
 }
 
 .flexitem1 {
@@ -43,6 +71,82 @@
   max-width: 200px;
   width: 100%;
   height: auto;
+  /* Add subtle glow to logo */
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+  animation: logoFloat 3s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Style the title with gradient text */
+.heroBanner h1 {
+  background: linear-gradient(135deg, #ffffff 0%, #e0f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: titleGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+  0% { filter: brightness(1); }
+  100% { filter: brightness(1.2); }
+}
+
+/* Style the subtitle */
+.heroBanner h2 {
+  opacity: 0.9;
+  animation: fadeInUp 1s ease-out 0.5s both;
+}
+
+/* Style the description */
+.heroBanner p {
+  animation: fadeInUp 1s ease-out 1s both;
+  opacity: 0.8;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add floating water drops */
+.floatingElements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.waterDrop {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0vh) scale(1);
+  }
 }
 
 /* for smaller screens */
@@ -53,5 +157,13 @@
 
   .flexitem1 img {
     max-width: 150px;
+  }
+  
+  .heroBanner h1 {
+    font-size: 2rem;
+  }
+  
+  .heroBanner h2 {
+    font-size: 1.2rem;
   }
 }

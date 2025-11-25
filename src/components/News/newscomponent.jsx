@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import themes from "./themes.module.css";
 import ReactMarkdown from 'react-markdown';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -25,22 +24,22 @@ const NewsComponent = ({ data, isLatest }) => {
         onClick={toggleExpand}
       >
         <div className={styles.logoSection}>
-          <img className={`${themes.darkImage} ${styles.logo}`} alt="CIROH logo" src={logoSafeUrl} />
-          <img className={`${themes.lightImage} ${styles.logo}`} alt="CIROH logo" src={logoSafeUrl} />
+          <img className={`${styles.darkImage} ${styles.logo}`} alt="CIROH logo" src={logoSafeUrl} />
+          <img className={`${styles.lightImage} ${styles.logo}`} alt="CIROH logo" src={logoSafeUrl} />
         </div>
         
         <div className={styles.titleSection}>
           <div className={styles.titleRow}>
-            <img className={`${themes.darkImage} ${styles.waveIcon}`} alt="Wave graphic" src={sidelineDarkUrl} />
-            <img className={`${themes.lightImage} ${styles.waveIcon}`} alt="Wave graphic" src={sidelineLightUrl} />
+            <img className={`${styles.darkImage} ${styles.waveIcon}`} alt="Wave graphic" src={sidelineDarkUrl} />
+            <img className={`${styles.lightImage} ${styles.waveIcon}`} alt="Wave graphic" src={sidelineLightUrl} />
             <span className={styles.titleText}>News</span>
-            <img className={`${themes.darkImage} ${styles.waveIcon}`} alt="Wave graphic" src={sidelineDarkUrl} />
-            <img className={`${themes.lightImage} ${styles.waveIcon}`} alt="Wave graphic" src={sidelineLightUrl} />
+            <img className={`${styles.darkImage} ${styles.waveIcon}`} alt="Wave graphic" src={sidelineDarkUrl} />
+            <img className={`${styles.lightImage} ${styles.waveIcon}`} alt="Wave graphic" src={sidelineLightUrl} />
           </div>
           <h2 className={styles.dateTitle}>{data.date}s</h2>
           <div className={styles.underlineSection}>
-            <img className={`${themes.darkImage} ${styles.underline}`} alt="Wave graphic" src={underlinesDarkUrl} />
-            <img className={`${themes.lightImage} ${styles.underline}`} alt="Wave graphic" src={underlinesLightUrl} />
+            <img className={`${styles.darkImage} ${styles.underline}`} alt="Wave graphic" src={underlinesDarkUrl} />
+            <img className={`${styles.lightImage} ${styles.underline}`} alt="Wave graphic" src={underlinesLightUrl} />
           </div>
         </div>
 

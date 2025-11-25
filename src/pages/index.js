@@ -11,6 +11,20 @@ function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      {/* Add floating water drops - minimal addition */}
+      <div className={styles.floatingElements}>
+        {[...Array(6)].map((_, i) => (
+          <div 
+            key={i} 
+            className={styles.waterDrop} 
+            style={{
+              left: `${15 + i * 12}%`, 
+              animationDelay: `${i * 1.5}s`
+            }}
+          />
+        ))}
+      </div>
+      
       <div className="container">
         <div className="hero-content">
           <div className="hero-flex-container">
@@ -21,7 +35,6 @@ function HomepageHeader() {
               <h1 className="hero__title">{siteConfig.title}</h1>
               <h2 className='hero__subtitle'>{siteConfig.tagline}</h2>
               <div className={styles.flexContainer}>
-
                 <div className={styles.flexitem1}>
                   <p style={{ fontSize: 20 }}>
                   Welcome to <b>CIROH's DocuHub</b> – Your centralized gateway to expert insights on our Products, Services, and comprehensive documentation. This powerful resource empowers our community with the technical knowledge needed to enhance collaboration and drive impactful contributions.                   
@@ -29,7 +42,6 @@ function HomepageHeader() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>

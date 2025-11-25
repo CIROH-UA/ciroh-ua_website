@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './CommunityImpact.module.css';
-import BlogFilter from './BlogFilter';
+import BlogFilter from '../BlogFilter';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -14,7 +14,7 @@ const ImpactItem = ({ title, count, imageSrc,users }) => (
   </div>
 );
 
-export default function CommunityImpact() {
+export default function CommunityImpactComponent() {
   const impactData = [
     {
       title: "Amazon Web Services",

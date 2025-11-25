@@ -42,10 +42,10 @@ const config = {
       "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        gtag: {
-          trackingID: 'G-7KD31X6H62',
-          anonymizeIP: true,
-        },
+        
+        // gtag: process.env.NODE_ENV === 'production'
+        //   ? { trackingID: 'G-7KD31X6H62', anonymizeIP: true }
+        //   : undefined,
         blog: false, // Blogs and its settings are now in the custom blog plugin below. Its because we have tags based filters in community impact page. Those filters are coming from Blog posts.
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
@@ -225,11 +225,7 @@ const config = {
             to: '/docs/services/cloudservices/google-cloud',
             from: '/docs/products/cloudservices/google cloud',
           },
-          // Contribute: older redirect (formerly used react-router-dom)
-          {
-            to: '/docs/contribute',
-            from: '/contribute',
-          },
+
         ],
         createRedirects(existingPath) {
           // JupyterHub redirects
@@ -305,15 +301,49 @@ const config = {
             Exclusive content for researchers utilizing CIROH Cyberinfrastructure resources.
             Share your insights, discoveries, and experiences with the hydrologic science community.
           </div>
-          <div style="font-size: 0.9rem; margin-right:1rem">
+          <div style="font-size: 0.9rem; margin-bottom: 1rem; margin-right:1rem">
             This blog platform is dedicated to highlighting the innovative work of researchers who
             have leveraged CIROH's computational tools and resources to advance water science.
             Your stories help demonstrate the value of our shared infrastructure and inspire new
             applications across the field.
           </div>
+          <a 
+            href="https://github.com/CIROH-UA/ciroh-ua_website/issues/new?template=docuhub-blog-post.md" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            style="
+              display: inline-block;
+              padding: 0.5rem 1rem;
+              margin-bottom: 1rem;
+              background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+              color: white;
+              text-decoration: none;
+              border-radius: 6px;
+              font-size: 0.9rem;
+              font-weight: 500;
+              transition: all 0.2s ease;
+              box-shadow: 0 2px 4px rgba(34, 197, 94, 0.2);
+            "
+            onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 8px rgba(34, 197, 94, 0.3)';"
+            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 4px rgba(34, 197, 94, 0.2)';"
+          >
+            Submit Your Blog
+          </a>
         `
       },
     ],
+
+    // URL for submitting a new product request (used in ProductCards component)
+    productIssueUrl: "https://github.com/CIROH-UA/ciroh-ua_website/issues/new?template=product-request.md",
+
+    // Centralized external links used across pages/components
+    externalLinks: {
+      zoteroLogin: "https://www.zotero.org/user/login",
+      feedbackForm: "https://forms.office.com/r/5ww7qRWwwf",
+    },
+
+    // Optional links for contribution CTAs
+  blogIdeaUrl: "https://github.com/CIROH-UA/ciroh-ua_website/issues/new?template=docuhub-blog-post.md",
 
   },
 
@@ -370,13 +400,18 @@ const config = {
             position: "left",
           },
           {
-            href: "https://portal.ciroh.org/", // Research portal URL
-            label: "CIROH Portal",
+            href: "/resources",
+            label: "Community Resources",
             position: "left",
           },
           {
             href: "/impact",
             label: "Community Impact",
+            position: "right",
+          },
+          {
+            href: "/contribute",
+            label: "Contribute",
             position: "right",
           },
           {
@@ -389,11 +424,6 @@ const config = {
             label: "News",
             position: "right",
           },
-          {
-            href: "/release-notes",
-            label: "Release Notes",
-            position: "right",
-          },
         ],
       },
       footer: {
@@ -403,8 +433,8 @@ const config = {
             title: 'Quick Links',
             items: [
               {
-                label: 'CIROH Portal',
-                href: 'http://portal.ciroh.org/'
+                label: 'Community Resources',
+                href: '/resources'
               },
               {
                 label: 'Contact Us',
@@ -412,11 +442,15 @@ const config = {
               },
               {
                 label: 'Contribute',
-                href: '/docs/contribute'
+                href: '/contribute'
               },
               {
                 label: 'Feedback',
                 href: 'https://forms.office.com/r/5ww7qRWwwf'
+              },
+              {
+                label: 'Release Notes',
+                href: '/release-notes'
               },
             ]
           },

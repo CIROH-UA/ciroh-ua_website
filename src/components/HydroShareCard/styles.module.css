@@ -1,0 +1,144 @@
+/* Minimal, simple styles for HydroShare card */
+:root {
+  --hs-primary: #2a6ebb;
+  --hs-border: #d6e4f3;
+  --hs-bg: #f7fbff;
+}
+
+.card {
+  background: var(--hs-bg);
+  border: 1px solid var(--hs-border);
+  border-left: 4px solid var(--hs-primary);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo { height: 28px; width: auto; }
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.body {
+  margin: 0 0 0.75rem 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.96rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--hs-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25rem;
+}
+
+.tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+.tag {
+  border: 1px dashed var(--hs-primary);
+  color: var(--hs-primary);
+  background: rgba(42,110,187,0.08);
+  border-radius: 999px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.85rem;
+}
+
+/* Pastel variants per tag */
+.tagApp {
+  --tag-border: #0ea5e9; /* sky-500 */
+  --tag-text: #0369a1;   /* sky-700 */
+  --tag-bg: rgba(14,165,233,0.12);
+  border-color: var(--tag-border);
+  color: var(--tag-text);
+  background: var(--tag-bg);
+}
+
+.tagModule {
+  --tag-border: #8b5cf6; /* violet-500 */
+  --tag-text: #5b21b6;   /* violet-800 */
+  --tag-bg: rgba(139,92,246,0.12);
+  border-color: var(--tag-border);
+  color: var(--tag-text);
+  background: var(--tag-bg);
+}
+
+.tagPresentation {
+  --tag-border: #f59e0b; /* amber-500 */
+  --tag-text: #92400e;   /* amber-800 */
+  --tag-bg: rgba(245,158,11,0.14);
+  border-color: var(--tag-border);
+  color: var(--tag-text);
+  background: var(--tag-bg);
+}
+
+.tagData {
+  --tag-border: #10b981; /* emerald-500 */
+  --tag-text: #065f46;   /* emerald-800 */
+  --tag-bg: rgba(16,185,129,0.12);
+  border-color: var(--tag-border);
+  color: var(--tag-text);
+  background: var(--tag-bg);
+}
+
+/* Dark mode adjustment for tag legibility */
+html[data-theme='dark'] .tagApp { --tag-text: #7dd3fc; }
+html[data-theme='dark'] .tagModule { --tag-text: #c4b5fd; }
+html[data-theme='dark'] .tagPresentation { --tag-text: #fcd34d; }
+html[data-theme='dark'] .tagData { --tag-text: #6ee7b7; }
+
+.tip {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.steps { margin: 0 0 0.75rem 1.1rem; }
+
+.code {
+  display: inline-block;
+  margin: 0 0.25rem;
+  padding: 0 0.35rem;
+  border-radius: 4px;
+  background: var(--ifm-pre-background);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  font-size: 0.85rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: var(--hs-primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.cta:hover { color: #fff; text-decoration: none; background: #1f5aa0; }
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+html[data-theme='dark'] .card {
+  --hs-border: rgba(42,110,187,0.35);
+  --hs-bg: rgba(42,110,187,0.08);
+}

@@ -48,6 +48,8 @@ To set up the project locally, follow these steps:
    ```bash
    npm install
    ```
+   or 
+   npm install --legacy-peer-deps
 
 4. **Build for Production** (optional):
    ```bash

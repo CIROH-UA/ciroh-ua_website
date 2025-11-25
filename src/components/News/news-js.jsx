@@ -1,6 +1,6 @@
 import React from "react";
 import NewsComponent from "./newscomponent";
-import jsonData from "../../static/nextgen-news.json"; // Import the JSON data
+import jsonData from "../../data/nextgen-news.json"; // Import the JSON data
 import styles from './NewsComponent.module.css';
 
 const News = () => {

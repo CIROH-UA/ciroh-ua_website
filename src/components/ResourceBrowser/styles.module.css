@@ -1,0 +1,80 @@
+.wrapper {
+	width: 100%;
+	padding: 3rem 0;
+	background: var(--background, #fff);
+}
+
+.counter {
+	margin-bottom: 0.75rem;
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--text, #222);
+}
+
+.filterForm {
+	display: flex;
+	gap: 0.75rem;
+	flex-wrap: wrap;
+	margin-bottom: 1.25rem;
+}
+
+.searchInput {
+	flex: 1;
+	min-width: 240px;
+	padding: 0.7rem 0.9rem;
+	border: 1px solid var(--border, #ddd);
+	border-radius: 6px;
+	font-size: 1rem;
+}
+
+.sortSelect {
+	min-width: 180px;
+	padding: 0.7rem 0.9rem;
+	border: 1px solid var(--border, #ddd);
+	border-radius: 6px;
+	font-size: 1rem;
+	background: var(--surface, #fff);
+}
+
+.button {
+	padding: 0.55rem 0.7rem;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.15s ease;
+}
+
+.button:hover { transform: scale(1.05); }
+
+.buttonPrimary {
+	background: var(--primary, #0d6efd);
+	color: #fff;
+}
+
+.empty {
+	text-align: center;
+	color: #666;
+	padding: 2rem 0;
+}
+
+.errorBox {
+	background: #fee;
+	border: 1px solid #fcc;
+	border-radius: 8px;
+	padding: 1rem;
+	color: #b22;
+}
+
+/* Dark mode – respect Docusaurus theme toggle */
+html[data-theme='dark'] .wrapper { background: var(--background, #1b1b1b); }
+html[data-theme='dark'] .counter { color: var(--text, #e6e6e6); }
+html[data-theme='dark'] .searchInput,
+html[data-theme='dark'] .sortSelect {
+	background: var(--surface, #2a2a2a);
+	border-color: var(--border, #444);
+	color: var(--text, #e6e6e6);
+}
+html[data-theme='dark'] .empty { color: #aaa; }

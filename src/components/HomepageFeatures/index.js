@@ -437,7 +437,7 @@ export default function HomepageFeatures() {
               <div className={styles.flexStart}>
                 <Link
                   className={`button button--info ${styles.col4}`}
-                  to="/docs/contribute"
+                  to="/contribute"
                   style={{ textDecoration: "none", marginRight: "10px" }}
                 >
                   How to Contribute?

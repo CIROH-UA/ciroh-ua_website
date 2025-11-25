@@ -1,47 +1,59 @@
 ---
 name: Blog post request
-about: This template is used to request for a new blog post to be added to the DocuHub Blog tab.
-title: 'Blog post request: (your title here)'
-labels: Feature
+about: Share your CIROH research story with the community
+title: 'Blog post: [Your Title Here]'
+labels: blog
 assignees: ''
 ---
 
-# Blog Post Request
+# 📝 Blog Post Request
 
-## Post Information
-- **Product Name**: <!-- Name of the product or project being featured -->
-- **Institute**: <!-- Name of the affiliated institute or organization -->
-- **Principal Investigator**: <!-- Name of the PI or project lead -->
-- **GitHub Repository**: <!-- URL to the relevant GitHub repository -->
+**Thanks for sharing your work with the CIROH community!** 
+Just fill out what you can below - we'll help polish it into a great blog post.
 
-## Publication Details
-- **Blog Post Title**: <!-- Your proposed title -->
-- **Author(s)**: <!-- Names of all contributing authors -->
-- **Author Profile Image(s)**: <!-- Insert image URLs for each author -->
+## ✏️ Basic Info
+- **Your Name**: 
+- **Your Institution**: 
+- **Blog Post Title**: 
+- **Your Email** (so we can follow up): 
 
-## CIROH Cyberinfrastructure
-- **Used CIROH Cyberinfrastructure**: <!-- Yes/No -->
-- **Which Components Used**: <!-- Specify which CIROH cyberinfrastructure components were utilized -->
-- **Impact on Project**: <!-- Briefly describe how CIROH cyberinfrastructure benefited the project -->
+## 🔬 Your Research
 
----
+### What did you work on?
+<!-- Tell us about your project in a few sentences -->
 
-## Blog Content
 
-<!-- Write your complete blog post content below this line. You may use Markdown formatting for:
-- Headers (# for main headers, ## for subheaders)
-- **Bold text** for emphasis
-- *Italic text* for secondary emphasis
-- Bulleted lists (like this one)
-- Numbered lists (1. 2. 3.)
-- [Links](https://example.com)
-- ![Images](image-url.jpg) with alt text
-- `code snippets` or ```code blocks```
--->
+### How did you use CIROH resources?
+<!-- Which CIROH tools, data, or infrastructure helped your research? -->
 
-[Your content here]
 
----
+### What were your key findings or results?
+<!-- What did you discover? What worked well? -->
 
-## Additional Information
-<!-- Any other relevant information, such as preferred publication date, related posts, etc. -->
+
+## 📖 Your Story (Just bullet points are fine!)
+
+### What happened in your project?
+- 
+- 
+
+### Why should the community be excited about this?
+- 
+- 
+
+### Where can people learn more?
+- GitHub repo: 
+- Paper/publication: 
+- Other links: 
+
+## 🎯 Optional Extras
+<!-- These help make your post even better, but don't worry if you don't have them! -->
+
+### Images or screenshots
+<!-- Drag and drop any images here that show your work -->
+
+### People to thank
+<!-- Anyone who helped make this work possible? Give a shout-out to any person or org or team that particularly helped -->
+
+### Anything else?
+<!-- Preferred publication timing, related work, etc. -->

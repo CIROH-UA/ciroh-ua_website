@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import recentPosts from '@site/.docusaurus/recent-posts.json';
-import styles from './CommunityImpact.module.css';
+import styles from './CommunityImpact/CommunityImpact.module.css';
 import clsx from 'clsx';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 

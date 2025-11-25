@@ -3,7 +3,7 @@ import styles from './stepsCardsStyles.module.css';
 import { useColorMode } from '@docusaurus/theme-common';
 import Link from '@docusaurus/Link'
 
-const StepsCards = ({ header, steps, containerId }) => {
+const StepsCardsComponent = ({ header, steps, containerId }) => {
   const { colorMode } = useColorMode();
 
   return (
@@ -50,4 +50,4 @@ const StepsCards = ({ header, steps, containerId }) => {
   );
 };
 
-export default StepsCards;
+export default StepsCardsComponent;

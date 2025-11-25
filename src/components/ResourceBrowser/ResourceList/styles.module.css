@@ -1,0 +1,228 @@
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Row shell */
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: 10px;
+  background: var(--surface, #fff);
+}
+
+/* Actions bar (persistent on the right) */
+.actionsBar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.actionButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: 8px;
+  background: var(--surface-2, #f8f9fa);
+  color: var(--text, #222);
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.actionButton:hover {
+  background: var(--surface-3, #f1f3f5);
+  border-color: var(--border-strong, #d0d7de);
+}
+
+.actionLabel {
+  font-size: 0.9rem;
+}
+
+/* Content area */
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--text, #222);
+}
+
+.titleLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.titleLink:hover { text-decoration: underline; }
+
+.metaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--border, #e0e0e0);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: var(--muted, #555);
+  background: var(--surface-2, #f8f9fa);
+}
+
+.chipAvatar {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--muted, #666);
+  background: var(--surface-3, #eef2f6);
+  border: 1px solid var(--border, #dce3ea);
+}
+
+.chipText {
+  line-height: 1;
+}
+
+/* Origin chip (HydroShare) pastel treatment */
+.originChip {
+  border-color: rgba(14,165,233,0.45);
+  background: rgba(14,165,233,0.12);
+  color: #082f49; /* very dark blue for strong contrast */
+}
+
+.description {
+  margin: 0.25rem 0 0;
+  font-size: 1rem;
+  color: var(--muted, #666);
+  line-height: 1.5;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;      /* limit to 3 lines */
+  line-clamp: 3;              /* standard property for compatibility */
+  -webkit-box-orient: vertical;
+}
+
+/* Skeleton placeholders */
+.titlePlaceholder,
+.authorsPlaceholder,
+.descPlaceholder {
+  background: linear-gradient(
+    90deg,
+    var(--skeleton-base, #e0e0e0) 25%,
+    var(--skeleton-shine, #f0f0f0) 50%,
+    var(--skeleton-base, #e0e0e0) 75%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s infinite;
+  border-radius: 6px;
+}
+
+.titlePlaceholder {
+  width: 60%;
+  height: 1.6rem;
+}
+
+.authorsPlaceholder {
+  width: 40%;
+  height: 1rem;
+  margin-top: 0.4rem;
+}
+
+.descPlaceholder {
+  width: 100%;
+  height: 3.2rem;
+  margin-top: 0.4rem;
+}
+
+@keyframes shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .row { flex-direction: column; }
+  .actionsBar { margin-top: 0.5rem; }
+}
+
+/* Dark mode – respect Docusaurus theme toggle */
+html[data-theme='dark'] .row {
+  background: var(--surface, #222);
+  border-color: var(--border, #444);
+}
+
+html[data-theme='dark'] .title {
+  color: var(--text, #e6e6e6);
+}
+
+html[data-theme='dark'] .description {
+  color: var(--muted, #aaa);
+}
+
+html[data-theme='dark'] .chip {
+  border-color: var(--border, #444);
+  background: var(--surface-2, #2a2a2a);
+  color: var(--muted, #c2c2c2);
+}
+
+html[data-theme='dark'] .chipAvatar {
+  background: var(--surface-3, #3a3a3a);
+  border-color: var(--border, #555);
+  color: var(--muted, #ddd);
+}
+
+html[data-theme='dark'] .originChip {
+  border-color: rgba(125,211,252,0.35);
+  background: #0b1f2a; /* darker background for contrast */
+  color: #ffffff; /* white for contrast */
+}
+
+html[data-theme='dark'] .titlePlaceholder,
+html[data-theme='dark'] .authorsPlaceholder,
+html[data-theme='dark'] .descPlaceholder {
+  background: linear-gradient(
+    90deg,
+    var(--skeleton-base, #333) 25%,
+    var(--skeleton-shine, #444) 50%,
+    var(--skeleton-base, #333) 75%
+  );
+  background-size: 400% 100%;
+}
+
+html[data-theme='dark'] .actionButton {
+  background: var(--surface-2, #2a2a2a);
+  border-color: var(--border, #444);
+  color: var(--text, #e6e6e6);
+}
+
+html[data-theme='dark'] .actionButton:hover {
+  background: var(--surface-3, #333);
+  border-color: var(--border-strong, #555);
+}

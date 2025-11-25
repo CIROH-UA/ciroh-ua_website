@@ -172,3 +172,27 @@ quinn:
   title: Programmer Analyst
   url: https://www.linkedin.com/in/linked--quinn/
   image_url: https://ca.slack-edge.com/T03UUB7CE83-U072YTSNJFL-6bae7401aaac-192
+
+martyn-clark:
+  name: Martyn Clark
+  title: Professor of Hydrology at University of Calgary
+  url: https://scholar.google.com/citations?user=xFGnDqsAAAAJ&hl=en
+  image_url: /img/blog/authors/martyn-clark.jpeg
+
+matt-denno:
+  name: Matthew Denno
+  title: Senior Engineering Applications Developer at RTI International
+  url: https://www.linkedin.com/in/matthew-denno-pe-9b9316a/
+  image_url: /img/blog/authors/matt-denno.jpeg
+
+sam-lamont:
+  name: Sam Lamont
+  title: Environmental Applications Developer at RTI International
+  url: https://www.linkedin.com/in/sam-lamont-3a972813/
+  image_url: /img/blog/authors/sam-lamont.jpeg
+
+darri-eythorsson:
+  name: Darri Eythorsson
+  title: Postdoctoral Researcher at University of Calgary
+  url: https://www.linkedin.com/in/darri-eythorsson/
+  image_url: /img/blog/authors/darri-eythorsson.jpeg

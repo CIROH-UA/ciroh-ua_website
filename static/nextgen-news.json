@@ -19,6 +19,13 @@
 			},
 			{
 			"type": "NGIAB",
+			"title": "NGIAB-HPCInfra",
+			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/releases/tag/v1.2.1",
+			"release_date": "11/25/2025",
+			"contributors":1
+			},
+			{
+			"type": "NGIAB",
 			"title": "ngiab-client",
 			"link": "https://github.com/CIROH-UA/ngiab-client/releases/tag/0.1.5",
 			"release_date": "11/25/2025",

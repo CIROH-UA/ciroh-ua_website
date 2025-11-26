@@ -1,4 +1,72 @@
 {
+		"November 2025 Update": [
+			{
+				"type": "NGIAB",
+				"title": "NGIAB-data-preprocess",
+				"links": [
+				  "https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.6.6",
+				  "https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.6.5"
+				],
+				"release_date": "11/24/2025",
+				"contributors":3
+			},
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-CloudInfra",
+			"link": "https://github.com/CIROH-UA/NGIAB-CloudInfra/releases/tag/v1.7.0",
+			"release_date": "11/25/2025",
+			"contributors":1
+			},
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-HPCInfra",
+			"link": "https://github.com/CIROH-UA/NGIAB-HPCInfra/releases/tag/v1.2.1",
+			"release_date": "11/25/2025",
+			"contributors":1
+			},
+			{
+			"type": "NGIAB",
+			"title": "ngiab-client",
+			"link": "https://github.com/CIROH-UA/ngiab-client/releases/tag/0.1.5",
+			"release_date": "11/25/2025",
+			"contributors":3
+			},
+			{
+			"type": "NGIAB",
+			"title": "rust-lstm",
+			"link": "https://github.com/CIROH-UA/rust-lstm/releases/tag/v0.1.2",
+			"release_date": "11/21/2025",
+			"contributors":1
+			},
+			{
+			"type": "NRDS",
+			"title": "NGEN-DataStream",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/releases/tag/v2.0.2",
+			"release_date": "11/26/2025",
+			"contributors":2
+			},
+			{
+			"type": "NRDS",
+			"title": "ForcingProcessor",
+			"link": "https://github.com/CIROH-UA/forcingprocessor/releases/tag/v1.2.3",
+			"release_date": "11/26/2025",
+			"contributors":2
+			},
+			{
+			"type": "NRDS",
+			"title": "DataStreamCLI",
+			"link": "https://github.com/CIROH-UA/datastreamcli/releases/tag/v1.2.0",
+			"release_date": "11/26/2025",
+			"contributors":2
+			},
+			{
+			"type": "update",
+			"title": "t-route",
+			"link": "https://github.com/CIROH-UA/t-route/releases/tag/v0.3.0",
+			"release_date": "11/25/2025",
+			"contributors":3
+			}
+		],
 	"October 2025 Update": [
 			{
 			"type": "NGIAB",

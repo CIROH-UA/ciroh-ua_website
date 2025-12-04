@@ -90,7 +90,7 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 } */
- 
+
 .hidden {
 display: none !important;
 }
@@ -318,3 +318,5 @@ display: none; /* Hide light image in dark mode */
 [data-theme="dark"] .darkImage {
 display: block; /* Show dark image in dark mode */
 }
+
+@import "./tailwind.css";

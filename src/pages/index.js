@@ -20,13 +20,30 @@ function ConstellationCanvas() {
   useEffect(() => {
     const getTheme = () =>
       document.documentElement.getAttribute("data-theme") === "dark";
+
+    // Initialize once
     setIsDark(getTheme());
-    const observer = new MutationObserver(() => setIsDark(getTheme()));
+
+    // Debounced observer: some external scripts or widgets may briefly toggle
+    // the attribute; debounce so we only respond to stable changes.
+    let debounceTimer = null;
+    const observer = new MutationObserver(() => {
+      if (debounceTimer) clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        const newTheme = getTheme();
+        setIsDark(prev => (prev === newTheme ? prev : newTheme));
+      }, 250); // wait 250ms of stability before applying
+    });
+
     observer.observe(document.documentElement, {
       attributes: true,
       attributeFilter: ["data-theme"],
     });
-    return () => observer.disconnect();
+
+    return () => {
+      observer.disconnect();
+      if (debounceTimer) clearTimeout(debounceTimer);
+    };
   }, []);
 
   useEffect(() => {

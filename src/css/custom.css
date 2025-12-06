@@ -45,6 +45,18 @@
 /* DARK MODE — gradient theme    */
 /* ----------------------------- */
 
+/* Force opaque navbar in dark theme */
+[data-theme="dark"] .navbar,
+[data-theme="dark"] .navbar__inner,
+[data-theme="dark"] .navbar--fixed,
+[data-theme="dark"] .navbar--sticky {
+  background-color: #060010 !important; /* slate-900; change to preferred color */
+  opacity: 1 !important;
+  backdrop-filter: none !important;     /* disable blur/transparency */
+  background-image: none !important;    /* remove gradients/overlays */
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6); /* optional shadow for depth */
+}
+
 [data-theme='dark'] {
   --ifm-color-primary: #19a7ce;
   --ifm-color-primary-dark: #1796b9;
@@ -68,7 +80,7 @@
 
 /* Apply gradient in dark mode site-wide */
 [data-theme='dark'] body {
-  background: linear-gradient(to bottom right, #0f172a, #1e3a8a, #0f172a) !important;
+  background: #060010 !important;
   background-attachment: fixed;
   background-size: cover;
   color: var(--ifm-font-color-base);

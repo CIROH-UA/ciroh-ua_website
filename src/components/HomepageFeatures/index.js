@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import clsx from "clsx";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -10,6 +10,9 @@ import "./whyDocuhub.css";
 import Link from '@docusaurus/Link';
 import ResearcherTestimonials from './testimonial';
 import TeamMembers from './teamMembers';
+import HighlightCards from './highlightCards'
+import Hyperspeed from '../Reactbits/hyperSpeed'
+
 
 
 
@@ -309,6 +312,75 @@ const Card = ({ title, image, description, link }) => (
   </div>
 );
 
+const HyperspeedSection = () => {
+  const speedRef = useRef(2);
+  const [key, setKey] = useState(0);
+
+  const handleMouseEnter = () => {
+    speedRef.current = 4;
+  };
+
+  const handleMouseLeave = () => {
+    speedRef.current = 4;
+  };
+
+  return (
+    <div className="tw-relative tw-w-full tw-h-full">
+      <div
+        className="tw-w-full tw-h-full tw-rounded-2xl tw-animate-fadeIn tw-animate-float-slow tw-overflow-hidden"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <Hyperspeed
+          effectOptions={{
+            onSpeedUp: () => { },
+            onSlowDown: () => { },
+            distortion: 'mountainDistortion',
+            length: 400,
+            roadWidth: 9,
+            islandWidth: 2,
+            lanesPerRoad: 3,
+            fov: 90,
+            fovSpeedUp: 150,
+            speedUp: 2,
+            carLightsFade: 0.4,
+            totalSideLightSticks: 50,
+            lightPairsPerRoadWay: 50,
+            shoulderLinesWidthPercentage: 0.05,
+            brokenLinesWidthPercentage: 0.1,
+            brokenLinesLengthPercentage: 0.5,
+            lightStickWidth: [0.12, 0.5],
+            lightStickHeight: [1.3, 1.7],
+
+            movingAwaySpeed: [60, 80],
+            movingCloserSpeed: [-120, -160],
+            carLightsLength: [400 * 0.05, 400 * 0.15],
+            carLightsRadius: [0.05, 0.14],
+            carWidthPercentage: [0.3, 0.5],
+            carShiftX: [-0.2, 0.2],
+            carFloorSeparation: [0.05, 1],
+            colors: {
+              roadColor: 0x080808,
+              islandColor: 0x0a0a0a,
+              background: 0x000000,
+              shoulderLines: 0x131318,
+              brokenLines: 0x131318,
+              leftCars: [0xff102a, 0xeb383e, 0xff102a],
+              rightCars: [0xdadafa, 0xbebae3, 0x8f97e4],
+              sticks: 0xdadafa
+            }
+          }}
+        />
+
+        {/* Your content goes here */}
+        <div className="tw-absolute tw-inset-0 tw-flex tw-items-center tw-justify-center tw-z-10">
+          <h1 className="tw-text-white tw-text-3xl md:tw-text-4xl tw-font-bold tw-text-center tw-drop-shadow-lg">Your Input Matters.</h1>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const impactData = [
   {
     title: "CIROH AWS Projects",
@@ -338,330 +410,360 @@ const impactData = [
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.homepageContainer}>
-      <div className="container">
-        <Carousel
-          showThumbs={false}
-          autoPlay={true}
-          stopOnHover={false}
-          useKeyboardArrows={true}
-          emulateTouch={true}
-          interval={3500}
-          infiniteLoop
-          showStatus={false}
-          showIndicators={true}
-        >
-          <div className="row">
-            <Card
-              title="Documentation"
-              image="img/graphics/documentation.png"
-              description="Dive into our comprehensive documentation to access in-depth information about various CIROH products, including but not limited to NextGen, Snow model, Tethys, and more."
-              link="/docs/products/intro"
-            />
-            <Card
-              title="Cloud Services"
-              image="img/graphics/cloud.png"
-              description="Explore our array of cloud services and offerings, where you can delve into the specifics of CIROH-AWS cloud. Learn how to gain access to this cloud infrastructure and uncover insights into working seamlessly with the 2i2c cloud services."
-              link="/docs/services/intro"
-            />
-            <Card
-              title="Policies"
-              image="img/graphics/tutorial.png"
-              description="Discover recommendations and best practices for CIROH's research, projects, and infrastructure."
-              link="/docs/policies/intro"
-            />
-          </div>
-          <div className="row">
-            <Card
-              title="NextGen In A Box"
-              image="img/logos/ngiab.png"
-              description="Utilize NextGen In A Box (NGIAB) to locally run NextGen framework. Choose specific regions or basins for analysis, control input data, and modify confiurations, all within a containerized environment."
-              link="/docs/products/ngiab/distributions/ngiab-docker"
-            />
-            <Card
-              title="AWS"
-              image="img/logos/corp/aws-circle.png"
-              description="Leverage the power of CIROH AWS Account to elevate your hydrological research. Get access to enterprise-level AWS cloud platform, and utilize AWS computing resources and scalable storage for your research."
-              link="/docs/services/cloudservices/aws"
-            />
-            <Card
-              title="Google Cloud"
-              image="img/logos/corp/google-cloud.jpg"
-              description="Explore different services and tools offered by CIROH Google Cloud. Learn how to access Google Cloud Platform (GCP) and leverage its resources for your research and projects."
-              link="/docs/services/cloudservices/google-cloud"
-            />
-          </div>
-          <div className="row">
-            <Card
-              title="CIROH-2i2c JupyterHub"
-              image="img/logos/corp/jupyterhub.jpg"
-              description="Access cloud-based JupyterHub environment on Google Cloud tailored for hydrological research. Leverage computing power with both CPU and GPU capabilities for advanced computational needs."
-              link="/docs/services/cloudservices/2i2c"
-            />
-            <Card
-              title="Pantarhei"
-              image="img/logos/pantarhei.jpg"
-              description="Access Pantarhei, a high-performance computing (HPC) cluster, to run computationally intensive hydrological models. Utilize Pantarhei to perform large-scale simulations and data processing tasks."
-              link="/docs/services/on-prem/Pantarhei"
-            />
-            <Card
-              title="CIROH Portal"
-              image="img/graphics/ciroh-synergy.jpg"
-              description="This portal enhances collaboration and innovation by providing access to interactive web apps, datasets, and learning modules, supporting CIROH and NOAA NWM researchers in advancing hydrological science."
-              link="https://portal.ciroh.org/"
-            />
-          </div>
-        </Carousel>
-      </div>
-
-      <div className={clsx("hero hero--secondary", styles.heroBanner)}>
+    <><HighlightCards />
+      <section className={styles.homepageContainer}>
         <div className="container">
-          <div className={styles.flexStart}>
-            <div className="hero-text">
-              <h1 className={styles.h1}>CONTRIBUTE</h1>
-              <br />
-              <p className={styles.heroText}>
-                We would like CIROH Consortium members to contribute to CIROH
-                DocuHub. Please contribute by adding product/project
-                documentation, tutorials, training data, or conference
-                presentations. The CIROH DocuHub repository provides a
-                collaborative platform for sharing technical
-                documentation for projects.{" "}
-                <strong>
-                  Learn more about how you can contribute and access the CIROH
-                  DocuHub repository here:
-                </strong>
-              </p>
-              <br />
+          <Carousel
+            showThumbs={false}
+            autoPlay={true}
+            stopOnHover={false}
+            useKeyboardArrows={true}
+            emulateTouch={true}
+            interval={3500}
+            infiniteLoop
+            showStatus={false}
+            showIndicators={true}
+          >
+            <div className="row">
+              <Card
+                title="Documentation"
+                image="img/graphics/documentation.png"
+                description="Dive into our comprehensive documentation to access in-depth information about various CIROH products, including but not limited to NextGen, Snow model, Tethys, and more."
+                link="/docs/products/intro" />
+              <Card
+                title="Cloud Services"
+                image="img/graphics/cloud.png"
+                description="Explore our array of cloud services and offerings, where you can delve into the specifics of CIROH-AWS cloud. Learn how to gain access to this cloud infrastructure and uncover insights into working seamlessly with the 2i2c cloud services."
+                link="/docs/services/intro" />
+              <Card
+                title="Policies"
+                image="img/graphics/tutorial.png"
+                description="Discover recommendations and best practices for CIROH's research, projects, and infrastructure."
+                link="/docs/policies/intro" />
+            </div>
+            <div className="row">
+              <Card
+                title="NextGen In A Box"
+                image="img/logos/ngiab.png"
+                description="Utilize NextGen In A Box (NGIAB) to locally run NextGen framework. Choose specific regions or basins for analysis, control input data, and modify confiurations, all within a containerized environment."
+                link="/docs/products/ngiab/distributions/ngiab-docker" />
+              <Card
+                title="AWS"
+                image="img/logos/corp/aws-circle.png"
+                description="Leverage the power of CIROH AWS Account to elevate your hydrological research. Get access to enterprise-level AWS cloud platform, and utilize AWS computing resources and scalable storage for your research."
+                link="/docs/services/cloudservices/aws" />
+              <Card
+                title="Google Cloud"
+                image="img/logos/corp/google-cloud.jpg"
+                description="Explore different services and tools offered by CIROH Google Cloud. Learn how to access Google Cloud Platform (GCP) and leverage its resources for your research and projects."
+                link="/docs/services/cloudservices/google-cloud" />
+            </div>
+            <div className="row">
+              <Card
+                title="CIROH-2i2c JupyterHub"
+                image="img/logos/corp/jupyterhub.jpg"
+                description="Access cloud-based JupyterHub environment on Google Cloud tailored for hydrological research. Leverage computing power with both CPU and GPU capabilities for advanced computational needs."
+                link="/docs/services/cloudservices/2i2c" />
+              <Card
+                title="Pantarhei"
+                image="img/logos/pantarhei.jpg"
+                description="Access Pantarhei, a high-performance computing (HPC) cluster, to run computationally intensive hydrological models. Utilize Pantarhei to perform large-scale simulations and data processing tasks."
+                link="/docs/services/on-prem/Pantarhei" />
+              <Card
+                title="CIROH Portal"
+                image="img/graphics/ciroh-synergy.jpg"
+                description="This portal enhances collaboration and innovation by providing access to interactive web apps, datasets, and learning modules, supporting CIROH and NOAA NWM researchers in advancing hydrological science."
+                link="https://portal.ciroh.org/" />
+            </div>
+          </Carousel>
+        </div>
+        {/* 
 
-              <div className={styles.flexStart}>
-                <Link
-                  className={`button button--info ${styles.col4}`}
-                  to="/contribute"
-                  style={{ textDecoration: "none", marginRight: "10px" }}
+        <MagicBento
+          textAutoHide={true}
+          enableStars={true}
+          enableSpotlight={true}
+          enableBorderGlow={true}
+          enableTilt={true}
+          enableMagnetism={true}
+          clickEffect={true}
+          spotlightRadius={300}
+          particleCount={12}
+          glowColor="132, 0, 255"
+        />
+ */}
+
+
+        <div className="tw-relative tw-z-10 tw-flex tw-justify-center tw-px-6 tw-my-24">
+
+          {/* CARD CONTAINER */}
+          <div
+            className="
+      tw-w-full tw-rounded-3xl
+      tw-border-2 tw-shadow-xl tw-transition-all tw-duration-500 tw-backdrop-blur-xl tw-bg-slate-900 tw-border-slate-700"
+          >
+
+            {/* INNER GRID */}
+            <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-14 tw-items-stretch tw-auto-rows-fr">
+
+              {/* TEXT */}
+              <div className="tw-space-y-7 tw-mx-10 tw-my-16">
+                <h1
+                  className="
+            tw-text-4xl tw-font-extrabold tw-leading-tight
+            tw-text-white
+          "
                 >
-                  How to Contribute?
-                </Link>
-                <Link
-                  className={`button button--secondary ${styles.col4}`}
-                  to="https://forms.office.com/r/5ww7qRWwwf"
-                  target="_blank"
-                  style={{ textDecoration: "none" }}
+                  Contribute
+                </h1>
+
+                <p
+                  className="
+            tw-text-lg tw-leading-relaxed
+            tw-text-white
+          "
                 >
-                  Your Feedback Matters
-                </Link>
+                  We welcome CIROH Consortium members to contribute to the CIROH DocuHub.
+                  Add documentation, tutorials, workflows, or conference presentations.
+                  The DocuHub serves as a shared platform for distributing expertise across
+                  the community.{" "}
+                  <span className="tw-font-semibold tw-text-yellow-400">
+                    Learn how you can contribute and access the CIROH Repository below.
+                  </span>
+                </p>
+
+                {/* BUTTONS */}
+                <div className="tw-flex tw-flex-wrap tw-gap-4 tw-pt-3">
+
+                  {/* BUTTON 1 */}
+                  <Link
+                    to="/contribute"
+                    className="
+              tw-inline-block tw-px-7 tw-py-3.5 tw-font-semibold tw-rounded-xl tw-shadow-lg
+              tw-transition-all tw-duration-300 tw-text-slate-900 tw-text-sm 
+
+              tw-bg-gradient-to-r tw-bg-slate-50
+              hover:tw-bg-white hover:tw-scale-105
+            "
+                  >
+                    How to Contribute?
+                  </Link>
+
+                  {/* BUTTON 2 */}
+                  <Link
+                    to="https://forms.office.com/r/5ww7qRWwwf"
+                    target="_blank"
+                    className="
+              tw-inline-block tw-px-7 tw-py-3.5 tw-font-semibold tw-rounded-xl tw-transition-all tw-duration-300
+              tw-border-2 tw-bg-transparent tw-border-white tw-text-white
+              hover:tw-bg-white hover:tw-text-slate-900
+            "
+                  >
+                    Your Feedback Matters
+                  </Link>
+
+                </div>
+              </div>
+
+              {/* IMAGE SECTION */}
+              <HyperspeedSection />
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <section className="padded-page-section-feature" id="services">
+          <div className="container-feature">
+            <h2 className="text-center-feature mt-0">Why DocuHub? Elevate Your Research Journey</h2>
+            <hr className="divider-feature" />
+            <div className="row-feature ">
+              <div className="col-lg-3-feature col-md-6-feature text-center">
+                <div className="mt-5-feature">
+                  <h3 className="h4 mb-2-feature">Knowledge Hub</h3>
+                  <img src="img/graphics/why-docuhub-1.png" alt="docuhub image"></img>
+                  <p className="text-muted-feature mb-0 mt-2">Access a centralized repository of research and educational resources to enhance your hydrological expertise.</p>
+                </div>
+              </div>
+              <div className="col-lg-3-feature col-md-6-feature text-center">
+                <div className="mt-5-feature">
+                  <h3 className="h4 mb-2-feature">Research & Growth</h3>
+                  <img src="img/graphics/why-docuhub-2.png" alt="docuhub image"></img>
+                  <p className="text-muted-feature mb-0 mt-2">Explore cutting-edge research and innovative projects driving innovation in hydrology.</p>
+                </div>
+              </div>
+              <div className="col-lg-3-feature col-md-6-feature text-center">
+                <div className="mt-5-feature">
+                  <h3 className="h4 mb-2-feature">Blog & News</h3>
+                  <img src="img/graphics/why-docuhub-3.png" alt="docuhub image"></img>
+                  <p className="text-muted-feature mb-0 mt-2">Stay updated with the latest news, community insights, and updates about CIROH projects.</p>
+                </div>
+              </div>
+              <div className="col-lg-3-feature col-md-6-feature text-center">
+                <div className="mt-5-feature">
+                  <h3 className="h4 mb-2-feature">Education & Training</h3>
+                  <img src="img/graphics/why-docuhub-4.png" alt="docuhub image"></img>
+                  <p className="text-muted-feature mb-0 mt-2">Elevate your skills with tutorials, training programs, and educational materials tailored for hydrological research.</p>
+                </div>
+              </div>
+              <div className="col-lg-3-feature col-md-6-feature text-center">
+                <div className="mt-5-feature">
+                  <h3 className="h4 mb-2-feature">CyberInfrastructure</h3>
+                  <img src="img/graphics/why-docuhub-5.png" alt="docuhub image"></img>
+                  <p className="text-muted-feature mb-0 mt-2">Leverage cloud infrastuctures, including AWS, GCP, CIROH-2i2c JupyterHub, and on-premises infrastructures tailored to hydrological research needs.</p>
+                </div>
+              </div>
+              <div className="col-lg-3-feature col-md-6-feature text-center">
+                <div className="mt-5-feature">
+                  <h3 className="h4 mb-2-feature">Global Collaboration</h3>
+                  <img src="img/graphics/why-docuhub-6.png" alt="docuhub image"></img>
+                  <p className="text-muted-feature mb-0 mt-2">Join a global network of researchers and collaborators to share knowledge, resources, and innovations within the CIROH community.</p>
+                </div>
               </div>
             </div>
-            <img
-              src="./img/graphics/contribute.png"
-              alt="Contribute to CIROH DocuHub"
-              class={styles.heroimage}
-            />
           </div>
-        </div>
-      </div>
-
-      <section className="padded-page-section-feature" id="services">
-            <div className="container-feature">
-                <h2 className="text-center-feature mt-0">Why DocuHub? Elevate Your Research Journey</h2>
-                <hr className="divider-feature" />
-                <div className="row-feature ">
-                    <div className="col-lg-3-feature col-md-6-feature text-center">
-                        <div className="mt-5-feature">
-                            <h3 className="h4 mb-2-feature">Knowledge Hub</h3>
-                            <img src="img/graphics/why-docuhub-1.png" alt="docuhub image"></img>
-                            <p className="text-muted-feature mb-0 mt-2">Access a centralized repository of research and educational resources to enhance your hydrological expertise.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3-feature col-md-6-feature text-center">
-                        <div className="mt-5-feature">
-                            <h3 className="h4 mb-2-feature">Research & Growth</h3>
-                            <img src="img/graphics/why-docuhub-2.png" alt="docuhub image"></img>
-                            <p className="text-muted-feature mb-0 mt-2">Explore cutting-edge research and innovative projects driving innovation in hydrology.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3-feature col-md-6-feature text-center">
-                        <div className="mt-5-feature">
-                            <h3 className="h4 mb-2-feature">Blog & News</h3>
-                            <img src="img/graphics/why-docuhub-3.png" alt="docuhub image"></img>
-                            <p className="text-muted-feature mb-0 mt-2">Stay updated with the latest news, community insights, and updates about CIROH projects.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3-feature col-md-6-feature text-center">
-                        <div className="mt-5-feature">
-                            <h3 className="h4 mb-2-feature">Education & Training</h3>
-                            <img src="img/graphics/why-docuhub-4.png" alt="docuhub image"></img>
-                            <p className="text-muted-feature mb-0 mt-2">Elevate your skills with tutorials, training programs, and educational materials tailored for hydrological research.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3-feature col-md-6-feature text-center">
-                        <div className="mt-5-feature">
-                            <h3 className="h4 mb-2-feature">CyberInfrastructure</h3>
-                            <img src="img/graphics/why-docuhub-5.png" alt="docuhub image"></img>
-                            <p className="text-muted-feature mb-0 mt-2">Leverage cloud infrastuctures, including AWS, GCP, CIROH-2i2c JupyterHub, and on-premises infrastructures tailored to hydrological research needs.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3-feature col-md-6-feature text-center">
-                        <div className="mt-5-feature">
-                            <h3 className="h4 mb-2-feature">Global Collaboration</h3>
-                            <img src="img/graphics/why-docuhub-6.png" alt="docuhub image"></img>
-                            <p className="text-muted-feature mb-0 mt-2">Join a global network of researchers and collaborators to share knowledge, resources, and innovations within the CIROH community.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
         <TeamMembers />
-         <ResearcherTestimonials />
-      <section
-      className={`bsb-cta-2 py-5 ${styles.features}`}
-      style={{
-        width: "100%", // Ensure the section spans the full width
-        margin: 0, // Remove default margin
-        padding: 0, // Remove default padding if necessary
-      }}
-    >
-      <div
-        className="card rounded-3 overflow-hidden text-center bsb-overlay"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./img/graphics/research-image.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "local",
-          width: "100%", // Ensure the card spans the full width
-          margin: 0, // Remove default margin
-          padding: 0, // Remove default padding if necessary
-          "--bsb-overlay-opacity": ".9",
-          "--bsb-overlay-bg-color": "var(--bs-primary-rgb)",
-        }}
-      >
-        <div className="card-body">
-          <div className="row align-items-center justify-content-center">
-            <div className="col-12 col-md-10 col-xl-8 col-xxl-7">
-              <h1 className="h5 mb-4 text-white text-uppercase">Our Research</h1>
-              <h2 className="display-4 text-white mb-5">
-                Our research focuses on advancing hydrological science through
-                innovative research, collaboration, and technology development.
-              </h2>
-              <Link
-                to="https://ciroh.ua.edu/research/"
-                className={`button button--secondary ${styles.col6}`}
-              >
-                Learn More
-              </Link>
+        <ResearcherTestimonials />
+        <section
+          className={`bsb-cta-2 py-5 ${styles.features}`}
+          style={{
+            width: "100%", // Ensure the section spans the full width
+            margin: 0, // Remove default margin
+            padding: 0, // Remove default padding if necessary
+          }}
+        >
+          <div
+            className="card rounded-3 overflow-hidden text-center bsb-overlay"
+            style={{
+              backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('./img/graphics/research-image.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundAttachment: "local",
+              width: "100%", // Ensure the card spans the full width
+              margin: 0, // Remove default margin
+              padding: 0, // Remove default padding if necessary
+              "--bsb-overlay-opacity": ".9",
+              "--bsb-overlay-bg-color": "var(--bs-primary-rgb)",
+            }}
+          >
+            <div className="card-body">
+              <div className="row align-items-center justify-content-center">
+                <div className="col-12 col-md-10 col-xl-8 col-xxl-7">
+                  <h1 className="h5 mb-4 text-white text-uppercase">Our Research</h1>
+                  <h2 className="display-4 text-white mb-5">
+                    Our research focuses on advancing hydrological science through
+                    innovative research, collaboration, and technology development.
+                  </h2>
+                  <Link
+                    to="https://ciroh.ua.edu/research/"
+                    className={`button button--secondary ${styles.col6}`}
+                  >
+                    Learn More
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className={clsx("hero hero--primary", styles.heroBanner)}>
+          <div className="container">
+            <div className={styles.flexStart}>
+              <div className="hero-text">
+                <h1 className={styles.h1}>Cyberinfrastructure & Community NextGen Monthly Office Hours</h1>
+                <br />
+
+                <Link
+                  className={`button button--secondary ${styles.col4}`}
+                  href="/docs/products/ngiab/office-hours"
+                  style={{ textDecoration: "none", marginRight: "10px" }}
+                >
+                  Learn More
+                </Link>
+              </div>
+              <img
+                src="./img/graphics/infra.png"
+                alt="DocuHub Office Hours"
+                class={styles.heroimage} />
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-      <div className={clsx("hero hero--primary", styles.heroBanner)}>
-        <div className="container">
-          <div className={styles.flexStart}>
-            <div className="hero-text">
-              <h1 className={styles.h1}>Cyberinfrastructure & Community NextGen Monthly Office Hours</h1>
-              <br />
-
-              <Link
-                className={`button button--secondary ${styles.col4}`}
-                href="/docs/products/ngiab/office-hours"
-                style={{ textDecoration: "none", marginRight: "10px" }}
-              >
-                Learn More
-              </Link>
-            </div>
-            <img
-              src="./img/graphics/infra.png"
-              alt="DocuHub Office Hours"
-              class={styles.heroimage}
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className="container" style={{ width: "100%" }}>
-        <div className={styles.logoBackground}>
-          <div className="container-fluid">
-            <div className="col col--12">
-              <div className={styles.heading}>Consortium Sponsors</div>
-              <div className={styles.flexListContainer}>
-                { SponsorList.map(sponsor => 
-                  <Link to={sponsor.link} className={styles.sponsorwrapper} align="center">
+        <div className="container" style={{ width: "100%" }}>
+          <div className={styles.logoBackground}>
+            <div className="container-fluid">
+              <div className="col col--12">
+                <div className={styles.heading}>Consortium Sponsors</div>
+                <div className={styles.flexListContainer}>
+                  {SponsorList.map(sponsor => <Link to={sponsor.link} className={styles.sponsorwrapper} align="center">
                     <img
                       className={styles.sponsorcontainer}
                       src={sponsor.logo}
                       alt={sponsor.name}
                       width={sponsor.width}
-                      height={sponsor.height}
-                    />
+                      height={sponsor.height} />
                   </Link>
-                )}
+                  )}
+                </div>
               </div>
-            </div>
 
-            <div className="row">
-              <div className="col">
-                <div className={styles.heading}>Consortium Members</div>
-                <div className={styles.flexListContainer}>
-                  { MemberList.map(member => 
-                    <Link to={member.link} className={styles.imagewrapper} align="center">
+              <div className="row">
+                <div className="col">
+                  <div className={styles.heading}>Consortium Members</div>
+                  <div className={styles.flexListContainer}>
+                    {MemberList.map(member => <Link to={member.link} className={styles.imagewrapper} align="center">
                       <img
                         className={styles.imagecontainer}
                         src={member.logo}
                         alt={member.name}
                         width={member.width}
-                        height={member.height}
-                      />
+                        height={member.height} />
                     </Link>
-                  )}
+                    )}
+                  </div>
                 </div>
-              </div>
 
-              <div className="col">
-                <div className={styles.heading}>Consortium Partners</div>
-                <div className={styles.flexListContainer}>
-                  { PartnerList.map(partner => 
-                    <Link to={partner.link} className={styles.imagewrapper} align="center">
+                <div className="col">
+                  <div className={styles.heading}>Consortium Partners</div>
+                  <div className={styles.flexListContainer}>
+                    {PartnerList.map(partner => <Link to={partner.link} className={styles.imagewrapper} align="center">
                       <img
                         className={styles.imagecontainer}
                         src={partner.logo}
                         alt={partner.name}
                         width={partner.width}
-                        height={partner.height}
-                      />
+                        height={partner.height} />
                     </Link>
-                  )}
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className={styles.longwrapper}>
-            <div style={{ textAlign: "center" }}>
-              <img
-                alt="noaaImage"
-                src="img/logos/noaa.png"
-                style={{ maxHeight: '145px', width: 'auto', padding: '1rem' }}
-              />
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <img
-                alt="awiImage"
-                src="img/logos/awi.png"
-                style={{ maxHeight: '70px', width: 'auto', padding: '1rem' }}
-              />
-            </div>
-            <div style={{ textAlign: "center" }}>
-              <img
-                alt="cirohImage"
-                src="img/logos/ciroh-light.png"
-                style={{ maxHeight: '145px', width: 'auto', padding: '1rem' }}
-              />
+            <div className={styles.longwrapper}>
+              <div style={{ textAlign: "center" }}>
+                <img
+                  alt="noaaImage"
+                  src="img/logos/noaa.png"
+                  style={{ maxHeight: '145px', width: 'auto', padding: '1rem' }} />
+              </div>
+              <div style={{ textAlign: "center" }}>
+                <img
+                  alt="awiImage"
+                  src="img/logos/awi.png"
+                  style={{ maxHeight: '70px', width: 'auto', padding: '1rem' }} />
+              </div>
+              <div style={{ textAlign: "center" }}>
+                <img
+                  alt="cirohImage"
+                  src="img/logos/ciroh-light.png"
+                  style={{ maxHeight: '145px', width: 'auto', padding: '1rem' }} />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section></>
   );
 }

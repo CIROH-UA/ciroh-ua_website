@@ -51,7 +51,7 @@ export default function TeamMembers() {
 
       <div className="team-grid-list">
         {team.map((member, index) => (
-          <div className="profile-card" key={index}>
+          <div className="tw-bg-slate-100 tw-text-black dark:tw-bg-slate-900 dark:tw-text-blue-800 profile-card" key={index}>
             <div className="profile-img-wrapper">
               {member.image ? (
                 <img
@@ -65,23 +65,39 @@ export default function TeamMembers() {
             </div>
 
             <div className="card-content">
-              <h3 className="profile-name">{member.name}</h3>
-              <p className="profile-role">{member.role}</p>
+              <h3 className="tw-text-blue-900 dark:tw-text-cyan-400 profile-name">
+                {member.name}
+              </h3>
 
-              {/* LINKEDIN BUTTON WITH IMAGE */}
+              <p className="tw-text-blue-700 dark:tw-text-white profile-role">
+                {member.role}
+              </p>
+
+              {/* LINKEDIN BUTTON */}
               <a
                 href={member.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="linkedin-btn"
+                className="tw-inline-flex tw-items-center tw-justify-center tw-mt-3"
               >
+                {/* Light mode: Blue icon */}
                 <img
-                  src="https://logospng.org/download/linkedin/logo-linkedin-icon-1536.png"
+                  src="/img/socials/linkedin_blue.svg"
                   alt="LinkedIn"
-                  className="linkedin-icon-img"
+                  className="tw-w-8 tw-h-8 tw-block dark:tw-hidden"
                 />
+
+                {/* Dark mode: White icon */}
+                <img
+                  src="/img/socials/linkedin_light.svg"
+                  alt="LinkedIn"
+                  className="tw-w-8 tw-h-8 tw-hidden dark:tw-block"
+                />
+
+
               </a>
             </div>
+
           </div>
         ))}
       </div>

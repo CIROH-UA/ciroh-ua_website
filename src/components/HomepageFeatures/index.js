@@ -540,7 +540,7 @@ export default function HomepageFeatures() {
                     to="/contribute"
                     className="
               tw-inline-block tw-px-7 tw-py-3.5 tw-font-semibold tw-rounded-xl tw-shadow-lg
-              tw-transition-all tw-duration-300 tw-text-slate-900 tw-text-sm 
+              tw-transition-all tw-duration-300 tw-text-slate-900 tw-text-sm tw-no-underline
 
               tw-bg-gradient-to-r tw-bg-slate-50
               hover:tw-bg-white hover:tw-scale-105
@@ -554,7 +554,7 @@ export default function HomepageFeatures() {
                     to="https://forms.office.com/r/5ww7qRWwwf"
                     target="_blank"
                     className="
-              tw-inline-block tw-px-7 tw-py-3.5 tw-font-semibold tw-rounded-xl tw-transition-all tw-duration-300
+              tw-inline-block tw-px-7 tw-py-3.5 tw-font-semibold tw-rounded-xl tw-transition-all tw-duration-300 tw-no-underline
               tw-border-2 tw-bg-transparent tw-border-white tw-text-white
               hover:tw-bg-white hover:tw-text-slate-900
             "

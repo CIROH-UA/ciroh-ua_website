@@ -68,14 +68,14 @@
     transform: translateY(-15px);
   }
 }
-/* DARK MODE — FORCE WHITE TEXT IN HERO SECTION */
+/* DARK MODE — FORCE WHITE TEXT IN HERO SECTION
 [data-theme='dark'] .heroBanner h1,
 [data-theme='dark'] .heroBanner h2,
 [data-theme='dark'] .heroBanner p,
 [data-theme='dark'] .heroBanner span,
 [data-theme='dark'] .heroBanner div {
-  color: white !important;
-}
+  color: white;
+} */
 
 /* Title and Subtitle Styles */
 .heroTitle {

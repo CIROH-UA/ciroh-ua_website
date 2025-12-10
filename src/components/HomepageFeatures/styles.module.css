@@ -37,7 +37,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    background-color: var(--consortium-light-color);
   }
   
   /* Hover effects */
@@ -80,12 +79,7 @@
     align-items: center;
   }
   
-  /* Dark mode styles */
-  [data-theme='dark'] .imagewrapper,
-  [data-theme='dark'] .sponsorwrapper,
-  [data-theme='dark'] .longwrapper {
-    background-color: var(--consortium-dark-color);
-  }
+
   
   /* Image containers */
   .imagecontainer {

@@ -12,9 +12,68 @@ import ResearcherTestimonials from './testimonial';
 import TeamMembers from './teamMembers';
 import HighlightCards from './highlightCards'
 import Hyperspeed from '../Reactbits/hyperSpeed'
+import CardCarousel from "./CardCarousel";
+import CardGridSection from "./cardGrid";
+import { cardGridItems } from "./cardGridItems";
 
 
 
+const carouselCards = [
+  {
+    title: "Documentation",
+    image: "img/graphics/documentation.png",
+    description: "Dive into our comprehensive documentation to access in-depth information about various CIROH products, including but not limited to NextGen, Snow model, Tethys, and more.",
+    link: "/docs/products/intro"
+  },
+  {
+    title: "Cloud Services",
+    image: "img/graphics/cloud.png",
+    description: "Explore our array of cloud services and offerings, where you can delve into the specifics of CIROH-AWS cloud. Learn how to gain access to this cloud infrastructure and uncover insights into working seamlessly with the 2i2c cloud services.",
+    link: "/docs/services/intro"
+  },
+  {
+    title: "Policies",
+    image: "img/graphics/tutorial.png",
+    description: "Discover recommendations and best practices for CIROH's research, projects, and infrastructure.",
+    link: "/docs/policies/intro"
+  },
+  {
+    title: "NextGen In A Box",
+    image: "img/logos/ngiab.png",
+    description: "Utilize NextGen In A Box (NGIAB) to locally run NextGen framework. Choose specific regions or basins for analysis, control input data, and modify confiurations, all within a containerized environment.",
+    link: "/docs/products/ngiab/distributions/ngiab-docker"
+  },
+  {
+    title: "AWS",
+    image: "img/logos/corp/aws-circle.png",
+    description: "Leverage the power of CIROH AWS Account to elevate your hydrological research. Get access to enterprise-level AWS cloud platform, and utilize AWS computing resources and scalable storage for your research.",
+    link: "/docs/services/cloudservices/aws"
+  },
+  {
+    title: "Google Cloud",
+    image: "img/logos/corp/google-cloud.jpg",
+    description: "Explore different services and tools offered by CIROH Google Cloud. Learn how to access Google Cloud Platform (GCP) and leverage its resources for your research and projects.",
+    link: "/docs/services/cloudservices/google-cloud"
+  },
+  {
+    title: "CIROH-2i2c JupyterHub",
+    image: "img/logos/corp/jupyterhub.jpg",
+    description: "Access cloud-based JupyterHub environment on Google Cloud tailored for hydrological research. Leverage computing power with both CPU and GPU capabilities for advanced computational needs.",
+    link: "/docs/services/cloudservices/2i2c"
+  },
+  {
+    title: "Pantarhei",
+    image: "img/logos/pantarhei.jpg",
+    description: "Access Pantarhei, a high-performance computing (HPC) cluster, to run computationally intensive hydrological models. Utilize Pantarhei to perform large-scale simulations and data processing tasks.",
+    link: "/docs/services/on-prem/Pantarhei"
+  },
+  {
+    title: "CIROH Portal",
+    image: "img/graphics/ciroh-synergy.jpg",
+    description: "This portal enhances collaboration and innovation by providing access to interactive web apps, datasets, and learning modules, supporting CIROH and NOAA NWM researchers in advancing hydrological science.",
+    link: "https://portal.ciroh.org/"
+  }
+];
 
 const ImpactItem = ({ title, count, imageSrc, users }) => (
   <div className={styles.impactItem}>
@@ -413,85 +472,8 @@ export default function HomepageFeatures() {
     <><HighlightCards />
       <section className={styles.homepageContainer}>
         <div className="container">
-          <Carousel
-            showThumbs={false}
-            autoPlay={true}
-            stopOnHover={false}
-            useKeyboardArrows={true}
-            emulateTouch={true}
-            interval={3500}
-            infiniteLoop
-            showStatus={false}
-            showIndicators={true}
-          >
-            <div className="row">
-              <Card
-                title="Documentation"
-                image="img/graphics/documentation.png"
-                description="Dive into our comprehensive documentation to access in-depth information about various CIROH products, including but not limited to NextGen, Snow model, Tethys, and more."
-                link="/docs/products/intro" />
-              <Card
-                title="Cloud Services"
-                image="img/graphics/cloud.png"
-                description="Explore our array of cloud services and offerings, where you can delve into the specifics of CIROH-AWS cloud. Learn how to gain access to this cloud infrastructure and uncover insights into working seamlessly with the 2i2c cloud services."
-                link="/docs/services/intro" />
-              <Card
-                title="Policies"
-                image="img/graphics/tutorial.png"
-                description="Discover recommendations and best practices for CIROH's research, projects, and infrastructure."
-                link="/docs/policies/intro" />
-            </div>
-            <div className="row">
-              <Card
-                title="NextGen In A Box"
-                image="img/logos/ngiab.png"
-                description="Utilize NextGen In A Box (NGIAB) to locally run NextGen framework. Choose specific regions or basins for analysis, control input data, and modify confiurations, all within a containerized environment."
-                link="/docs/products/ngiab/distributions/ngiab-docker" />
-              <Card
-                title="AWS"
-                image="img/logos/corp/aws-circle.png"
-                description="Leverage the power of CIROH AWS Account to elevate your hydrological research. Get access to enterprise-level AWS cloud platform, and utilize AWS computing resources and scalable storage for your research."
-                link="/docs/services/cloudservices/aws" />
-              <Card
-                title="Google Cloud"
-                image="img/logos/corp/google-cloud.jpg"
-                description="Explore different services and tools offered by CIROH Google Cloud. Learn how to access Google Cloud Platform (GCP) and leverage its resources for your research and projects."
-                link="/docs/services/cloudservices/google-cloud" />
-            </div>
-            <div className="row">
-              <Card
-                title="CIROH-2i2c JupyterHub"
-                image="img/logos/corp/jupyterhub.jpg"
-                description="Access cloud-based JupyterHub environment on Google Cloud tailored for hydrological research. Leverage computing power with both CPU and GPU capabilities for advanced computational needs."
-                link="/docs/services/cloudservices/2i2c" />
-              <Card
-                title="Pantarhei"
-                image="img/logos/pantarhei.jpg"
-                description="Access Pantarhei, a high-performance computing (HPC) cluster, to run computationally intensive hydrological models. Utilize Pantarhei to perform large-scale simulations and data processing tasks."
-                link="/docs/services/on-prem/Pantarhei" />
-              <Card
-                title="CIROH Portal"
-                image="img/graphics/ciroh-synergy.jpg"
-                description="This portal enhances collaboration and innovation by providing access to interactive web apps, datasets, and learning modules, supporting CIROH and NOAA NWM researchers in advancing hydrological science."
-                link="https://portal.ciroh.org/" />
-            </div>
-          </Carousel>
+          <CardCarousel cards={carouselCards} />
         </div>
-        {/* 
-
-        <MagicBento
-          textAutoHide={true}
-          enableStars={true}
-          enableSpotlight={true}
-          enableBorderGlow={true}
-          enableTilt={true}
-          enableMagnetism={true}
-          clickEffect={true}
-          spotlightRadius={300}
-          particleCount={12}
-          glowColor="132, 0, 255"
-        />
- */}
 
 
         <div className="tw-relative tw-z-10 tw-flex tw-justify-center tw-px-6 tw-my-24">
@@ -572,9 +554,14 @@ export default function HomepageFeatures() {
           </div>
         </div>
 
+        <div className="ciroh-cards-section">
+          <CardGridSection items={cardGridItems} />
+        </div>
 
 
-        <section className="padded-page-section-feature" id="services">
+
+
+        {/* <section className="padded-page-section-feature" id="services">
           <div className="container-feature">
             <h2 className="text-center-feature mt-0">Why DocuHub? Elevate Your Research Journey</h2>
             <hr className="divider-feature" />
@@ -623,9 +610,108 @@ export default function HomepageFeatures() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <TeamMembers />
         <ResearcherTestimonials />
+
+        <section className="tw-relative tw-overflow-hidden tw-py-24 tw-bg-slate-100 dark:tw-bg-slate-900   tw-text-blue-800 dark:tw-text-white tw-rounded-2xl tw-no-underline">
+
+          {/* Soft gradient overlay */}
+          <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-blue-50/50 dark:tw-from-slate-800/40 tw-to-transparent tw-pointer-events-none"></div>
+
+          <div className="tw-container tw-mx-auto tw-flex tw-px-5 tw-items-center tw-justify-center tw-flex-col tw-relative tw-z-10">
+
+            {/* IMAGE WITH SHIMMER + FLOAT */}
+            <div className="image-container tw-lg:w-2/6 tw-md:w-3/6 tw-w-5/6 tw-mb-16 tw-rounded-2xl tw-shadow-2xl tw-animate-fade-in-scale">
+              <img
+                src="https://dummyimage.com/720x600/3b82f6/ffffff&text=Research+Innovation"
+                alt="research hero"
+                className="tw-w-full tw-object-cover tw-object-center tw-rounded-2xl"
+              />
+            </div>
+
+            {/* TEXT BLOCK */}
+            <div className="tw-text-center tw-lg:w-2/3 tw-w-full">
+
+              {/* Tag */}
+              <div className="tw-inline-block tw-mb-6 tw-animate-fade-in-up">
+                <span className="tw-bg-blue-100 dark:tw-bg-blue-900/40 tw-text-blue-800 dark:tw-text-blue-300 tw-text-sm tw-font-semibold tw-px-4 tw-py-1.5 tw-rounded-full">
+                  Innovation & Discovery
+                </span>
+              </div>
+
+              {/* TITLE */}
+              <h2
+                className="
+          tw-text-5xl md:tw-text-6xl tw-font-extrabold 
+          tw-text-blue-800 dark:tw-text-white 
+          tw-mb-6 tw-leading-tight 
+          tw-animate-fade-in-up tw-animate-delay-200
+        "
+              >
+                Our Research
+              </h2>
+
+              {/* Highlight Box */}
+              <div className="highlight-box tw-p-6 tw-rounded-xl tw-mb-8 tw-animate-fade-in-up tw-animate-delay-400">
+                <p className="tw-text-xl sm:tw-text-2xl tw-leading-relaxed tw-max-w-2xl tw-text-slate-700 dark:tw-text-gray-300 tw-mx-auto">
+                  Our research focuses on advancing hydrological science through{" "}
+                  <span className="tw-font-semibold tw-text-blue-700 dark:tw-text-cyan-400">innovative research</span>,{" "}
+                  <span className="tw-font-semibold tw-text-blue-700 dark:tw-text-cyan-400">collaboration</span>, and{" "}
+                  <span className="tw-font-semibold tw-text-blue-700 dark:tw-text-cyan-400">technology development</span>.
+                </p>
+              </div>
+
+              {/* CTA */}
+              <div className="tw-flex tw-justify-center tw-animate-fade-in-up tw-animate-delay-600">
+                <a
+                  href="https://ciroh.ua.edu/research/"
+                  className="
+            tw-inline-flex tw-items-center 
+            tw-text-white tw-bg-blue-600 tw-border-0 
+            tw-py-4 tw-px-8 
+            tw-rounded-lg tw-text-lg tw-font-semibold
+            hover:tw-bg-blue-800
+            dark:tw-bg-white dark:tw-text-slate-900 dark:hover:tw-bg-slate-300
+            btn-glow tw-transition-all tw-group tw-no-underline"
+                >
+                  Learn More
+                  <svg
+                    className="tw-w-5 tw-h-5 tw-ml-2 group-hover:tw-translate-x-1 tw-transition-transform"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+              </div>
+
+              {/* STATS SECTION */}
+              <div className="tw-mt-12 tw-grid tw-grid-cols-3 tw-gap-6 tw-max-w-2xl tw-mx-auto tw-animate-fade-in-up tw-animate-delay-600">
+
+                <div className="tw-text-center tw-p-4 tw-bg-blue-800 dark:tw-bg-white tw-rounded-xl tw-shadow-md hover:tw-shadow-xl tw-transition-shadow floating">
+                  <div className="tw-text-3xl tw-font-bold tw-text-white dark:tw-text-slate-900 tw-mb-1">100+</div>
+                  <div className="tw-text-sm tw-text-gray-50 dark:tw-text-slate-800">Research Projects</div>
+                </div>
+
+                <div className="tw-text-center tw-p-4 tw-bg-blue-800 dark:tw-bg-white tw-rounded-xl tw-shadow-md hover:tw-shadow-xl tw-transition-shadow floating">
+                  <div className="tw-text-3xl tw-font-bold tw-text-white dark:tw-text-slate-900 tw-mb-1">50+</div>
+                  <div className="tw-text-sm tw-text-gray-50 dark:tw-text-slate-800">Collaborators</div>
+                </div>
+
+                <div className="tw-text-center tw-p-4 tw-bg-blue-800 dark:tw-bg-white tw-rounded-xl tw-shadow-md hover:tw-shadow-xl tw-transition-shadow floating">
+                  <div className="tw-text-3xl tw-font-bold tw-text-white dark:tw-text-slate-900 tw-mb-1">25+</div>
+                  <div className="tw-text-sm tw-text-gray-50 dark:tw-text-slate-800">Publications</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+
         <section
           className={`bsb-cta-2 py-5 ${styles.features}`}
           style={{
@@ -648,122 +734,175 @@ export default function HomepageFeatures() {
               "--bsb-overlay-bg-color": "var(--bs-primary-rgb)",
             }}
           >
-            <div className="card-body">
-              <div className="row align-items-center justify-content-center">
-                <div className="col-12 col-md-10 col-xl-8 col-xxl-7">
-                  <h1 className="h5 mb-4 text-white text-uppercase">Our Research</h1>
-                  <h2 className="display-4 text-white mb-5">
-                    Our research focuses on advancing hydrological science through
-                    innovative research, collaboration, and technology development.
-                  </h2>
-                  <Link
-                    to="https://ciroh.ua.edu/research/"
-                    className={`button button--secondary ${styles.col6}`}
-                  >
-                    Learn More
-                  </Link>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
-        <div className={clsx("hero hero--primary", styles.heroBanner)}>
-          <div className="container">
-            <div className={styles.flexStart}>
-              <div className="hero-text">
-                <h1 className={styles.h1}>Cyberinfrastructure & Community NextGen Monthly Office Hours</h1>
-                <br />
+        <section className="tw-text-blue-800 tw-body-font tw-rounded-2xl tw-py-24 tw-relative tw-overflow-hidden">
 
+          {/* Soft gradient overlay */}
+          <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-blue-50/50 dark:tw-from-slate-800/40 tw-to-transparent tw-pointer-events-none"></div>
+
+          <div className="tw-container tw-mx-auto tw-flex tw-px-5 md:tw-flex-row tw-flex-col tw-items-center tw-relative tw-z-10">
+
+            {/* IMAGE */}
+            <div className="lg:tw-max-w-lg lg:tw-w-full md:tw-w-1/2 tw-w-5/6 tw-mb-10 md:tw-mb-0 tw-rounded-2xl tw-shadow-2xl tw-animate-fade-in-scale">
+              <img
+                className="tw-object-cover tw-object-center tw-rounded-2xl"
+                alt="hero"
+                src="https://dummyimage.com/720x600/3b82f6/ffffff&text=Research"
+              />
+            </div>
+
+            {/* TEXT BLOCK */}
+            <div className="lg:tw-flex-grow md:tw-w-1/2 lg:tw-pl-24 md:tw-pl-16 tw-flex tw-flex-col md:tw-items-start md:tw-text-left tw-items-center tw-text-center">
+
+              <h1 className="tw-title-font sm:tw-text-4xl tw-text-3xl tw-mb-4 tw-font-extrabold tw-text-blue-800 dark:tw-text-white">
+                Cyberinfrastructure &
+                <br className="tw-hidden lg:tw-inline-block" />
+                Community NextGen Monthly Office Hours
+              </h1>
+
+              <p className="tw-mb-8 tw-leading-relaxed tw-text-slate-700 dark:tw-text-gray-300">
+                Advancing hydrological science through{" "}
+                <span className="tw-text-blue-700 dark:tw-text-cyan-400 tw-font-semibold">innovation</span>,{" "}
+                <span className="tw-text-blue-700 dark:tw-text-cyan-400 tw-font-semibold">collaboration</span>, and{" "}
+                <span className="tw-text-blue-700 dark:tw-text-cyan-400 tw-font-semibold">technology development</span>.
+              </p>
+
+              {/* BUTTONS */}
+              <div className="tw-flex tw-justify-center tw-gap-4">
                 <Link
-                  className={`button button--secondary ${styles.col4}`}
+                  className={`button tw-inline-flex tw-text-white tw-bg-blue-600 tw-border-0 
+                tw-py-3 tw-px-8 tw-rounded-lg tw-text-lg tw-font-semibold
+                hover:tw-bg-blue-800 tw-transition-colors
+                dark:tw-bg-white dark:tw-text-slate-900 dark:hover:tw-bg-slate-300`}
                   href="/docs/products/ngiab/office-hours"
                   style={{ textDecoration: "none", marginRight: "10px" }}
                 >
                   Learn More
                 </Link>
+
               </div>
-              <img
-                src="./img/graphics/infra.png"
-                alt="DocuHub Office Hours"
-                class={styles.heroimage} />
+
+            </div>
+          </div>
+        </section>
+
+        <div className="tw-w-full tw-text-blue-800 dark:tw-text-white">
+          <div className={`${styles.logoBackground} tw-rounded-xl tw-p-6`}>
+
+            <div className="tw-container tw-mx-auto">
+
+              {/* Consortium Sponsors */}
+              <div className="tw-col tw-col--12 tw-mb-10">
+                <div className={`${styles.heading} tw-text-blue-800 dark:tw-text-white`}>
+                  Consortium Sponsors
+                </div>
+
+                <div className={`${styles.flexListContainer} tw-flex tw-flex-wrap tw-gap-4`}>
+                  {SponsorList.map((sponsor) => (
+                    <Link
+                      to={sponsor.link}
+                      key={sponsor.name}
+                      className={`${styles.sponsorwrapper} tw-bg-slate-100 dark:tw-bg-white tw-rounded-lg tw-p-4 tw-flex tw-items-center tw-justify-center tw-shadow-sm`}
+                    >
+                      <img
+                        className={styles.sponsorcontainer}
+                        src={sponsor.logo}
+                        alt={sponsor.name}
+                        width={sponsor.width}
+                        height={sponsor.height}
+                      />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              {/* Consortium Members & Partners */}
+              <div className="tw-row tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-8">
+
+                {/* Members */}
+                <div>
+                  <div className={`${styles.heading} tw-text-blue-800 dark:tw-text-white`}>
+                    Consortium Members
+                  </div>
+
+                  <div className={`${styles.flexListContainer} tw-flex tw-flex-wrap tw-gap-4`}>
+                    {MemberList.map((member) => (
+                      <Link
+                        to={member.link}
+                        key={member.name}
+                        className={`${styles.imagewrapper} tw-bg-slate-100 dark:tw-bg-white tw-rounded-lg tw-p-4 tw-flex tw-items-center tw-justify-center tw-shadow-sm`}
+                      >
+                        <img
+                          className={styles.imagecontainer}
+                          src={member.logo}
+                          alt={member.name}
+                          width={member.width}
+                          height={member.height}
+                        />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Partners */}
+                <div>
+                  <div className={`${styles.heading} tw-text-blue-800 dark:tw-text-white`}>
+                    Consortium Partners
+                  </div>
+
+                  <div className={`${styles.flexListContainer} tw-flex tw-flex-wrap tw-gap-4`}>
+                    {PartnerList.map((partner) => (
+                      <Link
+                        to={partner.link}
+                        key={partner.name}
+                        className={`${styles.imagewrapper} tw-bg-slate-100 dark:tw-bg-white tw-rounded-lg tw-p-4 tw-flex tw-items-center tw-justify-center tw-shadow-sm`}
+                      >
+                        <img
+                          className={styles.imagecontainer}
+                          src={partner.logo}
+                          alt={partner.name}
+                          width={partner.width}
+                          height={partner.height}
+                        />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* NOAA + AWI + CIROH Logos */}
+              <div className={`${styles.longwrapper} tw-mt-12 tw-flex tw-flex-wrap tw-items-center tw-justify-center tw-gap-8 tw-bg-slate-100 dark:tw-bg-white tw-rounded-lg tw-p-6 tw-shadow-sm`}>
+                <div className="tw-text-center">
+                  <img
+                    alt="noaaImage"
+                    src="img/logos/noaa.png"
+                    style={{ maxHeight: "145px", width: "auto", padding: "1rem" }}
+                  />
+                </div>
+
+                <div className="tw-text-center">
+                  <img
+                    alt="awiImage"
+                    src="img/logos/awi.png"
+                    style={{ maxHeight: "70px", width: "auto", padding: "1rem" }}
+                  />
+                </div>
+
+                <div className="tw-text-center">
+                  <img
+                    alt="cirohImage"
+                    src="img/logos/ciroh-light.png"
+                    style={{ maxHeight: "145px", width: "auto", padding: "1rem" }}
+                  />
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
 
-        <div className="container" style={{ width: "100%" }}>
-          <div className={styles.logoBackground}>
-            <div className="container-fluid">
-              <div className="col col--12">
-                <div className={styles.heading}>Consortium Sponsors</div>
-                <div className={styles.flexListContainer}>
-                  {SponsorList.map(sponsor => <Link to={sponsor.link} className={styles.sponsorwrapper} align="center">
-                    <img
-                      className={styles.sponsorcontainer}
-                      src={sponsor.logo}
-                      alt={sponsor.name}
-                      width={sponsor.width}
-                      height={sponsor.height} />
-                  </Link>
-                  )}
-                </div>
-              </div>
-
-              <div className="row">
-                <div className="col">
-                  <div className={styles.heading}>Consortium Members</div>
-                  <div className={styles.flexListContainer}>
-                    {MemberList.map(member => <Link to={member.link} className={styles.imagewrapper} align="center">
-                      <img
-                        className={styles.imagecontainer}
-                        src={member.logo}
-                        alt={member.name}
-                        width={member.width}
-                        height={member.height} />
-                    </Link>
-                    )}
-                  </div>
-                </div>
-
-                <div className="col">
-                  <div className={styles.heading}>Consortium Partners</div>
-                  <div className={styles.flexListContainer}>
-                    {PartnerList.map(partner => <Link to={partner.link} className={styles.imagewrapper} align="center">
-                      <img
-                        className={styles.imagecontainer}
-                        src={partner.logo}
-                        alt={partner.name}
-                        width={partner.width}
-                        height={partner.height} />
-                    </Link>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.longwrapper}>
-              <div style={{ textAlign: "center" }}>
-                <img
-                  alt="noaaImage"
-                  src="img/logos/noaa.png"
-                  style={{ maxHeight: '145px', width: 'auto', padding: '1rem' }} />
-              </div>
-              <div style={{ textAlign: "center" }}>
-                <img
-                  alt="awiImage"
-                  src="img/logos/awi.png"
-                  style={{ maxHeight: '70px', width: 'auto', padding: '1rem' }} />
-              </div>
-              <div style={{ textAlign: "center" }}>
-                <img
-                  alt="cirohImage"
-                  src="img/logos/ciroh-light.png"
-                  style={{ maxHeight: '145px', width: 'auto', padding: '1rem' }} />
-              </div>
-            </div>
-          </div>
-        </div>
       </section></>
   );
 }

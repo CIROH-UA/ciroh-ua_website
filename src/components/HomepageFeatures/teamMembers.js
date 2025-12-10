@@ -17,16 +17,16 @@ const team = [
     linkedin: "https://www.linkedin.com/in/example-benjamin"
   },
   {
-    name: "Trupesh Patel",
-    role: "Research Software Engineer",
-    image: "/img/teamMember3.png",
-    linkedin: "https://www.linkedin.com/in/example-trupesh"
-  },
-  {
     name: "Manjila Singh",
     role: "Graduate Research Assistant",
     image: "/img/teamMember4.png",
     linkedin: "https://www.linkedin.com/in/example-manjila"
+  },
+  {
+    name: "Prajwal Halalae",
+    role: "Undergraduate Student Assistant",
+    image: "/img/PrajwalHalalae.jpg",
+    linkedin: "https://www.linkedin.com/in/prajwal-nh/"
   },
   {
     name: "Nia Minor",
@@ -40,7 +40,13 @@ const team = [
     role: "Undergraduate Student Assistant",
     image: "/img/teamMember6.png",
     linkedin: "https://www.linkedin.com/in/example-zimuzo"
-  }
+  }, 
+  {
+    name: "Giovanni Romero",
+    role: "HydroInfomatics Engineer",
+    image: "/img/Giovanni-Romero.png",
+    linkedin: "https://www.linkedin.com/in/elkin-giovanni-romero-bustamante-b834b5a8/"
+  },
 ];
 
 export default function TeamMembers() {

@@ -15,8 +15,62 @@ import Hyperspeed from '../Reactbits/hyperSpeed'
 import CardCarousel from "./CardCarousel";
 import CardGridSection from "./cardGrid";
 import { cardGridItems } from "./cardGridItems";
+import {
+  fetchResourcesByKeyword,
+  fetchResource,
+  getCommunityResources
+} from "../../api/hydroshareAPI.js";
 
 
+function computeStats(resources) {
+  const stats = {
+    products: 0,
+    datasets: 0,
+    presentations: 0,
+    publications: 0,
+    courses: 0,
+  };
+
+  resources.forEach((r) => {
+    switch (r.resource_type) {
+      case "ToolResource":
+      case "ModelProgramResource":
+      case "ModelInstanceResource":
+        stats.products++;
+        break;
+
+      case "CompositeResource":
+      case "TimeSeriesResource":
+      case "CollectionResource":
+        stats.datasets++;
+        break;
+
+      case "PresentationResource":
+        stats.presentations++;
+        break;
+
+      case "GenericResource":
+      case "ReportResource":
+        stats.publications++;
+        break;
+
+      case "CourseResource":
+        stats.courses++;
+        break;
+
+      default:
+        break;
+    }
+  });
+
+  return stats;
+}
+
+const { resources } = await getCommunityResources("ciroh_portal_data");
+
+console.log("Fetched resources:", resources);
+
+const stats = computeStats(resources);
 
 const carouselCards = [
   {
@@ -112,6 +166,13 @@ const SponsorList = [
     link: "https://lynker.com/",
     width: "200",
     height: "80",
+  },
+  {
+    name: "OWP",
+    logo: "https://portal.ciroh.org/assets/images/owp_logo-cf6a5647bff6e38e14b683fb5ba3299c.png",
+    link: "https://water.noaa.gov/",
+    width: "300",
+    height: "300",
   },
 ];
 const MemberList = [
@@ -688,23 +749,60 @@ export default function HomepageFeatures() {
               </div>
 
               {/* STATS SECTION */}
-              <div className="tw-mt-12 tw-grid tw-grid-cols-3 tw-gap-6 tw-max-w-2xl tw-mx-auto tw-animate-fade-in-up tw-animate-delay-600">
+              <div className="tw-mt-12 tw-grid tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-6 tw-max-w-3xl tw-mx-auto tw-animate-fade-in-up tw-animate-delay-600">
 
-                <div className="tw-text-center tw-p-4 tw-bg-blue-800 dark:tw-bg-white tw-rounded-xl tw-shadow-md hover:tw-shadow-xl tw-transition-shadow floating">
-                  <div className="tw-text-3xl tw-font-bold tw-text-white dark:tw-text-slate-900 tw-mb-1">100+</div>
-                  <div className="tw-text-sm tw-text-gray-50 dark:tw-text-slate-800">Research Projects</div>
+                {/* PRODUCTS */}
+                <div className="tw-text-center tw-p-6 tw-bg-white dark:tw-bg-slate-800 tw-rounded-2xl tw-shadow-lg hover:tw-shadow-xl tw-transition-shadow">
+                  <div className="tw-text-4xl tw-font-bold tw-text-blue-700 dark:tw-text-cyan-300">
+                    {stats.products}
+                  </div>
+                  <div className="tw-mt-2 tw-text-sm tw-font-semibold tw-text-gray-700 dark:tw-text-gray-300">
+                    PRODUCTS
+                  </div>
                 </div>
 
-                <div className="tw-text-center tw-p-4 tw-bg-blue-800 dark:tw-bg-white tw-rounded-xl tw-shadow-md hover:tw-shadow-xl tw-transition-shadow floating">
-                  <div className="tw-text-3xl tw-font-bold tw-text-white dark:tw-text-slate-900 tw-mb-1">50+</div>
-                  <div className="tw-text-sm tw-text-gray-50 dark:tw-text-slate-800">Collaborators</div>
+                {/* DATASETS */}
+                <div className="tw-text-center tw-p-6 tw-bg-white dark:tw-bg-slate-800 tw-rounded-2xl tw-shadow-lg hover:tw-shadow-xl tw-transition-shadow">
+                  <div className="tw-text-4xl tw-font-bold tw-text-blue-700 dark:tw-text-cyan-300">
+                    {stats.datasets}
+                  </div>
+                  <div className="tw-mt-2 tw-text-sm tw-font-semibold tw-text-gray-700 dark:tw-text-gray-300">
+                    DATASETS
+                  </div>
                 </div>
 
-                <div className="tw-text-center tw-p-4 tw-bg-blue-800 dark:tw-bg-white tw-rounded-xl tw-shadow-md hover:tw-shadow-xl tw-transition-shadow floating">
-                  <div className="tw-text-3xl tw-font-bold tw-text-white dark:tw-text-slate-900 tw-mb-1">25+</div>
-                  <div className="tw-text-sm tw-text-gray-50 dark:tw-text-slate-800">Publications</div>
+                {/* PRESENTATIONS */}
+                <div className="tw-text-center tw-p-6 tw-bg-white dark:tw-bg-slate-800 tw-rounded-2xl tw-shadow-lg hover:tw-shadow-xl tw-transition-shadow">
+                  <div className="tw-text-4xl tw-font-bold tw-text-blue-700 dark:tw-text-cyan-300">
+                    {stats.presentations}
+                  </div>
+                  <div className="tw-mt-2 tw-text-sm tw-font-semibold tw-text-gray-700 dark:tw-text-gray-300">
+                    PRESENTATIONS
+                  </div>
                 </div>
+
+                {/* PUBLICATIONS */}
+                <div className="tw-text-center tw-p-6 tw-bg-white dark:tw-bg-slate-800 tw-rounded-2xl tw-shadow-lg hover:tw-shadow-xl tw-transition-shadow">
+                  <div className="tw-text-4xl tw-font-bold tw-text-blue-700 dark:tw-text-cyan-300">
+                    {stats.publications}
+                  </div>
+                  <div className="tw-mt-2 tw-text-sm tw-font-semibold tw-text-gray-700 dark:tw-text-gray-300">
+                    PUBLICATIONS
+                  </div>
+                </div>
+
+                {/* COURSES */}
+                <div className="tw-text-center tw-p-6 tw-bg-white dark:tw-bg-slate-800 tw-rounded-2xl tw-shadow-lg hover:tw-shadow-xl tw-transition-shadow">
+                  <div className="tw-text-4xl tw-font-bold tw-text-blue-700 dark:tw-text-cyan-300">
+                    {stats.courses}
+                  </div>
+                  <div className="tw-mt-2 tw-text-sm tw-font-semibold tw-text-gray-700 dark:tw-text-gray-300">
+                    COURSES
+                  </div>
+                </div>
+
               </div>
+
 
             </div>
 

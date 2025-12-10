@@ -4,6 +4,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './contribute.module.css';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import HydroShareCard from '@site/src/components/HydroShareCard';
+import clsx from 'clsx';
 
 export default function Contribute() {
   const { siteConfig } = useDocusaurusContext();
@@ -21,10 +22,10 @@ export default function Contribute() {
       description="Learn how to contribute to CIROH's open science initiatives">
       <main>
         {/* Contribute Banner */}
-        <div className={styles.contributeBanner}>
+        <div className={clsx(styles.contributeBanner, "tw-bg-cyan-500 tw-text-white")}>
           <div className={styles.bannerContainer}>
-            <h1 className={styles.bannerTitle}>Contribute to CIROH</h1>
-            <p className={styles.bannerSubtitle}>
+            <h1 className={clsx(styles.bannerTitle, "tw-text-slate-900 dark:tw-text-white")}>Contribute to CIROH</h1>
+            <p className={clsx(styles.bannerSubtitle, "tw-text-slate-900 dark:tw-text-white")}>
               Join our community of researchers, developers, and water science enthusiasts.<br />
               Your contributions help advance hydrologic science and support NOAA's water prediction initiatives.
             </p>

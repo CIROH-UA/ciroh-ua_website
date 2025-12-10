@@ -4,8 +4,10 @@ import BlogFilter from '../BlogFilter';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import CardSwap, { Card } from './cardSwap'
+import Particles from './particleBG';
 
-const ImpactItem = ({ title, count, imageSrc,users }) => (
+const ImpactItem = ({ title, count, imageSrc, users }) => (
   <div className={clsx(styles.impactItem, 'card')}>
     <img src={imageSrc} alt={`${title} icon`} className={styles.impactIcon} />
     <h3 className={styles.impactTitle}>{title}</h3>
@@ -44,28 +46,114 @@ export default function CommunityImpactComponent() {
 
   return (
     <div>
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-    <div className="container">
-      <div className="hero-content">
-        <div className="hero-flex-container">
-          <div className="hero-text">
-            <h1 className="hero__title">Community Impact</h1>
-            <span style={{ fontSize: 20 }}>
-            We are committed to providing infrastructure support to CIROH consortium partners and members to advance 
-        their research. Our impact spans across various cloud platforms and resources. Here's an overview of our contributions:
-      
-            </span>
-          </div>
-          {/* <div className="hero-image">
-            <img src="img/logos/docuhub.png" alt="Logo" style={{ maxWidth: '15%' }} />
-          </div> */}
+      <section className="tw-text-gray-800 dark:tw-text-slate-50 tw-body-font tw-relative tw-overflow-hidden">
+
+        {/* PARTICLES BACKGROUND (receives mouse events) */}
+        <div className="tw-absolute tw-inset-0 tw--z-10 tw-pointer-events-auto">
+          <Particles
+            particleColors={['#ffffff', '#ffffff']}
+            particleCount={200}
+            particleSpread={10}
+            speed={0.1}
+            particleBaseSize={100}
+            moveParticlesOnHover={true}
+            alphaParticles={false}
+            disableRotation={false}
+          />
         </div>
-      </div>
-    </div>
-  </header>
+
+        {/* HERO CONTENT (ignores pointer events EXCEPT buttons/card components) */}
+        <div className="tw-container tw-mx-auto tw-flex tw-px-5 tw-py-16 md:tw-flex-row tw-flex-col tw-items-center tw-relative tw-z-10 tw-pointer-events-none">
+
+          <div className="lg:tw-flex-grow md:tw-w-1/2 lg:tw-pr-24 md:tw-pr-16 tw-flex tw-flex-col md:tw-items-start md:tw-text-left tw-mb-16 md:tw-mb-0 tw-items-center tw-text-center">
+
+            <h1
+              className={clsx(
+                styles.heroTitle,
+                "tw-text-5xl sm:tw-text-6xl lg:tw-text-7xl tw-font-bold tw-mb-4"
+              )}
+            >
+              <span className="tw-text-blue-800 dark:tw-text-white">Community </span>
+              <span className="tw-text-blue-800 dark:tw-text-cyan-400">Impact</span>
+            </h1>
+
+            <p className="tw-mb-8 tw-leading-relaxed tw-text-lg">
+              We are committed to providing infrastructure support to CIROH consortium partners and members to advance their research. Our impact spans across various cloud platforms and resources. Here's an overview of our contributions:
+            </p>
+
+            {/* BUTTONS (re-enable pointer events) */}
+            <div className="tw-flex tw-justify-center tw-pointer-events-auto">
+              <button className="tw-inline-flex tw-text-white tw-bg-indigo-500 tw-border-0 tw-py-2 tw-px-6 hover:tw-bg-indigo-600 tw-rounded tw-text-lg">
+                Button
+              </button>
+
+              <button className="tw-ml-4 tw-inline-flex tw-text-gray-700 tw-bg-gray-100 tw-border-0 tw-py-2 tw-px-6 hover:tw-bg-gray-200 tw-rounded tw-text-lg">
+                Button
+              </button>
+            </div>
+          </div>
+
+          {/* CARD SWAP SECTION (also restored pointer events) */}
+          <div className="lg:tw-max-w-xl lg:tw-w-full md:tw-w-1/2 tw-w-5/6 tw-pointer-events-auto">
+            <div className="tw-relative tw-h-[600px]">
+              <CardSwap
+                cardDistance={60}
+                verticalDistance={70}
+                delay={5000}
+                pauseOnHover={true}
+              >
+                <Card>
+                  <h3 className="tw-text-white">💧Transforming Water Prediction</h3>
+                  <p>
+                    CIROH is building the next generation of operational hydrologic models used
+                    across the nation. By integrating research-grade science into deployable tools,
+                    we help agencies and communities make faster, more informed decisions about water resources.
+                    Our work ensures that flood, drought, and streamflow predictions are more accurate,
+                    accessible, and actionable than ever before.
+                  </p>
+                </Card>
+
+                <Card>
+                  <h3 className="tw-text-white">🤝 Powered by Collaborative Science</h3>
+                  <p>
+                    CIROH connects leading universities, federal agencies, and scientists to tackle
+                    the nation’s most pressing water challenges. Our collaborative framework enables
+                    shared data, open models, and scalable breakthroughs. Instead of working in isolation,
+                    researchers innovate as part of a unified national hydrology community.
+                  </p>
+                </Card>
+
+                <Card>
+                  <h3 className="tw-text-white">💻 Data, Cloud & Cyberinfrastructure</h3>
+                  <p>
+                    Modern water research demands advanced computing - and CIROH delivers. Through
+                    cloud-ready workflows, curated datasets, HPC resources, and the CIROH-2i2c JupyterHub,
+                    we eliminate barriers to scientific experimentation. Researchers can run complex
+                    hydrologic models at scale, collaborate instantly, and accelerate time-to-discovery.
+                  </p>
+                </Card>
+
+                <Card>
+                  <h3 className="tw-text-white">🌍 Community Impact & Resilience</h3>
+                  <p>
+                    Our mission goes far beyond research - CIROH helps communities better understand
+                    and prepare for water-related risks. By partnering with local agencies and
+                    practitioners, we bring advanced prediction tools into real-world decision making.
+                    This work strengthens resilience, protects infrastructure, and safeguards lives.
+                  </p>
+                </Card>
+
+              </CardSwap>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
       <div className={styles.impactGrid}>
         {impactData.map((item, index) => (
-          <ImpactItem 
+          <ImpactItem
             key={index}
             title={item.title}
             count={item.count}
@@ -77,7 +165,7 @@ export default function CommunityImpactComponent() {
       <hr className={styles.sectionDivider} />
       <p className={`container ${styles.paragraph}`}>To learn more about our projects and the impact we're making, check out our blogs for in-depth insights and updates!</p>
       <div className="container">
-      <BlogFilter />
+        <BlogFilter />
       </div>
     </div>
   );

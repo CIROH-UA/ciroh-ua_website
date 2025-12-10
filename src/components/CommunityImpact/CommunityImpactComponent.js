@@ -6,6 +6,9 @@ import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import CardSwap, { Card } from './cardSwap'
 import Particles from './particleBG';
+import CloudInfraDashboard from "./cloudInfraDashboard";
+import Link from '@docusaurus/Link';
+
 
 const ImpactItem = ({ title, count, imageSrc, users }) => (
   <div className={clsx(styles.impactItem, 'card')}>
@@ -17,32 +20,48 @@ const ImpactItem = ({ title, count, imageSrc, users }) => (
 );
 
 export default function CommunityImpactComponent() {
-  const impactData = [
-    {
-      title: "Amazon Web Services",
-      count: 24,
-      imageSrc: useBaseUrl("/img/logos/corp/aws-black.svg"),
-      users: 69,
-    },
-    {
-      title: "GCP and JupyterHub",
-      count: 63,
-      imageSrc: useBaseUrl("/img/logos/corp/google-cloud.jpg"),
-      users: 183,
-    },
-    {
-      title: "On-premise HPC",
-      count: 57,
-      imageSrc: useBaseUrl("/img/logos/pantarhei.jpg"),
-      users: 78,
-    },
-    {
-      title: "NSF ACCESS Allocations",
-      count: 7,
-      imageSrc: useBaseUrl("/img/logos/nsf-logo.png"),
-      users: 75,
-    }
-  ];
+  const cards = [
+  {
+    accent: "aws",
+    title: "Amazon Web Services",
+    color: "#FF9900",
+    svg: <img src={useBaseUrl("/img/logos/corp/aws-black.svg")} alt="AWS Logo" />,
+    stats: [
+      { value: 24, bar: "38%", label: "Ongoing Projects" },
+      { value: 69, bar: "17%", label: "Active Users" },
+    ],
+  },
+  {
+    accent: "gcp",
+    title: "GCP / JupyterHub",
+    color: "#4285F4",
+    svg: <img src={useBaseUrl("/img/logos/corp/google-cloud.jpg")} alt="GCP Logo" />,
+    stats: [
+      { value: 63, bar: "100%", label: "Ongoing Projects" },
+      { value: 183, bar: "45%", label: "Active Users" },
+    ],
+  },
+  {
+    accent: "hpc",
+    title: "On-premise HPC",
+    color: "#10B981",
+    svg: <img src={useBaseUrl("/img/logos/pantarhei.jpg")} alt="HPC Logo" />,
+    stats: [
+      { value: 57, bar: "75%", label: "Ongoing Projects" },
+      { value: 78, bar: "30%", label: "Active Users" },
+    ],
+  },
+  {
+    accent: "nsf",
+    title: "NSF ACCESS Allocations",
+    color: "#8B5CF6",
+    svg: <img src={useBaseUrl("/img/logos/nsf-logo.png")} alt="NSF Logo" />,
+    stats: [
+      { value: 7, bar: "50%", label: "Ongoing Projects" },
+      { value: 75, bar: "60%", label: "Active Users" },
+    ],
+  },
+];
 
   return (
     <div>
@@ -83,13 +102,14 @@ export default function CommunityImpactComponent() {
 
             {/* BUTTONS (re-enable pointer events) */}
             <div className="tw-flex tw-justify-center tw-pointer-events-auto">
-              <button className="tw-inline-flex tw-text-white tw-bg-indigo-500 tw-border-0 tw-py-2 tw-px-6 hover:tw-bg-indigo-600 tw-rounded tw-text-lg">
-                Button
-              </button>
 
-              <button className="tw-ml-4 tw-inline-flex tw-text-gray-700 tw-bg-gray-100 tw-border-0 tw-py-2 tw-px-6 hover:tw-bg-gray-200 tw-rounded tw-text-lg">
-                Button
-              </button>
+              <Link
+                                className={`tw-no-underline lg:tw-text-xl tw-inline-flex tw-items-center tw-justify-center tw-px-6 tw-py-3 tw-rounded-lg tw-font-semibold tw-transition-all tw-duration-300 tw-border-2 tw-outline tw-outline-blue-600 tw-text-blue-700 hover:tw-bg-blue-600 hover:tw-text-white dark:tw-outline-white dark:tw-text-white dark:hover:tw-bg-white dark:hover:tw-text-cyan-700`}
+                                href="/docs/products/ngiab/office-hours"
+                                style={{ textDecoration: "none", marginRight: "10px" }}
+                              >
+                                Get Involved
+                              </Link>
             </div>
           </div>
 
@@ -150,18 +170,10 @@ export default function CommunityImpactComponent() {
         </div>
       </section>
 
+      <CloudInfraDashboard cards={cards} />
 
-      <div className={styles.impactGrid}>
-        {impactData.map((item, index) => (
-          <ImpactItem
-            key={index}
-            title={item.title}
-            count={item.count}
-            imageSrc={useBaseUrl(item.imageSrc)}
-            users={item.users}
-          />
-        ))}
-      </div>
+
+      
       <hr className={styles.sectionDivider} />
       <p className={`container ${styles.paragraph}`}>To learn more about our projects and the impact we're making, check out our blogs for in-depth insights and updates!</p>
       <div className="container">

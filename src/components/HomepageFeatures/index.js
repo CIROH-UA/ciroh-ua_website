@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import clsx from "clsx";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -15,62 +15,54 @@ import Hyperspeed from '../Reactbits/hyperSpeed'
 import CardCarousel from "./CardCarousel";
 import CardGridSection from "./cardGrid";
 import { cardGridItems } from "./cardGridItems";
-import {
-  fetchResourcesByKeyword,
-  fetchResource,
-  getCommunityResources
-} from "../../api/hydroshareAPI.js";
+// Correct import for Docusaurus — NO alias
+import { fetchResourcesBySearch } from "../../api/hydroshareAPI";
 
+async function countByKeyword(keyword) {
+  let total = 0;
+  let page = 1;
 
-function computeStats(resources) {
-  const stats = {
-    products: 0,
-    datasets: 0,
-    presentations: 0,
-    publications: 0,
-    courses: 0,
-  };
+  while (true) {
+    const results = await fetchResourcesBySearch(
+      keyword,
+      "",
+      false,
+      "modified",
+      undefined,
+      page
+    );
 
-  resources.forEach((r) => {
-    switch (r.resource_type) {
-      case "ToolResource":
-      case "ModelProgramResource":
-      case "ModelInstanceResource":
-        stats.products++;
-        break;
+    if (!Array.isArray(results) || results.length === 0) break;
 
-      case "CompositeResource":
-      case "TimeSeriesResource":
-      case "CollectionResource":
-        stats.datasets++;
-        break;
+    total += results.length;
 
-      case "PresentationResource":
-        stats.presentations++;
-        break;
+    if (results.length < 40) break; // No more pages
+    page++;
+  }
 
-      case "GenericResource":
-      case "ReportResource":
-        stats.publications++;
-        break;
-
-      case "CourseResource":
-        stats.courses++;
-        break;
-
-      default:
-        break;
-    }
-  });
-
-  return stats;
+  return total;
 }
 
-const { resources } = await getCommunityResources("ciroh_portal_data");
+async function fetchStats() {
+  const [
+    datasets,
+    presentations,
+    courses,
+    products
+  ] = await Promise.all([
+    countByKeyword("ciroh_portal_data"),
+    countByKeyword("ciroh_portal_presentation"),
+    countByKeyword("nwm_portal_module"),
+    countByKeyword("nwm_portal_app")
+  ]);
 
-console.log("Fetched resources:", resources);
-
-const stats = computeStats(resources);
+  return {
+    datasets,
+    presentations,
+    courses,
+    products
+  };
+}
 
 const carouselCards = [
   {
@@ -529,6 +521,79 @@ const impactData = [
 ];
 
 export default function HomepageFeatures() {
+  // ---------- STATS STATE + KEYWORD-BASED FETCHING ----------
+  const [stats, setStats] = useState({
+    products: 0,
+    datasets: 0,
+    presentations: 0,
+    courses: 0,
+  });
+  const [statsLoading, setStatsLoading] = useState(true);
+  const [statsError, setStatsError] = useState(null);
+
+  // Count resources for a single keyword, paging until exhausted
+  async function countByKeyword(keyword) {
+    let total = 0;
+    let page = 1;
+    try {
+      while (true) {
+        const results = await fetchResourcesBySearch(
+          keyword,
+          "",         // searchText
+          false,      // ascending
+          "modified", // sortBy
+          undefined,  // author
+          page
+        );
+
+        // Support wrappers that return array or { resources: [...] }
+        const items = Array.isArray(results) ? results : (results?.resources || []);
+
+        if (!items || items.length === 0) break;
+
+        total += items.length;
+
+        // stop when a page is short (no more pages)
+        if (items.length < 40) break;
+        page++;
+      }
+    } catch (err) {
+      console.error(`[countByKeyword] ${keyword} error:`, err);
+      throw err;
+    }
+    return total;
+  }
+
+  // Fetch all stats in parallel
+  async function loadKeywordStats() {
+    setStatsLoading(true);
+    setStatsError(null);
+    try {
+      const [datasets, presentations, courses, products] = await Promise.all([
+        countByKeyword("ciroh_portal_data"),
+        countByKeyword("ciroh_portal_presentation"),
+        countByKeyword("nwm_portal_module"),
+        countByKeyword("nwm_portal_app"),
+      ]);
+
+      setStats({ products, datasets, presentations, courses });
+    } catch (err) {
+      setStatsError(err?.message || String(err));
+      // reset to safe defaults on error
+      setStats({ products: 0, datasets: 0, presentations: 0, courses: 0 });
+    } finally {
+      setStatsLoading(false);
+    }
+  }
+
+  // Load on mount
+  useEffect(() => {
+    loadKeywordStats();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+
+
   return (
     <><HighlightCards />
       <section className={styles.homepageContainer}>
@@ -675,14 +740,9 @@ export default function HomepageFeatures() {
         <TeamMembers />
         <ResearcherTestimonials />
 
-        <section className="tw-relative tw-overflow-hidden tw-py-24 tw-bg-slate-100 dark:tw-bg-slate-900   tw-text-blue-800 dark:tw-text-white tw-rounded-2xl tw-no-underline">
-
-          {/* Soft gradient overlay */}
-          <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-blue-50/50 dark:tw-from-slate-800/40 tw-to-transparent tw-pointer-events-none"></div>
-
+        <section className="tw-relative tw-overflow-hidden tw-py-24 tw-bg-slate-100 dark:tw-bg-slate-900 tw-text-blue-800 dark:tw-text-white tw-rounded-2xl tw-no-underline">
           <div className="tw-container tw-mx-auto tw-flex tw-px-5 tw-items-center tw-justify-center tw-flex-col tw-relative tw-z-10">
 
-            {/* IMAGE WITH SHIMMER + FLOAT */}
             <div className="image-container tw-lg:w-2/6 tw-md:w-3/6 tw-w-5/6 tw-mb-16 tw-rounded-2xl tw-shadow-2xl tw-animate-fade-in-scale">
               <img
                 src="https://dummyimage.com/720x600/3b82f6/ffffff&text=Research+Innovation"
@@ -691,70 +751,30 @@ export default function HomepageFeatures() {
               />
             </div>
 
-            {/* TEXT BLOCK */}
             <div className="tw-text-center tw-lg:w-2/3 tw-w-full">
+              <span className="tw-bg-blue-100 dark:tw-bg-blue-900/40 tw-text-blue-800 dark:tw-text-blue-300 
+                      tw-text-sm tw-font-semibold tw-px-4 tw-py-1.5 tw-rounded-full">
+                Innovation & Discovery
+              </span>
 
-              {/* Tag */}
-              <div className="tw-inline-block tw-mb-6 tw-animate-fade-in-up">
-                <span className="tw-bg-blue-100 dark:tw-bg-blue-900/40 tw-text-blue-800 dark:tw-text-blue-300 tw-text-sm tw-font-semibold tw-px-4 tw-py-1.5 tw-rounded-full">
-                  Innovation & Discovery
-                </span>
-              </div>
-
-              {/* TITLE */}
-              <h2
-                className="
-          tw-text-5xl md:tw-text-6xl tw-font-extrabold 
-          tw-text-blue-800 dark:tw-text-white 
-          tw-mb-6 tw-leading-tight 
-          tw-animate-fade-in-up tw-animate-delay-200
-        "
-              >
+              <h2 className="tw-text-5xl md:tw-text-6xl tw-font-extrabold tw-mb-6 tw-mt-4">
                 Our Research
               </h2>
 
-              {/* Highlight Box */}
-              <div className="highlight-box tw-p-6 tw-rounded-xl tw-mb-8 tw-animate-fade-in-up tw-animate-delay-400">
-                <p className="tw-text-xl sm:tw-text-2xl tw-leading-relaxed tw-max-w-2xl tw-text-slate-700 dark:tw-text-gray-300 tw-mx-auto">
-                  Our research focuses on advancing hydrological science through{" "}
-                  <span className="tw-font-semibold tw-text-blue-700 dark:tw-text-cyan-400">innovative research</span>,{" "}
-                  <span className="tw-font-semibold tw-text-blue-700 dark:tw-text-cyan-400">collaboration</span>, and{" "}
-                  <span className="tw-font-semibold tw-text-blue-700 dark:tw-text-cyan-400">technology development</span>.
-                </p>
-              </div>
+              <p className="tw-text-xl tw-max-w-2xl tw-text-slate-700 dark:tw-text-gray-300 tw-mx-auto">
+                Our research advances hydrological science through{" "}
+                <span className="tw-text-blue-700 dark:tw-text-cyan-400 tw-font-semibold">innovation</span>,{" "}
+                <span className="tw-text-blue-700 dark:tw-text-cyan-400 tw-font-semibold">collaboration</span>, and{" "}
+                <span className="tw-text-blue-700 dark:tw-text-cyan-400 tw-font-semibold">technology development</span>.
+              </p>
 
-              {/* CTA */}
-              <div className="tw-flex tw-justify-center tw-animate-fade-in-up tw-animate-delay-600">
-                <a
-                  href="https://ciroh.ua.edu/research/"
-                  className="
-            tw-inline-flex tw-items-center 
-            tw-text-white tw-bg-blue-600 tw-border-0 
-            tw-py-4 tw-px-8 
-            tw-rounded-lg tw-text-lg tw-font-semibold
-            hover:tw-bg-blue-800
-            dark:tw-bg-white dark:tw-text-slate-900 dark:hover:tw-bg-slate-300
-            btn-glow tw-transition-all tw-group tw-no-underline"
-                >
-                  Learn More
-                  <svg
-                    className="tw-w-5 tw-h-5 tw-ml-2 group-hover:tw-translate-x-1 tw-transition-transform"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </a>
-              </div>
-
-              {/* STATS SECTION */}
-              <div className="tw-mt-12 tw-grid tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-6 tw-max-w-3xl tw-mx-auto tw-animate-fade-in-up tw-animate-delay-600">
+              {/* ---------- KEYWORD-BASED STATS ---------- */}
+              <div className="tw-mt-12 tw-grid tw-grid-cols-2 md:tw-grid-cols-3 tw-gap-6 tw-max-w-3xl tw-mx-auto">
 
                 {/* PRODUCTS */}
                 <div className="tw-text-center tw-p-6 tw-bg-white dark:tw-bg-slate-800 tw-rounded-2xl tw-shadow-lg hover:tw-shadow-xl tw-transition-shadow">
                   <div className="tw-text-4xl tw-font-bold tw-text-blue-700 dark:tw-text-cyan-300">
-                    {stats.products}
+                    {statsLoading ? "…" : stats.products}
                   </div>
                   <div className="tw-mt-2 tw-text-sm tw-font-semibold tw-text-gray-700 dark:tw-text-gray-300">
                     PRODUCTS
@@ -764,7 +784,7 @@ export default function HomepageFeatures() {
                 {/* DATASETS */}
                 <div className="tw-text-center tw-p-6 tw-bg-white dark:tw-bg-slate-800 tw-rounded-2xl tw-shadow-lg hover:tw-shadow-xl tw-transition-shadow">
                   <div className="tw-text-4xl tw-font-bold tw-text-blue-700 dark:tw-text-cyan-300">
-                    {stats.datasets}
+                    {statsLoading ? "…" : stats.datasets}
                   </div>
                   <div className="tw-mt-2 tw-text-sm tw-font-semibold tw-text-gray-700 dark:tw-text-gray-300">
                     DATASETS
@@ -774,38 +794,38 @@ export default function HomepageFeatures() {
                 {/* PRESENTATIONS */}
                 <div className="tw-text-center tw-p-6 tw-bg-white dark:tw-bg-slate-800 tw-rounded-2xl tw-shadow-lg hover:tw-shadow-xl tw-transition-shadow">
                   <div className="tw-text-4xl tw-font-bold tw-text-blue-700 dark:tw-text-cyan-300">
-                    {stats.presentations}
+                    {statsLoading ? "…" : stats.presentations}
                   </div>
                   <div className="tw-mt-2 tw-text-sm tw-font-semibold tw-text-gray-700 dark:tw-text-gray-300">
                     PRESENTATIONS
                   </div>
                 </div>
 
-                {/* PUBLICATIONS */}
-                <div className="tw-text-center tw-p-6 tw-bg-white dark:tw-bg-slate-800 tw-rounded-2xl tw-shadow-lg hover:tw-shadow-xl tw-transition-shadow">
-                  <div className="tw-text-4xl tw-font-bold tw-text-blue-700 dark:tw-text-cyan-300">
-                    {stats.publications}
-                  </div>
-                  <div className="tw-mt-2 tw-text-sm tw-font-semibold tw-text-gray-700 dark:tw-text-gray-300">
-                    PUBLICATIONS
-                  </div>
-                </div>
-
                 {/* COURSES */}
-                <div className="tw-text-center tw-p-6 tw-bg-white dark:tw-bg-slate-800 tw-rounded-2xl tw-shadow-lg hover:tw-shadow-xl tw-transition-shadow">
+                <div className="
+  tw-text-center tw-p-6 tw-bg-white dark:tw-bg-slate-800 
+  tw-rounded-2xl tw-shadow-lg hover:tw-shadow-xl tw-transition-shadow
+  tw-col-span-2 md:tw-col-span-1 md:tw-col-start-2
+">
                   <div className="tw-text-4xl tw-font-bold tw-text-blue-700 dark:tw-text-cyan-300">
-                    {stats.courses}
+                    {statsLoading ? "…" : stats.courses}
                   </div>
                   <div className="tw-mt-2 tw-text-sm tw-font-semibold tw-text-gray-700 dark:tw-text-gray-300">
                     COURSES
                   </div>
                 </div>
 
+
               </div>
 
+              {/* small error hint */}
+              {statsError && (
+                <div className="tw-mt-4 tw-text-sm tw-text-red-600">
+                  Error loading stats: {statsError}
+                </div>
+              )}
 
             </div>
-
           </div>
         </section>
 

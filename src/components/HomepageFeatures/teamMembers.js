@@ -24,7 +24,7 @@ const team = [
   },
   {
     name: "Prajwal Halalae",
-    role: "Undergraduate Student Assistant",
+    role: "Undergraduate Research Intern",
     image: "/img/PrajwalHalalae.jpg",
     linkedin: "https://www.linkedin.com/in/prajwal-nh/"
   },

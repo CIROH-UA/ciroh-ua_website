@@ -32,8 +32,8 @@ const NWMBigQuery = () => {
         fontSize: '3rem',
         fontWeight: 700,
         marginBottom: '1.5rem',
-        background: isDark 
-          ? 'linear-gradient(to right, var(--ifm-font-color-base), rgba(156, 163, 175, 0.8))' 
+        background: isDark
+          ? 'linear-gradient(to right, var(--ifm-font-color-base), rgba(156, 163, 175, 0.8))'
           : 'linear-gradient(to right, var(--ifm-font-color-base), rgba(100, 116, 139, 0.7))',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
@@ -78,8 +78,8 @@ const NWMBigQuery = () => {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              boxShadow: isDark 
-                ? '0 10px 15px -3px rgba(6, 182, 212, 0.2)' 
+              boxShadow: isDark
+                ? '0 10px 15px -3px rgba(6, 182, 212, 0.2)'
                 : '0 10px 15px -3px rgba(6, 182, 212, 0.25)'
             }}>
               <svg width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -103,8 +103,8 @@ const NWMBigQuery = () => {
           </p>
         </div>
 
-        <a 
-          href="https://forms.office.com/r/FeNpjZstkr"
+        <a
+          href="https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?assignees=&labels=infrastructure&projects=&template=case_studies_call.md&title="
           target="_blank"
           rel="noopener noreferrer"
           style={{

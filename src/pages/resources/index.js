@@ -10,6 +10,7 @@ import { FaBookmark } from 'react-icons/fa';
 import { MdPresentToAll } from 'react-icons/md';
 import { PiGraduationCapFill } from 'react-icons/pi';
 import { HiDocumentText } from 'react-icons/hi';
+import clsx from 'clsx';
 
 export default function Resources() {
   const hydroShareIcon = 'https://storage.googleapis.com/hydroshare-prod-static-media/static/img/logo-lg.cf4395806c8e.png';
@@ -20,10 +21,10 @@ export default function Resources() {
       title="CIROH Community Resources"
       description="HydroShare resources and courses">
       <main>
-        <div className={styles.resourcesBanner}>
+        <div className={clsx(styles.resourcesBanner, "tw-bg-cyan-500 tw-text-white")}>
           <div className={styles.resourcesContainer}>
-            <h1 className={styles.resourcesTitle}>CIROH Community Resources</h1>
-            <p className={styles.resourcesSubtitle}>
+            <h1 className={clsx(styles.resourcesTitle, "tw-text-slate-900 dark:tw-text-white")}>CIROH Community Resources</h1>
+            <p className={clsx(styles.resourcesSubtitle, "tw-text-slate-900 dark:tw-text-white")}>
               Discover hydrologic data, models, tools, and learning modules curated from HydroShare.
               Explore CIROH's ecosystem of community-contributed resources supporting NOAA's hydrologic research.
             </p>

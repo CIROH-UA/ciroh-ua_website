@@ -380,6 +380,11 @@ const config = {
             position: "right",
           },
           {
+            label: 'Publications',
+            href: 'https://www.zotero.org/groups/5261687/ciroh/library',
+            position: 'right',
+          },
+          {
             href: "/blog",
             label: "Blog",
             position: "right",

@@ -375,6 +375,11 @@ const config = {
             position: "left",
           },
           {
+            label: 'Publications',
+            href: 'https://www.zotero.org/groups/5261687/ciroh/library',
+            position: 'right',
+          },
+          {
             href: "/impact",
             label: "Community Impact",
             position: "right",

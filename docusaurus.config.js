@@ -1,6 +1,6 @@
 import { themes as prismThemes } from "prism-react-renderer";
 
-const baseUrl = "/";
+const baseUrl = "/local/";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {

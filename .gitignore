@@ -6,3 +6,5 @@ node_modules/
 !".github/workflows/**"
 .DS_Store
 .idea/
+.vercel/
+.env.local/

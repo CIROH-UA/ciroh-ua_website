@@ -1,0 +1,42 @@
+name: GitHub Actions Vercel Preview Deployment
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+on:
+  pull_request_target:
+    branches:
+      - staging-env
+
+jobs:
+  Deploy-Preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Configure baseUrl for production
+        run: |
+          # Create a backup of the original config
+          cp docusaurus.config.js docusaurus.config.js.bak
+          
+          # Use sed to replace the baseUrl value
+          echo "Setting baseUrl for production"
+          sed -i 's|baseUrl: '\''\/local\/'\''|baseUrl: '\''/'\''|g' docusaurus.config.js
+          sed -i 's|baseUrl: "\/local\/"|baseUrl: "\/"|g' docusaurus.config.js
+          sed -i 's|baseUrl = '\''\/local\/'\''|baseUrl = '\''/'\''|g' docusaurus.config.js
+          sed -i 's|baseUrl = "\/local\/"|baseUrl = "\/"|g' docusaurus.config.js
+          
+          # Show the changed config
+          echo "Modified docusaurus.config.js:"
+          cat docusaurus.config.js
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25.2.0
+        with:
+         vercel-token: ${{ secrets.VERCEL_TOKEN }}
+         vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+         vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+         github-comment: 'true'
+         github-token: ${{ secrets.GITHUB_TOKEN }}
+         scope: ${{ secrets.VERCEL_ORG_ID}}

@@ -23,13 +23,14 @@ async function countByKeyword(keyword) {
   let page = 1;
 
   while (true) {
+    // Use fetchResourcesBySearch to match the ResourceBrowser implementation
     const results = await fetchResourcesBySearch(
       keyword,
-      "",
-      false,
-      "modified",
-      undefined,
-      page
+      "",   // searchText
+      false, // ascending
+      "modified", // sortBy
+      undefined, // author
+      page // pageNumber
     );
 
     if (!Array.isArray(results) || results.length === 0) break;
@@ -535,7 +536,9 @@ export default function HomepageFeatures() {
   async function countByKeyword(keyword) {
     let total = 0;
     let page = 1;
+    let totalPagesChecked = 0;
     try {
+      console.log(`[countByKeyword] Starting count for: ${keyword}`);
       while (true) {
         const results = await fetchResourcesBySearch(
           keyword,
@@ -549,16 +552,26 @@ export default function HomepageFeatures() {
         // Support wrappers that return array or { resources: [...] }
         const items = Array.isArray(results) ? results : (results?.resources || []);
 
-        if (!items || items.length === 0) break;
+        console.log(`[countByKeyword] Page ${page}: ${items.length} items returned for ${keyword}`);
+        totalPagesChecked++;
+
+        if (!items || items.length === 0) {
+          console.log(`[countByKeyword] No more items on page ${page}, stopping`);
+          break;
+        }
 
         total += items.length;
 
         // stop when a page is short (no more pages)
-        if (items.length < 40) break;
+        if (items.length < 40) {
+          console.log(`[countByKeyword] Short page (${items.length} < 40), stopping`);
+          break;
+        }
         page++;
       }
+      console.log(`[countByKeyword] ${keyword}: Total ${total} resources across ${totalPagesChecked} pages`);
     } catch (err) {
-      console.error(`[countByKeyword] ${keyword} error:`, err);
+      console.error(`[countByKeyword] ${keyword} error after ${totalPagesChecked} pages:`, err);
       throw err;
     }
     return total;

@@ -1,6 +1,6 @@
 import { themes as prismThemes } from "prism-react-renderer";
 
-const baseUrl = "/local/";
+const baseUrl = "/";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -9,7 +9,7 @@ const config = {
   staticDirectories: ["static", "img"],
   url: "http://ciroh.org",
   baseUrl: baseUrl,
-  onBrokenLinks: "throw",
+  onBrokenLinks: "ignore",
   favicon: "img/logos/docuhub.png",
 
   // GitHub pages deployment config.
@@ -422,6 +422,11 @@ const config = {
           {
             href: "/news",
             label: "News",
+            position: "right",
+          },
+          {
+            href: "http://localhost:3001/api/github-login",
+            label: "Login",
             position: "right",
           },
         ],

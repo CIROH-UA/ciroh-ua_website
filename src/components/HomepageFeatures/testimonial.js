@@ -52,8 +52,11 @@ export default function ResearcherTestimonials() {
     return (
         <section className="researcher-testimonials-section" id="researcher-testimonials">
             <div className="researcher-testimonials-container">
-                <h2 className="researcher-title">Loved by Researchers</h2>
-                <hr className="researcher-divider" />
+                <h1 className="tw-text-4xl tw-font-extrabold tw-text-center tw-mb-6
+                tw-text-blue-800 dark:tw-text-white">
+                Loved by Researchers
+            </h1>
+                <hr className="researcher-divider tw-mb-18" />
 
                 <div className="researcher-grid">
                     {testimonials.map((testimonial, index) => (

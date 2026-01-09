@@ -1,0 +1,56 @@
+---
+sidebar_position: 18.5
+title: "Forecast Data Overlay"
+description: "Forecast Data Overlay"
+tags: []
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl'
+
+# Forecast Data Overlay
+
+
+# About
+
+This preprocessor-based visualizer uses a python/flask backend to run an html frontend, and requests forcing data to display over the map of CONUS. It can handle either single time steps or ranges of lead times, and can animate the received data.
+
+The setup for this project is largely identical to the uv-specific installation of the NGIAB_data_preprocess, with the caveat that this project is not currently a package and cannot be automatically installed.
+
+
+# Setup Instructions
+
+Github repo: [Github](https://github.com/CIROH-UA/forecast_data_overlay)
+
+The setup for this project is largely identical to the uv-specific installation of the
+[NGIAB_data_preprocess](https://github.com/CIROH-UA/NGIAB_data_preprocess),
+with the caveat that this project is not currently a package and cannot be automatically installed.
+
+
+1. **Clone the repository:**
+
+```bash
+git clone CIROH-UA/forecast_data_overlay
+```
+
+2. **Navigate to the project repository:**
+
+```bash
+cd forecast_data_overlay
+```
+
+3. **Set up uv tool as per instructions in the [NGIAB_data_preprocess readme.](https://github.com/CIROH-UA/NGIAB_data_preprocess?tab=readme-ov-file#for-uv-installation)**
+```bash
+# Install UV
+curl -LsSf https://astral.sh/uv/install.sh | sh
+# It can be installed via pip if that fails
+# pip install uv
+```
+4. **Set up the project with uv:**
+```bash
+uv venv
+uv sync
+```
+
+import DocCardList from '@theme/DocCardList';
+
+<DocCardList />

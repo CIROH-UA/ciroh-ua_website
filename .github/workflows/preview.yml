@@ -1,10 +1,5 @@
 name: Manual Vercel Preview Deploy
 
-permissions:
-  contents: read
-  pull-requests: write
-  issues: write
-
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
@@ -47,6 +42,24 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          github-comment: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
           scope: ${{ secrets.VERCEL_ORG_ID }}
+          
+      - name: Comment preview URL on PR
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const prNumber = Number('${{ inputs.pr_number }}');
+            const previewUrl = '${{ steps.vercel.outputs.preview-url }}';
+
+            if (!previewUrl) {
+              core.setFailed('No preview URL returned from Vercel');
+            }
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              body: `🚀 **Vercel Preview Deployed**\n\n🔗 ${previewUrl}`
+            });

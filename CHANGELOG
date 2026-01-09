@@ -1,20 +1,76 @@
-
 # Changelog
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
+---
+
+## [Unreleased] – January 9, 2026
 
 ### Added
-- Tailwind CSS integration
-- Resolved major peer dependencies
+- **GitHub OAuth Login – Proof of Concept (POC)**  
+  - Added an initial GitHub OAuth login implementation as a **POC**.
+  - This feature is **incomplete**, **not production-ready**, and requires further development, testing, and security hardening.
+  - Intended only to validate feasibility and integration flow.
+- **CI/CD deployment notes** indicating that `npm install` must be run before:
+  - Running the application locally.
+  - Deploying via any CI/CD pipeline, due to multiple new dependencies.
+- **API runtime documentation**:
+  - The API server is currently running on **port `3001`**.
+  - Future changes will explore removing the need for a separate API port (if feasible) to avoid major CI/CD or infrastructure changes.
+- **Branch status documentation**:
+  - This branch is currently **not in sync with `main`**.
+  - Alignment with `main` will be taken up as a follow-up task.
 
-### Changed
-
-### Fixed
-
-### Removed
+### Notes
+- No UI/UX changes were introduced in this update.
+- This entry primarily documents authentication POC work, infrastructure, deployment, and workflow considerations.
 
 ---
 
-**Date:** December 19, 2024
+## [Unreleased] – December 19, 2024
+
+### Added
+- **Tailwind CSS integration** using PostCSS and Autoprefixer.
+- `postcss.config.js` and `tailwind.config.js` with dark mode support and preflight disabled.
+- Global `tailwind.css` with Tailwind directives.
+- **MagicBento** component with dynamic particle effects.
+- **GlobalSpotlight** for enhanced card hover and interaction effects.
+- **CardGridSection** with particle background, orbit animations, numbered cards, and CTA support.
+- **CardCarousel** with smooth transitions, hover effects, navigation arrows, and pagination dots.
+- **CloudInfraDashboard** featuring floating particles, animated counters, magnetic hover effects, and responsive layout.
+- **HighlightCards** with water-fill animations, bubbles, and hover effects.
+- **ScrollStack** component for stacked scroll-based card animations.
+- New **LinkedIn icons** (`linkedin_blue.svg`, `linkedin_white.png`).
+- Enhanced **TeamMembers** section with redesigned profile cards, LinkedIn buttons, and dark/light mode compatibility.
+- Improved **ResearcherTestimonials** section styling and layout.
+- Multiple new **CSS animations** for hero banner, carousel, card grid, and highlight cards.
+- Initial **HydroShare live data integration** (work in progress).
+- Added and updated **CHANGELOG documentation**.
+
+### Changed
+- Updated `custom.css` to import Tailwind styles.
+- Enhanced **theme detection logic** with a debounced observer for reliable dark/light mode switching.
+- Improved **navbar and background styles** for dark mode consistency.
+- Refactored **HomepageFeatures** to integrate `CardGridSection` and `CardCarousel`.
+- Redesigned **Hero Banner** with gradient animations, floating water-drop effects, and responsive typography.
+- Updated **Testimonials** section with improved layout and visuals.
+- Redesigned **Contribute** and **Community Resources** banners with gradient backgrounds and dark mode support.
+- Updated **TeamMembers** section UI and LinkedIn integration.
+- Improved **accessibility** with better keyboard navigation and screen reader support.
+- Enhanced responsiveness across mobile, tablet, and desktop for all new components.
+
+### Fixed
+- Resolved major **peer dependency issues**.
+- Removed redundant glow and overlay effects in card grid tilt interactions.
+- Fixed dark/light mode inconsistencies across interactive components.
+- Addressed minor layout and animation glitches across browsers.
+
+### Removed
+- Removed legacy **Docusaurus dependency** from `package.json`.
+- Deleted multiple outdated and unused files (large diffs confirmed via commit logs).
+- Removed old carousel implementation in favor of the new **CardCarousel**.
+
+### Notes
+- HydroShare live data integration is still in progress.
+- Large deleted diffs may not render fully in GitHub but are confirmed removed.
+- Please run the app locally to experience the full scope of UI/UX changes.

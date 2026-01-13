@@ -425,9 +425,8 @@ const config = {
             position: "right",
           },
           {
-            href: "http://localhost:3001/api/github-login",
-            label: "Login",
-            position: "right",
+            type: 'custom-githubAuth',
+            position: 'right',
           },
         ],
       },

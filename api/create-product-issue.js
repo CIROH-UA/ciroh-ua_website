@@ -15,6 +15,8 @@ export default async function handler(req, res) {
   }
 
   try {
+    const labelName = 'enhancement';
+
     const response = await fetch('https://api.github.com/repos/CIROH-UA/ciroh-ua_website/issues?template=product-request.md', {
       method: 'POST',
       headers: {
@@ -22,11 +24,67 @@ export default async function handler(req, res) {
         'Accept': 'application/vnd.github.v3+json',
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ title, body }),
+      body: JSON.stringify({ title, body, labels: [labelName] }),
     });
 
     if (response.ok) {
-      res.status(200).json({ success: true });
+      const issue = await response.json().catch(() => null);
+
+      let labelsApplied = false;
+
+      if (issue?.number) {
+        const headers = {
+          'Authorization': `Bearer ${token}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json',
+        };
+
+        const labelCheck = await fetch(
+          `https://api.github.com/repos/CIROH-UA/ciroh-ua_website/labels/${encodeURIComponent(labelName)}`,
+          { method: 'GET', headers }
+        );
+
+        if (labelCheck.status === 404) {
+          await fetch('https://api.github.com/repos/CIROH-UA/ciroh-ua_website/labels', {
+            method: 'POST',
+            headers,
+            body: JSON.stringify({
+              name: labelName,
+              color: '84b6eb',
+              description: 'New feature or request',
+            }),
+          }).catch(() => null);
+        }
+
+        const setLabelsRes = await fetch(
+          `https://api.github.com/repos/CIROH-UA/ciroh-ua_website/issues/${issue.number}/labels`,
+          {
+            method: 'PUT',
+            headers,
+            body: JSON.stringify({ labels: [labelName] }),
+          }
+        );
+
+        if (setLabelsRes.ok) {
+          const labels = await setLabelsRes.json().catch(() => null);
+          labelsApplied = Array.isArray(labels)
+            ? labels.some((l) => (l?.name || '').toLowerCase() === labelName)
+            : true;
+        }
+      }
+
+      res.status(200).json({
+        success: true,
+        issue: issue?.number
+          ? {
+              number: issue.number,
+              url: issue.html_url,
+              repo: 'CIROH-UA/ciroh-ua_website',
+            }
+          : undefined,
+        labelsApplied,
+        labelRequested: labelName,
+      });
     } else {
       const errorData = await response.json();
       res.status(500).json({ error: 'Failed to create issue', details: errorData });

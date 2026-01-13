@@ -205,12 +205,100 @@ app.post('/api/create-product-issue', async (req, res) => {
       body: JSON.stringify({
         title,
         body,
+        labels: ['enhancement'],
         ...(assignIssueToAuthor ? { assignees: [me.data?.login].filter(Boolean) } : {}),
       }),
     });
 
     if (response.ok) {
-      return res.status(200).json({ success: true });
+      const issue = await response.json().catch(() => null);
+      let labelsApplied = false;
+      let labelsWarning;
+      const labelName = 'enhancement';
+
+      if (issue?.number) {
+        const headers = {
+          Authorization: `${githubAuthScheme} ${token}`,
+          Accept: 'application/vnd.github+json',
+          'X-GitHub-Api-Version': '2022-11-28',
+          'User-Agent': 'ciroh-docuhub',
+          'Content-Type': 'application/json',
+        };
+
+        // Ensure the label exists (some repos remove GitHub's default labels)
+        const labelCheck = await fetch(
+          `https://api.github.com/repos/${githubRepo}/labels/${encodeURIComponent(labelName)}`,
+          { method: 'GET', headers }
+        );
+
+        if (labelCheck.status === 404) {
+          const createLabelRes = await fetch(
+            `https://api.github.com/repos/${githubRepo}/labels`,
+            {
+              method: 'POST',
+              headers,
+              body: JSON.stringify({
+                name: labelName,
+                color: '84b6eb',
+                description: 'New feature or request',
+              }),
+            }
+          );
+
+          if (!createLabelRes.ok) {
+            const createLabelError = await createLabelRes.json().catch(() => null);
+            console.error('Failed to create missing label:', {
+              repo: githubRepo,
+              label: labelName,
+              status: createLabelRes.status,
+              details: createLabelError,
+            });
+          }
+        }
+
+        // Force set labels on the issue (PUT replaces labels and is deterministic)
+        const setLabelsRes = await fetch(
+          `https://api.github.com/repos/${githubRepo}/issues/${issue.number}/labels`,
+          {
+            method: 'PUT',
+            headers,
+            body: JSON.stringify({ labels: [labelName] }),
+          }
+        );
+
+        if (setLabelsRes.ok) {
+          const labels = await setLabelsRes.json().catch(() => null);
+          labelsApplied = Array.isArray(labels)
+            ? labels.some((l) => (l?.name || '').toLowerCase() === labelName)
+            : true;
+        } else {
+          const labelErrorData = await setLabelsRes.json().catch(() => null);
+          labelsWarning = {
+            status: setLabelsRes.status,
+            details: labelErrorData,
+          };
+          console.error('Failed to set labels on created issue:', {
+            repo: githubRepo,
+            issueNumber: issue.number,
+            labels: [labelName],
+            labelsWarning,
+          });
+        }
+      }
+
+      return res.status(200).json({
+        success: true,
+        issue: issue?.number
+          ? {
+              number: issue.number,
+              url: issue.html_url,
+              repo: githubRepo,
+            }
+          : undefined,
+        labelsApplied,
+        labelRequested: labelName,
+        ...(labelsWarning ? { labelsWarning } : {}),
+      });
     }
 
     const errorData = await response.json().catch(() => ({ error: 'Non-JSON response from GitHub' }));

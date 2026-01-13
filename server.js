@@ -27,6 +27,15 @@ app.use(cors({
 app.use(express.json());
 app.use(cookieParser());
 
+function getCookieBaseOptions() {
+  const isProd = process.env.NODE_ENV === 'production';
+  return {
+    secure: isProd,
+    sameSite: 'lax',
+    path: '/',
+  };
+}
+
 // API route for initiating GitHub OAuth login
 app.get('/api/github-login', (req, res) => {
   const clientId = process.env.GITHUB_CLIENT_ID;
@@ -80,16 +89,14 @@ app.get('/api/github-callback', async (req, res) => {
       const accessTokenCookieOptions = {
         httpOnly: !allowClientToken,
         secure: cookieSecure,
-        sameSite: 'lax',
-        path: '/',
+        ...getCookieBaseOptions(),
         maxAge: 3600 * 1000,
       };
       res.cookie('access_token', data.access_token, accessTokenCookieOptions);
       res.cookie('authenticated', 'true', {
         httpOnly: false,
         secure: cookieSecure,
-        sameSite: 'lax',
-        path: '/',
+        ...getCookieBaseOptions(),
         maxAge: 3600 * 1000,
       });
       // Redirect to frontend admin page
@@ -245,4 +252,47 @@ app.post('/api/create-product-issue', async (req, res) => {
 app.listen(port, () => {
   console.log(`API server running at http://localhost:${port}`);
   console.log(`Frontend URL set to ${frontendUrl}`);
+});
+
+// Returns the currently logged-in GitHub user (based on the OAuth token)
+app.get('/api/me', async (req, res) => {
+  const tokenFromCookie = req.cookies && req.cookies.access_token;
+  const authHeader = req.get('Authorization') || req.get('authorization');
+  const tokenFromHeader = authHeader ? authHeader.replace(/^Bearer\s+/i, '') : null;
+  const token = tokenFromCookie || tokenFromHeader;
+
+  if (!token) {
+    return res.status(401).json({ error: 'Not authenticated' });
+  }
+
+  const me = await githubGet('/user', token);
+  if (!me.ok) {
+    return res.status(me.status || 401).json({
+      error: 'GitHub authentication failed',
+      details: me.data,
+      github: {
+        status: me.status,
+        oauthScopes: me.oauthScopes,
+        acceptedOauthScopes: me.acceptedOauthScopes,
+      },
+    });
+  }
+
+  return res.status(200).json({
+    login: me.data?.login,
+    name: me.data?.name,
+    avatar_url: me.data?.avatar_url,
+    html_url: me.data?.html_url,
+  });
+});
+
+// Logs the user out by clearing cookies
+app.post('/api/logout', (req, res) => {
+  const base = getCookieBaseOptions();
+  const isProd = process.env.NODE_ENV === 'production';
+
+  // Must match cookie attributes used when setting cookies
+  res.clearCookie('access_token', { ...base, secure: isProd });
+  res.clearCookie('authenticated', { ...base, secure: isProd });
+  return res.status(200).json({ success: true });
 });

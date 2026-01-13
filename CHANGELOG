@@ -35,6 +35,12 @@ All notable changes to this project will be documented in this file.
     - `ALLOW_CLIENT_TOKEN` (DEV ONLY) — if set to `true`, makes the `access_token` cookie readable by JS for local debugging.
       - IMPORTANT: Do not enable `ALLOW_CLIENT_TOKEN` in production.
 
+- **Admin UI refresh + session UX**
+  - Admin page (`/admin`) now matches the new Tailwind-based dashboard design and shows the signed-in GitHub user's name and avatar.
+  - Added `/api/me` to fetch the signed-in GitHub user profile (used by admin header and site-wide auth UI).
+  - Added `/api/logout` to clear auth cookies.
+  - Added a site-wide Logout button overlay that appears only when signed in.
+
 ### Notes
 - No UI/UX changes were introduced in this update.
 - This entry primarily documents authentication POC work, infrastructure, deployment, and workflow considerations.

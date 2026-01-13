@@ -21,6 +21,20 @@ All notable changes to this project will be documented in this file.
   - This branch is currently **not in sync with `main`**.
   - Alignment with `main` will be taken up as a follow-up task.
 
+### Changed
+- **OAuth/API hardening and configurability (dev + production)**
+  - `server.js` now sets production-safe cookie defaults (`HttpOnly` token cookie, `Secure` in production, `SameSite=Lax`).
+  - GitHub API calls now include required headers (notably `User-Agent`) and return richer error details to help diagnose 403s (scopes/accepted scopes).
+  - New environment variables:
+    - `FRONTEND_URL` (default `http://localhost:3000`)
+    - `GITHUB_REPO` (default `CIROH-UA/ciroh-ua_website`)
+    - `GITHUB_OAUTH_SCOPE` (default `public_repo`; use `repo` if the target repo is private)
+    - `GITHUB_AUTH_SCHEME` (default `token`; can be set to `Bearer` if needed)
+    - `ASSIGN_ISSUE_TO_AUTHOR` (optional) — if `true`, the server will attempt to assign the created issue to the logged-in user.
+      - Note: assignment may fail depending on repo permissions; the server will still attempt issue creation.
+    - `ALLOW_CLIENT_TOKEN` (DEV ONLY) — if set to `true`, makes the `access_token` cookie readable by JS for local debugging.
+      - IMPORTANT: Do not enable `ALLOW_CLIENT_TOKEN` in production.
+
 ### Notes
 - No UI/UX changes were introduced in this update.
 - This entry primarily documents authentication POC work, infrastructure, deployment, and workflow considerations.

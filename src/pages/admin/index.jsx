@@ -9,12 +9,9 @@ const AdminInner = () => {
     if (!isAuthenticated) {
       // Redirect to login
       window.location.href = 'http://localhost:3001/api/github-login';
+      return <div>Redirecting to login...</div>;
     }
   }, [isAuthenticated]);
-
-  if (!isAuthenticated) {
-    return <div>Redirecting to login...</div>;
-  }
 
   return (
     <div style={{ padding: '20px' }}>

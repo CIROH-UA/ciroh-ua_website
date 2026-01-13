@@ -280,44 +280,59 @@
     border-radius: 2px;
 }
 
+/* Horizontal bar */
 .cloud-dashboard-root .corner::before {
-    width: 100%;
     height: 3px;
+    width: 100%;
 }
 
+/* Vertical bar */
 .cloud-dashboard-root .corner::after {
     width: 3px;
     height: 100%;
 }
 
+
 .cloud-dashboard-root .corner-tl {
-    top: 0;
-    left: 0;
-    transform: translate(-10px, -10px);
+    top: 16px;
+    left: 16px;
+    transform: rotate(0deg) translate(-6px, -6px);
 }
 
 .cloud-dashboard-root .corner-tr {
-    top: 0;
-    right: 0;
-    transform: translate(10px, -10px);
-}
-
-.cloud-dashboard-root .corner-bl {
-    bottom: 0;
-    left: 0;
-    transform: translate(-10px, 10px);
+    top: 16px;
+    right: 16px;
+    transform: rotate(90deg) translate(-6px, -6px);
 }
 
 .cloud-dashboard-root .corner-br {
-    bottom: 0;
-    right: 0;
-    transform: translate(10px, 10px);
+    bottom: 16px;
+    right: 16px;
+    transform: rotate(180deg) translate(-6px, -6px);
 }
 
-.cloud-dashboard-root .card:hover .corner {
-    opacity: 1;
-    transform: translate(0, 0);
+.cloud-dashboard-root .corner-bl {
+    bottom: 16px;
+    left: 16px;
+    transform: rotate(270deg) translate(-6px, -6px);
 }
+
+.cloud-dashboard-root .card:hover .corner-tl {
+    transform: rotate(0deg) translate(0, 0);
+}
+
+.cloud-dashboard-root .card:hover .corner-tr {
+    transform: rotate(90deg) translate(0, 0);
+}
+
+.cloud-dashboard-root .card:hover .corner-br {
+    transform: rotate(180deg) translate(0, 0);
+}
+
+.cloud-dashboard-root .card:hover .corner-bl {
+    transform: rotate(270deg) translate(0, 0);
+}
+
 
 /* -----------------------------
    ICON CONTAINER

@@ -24,6 +24,7 @@
     "@mui/material": "^5.14.19",
     "clsx": "^2.1.1",
     "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
     "docusaurus-lunr-search": "^3.4.0",
     "docusaurus-plugin-drawio": "^0.4.0",
     "dotenv": "^17.2.3",

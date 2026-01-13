@@ -38,17 +38,33 @@ const AddProductInner = () => {
     const body = buildBody(form);
 
     try {
+      // Try to read access_token from cookie (development only if server sets non-HttpOnly cookie)
+      const getCookie = (name) => {
+        const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+        return match ? decodeURIComponent(match[2]) : null;
+      };
+      const accessToken = getCookie('access_token');
+
+      const headers = { 'Content-Type': 'application/json' };
+      if (accessToken) headers['Authorization'] = `Bearer ${accessToken}`;
+
       const res = await fetch('http://localhost:3001/api/create-product-issue', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        credentials: 'include',
+        headers,
         body: JSON.stringify({ title, body }),
       });
 
       if (res.ok) {
         setSubmitted(true);
       } else {
-        const data = await res.json();
-        setError(data.error || 'Failed to submit product request.');
+        const data = await res.json().catch(() => ({}));
+        const message =
+          data?.details?.message ||
+          data?.message ||
+          data?.error ||
+          'Failed to submit product request.';
+        setError(message);
       }
     } catch (err) {
       setError('An error occurred while submitting.');

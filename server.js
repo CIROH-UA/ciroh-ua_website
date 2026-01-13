@@ -384,3 +384,142 @@ app.post('/api/logout', (req, res) => {
   res.clearCookie('authenticated', { ...base, secure: isProd });
   return res.status(200).json({ success: true });
 });
+
+// API route for creating a GitHub issue with blog post request
+app.post('/api/create-blog-issue', async (req, res) => {
+  const tokenFromCookie = req.cookies && req.cookies.access_token;
+  const authHeader = req.get('Authorization') || req.get('authorization');
+  const tokenFromHeader = authHeader ? authHeader.replace(/^Bearer\s+/i, '') : null;
+  const token = tokenFromCookie || tokenFromHeader;
+
+  if (!token) {
+    return res.status(401).json({ error: 'Not authenticated' });
+  }
+
+  const { title, body } = req.body;
+  if (!title || !body) {
+    return res.status(400).json({ error: 'Title and body are required' });
+  }
+
+  const me = await githubGet('/user', token);
+  if (!me.ok) {
+    console.error('GitHub /user failed:', me.status, me.data);
+    return res.status(me.status || 401).json({
+      error: 'GitHub authentication failed',
+      details: me.data,
+      github: {
+        status: me.status,
+        oauthScopes: me.oauthScopes,
+        acceptedOauthScopes: me.acceptedOauthScopes,
+      },
+    });
+  }
+
+  const repoInfo = await githubGet(`/repos/${githubRepo}`, token);
+  if (!repoInfo.ok) {
+    console.error('GitHub repo access failed:', githubRepo, repoInfo.status, repoInfo.data);
+    return res.status(repoInfo.status || 403).json({
+      error: 'GitHub repo access failed',
+      details: repoInfo.data,
+      github: {
+        status: repoInfo.status,
+        oauthScopes: repoInfo.oauthScopes,
+        acceptedOauthScopes: repoInfo.acceptedOauthScopes,
+        repo: githubRepo,
+      },
+    });
+  }
+
+  try {
+    const labelName = 'blog';
+    const headers = {
+      Authorization: `${githubAuthScheme} ${token}`,
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      'User-Agent': 'ciroh-docuhub',
+      'Content-Type': 'application/json',
+    };
+
+    const response = await fetch(`https://api.github.com/repos/${githubRepo}/issues`, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({
+        title,
+        body,
+        labels: [labelName],
+        ...(assignIssueToAuthor ? { assignees: [me.data?.login].filter(Boolean) } : {}),
+      }),
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({ error: 'Non-JSON response from GitHub' }));
+      return res.status(response.status || 500).json({
+        error: 'Failed to create issue',
+        details: errorData,
+        github: {
+          status: response.status,
+          repo: githubRepo,
+        },
+      });
+    }
+
+    const issue = await response.json().catch(() => null);
+    let labelsApplied = false;
+    let labelsWarning;
+
+    if (issue?.number) {
+      const labelCheck = await fetch(
+        `https://api.github.com/repos/${githubRepo}/labels/${encodeURIComponent(labelName)}`,
+        { method: 'GET', headers }
+      );
+
+      if (labelCheck.status === 404) {
+        await fetch(`https://api.github.com/repos/${githubRepo}/labels`, {
+          method: 'POST',
+          headers,
+          body: JSON.stringify({
+            name: labelName,
+            color: '0e8a16',
+            description: 'Blog post requests',
+          }),
+        }).catch(() => null);
+      }
+
+      const setLabelsRes = await fetch(
+        `https://api.github.com/repos/${githubRepo}/issues/${issue.number}/labels`,
+        {
+          method: 'PUT',
+          headers,
+          body: JSON.stringify({ labels: [labelName] }),
+        }
+      );
+
+      if (setLabelsRes.ok) {
+        const labels = await setLabelsRes.json().catch(() => null);
+        labelsApplied = Array.isArray(labels)
+          ? labels.some((l) => (l?.name || '').toLowerCase() === labelName)
+          : true;
+      } else {
+        const labelErrorData = await setLabelsRes.json().catch(() => null);
+        labelsWarning = { status: setLabelsRes.status, details: labelErrorData };
+      }
+    }
+
+    return res.status(200).json({
+      success: true,
+      issue: issue?.number
+        ? {
+            number: issue.number,
+            url: issue.html_url,
+            repo: githubRepo,
+          }
+        : undefined,
+      labelsApplied,
+      labelRequested: labelName,
+      ...(labelsWarning ? { labelsWarning } : {}),
+    });
+  } catch (error) {
+    console.error('Error in /api/create-blog-issue:', error);
+    return res.status(500).json({ error: 'Internal server error' });
+  }
+});

@@ -135,7 +135,7 @@ const AdminInner = () => {
               </div>
             </Link>
 
-            <div className="admin-card admin-card-purple delay-200">
+            <Link to="/admin/add-blog" className="admin-card admin-card-purple delay-200">
               <div className="admin-card-inner">
                 <div className="admin-card-icon">
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -151,7 +151,7 @@ const AdminInner = () => {
                 <p className="admin-card-desc">Write and publish new blog posts</p>
                 <button type="button" className="admin-card-btn">Create Post</button>
               </div>
-            </div>
+            </Link>
 
             <div className="admin-card admin-card-pink delay-300">
               <div className="admin-card-inner">

@@ -4,6 +4,33 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [Unreleased] – January 13, 2026
+
+### Added
+- **Admin contribution workflows (GitHub Issues)**
+  - Added `/admin/add-product` to submit a structured Product request as a GitHub Issue.
+  - Added `/admin/add-blog` to submit a structured Blog request as a GitHub Issue.
+  - Both flows return issue metadata and show a **View on GitHub** button on the success screen (with a safe fallback to the repo issues list).
+- **Admin DotGrid animated background** behind the admin dashboard and request forms.
+- **Navbar GitHub auth UI**
+  - Replaced the basic Login UX with a **Login with GitHub** button.
+  - When signed in, shows avatar + dropdown actions (Admin Panel, Logout).
+
+### Changed
+- **Admin theming** updated to match the home page dark theme palette (dark surfaces with cyan/teal accents).
+- **Admin dashboard quick action cards** now use distinct accent colors for easier scanning.
+- **Issue labeling behavior**
+  - Product requests attempt to apply the `enhancement` label.
+  - Blog requests attempt to apply the `blog` label.
+  - Label application is enforced deterministically (ensure label exists, then set labels), and the UI surfaces whether label application succeeded.
+- Removed the independent floating Logout overlay UI in favor of the navbar auth dropdown.
+
+### Fixed
+- Fixed DotGrid background stability issues (including ResizeObserver loop warnings).
+- Fixed Docusaurus navbar custom item wiring so the GitHub auth item reliably renders.
+
+---
+
 ## [Unreleased] – January 9, 2026
 
 ### Added

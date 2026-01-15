@@ -1,8 +1,11 @@
-import React, { useMemo, useState } from 'react';
+import React, { useState } from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import Link from '@docusaurus/Link';
 import DotGrid from './components/DotGrid';
 import './styles.css';
+import { apiFetch, buildApiUrl } from '@site/src/utils/apiClient';
+import { consumeJwtFromUrl, getStoredJwt } from '@site/src/utils/authToken';
+import { useApiBaseUrl } from '@site/src/utils/useApiBaseUrl';
 
 const toBullets = (text) => {
   const raw = (text || '').split(/\r?\n/).map((l) => l.trim()).filter(Boolean);
@@ -48,10 +51,15 @@ const AddBlogInner = () => {
   const [labelsApplied, setLabelsApplied] = useState(true);
   const [error, setError] = useState('');
 
-  const apiBaseUrl = useMemo(() => {
-    if (typeof window === 'undefined') return 'http://localhost:3001';
-    return `http://${window.location.hostname}:3001`;
-  }, []);
+  const apiBaseUrl = useApiBaseUrl();
+
+  React.useEffect(() => {
+    consumeJwtFromUrl();
+    const token = getStoredJwt();
+    if (!token) {
+      window.location.href = buildApiUrl(apiBaseUrl, 'github-login');
+    }
+  }, [apiBaseUrl]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -155,21 +163,17 @@ ${additionalInformation}
     const body = buildBody(form);
 
     try {
-      const getCookie = (name) => {
-        const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
-        return match ? decodeURIComponent(match[2]) : null;
-      };
-      const accessToken = getCookie('access_token');
-
-      const headers = { 'Content-Type': 'application/json' };
-      if (accessToken) headers['Authorization'] = `Bearer ${accessToken}`;
-
-      const res = await fetch(`${apiBaseUrl}/api/create-blog-issue`, {
+      const token = getStoredJwt();
+      const res = await apiFetch(apiBaseUrl, 'create-blog-issue', {
         method: 'POST',
-        credentials: 'include',
-        headers,
-        body: JSON.stringify({ title, body }),
+        token,
+        body: { title, body },
       });
+
+      if (res.status === 401) {
+        window.location.href = buildApiUrl(apiBaseUrl, 'github-login');
+        return;
+      }
 
       if (res.ok) {
         const data = await res.json().catch(() => ({}));

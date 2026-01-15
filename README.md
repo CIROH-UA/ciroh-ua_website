@@ -51,19 +51,26 @@ To set up the project locally, follow these steps:
    or 
    npm install --legacy-peer-deps
 
-4. **Build for Production** (optional):
+4. **Configure API Gateway (Admin/Auth)**:
+   Create/update a `.env` file (see `.env.example`) and set:
+   ```bash
+   REACT_APP_API_BASE_URL=https://67h5z9ih7j.execute-api.us-east-1.amazonaws.com/default
+   ```
+   All API calls are made as `${REACT_APP_API_BASE_URL}/api/<endpoint>` using JWT auth (no cookies).
+
+5. **Build for Production** (optional):
    ```bash
    npm run build
    ```
    This creates static files in the `build` directory that can be deployed to a web server.
 
-5. **Run Development Server**:
+6. **Run Development Server**:
    ```bash
    npm run start
    ```
    This will start a local development server at http://localhost:3000 
    
-6. **View the Site**:
+7. **View the Site**:
    Open your browser and navigate to http://localhost:3000 to see the local version of DocuHub.
 
 ## How to validate PR locally

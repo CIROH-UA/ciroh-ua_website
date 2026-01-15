@@ -1,21 +1,30 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '@site/src/css/navbar-auth.css';
+import { apiFetch, buildApiUrl } from '@site/src/utils/apiClient';
+import { consumeJwtFromUrl, getStoredJwt, clearStoredJwt } from '@site/src/utils/authToken';
+import { useApiBaseUrl } from '@site/src/utils/useApiBaseUrl';
 
 export default function NavbarGithubAuth() {
   const [user, setUser] = useState(null);
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
 
-  const apiBaseUrl = typeof window !== 'undefined' 
-    ? `http://${window.location.hostname}:3001` 
-    : 'http://localhost:3001';
+  const apiBaseUrl = useApiBaseUrl();
 
   useEffect(() => {
+    consumeJwtFromUrl();
+
     const checkAuth = async () => {
       try {
-        const res = await fetch(`${apiBaseUrl}/api/me`, {
+        const token = getStoredJwt();
+        if (!token) {
+          setUser(null);
+          return;
+        }
+
+        const res = await apiFetch(apiBaseUrl, 'me', {
           method: 'GET',
-          credentials: 'include',
+          token,
         });
 
         if (res.ok) {
@@ -43,10 +52,7 @@ export default function NavbarGithubAuth() {
 
   const handleLogout = async () => {
     try {
-      await fetch(`${apiBaseUrl}/api/logout`, {
-        method: 'POST',
-        credentials: 'include',
-      });
+      clearStoredJwt();
       setUser(null);
       window.location.href = '/';
     } catch (e) {
@@ -55,7 +61,7 @@ export default function NavbarGithubAuth() {
   };
 
   const handleLogin = () => {
-    window.location.href = `${apiBaseUrl}/api/github-login`;
+    window.location.href = buildApiUrl(apiBaseUrl, 'github-login');
   };
 
   if (user) {

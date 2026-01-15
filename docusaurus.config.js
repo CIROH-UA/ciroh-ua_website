@@ -1,4 +1,7 @@
 import { themes as prismThemes } from "prism-react-renderer";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const baseUrl = "/";
 
@@ -11,6 +14,13 @@ const config = {
   baseUrl: baseUrl,
   onBrokenLinks: "ignore",
   favicon: "img/logos/docuhub.png",
+
+  customFields: {
+    apiBaseUrl:
+      process.env.REACT_APP_API_BASE_URL ||
+      process.env.VITE_API_BASE_URL ||
+      'https://67h5z9ih7j.execute-api.us-east-1.amazonaws.com/default',
+  },
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

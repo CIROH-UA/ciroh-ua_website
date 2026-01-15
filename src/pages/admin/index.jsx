@@ -3,23 +3,24 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 import Link from '@docusaurus/Link';
 import DotGrid from './components/DotGrid';
 import './styles.css';
+import { apiFetch, buildApiUrl } from '@site/src/utils/apiClient';
+import { clearStoredJwt, consumeJwtFromUrl, getStoredJwt } from '@site/src/utils/authToken';
+import { useApiBaseUrl } from '@site/src/utils/useApiBaseUrl';
 
 const AdminInner = () => {
   const [user, setUser] = React.useState(null);
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState('');
 
-  const apiBaseUrl = React.useMemo(() => {
-    if (typeof window === 'undefined') return 'http://localhost:3001';
-    return `http://${window.location.hostname}:3001`;
+  const apiBaseUrl = useApiBaseUrl();
+
+  React.useEffect(() => {
+    consumeJwtFromUrl();
   }, []);
 
   const logout = async () => {
     try {
-      await fetch(`${apiBaseUrl}/api/logout`, {
-        method: 'POST',
-        credentials: 'include',
-      });
+      clearStoredJwt();
     } finally {
       window.location.href = '/';
     }
@@ -30,13 +31,19 @@ const AdminInner = () => {
 
     const run = async () => {
       try {
-        const res = await fetch(`${apiBaseUrl}/api/me`, {
+        const token = getStoredJwt();
+        if (!token) {
+          window.location.href = buildApiUrl(apiBaseUrl, 'github-login');
+          return;
+        }
+
+        const res = await apiFetch(apiBaseUrl, 'me', {
           method: 'GET',
-          credentials: 'include',
+          token,
         });
 
         if (res.status === 401) {
-          window.location.href = `${apiBaseUrl}/api/github-login`;
+          window.location.href = buildApiUrl(apiBaseUrl, 'github-login');
           return;
         }
 
@@ -57,6 +64,7 @@ const AdminInner = () => {
 
   const displayName = user?.name || user?.login || 'Admin';
   const initial = (displayName || 'A').trim().charAt(0).toUpperCase();
+  const avatarSrc = user?.avatar_url || (user?.login ? `https://github.com/${user.login}.png` : null);
 
   return (
     <div className="admin-container">
@@ -102,8 +110,8 @@ const AdminInner = () => {
               </button>
 
               <div className="admin-avatar">
-                {user?.avatar_url ? (
-                  <img src={user.avatar_url} alt={displayName} />
+                {avatarSrc ? (
+                  <img src={avatarSrc} alt={displayName} />
                 ) : (
                   <span>{initial}</span>
                 )}

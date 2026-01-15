@@ -1,8 +1,16 @@
 import React from 'react';
-import Link from '@docusaurus/Link';
+import { buildApiUrl } from '@site/src/utils/apiClient';
+import { useApiBaseUrl } from '@site/src/utils/useApiBaseUrl';
 
 const LoginButton = () => {
-  return <Link to="/api/github-login">Login</Link>;
+  const apiBaseUrl = useApiBaseUrl();
+  const href = buildApiUrl(apiBaseUrl, 'github-login');
+
+  return (
+    <a href={href}>
+      Login
+    </a>
+  );
 };
 
 export default LoginButton;

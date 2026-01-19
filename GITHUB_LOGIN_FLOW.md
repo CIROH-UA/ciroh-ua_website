@@ -1,4 +1,4 @@
-# CIROH DocuHub — GitHub Login / Admin Auth Flow
+# CIROH DocuHub - GitHub Login / Admin Auth Flow
 
 This document explains how DocuHub’s GitHub login works end-to-end: how users are redirected to GitHub OAuth, how the backend exchanges the OAuth code for a GitHub token, how the system issues an application JWT, how the frontend stores that JWT, and how admin pages use it to call protected APIs.
 

@@ -16,6 +16,8 @@ export default function Resources() {
   const hydroShareIcon = 'https://storage.googleapis.com/hydroshare-prod-static-media/static/img/logo-lg.cf4395806c8e.png';
   const tethysIcon = 'https://tethysgeoscience.org/wp-content/uploads/2025/01/TehtysPlatform.png';
   
+  const darkTethysIcon = 'https://www.tethysplatform.org/images/tethys-on-blue.svg';
+
   return (
     <Layout
       title="CIROH Community Products"
@@ -80,7 +82,8 @@ export default function Resources() {
                   </p>
                   <div className={styles.poweredBy}>
                     <span className={styles.poweredByLabel}>Powered by</span>
-                    <img src={tethysIcon} alt="Tethys Platform" style={{height:32}} />
+                    <img src={tethysIcon} alt="Tethys Platform" style={{height:32}} className="tw-inline dark:tw-hidden" />
+                    <img src={darkTethysIcon} alt="Tethys Platform (dark)" style={{height:32}} className="tw-hidden dark:tw-inline" />
                     <img src={hydroShareIcon} alt="HydroShare" style={{height:32}} />
                   </div>
                 </div>
@@ -100,7 +103,8 @@ export default function Resources() {
                   </p>
                   <div className={styles.poweredBy}>
                     <span className={styles.poweredByLabel}>Powered by</span>
-                    <img src={tethysIcon} alt="Tethys Platform" style={{height:32}} />
+                    <img src={tethysIcon} alt="Tethys Platform" style={{height:32}} className="tw-inline dark:tw-hidden" />
+                    <img src={darkTethysIcon} alt="Tethys Platform (dark)" style={{height:32}} className="tw-hidden dark:tw-inline" />
                     <img src={hydroShareIcon} alt="HydroShare" style={{height:32}} />
                   </div>
                 </div>

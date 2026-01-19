@@ -99,13 +99,12 @@ const ProductCard = ({ product }) => {
 };
 
 const ProductCards = ({ productsData }) => {
-  const { siteConfig } = useDocusaurusContext();
-  const issueUrl = siteConfig?.customFields?.productIssueUrl;
+  // Must call useBaseUrl during render (not inside event handlers)
+  const adminAddSoftwareUrl = useBaseUrl('/admin/add-software');
 
   const handleAddProduct = () => {
-    // Open product request issue template from config (fallback to repo issues page)
-    const githubUrl = issueUrl;
-    window.open(githubUrl, "_blank");
+    // Send user to the admin add form; the page will trigger GitHub login if needed.
+    window.location.href = adminAddSoftwareUrl;
   };
 
   return (

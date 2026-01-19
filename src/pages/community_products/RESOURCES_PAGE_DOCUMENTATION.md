@@ -70,11 +70,11 @@ Rendered to user
 **How It Works:**
 ```javascript
 // Step 1: Page loads with Layout wrapper
-<Layout title="CIROH Community Resources" description="...">
+<Layout title="CIROH Community Products" description="...">
   
   // Step 2: Hero banner section displays
   <div className={styles.resourcesBanner}>
-    <h1>CIROH Community Resources</h1>
+    <h1>CIROH Community Products</h1>
     <p>Discover hydrologic data, models, tools...</p>
   </div>
 
@@ -119,12 +119,12 @@ export default function Resources() {
   
   return (
     <Layout
-      title="CIROH Community Resources"
+      title="CIROH Community Products"
       description="HydroShare resources and courses">
       <main>
         <div className={styles.resourcesBanner}>
           <div className={styles.resourcesContainer}>
-            <h1 className={styles.resourcesTitle}>CIROH Community Resources</h1>
+            <h1 className={styles.resourcesTitle}>CIROH Community Products</h1>
             <p className={styles.resourcesSubtitle}>
               Discover hydrologic data, models, tools, and learning modules curated from HydroShare.
               Explore CIROH's ecosystem of community-contributed resources supporting NOAA's hydrologic research.

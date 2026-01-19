@@ -10,6 +10,7 @@ import "./whyDocuhub.css";
 import Link from '@docusaurus/Link';
 import ResearcherTestimonials from './testimonial';
 import TeamMembers from './teamMembers';
+import PrincipalInvestigators from './principalInvestigators';
 import HighlightCards from './highlightCards'
 import Hyperspeed from '../Reactbits/hyperSpeed'
 import CardCarousel from "./CardCarousel";
@@ -750,6 +751,7 @@ export default function HomepageFeatures() {
             </div>
           </div>
         </section> */}
+        <PrincipalInvestigators />
         <TeamMembers />
         <ResearcherTestimonials />
 

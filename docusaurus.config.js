@@ -20,6 +20,9 @@ const config = {
       process.env.REACT_APP_API_BASE_URL ||
       process.env.VITE_API_BASE_URL ||
       'https://67h5z9ih7j.execute-api.us-east-1.amazonaws.com/default',
+    onBrokenMarkdownLinks: "warn",
+    onBrokenMarkdownImages: "warn",
+    githubProjectToken: process.env.GITHUB_PROJECT_TOKEN,
   },
 
   // GitHub pages deployment config.
@@ -34,10 +37,7 @@ const config = {
   },
 
   markdown: {
-    hooks: {
-    onBrokenMarkdownLinks: "warn",
-    onBrokenMarkdownImages: "warn",
-    }
+    mermaid: true,
   },
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -116,6 +116,11 @@ const config = {
       '@docusaurus/plugin-client-redirects',
       {
         redirects: [
+          // Resources page redirect
+          {
+            to: '/community_products',
+            from: '/resources',
+          },
           // Feedback page: grandfather in old Science Meeting survey links
           {
             to: '/feedback',
@@ -410,8 +415,8 @@ const config = {
             position: "left",
           },
           {
-            href: "/resources",
-            label: "Community Resources",
+            href: "/community_products",
+            label: "Community Products",
             position: "left",
           },
           {
@@ -447,8 +452,8 @@ const config = {
             title: 'Quick Links',
             items: [
               {
-                label: 'Community Resources',
-                href: '/resources'
+                label: 'Community Products',
+                href: '/community_products'
               },
               {
                 label: 'Contact Us',

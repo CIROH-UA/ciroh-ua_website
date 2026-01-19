@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import DotGrid from './components/DotGrid';
 import './styles.css';
 import { apiFetch, buildApiUrl } from '@site/src/utils/apiClient';
-import { clearStoredJwt, consumeJwtFromUrl, getStoredJwt } from '@site/src/utils/authToken';
+import { clearStoredJwt, consumeJwtFromUrl, consumeLoginReturnTo, getStoredJwt, setLoginReturnTo } from '@site/src/utils/authToken';
 import { useApiBaseUrl } from '@site/src/utils/useApiBaseUrl';
 
 const AdminInner = () => {
@@ -33,6 +33,7 @@ const AdminInner = () => {
       try {
         const token = getStoredJwt();
         if (!token) {
+          setLoginReturnTo(`${window.location.pathname}${window.location.search}${window.location.hash}`);
           window.location.href = buildApiUrl(apiBaseUrl, 'github-login');
           return;
         }
@@ -43,12 +44,21 @@ const AdminInner = () => {
         });
 
         if (res.status === 401) {
+          setLoginReturnTo(`${window.location.pathname}${window.location.search}${window.location.hash}`);
           window.location.href = buildApiUrl(apiBaseUrl, 'github-login');
           return;
         }
 
         const data = await res.json();
         if (!cancelled) setUser(data);
+
+        // If we were redirected here after OAuth, send user back
+        // to the originally requested admin page.
+        const returnTo = consumeLoginReturnTo();
+        if (returnTo && returnTo !== '/admin' && returnTo !== '/admin/') {
+          window.location.href = returnTo;
+          return;
+        }
       } catch (e) {
         if (!cancelled) setError('Failed to load admin session.');
       } finally {
@@ -125,7 +135,7 @@ const AdminInner = () => {
         <section className="admin-section">
           <h2 className="admin-section-title">Quick Actions</h2>
           <div className="admin-grid">
-            <Link to="/admin/add-product" className="admin-card admin-card-blue delay-100">
+            <Link to="/admin/add-software" className="admin-card admin-card-blue delay-100">
               <div className="admin-card-inner">
                 <div className="admin-card-icon">
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -137,8 +147,8 @@ const AdminInner = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="admin-card-title">Add Product</h3>
-                <p className="admin-card-desc">Create and manage your product catalog</p>
+                <h3 className="admin-card-title">Add Software</h3>
+                <p className="admin-card-desc">Create and manage your software catalog</p>
                 <button type="button" className="admin-card-btn">Add New</button>
               </div>
             </Link>
@@ -212,7 +222,7 @@ const AdminInner = () => {
                 </div>
                 <span className="admin-stat-change">+12.5%</span>
               </div>
-              <h4 className="admin-stat-label">Total Products</h4>
+              <h4 className="admin-stat-label">Total Software</h4>
               <p className="admin-stat-value">2,847</p>
             </div>
 

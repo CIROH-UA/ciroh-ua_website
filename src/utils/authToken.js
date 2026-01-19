@@ -1,4 +1,5 @@
 const TOKEN_KEY = 'ciroh_admin_jwt';
+const RETURN_TO_KEY = 'ciroh_admin_returnTo';
 
 export function getStoredJwt() {
   if (typeof window === 'undefined') return null;
@@ -44,6 +45,29 @@ export function consumeJwtFromUrl() {
     window.history.replaceState({}, document.title, url.toString());
 
     return token;
+  } catch {
+    return null;
+  }
+}
+
+export function setLoginReturnTo(path) {
+  if (typeof window === 'undefined') return;
+  const value = String(path || '').trim();
+  if (!value) return;
+  try {
+    window.sessionStorage.setItem(RETURN_TO_KEY, value);
+  } catch {
+    // ignore
+  }
+}
+
+export function consumeLoginReturnTo() {
+  if (typeof window === 'undefined') return null;
+  try {
+    const value = window.sessionStorage.getItem(RETURN_TO_KEY);
+    if (!value) return null;
+    window.sessionStorage.removeItem(RETURN_TO_KEY);
+    return value;
   } catch {
     return null;
   }

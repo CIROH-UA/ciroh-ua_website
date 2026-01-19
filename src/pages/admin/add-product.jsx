@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import DotGrid from './components/DotGrid';
 import './styles.css';
 import { apiFetch, buildApiUrl } from '@site/src/utils/apiClient';
-import { consumeJwtFromUrl, getStoredJwt } from '@site/src/utils/authToken';
+import { consumeJwtFromUrl, getStoredJwt, setLoginReturnTo } from '@site/src/utils/authToken';
 import { useApiBaseUrl } from '@site/src/utils/useApiBaseUrl';
 
 const CATEGORIES = [
@@ -49,6 +49,7 @@ const AddProductInner = () => {
     consumeJwtFromUrl();
     const token = getStoredJwt();
     if (!token) {
+      setLoginReturnTo(`${window.location.pathname}${window.location.search}${window.location.hash}`);
       window.location.href = buildApiUrl(apiBaseUrl, 'github-login');
     }
   }, [apiBaseUrl]);
@@ -91,7 +92,7 @@ const AddProductInner = () => {
 
     setLoading(true);
 
-    const title = `Product Request: ${form.productName}`;
+    const title = `Software Request: ${form.productName}`;
     const body = buildBody(form);
 
     try {
@@ -103,6 +104,7 @@ const AddProductInner = () => {
       });
 
       if (res.status === 401) {
+        setLoginReturnTo(`${window.location.pathname}${window.location.search}${window.location.hash}`);
         window.location.href = buildApiUrl(apiBaseUrl, 'github-login');
         return;
       }
@@ -157,9 +159,9 @@ const AddProductInner = () => {
     const zoteroUrl = (f.zoteroUrl || '').trim() || 'N/A';
     const primaryContact = (f.primaryContact || '').trim() || 'N/A';
 
-    return `## Product Information 
+    return `## Software Information 
 
-**Product Name:** ${f.productName}
+**Software Name:** ${f.productName}
 
 **Short Description:** ${f.shortDescription}
 
@@ -167,7 +169,7 @@ const AddProductInner = () => {
 
 ${categoryBlock}
 
-**Product Tags:** ${tags}
+**Software Tags:** ${tags}
 
 **Icon URL:** ${iconUrl}
 
@@ -197,7 +199,7 @@ ${primaryContact}
 
 ---
 
-**Thank you for contributing to the CIROH Products catalog!** 🌊
+**Thank you for contributing to the CIROH Software catalog!** 🌊
 `;
   };
 
@@ -227,14 +229,14 @@ ${primaryContact}
         <div className="admin-content">
           <div className="admin-page-header">
             <Link className="admin-back-link" to="/admin">← Back to Admin</Link>
-            <h1 className="admin-page-title">Add Product Request</h1>
+            <h1 className="admin-page-title">Add Software Request</h1>
             <p className="admin-page-subtitle">Your request has been submitted as a GitHub issue.</p>
           </div>
 
           <div className="admin-form-card">
             <div className="admin-success">
               <h2>Thank you!</h2>
-              <p>Thank you for contributing to the CIROH Products catalog! 🌊</p>
+              <p>Thank you for contributing to the CIROH Software catalog! 🌊</p>
 
               <div className="admin-success-actions">
                 <a
@@ -287,14 +289,14 @@ ${primaryContact}
       <div className="admin-content">
         <div className="admin-page-header">
           <Link className="admin-back-link" to="/admin">← Back to Admin</Link>
-          <h1 className="admin-page-title">Add Product Request</h1>
+          <h1 className="admin-page-title">Add Software Request</h1>
           <p className="admin-page-subtitle">This will create a GitHub issue in the CIROH catalog repo.</p>
         </div>
 
         <div className="admin-form-card">
           <form className="admin-form" onSubmit={handleSubmit}>
             <div className="admin-field">
-              <label className="admin-label" htmlFor="productName">Product Name <span className="admin-required">Required</span></label>
+              <label className="admin-label" htmlFor="productName">Software Name <span className="admin-required">Required</span></label>
               <input
                 id="productName"
                 className="admin-input"
@@ -303,7 +305,7 @@ ${primaryContact}
                 value={form.productName}
                 onChange={handleChange}
                 required
-                placeholder="Enter the name of your product/tool/resource"
+                placeholder="Enter the name of your software/tool/resource"
               />
             </div>
 
@@ -353,7 +355,7 @@ ${primaryContact}
             </div>
 
             <div className="admin-field">
-              <label className="admin-label" htmlFor="tags">Product Tags <span className="admin-optional">Optional</span></label>
+              <label className="admin-label" htmlFor="tags">Software Tags <span className="admin-optional">Optional</span></label>
               <input
                 id="tags"
                 className="admin-input"
@@ -462,7 +464,7 @@ ${primaryContact}
 
             <div className="admin-form-actions">
               <button className="admin-primary-btn" type="submit" disabled={loading}>
-                {loading ? 'Submitting…' : 'Submit Product Request'}
+                {loading ? 'Submitting…' : 'Submit Software Request'}
               </button>
             </div>
           </form>

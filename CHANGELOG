@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [Unreleased] – January 19, 2026
+
+### Added
+- **Working Groups page** (`/working-groups`)
+  - New dedicated page showcasing all 8 CIROH Working Groups with full descriptions, objectives, and leadership information.
+  - Includes Flood Inundation Mapping, Decision Support, Hydrologic Modeling & Prediction, Hydroinformatics, Early Career, Community Resources, Artificial Intelligence, and Model & Forecast Evaluation working groups.
+  - Features a real-time search/filter functionality to discover working groups by name, objective, or keyword.
+  - Full light/dark theme support with glassmorphic UI and smooth animations.
+  - Responsive grid layout (1 column on mobile, 2 columns on desktop).
+  - Animated hero section with floating gradient orbs and scroll-triggered card reveals using GSAP.
+- **Working Groups navbar item** added to main navigation under the left menu items (between "Community Products" and "Community Impact").
+
+### Changed
+- Updated navbar structure to include the new Working Groups section, improving navigation discoverability.
+
+---
+
 ## [Unreleased] – January 13, 2026
 
 ### Added

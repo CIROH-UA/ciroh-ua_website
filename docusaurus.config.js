@@ -420,6 +420,11 @@ const config = {
             position: "left",
           },
           {
+            href: "/working-groups",
+            label: "Working Groups",
+            position: "left",
+          },
+          {
             href: "/impact",
             label: "Community Impact",
             position: "right",

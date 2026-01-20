@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [Unreleased] – January 20, 2026
+
+### Changed
+- **Rebranding from "CIROH DocuHub" and "DocuHub" to "CIROH Hub"**
+  - Updated all instances of "CIROH DocuHub" and "DocuHub" to "CIROH Hub" throughout the project for consistent branding.
+  - Changes were made in the following files:
+    - **Configuration**: `docusaurus.config.js` (site title, announcement bar text)
+    - **Main Pages**: `src/pages/index.js`, `src/pages/contact.mdx`, `src/pages/feedback.mdx`, `src/pages/contribute/index.js`
+    - **Components**: `src/components/HomepageFeatures/index.js`, `src/components/HomepageFeatures/cardGrid.js`, `src/components/HomepageFeatures/testimonial.js`, `src/components/HomepageFeatures/teamMembers.js`
+    - **Data Files**: `src/data/nextgen-news.json`, `src/pages/working-groups/workingGroupsData.js`
+    - **Documentation**: `README.md`, `GITHUB_LOGIN_FLOW.md`, `release-notes-template.mdx`, `static/img/blog/authors/readme.txt`, `src/pages/community_products/RESOURCES_PAGE_DOCUMENTATION.md`
+    - **Release Notes**: All release note files from April 2025 to November 2025 (14 files total: `2025-04-08-release-notes.mdx`, `2025-05-05-release-notes.mdx`, `2025-05-16-release-notes.mdx`, `2025-05-22-release-notes.mdx`, `2025-05-27-release-notes.mdx`, `2025-06-04-release-notes.mdx`, `2025-06-11-release-notes.mdx`, `2025-07-01-release-notes.mdx`, `2025-07-24-release-notes.mdx`, `2025-08-01-release-notes.mdx`, `2025-08-29-release-notes.mdx`, `2025-09-12-release-notes.mdx`, `2025-10-01-release-notes.mdx`, `2025-11-03-release-notes.mdx`)
+    - **Blog Posts**: `blog/2024-1-31-NextGen-Update-Monthly.mdx`, `blog/2024-2-29-NextGen-Update-Monthly.mdx`, `blog/2025-06-04-DevCon25-Keynote.mdx`
+    - **Test Files**: `Tests/test.html`, `Tests/test2.html`, `Tests/test5.html`, `Tests/newsTest.html`, `Tests/cards_test.html`
+  - Updated testimonials to reference "CIROH Hub" instead of "DocuHub"
+  - Survey links and announcements now reference "CIROH Hub/Portal" instead of "DocuHub/Portal"
+  - Team page now titled "Meet CIROH Hub Team" instead of "Meet DocuHub Team"
+- **Navbar update**: Changed "Products" to "Softwares" in the main navigation bar (`docusaurus.config.js`)
+
+---
+
 ## [Unreleased] – January 19, 2026
 
 ### Added

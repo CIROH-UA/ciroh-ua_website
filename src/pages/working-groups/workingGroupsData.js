@@ -47,7 +47,7 @@ export const workingGroups = [
     objectives: [
       "Design strategy and document for a generic hydroinformatics library (Python: import ciroh; from ciroh import forecasts).",
       "Plan and develop strategy for a hydroinformatics field camp.",
-      "Provide detailed guidance and documentation for integrating research tools in the portal/docuhub.",
+      "Provide detailed guidance and documentation for integrating research tools in the CIROH Portal/Hub.",
     ],
     leads: ["Dan Ames, BYU"],
   },
@@ -67,9 +67,9 @@ export const workingGroups = [
     id: "community-resources",
     title: "Community Resources Working Group",
     summary:
-      "Informs the planning of CIROH's community resources, including research cyberinfrastructure (computing and storage capacity), research hydrology forecasting capabilities (NGIAB, NRDS), community documentation (DocuHub), and products/datasets (Portal). Oversees organization and dissemination of resources through DocuHub, Portal, HydroShare, and other outlets.",
+      "Informs the planning of CIROH's community resources, including research cyberinfrastructure (computing and storage capacity), research hydrology forecasting capabilities (NGIAB, NRDS), community documentation (CIROH Hub), and products/datasets (Portal). Oversees organization and dissemination of resources through CIROH Hub, Portal, HydroShare, and other outlets.",
     objectives: [
-      "Establish the DocuHub and Portal policies.",
+      "Establish the CIROH Hub and Portal policies.",
       "Lead the development of cyberinfrastructure (Compute/Storage) roadmap.",
       "Plan and develop the roadmap for NGIAB and NRDS.",
       "Lead the development of articles/publications (e.g., R2X).",

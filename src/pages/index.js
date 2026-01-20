@@ -280,7 +280,7 @@ function HomepageHeader() {
                 )}
               >
                 <span className="tw-text-blue-800 dark:tw-text-white">CIROH</span>{' '}
-                <span className="tw-text-blue-800 dark:tw-text-cyan-400">DocuHub</span>
+                <span className="tw-text-blue-800 dark:tw-text-cyan-400"> Hub</span>
               </h1>
 
 
@@ -302,7 +302,7 @@ function HomepageHeader() {
                 isDarkTheme ? 'tw-text-white' : 'tw-text-blue-700'
               )}
             >
-              Welcome to <span className={clsx('tw-font-semibold', isDarkTheme ? 'tw-text-white' : 'tw-text-blue-600')}>CIROH's DocuHub</span>: Your centralized gateway to expert insights on our Software, Services, and comprehensive documentation.
+              Welcome to <span className={clsx('tw-font-semibold', isDarkTheme ? 'tw-text-white' : 'tw-text-blue-600')}>CIROH Hub</span>: Your centralized gateway to expert insights on our Software, Services, and comprehensive documentation.
             </p>
 
             {/* CTA Buttons */}

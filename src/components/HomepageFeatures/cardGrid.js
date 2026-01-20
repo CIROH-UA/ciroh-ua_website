@@ -69,7 +69,7 @@ export default function CardGridSection({ items = [] }) {
                 {/* HEADER */}
                 <div className="cg-header tw-text-center">
                     <h2 className="tw-text-4xl md:tw-text-5xl tw-font-extrabold tw-text-blue-800 dark:tw-text-white tw-mb-4">
-                        Why DocuHub?
+                        Why CIROH Hub?
                     </h2>
 
                     <h2 className="cg-title">Elevate Your Research Journey</h2>

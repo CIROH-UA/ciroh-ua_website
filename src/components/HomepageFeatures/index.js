@@ -645,9 +645,9 @@ export default function HomepageFeatures() {
             tw-text-white
           "
                 >
-                  We welcome CIROH Consortium members to contribute to the CIROH DocuHub.
+                  We welcome CIROH Consortium members to contribute to the CIROH Hub.
                   Add documentation, tutorials, workflows, or conference presentations.
-                  The DocuHub serves as a shared platform for distributing expertise across
+                  The CIROH Hub serves as a shared platform for distributing expertise across
                   the community.{" "}
                   <span className="tw-font-semibold tw-text-yellow-400">
                     Learn how you can contribute and access the CIROH Repository below.
@@ -703,7 +703,7 @@ export default function HomepageFeatures() {
 
         {/* <section className="padded-page-section-feature" id="services">
           <div className="container-feature">
-            <h2 className="text-center-feature mt-0">Why DocuHub? Elevate Your Research Journey</h2>
+            <h2 className="text-center-feature mt-0">Why CIROH Hub? Elevate Your Research Journey</h2>
             <hr className="divider-feature" />
             <div className="row-feature ">
               <div className="col-lg-3-feature col-md-6-feature text-center">

@@ -39,7 +39,7 @@ export default function Contribute() {
             <p>
               Share your work where the community can find it. Upload your courses, presentations,
               datasets, and apps to <a href={useBaseUrl('/resources')}>HydroShare</a> and they’ll be
-              showcased right here in DocuHub for broader reach. Publish your papers to <a href={zoteroLogin} target="_blank" rel="noreferrer noopener">Zotero</a> and they’ll appear here as part of CIROH’s shared library.
+              showcased right here in CIROH Hub for broader reach. Publish your papers to <a href={zoteroLogin} target="_blank" rel="noreferrer noopener">Zotero</a> and they'll appear here as part of CIROH's shared library.
             </p>
           </div>
 
@@ -49,13 +49,13 @@ export default function Contribute() {
               <img
                 className={styles.brandLogo}
                 src={useBaseUrl('/img/logos/docuhub.png')}
-                alt="DocuHub"
+                alt="CIROH Hub"
               />
               <div className={styles.brandTitleWrap}>
-                <h3 className={styles.brandTitle}>Contribute to DocuHub</h3>
+                <h3 className={styles.brandTitle}>Contribute to CIROH Hub</h3>
                 <p className={styles.brandSubtitle}>
                   Share your R2O products, submit blog posts about your research, document your GitHub projects, 
-                  or add guides and tutorials. The DocuHub team is happy to feature your work and make it accessible 
+                  or add guides and tutorials. The CIROH Hub team is happy to feature your work and make it accessible 
                   to the hydrologic science community.
                 </p>
               </div>
@@ -138,7 +138,7 @@ export default function Contribute() {
               <h2 className={styles.infoTitle}>Learn more about contributing</h2>
               <p className={styles.infoText}>
                 Explore the CIROH Portal to see how products are curated and surfaced across
-                DocuHub and HydroShare, and how your contributions reach the community.
+                CIROH Hub and HydroShare, and how your contributions reach the community.
               </p>
             </div>
             <div className={styles.infoActions}>

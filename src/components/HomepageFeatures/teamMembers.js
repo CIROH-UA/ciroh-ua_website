@@ -52,7 +52,7 @@ const team = [
 export default function TeamMembers() {
   return (
     <section className="team-section">
-      <h2 className="team-title">Meet DocuHub Team</h2>
+      <h2 className="team-title">Meet CIROH Hub Team</h2>
       <div className="team-divider"></div>
 
       <div className="team-grid-list">

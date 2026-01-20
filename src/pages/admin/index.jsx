@@ -171,7 +171,7 @@ const AdminInner = () => {
               </div>
             </Link>
 
-            <div className="admin-card admin-card-pink delay-300">
+            {/* <div className="admin-card admin-card-pink delay-300">
               <div className="admin-card-inner">
                 <div className="admin-card-icon">
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -187,9 +187,9 @@ const AdminInner = () => {
                 <p className="admin-card-desc">Expand your service offerings</p>
                 <button type="button" className="admin-card-btn">Add Service</button>
               </div>
-            </div>
+            </div> */}
 
-            <div className="admin-card admin-card-emerald delay-400">
+            {/* <div className="admin-card admin-card-emerald delay-400">
               <div className="admin-card-inner">
                 <div className="admin-card-icon">
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -205,12 +205,12 @@ const AdminInner = () => {
                 <p className="admin-card-desc">Track your performance metrics</p>
                 <button type="button" className="admin-card-btn">View Stats</button>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
         {/* Analytics Overview */}
-        <section className="admin-analytics-section fade-in-up delay-400">
+        {/* <section className="admin-analytics-section fade-in-up delay-400">
           <h2 className="admin-section-title">Analytics Overview</h2>
           <div className="admin-stats-grid">
             <div className="admin-stat-card">
@@ -296,7 +296,7 @@ const AdminInner = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {loading ? <div className="admin-loading">Loading session…</div> : null}
       </div>

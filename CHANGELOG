@@ -22,6 +22,10 @@ All notable changes to this project will be documented in this file.
   - Survey links and announcements now reference "CIROH Hub/Portal" instead of "DocuHub/Portal"
   - Team page now titled "Meet CIROH Hub Team" instead of "Meet DocuHub Team"
 - **Navbar update**: Changed "Products" to "Softwares" in the main navigation bar (`docusaurus.config.js`)
+- **Admin page UI cleanup**: Commented out the following sections in the admin dashboard (`src/pages/admin/index.jsx`):
+  - **Add Service** quick action card (pink card)
+  - **View Analytics** quick action card (emerald card)
+  - **Analytics Overview** section (entire section including stats grid with metrics like Total Software, Blog Posts, Active Services, Total Users, and the Performance Metrics chart)
 
 ---
 

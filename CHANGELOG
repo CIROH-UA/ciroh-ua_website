@@ -20,6 +20,16 @@ All notable changes to this project will be documented in this file.
   - Light mode: Displays black Tethys logo
   - Dark mode: Displays white Tethys logo on blue background
   - Prevents `useColorMode` hook errors by properly nesting hook calls inside Layout component
+  - **Added URL anchor navigation for tab switching**
+    - Implemented state-based tab management with URL hash synchronization
+    - Tabs can now be opened directly via URL anchors:
+      - `/community-products#apps` → Opens Apps tab
+      - `/community-products#courses` → Opens Courses tab
+      - `/community-products#presentations` → Opens Presentations tab
+      - `/community-products#datasets` → Opens Datasets tab
+    - Tab changes automatically update the URL hash for shareable direct links
+    - Page initialization checks URL hash on load to set the appropriate active tab
+    - Changed tab identifier from `products` to `apps` for semantic clarity
 
 ---
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -21,9 +21,25 @@ function TethysLogo({ lightSrc, darkSrc, alt, height = 32 }) {
 }
 
 export default function Resources() {
+  const [activeTab, setActiveTab] = useState('apps');
   const hydroShareIcon = 'https://storage.googleapis.com/hydroshare-prod-static-media/static/img/logo-lg.cf4395806c8e.png';
   const tethysIcon = 'https://tethysgeoscience.org/wp-content/uploads/2025/01/TehtysPlatform.png';
   const darkTethysIcon = 'https://www.tethysplatform.org/images/tethys-on-blue.svg';
+
+  // Set initial tab from URL hash
+  useEffect(() => {
+    const hash = window.location.hash.slice(1); // Remove the '#'
+    const validTabs = ['apps', 'courses', 'presentations', 'datasets'];
+    if (hash && validTabs.includes(hash)) {
+      setActiveTab(hash);
+    }
+  }, []);
+
+  // Update URL hash when tab changes
+  const handleTabChange = (tabValue) => {
+    setActiveTab(tabValue);
+    window.location.hash = tabValue;
+  };
 
   return (
     <Layout
@@ -41,7 +57,7 @@ export default function Resources() {
         </div>
 
         <div className="container" style={{ marginTop: '2rem' }}>
-          <Tabs defaultValue="products" values={[
+          <Tabs defaultValue={activeTab} values={[
             {
               label: (
                 <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -49,7 +65,7 @@ export default function Resources() {
                   Apps
                 </span>
               ),
-              value: 'products'
+              value: 'apps'
             },
             {
               label: (
@@ -78,8 +94,9 @@ export default function Resources() {
               ),
               value: 'datasets'
             },
-          ]}>
-            <TabItem value="products">
+          ]}
+          onTabChange={handleTabChange}>
+            <TabItem value="apps">
               <div className={styles.tabBanner}>
                 <div className={styles.tabBannerContent}>
                   <h2 className={styles.tabTitle}>HydroShare Resources</h2>

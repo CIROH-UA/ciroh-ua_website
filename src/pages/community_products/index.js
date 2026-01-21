@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import { useColorMode } from '@docusaurus/theme-common';
 import styles from './resources.module.css';
 import ResourceBrowser from '@site/src/components/ResourceBrowser';
 import { MdApps } from 'react-icons/md';
@@ -12,10 +13,16 @@ import { PiGraduationCapFill } from 'react-icons/pi';
 import { HiDocumentText } from 'react-icons/hi';
 import clsx from 'clsx';
 
+function TethysLogo({ lightSrc, darkSrc, alt, height = 32 }) {
+  const { colorMode } = useColorMode();
+  const src = colorMode === 'dark' ? darkSrc : lightSrc;
+
+  return <img src={src} alt={alt} style={{ height }} />;
+}
+
 export default function Resources() {
   const hydroShareIcon = 'https://storage.googleapis.com/hydroshare-prod-static-media/static/img/logo-lg.cf4395806c8e.png';
   const tethysIcon = 'https://tethysgeoscience.org/wp-content/uploads/2025/01/TehtysPlatform.png';
-  
   const darkTethysIcon = 'https://www.tethysplatform.org/images/tethys-on-blue.svg';
 
   return (
@@ -39,7 +46,7 @@ export default function Resources() {
               label: (
                 <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <MdApps size={20} />
-                  Software
+                  Apps
                 </span>
               ),
               value: 'products'
@@ -82,8 +89,12 @@ export default function Resources() {
                   </p>
                   <div className={styles.poweredBy}>
                     <span className={styles.poweredByLabel}>Powered by</span>
-                    <img src={tethysIcon} alt="Tethys Platform" style={{height:32}} className="tw-inline dark:tw-hidden" />
-                    <img src={darkTethysIcon} alt="Tethys Platform (dark)" style={{height:32}} className="tw-hidden dark:tw-inline" />
+                    <TethysLogo
+                      lightSrc={tethysIcon}
+                      darkSrc={darkTethysIcon}
+                      alt="Tethys Platform"
+                      height={32}
+                    />
                     <img src={hydroShareIcon} alt="HydroShare" style={{height:32}} />
                   </div>
                 </div>
@@ -103,8 +114,12 @@ export default function Resources() {
                   </p>
                   <div className={styles.poweredBy}>
                     <span className={styles.poweredByLabel}>Powered by</span>
-                    <img src={tethysIcon} alt="Tethys Platform" style={{height:32}} className="tw-inline dark:tw-hidden" />
-                    <img src={darkTethysIcon} alt="Tethys Platform (dark)" style={{height:32}} className="tw-hidden dark:tw-inline" />
+                    <TethysLogo
+                      lightSrc={tethysIcon}
+                      darkSrc={darkTethysIcon}
+                      alt="Tethys Platform"
+                      height={32}
+                    />
                     <img src={hydroShareIcon} alt="HydroShare" style={{height:32}} />
                   </div>
                 </div>

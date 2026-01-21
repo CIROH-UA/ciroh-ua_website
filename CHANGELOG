@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [Unreleased] – January 21, 2026
+
+### Changed
+- **Navbar dropdown styling**
+  - Fixed navbar dropdown menus to have opaque backgrounds instead of transparent
+  - Light mode: Dropdowns now use white background (`#ffffff`)
+  - Dark mode: Dropdowns now use solid gray-blue background (`#2d3748`)
+  - Updated `src/css/navbar-auth.css` with `!important` flags to override theme transparency settings
+  - Updated `src/css/custom.css` to add CSS variables for dropdown backgrounds and force `.navbar .dropdown__menu` styling globally
+  - Fixes GitHub auth dropdown and all Docusaurus navbar dropdowns to be properly visible and readable in both themes
+- **Community Products page (src/pages/community_products/index.js)**
+  - Fixed Tethys logo display to use Docusaurus `useColorMode()` hook correctly within ColorModeProvider context
+  - Added `TethysLogo` component to handle theme-aware logo switching
+  - Light mode: Displays black Tethys logo
+  - Dark mode: Displays white Tethys logo on blue background
+  - Prevents `useColorMode` hook errors by properly nesting hook calls inside Layout component
+
+---
+
 ## [Unreleased] – January 20, 2026
 
 ### Added

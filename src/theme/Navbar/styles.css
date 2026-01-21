@@ -73,7 +73,7 @@
     top: calc(100% + 8px);
     right: 0;
     min-width: 180px;
-    background: var(--ifm-navbar-background-color);
+    background: #ffffff;
     border: 1px solid var(--ifm-color-emphasis-300);
     border-radius: 8px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -136,7 +136,7 @@
 }
 
 [data-theme='dark'] .navbar-dropdown {
-    background: #1e293b;
+    background: #2d3748;
     border-color: #334155;
 }
 

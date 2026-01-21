@@ -24,6 +24,10 @@
   --ifm-background-color: #ffffff !important;
   --ifm-background-surface-color: #ffffff !important;
 
+  /* Navbar dropdown menus should never be transparent */
+  --ifm-dropdown-background-color: #ffffff;
+  --ifm-navbar-dropdown-background-color: #ffffff;
+
   /* Text colors for light mode */
   --ifm-heading-color: #0f172a;       /* slate-900 */
   --ifm-font-color-base: #0f172a;     /* slate-900 */
@@ -69,6 +73,10 @@
   /* Reset Infima background vars to allow gradient */
   --ifm-background-color: transparent !important;
   --ifm-background-surface-color: transparent !important;
+
+  /* Navbar dropdown menus should stay opaque even if surfaces are transparent */
+  --ifm-dropdown-background-color: #2d3748;
+  --ifm-navbar-dropdown-background-color: #2d3748;
 
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
@@ -141,6 +149,21 @@
 /* Hidden utility */
 .hidden {
   display: none !important;
+}
+
+/* ----------------------------- */
+/* NAVBAR DROPDOWN MENU FIXES    */
+/* ----------------------------- */
+
+/* Docusaurus/Infima navbar dropdown menus */
+.navbar .dropdown__menu {
+  background-color: var(--ifm-dropdown-background-color) !important;
+  border: 1px solid var(--ifm-color-emphasis-300) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18) !important;
+}
+
+[data-theme='dark'] .navbar .dropdown__menu {
+  border-color: #334155 !important;
 }
 
 /* ----------------------------- */

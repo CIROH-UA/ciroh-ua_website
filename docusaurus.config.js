@@ -397,42 +397,58 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "products/intro",
-            label: "Softwares",
+            label: "About CIROH",
             position: "left",
+            items: [
+              {
+                type: "doc",
+                docId: "policies/intro",
+                label: "Policies",
+              },
+              {
+                href: "/working-groups",
+                label: "Working Groups",
+              },
+            ],
           },
           {
-            type: "doc",
-            docId: "services/intro",
-            label: "Services",
+            label: "Research & Innovation",
             position: "left",
+            items: [
+              {
+                type: "doc",
+                docId: "publications/intro",
+                label: "Publications",
+              },
+              {
+                type: "doc",
+                docId: "products/intro",
+                label: "Softwares",
+              },
+              {
+                type: "doc",
+                docId: "services/intro",
+                label: "Services",
+              },
+              {
+                href: "/community_products",
+                label: "Community Products",
+              },
+            ],
           },
           {
-            type: "doc",
-            docId: "policies/intro",
-            label: "Policies",
+            label: "Community & Collaboration",
             position: "left",
-          },
-          {
-            href: "/community_products",
-            label: "Community Products",
-            position: "left",
-          },
-          {
-            href: "/working-groups",
-            label: "Working Groups",
-            position: "left",
-          },
-          {
-            href: "/impact",
-            label: "Community Impact",
-            position: "right",
-          },
-          {
-            href: "/contribute",
-            label: "Contribute",
-            position: "right",
+            items: [
+              {
+                href: "/impact",
+                label: "Community Impact",
+              },
+              {
+                href: "/contribute",
+                label: "Contribute",
+              },
+            ],
           },
           {
             href: "/blog",

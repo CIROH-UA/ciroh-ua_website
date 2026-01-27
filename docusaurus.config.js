@@ -1,7 +1,4 @@
 import { themes as prismThemes } from "prism-react-renderer";
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const baseUrl = "/";
 
@@ -13,17 +10,8 @@ const config = {
   url: "http://ciroh.org",
   baseUrl: baseUrl,
   onBrokenLinks: "ignore",
+  onBrokenMarkdownLinks: "warn",
   favicon: "img/logos/docuhub.png",
-
-  customFields: {
-    apiBaseUrl:
-      process.env.REACT_APP_API_BASE_URL ||
-      process.env.VITE_API_BASE_URL ||
-      'https://67h5z9ih7j.execute-api.us-east-1.amazonaws.com/default',
-    onBrokenMarkdownLinks: "warn",
-    onBrokenMarkdownImages: "warn",
-    githubProjectToken: process.env.GITHUB_PROJECT_TOKEN,
-  },
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -416,8 +404,7 @@ const config = {
             position: "left",
             items: [
               {
-                type: "doc",
-                docId: "publications/intro",
+                href: "/publications",
                 label: "Publications",
               },
               {
@@ -459,10 +446,6 @@ const config = {
             href: "/news",
             label: "News",
             position: "right",
-          },
-          {
-            type: 'custom-githubAuth',
-            position: 'right',
           },
         ],
       },

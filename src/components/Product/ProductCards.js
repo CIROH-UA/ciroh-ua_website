@@ -99,12 +99,13 @@ const ProductCard = ({ product }) => {
 };
 
 const ProductCards = ({ productsData }) => {
-  // Must call useBaseUrl during render (not inside event handlers)
-  const adminAddSoftwareUrl = useBaseUrl('/admin/add-software');
+  const { siteConfig } = useDocusaurusContext();
+  const productIssueUrl =
+    siteConfig?.customFields?.productIssueUrl ||
+    'https://github.com/CIROH-UA/ciroh-ua_website/issues/new?template=product-request.md';
 
   const handleAddProduct = () => {
-    // Send user to the admin add form; the page will trigger GitHub login if needed.
-    window.location.href = adminAddSoftwareUrl;
+    window.open(productIssueUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (

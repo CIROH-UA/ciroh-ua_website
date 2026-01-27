@@ -1,5 +1,11 @@
 # CIROH Hub - GitHub Login / Admin Auth Flow
 
+> \[DEPRECATED\] The GitHub OAuth login + server-side issue creation flow has been removed from this site.
+>
+> Use these GitHub issue templates instead:
+> - Software: https://github.com/CIROH-UA/ciroh-ua_website/issues/new?template=product-request.md
+> - Blog: https://github.com/CIROH-UA/ciroh-ua_website/issues/new?template=docuhub-blog-post.md
+
 This document explains how DocuHub’s GitHub login works end-to-end: how users are redirected to GitHub OAuth, how the backend exchanges the OAuth code for a GitHub token, how the system issues an application JWT, how the frontend stores that JWT, and how admin pages use it to call protected APIs.
 
 > Summary: DocuHub uses GitHub OAuth to obtain a GitHub access token, then wraps it in a DocuHub-issued JWT (stored client-side) and uses that JWT for subsequent API calls via `Authorization: Bearer <JWT>`.

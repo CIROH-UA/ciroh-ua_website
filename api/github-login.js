@@ -1,15 +1,11 @@
-// API route for initiating GitHub OAuth login
-export default function handler(req, res) {
-  const clientId = process.env.GITHUB_CLIENT_ID;
-  if (!clientId) {
-    return res.status(500).json({ error: 'GitHub Client ID not configured' });
-  }
-
-  // Assuming HTTPS in production, but for dev, you might need to adjust
-  const protocol = req.headers['x-forwarded-proto'] || 'https';
-  const host = req.headers.host;
-  const redirectUri = `${protocol}://${host}/api/github-callback`;
-
-  const url = `https://github.com/login/oauth/authorize?client_id=${clientId}&scope=public_repo&redirect_uri=${encodeURIComponent(redirectUri)}`;
-  res.redirect(url);
+export default function handler(_req, res) {
+  return res.status(410).json({
+    error: 'GitHub login has been removed from this site.',
+    next: {
+      productIssueUrl:
+        'https://github.com/CIROH-UA/ciroh-ua_website/issues/new?template=product-request.md',
+      blogIssueUrl:
+        'https://github.com/CIROH-UA/ciroh-ua_website/issues/new?template=docuhub-blog-post.md',
+    },
+  });
 }

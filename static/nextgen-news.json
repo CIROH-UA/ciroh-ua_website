@@ -1,4 +1,89 @@
 {
+
+		"January 2026 Update": [
+			{
+			"type": "CIROH",
+			"title": "CIROH Hub",
+			"link": "",
+			"description": "🎊 We are thrilled to announce **CIROH Hub**! We're bringing together our CIROH Portal and DocuHub into a single website. Coming February 2026!",
+			"contributors": 0
+   			},
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-data-preprocess",
+			"links": [
+				"https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.6.8",
+				"https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.6.7"
+			],
+			"description":"",
+			"release_date": "01/25/2026",
+			"contributors":3
+			},
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-CloudInfra",
+			"link": "",
+			"description":"",
+			"release_date": "",
+			"contributors":0
+			},
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-HPCInfra",
+			"link": "",
+			"description":"",
+			"release_date": "",
+			"contributors":0
+			},
+			{
+			"type": "NGIAB",
+			"title": "ngiab-client",
+			"link": "",
+			"description":"",
+			"release_date": "",
+			"contributors":0
+			},
+			{
+			"type": "NGIAB",
+			"title": "rust-lstm",
+			"link": "",
+			"description":"",
+			"release_date": "",
+			"contributors":0
+			},
+			{
+			"type": "NRDS",
+			"title": "NGEN-DataStream",
+			"link": "",
+			"description":"",
+			"release_date": "",
+			"contributors":0
+			},
+			{
+			"type": "NRDS",
+			"title": "ForcingProcessor",
+			"link": "",
+			"description":"",
+			"release_date": "",
+			"contributors":0
+			},
+			{
+			"type": "NRDS",
+			"title": "DataStreamCLI",
+			"link": "",
+			"description":"",
+			"release_date": "",
+			"contributors":0
+			},
+			{
+			"type": "update",
+			"title": "t-route",
+			"link": "",
+			"description":"",
+			"release_date": "",
+			"contributors":0
+			}
+		],
 		"November 2025 Update": [
 			{
 				"type": "NGIAB",

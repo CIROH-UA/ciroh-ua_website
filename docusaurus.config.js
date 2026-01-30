@@ -321,14 +321,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     (
       {
-      /*announcementBar: {
-        id: 'scimeet25_survey_notice',
+      announcementBar: {
+        id: 'ciroh_hub_notice',
         content:
-          '🔧 Do you have any thoughts on CIROH DocuHub or Portal? We\'d love to hear from you! <a target="_blank" rel="noopener noreferrer" href="'+baseUrl+'scimeet25survey">Take the DocuHub/Portal User Survey here</a>.',
+          '🧭 CIROH DocuHub is moving to a new home. <a target="_blank" rel="noopener noreferrer" href="'+baseUrl+'ciroh-hub">Learn more about the transition to CIROH Hub</a>.',
         backgroundColor: '#0081d2ff',
         textColor: '#fff',
-        isCloseable: true,
-      },*/
+        isCloseable: false,
+      },
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,

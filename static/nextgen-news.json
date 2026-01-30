@@ -5,7 +5,7 @@
 			"type": "update",
 			"title": "CIROH Hub",
 			"link": "",
-			"description": "🎊 CIROH DocuHub and Portal integration is in progress. Coming February 2026!",
+			"description": "📣 CIROH DocuHub and Portal integration is in progress. Coming February 2026!",
 			"contributors": 0
    			},
 			{
@@ -15,7 +15,7 @@
 				"https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.6.8",
 				"https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.6.7"
 			],
-			"description":"",
+			"description":"", 
 			"release_date": "01/25/2026",
 			"contributors":3
 			},
@@ -23,31 +23,15 @@
 			"type": "NGIAB",
 			"title": "NGIAB-CloudInfra",
 			"link": "",
-			"description":"",
+			"description":"Interested in integrating a model into NGIAB? Submit your model integration request using this [Model Integration Issue Template.](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?template=model_integration_request.md)",
 			"release_date": "",
 			"contributors":0
 			},
 			{
 			"type": "NGIAB",
-			"title": "NGIAB-HPCInfra",
+			"title": "nrds-client",
 			"link": "",
-			"description":"",
-			"release_date": "",
-			"contributors":0
-			},
-			{
-			"type": "NGIAB",
-			"title": "ngiab-client",
-			"link": "",
-			"description":"",
-			"release_date": "",
-			"contributors":0
-			},
-			{
-			"type": "NGIAB",
-			"title": "rust-lstm",
-			"link": "",
-			"description":"",
+			"description":"The NRDS Visualizer is now live at [https://nrds.ciroh.org/](https://nrds.ciroh.org/)! Explore the visualizer to see NextGen Research DataStream runs in action.",
 			"release_date": "",
 			"contributors":0
 			},
@@ -55,32 +39,24 @@
 			"type": "NRDS",
 			"title": "NGEN-DataStream",
 			"link": "",
-			"description":"",
+			"description":"Help improve NextGen Research DataStream! Review the current parameters [here](https://datastream.ciroh.org/index.html). Contribute your improvements using [NRDS Parameter Update Issue Template.](https://github.com/CIROH-UA/ngen-datastream/issues/new?template=nrds-parameter-proposal.md)",
 			"release_date": "",
 			"contributors":0
 			},
 			{
 			"type": "NRDS",
 			"title": "ForcingProcessor",
-			"link": "",
-			"description":"",
-			"release_date": "",
+			"link": "https://github.com/CIROH-UA/forcingprocessor/pull/46",
+			"description":"Forcing processor now processes q_lateral from channel routing data and maps NHD values onto the NextGen hydrofabric.",
+			"release_date": "01/29/2026",
 			"contributors":0
 			},
 			{
 			"type": "NRDS",
 			"title": "DataStreamCLI",
-			"link": "",
-			"description":"",
-			"release_date": "",
-			"contributors":0
-			},
-			{
-			"type": "update",
-			"title": "t-route",
-			"link": "",
-			"description":"",
-			"release_date": "",
+			"link": "https://github.com/CIROH-UA/datastreamcli/releases/tag/v1.3.0",
+			"description":"This release focus on transformations to the v2.2 hydrofabric variables that are used in calculating the model variables contained within the BMI config files.",
+			"release_date": "01/29/2026",
 			"contributors":0
 			}
 		],

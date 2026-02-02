@@ -83,9 +83,9 @@
 			},
             {
 			"type": "NRDS",
-			"title": "NRDS Visualizer (nrds-client)",
-			"link": "",
-			"description":"The NRDS Visualizer is now live at [https://nrds.ciroh.org/](https://nrds.ciroh.org/)! Explore NextGen Research DataStream runs in action.",
+			"title": "NRDS Visualizer (nrds-client) (v1.1.0)",
+			"link": "https://github.com/CIROH-UA/nrds-client/releases/tag/v1.1.0",
+			"description":"The NRDS Visualizer is now publicly available at [https://nrds.ciroh.org/](https://nrds.ciroh.org/)! Latest release info [here](https://github.com/CIROH-UA/nrds-client/releases/tag/v1.1.0). Explore NextGen Research DataStream runs in action.",
 			"release_date": "",
 			"contributors": 0
 			}

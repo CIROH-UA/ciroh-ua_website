@@ -1,4 +1,105 @@
 {
+
+		"January 2026 Update": [
+			{
+			"type": "update",
+			"title": "CIROH Hub",
+			"link": "",
+			"description": "📣 Development is underway for CIROH Hub—an integrated CIROH DocuHub and Portal experience. Coming February 2026! Added banner in DocuHub and Portal. Join the Community Resources Working Group to share your input and feedback.",
+			"contributors": 0
+   			},
+            {
+			"type": "R2OHC",
+			"title": "CIROH R2OHC Platform (Research to Operations Hybrid Cloud Platform)",
+			"links": [
+				"https://github.com/orgs/CIROH-UA/projects/10"
+			],
+			"description":"Latest IT requests and updates for the CIROH R2OHC Platform can be found on the [R2OHC Project Board](https://github.com/orgs/CIROH-UA/projects/10)", 
+			"release_date": "01/25/2026",
+			"contributors": 0
+			},
+            {
+			"type": "NGIAB Ecosystem",
+			"title": "NGIAB Ecosystem Project Board",
+			"links": [
+				"https://github.com/orgs/CIROH-UA/projects/11"
+			],
+			"description":"Stay updated with the latest features, bug fixes, and improvements across the NGIAB ecosystem by visiting the [NGIAB Ecosystem Project Board](https://github.com/orgs/CIROH-UA/projects/11)", 
+			"release_date": "01/25/2026",
+			"contributors": 0
+			},
+            {
+			"type": "NRDS",
+			"title": "NextGen Research Datastream (NRDS) Project Board",
+			"links": [
+				"https://github.com/orgs/CIROH-UA/projects/2"
+			],
+            "description":"Stay updated with the latest features, bug fixes, and improvements across the NGIAB ecosystem by visiting the [NGIAB Ecosystem Project Board](https://github.com/orgs/CIROH-UA/projects/11)", 
+			"release_date": "01/25/2026",
+			"contributors": 0
+			},
+            {
+			"type": "NGIAB NRDS Website (v1.0.0)",
+			"title": "NGIAB + NRDS Product portfolio website.",
+			"links": [
+				"https://github.com/CIROH-UA/ngiab-website/releases/tag/v1.0.0"
+			],
+			"description":"The NGIAB NRDS Website v1.0.0 is live! Visit [https://ngiab.ciroh.org/](https://ngiab.ciroh.org/) to explore all NGIAB and NRDS tools, documentation, and resources all in one place. Visit NRDS at [https://ngiab.ciroh.org/#/nrds](https://ngiab.ciroh.org/#/nrds) to learn more about NextGen Research DataStream.", 
+			"release_date": "01/25/2026",
+			"contributors": 0
+			},
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-data-preprocess",
+			"links": [
+				"https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.6.8",
+				"https://github.com/CIROH-UA/NGIAB_data_preprocess/releases/tag/v4.6.7"
+			],
+			"description":"New releases (v4.6.7 and v4.6.8) include improvements to data handling and pipeline efficiency in NGIAB data preprocessing workflows.", 
+			"release_date": "01/25/2026",
+			"contributors": 0
+			},
+			{
+			"type": "NGIAB",
+			"title": "NGIAB-CloudInfra",
+			"link": "",
+            "description": "Want to integrate a model into NGIAB? Use the [Model Integration Template](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/new?template=model_integration_request.md) to submit your request. See the [Add dHBV2.0 MTS (hourly)](https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/385) as an example.",
+            "release_date": "",
+			"contributors": 0
+			},			
+			{
+			"type": "NRDS",
+			"title": "ForcingProcessor (v1.3.0)",
+			"link": "https://github.com/CIROH-UA/forcingprocessor/releases/tag/v1.3.0",
+			"description":"This release of forcingprocessor contains a major new feature! Checkout [here](https://github.com/CIROH-UA/forcingprocessor/releases/tag/v1.3.0)",
+			"release_date": "01/29/2026",
+			"contributors": 0
+			},
+			{
+			"type": "NRDS",
+			"title": "DataStreamCLI (v1.3.0)",
+			"link": "https://github.com/CIROH-UA/datastreamcli/releases/tag/v1.3.0",
+			"description":"This release focus on transformations to v2.2 hydrofabric variables used for calculating model variables in BMI config files.",
+			"release_date": "01/29/2026",
+			"contributors": 0
+			},
+            {
+			"type": "NRDS",
+			"title": "Ngen-DataStream",
+			"link": "https://github.com/CIROH-UA/ngen-datastream/releases/tag/v2.1.0",
+			"description":"NextGen Research DataStream runs hourly on AWS! Now featuring LSTM DataStream (VPU 09), CFE NOM DataStream (all VPUs and Routing-Only Datastream (VPU 03W). View [latest status](https://github.com/CIROH-UA/ngen-datastream/blob/main/docs/nrds/STATUS_AND_METADATA.md), explore parameters at [datastream.ciroh.org](https://datastream.ciroh.org/index.html), and contribute via the [Parameter Update Template](https://github.com/CIROH-UA/ngen-datastream/issues/new?template=nrds-parameter-proposal.md).",
+			"release_date": "",
+			"contributors": 0
+			},
+            {
+			"type": "NRDS",
+			"title": "NRDS Visualizer (nrds-client) (v1.1.0)",
+			"link": "https://github.com/CIROH-UA/nrds-client/releases/tag/v1.1.0",
+			"description":"The NRDS Visualizer is now publicly available at [https://nrds.ciroh.org/](https://nrds.ciroh.org/)! Latest release info [here](https://github.com/CIROH-UA/nrds-client/releases/tag/v1.1.0). Explore NextGen Research DataStream runs in action.",
+			"release_date": "",
+			"contributors": 0
+			}
+		],
 		"November 2025 Update": [
 			{
 				"type": "NGIAB",

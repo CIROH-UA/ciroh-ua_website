@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './header.module.css';
 
-export default function Header({ title,image,  tagline, buttons }) {
+export default function Header({ title, image, buttons }) {
 
 
   return (
@@ -54,8 +54,8 @@ export default function Header({ title,image,  tagline, buttons }) {
           {title}
         </Heading>
 
-        <p className={clsx('hero__subtitle', styles.heroSubtitle)}>{tagline}</p>
-                
+        <p className={clsx('hero__subtitle', 'margin-bottom--sm', styles.heroSubtitle)}>CIROH Portal and DocuHub are merging into CIROH Hub, an all-in-one resource for CIROH research and documentation.</p>
+        <p className={clsx('hero__subtitle', styles.heroSubtitle)}>Visit the new site at <a className={styles.hubLink} target="_blank" rel="noopener noreferrer" href="https://hub.ciroh.org"><u>hub.ciroh.org</u></a>.</p>
         
         {buttons && buttons.length > 0 && (
           <div className={styles.buttons} style={{paddingBottom:"200px"}}>

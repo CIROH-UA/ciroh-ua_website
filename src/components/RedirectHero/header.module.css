@@ -30,6 +30,14 @@
     margin-bottom: 3rem;
     color: var(--ifm-color-primary);
   }
+
+  [data-theme="dark"] .hubLink {
+    color: var(--ifm-color-info-lighter);
+  }
+
+  [data-theme="light"] .hubLink {
+    color: var(--ifm-color-info-darkest);
+  }
   
   /* Wave background and SVG styling */
   .waveBackground {

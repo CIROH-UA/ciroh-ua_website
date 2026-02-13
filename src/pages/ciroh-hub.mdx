@@ -8,6 +8,7 @@ tags: [CIROH]
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import RedirectHero from '@site/src/components/RedirectHero';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <RedirectHero />
 <div style={{"display": "block", "height": "30px"}} />
@@ -18,15 +19,15 @@ import RedirectHero from '@site/src/components/RedirectHero';
               <div className="mt-5-feature">
                   <h3 className="h4 mb-2-feature">What is CIROH Hub?</h3>
                   <hr className="divider-feature" />
-                  <img src="/img/hub-preview.png" alt="A screenshot of CIROH Hub's homepage."></img>
-                  <p className="text-muted-feature mb-0 mt-2">CIROH Hub will be an all-in-one repository of CIROH's knowledge and resources, combining the contents of CIROH Portal and DocuHub.</p>
+                  <img src={useBaseUrl("/img/hub-preview.png")} alt="A screenshot of CIROH Hub's homepage."></img>
+                  <p className="text-muted-feature mb-0 mt-2">CIROH Hub is an all-in-one repository of CIROH's knowledge and resources, combining the contents of CIROH Portal and DocuHub.</p>
               </div>
           </div>
           <div className="col-lg-3-feature col-md-6-feature text-center">
               <div className="mt-5-feature">
                   <h3 className="h4 mb-2-feature">What does this mean for Portal and DocuHub?</h3>
                   <hr className="divider-feature" />
-                  <p className="text-muted-feature mb-0 mt-2">Both CIROH Portal and CIROH DocuHub will be deprecated one week after the release of CIROH Hub. All content from both sites will be transferred, so there's no need to worry about loss of information.</p>
+                  <p className="text-muted-feature mb-0 mt-2">Both CIROH Portal and CIROH DocuHub will be deprecated in mid-March 2026. All content from both sites will be transferred, so there's no need to worry about loss of information.</p>
                   <p className="text-muted-feature mb-0 mt-2">Static assets from both sites will continue to be hosted for the forseeable future, but may become outdated with time.</p>
               </div>
           </div>
@@ -35,7 +36,7 @@ import RedirectHero from '@site/src/components/RedirectHero';
                   <h3 className="h4 mb-2-feature">Is there anything I need to do to prepare?</h3>
                   <hr className="divider-feature" />
                   <p className="text-muted-feature mb-0 mt-2">After deprecation, links to Portal and DocuHub will be redirected to equivalent pages on CIROH Hub, ensuring that existing links to both sites remain active.</p>
-                  <p className="text-muted-feature mb-0 mt-2">However, for a more streamlined experience, we strongly recommend updating your links to point to equivalent CIROH Hub pages after the transition.</p>
+                  <p className="text-muted-feature mb-0 mt-2">However, for a more streamlined experience, we strongly recommend updating your links to point to equivalent CIROH Hub pages as soon as possible.</p>
               </div>
           </div>
       </div>

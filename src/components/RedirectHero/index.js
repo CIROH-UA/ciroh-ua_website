@@ -10,9 +10,8 @@ export default function RedirectHero() {
 
   return (
       <Header
-        title="CIROH Hub is arriving soon."
+        title="CIROH Hub is here."
         image={Cirohlogo}
-        tagline="CIROH Portal and DocuHub will soon be merging into CIROH Hub, an all-in-one resource for CIROH research and documentation."
       />
   );
 }

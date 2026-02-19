@@ -324,7 +324,7 @@ const config = {
       announcementBar: {
         id: 'ciroh_hub_notice',
         content:
-          '🧭 CIROH DocuHub is moving to a new home. <a target="_blank" rel="noopener noreferrer" href="'+baseUrl+'ciroh-hub">Learn more about the transition to CIROH Hub</a>.',
+          '🧭 CIROH DocuHub is moving to a new home. Visit CIROH Hub at <a target="_blank" rel="noopener noreferrer" href="https://hub.ciroh.org">hub.ciroh.org</a>, or <a target="_blank" rel="noopener noreferrer" href="'+baseUrl+'ciroh-hub">click here to learn more about the transition</a>.',
         backgroundColor: '#0081d2ff',
         textColor: '#fff',
         isCloseable: false,

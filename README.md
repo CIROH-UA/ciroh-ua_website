@@ -1,37 +1,12 @@
-# CIROH DocuHub
+# CIROH DocuHub (Formerly)
 
-DocuHub is constructed using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+CIROH DocuHub has been merged into CIROH Hub. This repository has been retained as a redirect source to ensure continuity of website links.
 
-## Repository
+- CIROH Hub link: https://hub.ciroh.org
+- CIROH Hub repository: https://github.com/CIROH-UA/ciroh_hub
+- This repository deploys to: https://github.com/CIROH-UA/ciroh-ua_website -> https://docs.ciroh.org
 
-The source code for DocuHub is available at:  
-[https://github.com/CIROH-UA/ciroh-ua_website](https://github.com/CIROH-UA/ciroh-ua_website)
-
-## Environments
-
-### Production
-The production environment is available at:  
-[https://docs.ciroh.org/](https://docs.ciroh.org/)
-
-### Staging
-The staging environment is used for testing and validating changes before deploying to production. This allows contributors to preview their changes in a live environment without affecting the production site.
-[https://docs.ciroh.org/docuhub-staging/](https://docs.ciroh.org/docuhub-staging/)
-
-## How to Contribute
-
-1. **Edit Content**: See something that needs to be updated? Click on the "Edit page" button at the bottom of the page to make direct changes to the documentation.
-
-2. **Submit Changes**: Make your edits and create a Pull Request on GitHub. Your changes will be reviewed and merged by the admin team.
-
-3. **Contribute to Products Tab**: For CIROH projects related to NextGen, please send your GitHub repository URL to the admin for inclusion.
-
-4. **Contribute to Blog Section**: To add content to the blog, please follow the guidelines in [How to write a new Blog?](https://github.com/CIROH-UA/ciroh-ua_website/blob/main/blog/2023-10-29-intro-docuhub-blog.md)
-
-5. **Report Issues**: Found a bug or have a suggestion? Open an issue in the [GitHub repository](https://github.com/CIROH-UA/ciroh-ua_website) to help improve DocuHub.
-
-If you need help, please contact us at [ciroh-it-admin@ua.edu](mailto:ciroh-it-admin@ua.edu) or Arpita Patel at apatel54@ua.edu
-
-## Setup for running DocuHub locally
+## Running this repository locally
 
 To set up the project locally, follow these steps:
 
